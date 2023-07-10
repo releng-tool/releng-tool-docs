@@ -1,0 +1,53 @@
+﻿/* avoid literal coloring in headers and toc-tree */
+h1 code.literal,
+h2 code.literal,
+h3 code.literal,
+h4 code.literal,
+h5 code.literal,
+h6 code.literal {
+    background: unset !important;
+    line-height: 2em;
+}
+
+.toc-tree * code.literal,
+.toctree-wrapper * code.literal {
+    background: unset !important;
+}
+
+/* avoid all-caps on lower header entries */
+h4, h5, h6 {
+    text-transform: unset !important;
+}
+
+/* force "auto" widths tables to be a maximum width */
+table.colwidths-auto {
+    width: 100%;
+}
+
+/* avoid wrapping literals */
+.literal {
+    white-space: nowrap;
+}
+
+/* explicit logo width */
+.sidebar-logo {
+    width: 50px;
+}
+
+/* styling injected external links on sidebar */
+.injected-sidebar-tree-spacer  {
+    border: none;
+    border-bottom: 1px solid var(--color-sidebar-search-border);
+}
+
+/* styling injected i8n options in sidebar */
+.injected-sidebar-i8n  {
+    margin-top: 1em;
+    margin-right: 30px;
+    text-align: center;
+}
+
+/* styling injected i8n option's spacer in sidebar */
+.injected-sidebar-i8n-spacer  {
+    margin: 0.5em;
+}

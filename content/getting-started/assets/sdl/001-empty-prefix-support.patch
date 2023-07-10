@@ -1,0 +1,20 @@
+diff -u a/CMakeLists.txt b/CMakeLists.txt
+
+CMAKE_INSTALL_PREFIX may be empty, causing the set of bin_prefix_relpath
+to fail. To avoid a failure, avoid using CMAKE_INSTALL_PREFIX when empty.
+
+--- a/CMakeLists.txt    2023-06-20 14:27:57.000000000 -0400
++++ b/CMakeLists.txt    2023-06-25 17:41:30.823627100 -0400
+@@ -3067,7 +3067,11 @@
+ endif()
+
+ set(prefix ${CMAKE_INSTALL_PREFIX})
+-file(RELATIVE_PATH bin_prefix_relpath "${CMAKE_INSTALL_FULL_BINDIR}" "${CMAKE_INSTALL_PREFIX}")
++if(CMAKE_INSTALL_PREFIX STREQUAL "")
++  set(bin_prefix_relpath ${CMAKE_INSTALL_FULL_BINDIR})
++else()
++  file(RELATIVE_PATH bin_prefix_relpath "${CMAKE_INSTALL_FULL_BINDIR}" "${CMAKE_INSTALL_PREFIX}")
++endif()
+
+ set(exec_prefix "\${prefix}")
+ set(libdir "\${exec_prefix}/${CMAKE_INSTALL_LIBDIR}")
