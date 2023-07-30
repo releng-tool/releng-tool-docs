@@ -1,0 +1,73 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+      - '.github/workflows/docs.yml'
+      - 'content/**'
+  pull_request:
+    branches:
+    - main
+    paths:
+      - '.github/workflows/docs.yml'
+      - 'content/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout releng-tool
+      uses: actions/checkout@v3
+      with:
+        path: releng-tool
+
+    - name: Checkout releng-tool-docs
+      uses: actions/checkout@v3
+      with:
+        repository: releng-tool/releng-tool-docs
+        path: releng-tool-docs
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+
+    - name: Cache pip
+      uses: actions/cache@v3
+      id: cache-pip
+      with:
+        path: ~/.cache/pip
+        key: docs-pip
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install \
+            gettext \
+            latexmk \
+            texlive-latex-extra \
+            texlive-latex-recommended \
+            -y
+        pip install --upgrade \
+            furo \
+            myst-parser \
+            pygments \
+            sphinx \
+            sphinx-inline-tabs \
+            sphinx-intl
+
+    - name: HTML
+      run: ./build html
+      working-directory: releng-tool-docs/content
+
+    - name: PDF
+      run: ./build latexpdf
+      working-directory: releng-tool-docs/content
+
+    - name: Archive generated PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: releng-tool.pdf
+        path: releng-tool-docs/content/_build/latex/releng-tool.pdf
