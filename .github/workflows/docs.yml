@@ -23,6 +23,7 @@ jobs:
     - name: Checkout releng-tool
       uses: actions/checkout@v3
       with:
+        repository: releng-tool/releng-tool
         path: releng-tool
 
     - name: Checkout releng-tool-docs
@@ -30,9 +31,6 @@ jobs:
       with:
         repository: releng-tool/releng-tool-docs
         path: releng-tool-docs
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
 
     - name: Cache pip
       uses: actions/cache@v3
@@ -47,8 +45,10 @@ jobs:
         sudo apt-get install \
             gettext \
             latexmk \
+            texlive-fonts-extra \
             texlive-latex-extra \
             texlive-latex-recommended \
+            texlive-xetex \
             -y
         pip install --upgrade \
             furo \
