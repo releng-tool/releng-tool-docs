@@ -1,6 +1,7 @@
 # Copyright releng-tool
 # SPDX-License-Identifier: BSD-2-Clause
 
+from babel import Locale
 from sphinx.errors import ConfigError
 from sphinx.ext.autodoc import cut_lines
 import os
@@ -53,9 +54,13 @@ myst_enable_extensions = [
 locale_dirs = ['locale/']
 gettext_compact = False
 
+langmap = {}
+for lang in languages.split(','):
+    langmap[lang] = Locale.parse(lang).get_display_name(lang)
+
 # output - html
 html_context = {
-    'languages': languages.split(','),
+    'languages': langmap,
     'releng_tool_domain': releng_tool_domain,
 }
 html_copy_source = False

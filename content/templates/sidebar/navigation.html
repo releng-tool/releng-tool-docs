@@ -13,8 +13,8 @@
     <hr class="injected-sidebar-tree-spacer" />
     <div class="injected-sidebar-i8n">
       🕮
-{% for val in languages %}
-      · <a href="https://{{ releng_tool_domain }}/{{ val }}/">{{ val }}</a>
+{% for key, val in languages.items() %}
+      · <a class="notranslate" href="https://{{ releng_tool_domain }}/{{ key }}/">{{ val }}</a>
 {% endfor %}
     </div>
 {% endif %}
