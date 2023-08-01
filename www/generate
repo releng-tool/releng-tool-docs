@@ -1,0 +1,271 @@
+#!/usr/bin/env bash
+# Copyright releng-tool
+set -e
+
+DEFAULT_BUILDER=dirhtml
+DEFAULT_DOMAIN=docs.releng.io
+
+################################################################################
+
+builder=$DEFAULT_BUILDER
+domain=$DEFAULT_DOMAIN
+help=0
+phase=
+target_lang=
+while [ "$#" -gt 0 ]; do
+    case $1 in
+        --builder|-b)
+        builder="$2"
+        shift
+        ;;
+        --domain)
+        domain="$2"
+        shift
+        ;;
+        --help)
+        help=1
+        break 2
+        ;;
+        --language|-L)
+        target_lang="$2"
+        shift
+        ;;
+        --phase)
+        phase="$2"
+        shift
+        ;;
+    esac
+    shift
+done
+
+if [ $help -eq 1 ]; then
+    cat << HELP_EOM
+generate <options>
+
+ -b, --builder <builder>   builder to use
+ -h, --help                show this help
+ -L, --language <lang>     specific language to build
+ --phase <phase>           specific phase to run
+HELP_EOM
+    exit 0
+fi
+
+################################################################################
+
+base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+out_dir=$base/_build
+tmp_dir=$base/_tmp
+doc_dir=$base/../content
+locale_dir=$base/../locale
+cname=$out_dir/CNAME
+sitemap=$out_dir/sitemap.xml
+redirectjs=$out_dir/redirect.js
+
+# find all supported languages
+languages=('en')
+for ref in $(ls -d $locale_dir/*/LC_MESSAGES 2>/dev/null); do
+    lang_dir=${ref%/*}
+    lang_dir=${lang_dir%%/}
+    lang=${lang_dir##*/}
+
+    # skip pot directory
+    if [[ "$lang" == 'pot' ]]; then
+        continue
+    fi
+
+    languages+=($lang)
+done
+
+# compile a list of languages
+lang_list=$(printf ",%s" "${languages[@]}")
+lang_list=${lang_list:1}
+
+if [ -z "$phase" ] || [ "$phase" == "build" ]; then
+    # fresh start
+    rm -rf $out_dir
+    mkdir -p $out_dir
+
+    # build outputs for each language
+    for lang in "${languages[@]}"; do
+        [[ -n "$target_lang" && "$target_lang" != "$lang" ]] && continue
+
+        lang_target_dir=$out_dir/$lang
+        echo -e "\e[7mbuilding $lang ($builder)...\e[0m"
+
+        # options
+        export RELENG_DOMAIN=$domain
+        export RELENG_LANGUAGES=$lang_list
+
+        # build documentation
+        python -m sphinx \
+            -Dlanguage=$lang \
+            -b $builder \
+            $doc_dir \
+            $lang_target_dir \
+            -Dlocale_dirs=$locale_dir \
+            -E -a -W
+
+        # cleanup
+        rm -rf $lang_target_dir/.doctrees
+        rm $lang_target_dir/.buildinfo
+    done
+fi
+
+if [ -z "$phase" ] || [ "$phase" == "skeleton" ]; then
+    echo -e "\e[7mgenerating skeleton files...\e[0m"
+    # cname file
+    cat > $cname <<- CNAME_EOF
+$domain
+CNAME_EOF
+
+    # .nojekyll file
+    touch $out_dir/.nojekyll
+fi
+
+if [ -z "$phase" ] || [ "$phase" == "redirects" ]; then
+    echo -e "\e[7mgenerating redirects...\e[0m"
+
+    for ref in $(cd $out_dir/en; find . | grep index.html); do
+        doc_fpath=${ref%/*}
+        doc_fpath=${doc_fpath%%/}
+        docname=${doc_fpath##*/}
+
+        # ignore shared/included docs
+        [[ $docname == _* ]] && continue
+
+        doc_path=${doc_fpath#*/}
+        echo "> $doc_path"
+        if [ $doc_path == "." ]; then
+            doc_path=
+        else
+            doc_path="$doc_path/"
+        fi
+
+        container_dir=$out_dir/$doc_path
+        mkdir -p $container_dir
+        redirect_doc=$container_dir/index.html
+
+        cat > $redirect_doc <<- REDIRECT_EOM
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="refresh" content="2; url=https://$domain/en/">
+    <link rel="canonical" href="https://$domain/$doc_path" />
+    <script src="https://$domain/redirect.js"></script>
+</head><body>
+<p>You should be redirected automatically; if not, venture to
+<a href="https://$domain/en/$doc_path">/en/$doc_path</a>.</p>
+</body></html>
+REDIRECT_EOM
+    done
+
+    # build redirect.js
+    cat > $redirectjs <<- REDIRECTJS_START
+var base = '/en/';
+var ln = window.navigator.language || navigator.browserLanguage;
+ln = ln.substring(0,2);
+switch(ln) {
+REDIRECTJS_START
+
+    for lang in "${languages[@]}"; do
+        cat >> $redirectjs <<- REDIRECTJS_ENTRY
+case '$lang': base = '/$lang/'; break;
+REDIRECTJS_ENTRY
+    done
+
+    cat >> $redirectjs <<- REDIRECTJS_END
+default:
+    // use default
+}
+
+new_url = base +
+    window.location.pathname.split('.html')[0] +
+    window.location.search +
+    window.location.hash;
+window.location.href = new_url;
+REDIRECTJS_END
+fi
+
+if [ -z "$phase" ] || [ "$phase" == "sitemap" ]; then
+    echo -e "\e[7mgenerating sitemap...\e[0m"
+
+    cat > $sitemap <<- SITEMAP_START
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+SITEMAP_START
+
+    for ref in $(cd $out_dir/en; find . | grep index.html); do
+        doc_fpath=${ref%/*}
+        doc_fpath=${doc_fpath%%/}
+        docname=${doc_fpath##*/}
+        # ignore shared/included docs
+        [[ $docname == _* ]] && continue
+
+        doc_path=${doc_fpath#*/}
+        echo "> $doc_path"
+        if [ $doc_path == "." ]; then
+            doc_path=
+        else
+            doc_path="$doc_path/"
+        fi
+
+        for lang in "${languages[@]}"; do
+            cat >> $sitemap <<- SITEMAP_ENTRY_START
+    <url>
+        <loc>https://$domain/$lang/$doc_path</loc>
+SITEMAP_ENTRY_START
+
+            for lang2 in "${languages[@]}"; do
+                [[ $lang == $lang2 ]] && continue
+                cat >> $sitemap <<- SITEMAP_ENTRY_ALT
+        <xhtml:link rel="alternate" hreflang="$lang2" href="https://$domain/$lang2/$doc_path"/>
+SITEMAP_ENTRY_ALT
+            done
+
+            cat >> $sitemap <<- SITEMAP_ENTRY_END
+        <changefreq>monthly</changefreq>
+    </url>
+SITEMAP_ENTRY_END
+        done
+    done
+
+    cat >> $sitemap <<- SITEMAP_END
+</urlset>
+SITEMAP_END
+fi
+
+#if [ -z "$phase" ] || [ "$phase" == "pdf" ]; then
+if [ "$phase" == "pdf" ]; then
+    echo -e "\e[7mgenerating pdfs...\e[0m"
+
+    # fresh start
+    rm -rf $tmp_dir
+    mkdir -p $tmp_dir
+
+    # build outputs for each language
+    for lang in "${languages[@]}"; do
+        [[ -n "$target_lang" && "$target_lang" != "$lang" ]] && continue
+
+        lang_target_dir=$out_dir/$lang
+        lang_tmp_dir=$tmp_dir/$lang
+        echo -e "\e[7m> building $lang (PDF)...\e[0m"
+
+        # build documentation (latex)
+        python -m sphinx \
+            -Dlanguage=$lang \
+            -b latex \
+            $doc_dir \
+            $lang_tmp_dir \
+            -Dlocale_dirs=$locale_dir \
+            -E -a -W
+
+        # build documentation (pdf)
+        pushd $lang_tmp_dir >/dev/null
+        ./make.bat
+        cp releng-tool.pdf $lang_target_dir/releng-tool.pdf
+        popd >/dev/null
+    done
+fi
