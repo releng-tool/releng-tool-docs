@@ -30,7 +30,7 @@ jobs:
       with:
         repository: releng-tool/releng-tool-www-docs-develop
         path: releng-tool-www-docs-develop
-        ssh-key: ${{ secrets.WWW_DOCS_AUTOPUBLISH }}
+        ssh-key: ${{ secrets.WWW_DOCS_DEVELOP_AUTOPUBLISH }}
 
     - name: Update translations
       run: |
