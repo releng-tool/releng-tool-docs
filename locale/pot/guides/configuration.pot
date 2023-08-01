@@ -1,0 +1,305 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../content/guides/configuration.md:1
+msgid "Configuration"
+msgstr ""
+
+#: ../../content/guides/configuration.md:3
+msgid "A releng-tool project defines its configuration options inside the a `releng` file at the root of a project (or `releng.releng`/`releng.py` file; see also [alternative extensions](tips/alternative-extensions)). The primary configuration option for a developer to define is `packages`, which is used to hold a list of packages to be processed. For example, a project structure such as follows:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:22
+msgid "Can have a configuration (`releng`) such as:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:32
+msgid "Packages can be loaded implicitly. If other packages depend on each other, a project may only list a subset of packages in a `packages` configuration. For example, if the above had `package-b` dependent on both `package-a` and `package-c`, then only `package-b` would need to be defined in the main configuration file:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:44
+msgid "Common options"
+msgstr ""
+
+#: ../../content/guides/configuration.md:46
+msgid "A series of additional configuration options are available to be defined inside the project's configuration. A list of common configuration options are as follows:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:51
+msgid "`default_internal`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:53
+msgid "A flag to indicate that projects are implicitly loaded as internal projects. By default, packages not explicitly configured as internal or external are assumed to be external packages."
+msgstr ""
+
+#: ../../content/guides/configuration.md:61
+msgid "See also [internal and external packages](intern-extern-pkgs)."
+msgstr ""
+
+#: ../../content/guides/configuration.md:63
+msgid "`extensions`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:65
+msgid "A list of extensions to load before processing a releng-tool project. If an extension cannot be loaded, releng-tool will stop with information on why an extension could not be loaded."
+msgstr ""
+
+#: ../../content/guides/configuration.md:76
+msgid "See also [](extensions/extensions)."
+msgstr ""
+
+#: ../../content/guides/configuration.md:78
+msgid "`external_packages`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:80
+msgid "A list of external package locations. By default, packages for a project will be searched for in root directory's package folder (`<root>/package`). In some build environments, some packages may be required or may be preferred to be located in another location/repository. To allow packages to be loaded from another package container directory, one or more package locations can be provided. For example:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:94
+msgid "`license_header`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:96
+msgid "As the releng-tool build process is finalized, a license document can be generated containing each package's license information. If a developer wishes to add a custom header to the generated document, a header can be defined by project's configuration. For example:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:105
+#: ../../content/guides/configuration.md:245
+#: ../../content/guides/configuration.md:262
+msgid "See also [licenses](licenses)."
+msgstr ""
+
+#: ../../content/guides/configuration.md:107
+msgid "`packages`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:109
+msgid "A list of packages to process. Packages listed will be processed by releng-tool till their completion. Package dependencies not explicitly listed will be automatically loaded and processed as well."
+msgstr ""
+
+#: ../../content/guides/configuration.md:121
+msgid "`prerequisites`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:123
+msgid "A list of host tools to check for before running a releng-tool project. Allows a developer to identify tools to check and fail-fast if missing, instead of waiting for a stage which requires a specific tool and failing later during a building, packaging, etc. phase."
+msgstr ""
+
+#: ../../content/guides/configuration.md:136
+msgid "`sbom_format`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:138
+msgid "Configures the default format to use when generating a software build of materials (SBOM). By default, `text` format SBOMs are generated for a project."
+msgstr ""
+
+#: ../../content/guides/configuration.md:146
+msgid "The following lists the available formats supported:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "Type"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "Value"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "CSV"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`csv`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "HTML"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`html`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "JSON"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`json`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "JSON (SPDX)"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`json-spdx`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "RDP (SPDX)"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`rdp-spdx`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "Text"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`text` (default)"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "XML"
+msgstr ""
+
+#: ../../content/guides/configuration.md:0
+msgid "`xml`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:158
+msgid "Multiple formats can be provided. For example:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:168
+msgid "`sysroot_prefix`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:170
+msgid "Define a custom sysroot prefix to provide to packages during their configuration, build and installation stages. By default, the sysroot prefix is typically set to `/usr`; for Windows, the value is empty."
+msgstr ""
+
+#: ../../content/guides/configuration.md:178
+msgid "See also [](pkg-opt-prefix)."
+msgstr ""
+
+#: ../../content/guides/configuration.md:180
+msgid "`url_mirror`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:182
+msgid "Specifies a mirror base site to be used for URL fetch requests. If this option is set, any URL fetch requests will first be tried on the configured mirror before attempting to acquired from the defined site in a package definition."
+msgstr ""
+
+#: ../../content/guides/configuration.md:191
+msgid "Advanced options"
+msgstr ""
+
+#: ../../content/guides/configuration.md:193
+msgid "A list of more advanced configuration options are as follows:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:195
+msgid "`cache_ext`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:197
+msgid "A transform for cache extension interpreting. This is an advanced configuration and is not recommended for use except for special use cases outlined below."
+msgstr ""
+
+#: ../../content/guides/configuration.md:201
+msgid "When releng-tool fetches assets from remote sites, the site value can used to determine the resulting filename of a cached asset. For example, downloading an asset from `https://example.org/my-file.tgz`, the locally downloaded file will result in a `.tgz` extension. However, not all defined sites will result in an easily interpreted cache extension. While releng-tool will attempt its best to determine an appropriate extension value to use, some use cases may not be able to be handled. To deal with these cases, a developer can define a transform method to help translate a site value into a known cache extension value."
+msgstr ""
+
+#: ../../content/guides/configuration.md:211
+msgid "Consider the following example: a host is used to acquire assets from a content server. The URI to download an asset uses a unique request format `https://static.example.org/fetch/25134`. releng-tool may not be able to find the extension for the fetched asset, but if a developer knows the expected archive types for these calls, a custom transform can be defined. For example:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:227
+msgid "The above transform indicates that all packages using the `static.example.org` site will be `tgz` archives."
+msgstr ""
+
+#: ../../content/guides/configuration.md:230
+msgid "`extra_license_exceptions`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:232
+msgid "A dictionary to define extra license exceptions that are permitted in package definitions. Packages which define license exceptions in a [](pkg-opt-license) option are expected to use [SPDX License Exceptions][spdx-exceptions]. If not, a warning is generated by default. A project can define their own custom exceptions by adding them into a project's `extra_license_exceptions` option to avoid this warning:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:247
+msgid "`extra_licenses`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:249
+msgid "A dictionary to define extra licenses that are permitted in package definitions. Packages which define licenses in a [](pkg-opt-license) option are expected to use a licensed defined in the [SPDX License List][spdx-licenses]. If not, a warning is generated by default. A project can define their own custom license by adding them into a project's `extra_licenses` option to avoid this warning:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:264
+msgid "`override_extract_tools`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:267
+#: ../../content/guides/configuration.md:286
+#: ../../content/guides/configuration.md:311
+msgid "The use of an override option should only be used in special cases (see also [configuration overrides](configuration-overrides))."
+msgstr ""
+
+#: ../../content/guides/configuration.md:271
+msgid "A dictionary to be provided to map an extension type to an external tool to indicate which tool should be used for extraction. For example, when a `.zip` archive is being processed for extraction, releng-tool will internally extract the archive. However, a user may wish to override this tool with their own extraction utility. Consider the following example:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:283
+msgid "`override_revisions`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:290
+msgid "Allows a dictionary to be provided to map a package name to a new revision value. Consider the following example: a project defines `module-a` and `module-b` packages with package `module-b` depending on package `module-a`. A developer may be attempting to tweak package `module-b` on the fly to test a new capabilities against the current stable version of `module-a`. However, the developer does not want to explicitly change the revision inside package `module-b`'s definition. To avoid this, an override can be used instead:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:305
+msgid "The above example shows that package `module-b` will fetch using a test branch instead of what is defined in the actual package definition."
+msgstr ""
+
+#: ../../content/guides/configuration.md:308
+msgid "`override_sites`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:315
+msgid "A dictionary to be provided to map a package name to a new site value. There may be times where a host may not have access to a specific package site. To have a host to use a mirror location without having to adjust the package definition, the site override option can be used. For example, consider a package pulls from site `git@example.com:myproject.git`. However, the host `example.com` cannot be access from the host machine. If a mirror location has been setup at `git@example.org:myproject.git`, the following override can be used:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:331
+msgid "`quirks`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:333
+msgid "A list of configuration quirks to apply to deal with corner cases which can prevent releng-tool operating on a host system."
+msgstr ""
+
+#: ../../content/guides/configuration.md:342
+msgid "For a list of available quirks, see [quirks](quirks/quirks)."
+msgstr ""
+
+#: ../../content/guides/configuration.md:345
+msgid "`urlopen_context`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:347
+msgid "Allows a project to specify a custom SSL context [^urlopen] to apply for URL fetch requests. This can be useful for environments which may experience `CERTIFICATE_VERIFY_FAILED` errors when attempting to fetch files. A custom SSL context can be created and tailored for a build environment. For example:"
+msgstr ""
+
+#: ../../content/guides/configuration.md:360
+msgid "<https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen>"
+msgstr ""

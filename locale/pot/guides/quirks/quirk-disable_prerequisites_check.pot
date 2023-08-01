@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../content/guides/quirks/quirk-disable_prerequisites_check.md:1
+msgid "Quirk `releng.disable_prerequisites_check`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_prerequisites_check.md:3
+msgid "A releng-tool project may require various dependencies. For example, if a package define a Git-based site for sources, the `git` client will be required to clone these sources into a build directory. To help inform users of issues in the early stage of a build, releng-tool will perform a prerequisites check for certain dependencies. If a prerequisite cannot be found, the build process stops immediately."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_prerequisites_check.md:10
+msgid "In select scenarios, the prerequisite check may wish to be skipped. For example, if the running environment is not expected to perform a specific action in a project that requires an application. To avoid triggering a run error at start, users may set the `releng.disable_prerequisites_check` quirk to skip any prerequisite check:"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_prerequisites_check.md:20
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_prerequisites_check.md:22
+msgid "[](quirks)"
+msgstr ""

@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../content/guides/quirks/quirk-cmake-disable_parallel_option.md:1
+msgid "Quirk `releng.cmake.disable_parallel_option`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_parallel_option.md:4
+msgid "This quirk is no longer applicable as of v1.0. CMake parallelization is now driven internally using the `CMAKE_BUILD_PARALLEL_LEVEL` environment variable."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_parallel_option.md:9
+msgid "When releng-tool invokes a build stage for a CMake project, the `--parallel` argument is used to trigger multiple jobs for a build. If running on a host system running a version/variant of CMake which do not explicitly provide the parallelization option, the build may fail. Users to enable the `releng.cmake.disable_parallel_option` quirk to prevent this option from being used:"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_parallel_option.md:20
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_parallel_option.md:22
+msgid "[](quirks)"
+msgstr ""

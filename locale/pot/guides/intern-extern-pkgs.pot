@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../content/guides/intern-extern-pkgs.md:1
+msgid "Internal/external packages"
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:3
+msgid "Packages are either internal packages or external packages. All packages are considered external packages by default unless explicitly configured as internal through either the package option [](pkg-opt-internal) or using the project configuration [`default_internal`](conf-default-internal) (see also [](pkg-opt-external)). Both package types are treated the same except for the following:"
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:10
+msgid "An internal package will not generate output warnings if the package is missing [hash information](packages/hash-file) or an [ASCII-armor](packages/ascii-armor)."
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:13
+msgid "An internal package will not generate output warnings if the package is missing [licenses](licenses)."
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:15
+msgid "When configured for [local-sources mode](local-sources-mode), only internal packages which have local sources configured will have their fetch, extract and patch stages skipped."
+msgstr ""
