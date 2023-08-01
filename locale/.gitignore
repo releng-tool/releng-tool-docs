@@ -1,0 +1,5 @@
+# output
+.doctrees/
+
+# gettext generated mo files
+*.mo

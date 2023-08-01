@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Copyright releng-tool
+set -e
+
+base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+
+# generate translation files
+echo -e "\e[7mgenerate translation files (pot)...\e[0m"
+python -m sphinx -b gettext "$base/../content" "$base/pot"
+echo ""
+
+for ref in $(ls -d $base/*/LC_MESSAGES 2>/dev/null); do
+    lang_dir=${ref%/*}
+    lang_dir=${lang_dir%%/}
+    lang=${lang_dir##*/}
+
+    # update language files
+    echo -e "\e[7mupdating language ($lang)...\e[0m"
+    python -m sphinx_intl update \
+        --pot-dir "$base/pot" \
+        --language "$lang" \
+        --no-obsolete
+done
