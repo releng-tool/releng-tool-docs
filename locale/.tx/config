@@ -1,0 +1,543 @@
+[main]
+host = https://app.transifex.com
+
+[o:releng-tool:p:releng-tool-docs:r:annex_a]
+file_filter  = <lang>/LC_MESSAGES/annex-a.po
+source_file  = pot/annex-a.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:contributors]
+file_filter  = <lang>/LC_MESSAGES/contributors.po
+source_file  = pot/contributors.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:examples]
+file_filter  = <lang>/LC_MESSAGES/examples.po
+source_file  = pot/examples.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_fetching]
+file_filter  = <lang>/LC_MESSAGES/getting-started/fetching.po
+source_file  = pot/getting-started/fetching.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_getting_started]
+file_filter  = <lang>/LC_MESSAGES/getting-started/getting-started.po
+source_file  = pot/getting-started/getting-started.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_prelude]
+file_filter  = <lang>/LC_MESSAGES/getting-started/prelude.po
+source_file  = pot/getting-started/prelude.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_rebuilds]
+file_filter  = <lang>/LC_MESSAGES/getting-started/rebuilds.po
+source_file  = pot/getting-started/rebuilds.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_tutorial_basic]
+file_filter  = <lang>/LC_MESSAGES/getting-started/tutorial-basic.po
+source_file  = pot/getting-started/tutorial-basic.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_tutorial_sdl]
+file_filter  = <lang>/LC_MESSAGES/getting-started/tutorial-sdl.po
+source_file  = pot/getting-started/tutorial-sdl.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_tutorial_toolchain]
+file_filter  = <lang>/LC_MESSAGES/getting-started/tutorial-toolchain.po
+source_file  = pot/getting-started/tutorial-toolchain.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:getting_started_tutorials]
+file_filter  = <lang>/LC_MESSAGES/getting-started/tutorials.po
+source_file  = pot/getting-started/tutorials.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_advanced_guides]
+file_filter  = <lang>/LC_MESSAGES/guides/advanced-guides.po
+source_file  = pot/guides/advanced-guides.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_arguments]
+file_filter  = <lang>/LC_MESSAGES/guides/arguments.po
+source_file  = pot/guides/arguments.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_configuration]
+file_filter  = <lang>/LC_MESSAGES/guides/configuration.po
+source_file  = pot/guides/configuration.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_configuration_overrides]
+file_filter  = <lang>/LC_MESSAGES/guides/configuration-overrides.po
+source_file  = pot/guides/configuration-overrides.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_development_mode]
+file_filter  = <lang>/LC_MESSAGES/guides/development-mode.po
+source_file  = pot/guides/development-mode.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_environment]
+file_filter  = <lang>/LC_MESSAGES/guides/environment.po
+source_file  = pot/guides/environment.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_extensions__tutorial_footer]
+file_filter  = <lang>/LC_MESSAGES/guides/extensions/_tutorial-footer.po
+source_file  = pot/guides/extensions/_tutorial-footer.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_extensions__tutorial_prelude]
+file_filter  = <lang>/LC_MESSAGES/guides/extensions/_tutorial-prelude.po
+source_file  = pot/guides/extensions/_tutorial-prelude.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_extensions_extensions]
+file_filter  = <lang>/LC_MESSAGES/guides/extensions/extensions.po
+source_file  = pot/guides/extensions/extensions.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_extensions_making_a_custom_package_type]
+file_filter  = <lang>/LC_MESSAGES/guides/extensions/making-a-custom-package-type.po
+source_file  = pot/guides/extensions/making-a-custom-package-type.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_extensions_making_a_custom_post_build_action]
+file_filter  = <lang>/LC_MESSAGES/guides/extensions/making-a-custom-post-build-action.po
+source_file  = pot/guides/extensions/making-a-custom-post-build-action.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_guides]
+file_filter  = <lang>/LC_MESSAGES/guides/guides.po
+source_file  = pot/guides/guides.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_intern_extern_pkgs]
+file_filter  = <lang>/LC_MESSAGES/guides/intern-extern-pkgs.po
+source_file  = pot/guides/intern-extern-pkgs.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_licenses]
+file_filter  = <lang>/LC_MESSAGES/guides/licenses.po
+source_file  = pot/guides/licenses.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_local_sources_mode]
+file_filter  = <lang>/LC_MESSAGES/guides/local-sources-mode.po
+source_file  = pot/guides/local-sources-mode.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_build_defs]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-build-defs.po
+source_file  = pot/guides/packages/_pkg-build-defs.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_build_defs_example_default]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-build-defs-example-default.po
+source_file  = pot/guides/packages/_pkg-build-defs-example-default.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_build_defs_example_dentry]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-build-defs-example-dentry.po
+source_file  = pot/guides/packages/_pkg-build-defs-example-dentry.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_build_env]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-build-env.po
+source_file  = pot/guides/packages/_pkg-build-env.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_build_opts]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-build-opts.po
+source_file  = pot/guides/packages/_pkg-build-opts.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_conf_defs]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-conf-defs.po
+source_file  = pot/guides/packages/_pkg-conf-defs.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_conf_defs_example_default]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-conf-defs-example-default.po
+source_file  = pot/guides/packages/_pkg-conf-defs-example-default.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_conf_defs_example_dentry]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-conf-defs-example-dentry.po
+source_file  = pot/guides/packages/_pkg-conf-defs-example-dentry.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_conf_env]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-conf-env.po
+source_file  = pot/guides/packages/_pkg-conf-env.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_conf_opts]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-conf-opts.po
+source_file  = pot/guides/packages/_pkg-conf-opts.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_env]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-env.po
+source_file  = pot/guides/packages/_pkg-env.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_install_defs]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-install-defs.po
+source_file  = pot/guides/packages/_pkg-install-defs.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_install_defs_example_default]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-install-defs-example-default.po
+source_file  = pot/guides/packages/_pkg-install-defs-example-default.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_install_defs_example_dentry]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-install-defs-example-dentry.po
+source_file  = pot/guides/packages/_pkg-install-defs-example-dentry.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_install_env]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-install-env.po
+source_file  = pot/guides/packages/_pkg-install-env.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages__pkg_install_opts]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/_pkg-install-opts.po
+source_file  = pot/guides/packages/_pkg-install-opts.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_advanced_pkg_options]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/advanced-pkg-options.po
+source_file  = pot/guides/packages/advanced-pkg-options.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_ascii_armor]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/ascii-armor.po
+source_file  = pot/guides/packages/ascii-armor.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_bootstrapping]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/bootstrapping.po
+source_file  = pot/guides/packages/bootstrapping.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_common_pkg_options]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/common-pkg-options.po
+source_file  = pot/guides/packages/common-pkg-options.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_hash_file]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/hash-file.po
+source_file  = pot/guides/packages/hash-file.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_packages]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/packages.po
+source_file  = pot/guides/packages/packages.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_autotools]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-autotools.po
+source_file  = pot/guides/packages/pkg-type-autotools.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_cmake]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-cmake.po
+source_file  = pot/guides/packages/pkg-type-cmake.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_make]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-make.po
+source_file  = pot/guides/packages/pkg-type-make.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_meson]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-meson.po
+source_file  = pot/guides/packages/pkg-type-meson.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_python]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-python.po
+source_file  = pot/guides/packages/pkg-type-python.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_scons]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-scons.po
+source_file  = pot/guides/packages/pkg-type-scons.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_script]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-script.po
+source_file  = pot/guides/packages/pkg-type-script.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_post_processing]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/post-processing.po
+source_file  = pot/guides/packages/post-processing.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_site_definitions]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/site-definitions.po
+source_file  = pot/guides/packages/site-definitions.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_patching]
+file_filter  = <lang>/LC_MESSAGES/guides/patching.po
+source_file  = pot/guides/patching.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_post_processing]
+file_filter  = <lang>/LC_MESSAGES/guides/post-processing.po
+source_file  = pot/guides/post-processing.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_bzr_certifi]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-bzr-certifi.po
+source_file  = pot/guides/quirks/quirk-bzr-certifi.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_cmake_disable_direct_includes]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-cmake-disable_direct_includes.po
+source_file  = pot/guides/quirks/quirk-cmake-disable_direct_includes.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_cmake_disable_parallel_option]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-cmake-disable_parallel_option.po
+source_file  = pot/guides/quirks/quirk-cmake-disable_parallel_option.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_disable_prerequisites_check]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-disable_prerequisites_check.po
+source_file  = pot/guides/quirks/quirk-disable_prerequisites_check.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_disable_remote_configs]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-disable_remote_configs.po
+source_file  = pot/guides/quirks/quirk-disable_remote_configs.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_disable_remote_scripts]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-disable_remote_scripts.po
+source_file  = pot/guides/quirks/quirk-disable_remote_scripts.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_disable_spdx_check]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-disable_spdx_check.po
+source_file  = pot/guides/quirks/quirk-disable_spdx_check.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_git_no_depth]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-git-no_depth.po
+source_file  = pot/guides/quirks/quirk-git-no_depth.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_git_no_quick_fetch]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-git-no_quick_fetch.po
+source_file  = pot/guides/quirks/quirk-git-no_quick_fetch.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_stats_no_pdf]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-stats-no_pdf.po
+source_file  = pot/guides/quirks/quirk-stats-no_pdf.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirks]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirks.po
+source_file  = pot/guides/quirks/quirks.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_script_helpers]
+file_filter  = <lang>/LC_MESSAGES/guides/script-helpers.po
+source_file  = pot/guides/script-helpers.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_alternative_extensions]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/alternative-extensions.po
+source_file  = pot/guides/tips/alternative-extensions.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_license_generation]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/license-generation.po
+source_file  = pot/guides/tips/license-generation.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_offline_builds]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/offline-builds.po
+source_file  = pot/guides/tips/offline-builds.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_parallel_builds]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/parallel-builds.po
+source_file  = pot/guides/tips/parallel-builds.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_privileged_builds]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/privileged-builds.po
+source_file  = pot/guides/tips/privileged-builds.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_tips]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/tips.po
+source_file  = pot/guides/tips/tips.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_tips_vcs_ignore]
+file_filter  = <lang>/LC_MESSAGES/guides/tips/vcs-ignore.po
+source_file  = pot/guides/tips/vcs-ignore.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:help]
+file_filter  = <lang>/LC_MESSAGES/help.po
+source_file  = pot/help.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:index]
+file_filter  = <lang>/LC_MESSAGES/index.po
+source_file  = pot/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:install]
+file_filter  = <lang>/LC_MESSAGES/install.po
+source_file  = pot/install.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2021_12_31_00_10_00]
+file_filter  = <lang>/LC_MESSAGES/news/2021-12-31_00.10.00.po
+source_file  = pot/news/2021-12-31_00.10.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2022_02_26_00_11_00]
+file_filter  = <lang>/LC_MESSAGES/news/2022-02-26_00.11.00.po
+source_file  = pot/news/2022-02-26_00.11.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2022_05_02_00_12_00]
+file_filter  = <lang>/LC_MESSAGES/news/2022-05-02_00.12.00.po
+source_file  = pot/news/2022-05-02_00.12.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2022_08_10_00_13_00]
+file_filter  = <lang>/LC_MESSAGES/news/2022-08-10_00.13.00.po
+source_file  = pot/news/2022-08-10_00.13.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2023_02_05_00_14_00]
+file_filter  = <lang>/LC_MESSAGES/news/2023-02-05_00.14.00.po
+source_file  = pot/news/2023-02-05_00.14.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2023_02_12_00_15_00]
+file_filter  = <lang>/LC_MESSAGES/news/2023-02-12_00.15.00.po
+source_file  = pot/news/2023-02-12_00.15.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2023_05_07_00_16_00]
+file_filter  = <lang>/LC_MESSAGES/news/2023-05-07_00.16.00.po
+source_file  = pot/news/2023-05-07_00.16.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:release_notes]
+file_filter  = <lang>/LC_MESSAGES/release-notes.po
+source_file  = pot/release-notes.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:requirements]
+file_filter  = <lang>/LC_MESSAGES/requirements.po
+source_file  = pot/requirements.pot
+type         = PO
+minimum_perc = 0
+

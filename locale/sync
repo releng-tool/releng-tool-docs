@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# Copyright releng-tool
+set -e
+
+################################################################################
+
+organization="releng-tool"
+project="releng-tool-docs"
+
+################################################################################
+
+help=0
+while [ "$#" -gt 0 ]; do
+    case $1 in
+        --help)
+        help=1
+        break 2
+        ;;
+        --phase)
+        phase="$2"
+        shift
+        ;;
+    esac
+    shift
+done
+
+if [ $help -eq 1 ]; then
+    cat << HELP_EOM
+sync <options>
+
+ -h, --help                show this help
+ --phase <phase>           specific phase to run
+HELP_EOM
+    exit 0
+fi
+
+################################################################################
+
+base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+
+if [ -z "$phase" ] || [ "$phase" == "register" ]; then
+    echo -e "\e[7mprocessing files...\e[0m"
+    for pot in $(find $base/pot/ -name '*.pot' -printf '%P\n'); do
+        echo "> $pot"
+
+        slug=${pot::-4} # filename[.pot]
+        slug="${slug//[^[:alnum:]]/_}"
+
+        ffilter="<lang>/LC_MESSAGES/$pot"
+        ffilter=${ffilter::-1} # filename.po[t]
+
+        tx add \
+            --organization "$organization" \
+            --project "$project" \
+            --resource "$slug" \
+            --file-filter "$ffilter" \
+            --type PO \
+            "pot/$pot" >/dev/null
+    done
+fi
+
+if [ -z "$phase" ] || [ "$phase" == "tx-push" ]; then
+    echo -e "\e[7mpushing updates...\e[0m"
+    tx push
+fi
+
+if [ -z "$phase" ] || [ "$phase" == "tx-pull" ]; then
+    echo -e "\e[7mpulling updates...\e[0m"
+    tx pull
+fi
