@@ -18,6 +18,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/jdknight/docs-support-container:latest
 
     steps:
     - name: Checkout releng-tool
@@ -31,32 +33,6 @@ jobs:
       with:
         repository: releng-tool/releng-tool-docs
         path: releng-tool-docs
-
-    - name: Cache pip
-      uses: actions/cache@v3
-      id: cache-pip
-      with:
-        path: ~/.cache/pip
-        key: docs-pip
-
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install \
-            gettext \
-            latexmk \
-            texlive-fonts-extra \
-            texlive-latex-extra \
-            texlive-latex-recommended \
-            texlive-xetex \
-            -y
-        pip install --upgrade \
-            furo \
-            myst-parser \
-            pygments \
-            sphinx \
-            sphinx-inline-tabs \
-            sphinx-intl
 
     - name: HTML
       run: ./build html
