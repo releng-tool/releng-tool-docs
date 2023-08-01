@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:1
+msgid "Quirk `releng.disable_spdx_check`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:3
+msgid ""
+"When package definitions are being processed, any license configurations "
+"will be checked to see if they conform with [SPDX license "
+"identifiers][spdx]. If not, a warning will be generated."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:7
+msgid ""
+"If a user wishes to ignore all SPDX license warnings, the "
+"`releng.disable_spdx_check` quirk can be used:"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:14
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:16
+msgid "[](quirks)"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:17
+msgid "[SPDX license identifiers][spdx]"
+msgstr ""

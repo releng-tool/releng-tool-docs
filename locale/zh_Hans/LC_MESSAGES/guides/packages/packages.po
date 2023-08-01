@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans\n"
+"Language-Team: zh_Hans <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../content/guides/packages/packages.md:64
+msgid "Common options"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:64
+msgid "Advanced options"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:64
+msgid "Bootstrapping"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:64
+msgid "Post-processing"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:1
+msgid "Packages"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:3
+msgid ""
+"Packages for a project are defined inside the `package/` directory. "
+"Packages can consist of libraries, programs or even basic assets."
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:21
+msgid "Overview"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:23
+msgid ""
+"There is no explicit limit on the total number of packages a project can "
+"have. Package names are recommended to be lower-case with dash-separated "
+"(`-`) separators (if needed). For example, `package-a` is recommended "
+"over `PackageA` or `package_a`; however, the choice is up to the "
+"developer making the releng-tool project."
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:29
+msgid ""
+"When making a package, a container folder for the package as well as a "
+"package definition file needs to be made. For example, for a package "
+"`package-a`, the file `package/package-a/package-a` should exist."
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:41
+msgid ""
+"Package definition files are Python-based. Inside the definition file, a "
+"series of configuration options can be set to tell releng-tool how to "
+"work with the defined package. Each option is prefixed with a variable-"
+"safe variant of the package name. The prefix value will be an uppercase "
+"string based on the package name with special characters converted to "
+"underscores. For example:"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:48
+msgid "`package-a` will have a prefix `PACKAGE_A_`"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:49
+msgid "`libfoo` will have a prefix `LIBFOO_`"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:50
+msgid "`MyAwesomeModule` will have a prefix `MYAWESOMEMODULE_`"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:52
+msgid ""
+"For a package to take advantage of a configuration option, the package "
+"definition will add a variable entry with the package's prefix followed "
+"by the supported option name. Considering the same package with the name "
+"`package-a` which has a prefix `PACKAGE_A_`; to use the [](pkg-opt-"
+"version) configuration option, the option `PACKAGE_A_VERSION` should be "
+"defined:"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:62
+msgid "Topics"
+msgstr ""
+

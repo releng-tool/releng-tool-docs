@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ../../content/guides/packages/_pkg-install-opts.md:1
+msgid "`LIBFOO_INSTALL_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts.md:3
+msgid ""
+"Provides a means to pass command line options into the installation process."
+" This option can be defined as a dictionary of string pairs or a list with "
+"strings -- either way defined will generate argument values to include in "
+"the installation event. This field is optional."
+msgstr ""

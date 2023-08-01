@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/guides/post-processing.md:1
+msgid "Post-processing"
+msgstr ""
+
+#: ../../content/guides/post-processing.md:4
+msgid ""
+"A post-processing script (if used) will be invoked each time `releng-tool` "
+"reaches the final stage of a build."
+msgstr ""
+
+#: ../../content/guides/post-processing.md:8
+msgid "Prospect"
+msgstr ""
+
+#: ../../content/guides/post-processing.md:9
+msgid ""
+"At this time, releng-tool support only post-build scripts. It is planned to "
+"introduced support for some image-related helpers (i.e. package helpers). "
+"This may introduce a reserved `releng-post-image` script in future releases."
+msgstr ""
+
+#: ../../content/guides/post-processing.md:14
+msgid ""
+"After each package has been processed, a project has the ability to perform "
+"post-processing. Post-processing allows a developer to cleanup the target "
+"directory, build an archive/package from generated results and more. If a "
+"project contains a `releng-post-build` inside the root directory, the post-"
+"processing script will be invoked in the final stage of a build."
+msgstr ""
+
+#: ../../content/guides/post-processing.md:20
+msgid ""
+"A developer may start out with the following post-processing script "
+"`<root>/releng-post-build`:"
+msgstr ""
+
+#: ../../content/guides/post-processing.md:31
+msgid "With the contents:"
+msgstr ""
+
+#: ../../content/guides/post-processing.md:37
+msgid ""
+"The above script will output the newly inserted print message at the end of "
+"a build process:"
+msgstr ""
+
+#: ../../content/guides/post-processing.md:48
+msgid ""
+"A developer can take advantage of [environment variables](environment) and "
+"[script helpers](script-helpers) for additional support."
+msgstr ""
+
+#: ../../content/guides/post-processing.md:51
+msgid ""
+"It is important to note that post-processing scripts will be invoked each "
+"time a `releng-tool` invoke reaches the final stage of a build. A developer "
+"should attempt to implement the post-processing scripts in a way that it can"
+" be invoked multiple times. For example, if a developer decides to move a "
+"file out of the target directory into an interim directory when building an "
+"archive, it is most likely that a subsequent request to build may fail since"
+" the file can no longer be found inside the target directory."
+msgstr ""

@@ -1,0 +1,720 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/guides/arguments.md:1
+msgid "Arguments"
+msgstr ""
+
+#: ../../content/guides/arguments.md:3
+msgid ""
+"The command line can be used to specify a single action to perform or "
+"provide various options to configure the releng-tool process. Options can be"
+" provided before or after an action (if an explicit action is provided). By "
+"default, if a user does not specify an action, it is assumed that all steps "
+"are to be performed."
+msgstr ""
+
+#: ../../content/guides/arguments.md:13
+msgid "Global actions"
+msgstr ""
+
+#: ../../content/guides/arguments.md:15
+msgid "The following outlines available global actions:"
+msgstr ""
+
+#: ../../content/guides/arguments.md:18
+msgid "`clean`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:20
+msgid ""
+"Clean (removes) a series of folders holding content such as extracted "
+"archives, built libraries and more."
+msgstr ""
+
+#: ../../content/guides/arguments.md:28
+msgid ""
+"Images and downloaded assets/cache are not removed (see [`mrproper`](action-"
+"mrproper) for a more through all cleaning operation). This clean operation "
+"will remove files based off the configured output directory. If an output "
+"directory is provided (i.e. `--out-dir <dir>`) during a clean event, select "
+"folders inside this directory will be removed instead of the output "
+"directory (if any) found in the root directory."
+msgstr ""
+
+#: ../../content/guides/arguments.md:36
+msgid "`distclean`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:38
+msgid "Perform a more extreme pristine clean of the releng-tool project."
+msgstr ""
+
+#: ../../content/guides/arguments.md:44
+msgid ""
+"This request removes the `cache/`, `dl/` and `output/` directories found in "
+"the root directory or overridden by respective arguments, as well as any "
+"mode file flags which may be set. See also the [`clean`](action-clean) or "
+"[`mrproper`](action-mrproper) actions."
+msgstr ""
+
+#: ../../content/guides/arguments.md:49
+msgid "`extract`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:51
+msgid "All packages will be processed up to the extraction phase (inclusive)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:58
+msgid "`fetch`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:60
+msgid "All packages will be processed up to the fetch phase (inclusive)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:67
+msgid ""
+"When a `fetch` is explicitly requested for DVCS sources (e.g. Git), the "
+"local cache kept for the repository will be updated against the configured "
+"remote. This can be helpful for packages which use a branch for their target"
+" revision, or wishing to use a tag which has been moved."
+msgstr ""
+
+#: ../../content/guides/arguments.md:72
+msgid ""
+"Users may also take advantage of explicit re-fetching of downloaded "
+"artifacts when using this action in combination with the [](arg-force) "
+"argument."
+msgstr ""
+
+#: ../../content/guides/arguments.md:77
+msgid "See also [offline builds](tips/offline-builds)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:79
+msgid "`init`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:81
+msgid "Initialize an empty root directory with a sample project."
+msgstr ""
+
+#: ../../content/guides/arguments.md:87
+msgid "`licenses`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:89
+msgid "A request to generate all license information for the project."
+msgstr ""
+
+#: ../../content/guides/arguments.md:95
+msgid ""
+"Note that license information requires acquiring license documents from "
+"packages. Therefore, packages will be fetched/extracted if not already done."
+msgstr ""
+
+#: ../../content/guides/arguments.md:99
+msgid "`mrproper`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:101
+msgid "Perform a pristine clean of the releng-tool project."
+msgstr ""
+
+#: ../../content/guides/arguments.md:107
+msgid ""
+"This request removes the `output/` directory found in the root directory or "
+"overridden by the `--out-dir` argument, as well as any mode file flags which"
+" may be set. The `cache/` and `dl/` directories will remain untouched. See "
+"also the [`clean`](action-clean) or [`distclean`](action-distclean) actions."
+msgstr ""
+
+#: ../../content/guides/arguments.md:113
+msgid "`patch`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:115
+msgid "All packages will be processed up to the patch phase (inclusive)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:122
+msgid "`sbom`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:124
+msgid ""
+"A request to generate a software build of materials (SBOM) for the project."
+msgstr ""
+
+#: ../../content/guides/arguments.md:130
+msgid ""
+"By default, a releng-tool run will generate an SBOM file at the end of a "
+"run. This action can be used to generate an SBOM without requiring a build."
+msgstr ""
+
+#: ../../content/guides/arguments.md:133
+msgid "Package actions"
+msgstr ""
+
+#: ../../content/guides/arguments.md:135
+msgid "The following outlines available package-specific actions:"
+msgstr ""
+
+#: ../../content/guides/arguments.md:137
+msgid "`<pkg>-build`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:139
+msgid "Performs the build stage for the package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:145
+msgid ""
+"On success, the specified package will have completed its build. If a "
+"package has any package dependencies, these dependencies will be processed "
+"before the specified package. If the provided package name does not exist, a"
+" notification will be generated."
+msgstr ""
+
+#: ../../content/guides/arguments.md:151
+msgid "`<pkg>-clean`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:153
+msgid "Cleans the build directory for package (if it exists)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:159
+msgid "See also the [`<pkg>-distclean`](action-pkg-distclean) action."
+msgstr ""
+
+#: ../../content/guides/arguments.md:161
+msgid "`<pkg>-configure`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:163
+msgid "Performs the configure stage for the package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:169
+msgid ""
+"On success, the specified package will have completed its configuration "
+"stage. If a package has any package dependencies, these dependencies will be"
+" processed before the specified package. If the provided package name does "
+"not exist, a notification will be generated."
+msgstr ""
+
+#: ../../content/guides/arguments.md:175
+msgid "`<pkg>-distclean`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:177
+msgid "Perform a pristine clean of a releng-tool package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:183
+msgid ""
+"This request not only removes the build directory but also any cached file "
+"or directory associated with the package. See also the "
+"[`<pkg>-clean`](action-pkg-clean) action."
+msgstr ""
+
+#: ../../content/guides/arguments.md:187
+msgid "`<pkg>-exec \"<cmd>\"`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:189
+msgid ""
+"Invokes a provided command in the package's build output directory. This "
+"package action can be useful for developers attempting to develop/debug a "
+"specific package, allowing an easy way to issue commands in a package's "
+"directory without having to manually venture to a package's output "
+"directory. Packages will need to be processed to at least the patch stage "
+"before a provided command is issued."
+msgstr ""
+
+#: ../../content/guides/arguments.md:196
+msgid "An example is as follows:"
+msgstr ""
+
+#: ../../content/guides/arguments.md:202
+msgid ""
+"Package environment variables will be available for the invoked command."
+msgstr ""
+
+#: ../../content/guides/arguments.md:204
+msgid "`<pkg>-extract`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:206
+msgid "Performs the extraction stage for the package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:212
+msgid ""
+"On success, the specified package will have completed its extraction stage. "
+"If the provided package name does not exist, a notification will be "
+"generated."
+msgstr ""
+
+#: ../../content/guides/arguments.md:217
+msgid "`<pkg>-fetch`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:219
+msgid "Performs the fetch stage for the package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:225
+msgid ""
+"On success, the specified package stage will have completed its fetch stage."
+" If the provided package name does not exist, a notification will be "
+"generated."
+msgstr ""
+
+#: ../../content/guides/arguments.md:229
+msgid "`<pkg>-install`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:231
+msgid "Performs the installation stage for the package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:237
+msgid ""
+"On success, the specified package will have completed its installation "
+"stage. If a package has any package dependencies, these dependencies will be"
+" processed before the specified package. If the provided package name does "
+"not exist, a notification will be generated."
+msgstr ""
+
+#: ../../content/guides/arguments.md:242
+msgid "`<pkg>-license`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:244
+msgid ""
+"A request to generate the license information for a specific package in a "
+"project."
+msgstr ""
+
+#: ../../content/guides/arguments.md:251
+msgid ""
+"Note that license information requires acquiring license documents from the "
+"package itself. Therefore, the package will be fetched/extracted if not "
+"already done."
+msgstr ""
+
+#: ../../content/guides/arguments.md:255
+msgid "`<pkg>-patch`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:257
+msgid "Performs the patch stage for the package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:263
+msgid ""
+"On success, the specified package will have completed its patch stage. If "
+"the provided package name does not exist, a notification will be generated."
+msgstr ""
+
+#: ../../content/guides/arguments.md:266
+msgid "`<pkg>-rebuild`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:268 ../../content/guides/arguments.md:289
+msgid "Force a rebuild of a specific package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:274
+msgid ""
+"Once a package has been built, the package will not attempt to be built "
+"again. Invoking a rebuild request will tell releng-tool to re-invoke the "
+"build step again. This can be useful during times of development where a "
+"developer attempts to change a package definition or sources between build "
+"attempts. After completing a rebuild, releng-tool will perform the remaining"
+" stages of the package (i.e. the installation phase). Users wishing to "
+"perform only the rebuild stage are recommended to use `<pkg>-rebuild-only` "
+"instead."
+msgstr ""
+
+#: ../../content/guides/arguments.md:283 ../../content/guides/arguments.md:303
+#: ../../content/guides/arguments.md:325 ../../content/guides/arguments.md:346
+#: ../../content/guides/arguments.md:364
+msgid ""
+"If using this action, ensure [understanding rebuilds](/getting-"
+"started/rebuilds) has been read to understand this action's effect."
+msgstr ""
+
+#: ../../content/guides/arguments.md:287
+msgid "`<pkg>-rebuild-only`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:295
+msgid ""
+"Once a package has been built, the package will not attempt to be built "
+"again. Invoking a rebuild request will tell releng-tool to re-invoke the "
+"build step again. This can be useful during times of development where a "
+"developer attempts to change a package definition or sources between build "
+"attempts. After completing a rebuild, releng-tool will stop and perform no "
+"other changes. Users wishing to perform a rebuild to the installation phase "
+"are recommended to use `<pkg>-rebuild` instead."
+msgstr ""
+
+#: ../../content/guides/arguments.md:307
+msgid "`<pkg>-reconfigure`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:309 ../../content/guides/arguments.md:331
+msgid "Force a re-configuration of a specific package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:315
+msgid ""
+"Once a package has been configured, the package will not attempt to "
+"configure it again. Invoking a re-configuration request will tell releng-"
+"tool to re-invoke the configuration step again. This can be useful during "
+"times of development where a developer attempts to change a package "
+"definition or sources between configuration attempts. After completing a re-"
+"configuration, releng-tool will perform the remaining stages of the package "
+"(i.e. all the way to the installation phase). Users wishing to perform only "
+"the re-configuration stage are recommended to use `<pkg>-reconfigure-only` "
+"instead."
+msgstr ""
+
+#: ../../content/guides/arguments.md:329
+msgid "`<pkg>-reconfigure-only`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:337
+msgid ""
+"Once a package has been configured, the package will not attempt to "
+"configure it again. Invoking a re-configuration request will tell releng-"
+"tool to re-invoke the configuration step again. This can be useful during "
+"times of development where a developer attempts to change a package "
+"definition or sources between configuration attempts. After completing a re-"
+"configuration, releng-tool will stop and perform no other changes. Users "
+"wishing to perform a re-configuration to the installation phase are "
+"recommended to use `<pkg>-reconfigure` instead."
+msgstr ""
+
+#: ../../content/guides/arguments.md:350
+msgid "`<pkg>-reinstall`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:352
+msgid "Force a re-installation of a specific package."
+msgstr ""
+
+#: ../../content/guides/arguments.md:358
+msgid ""
+"Once a package has been installed, the package will not attempt to install "
+"it again. Invoking a re-installation request will tell releng-tool to re-"
+"invoke the installation step again. This can be useful during times of "
+"development where a developer attempts to change a package definition or "
+"sources between installation attempts."
+msgstr ""
+
+#: ../../content/guides/arguments.md:368
+msgid "Option arguments"
+msgstr ""
+
+#: ../../content/guides/arguments.md:370
+msgid "The following outlines available options:"
+msgstr ""
+
+#: ../../content/guides/arguments.md:373
+msgid "`--assets-dir <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:375
+msgid ""
+"Directory to hold cache and download folders instead of using a configured "
+"root directory."
+msgstr ""
+
+#: ../../content/guides/arguments.md:379
+msgid ""
+"Configuring an asset directory override is only helpful when attempting to "
+"configure a container for all assets. If a user also specifies `--cache-dir`"
+" or `--dl-dir` overrides, this argument has no effect."
+msgstr ""
+
+#: ../../content/guides/arguments.md:384
+msgid "See also [](env-releng-assets-dir)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:387
+msgid "`--cache-dir <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:389
+msgid ""
+"Directory for distributed version control cache information (defaults to "
+"`<root>/cache`)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:392
+msgid "See also [](env-releng-cache-dir)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:394
+msgid "`--config <file>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:396
+msgid "Configuration file to load (defaults to `<root>/releng`)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:398
+msgid "`--debug`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:400
+msgid "Show debug-related messages."
+msgstr ""
+
+#: ../../content/guides/arguments.md:402
+msgid "`-D`, `--development [<mode>]`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:404
+msgid "Enables [development mode](development-mode)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:407
+msgid "`--dl-dir <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:409
+msgid "Directory for download archives (defaults to `<root>/dl`)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:411
+msgid "See also [](env-releng-dl-dir)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:414
+msgid "`-F`, `--force`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:416
+msgid "Triggers a forced request for the releng-tool invoke. This entails:"
+msgstr ""
+
+#: ../../content/guides/arguments.md:418
+msgid ""
+"Packages will be processed as if a re-configuration request has been made."
+msgstr ""
+
+#: ../../content/guides/arguments.md:420
+msgid ""
+"If an explicit fetch request is made ([`fetch`](action-fetch) or "
+"[`<pkg>-fetch`](action-pkg-fetch)), any packages which cache to a file will "
+"have their cache files deleted to be re-fetched."
+msgstr ""
+
+#: ../../content/guides/arguments.md:424
+msgid "`-h`, `--help`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:426
+msgid "Show a list of all arguments available by releng-tool."
+msgstr ""
+
+#: ../../content/guides/arguments.md:428
+msgid "`--images-dir <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:430
+msgid "Directory for image outputs (defaults to `<root>/output/images`)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:432
+msgid "`-j`, `--jobs <jobs>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:434
+msgid "Numbers of jobs to handle (defaults to `0`; automatic)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:436
+msgid "`-L`, `--local-sources [[<pkg>:]<dir>]`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:438
+msgid "Enables [local-sources mode](local-sources-mode)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:440
+msgid ""
+"Without a directory provided, sources of internal packages will be looked "
+"for in the parent directory of the configured root directory. Users may use "
+"this argument multiple times to override the local-sources configuration. If"
+" a package-specific override is provided, sources for that package will be "
+"looked for inside the provided path."
+msgstr ""
+
+#: ../../content/guides/arguments.md:446
+msgid "`--nocolorout`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:448
+msgid "Explicitly disable colorized output."
+msgstr ""
+
+#: ../../content/guides/arguments.md:451
+msgid ""
+"releng-tool respects the `NO_COLOR` environment variable, if configured in "
+"the running environment."
+msgstr ""
+
+#: ../../content/guides/arguments.md:455
+msgid "`--out-dir <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:457
+msgid ""
+"Directory for output (builds, images, etc.; defaults to `<root>/output`)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:459
+msgid "`--root-dir <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:461
+msgid ""
+"Directory to process a releng-tool project (defaults to the working "
+"directory)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:464
+msgid "`--sbom-format <fmt>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:466
+msgid ""
+"The format to use when generating a software build of materials (SBOM). "
+"Multiple formats can be provided (comma-separated)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "Type"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "Value"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "CSV"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`csv`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "HTML"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`html`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "JSON"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`json`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "JSON (SPDX)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`json-spdx`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "RDP (SPDX)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`rdp-spdx`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "Text"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`text` (default)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "XML"
+msgstr ""
+
+#: ../../content/guides/arguments.md:450
+msgid "`xml`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:479
+msgid "See also [`sbom`](action-sbom)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:481
+msgid "`--quirk <quirk-id>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:483
+msgid ""
+"Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool "
+"process. This option can be used multiple times to apply multiple quirks."
+msgstr ""
+
+#: ../../content/guides/arguments.md:486
+msgid "`-V`, `--verbose`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:488
+msgid "Show additional messages."
+msgstr ""
+
+#: ../../content/guides/arguments.md:490
+msgid "`--version`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:492
+msgid "Show releng-tool's version."
+msgstr ""
+
+#: ../../content/guides/arguments.md:494
+msgid "`--werror`, `-Werror`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:496
+msgid "Treat warnings from releng-tool as errors."
+msgstr ""

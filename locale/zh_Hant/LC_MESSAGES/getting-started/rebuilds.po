@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hant\n"
+"Language-Team: zh_Hant <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../content/getting-started/rebuilds.md:1
+msgid "Understanding rebuilds"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:3
+msgid ""
+"As packages are processed in order (based off of detected dependencies, "
+"if any), each package will go through their respective stages:"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:6
+msgid "Fetching"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:7
+msgid "Extraction"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:8
+msgid "Patching"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:9
+msgid "Configuration"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:10
+msgid "Building"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:11
+msgid "Installation"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:13
+msgid ""
+"While a package may not take advantage of each stage, the releng-tool "
+"will step through each stage to track its progress. Due to the vast "
+"number of ways a package can be defined, the ability for releng-tool to "
+"determine when a previously executed stage is \"stale\" is non-trivial. "
+"Instead of attempting to manage \"stale\" package stages, releng-tool "
+"leaves the responsibility to the builder to deal with these scenarios. "
+"This idea is important for developers to understand how it is possible to"
+" perform rebuilds of packages to avoid a full rebuild of the entire "
+"project."
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:22
+msgid ""
+"Consider the following example: a project has three packages which are "
+"C++-based packages:"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:37
+msgid ""
+"For this example, project `module-b` depends on `module-a` and project "
+"`module-c` depends on `module-b`. Therefore, releng-tool will process "
+"packages in the order `module-a -> module-b -> module-c`. In this "
+"example, the project is built until a failure is detected in package "
+"`module-c`:"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:49
+msgid ""
+"A developer notices that it is due to an issue found in `module-b`; "
+"however, instead of attempting to redo everything from a fresh start, the"
+" developer wishes to test the process by manually making local changes in"
+" `module-b` to complete the build process. The developer makes the "
+"change, re-invokes `releng-tool` but still notices the build error "
+"occurs:"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:60
+msgid ""
+"The issue here is that since `module-b` has already been processed, none "
+"of the interim changes made will be available for `module-c` to use. To "
+"take advantage of the new implementation in `module-b`, the builder can "
+"signal for the updated package to be rebuilt:"
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:70
+msgid ""
+"With `module-b` in a more desired state, a re-invoke of `releng-tool` can"
+" allow `module-c` to be built."
+msgstr ""
+
+#: ../../content/getting-started/rebuilds.md:78
+msgid ""
+"This is a very simple example to consider, and attempts to rebuild can "
+"vary based on the packages, changes made and languages used."
+msgstr ""
+

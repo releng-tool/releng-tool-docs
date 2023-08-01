@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hant\n"
+"Language-Team: zh_Hant <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:1
+msgid "Quirk `releng.cmake.disable_direct_includes`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:3
+msgid ""
+"For CMake-based projects, releng-tool will populate a series of include "
+"directories (internally or from a project's configuration definition) to "
+"configure a CMake project with. These include paths will be populated "
+"into the [`CMAKE_INCLUDE_PATH`][cmake-include-path] option when "
+"generating native build scripts."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:9
+msgid ""
+"In addition to `CMAKE_INCLUDE_PATH`, releng-tool will also populate "
+"multiple language type's [`CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES"
+"`][cmake-std-includes] as well. This registers convenient include paths "
+"for languages (e.g. C/C++), avoiding the need for project definitions to "
+"explicitly configure common include paths in host, staging or target "
+"areas."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:16
+msgid ""
+"However, if this causes issues for a build environment (such as when "
+"building a CMake project with a toolchain file which has issues with "
+"standard include overrides), the option can be disabled using the "
+"`releng.cmake.disable_direct_includes` quirk:"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:26
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:28
+msgid "[`CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES`][cmake-std-includes]"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:29
+msgid "[`CMAKE_INCLUDE_PATH`][cmake-include-path]"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-cmake-disable_direct_includes.md:30
+msgid "[](quirks)"
+msgstr ""
+

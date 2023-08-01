@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ../../content/getting-started/prelude.md:1
+msgid "Prelude"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:3
+msgid ""
+"A releng-tool project can define multiple packages, each can be based off of"
+" different languages, configured to use custom toolchains and more. Every "
+"package has multiple stages (such as fetching, configuring, building, etc.) "
+"which can help contribute to a target sysroot. Once all packages are "
+"processed, the target sysroot can be packaged for distribution."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:9
+msgid ""
+"The following outlines the common directory/file locations for a releng-tool"
+" project:"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:12
+msgid ""
+"`cache/` - Cached content from select package sources (e.g. DVCS, etc.)"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:13
+msgid ""
+"`dl/` - Archives for select package sources (e.g. `.tgz`, `.zip`, etc.)"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:14
+msgid "`package/` - Container for packages"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:15
+msgid "`package/<package>/` - A package-specific folder"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:16
+msgid "`package/<package>/<package>` - A package definition"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:17
+msgid "`output/` - Container for all output content"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:18
+msgid "`output/build/` - Container for package building"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:19
+msgid "`output/host/` - Area to hold host-specific content"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:20
+msgid "`output/images/` - Container for final images/archives"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:21
+msgid "`output/staging/` - Area to hold staged sysroot content"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:22
+msgid "`output/target/` - Area to hold target sysroot content"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:23
+msgid "`releng` - Project configuration"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:25
+msgid ""
+"How these directories and files are used can vary on how a developer defines"
+" a releng-tool project. Consider the following process:"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:28
+msgid ""
+"releng-tool will load the project's configuration and respective package "
+"definitions to determine what steps need to be performed."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:30
+msgid ""
+"Package sources can be downloaded into either the `cache/` or `dl/` folder, "
+"depending on what type of sources will be fetched. For example, Git sources "
+"will be stored inside of the `cache/` to take advantage of its distributable"
+" nature, and archive files (such as `.tgz`, `.zip`, etc.) will be stored "
+"inside the `dl/` directory."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:35
+msgid ""
+"Each package will be extracted into its own output directory inside "
+"`output/build/`. The working areas for packages allow a package to be "
+"patched, configured and built based on how the developer configures the "
+"respective packages."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:39
+msgid ""
+"Once packages are built, their final executables, libraries, etc. can be "
+"installed into either the host area (`output/host/`), staging area "
+"(`output/staging/`) or the target area (`output/target/`) depending on what "
+"has been built. The target area is designed for the final set of assets "
+"produced from a build; the intent is that the files contained inside this "
+"folder are planned to be used on a target system (stripped, cross-compiled, "
+"etc.). A staging area is like a target area but may contain more content "
+"such as headers not intended for a final target, interim development assets "
+"and more. Host content is designed for content built for the host system "
+"which other packages may depend on."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:49
+msgid ""
+"At the end of the releng-tool process, a post-stage script can be invoked to"
+" help archive/package content from the target area (`output/target/`) into "
+"the images folder (`output/images/`). For example, generating an archive "
+"`output/images/my-awesome-project-v1.0.0.tgz`."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:54
+msgid ""
+"Not all projects may use each of these folders or take advantage of each "
+"stage. While various capabilities exist, it does not mean releng-tool will "
+"handle all the nitty-gritty details to make a proper build of a project. For"
+" example:"
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:58
+msgid ""
+"If a developer wishes to cross-compile a package to a target, they must "
+"ensure the package is configured in the proper manner to use a desired "
+"toolchain."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:60
+msgid ""
+"If a developer wants to process a Python package, they must ensure the "
+"proper interpreter is used if they cannot rely on the host's default "
+"interpreter."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:62
+msgid ""
+"If a developer creates script-based packages, they must ensure that these "
+"scripts properly handle multiple re-invokes (e.g. if a user performs a "
+"rebuild on a package)."
+msgstr ""
+
+#: ../../content/getting-started/prelude.md:66
+msgid ""
+"releng-tool will attempt to provide an easy way to deal with fetching "
+"sources, ensuring projects are invoked in order, and more; however, the more"
+" advanced features/actions a developer may want in their project (such as "
+"the examples mentioned above), the more a developer will need to manage "
+"their project."
+msgstr ""

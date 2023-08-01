@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:1
+msgid "Making a custom package type extension"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:3
+msgid "This is an extension example for the following use case:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:5
+msgid ""
+"I'm using several packages in a project which use a custom package type "
+"(i.e. they are not a typical autotools or CMake project). I want to have an "
+"extension so that I can trigger custom prepare and build actions for project"
+" that is downloaded from version control."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-prelude.md:2
+msgid ""
+"This extension example uses the name `my-awesome-extension`. Developers are "
+"free to change this with whatever name is applicable for their own "
+"extension."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-prelude.md:5
+msgid ""
+"This extension example assumes a Python 3-supported interpreter. Developers "
+"looking to support running under a Python 2 interpreter may require "
+"additional steps not covered in this tutorial."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-prelude.md:8
+msgid ""
+"This tutorial does not cover steps on publishing an extension to an index "
+"such as [PyPI][pypi]. Instead, steps will be provided to load a extension's "
+"sources into the system path for releng-tool (which is optional whenever a "
+"given extension can be installed from an index or runs in an environment "
+"that already manages the installation of the extension)."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:15
+msgid ""
+"This tutorial assumes the existence of an already prepared releng-tool "
+"project, which had one or more packages planned to use a newly introduced "
+"package type. The package type operates as follows:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:19
+msgid ""
+"A repository will have a `prepare` script at its root, to be run before any "
+"builds are triggered."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:21
+msgid ""
+"For builds, a `build` script exists at the root, which expects a type of "
+"build (e.g. `release` or `debug`) to be passed as an argument."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:23
+msgid "There is no standard installation script/process to perform."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:25
+msgid ""
+"The example extension below will be designed to handle the above package "
+"type requirements."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:28
+msgid "Creating a custom package type extension"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:30
+msgid "Initial skeleton"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:32
+msgid ""
+"A first step is to setup the initial file structure for the extension. "
+"Assuming there exists a checked out releng-tool project (`my-releng-tool-"
+"project`) to be tested against, create a new extension folder named `my-"
+"awesome-extension` alongside the releng-tool project:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:48
+msgid ""
+"Inside this folder, create any base documents desired as well as preparing a"
+" `my_awesome_extension` Python package folder to hold the extension "
+"implementation. For the `__init__.py` file, add the following contents:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:59
+msgid ""
+"The above adds a function `releng_setup`, which releng-tool uses to register"
+" the extension into the releng-tool engine. The function is invoked during "
+"initialization by passing an application context (`app`) which the extension"
+" can use to hook onto events and more."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:64
+msgid ""
+"This extension registers a new package type `ext-mapt`. When this new "
+"package type is registered into releng-tool, the `MyAwesomePackageType` "
+"class definition will be created/used to handle various stages of a package."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:69
+msgid "All extension package types must be prefixed with `ext-`."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:72
+msgid "For `MyAwesomePackageType.py`, add the following contents:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:89
+msgid ""
+"The above package type provides a skeleton implementation for the pending "
+"configuration and build stages for this new package type. The installation "
+"stage is also required, but will only return `True` since it is not required"
+" for this package type example."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:94
+msgid "Initial testing"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:96
+msgid ""
+"To test that the new package type is triggered at desired stages, use an "
+"existing releng-tool project and register this new example extension into "
+"the releng-tool process:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:116
+msgid ""
+"Next, we will create/update a package which will use this new type. For "
+"example, for a `libfoo` package, we will configure the package type to `ext-"
+"mapt` and track a custom extension option `mapt-build-type` with a value of "
+"`release` (which we can later use to forward to our build script)."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:130
+msgid ""
+"When running releng-tool, the following messages should be printed during a "
+"run:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:143
+msgid "Implement the configuration stage"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:145
+msgid ""
+"With the extension being triggered at expected locations, we can now provide"
+" implementation for these hooks to trigger the required `prepare` and "
+"`build` scripts. The following steps will edit the existing "
+"`MyAwesomePackageType.py` file."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:150
+msgid "First, add some utility calls for the upcoming implementation:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:167
+msgid "The above adds the following:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:169
+msgid "`SHELL_BIN`: we define the shell executable to be invoked"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:170
+msgid "`releng_execute`: to be used to invoke our prepare/build scripts"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:171
+msgid "`releng_exists`: to help check if a package has expected scripts"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:172
+msgid "`releng_exit`: to help exit configure/build events on error"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:173
+msgid "`releng_join`: to help join paths for script targets"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:174
+msgid ""
+"`verbose`: some verbose message support to help development/error cases"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:176
+msgid ""
+"Developers can use any supported Python packages/modules for this running "
+"environment, and this example uses a series of helper functions provided by "
+"releng-tool for convenience. Using releng-tool helper functions is not "
+"required if implementations wish to use another approach for their "
+"implementation."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:182
+msgid "We will implement the configuration event for our extension:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:197
+#: ../../content/guides/extensions/making-a-custom-package-type.md:226
+msgid "The above will:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:199
+#: ../../content/guides/extensions/making-a-custom-package-type.md:228
+msgid ""
+"Trigger a verbose message (if releng-tool is running with `--verbose`)."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:200
+msgid ""
+"Build the `prepare` script path expected in the project's build directory."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:201
+msgid "Verify that the script exists. If not, stop the configuration event."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:202
+msgid "Execute the prepare shell script."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:204
+msgid "Implement the build stage"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:206
+msgid ""
+"With the configuration stage completed, we will now implement the build "
+"stage:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:229
+msgid ""
+"Build the `build` script path expected in the project's build directory."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:230
+msgid "Verify that the script exists. If not, stop the build event."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:231
+msgid ""
+"Extract the expected `mapt-build-type` option from the package definition. "
+"If the option does not exist, the build event will be stopped."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:233
+msgid "Execute the build shell script."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:235
+msgid "Final testing"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:237
+msgid ""
+"With the extension events implemented, re-run the releng-tool project from "
+"the package's configuration stage to see expected output:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:247
+msgid ""
+"Based on the package's `prepare` and `build` script, inspect the console "
+"output and build output to verify the respective scripts have performed "
+"their tasks."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-footer.md:2
+msgid "This concludes this tutorial."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-footer.md:6
+msgid ""
+"For a list of available API interfaces and documentation for these "
+"interfaces, see the documentation found inside the [API "
+"implementation][releng-tool-api]."
+msgstr ""

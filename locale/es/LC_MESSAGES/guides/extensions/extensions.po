@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../content/guides/extensions/extensions.md:1
+msgid "Extensions"
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:3
+msgid ""
+"A releng-tool project can use an extension by registering the extension name"
+" in the `extensions` configuration option inside the project configuration "
+"(`releng`). For example, to load an extension `my_awesome_extension` into "
+"releng-tool, the following can be defined:"
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:14
+msgid ""
+"During the initial stages of a releng-tool process, the process will check "
+"and load any configured extension. In the event that an extension is "
+"missing, is unsupported for the running releng-tool version or fails to "
+"load; a detailed error message will be presented to the user."
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:19
+msgid ""
+"Extensions are typically Python packages installed for the running Python "
+"environment. If extensions are not packaged/installed, users can "
+"alternatively append the location of an extension implementation into the "
+"system path in the releng-tool configuration file. For example, if a user "
+"has a releng-tool project checked out alongside a checked out extension in a"
+" folder named `my-awesome-extension`, the extension's path can be registered"
+" into the system path using the following:"
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:36
+msgid ""
+"While the ability to load extensions is supported, capabilities provided by "
+"extensions are not officially supported by releng-tool. For issues related "
+"to specific extension use, it is recommended to see the documentation "
+"provided by the providers of said extensions."
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:41
+msgid ""
+"For developers interesting in implementing extension, a list of available "
+"API interfaces and documentation for these interfaces can be found inside "
+"the [API implementation][releng-tool-api]. Implementation in the API folder "
+"aims to be \"API safe\" -- there is a strong attempt to prevent the changing"
+" of classes, methods, etc. to prevent compatibility issues as both releng-"
+"tool and extensions (if any) evolve."
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:48
+msgid "Examples"
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:50
+msgid ""
+"The following provides a series of examples for developers on how to develop"
+" extensions for releng-tool:"
+msgstr ""

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../content/annex-a.md:1
+msgid "ANNEX A - Quick reference"
+msgstr ""
+
+#: ../../content/annex-a.md:3
+msgid ""
+"A quick reference document listing available options to developers building "
+"a releng-tool project."
+msgstr ""
+
+#: ../../content/annex-a.md:6
+msgid "Configuration options"
+msgstr ""
+
+#: ../../content/annex-a.md:8
+msgid ""
+"Options which are read by releng-tool from a project's configuration script:"
+msgstr ""
+
+#: ../../content/annex-a.md:30
+msgid "Environment variables"
+msgstr ""
+
+#: ../../content/annex-a.md:32
+msgid ""
+"Environment (and script) variables available to context's invoked by releng-"
+"tool (may vary per context):"
+msgstr ""
+
+#: ../../content/annex-a.md:96
+msgid "Package options"
+msgstr ""
+
+#: ../../content/annex-a.md:98
+msgid "Configuration options parsed by releng-tool for a package definition:"
+msgstr ""
+
+#: ../../content/annex-a.md:148
+msgid "Script helpers"
+msgstr ""
+
+#: ../../content/annex-a.md:150
+msgid ""
+"Functions available to scripts invoked by releng-tool or importable via "
+"`from releng_tool import *`:"
+msgstr ""
+
+#: ../../content/annex-a.md:184
+msgid "Quirks"
+msgstr ""
+
+#: ../../content/annex-a.md:186
+msgid "Quirk options used by releng-tool:"
+msgstr ""

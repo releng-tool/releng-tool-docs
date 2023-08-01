@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ../../content/guides/packages/pkg-type-autotools.md:1
+msgid "Autotools package"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-autotools.md:3
+msgid ""
+"An autotools package provides support for processing a [GNU Build "
+"System][gnu-build-sys] supported module."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-autotools.md:10
+msgid ""
+"When an autotools package performs a configuration stage, the package may "
+"invoke `autoreconf` (if configured to do so) and then invoke `configure`. "
+"When the build stage is reached, `make` will be invoked followed by `make "
+"install` during the installation stage."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-autotools.md:15
+msgid ""
+"The following sections outline configuration options are available for an "
+"autotools package."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-autotools.md:18
+msgid "`LIBFOO_AUTOTOOLS_AUTORECONF`"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-autotools.md:20
+msgid ""
+"Specifies whether the package needs to perform an autotools re-"
+"configuration. This is to assist in the rebuilding of GNU Build System files"
+" which may be broken or a patch has introduced new build script changes that"
+" need to be applied. This field is optional. By default, `autoreconf` is not"
+" invoked."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-defs.md:2
+msgid "`LIBFOO_BUILD_DEFS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-defs.md:4
+msgid ""
+"Provides a means to pass definitions into the build process. This option can"
+" is defined as a dictionary of string pairs. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-env.md:2
+msgid "`LIBFOO_BUILD_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-env.md:4
+msgid ""
+"Provides a means to pass environment variables into the build process. This "
+"option is defined as a dictionary with key-value pairs where the key is the "
+"environment name and the value is the environment variable's value. This "
+"field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-opts.md:2
+msgid "`LIBFOO_BUILD_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-opts.md:4
+msgid ""
+"Provides a means to pass command line options into the build process. This "
+"option can be defined as a dictionary of string pairs or a list with strings"
+" -- either way defined will generate argument values to include in the build"
+" event. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-defs.md:2
+msgid "`LIBFOO_CONF_DEFS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-defs.md:4
+msgid ""
+"Provides a means to pass definitions into the configuration process. This "
+"option can is defined as a dictionary of string pairs. This field is "
+"optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-env.md:2
+msgid "`LIBFOO_CONF_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-env.md:4
+msgid ""
+"Provides a means to pass environment variables into the configuration "
+"process. This option is defined as a dictionary with key-value pairs where "
+"the key is the environment name and the value is the environment variable's "
+"value. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-opts.md:2
+msgid "`LIBFOO_CONF_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-opts.md:4
+msgid ""
+"Provides a means to pass command line options into the configuration "
+"process. This option can be defined as a dictionary of string pairs or a "
+"list with strings -- either way defined will generate argument values to "
+"include in the configuration event. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-env.md:2
+msgid "`LIBFOO_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-env.md:4
+msgid ""
+"Provides a means to pass environment variables into all stages for a "
+"package. This option is defined as a dictionary with key-value pairs where "
+"the key is the environment name and the value is the environment variable's "
+"value. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-defs.md:2
+msgid "`LIBFOO_INSTALL_DEFS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-defs.md:4
+msgid ""
+"Provides a means to pass definitions into the installation process. This "
+"option can is defined as a dictionary of string pairs. This field is "
+"optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-env.md:2
+msgid "`LIBFOO_INSTALL_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-env.md:4
+msgid ""
+"Provides a means to pass environment variables into the installation "
+"process. This option is defined as a dictionary with key-value pairs where "
+"the key is the environment name and the value is the environment variable's "
+"value. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts.md:2
+msgid "`LIBFOO_INSTALL_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts.md:4
+msgid ""
+"Provides a means to pass command line options into the installation process."
+" This option can be defined as a dictionary of string pairs or a list with "
+"strings -- either way defined will generate argument values to include in "
+"the installation event. This field is optional."
+msgstr ""

@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans\n"
+"Language-Team: zh_Hans <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../content/guides/tips/privileged-builds.md:1
+msgid "Privileged builds"
+msgstr ""
+
+#: ../../content/guides/tips/privileged-builds.md:3
+msgid ""
+"It is never recommended to invoke a build with elevated (e.g. root) "
+"privileges. A builder invoking in an elevated environment runs the risk "
+"of a misconfigured releng-tool project *dirtying or destroying* the "
+"builder's host environment."
+msgstr ""
+
+#: ../../content/guides/tips/privileged-builds.md:7
+msgid ""
+"releng-tool will generate a warning when an elevated run has been "
+"detected. For certain cases when using a container image that operates in"
+" a single-user mode, the image can define the environment variable "
+"[`RELENG_IGNORE_RUNNING_AS_ROOT`](env-releng-ignore-running-as-root) to "
+"suppress these warnings."
+msgstr ""
+

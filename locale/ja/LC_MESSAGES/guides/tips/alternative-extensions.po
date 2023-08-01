@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/guides/tips/alternative-extensions.md:1
+msgid "Alternative extensions"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:3
+msgid ""
+"A default configuration file is typically a file named `releng` at the root "
+"of a project. Consider the following example of a project with a `libfoo` "
+"package with various stage scripts:"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:17
+msgid ""
+"If a developer prefers to define extensions for various configurations and "
+"scripts, files detected with a `.releng` or `.py` extensions can be used "
+"instead. For example, the above example is equivalent to the structure:"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:31
+msgid "Or the structure:"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:43
+msgid ""
+"For a specific file to be loaded, releng-tool uses the following priority:"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:45
+msgid "File without an extension"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:46
+msgid "File with a `.releng` extension"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:47
+msgid "File with a `.py` extension"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:49
+msgid ""
+"Only the first detected file will be loaded. For example, if a project has "
+"multiple releng-tool configuration files with different extensions:"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:62
+msgid "Only the `releng` configuration script will be used."
+msgstr ""

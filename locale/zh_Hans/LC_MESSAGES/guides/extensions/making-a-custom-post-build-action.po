@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans\n"
+"Language-Team: zh_Hans <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:1
+msgid "Making a custom post-build action extension"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:3
+msgid "This is an extension example for the following use case:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:5
+msgid ""
+"After performing a build for any of my releng-tool projects, I want to "
+"automatically add a series of files into the output directory before we "
+"attempt to package the contents. I want to do this using an extension to "
+"avoid the need to repeat the process across all my releng-tool projects."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:10
+msgid "Prelude"
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-prelude.md:2
+msgid ""
+"This extension example uses the name `my-awesome-extension`. Developers "
+"are free to change this with whatever name is applicable for their own "
+"extension."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-prelude.md:5
+msgid ""
+"This extension example assumes a Python 3-supported interpreter. "
+"Developers looking to support running under a Python 2 interpreter may "
+"require additional steps not covered in this tutorial."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-prelude.md:8
+msgid ""
+"This tutorial does not cover steps on publishing an extension to an index"
+" such as [PyPI][pypi]. Instead, steps will be provided to load a "
+"extension's sources into the system path for releng-tool (which is "
+"optional whenever a given extension can be installed from an index or "
+"runs in an environment that already manages the installation of the "
+"extension)."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:15
+msgid "Creating the post-build action extension"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:17
+msgid ""
+"A first step is to setup the initial file structure for the extension. "
+"Assuming there exists a checked out releng-tool project (`my-releng-tool-"
+"project`) to be tested against, create a new extension folder named `my-"
+"awesome-extension` alongside the releng-tool project(s):"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:34
+msgid ""
+"Inside this folder, create any base documents desired, a sample PDF, as "
+"well as preparing a `my_awesome_extension` Python package folder to hold "
+"the extension implementation. For the `__init__.py` file, add the "
+"following contents:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:50
+msgid ""
+"The above adds a function `releng_setup`, which releng-tool uses to "
+"register the extension into the releng-tool engine. The function is "
+"invoked during initialization by passing an application context (`app`) "
+"which the extension can use to hook onto events and more. This extension "
+"implements a function `my_awesome_postbuild_handler`, which is registered"
+" on the `post-build-finished` event. This allows the handler to be "
+"triggered when a post-build stage has completed for a project."
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:58
+msgid ""
+"To test that the post-build event is triggered, use an existing releng-"
+"tool project and register this new example extension into the releng-tool"
+" process:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:77
+msgid ""
+"When running releng-tool, the following message should be printed at the "
+"end of a run:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:87
+msgid ""
+"Next, we can now adjust our handler to help modify the output directory "
+"when the event is triggered. In this example, we want to copy an "
+"extension-managed `NOTICE.pdf` file and place it into the output "
+"directory. Update the extension with the following:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:104
+msgid ""
+"With this change, a re-run of the releng-tool project should have the "
+"`NOTICE.pdf` document copied into the target directory for the project."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-footer.md:2
+msgid "This concludes this tutorial."
+msgstr ""
+
+#: ../../content/guides/extensions/_tutorial-footer.md:6
+msgid ""
+"For a list of available API interfaces and documentation for these "
+"interfaces, see the documentation found inside the [API implementation"
+"][releng-tool-api]."
+msgstr ""
+

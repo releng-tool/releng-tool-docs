@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../content/news/2022-05-02_00.12.00.md:1
+msgid "0.12 (2022-05-02)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:3
+msgid "Support package variable overrides using the command line"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:5
+msgid ""
+"Package variables can now be overridden from the command line. Consider the "
+"following site example:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:12
+msgid ""
+"This Git-sourced package will cache the repository found at "
+"`git@example.com:base/libfoo.git` before extracting the configured revision "
+"into the package's build output directory. If a developer wanted to "
+"temporarily override this option for a build, the following shows how a "
+"developer can override the site variable:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:22
+msgid ""
+"Note that complex package variables may not be able to be overridden from "
+"the command line."
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:25
+msgid "Support environment variable injection using the command line"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:27
+msgid ""
+"Environment variables can now be injected into the releng-tool process from "
+"the command line. While users can use either export/set variables in their "
+"environments, or (on Unix) prefix a command call with variable assignments; "
+"the ways to do this is not consistent. A desire was to allow users to be "
+"able to inject environment options in a way similar to how Makefile calls "
+"can perform variable assignments through the command line. For example:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:36
+msgid ""
+"This new feature enables such a capability by scanning the argument options "
+"of a releng-tool invoke and applying key-value pair entries into the working"
+" environment. Before, users would have to perform something such as the "
+"following:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:52
+msgid "With this change, the following will work for any environment:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:58
+msgid "Package-specific command line execution"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:60
+msgid ""
+"Developer now have an easy way to issue raw commands inside a package's "
+"prepared build directory. For example, developing/testing with an autotools "
+"project, a developer can issue a manual configuration request to test/sanity"
+" check options:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:69
+msgid ""
+"This is to help developers try out alternative commands/actions without "
+"manually editing their package's definition; as well as avoiding the need to"
+" navigate to an output directory, manually preparing environment variables "
+"and issuing raw commands in an output directory."
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:74
+msgid "New environment/script variables"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:76
+msgid ""
+"This release includes a series of new environment/script variables to help "
+"developers better tailor their package definitions."
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:79
+msgid ""
+"The `PKG_BUILD_BASE_DIR` has been introduced, providing a way for a package "
+"to reference the root of a package's extracted folder. In most cases, the "
+"`PKG_BUILD_DIR` variable can be used to serve this purpose; however, if a "
+"package defines `LIBFOO_BUILD_SUBDIR`, the build directory will be resolved "
+"to the subdirectory location in the extracted folder. If a package utilizes "
+"the subdirectory configuration and still wishes to somehow reference "
+"extracted content from the root of the extracted package, this \"base\" "
+"directory can be used."
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:88
+msgid ""
+"Several prefixed-related directories are also defined. These can be used to "
+"allow a developer to reference specific include or library paths for the "
+"host, staging or target areas. The following lists the newly added prefixed-"
+"related variables:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:93
+msgid "`HOST_INCLUDE_DIR` (e.g. `<host-dir>/usr/include`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:94
+msgid "`HOST_LIB_DIR` (e.g. `<host-dir>/usr/lib`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:95
+msgid "`PREFIXED_HOST_DIR` (e.g. `<host-dir>/usr`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:96
+msgid "`PREFIXED_STAGING_DIR` (e.g. `<staging-dir>/usr`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:97
+msgid "`PREFIXED_TARGET_DIR` (e.g. `<target-dir>/usr`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:98
+msgid "`STAGING_INCLUDE_DIR` (e.g. `<staging-dir>/usr/include`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:99
+msgid "`STAGING_LIB_DIR` (e.g. `<staging-dir>/usr/lib`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:100
+msgid "`TARGET_INCLUDE_DIR` (e.g. `<target-dir>/usr/include`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:101
+msgid "`TARGET_LIB_DIR` (e.g. `<target-dir>/usr/lib`)"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:103
+msgid "New include script function"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:105
+msgid ""
+"The `releng_include` helper function has been added to allow releng-tool "
+"script to load scripts alongside a given script -- providing a way to split "
+"up a script across multiple files. For example, a script-based package with "
+"a `libfoo-build` build script can split various build operations across "
+"multiple files and include them in their build script:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:111
+msgid "<small>**[package/libfoo/libfoo-build]**</small>"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:118
+msgid "<small>**[package/libfoo/build-task-a]**</small>"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:124
+msgid "<small>**[package/libfoo/build-task-b]**</small>"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:130
+msgid "Correct Git cache management with branch updates"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:132
+msgid ""
+"For VCS-based sites, the revision field can accept a branch value for the "
+"respective VCS-type. In this case, specifying the branch of a Git repository"
+" as the version or revision value will fetch the branch from the configured "
+"site before attempting to extract/build the package. For example:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:141
+msgid ""
+"With releng-tool, once a package is fetched, it will not be fetched again. "
+"For branch-based references, this may not be ideal if the branch is expected"
+" to update over time. Users could build from a clean environment, but this "
+"can add additional build time where many packages are used and each one "
+"needs to re-download/re-build their sources. For a user to perform a rebuild"
+" of a VCS-type project, the following steps should be supported:"
+msgstr ""
+
+#: ../../content/news/2022-05-02_00.12.00.md:154
+msgid ""
+"An issue with releng-tool's Git extraction process would incorrectly extract"
+" the contents of the previously cached revision of a branch the first time "
+"it has been extracted from an updated fetch. This release includes "
+"corrections to this process to always use the most recently updated revision"
+" for a branch is used after performing a fresh fetch/clean with cached "
+"content."
+msgstr ""

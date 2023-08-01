@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/guides/packages/pkg-type-script.md:1
+msgid "Script package (default)"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:3
+msgid ""
+"A script-based package is the most basic package type available. By default,"
+" packages are considered to be script packages unless explicitly configured "
+"to be another package type ([](pkg-opt-type)). If a developer wishes to "
+"explicitly configure a project as script-based, the following configuration "
+"can be used:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:13
+msgid "A script package has the ability to define three Python stage scripts:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:15
+msgid ""
+"`<package>-configure` - script to invoke during the configuration stage"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:16
+msgid "`<package>-build` - script to invoke during the build stage"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:17
+msgid "`<package>-install` - script to invoke during the installation stage"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:19
+msgid ""
+"For example, a `libfoo` package would have the following files for a script-"
+"based package:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:33
+msgid "An example build script (`libfoo-build`) can be as follows:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:39
+msgid ""
+"When a package performs a configuration, build or installation stage; the "
+"respective script (mentioned above) will be invoked. Package scripts are "
+"optional. If a script is not provided for a stage, the stage will be "
+"skipped."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-script.md:44
+msgid ""
+"See also [script helpers](/guides/script-helpers) for helper functions and "
+"variables available for use, as well as [bootstrapping](bootstrapping) or "
+"[post-processing](post-processing) for more stage script support."
+msgstr ""

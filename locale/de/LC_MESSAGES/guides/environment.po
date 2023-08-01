@@ -1,0 +1,730 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/guides/environment.md:1
+msgid "Environment variables"
+msgstr ""
+
+#: ../../content/guides/environment.md:4
+msgid ""
+"Avoid using external environment variables for a project to configure "
+"package options such as compiler flags or interpreters. Managing these "
+"options inside a releng-tool project configuration or package definitions "
+"can improve configuration management."
+msgstr ""
+
+#: ../../content/guides/environment.md:10
+msgid "Common"
+msgstr ""
+
+#: ../../content/guides/environment.md:12
+msgid ""
+"When configuration, package definitions or various scripts are invoked by "
+"releng-tool, the following environment variables are available:"
+msgstr ""
+
+#: ../../content/guides/environment.md:15
+msgid "`BUILD_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:17
+msgid "The build directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:19
+msgid "`CACHE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:21
+msgid "The cache directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:23
+msgid "`DL_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:25
+msgid "The download directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:27
+msgid "`HOST_BIN_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:29
+msgid "The host directory's prefixed bin directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:31
+msgid "`HOST_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:33
+msgid "The host directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:35
+msgid "`HOST_INCLUDE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:37
+msgid "The host directory's prefixed include directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:39
+msgid "`HOST_LIB_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:41
+msgid "The host directory's prefixed library directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:43
+msgid "`IMAGES_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:45
+msgid "The images directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:47
+msgid "`LICENSE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:49
+msgid "The licenses directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:51
+msgid "See also [licenses](licenses)."
+msgstr ""
+
+#: ../../content/guides/environment.md:54
+msgid "`NJOBS`"
+msgstr ""
+
+#: ../../content/guides/environment.md:56
+msgid ""
+"Number of calculated jobs to allow at a given time. Unless explicitly set by"
+" a system builder on the command line, the calculated number of jobs should "
+"be equal to the number of physical cores on the host. When building a "
+"specific package and the package overrides the number of jobs to use, the "
+"[package-defined count](pkg-opt-fixed-jobs) will be used instead. This "
+"configuration will always be a value of at least one (`1`)."
+msgstr ""
+
+#: ../../content/guides/environment.md:64
+msgid "`NJOBSCONF`"
+msgstr ""
+
+#: ../../content/guides/environment.md:66
+msgid ""
+"Number of jobs to allow at a given time. Unlike [`NJOBS`](env-njobs), "
+"`NJOBSCONF` provides the requested configured number of jobs to use. The "
+"value may be set to zero (`0`) to indicate an automatic detection of jobs to"
+" use. This can be useful for tools which have their own automatic job count "
+"implementation and do not want to rely on the value defined by "
+"[`NJOBS`](env-njobs). When building a specific package and the package "
+"overrides the number of jobs to use, the [package-defined count](pkg-opt-"
+"fixed-jobs) will be used instead."
+msgstr ""
+
+#: ../../content/guides/environment.md:75
+msgid "`OUTPUT_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:77
+msgid "The output directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:80
+msgid "`PKG_BUILD_BASE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:82
+msgid ""
+"The directory for a specific package's base directory for buildable content."
+" In most cases, this value will be the same as [`PKG_BUILD_DIR`](env-pkg-"
+"build-dir). However, if [](pkg-opt-build-subdir) is configured, "
+"[`PKG_BUILD_DIR`](env-pkg-build-dir) will also include the configured sub-"
+"directory. The value of [](pkg-opt-build-subdir) does not adjust the value "
+"of `PKG_BUILD_BASE_DIR`."
+msgstr ""
+
+#: ../../content/guides/environment.md:89
+#: ../../content/guides/environment.md:104
+msgid "See also [`PKG_BUILD_DIR`](env-pkg-build-dir)."
+msgstr ""
+
+#: ../../content/guides/environment.md:92
+msgid "`PKG_BUILD_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:94
+msgid "The directory for a specific package's buildable content."
+msgstr ""
+
+#: ../../content/guides/environment.md:96
+msgid ""
+"See also [`PKG_BUILD_BASE_DIR`](env-pkg-build-base-dir) and "
+"[`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir)."
+msgstr ""
+
+#: ../../content/guides/environment.md:100
+msgid "`PKG_BUILD_OUTPUT_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:102
+msgid "The directory for where a package's build output will be stored."
+msgstr ""
+
+#: ../../content/guides/environment.md:106
+msgid "`PKG_CACHE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:108
+msgid ""
+"The location of the cache directory for a package. If a package defines a "
+"fetch from a repository which can be locally cached, this cache directory "
+"represents the location where the local cache of content will be held. For "
+"example, if a provide defines a Git-based site, a local cache of the Git "
+"repository will be stored in this location. Typically, packages should not "
+"need to operate on the cache directory except for advanced cases."
+msgstr ""
+
+#: ../../content/guides/environment.md:116
+msgid "`PKG_CACHE_FILE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:118
+msgid ""
+"The location of the cache file for a package. If a package defines a fetch "
+"of an archive from a remote source, after the fetch stage is completed, the "
+"archive can be found in this location."
+msgstr ""
+
+#: ../../content/guides/environment.md:122
+msgid ""
+"For example, if a package defines a site `https://www.example.com/test.tgz`,"
+" the resulting cache file may be `<root>/output/dl/test-1.0.tgz`."
+msgstr ""
+
+#: ../../content/guides/environment.md:125
+msgid "`PKG_DEFDIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:127
+msgid "The package's definition directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:129
+msgid ""
+"For example, for a package `test`, the definition directory would be "
+"`<root>/package/test`."
+msgstr ""
+
+#: ../../content/guides/environment.md:132
+msgid "`PKG_DEVMODE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:134
+msgid ""
+"Whether the package is configured for development mode. If a package is "
+"configured for development mode, the environment variable will be set to a "
+"value of one (i.e. `PKG_DEVMODE=1`)."
+msgstr ""
+
+#: ../../content/guides/environment.md:138
+msgid "See also [development mode](development-mode)."
+msgstr ""
+
+#: ../../content/guides/environment.md:140
+msgid "`PKG_INTERNAL`"
+msgstr ""
+
+#: ../../content/guides/environment.md:142
+msgid ""
+"Whether or not the package is considered \"internal\". If internal, the "
+"environment variable will be set to a value of one (i.e. `PKG_INTERNAL=1`)."
+msgstr ""
+
+#: ../../content/guides/environment.md:145
+msgid "See also [internal and external packages](intern-extern-pkgs)."
+msgstr ""
+
+#: ../../content/guides/environment.md:147
+msgid "`PKG_LOCALSRCS`"
+msgstr ""
+
+#: ../../content/guides/environment.md:149
+msgid ""
+"Whether the package is configured for local-sources mode. If a package is "
+"configured for local-sources, the environment variable will be set to a "
+"value of one (i.e. `PKG_LOCALSRCS=1`)."
+msgstr ""
+
+#: ../../content/guides/environment.md:153
+msgid "See also [local-sources mode](local-sources-mode)."
+msgstr ""
+
+#: ../../content/guides/environment.md:155
+msgid "`PKG_NAME`"
+msgstr ""
+
+#: ../../content/guides/environment.md:157
+#: ../../content/guides/environment.md:434
+msgid "The name of the package."
+msgstr ""
+
+#: ../../content/guides/environment.md:159
+msgid "`PKG_REVISION`"
+msgstr ""
+
+#: ../../content/guides/environment.md:161
+msgid "The site revision of the package."
+msgstr ""
+
+#: ../../content/guides/environment.md:163
+msgid "See also [](pkg-opt-revision)."
+msgstr ""
+
+#: ../../content/guides/environment.md:165
+msgid "`PKG_SITE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:167
+msgid "The site of the package."
+msgstr ""
+
+#: ../../content/guides/environment.md:169
+msgid "See also [](pkg-opt-site)."
+msgstr ""
+
+#: ../../content/guides/environment.md:171
+msgid "`PKG_VERSION`"
+msgstr ""
+
+#: ../../content/guides/environment.md:173
+msgid "The version of the package."
+msgstr ""
+
+#: ../../content/guides/environment.md:175
+msgid "See also [](pkg-opt-version)."
+msgstr ""
+
+#: ../../content/guides/environment.md:177
+msgid "`PREFIX`"
+msgstr ""
+
+#: ../../content/guides/environment.md:179
+msgid "The sysroot prefix for the package."
+msgstr ""
+
+#: ../../content/guides/environment.md:181
+msgid "`PREFIXED_HOST_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:183
+msgid "The host directory with the prefix applied."
+msgstr ""
+
+#: ../../content/guides/environment.md:185
+msgid "`PREFIXED_STAGING_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:187
+msgid "The staging area directory with the prefix applied."
+msgstr ""
+
+#: ../../content/guides/environment.md:189
+msgid "`PREFIXED_TARGET_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:191
+msgid "The target area directory with the prefix applied."
+msgstr ""
+
+#: ../../content/guides/environment.md:193
+msgid "`RELENG_CLEAN`"
+msgstr ""
+
+#: ../../content/guides/environment.md:195
+msgid "Flag set if performing a clean request."
+msgstr ""
+
+#: ../../content/guides/environment.md:197
+msgid "`RELENG_DEBUG`"
+msgstr ""
+
+#: ../../content/guides/environment.md:199
+msgid "Flag set if debug-related information should be shown."
+msgstr ""
+
+#: ../../content/guides/environment.md:201
+msgid "`RELENG_DEVMODE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:203
+msgid ""
+"The development mode or flag set if in [development mode](development-mode)."
+msgstr ""
+
+#: ../../content/guides/environment.md:205
+msgid "`RELENG_DISTCLEAN`"
+msgstr ""
+
+#: ../../content/guides/environment.md:207
+msgid "Flag set if performing an extreme pristine clean request."
+msgstr ""
+
+#: ../../content/guides/environment.md:209
+msgid "`RELENG_FORCE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:211
+msgid "Flag set if performing a forced request from the command line."
+msgstr ""
+
+#: ../../content/guides/environment.md:213
+msgid "`RELENG_LOCALSRCS`"
+msgstr ""
+
+#: ../../content/guides/environment.md:215
+msgid "Flag set if in [local-sources mode](local-sources-mode)."
+msgstr ""
+
+#: ../../content/guides/environment.md:217
+msgid "`RELENG_MRPROPER`"
+msgstr ""
+
+#: ../../content/guides/environment.md:219
+msgid "Flag set if performing a pristine clean request."
+msgstr ""
+
+#: ../../content/guides/environment.md:221
+msgid "`RELENG_REBUILD`"
+msgstr ""
+
+#: ../../content/guides/environment.md:223
+msgid "Flag set if performing a re-build request."
+msgstr ""
+
+#: ../../content/guides/environment.md:225
+msgid "`RELENG_RECONFIGURE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:227
+msgid "Flag set if performing a re-configuration request."
+msgstr ""
+
+#: ../../content/guides/environment.md:229
+msgid "`RELENG_REINSTALL`"
+msgstr ""
+
+#: ../../content/guides/environment.md:231
+msgid "Flag set if performing a re-install request."
+msgstr ""
+
+#: ../../content/guides/environment.md:233
+msgid "`RELENG_TARGET_PKG`"
+msgstr ""
+
+#: ../../content/guides/environment.md:235
+msgid "The name of the target package (if any) provided by the command line."
+msgstr ""
+
+#: ../../content/guides/environment.md:237
+msgid "`RELENG_VERBOSE`"
+msgstr ""
+
+#: ../../content/guides/environment.md:239
+msgid "Flag set if verbose-related information should be shown."
+msgstr ""
+
+#: ../../content/guides/environment.md:241
+msgid "`RELENG_VERSION`"
+msgstr ""
+
+#: ../../content/guides/environment.md:243
+msgid "The version of releng-tool."
+msgstr ""
+
+#: ../../content/guides/environment.md:245
+msgid "`ROOT_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:247
+msgid "The root directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:249
+msgid "`STAGING_BIN_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:251
+msgid "The staging area directory's prefixed bin directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:253
+msgid "`STAGING_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:255
+msgid "The staging area directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:257
+msgid "`STAGING_INCLUDE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:259
+msgid "The staging area directory's prefixed include directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:261
+msgid "`STAGING_LIB_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:263
+msgid "The staging area directory's prefixed library directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:265
+msgid "`SYMBOLS_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:267
+msgid "The symbols area directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:269
+msgid "`TARGET_BIN_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:271
+msgid "The target area directory's prefixed bin directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:273
+msgid "`TARGET_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:275
+msgid "The target area directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:277
+msgid "`TARGET_INCLUDE_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:279
+msgid "The target area directory's prefixed include directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:281
+msgid "`TARGET_LIB_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:283
+msgid "The target area directory's prefixed library directory."
+msgstr ""
+
+#: ../../content/guides/environment.md:285
+msgid "Package-specific variables"
+msgstr ""
+
+#: ../../content/guides/environment.md:287
+msgid ""
+"Package-specific environment variables are also available if another package"
+" or script needs to rely on the (generated) configuration of another "
+"package. For example, if a package `LIBFOO` existed with a package "
+"definition:"
+msgstr ""
+
+#: ../../content/guides/environment.md:295
+msgid ""
+"The environment variable `LIBFOO_VERSION` with a value of `1.0.0` can be "
+"used in other configurations and script files. The following package-"
+"specific environment variables are available for use, where `<PKG>` "
+"translates to a releng-tool's determined package key:"
+msgstr ""
+
+#: ../../content/guides/environment.md:300
+msgid "`<PKG>_BUILD_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:302
+msgid "The directory for a defined package's buildable content."
+msgstr ""
+
+#: ../../content/guides/environment.md:304
+msgid ""
+"For most packages, this path will match the value specified in "
+"`<PKG>_BUILD_OUTPUT_DIR`. For package types that do not support in-tree "
+"building (e.g. CMake), this path may be the parent of the value specified in"
+" `<PKG>_BUILD_OUTPUT_DIR`:"
+msgstr ""
+
+#: ../../content/guides/environment.md:323
+msgid ""
+"For cases where a package uses local sources, this path may change to point "
+"to the specified local source path. For example, when configured for [local-"
+"sources mode](local-sources-mode), the build directory may exist out of the "
+"root directory:"
+msgstr ""
+
+#: ../../content/guides/environment.md:343
+msgid ""
+"Or, when using a `local` VCS type, the path may be set for a folder inside "
+"the package's definition directory:"
+msgstr ""
+
+#: ../../content/guides/environment.md:361
+msgid "`<PKG>_BUILD_OUTPUT_DIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:363
+msgid ""
+"The directory for where a defined package's build output will be stored."
+msgstr ""
+
+#: ../../content/guides/environment.md:365
+msgid ""
+"This location is a path is a folder inside the project's `output/build` "
+"directory. The name is typically a combination of the package's name and "
+"version (e.g. `libfoo-1.0.0`):"
+msgstr ""
+
+#: ../../content/guides/environment.md:382
+msgid ""
+"However, if no version is specified for a package, the folder name may just "
+"be `libfoo`:"
+msgstr ""
+
+#: ../../content/guides/environment.md:398
+msgid ""
+"Note for some package types, the build output directory may be changed to "
+"have an additional path (e.g. `output/build/libfoo-1.0.0/releng-output`) for"
+" package types like CMake. For example:"
+msgstr ""
+
+#: ../../content/guides/environment.md:416
+msgid "`<PKG>_DEFDIR`"
+msgstr ""
+
+#: ../../content/guides/environment.md:418
+msgid "The directory where a defined package's definition is stored."
+msgstr ""
+
+#: ../../content/guides/environment.md:420
+msgid ""
+"For example, if a package `libfoo` exists, the `LIBFOO_DEFDIR` environment "
+"variable will contain a directory path matching the path seen below:"
+msgstr ""
+
+#: ../../content/guides/environment.md:432
+msgid "`<PKG>_NAME`"
+msgstr ""
+
+#: ../../content/guides/environment.md:436
+msgid ""
+"For example, if a package `libfoo` exists, the `LIBFOO_NAME` environment "
+"variable will have a value of `libfoo`."
+msgstr ""
+
+#: ../../content/guides/environment.md:439
+msgid "`<PKG>_REVISION`"
+msgstr ""
+
+#: ../../content/guides/environment.md:441
+msgid ""
+"The revision of a defined package. If a package does not define a revision, "
+"the value used will match the version value (if set). If no version value "
+"exists, this variable may be empty."
+msgstr ""
+
+#: ../../content/guides/environment.md:445
+msgid "`<PKG>_VERSION`"
+msgstr ""
+
+#: ../../content/guides/environment.md:447
+msgid ""
+"The version of a defined package. If a package does not define a version, "
+"the value used will match the revision value (if set). If no revision value "
+"exists, this variable may be empty."
+msgstr ""
+
+#: ../../content/guides/environment.md:451
+msgid "Other variables"
+msgstr ""
+
+#: ../../content/guides/environment.md:453
+msgid ""
+"releng-tool also accepts environment variables for configuring specific "
+"features of the releng-tool process. The following environment variables are"
+" accepted:"
+msgstr ""
+
+#: ../../content/guides/environment.md:458
+msgid "`RELENG_ASSETS_DIR=<dir>`"
+msgstr ""
+
+#: ../../content/guides/environment.md:460
+msgid ""
+"The asset directory to use. The asset directory is the container directory "
+"to use for both cache and download content. By default, no asset directory "
+"is configured. If a user does not override an asset directory using the "
+"[`--assets-dir` argument](arg-assets-dir), the `RELENG_ASSETS_DIR` can be "
+"used as the container directory override for both cache and download "
+"content."
+msgstr ""
+
+#: ../../content/guides/environment.md:468
+msgid "`RELENG_CACHE_DIR=<dir>`"
+msgstr ""
+
+#: ../../content/guides/environment.md:470
+msgid ""
+"The cache directory to use. By default, the cache directory used is "
+"configured to `<root>/cache`. If a user does not override a cache directory "
+"using the [`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR` "
+"can be used (if set) to override this location."
+msgstr ""
+
+#: ../../content/guides/environment.md:476
+msgid "`RELENG_DL_DIR=<dir>`"
+msgstr ""
+
+#: ../../content/guides/environment.md:478
+msgid ""
+"The download directory to use. By default, the download directory used is "
+"configured to `<root>/dl`. If a user does not override a download directory "
+"using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR` can be used"
+" (if set) to override this location."
+msgstr ""
+
+#: ../../content/guides/environment.md:484
+msgid "`RELENG_IGNORE_RUNNING_AS_ROOT=1`"
+msgstr ""
+
+#: ../../content/guides/environment.md:486
+msgid ""
+"Suppress the [warning](tips/privileged-builds) generated when running "
+"releng-tool with an elevated user."
+msgstr ""

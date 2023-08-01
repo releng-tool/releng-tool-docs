@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/contributors.md:1
+msgid "Contributor guide"
+msgstr ""
+
+#: ../../content/contributors.md:3
+msgid "The following outlines common directory locations:"
+msgstr ""
+
+#: ../../content/contributors.md:5
+msgid "`Documentation` - Project documentation"
+msgstr ""
+
+#: ../../content/contributors.md:6
+msgid "`releng_tool/api/` - API for supporting releng-tool extensions"
+msgstr ""
+
+#: ../../content/contributors.md:7
+msgid "`releng_tool/engine/` - Core implementation"
+msgstr ""
+
+#: ../../content/contributors.md:8
+msgid ""
+"`releng_tool/ext/` - Extensions that are maintained in the official tree"
+msgstr ""
+
+#: ../../content/contributors.md:9
+msgid ""
+"`releng_tool/extract/` - Translate fetched content to a build's working area"
+msgstr ""
+
+#: ../../content/contributors.md:10
+msgid "`releng_tool/fetch/` - Support for fetching content from package sites"
+msgstr ""
+
+#: ../../content/contributors.md:11
+msgid "`releng_tool/tool/` - Definitions for host tools used by tool features"
+msgstr ""
+
+#: ../../content/contributors.md:12
+msgid "`test/` - Testing-related content for this project's implementation"
+msgstr ""
+
+#: ../../content/contributors.md:14
+msgid ""
+"releng-tool is built on the Python language and aims to be the minimum "
+"dependency for users of the tool. Specific features enabled by a developer's"
+" project may require additional tools (e.g. using [Git][git] to fetch "
+"sources requires `git` to be installed); however, a user should not be "
+"required to install tools for features that are not being used."
+msgstr ""
+
+#: ../../content/contributors.md:20
+msgid "Contributing"
+msgstr ""
+
+#: ../../content/contributors.md:22
+msgid ""
+"Developers are free to submit contributions for this project. Developers "
+"wishing to contribute should read this project's "
+"[CONTRIBUTING][CONTRIBUTING] document. A reminder that any contributions "
+"must be signed off with the [Developer Certificate of Origin][dco]."
+msgstr ""
+
+#: ../../content/contributors.md:27
+msgid ""
+"Implementation (source, comments, commits, etc.) submitted to this project "
+"should be provided in English."
+msgstr ""
+
+#: ../../content/contributors.md:30
+msgid "Root directory"
+msgstr ""
+
+#: ../../content/contributors.md:32
+msgid ""
+"A user invoking releng-tool will attempt to operate in a project root "
+"directory. Any content managed by this tool (e.g. creating directories, "
+"downloading sources, etc.) should all be performed inside the root "
+"directory. Some exceptions exist where a user requests to adjust the "
+"download directory (e.g. providing the `--dl-dir` argument)."
+msgstr ""
+
+#: ../../content/contributors.md:38
+msgid "Fetching design"
+msgstr ""
+
+#: ../../content/contributors.md:40
+msgid ""
+"Packages can describe where external content should be fetched from. The "
+"most common fetching method is a simple URI-style fetch such as downloading "
+"an archive from an HTTP/FTP location. Assets acquired in this manner are "
+"downloaded into the root directory's download folder (e.g. `<ROOT>/dl`). The"
+" extraction phase will later use this folder to find package content to "
+"prepare against."
+msgstr ""
+
+#: ../../content/contributors.md:46
+msgid ""
+"releng-tool also supports the fetching of content from version control "
+"systems. Sources can either be fetched and placed into an archive, in a "
+"similar fashion as fetching an archive from HTTP/FTP locations, or sources "
+"can be fetched into a \"cache directory\" if supported (typically "
+"distributed version controlled sources). For example, [Git][git] "
+"repositories (see also Git's [`--git-dir`][--git-dir] will be stored in the "
+"root directory's cache folder (e.g. `<ROOT>/cache`). During the extraction "
+"stage, target revisions will be pulled from the cache location using the "
+"`git` client."
+msgstr ""
+
+#: ../../content/contributors.md:55
+msgid "Not all packages will fetch content (e.g. placeholder packages)."
+msgstr ""
+
+#: ../../content/contributors.md:57
+msgid "Extraction design"
+msgstr ""
+
+#: ../../content/contributors.md:59
+msgid ""
+"In most cases, the extraction phase will process archives (e.g. `.tar.gz`, "
+"`.zip`, etc.) and place their contents into a package's build working "
+"directory. Implementation will vary for fetching implementation which stores"
+" content into a cache directory. For example, [Git][git] and "
+"[Mercurial][mercurial] sources have their own extraction implementations to "
+"pull content from their respective distributed file systems into a package's"
+" build working directory."
+msgstr ""
+
+#: ../../content/contributors.md:67
+msgid "Host and Build environment"
+msgstr ""
+
+#: ../../content/contributors.md:69
+msgid ""
+"releng-tool attempts to minimize the impact of a host system's environment "
+"on a project's build. For example, the build phase of a package should not "
+"be pulling compiler flags provided from the host system's environment. These"
+" flags should be provided from the package definition. Tools invoked by "
+"releng-tool will attempt to be invoked to ignore these external environment "
+"variables. Some exceptions apply such as environment variables dealing with "
+"authorization tokens."
+msgstr ""
+
+#: ../../content/contributors.md:77
+msgid "Documentation"
+msgstr ""
+
+#: ../../content/contributors.md:79
+msgid ""
+"Improvements to this project's documentation are always welcome -- not only "
+"for adding/updating documentation for releng-tool features but also "
+"translations."
+msgstr ""
+
+#: ../../content/contributors.md:83
+msgid ""
+"For users interested in documentation for this project, please see the "
+"following repository:"
+msgstr ""
+
+#: ../../content/contributors.md:86
+msgid ""
+"releng-tool -- Documentation\\ <https://github.com/releng-tool/releng-tool-"
+"docs>"
+msgstr ""

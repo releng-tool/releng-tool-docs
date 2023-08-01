@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../content/news/2021-12-31_00.10.00.md:1
+msgid "0.10 (2021-12-31)"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:3
+msgid "New \"definition directory\" package environment/script variable"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:5
+msgid ""
+"A new environment/script variable has been added to help a project refer to "
+"a package's \"definition directory\" -- the specific folder of a package "
+"found under `package/`. The key for this variable is `<PKG_NAME>_DEFDIR`."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:9
+msgid ""
+"For example, if a package script wishes to use content from inside the "
+"package's definition directory, they can refer to it as follow:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:16
+msgid "Suppress installation stage for CMake projects"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:18
+msgid ""
+"While releng-tool attempts to provide the common \"configuration &#8594; "
+"build &#8594; install\" stages, not all projects support an installation "
+"phase. CMake projects which did not define an [`install`][cmake-install] "
+"rule, the installation stage for these projects would always fail."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:23
+msgid ""
+"To explicitly skip the install stage for these packages, the "
+"`LIBFOO_CMAKE_NOINSTALL` can be configured inside a package's definition "
+"file to ignore the stage for a package. For example:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:31
+msgid "Support rsync-based sites"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:33
+msgid ""
+"releng-tool now supports fetching content from an [rsync][rsync] compatible "
+"source. By adjusting a package's `LIBFOO_SITE` definition to be prefixed "
+"with `rsync+`, the trailing value can be used to define the rsync source to "
+"copy content from."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:38
+msgid ""
+"For example, to copy content from a mounted NAS location at "
+"`/mnt/nas/project`, the following could be used:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:45
+msgid "Packages can also pull content from a remote source:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:51
+msgid ""
+"What specific source paths are support will vary based off the host's "
+"installed `rsync` tool."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:54
+msgid "Remove the requirement for a package version configuration"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:56
+msgid ""
+"The `LIBFOO_VERSION` configuration is the recommended way to define the "
+"version of a package. It serves two purposes -- it can be used to identify "
+"the version to use when pulling content from a remote repository, as well as"
+" used when managing the names of build/cache folders for a project."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:61
+msgid ""
+"However, both these purposes are not always required. A package may define a"
+" `LIBFOO_REVISION` entry to specify the specific revision to use for source-"
+"fetching. The output of a build location does not require a version value to"
+" be postfixed. While specifying a version can help manage/identify output "
+"files for a build, for example:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:71
+msgid ""
+"The benefits of output inspection and manual version change/testing should "
+"not impose defining a version entry for a package. Therefore, package types "
+"which do not need a version or have `LIBFOO_REVISION` defined for a package,"
+" the `LIBFOO_VERSION` configuration can be omitted."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:76
+msgid "Flexible asset management"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:78
+msgid ""
+"Typical runs will download files (`dl/`) and cache content (`cache/`) in the"
+" project's root directory. While users could override these paths using the "
+"`--cache-dir <dir>` and `--dl-dir <dir>` command line options:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:82
+msgid ""
+"Needing to specify both these arguments on each run is not always ideal."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:83
+msgid ""
+"There was not an easy way to point to a single path to say \"store all "
+"content in this folder\"."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:86
+msgid ""
+"To improve the user experience, the concept on an \"asset\" directory has "
+"been introduced. If a user specifies `--assets-dir <dir>` on the command "
+"line, both the cache and download directories will be stored inside the "
+"provided container folder."
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:91
+msgid ""
+"For cases where specifying these paths using command line options is not "
+"ideal, the following environment variables can be used instead:"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:94
+msgid "`RELENG_ASSETS_DIR=<dir>`"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:95
+msgid "`RELENG_CACHE_DIR=<dir>`"
+msgstr ""
+
+#: ../../content/news/2021-12-31_00.10.00.md:96
+msgid "`RELENG_DL_DIR=<dir>`"
+msgstr ""
