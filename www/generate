@@ -160,7 +160,7 @@ REDIRECT_EOM
 
     # build redirect.js
     cat > $redirectjs <<- REDIRECTJS_START
-var base = '/en/';
+var base = '/en';
 var ln = window.navigator.language || navigator.browserLanguage;
 ln = ln.substring(0,2);
 switch(ln) {
@@ -168,7 +168,7 @@ REDIRECTJS_START
 
     for lang in "${languages[@]}"; do
         cat >> $redirectjs <<- REDIRECTJS_ENTRY
-case '$lang': base = '/$lang/'; break;
+case '$lang': base = '/$lang'; break;
 REDIRECTJS_ENTRY
     done
 
