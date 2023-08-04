@@ -44,7 +44,7 @@ jobs:
 
     - name: Moving over new development translations
       run: |
-        rsync -av \
+        rsync --exclude='.git/' --archive --delete --verbose \
             $GITHUB_WORKSPACE/releng-tool-docs/www/_build/ \
             $GITHUB_WORKSPACE/releng-tool-www-docs-develop/
 
