@@ -130,6 +130,17 @@ releng-tool sbom
 By default, a releng-tool run will generate an SBOM file at the end of a
 run. This action can be used to generate an SBOM without requiring a build.
 
+### `state`
+
+A request to dump active state information for a project.
+
+```shell
+releng-tool state
+```
+
+A state request can be used to dump any active configuration and operating
+modes.
+
 ## Package actions
 
 The following outlines available package-specific actions:
