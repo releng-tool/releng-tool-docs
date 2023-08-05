@@ -57,5 +57,6 @@ releng.disable_remote_scripts <quirk-disable_remote_scripts>
 releng.disable_spdx_check <quirk-disable_spdx_check>
 releng.git.no_depth <quirk-git-no_depth>
 releng.git.no_quick_fetch <quirk-git-no_quick_fetch>
+releng.git.replicate_cache <quirk-git-replicate_cache>
 releng.stats.no_pdf <quirk-stats-no_pdf>
 :::
