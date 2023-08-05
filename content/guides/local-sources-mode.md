@@ -136,6 +136,8 @@ In the above example, if a project had internal packages `liba`,
 - Sources for `libb` will be used from the folder `/mnt/sources/libb`; and,
 - Sources for `libc` will not be fetched locally.
 
-A user can either disable local sources mode by performing a
-[`mrproper`](action-mrproper) or can manually remove the file flag
-observed at the root of the project.
+A user can either disable local sources mode by:
+
+- Providing a local-source path of `-` or `unset`;
+- Invoking [`mrproper`](action-mrproper); or,
+- By manually removing the file flag found at the root of the project.

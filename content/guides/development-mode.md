@@ -82,6 +82,8 @@ $ releng-tool --development
 
 This package would use the `main` branch instead.
 
-A user can either disable development mode by performing a
-[`mrproper`](action-mrproper) or can manually remove the file flag
-observed at the root of the project.
+A user can either disable development sources mode by:
+
+- Providing a development mode of `-` or `unset`;
+- Invoking [`mrproper`](action-mrproper); or,
+- By manually removing the file flag found at the root of the project.
