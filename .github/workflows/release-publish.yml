@@ -1,0 +1,64 @@
+name: Release publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  doc-update:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/jdknight/docs-support-container:latest
+
+    steps:
+    - name: Checkout releng-tool
+      uses: actions/checkout@v3
+      with:
+        repository: releng-tool/releng-tool
+        path: releng-tool
+        ref: ${{github.ref_name}}
+
+    - name: Checkout releng-tool-docs
+      uses: actions/checkout@v3
+      with:
+        repository: releng-tool/releng-tool-docs
+        path: releng-tool-docs
+
+    - name: Checkout releng-tool-www-docs
+      uses: actions/checkout@v3
+      with:
+        repository: releng-tool/releng-tool-www-docs
+        path: releng-tool-www-docs
+        ssh-key: ${{ secrets.WWW_DOCS_AUTOPUBLISH }}
+
+    - name: Install MyST-Parser (i8n; supported)
+      run: |
+        pip3 install --force-reinstall \
+            git+https://github.com/jdknight/MyST-Parser.git@v2.0.0-jdknight-i8n
+
+    - name: Update translations
+      run: |
+        cd releng-tool-docs/locale
+        ./update
+
+    - name: Build documentation
+      run: |
+        cd releng-tool-docs/www
+        ./generate
+
+    - name: Moving over new translations
+      run: |
+        rsync --exclude='.git/' --archive --delete --verbose \
+            $GITHUB_WORKSPACE/releng-tool-docs/www/_build/ \
+            $GITHUB_WORKSPACE/releng-tool-www-docs/
+
+    - name: Publish changes
+      run: |
+        cd releng-tool-www-docs
+        git config --global user.name 'releng-tool bot'
+        git config --global user.email 'noreply@releng.io'
+        git add .
+        if git commit -am "automated update"; then
+          git push origin main
+        fi
