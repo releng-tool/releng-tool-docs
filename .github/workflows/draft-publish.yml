@@ -4,6 +4,11 @@ on:
   push:
     branches:
     - main
+    paths:
+      - '.github/workflows/draft-publish.yml'
+      - 'content/**'
+      - 'locale/**'
+      - 'www/**'
   workflow_dispatch:
 
 jobs:
