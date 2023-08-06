@@ -1,25 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  releng-tool\n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-06 15:18-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja\n"
-"Language-Team: Japanese (https://app.transifex.com/releng-"
-"tool/teams/171906/ja/)\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../content/guides/quirks/quirks.md:48
 msgid "releng.bzr.certifi"
@@ -72,9 +68,9 @@ msgstr ""
 #: ../../content/guides/quirks/quirks.md:3
 msgid ""
 "releng-tool also provides a series of configuration quirks to change the "
-"default running state of a releng-tool run. This can be used to help "
-"manage rare host environment scenarios where releng-tool may be "
-"experiencing issues."
+"default running state of a releng-tool run. This can be used to help manage "
+"rare host environment scenarios where releng-tool may be experiencing "
+"issues."
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:7
@@ -89,8 +85,8 @@ msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:16
 msgid ""
-"If multiple quirks are desired, the quirk argument can be provided "
-"multiple times:"
+"If multiple quirks are desired, the quirk argument can be provided multiple "
+"times:"
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:23
@@ -105,16 +101,16 @@ msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:28
 msgid ""
-"Quirks can also be enabled through configuration override scripts. This "
-"can be used in certain build scenarios where defining a script override "
-"is easier than specifying multiple command line options."
+"Quirks can also be enabled through configuration override scripts. This can "
+"be used in certain build scenarios where defining a script override is "
+"easier than specifying multiple command line options."
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:32
 msgid ""
-"For example, if an override script [`releng-overrides`](/guides"
-"/configuration-overrides) is created, the following can be used to enable"
-" one or more quirks for a releng-tool run:"
+"For example, if an override script [`releng-"
+"overrides`](/guides/configuration-overrides) is created, the following can "
+"be used to enable one or more quirks for a releng-tool run:"
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:44
@@ -122,6 +118,6 @@ msgid "Available quirks"
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:46
-msgid "The following is a list of all available quirks supported by releng-tool:"
+msgid ""
+"The following is a list of all available quirks supported by releng-tool:"
 msgstr ""
-

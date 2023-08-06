@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the releng-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 21:08-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
 "Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,6 +37,16 @@ msgid ""
 "provided (e.g. autotools, CMake, etc.), for projects using common build "
 "capabilities."
 msgstr ""
+"releng-tool może pomóc podczas wydawania projektu. Pozwala ono użytkownikowi"
+" zdefiniować do przetworzenia jeden lub większą ilość pakietów. Każdy z "
+"pakietów ma możliwość wykonania ć kilka etapów: pobierania, dekompresji, "
+"łatania, konfigurowania, budowania i instalacji; to od projektu zależy, co "
+"dany pakiet będzie definiować. Najprostszym typem pakietu jest pakiet oparty"
+" na skryptach, który umożliwia użytkownikowi definiować dowolne skrypty dot."
+" sposobu wykonywania różnych etapów wydawania projektu. Pakiet nie musi "
+"obowiązkowo obsługiwać wszystkich etapów. Dostarczone są pakiety pomocnicze,"
+" jak na przykład autotools, w przypadku projektów wykorzystujących możliwość"
+" wspólnego budowania."
 
 #: ../../content/index.md:20
 msgid ""
@@ -42,3 +56,8 @@ msgid ""
 "compilers/toolchains are used and the interaction between the staging/target"
 " area and the host system."
 msgstr ""
+"Mimo że releng-tool może pomóc w konfiguracji i budowaniu projektu, schemat "
+"nie stara się zapewnić idealnej piaskownicy (sandbox) dla owego procesu. "
+"Użytkownicy tworzący projekty będą posiadali całkowite prawo do wyboru "
+"kompilatorów/toolchainów oraz interakcji między miejscem "
+"przechowującym/docelowym, a systemem hosta. "

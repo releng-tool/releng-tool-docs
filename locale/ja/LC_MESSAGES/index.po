@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the releng-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 21:08-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,6 +37,8 @@ msgid ""
 "provided (e.g. autotools, CMake, etc.), for projects using common build "
 "capabilities."
 msgstr ""
+"releng-"
+"toolはプロジェクトのリリースエンジニアリングをアシストするために利用する事ができます。このツールを使用する事により、ユーザーは処理する単一もしくは複数のパッケージを定義する事が可能になります。各パッケージには、フェッチ、抽出、パッチ適用、構成、構築、およびインストールといった複数の段階を実行する機能を備えています。パッケージが定義するものは、プロジェクトに応じて異なります。最もシンプルな種類のパッケージはスクリプトベースのものであり、これを使用すると、リリースエンジニアリングプロセスの様々な段階を実行する方法に関連するカスタムスクリプトをユーザーが定義できます。パッケージはすべての段階を処理する必要はありません。autotoolsなど、一般的なビルド機能を使用するプロジェクト用のヘルパーパッケージタイプが提供されています。"
 
 #: ../../content/index.md:20
 msgid ""
@@ -42,3 +48,4 @@ msgid ""
 "compilers/toolchains are used and the interaction between the staging/target"
 " area and the host system."
 msgstr ""
+"こちらツールはプロジェクトにおける構成と構築をアシストしますが、フレームワークは完全なサンドボックスを提供する訳ではありません。プロジェクトを定義するユーザーは、どのコンパイラやツールチェーンが使用されているのか、そしてステージングやターゲット領域とホストシステムとの間の相互作用に関連する所有権を持ちます。"

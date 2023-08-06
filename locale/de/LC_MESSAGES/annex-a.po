@@ -1,34 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  releng-tool\n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 21:08-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: German (https://app.transifex.com/releng-"
-"tool/teams/171906/de/)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../content/annex-a.md:1
 msgid "ANNEX A - Quick reference"
-msgstr ""
+msgstr "ANHANG A - Kurzreferenz"
 
 #: ../../content/annex-a.md:3
 msgid ""
-"A quick reference document listing available options to developers "
-"building a releng-tool project."
+"A quick reference document listing available options to developers building "
+"a releng-tool project."
 msgstr ""
 
 #: ../../content/annex-a.md:6
@@ -37,8 +37,7 @@ msgstr ""
 
 #: ../../content/annex-a.md:8
 msgid ""
-"Options which are read by releng-tool from a project's configuration "
-"script:"
+"Options which are read by releng-tool from a project's configuration script:"
 msgstr ""
 
 #: ../../content/annex-a.md:30
@@ -47,8 +46,8 @@ msgstr ""
 
 #: ../../content/annex-a.md:32
 msgid ""
-"Environment (and script) variables available to context's invoked by "
-"releng-tool (may vary per context):"
+"Environment (and script) variables available to context's invoked by releng-"
+"tool (may vary per context):"
 msgstr ""
 
 #: ../../content/annex-a.md:96
@@ -76,4 +75,3 @@ msgstr ""
 #: ../../content/annex-a.md:186
 msgid "Quirk options used by releng-tool:"
 msgstr ""
-

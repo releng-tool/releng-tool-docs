@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the releng-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 21:08-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
 "Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,6 +37,17 @@ msgid ""
 "provided (e.g. autotools, CMake, etc.), for projects using common build "
 "capabilities."
 msgstr ""
+"releng-tool kann als Unterstützung bei der Release-Engineering eines "
+"Projekts eingesetzt werden. Dieses Tool ermöglicht es einem Benutzer, ein "
+"oder mehrere Pakete zur Verarbeitung zu definieren. Jedes Paket hat die "
+"Fähigkeit, mehrere Schritte durchzuführen: Abrufen, Extrahieren, Patchen, "
+"Konfiguration, Aufbau und Installation. Was ein Paket definiert, hängt von "
+"einem bestimmten Projekt ab. Die einfachste Art von Paket ist skriptbasiert,"
+" sodass ein Benutzer benutzerdefinierte Skripte definieren kann, um "
+"verschiedene Phasen des Release-Engineering-Prozesses durchzuführen. Ein "
+"Paket ist nicht erforderlich, um jede Stufe zu absolvieren. Es werden "
+"Hilfspakettypen wie Autotools für Projekte mit üblichen Build-Funktionen "
+"bereitgestellt."
 
 #: ../../content/index.md:20
 msgid ""
@@ -42,3 +57,8 @@ msgid ""
 "compilers/toolchains are used and the interaction between the staging/target"
 " area and the host system."
 msgstr ""
+"Obwohl dieses Tool bei der Konfiguration und dem Aufbau eines Projekts "
+"helfen kann, versucht das Framework nicht, eine perfekte Sandbox "
+"bereitzustellen. Benutzer, die ihre Projekte definieren, haben die "
+"Verantwortung dafür, welche Compiler/Toolchains verwendet werden und wie der"
+" Staging-/Zielbereich mit dem Hostsystem zusammenwirkt."

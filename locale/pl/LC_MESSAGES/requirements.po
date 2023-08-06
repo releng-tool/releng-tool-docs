@@ -1,41 +1,46 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# James Knight <james.d.knight@live.com>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  releng-tool\n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-06 15:18-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: pl\n"
-"Language-Team: Polish (https://app.transifex.com/releng-"
-"tool/teams/171906/pl/)\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
-"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
+"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: ../../content/requirements.md:1
 msgid "Requirements"
-msgstr ""
+msgstr "Wymagania"
 
 #: ../../content/requirements.md:3
 msgid ""
 "releng-tool is developed in [Python][python] and requires either "
-"[Python][python] 2.7 or 3.4+ to run on a host system. A series of "
-"optional tools are required if certain stages or features are used. For "
-"example, projects fetching sources from [Git][git] will require the `git`"
-" tool installed; projects with patches will required the `patch` tool. "
-"While some features may be operating system-specific (e.g. autotools "
-"features are designed for Linux-based hosts), releng-tool can work on "
-"various operating system variants."
+"[Python][python] 2.7 or 3.4+ to run on a host system. A series of optional "
+"tools are required if certain stages or features are used. For example, "
+"projects fetching sources from [Git][git] will require the `git` tool "
+"installed; projects with patches will required the `patch` tool. While some "
+"features may be operating system-specific (e.g. autotools features are "
+"designed for Linux-based hosts), releng-tool can work on various operating "
+"system variants."
 msgstr ""
-
+"releng-tool zostało zaprojektowane w języku [Python][python] i wymaga "
+"[Python][python] 2.7 lub 3.4+ aby działał w systemie hosta. W przypadku "
+"niektórych etapów czy funkcji, mogą być potrzebne opcjonalne narzędzia. Na "
+"przykład, projekty pobierające źródła z [Git][git] będą wymagały "
+"zainstalowania narzędzi `git`; projekty z łataniem będą wymagały narzędzia "
+"`patch`. Chociaż niektóre funkcje mogą działać na niektórych konkretnych "
+"systemach (np. funkcje autotools są przeznaczone do Linuxa), releng-tool "
+"może działać na kilku systemach operacyjnych."

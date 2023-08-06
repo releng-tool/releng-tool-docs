@@ -409,6 +409,12 @@ source_file  = pot/guides/quirks/quirk-git-no_quick_fetch.pot
 type         = PO
 minimum_perc = 0
 
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_git_replicate_cache]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-git-replicate_cache.po
+source_file  = pot/guides/quirks/quirk-git-replicate_cache.pot
+type         = PO
+minimum_perc = 0
+
 [o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_stats_no_pdf]
 file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-stats-no_pdf.po
 source_file  = pot/guides/quirks/quirk-stats-no_pdf.pot
