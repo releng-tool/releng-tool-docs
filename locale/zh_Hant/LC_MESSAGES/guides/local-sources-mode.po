@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2023-08-06 15:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -111,9 +111,17 @@ msgid "Sources for `libc` will not be fetched locally."
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:139
-msgid ""
-"A user can either disable local sources mode by performing a [`mrproper"
-"`](action-mrproper) or can manually remove the file flag observed at the "
-"root of the project."
+msgid "A user can either disable local sources mode by:"
 msgstr ""
 
+#: ../../content/guides/local-sources-mode.md:141
+msgid "Providing a local-source path of `-` or `unset`;"
+msgstr ""
+
+#: ../../content/guides/local-sources-mode.md:142
+msgid "Invoking [`mrproper`](action-mrproper); or,"
+msgstr ""
+
+#: ../../content/guides/local-sources-mode.md:143
+msgid "By manually removing the file flag found at the root of the project."
+msgstr ""

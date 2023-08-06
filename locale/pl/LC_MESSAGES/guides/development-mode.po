@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2023-08-06 15:18-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../content/guides/development-mode.md:1
 msgid "Development mode"
@@ -23,22 +29,23 @@ msgstr ""
 
 #: ../../content/guides/development-mode.md:3
 msgid ""
-"Development mode provides a way for a user to request to process packages "
-"against development versions of sources rather than using fixed versions. A "
-"package will typically target a stable release, either pointing to a "
-"specific archive to download or a specific tag to clone from. However, for "
-"some builds, a user may wish to build a specific package against their main "
-"development branch (e.g. the `main` branch of a Git repository) or a long-"
-"term stable release branch. Packages can be defined to target these specific"
-" revisions if running in development mode."
+"Development mode provides a way for a user to request to process packages"
+" against development versions of sources rather than using fixed "
+"versions. A package will typically target a stable release, either "
+"pointing to a specific archive to download or a specific tag to clone "
+"from. However, for some builds, a user may wish to build a specific "
+"package against their main development branch (e.g. the `main` branch of "
+"a Git repository) or a long-term stable release branch. Packages can be "
+"defined to target these specific revisions if running in development "
+"mode."
 msgstr ""
 
 #: ../../content/guides/development-mode.md:12
 msgid ""
-"To enable development mode, invoking `releng-tool` with the `--development` "
-"(or `-D`) argument will enable the mode. Future calls to releng-tool for the"
-" project will use a development revision for packages where appropriate. For"
-" example:"
+"To enable development mode, invoking `releng-tool` with the "
+"`--development` (or `-D`) argument will enable the mode. Future calls to "
+"releng-tool for the project will use a development revision for packages "
+"where appropriate. For example:"
 msgstr ""
 
 #: ../../content/guides/development-mode.md:25
@@ -55,8 +62,8 @@ msgstr ""
 
 #: ../../content/guides/development-mode.md:40
 msgid ""
-"A build would normally use the `1.2` tag for this package. However, if an "
-"environment is configured to use the `develop` development mode:"
+"A build would normally use the `1.2` tag for this package. However, if an"
+" environment is configured to use the `develop` development mode:"
 msgstr ""
 
 #: ../../content/guides/development-mode.md:47
@@ -66,33 +73,46 @@ msgstr ""
 
 #: ../../content/guides/development-mode.md:49
 msgid ""
-"Projects can also target specific sites based off the development mode. This"
-" can be useful if a package uses a built archive for a stable release, but "
-"having development sources fetched from a repository. For example:"
+"Projects can also target specific sites based off the development mode. "
+"This can be useful if a package uses a built archive for a stable "
+"release, but having development sources fetched from a repository. For "
+"example:"
 msgstr ""
 
 #: ../../content/guides/development-mode.md:64
 msgid ""
-"In a normal execution, a tar.gz archive would be downloaded for the package."
-" However, if an environment is configured to use the `test` development "
-"mode, sources will be fetched from the Git repository on the `main` branch."
+"In a normal execution, a tar.gz archive would be downloaded for the "
+"package. However, if an environment is configured to use the `test` "
+"development mode, sources will be fetched from the Git repository on the "
+"`main` branch."
 msgstr ""
 
 #: ../../content/guides/development-mode.md:68
 msgid ""
 "Simple development modes are also supported. Packages can use the "
-"`LIBFOO_DEVMODE_REVISION` option to hint at a development revision to pull."
+"`LIBFOO_DEVMODE_REVISION` option to hint at a development revision to "
+"pull."
 msgstr ""
 
 #: ../../content/guides/development-mode.md:76
 msgid ""
-"A build would normally use the `v3.0` tag for this package. However, if an "
-"environment is configured a non-explicit development mode:"
+"A build would normally use the `v3.0` tag for this package. However, if "
+"an environment is configured a non-explicit development mode:"
 msgstr ""
 
 #: ../../content/guides/development-mode.md:85
-msgid ""
-"A user can either disable development mode by performing a "
-"[`mrproper`](action-mrproper) or can manually remove the file flag observed "
-"at the root of the project."
+msgid "A user can either disable development sources mode by:"
 msgstr ""
+
+#: ../../content/guides/development-mode.md:87
+msgid "Providing a development mode of `-` or `unset`;"
+msgstr ""
+
+#: ../../content/guides/development-mode.md:88
+msgid "Invoking [`mrproper`](action-mrproper); or,"
+msgstr ""
+
+#: ../../content/guides/development-mode.md:89
+msgid "By manually removing the file flag found at the root of the project."
+msgstr ""
+

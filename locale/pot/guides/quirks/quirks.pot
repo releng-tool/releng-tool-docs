@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2023-08-06 15:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,6 +50,10 @@ msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:48
 msgid "releng.git.no_quick_fetch"
+msgstr ""
+
+#: ../../content/guides/quirks/quirks.md:48
+msgid "releng.git.replicate_cache"
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:48

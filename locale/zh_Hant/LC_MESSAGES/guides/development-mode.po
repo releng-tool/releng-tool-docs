@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2023-08-06 15:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -98,9 +98,18 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/development-mode.md:85
-msgid ""
-"A user can either disable development mode by performing a [`mrproper"
-"`](action-mrproper) or can manually remove the file flag observed at the "
-"root of the project."
+msgid "A user can either disable development sources mode by:"
+msgstr ""
+
+#: ../../content/guides/development-mode.md:87
+msgid "Providing a development mode of `-` or `unset`;"
+msgstr ""
+
+#: ../../content/guides/development-mode.md:88
+msgid "Invoking [`mrproper`](action-mrproper); or,"
+msgstr ""
+
+#: ../../content/guides/development-mode.md:89
+msgid "By manually removing the file flag found at the root of the project."
 msgstr ""
 
