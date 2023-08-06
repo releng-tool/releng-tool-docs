@@ -6,3 +6,6 @@
 
 This repository holds the documentation presented on
 [docs.releng.io](https://docs.releng.io/).
+
+Draft builds can be found on
+[docs-develop.releng.io](https://docs-develop.releng.io/).
