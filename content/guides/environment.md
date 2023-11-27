@@ -286,6 +286,14 @@ Flag set if performing a re-configuration request.
 
 Flag set if performing a re-install request.
 
+### `RELENG_SCRIPT`
+
+The path of the script currently being executed.
+
+### `RELENG_SCRIPT_DIR`
+
+The path of the directory holding the script currently being executed.
+
 ### `RELENG_TARGET_PKG`
 
 The name of the target package (if any) provided by the command line.
