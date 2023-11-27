@@ -14,23 +14,47 @@ releng-tool, the following environment variables are available:
 
 ### `BUILD_DIR`
 
-The build directory.
+The build directory. By default, this will be a folder `build` found inside
+the configured output directory. For example:
+
+```none
+<root-dir>/output/build
+```
 
 ### `CACHE_DIR`
 
-The cache directory.
+The cache directory. By default, this will be a folder `cache` found inside
+the configured root directory. For example:
+
+```none
+<root-dir>/cache
+```
 
 ### `DL_DIR`
 
-The download directory.
+The download directory. By default, this will be a folder `dl` found inside
+the configured root directory. For example:
+
+```none
+<root-dir>/dl
+```
 
 ### `HOST_BIN_DIR`
 
-The host directory's prefixed bin directory.
+The host directory's prefixed bin directory. For example:
+
+```none
+<root-dir>/output/build
+```
 
 ### `HOST_DIR`
 
-The host directory.
+The host directory. By default, this will be a folder `host` found inside
+the configured output directory. For example:
+
+```none
+<root-dir>/output/host
+```
 
 ### `HOST_INCLUDE_DIR`
 
@@ -42,11 +66,21 @@ The host directory's prefixed library directory.
 
 ### `IMAGES_DIR`
 
-The images directory.
+The images directory. By default, this will be a folder `images` found inside
+the configured output directory. For example:
+
+```none
+<root-dir>/output/images
+```
 
 ### `LICENSE_DIR`
 
-The licenses directory.
+The licenses directory. By default, this will be a folder `licenses` found
+inside the configured output directory. For example:
+
+```none
+<root-dir>/output/licenses
+```
 
 See also [licenses](licenses).
 
@@ -74,7 +108,12 @@ overrides the number of jobs to use, the
 
 ### `OUTPUT_DIR`
 
-The output directory.
+The output directory.  By default, this will be a folder `output` found inside
+the configured root directory. For example:
+
+```none
+<root-dir>/output
+```
 
 (env-pkg-build-base-dir)=
 ### `PKG_BUILD_BASE_DIR`
@@ -176,19 +215,36 @@ See also [](pkg-opt-version).
 
 ### `PREFIX`
 
-The sysroot prefix for the package.
+The sysroot prefix for the package. By default, this value is configured
+to `/usr`; with the exception of Windows builds where this value is empty
+by default.
 
 ### `PREFIXED_HOST_DIR`
 
-The host directory with the prefix applied.
+The host directory with the prefix applied. An example prefixed
+directory may be as follows:
+
+```none
+<root-dir>/output/host/usr
+```
 
 ### `PREFIXED_STAGING_DIR`
 
-The staging area directory with the prefix applied.
+The staging area directory with the prefix applied. An example prefixed
+directory may be as follows:
+
+```none
+<root-dir>/output/staging/usr
+```
 
 ### `PREFIXED_TARGET_DIR`
 
-The target area directory with the prefix applied.
+The target area directory with the prefix applied. An example prefixed
+directory may be as follows:
+
+```none
+<root-dir>/output/target/usr
+```
 
 ### `RELENG_CLEAN`
 
@@ -248,39 +304,84 @@ The root directory.
 
 ### `STAGING_BIN_DIR`
 
-The staging area directory's prefixed bin directory.
+The staging area directory's prefixed bin directory. An example binary
+directory may be as follows:
+
+```none
+<root-dir>/output/staging/usr/bin
+```
 
 ### `STAGING_DIR`
 
-The staging area directory.
+The staging area directory. By default, this will be a folder `staging` found
+inside the configured output directory. For example:
+
+```none
+<root-dir>/output/staging
+```
 
 ### `STAGING_INCLUDE_DIR`
 
-The staging area directory's prefixed include directory.
+The staging area directory's prefixed include directory. An example include
+directory may be as follows:
+
+```none
+<root-dir>/output/staging/usr/include
+```
 
 ### `STAGING_LIB_DIR`
 
-The staging area directory's prefixed library directory.
+The staging area directory's prefixed library directory. An example library
+directory may be as follows:
+
+```none
+<root-dir>/output/staging/usr/lib
+```
 
 ### `SYMBOLS_DIR`
 
-The symbols area directory.
+The symbols area directory. By default, this will be a folder `symbols` found
+inside the configured output directory. For example:
+
+```none
+<root-dir>/output/symbols
+```
 
 ### `TARGET_BIN_DIR`
 
-The target area directory's prefixed bin directory.
+The target area directory's prefixed bin directory. An example binary
+directory may be as follows:
+
+```none
+<root-dir>/output/target/usr/bin
+```
 
 ### `TARGET_DIR`
 
-The target area directory.
+The target area directory. By default, this will be a folder `target` found
+inside the configured output directory. For example:
+
+```none
+<root-dir>/output/target
+```
 
 ### `TARGET_INCLUDE_DIR`
 
-The target area directory's prefixed include directory.
+The target area directory's prefixed include directory. An example include
+directory may be as follows:
+
+```none
+<root-dir>/output/target/usr/include
+```
 
 ### `TARGET_LIB_DIR`
 
-The target area directory's prefixed library directory.
+The target area directory's prefixed library directory. An example library
+directory may be as follows:
+
+```none
+<root-dir>/output/target/usr/lib
+```
 
 ## Package-specific variables
 
