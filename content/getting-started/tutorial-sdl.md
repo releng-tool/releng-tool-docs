@@ -8,7 +8,7 @@ a build. Typically, a project would configure/use toolchains to build
 projects to ensure the resulting files can run on a desired target.
 ```
 
-This tutorial shows an example using creating a [Simple DirectMedia Layer][sdl]
+This tutorial shows an example creating a [Simple DirectMedia Layer][sdl]
 (SDL) sample project, utilizing CMake, which can be built on various
 platforms (Linux, OS X or Windows). Users of this tutorial can use any
 platform they desire (commands may vary).
@@ -341,7 +341,7 @@ tutorial:
 
 The project has both `libsdl` and `sample` packages ready to build. For
 the `sample` project, the implementation references a `releng-tool.bmp`
-image to render for a window, which has not been setup. This file should
+image to render for a window, which has not yet been setup. This file should
 be added into the build system and installed into the target in the
 post-build stages.
 
@@ -450,7 +450,7 @@ OS X, navigate to the target directory's bin path and invoke the created
 sample application:
 
 ```shell-session
-$ output/target/usr/bin
+$ cd output/target/usr/bin
 $ LD_LIBRARY_PATH=../lib ./sample
 ```
 

@@ -1,6 +1,6 @@
 # Tutorial "A toolchain example"
 
-This tutorial shows an example using creating an application using a
+This tutorial shows an example creating an application using a
 pre-built toolchain. In this example, we will use a pre-built toolchain
 which (in theory) has been used to prepare a Linux image for an embedded
 device. With the same toolchain, we can define a releng-tool project that
@@ -124,8 +124,8 @@ MY_TOOLCHAIN_CONF_DEFS = {
   this will not be done here to simplify this tutorial.
 - We configure `BR_COMPILER_PARANOID_UNSAFE_PATH`, an option supported by
   the generated Bootlin (Buildroot) toolchain to error when using an unsafe
-  path when performing a build (i.e. using the system's `/usr/include` path
-  over a releng-tool sysroot path).
+  path when performing a build (i.e. throw an error when using the system's
+  `/usr/include` path over a releng-tool sysroot path).
 - Prepares two variables `MY_TOOLCHAIN_CONF_ENV` and `MY_TOOLCHAIN_CONF_DEFS`
   which we can later use for the Autotools packages we have. These values
   help configure toolchain and desired releng-tool paths. Variables set
