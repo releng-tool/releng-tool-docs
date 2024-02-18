@@ -578,16 +578,16 @@ content.
 
 The cache directory to use. By default, the cache directory used is configured
 to `<root>/cache`. If a user does not override a cache directory using the
-[`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR` can be
-used (if set) to override this location.
+[`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR` option can
+be used to override this location.
 
 (env-releng-dl-dir)=
 ### `RELENG_DL_DIR=<dir>`
 
 The download directory to use. By default, the download directory used is
 configured to `<root>/dl`. If a user does not override a download directory
-using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR` can be used
-(if set) to override this location.
+using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR` option
+can be used to override this location.
 
 (env-releng-ignore-running-as-root)=
 ### `RELENG_IGNORE_RUNNING_AS_ROOT=1`
