@@ -14,6 +14,15 @@ h6 code.literal {
     background: unset !important;
 }
 
+/* tweaks to right-toc scrollbars (on-hover; suppress x-overflow) */
+.toc-scroll {
+    overflow: hidden !important;
+}
+
+.toc-scroll:hover {
+    overflow-y: scroll !important;
+}
+
 /* avoid all-caps on lower header entries */
 h4, h5, h6 {
     text-transform: unset !important;
