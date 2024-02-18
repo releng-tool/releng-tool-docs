@@ -106,6 +106,7 @@ count implementation and do not want to rely on the value defined by
 overrides the number of jobs to use, the
 [package-defined count](pkg-opt-fixed-jobs) will be used instead.
 
+(env-output-dir)=
 ### `OUTPUT_DIR`
 
 The output directory.  By default, this will be a folder `output` found inside
@@ -589,8 +590,80 @@ configured to `<root>/dl`. If a user does not override a download directory
 using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR` option
 can be used to override this location.
 
+(env-releng-global-out-container-dir)=
+### `RELENG_GLOBAL_OUTPUT_CONTAINER_DIR=<dir>`
+
+```{note}
+This environment variable is always ignored when either the
+[`--out-dir` argument](arg-out-dir) or
+[`RELENG_OUTPUT_DIR`](env-releng-out-dir) environment variable is used.
+```
+
+Configures a "global" container directory used to hold the output contents
+of releng-tool projects. Projects will typically generate output contents
+inside a project's `<root-dir>/output` directory. This can be overridden
+using the [`--out-dir` argument](arg-out-dir) or
+[`RELENG_OUTPUT_DIR`](env-releng-out-dir) environment variable, if a user
+wishes to generate a build on a different path/partition. While these
+overrides can help, users managing multiple releng-tool projects will need
+to tailor a specific output directory value for each project they wish to
+build. This may be less than ideal if projects typically build in an
+output folder in a common directory. To help avoid this, this environment
+variable can be used.
+
+When configuring this option, the default output folder for projects will be
+set to the provided container directory along with a project's root directory
+name:
+
+```none
+$RELENG_GLOBAL_OUTPUT_CONTAINER_DIR/<root-directory-name>
+```
+
+This allows a user to build multiple releng-tool projects with output data
+placed inside a common directory path without needing to explicitly configure
+a specific output directory each project's build.
+
+For example, if a user stores multiple projects inside a `~/projects/` path
+and configures this option to the path `/mnt/extern-disk`:
+
+```
+export RELENG_GLOBAL_OUTPUT_CONTAINER_DIR=/mnt/extern-disk
+```
+
+The following folder structure should be expected:
+
+```
+├── usr/
+│   └── home/
+│       └── myuser/
+│           └── projects/
+│               ├── my-project-a/
+│               │   ├── ...
+│               │   └── releng.py
+│               └── my-project-b/
+│                   ├── ...
+│                   └── releng.py
+└── mnt/
+    └── extern-disk/
+        ├── my-project-a/
+        │   └── ...
+        └── my-project-b/
+            └── ...
+```
+
 (env-releng-ignore-running-as-root)=
 ### `RELENG_IGNORE_RUNNING_AS_ROOT=1`
 
 Suppress the [warning](tips/privileged-builds) generated when running
 releng-tool with an elevated user.
+
+(env-releng-out-dir)=
+### `RELENG_OUTPUT_DIR=<dir>`
+
+The output directory to use. By default, the output directory used is
+configured to `<root>/output`. If a user does not override an output
+directory using the [`--out-dir` argument](arg-out-dir), the
+`RELENG_OUTPUT_DIR` option can be used to override this location.
+
+See also
+[`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir).

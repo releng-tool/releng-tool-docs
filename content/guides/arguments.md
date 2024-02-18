@@ -463,9 +463,12 @@ releng-tool respects the `NO_COLOR` environment variable, if configured
 in the running environment.
 ```
 
+(arg-out-dir)=
 ### `--out-dir <dir>`
 
 Directory for output (builds, images, etc.; defaults to `<root>/output`).
+
+See also [`RELENG_OUTPUT_DIR`](env-releng-out-dir).
 
 ### `--root-dir <dir>`
 
