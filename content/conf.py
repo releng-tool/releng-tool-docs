@@ -27,6 +27,8 @@ extensions = [
 suppress_warnings = [
     # suppress various header levels with the use of includes
     'myst.header',
+    # suppress strikethrough warning ~ we only build html documentation
+    'myst.strikethrough',
 ]
 
 # add root for autodoc documentation
@@ -48,6 +50,7 @@ sys.path.insert(0, rt_dir)
 # myst configuration
 myst_enable_extensions = [
     'colon_fence',
+    'strikethrough',
 ]
 
 # i8n

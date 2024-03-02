@@ -61,7 +61,7 @@ LIBFOO_LICENSE = 'GPL-2.0-or-later WITH Bison-exception-2.2'
 or
 
 ```python
-LIBFOO_LICENSE = 'Proprietary'
+LIBFOO_LICENSE = 'LicenseRef-MyCompanyLicense'
 ```
 
 See also [](pkg-opt-license-files).
