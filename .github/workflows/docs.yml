@@ -23,13 +23,13 @@ jobs:
 
     steps:
     - name: Checkout releng-tool
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: releng-tool/releng-tool
         path: releng-tool
 
     - name: Checkout releng-tool-docs
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: releng-tool/releng-tool-docs
         path: releng-tool-docs
@@ -43,7 +43,7 @@ jobs:
       working-directory: releng-tool-docs/content
 
     - name: Archive generated PDF
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: releng-tool.pdf
         path: releng-tool-docs/content/_build/latex/releng-tool.pdf
