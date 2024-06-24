@@ -118,6 +118,21 @@ All packages will be processed up to the patch phase (inclusive).
 releng-tool patch
 ```
 
+### `punch`
+
+A punch request acts in a similar fashion as if no global action was provided.
+All configured packages will be processed to their completion and any post
+actions will be run. The difference between a default run and a punch run is
+when a punch run is requested, any packages that have already been processed
+will be re-invoked as if a re-configuration request has been made.
+
+This allows a developer to easily attempt to rebuild all packages in their
+project when multiple packages have been updated.  
+
+```shell
+releng-tool punch
+```
+
 (action-sbom)=
 ### `sbom`
 
