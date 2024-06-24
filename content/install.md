@@ -1,6 +1,15 @@
 # Installation
 
-The recommended method of installing/upgrading releng-tool is using [pip][pip]:
+The recommended method of installing/upgrading releng-tool is using
+[pipx][pipx]:
+
+```shell
+pipx install releng-tool
+ (or)
+python -m pipx install releng-tool
+```
+
+If pipx is not available, users may use [pip][pip] instead:
 
 ```shell
 pip install -U releng-tool
@@ -40,6 +49,17 @@ invoke the following commands:
 
     **Arch**
 ```
+Using `pipx`:
+```shell-session
+$ sudo pacman -Syu
+$ sudo pacman -S python-pipx
+$ pipx ensurepath
+$ pipx install releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
+
+Using `pip`:
 ```shell-session
 $ sudo pacman -Sy
 $ sudo pacman -S python-pip
@@ -72,6 +92,16 @@ releng-tool <version>
 
     **Fedora**
 ```
+Using `pipx`:
+```shell-session
+$ sudo dnf install pipx
+$ pipx ensurepath
+$ pipx install releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
+
+Using `pip`:
 ```shell-session
 $ sudo dnf install python-pip
 $ sudo pip install -U releng-tool
@@ -86,6 +116,7 @@ releng-tool <version>
 
     **openSUSE**
 ```
+Using `pip`:
 ```shell-session
 $ pip install -U releng-tool
 $ releng-tool --version
@@ -99,6 +130,17 @@ releng-tool <version>
 
     **Ubuntu**
 ```
+Using `pipx` (Ubuntu 23.04 or above):
+```shell-session
+$ sudo apt update
+$ sudo apt install pipx
+$ pipx ensurepath
+$ pipx install releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
+
+Using `pip`:
 ```shell-session
 $ sudo apt update
 $ sudo apt install python-pip
@@ -116,7 +158,17 @@ releng-tool <version>
     OS X
     ----
 ```
-From a terminal, invoke the following commands:
+From a terminal, invoke the following commands if using `pipx`:
+
+```shell-session
+$ brew install pipx
+$ pipx ensurepath
+$ pipx install releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
+
+Or, if using `pip`:
 
 ```shell-session
 $ sudo easy_install pip
@@ -164,5 +216,6 @@ pip install git+https://github.com/releng-tool/releng-tool.git
 
 
 [pip]: https://pip.pypa.io/
+[pipx]: https://pipx.pypa.io/
 [python]: https://www.python.org/
 [releng-tool-aur]: https://aur.archlinux.org/packages/releng-tool/
