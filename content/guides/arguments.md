@@ -448,11 +448,12 @@ Numbers of jobs to handle (defaults to `0`; automatic).
 
 Enables [local-sources mode](local-sources-mode).
 
-Without a directory provided, sources of internal packages will be looked
-for in the parent directory of the configured root directory. Users may
-use this argument multiple times to override the local-sources
-configuration. If a package-specific override is provided, sources for
-that package will be looked for inside the provided path.
+Without a directory provided, sources of
+[internal packages](/guides/intern-extern-pkgs) will be looked for in the
+parent directory of the configured root directory. Users may use this
+argument multiple times to override the local-sources configuration. If
+a package-specific override is provided, sources for that package will be
+looked for inside the provided path.
 
 ### `--nocolorout`
 
