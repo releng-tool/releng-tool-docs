@@ -32,11 +32,6 @@ jobs:
         path: releng-tool-www-docs
         ssh-key: ${{ secrets.WWW_DOCS_AUTOPUBLISH }}
 
-    - name: Install MyST-Parser (i8n; supported)
-      run: |
-        pip3 install --force-reinstall \
-            git+https://github.com/jdknight/MyST-Parser.git@v2.0.0-jdknight-i8n
-
     - name: Update translations
       run: |
         cd releng-tool-docs/locale
