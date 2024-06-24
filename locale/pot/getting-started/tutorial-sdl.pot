@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "The goal of this tutorial is to show an example of C-based project, which
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:11
-msgid "This tutorial shows an example using creating a [Simple DirectMedia Layer][sdl] (SDL) sample project, utilizing CMake, which can be built on various platforms (Linux, OS X or Windows). Users of this tutorial can use any platform they desire (commands may vary)."
+msgid "This tutorial shows an example creating a [Simple DirectMedia Layer][sdl] (SDL) sample project, utilizing CMake, which can be built on various platforms (Linux, OS X or Windows). Users of this tutorial can use any platform they desire (commands may vary)."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:16
@@ -147,7 +147,7 @@ msgid "Project configuration and post-build script"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:342
-msgid "The project has both `libsdl` and `sample` packages ready to build. For the `sample` project, the implementation references a `releng-tool.bmp` image to render for a window, which has not been setup. This file should be added into the build system and installed into the target in the post-build stages."
+msgid "The project has both `libsdl` and `sample` packages ready to build. For the `sample` project, the implementation references a `releng-tool.bmp` image to render for a window, which has not yet been setup. This file should be added into the build system and installed into the target in the post-build stages."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:348

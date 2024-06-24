@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../content/news/2023-12-22_01.00.00.md:1
+msgid "1.0 (2023-12-22)"
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:3
+msgid "Marking a 1.0 release!"
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:5
+msgid ""
+"releng-tool has had several beta releases over the last couple of years. "
+"Multiple enhancements and fixes have been applied during this period, "
+"putting this tool in what appears to be a good state. With the updates "
+"made to the documentation, now is a good time as any to flag this tool "
+"into a first stable v1.0 release."
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:11
+msgid "New script and script-directory context variables"
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:13
+msgid ""
+"As various scripts are invoked during a releng-tool run, developers may "
+"wish to determine the path of the running script or the directory which "
+"an active script is running (whether this is a build script for a "
+"package, a post-build script, etc.)."
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:18
+msgid ""
+"Changes have been introduced into releng-tool so that any time a script "
+"is executed, the variables `RELENG_SCRIPT` and `RELENG_SCRIPT_DIR` will "
+"be set. This includes global contexts as well as environment variables. "
+"The variable `RELENG_SCRIPT` will be set to the absolute path of the "
+"running script. As for `RELENG_SCRIPT_DIR`, the value will be a subset of"
+" the script path, holding the absolute path of the directory holding the "
+"script."
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:25
+msgid ""
+"When using script helpers such as `releng_include`, the values of "
+"`RELENG_SCRIPT` and `RELENG_SCRIPT_DIR` will be updated in the included "
+"context for the included script."
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:29
+msgid "SPDX license database updated"
+msgstr ""
+
+#: ../../content/news/2023-12-22_01.00.00.md:31
+msgid ""
+"The internally managed copy of the [SPDX license identifiers][spdx] has "
+"been updated to the most recent version (v3.22)."
+msgstr ""
+

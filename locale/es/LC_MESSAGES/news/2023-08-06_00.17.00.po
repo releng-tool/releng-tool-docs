@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../content/news/2023-08-06_00.17.00.md:1
+msgid "0.17 (2023-08-06)"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:3
+msgid "Configure environment variables across configure, build and install stages"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:5
+msgid ""
+"Packages performing configuration, building and installation stages have "
+"the ability to forward configured environment variables for each stage "
+"(using `LIBFOO_CONF_ENV`, `LIBFOO_BUILD_ENV` and `LIBFOO_INSTALL_ENV`). "
+"This requires some duplication if a developer wanted to define an "
+"environment variable to apply to all of these stages. With the "
+"introduction of the `LIBFOO_ENV` option, this can now be achieving as "
+"follows:"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:18
+msgid "Option to explicitly override `CMAKE_BUILD_TYPE`"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:20
+msgid ""
+"When building with CMake in releng-tool, the default build type is "
+"configured for `RelWithDebInfo`. Developers can now override this for a "
+"package by using the newly added `LIBFOO_CMAKE_BUILD_TYPE` option "
+"(alternatively, over defining a `CMAKE_BUILD_TYPE` override in a "
+"configuration define dictionary)."
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:26
+msgid "Improvements for development and local-sources modes"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:28
+msgid ""
+"A series of changes have been made to help improve usability when taking "
+"advantage of development or local-sources modes. A new action `state` has"
+" been added to allow users to query active modes without having to "
+"manually inspect file flags or perform active run of releng-tool:"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:40
+msgid ""
+"When disabling development or local-sources mode, users would originally "
+"have to invoke a `mrproper` call or manually clear file flags. With this "
+"release, users can pass in a `-` value for these modes when attempting to"
+" unconfigure. For example, to unconfigure development mode:"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:51
+msgid "Or remove a local-source mapping:"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:59
+msgid "Additional changes include:"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:61
+msgid ""
+"Relative paths are now properly handled when provided into a local-"
+"sources command line argument."
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:63
+msgid ""
+"When listing configured local-sources for a project, releng-tool will "
+"inform users if the configured directory does not exist."
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:66
+msgid "Support for Perforce sites"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:68
+msgid ""
+"With this release, releng-tool now supports cloning from Perforce depots."
+" In a host environment with Git and Perforce client utilities installed, "
+"releng-tool runs can download a copy of depot file specification when "
+"processing a package:"
+msgstr ""
+

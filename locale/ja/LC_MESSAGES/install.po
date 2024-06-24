@@ -1,25 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 # Translators:
 # James Knight <james.d.knight@live.com>, 2023
-# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
-"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-"
+"tool/teams/171906/ja/)\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/install.md:1
 msgid "Installation"
@@ -28,100 +30,123 @@ msgstr "インストール"
 #: ../../content/install.md:3
 msgid ""
 "The recommended method of installing/upgrading releng-tool is using "
-"[pip][pip]:"
+"[pipx][pipx]:"
 msgstr ""
 
-#: ../../content/install.md:11
+#: ../../content/install.md:12
+msgid "If pipx is not available, users may use [pip][pip] instead:"
+msgstr ""
+
+#: ../../content/install.md:20
 msgid ""
-"To verify the package has been installed, the following command can be used:"
+"To verify the package has been installed, the following command can be "
+"used:"
 msgstr ""
 
-#: ../../content/install.md:19
+#: ../../content/install.md:28
 msgid "Quick-start"
 msgstr ""
 
-#: ../../content/install.md:21
+#: ../../content/install.md:30
 msgid ""
 "The following provides a series of steps to assist in preparing a new "
 "environment to use this package."
 msgstr ""
 
-#: ../../content/install.md:29
+#: ../../content/install.md:38
 msgid "Linux"
 msgstr ""
 
-#: ../../content/install.md:32
+#: ../../content/install.md:41
 msgid ""
-"While the use of [Python][python]/[pip][pip] is almost consistent between "
-"Linux distributions, below is a series of helpful steps to install this "
-"package under specific distributions of Linux. From a terminal, invoke the "
-"following commands:"
+"While the use of [Python][python]/[pip][pip] is almost consistent between"
+" Linux distributions, below is a series of helpful steps to install this "
+"package under specific distributions of Linux. From a terminal, invoke "
+"the following commands:"
 msgstr ""
 
-#: ../../content/install.md:41
+#: ../../content/install.md:50
 msgid "**Arch**"
 msgstr ""
 
-#: ../../content/install.md:51
+#: ../../content/install.md:52 ../../content/install.md:95
+msgid "Using `pipx`:"
+msgstr ""
+
+#: ../../content/install.md:62 ../../content/install.md:104
+#: ../../content/install.md:119 ../../content/install.md:143
+msgid "Using `pip`:"
+msgstr ""
+
+#: ../../content/install.md:71
 msgid "This package is also [available on AUR][releng-tool-aur]."
 msgstr ""
 
-#: ../../content/install.md:58
+#: ../../content/install.md:78
 msgid "**CentOS**"
 msgstr ""
 
-#: ../../content/install.md:73
+#: ../../content/install.md:93
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../content/install.md:87
+#: ../../content/install.md:117
 msgid "**openSUSE**"
 msgstr ""
 
-#: ../../content/install.md:100
+#: ../../content/install.md:131
 msgid "**Ubuntu**"
 msgstr ""
 
-#: ../../content/install.md:117
+#: ../../content/install.md:133
+msgid "Using `pipx` (Ubuntu 23.04 or above):"
+msgstr ""
+
+#: ../../content/install.md:159
 msgid "OS X"
 msgstr ""
 
-#: ../../content/install.md:119
-msgid "From a terminal, invoke the following commands:"
+#: ../../content/install.md:161
+msgid "From a terminal, invoke the following commands if using `pipx`:"
 msgstr ""
 
-#: ../../content/install.md:134
+#: ../../content/install.md:171
+msgid "Or, if using `pip`:"
+msgstr ""
+
+#: ../../content/install.md:186
 msgid "Windows"
 msgstr ""
 
-#: ../../content/install.md:137
+#: ../../content/install.md:189
 msgid ""
 "If not already installed, download the most recent version of "
 "[Python][python]:"
 msgstr ""
 
-#: ../../content/install.md:139
+#: ../../content/install.md:191
 msgid "Python - Downloads\\ <https://www.python.org/downloads/>"
 msgstr ""
 
-#: ../../content/install.md:142
+#: ../../content/install.md:194
 msgid ""
-"When invoking the installer, it is recommended to select the option to \"Add"
-" Python to PATH\". However, users can explicitly invoked Python from an "
-"absolute path (the remainder of these steps will assume Python is available "
-"in the path)."
+"When invoking the installer, it is recommended to select the option to "
+"\"Add Python to PATH\". However, users can explicitly invoked Python from"
+" an absolute path (the remainder of these steps will assume Python is "
+"available in the path)."
 msgstr ""
 
-#: ../../content/install.md:147
+#: ../../content/install.md:199
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr ""
 
-#: ../../content/install.md:156
+#: ../../content/install.md:208
 msgid "Development"
 msgstr ""
 
-#: ../../content/install.md:158
+#: ../../content/install.md:210
 msgid ""
 "To install the most recent development sources, the following [pip][pip] "
 "command can be used:"
 msgstr ""
+

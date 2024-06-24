@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/news/2023-02-05_00.14.00.md:1
 msgid "0.14 (2023-02-05)"
@@ -101,15 +101,17 @@ msgstr ""
 
 #: ../../content/news/2023-02-05_00.14.00.md:61
 msgid ""
-"Note that releng-tool will not generate a warning if the license value "
-"`Proprietary` is provided."
+"~~Note that releng-tool will not generate a warning if the license value "
+"`Proprietary` is provided.~~ \\ **Edit**: As of v1.1+, we no longer a "
+"`Proprietary` marking; use a [license identifier field][spdx-lif] "
+"instead."
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:66
+#: ../../content/news/2023-02-05_00.14.00.md:70
 msgid "New environment/script variables"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:68
+#: ../../content/news/2023-02-05_00.14.00.md:72
 msgid ""
 "This release includes the `*_BIN_DIR` environment/script variables. These"
 " can be used to allow a developer to reference specific bin paths for the"
@@ -117,23 +119,23 @@ msgid ""
 "variables:"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:73
+#: ../../content/news/2023-02-05_00.14.00.md:77
 msgid "`HOST_BIN_DIR` (e.g. `<host-dir>/usr/bin`)"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:74
+#: ../../content/news/2023-02-05_00.14.00.md:78
 msgid "`STAGING_BIN_DIR` (e.g. `<staging-dir>/usr/bin`)"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:75
+#: ../../content/news/2023-02-05_00.14.00.md:79
 msgid "`TARGET_BIN_DIR` (e.g. `<target-dir>/usr/bin`)"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:77
+#: ../../content/news/2023-02-05_00.14.00.md:81
 msgid "New move-into script function"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:79
+#: ../../content/news/2023-02-05_00.14.00.md:83
 msgid ""
 "The `releng_move_into` helper function has been added to allow releng-"
 "tool script to explicitly move a source into a target directory. This can"
@@ -143,18 +145,18 @@ msgid ""
 " example of this new call is as follows:"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:90
+#: ../../content/news/2023-02-05_00.14.00.md:94
 msgid "Support for Poetry Python setup type"
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:92
+#: ../../content/news/2023-02-05_00.14.00.md:96
 msgid ""
 "The previous release of releng-tool introduces support for processing "
 "Python packages using various common setup types. This release extends on"
 " this by adding support for [Poetry][poetry]."
 msgstr ""
 
-#: ../../content/news/2023-02-05_00.14.00.md:96
+#: ../../content/news/2023-02-05_00.14.00.md:100
 msgid "For example:"
 msgstr ""
 

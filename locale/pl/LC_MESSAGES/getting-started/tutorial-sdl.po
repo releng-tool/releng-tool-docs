@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/getting-started/tutorial-sdl.md:1
 msgid "Tutorial \"An SDL example\""
@@ -23,19 +29,20 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:4
 msgid ""
-"The goal of this tutorial is to show an example of C-based project, which is"
-" built using a host's pre-installed tools (compilers, etc.). The sample "
-"application created will be run on the host system to show the results of a "
-"build. Typically, a project would configure/use toolchains to build projects"
-" to ensure the resulting files can run on a desired target."
+"The goal of this tutorial is to show an example of C-based project, which"
+" is built using a host's pre-installed tools (compilers, etc.). The "
+"sample application created will be run on the host system to show the "
+"results of a build. Typically, a project would configure/use toolchains "
+"to build projects to ensure the resulting files can run on a desired "
+"target."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:11
 msgid ""
-"This tutorial shows an example using creating a [Simple DirectMedia "
-"Layer][sdl] (SDL) sample project, utilizing CMake, which can be built on "
-"various platforms (Linux, OS X or Windows). Users of this tutorial can use "
-"any platform they desire (commands may vary)."
+"This tutorial shows an example creating a [Simple DirectMedia Layer][sdl]"
+" (SDL) sample project, utilizing CMake, which can be built on various "
+"platforms (Linux, OS X or Windows). Users of this tutorial can use any "
+"platform they desire (commands may vary)."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:16
@@ -44,15 +51,15 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:18
 msgid ""
-"To start, make a new folder for the project, folders for each package and "
-"move into the root folder:"
+"To start, make a new folder for the project, folders for each package and"
+" move into the root folder:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:27
 msgid ""
-"The \"libsdl\" package will be used to manage the use of [SDL][sdl], and the"
-" \"sample\" package will be a representation of our sample application that "
-"uses the SDL library."
+"The \"libsdl\" package will be used to manage the use of [SDL][sdl], and "
+"the \"sample\" package will be a representation of our sample application"
+" that uses the SDL library."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:31
@@ -67,18 +74,18 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:50
 msgid ""
-"The SDL library uses a zlib license. We configure `LIBSDL_LICENSE` to the "
-"equivalent [SPDX][spdx] license identifier, as well as define "
-"`LIBSDL_LICENSE_FILES` to point to a copy of the license text. Specifying "
-"license information is not required, but can be helpful when generating "
+"The SDL library uses a zlib license. We configure `LIBSDL_LICENSE` to the"
+" equivalent [SPDX][spdx] license identifier, as well as define "
+"`LIBSDL_LICENSE_FILES` to point to a copy of the license text. Specifying"
+" license information is not required, but can be helpful when generating "
 "license data or software bill of materials (SBOM) for a project."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:55
 msgid ""
-"This example uses SDL v2.28, which we set in the `LIBSDL_VERSION` option. "
-"The version value is useful for managing output folders and logging versions"
-" of packages."
+"This example uses SDL v2.28, which we set in the `LIBSDL_VERSION` option."
+" The version value is useful for managing output folders and logging "
+"versions of packages."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:58
@@ -90,35 +97,36 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:61
 msgid ""
-"The SDL library uses CMake. This means we can use `LIBSDL_TYPE` to configure"
-" the helper type and avoid the need to create configure/build scripts to run"
-" CMake for us (since releng-tool will handle this for us)."
+"The SDL library uses CMake. This means we can use `LIBSDL_TYPE` to "
+"configure the helper type and avoid the need to create configure/build "
+"scripts to run CMake for us (since releng-tool will handle this for us)."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:64
 msgid ""
-"This package has a series of custom options available in its library. We use"
-" `LIBSDL_CONF_DEFS` to configure various CMake options, for example, "
+"This package has a series of custom options available in its library. We "
+"use `LIBSDL_CONF_DEFS` to configure various CMake options, for example, "
 "disabling unit tests. Configuration options will vary per package."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:68
 msgid ""
 "The above `libsdl` package specifies a remote URL to download library "
-"sources. These sources should be validated to ensure data is not corrupted "
-"or manipulated. To do this, create a hash file alongside the package "
-"definition called `libsdl.hash` with the contents:"
+"sources. These sources should be validated to ensure data is not "
+"corrupted or manipulated. To do this, create a hash file alongside the "
+"package definition called `libsdl.hash` with the contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:80
 msgid ""
 "In this hash file, expected hashes for resources can be configured and "
-"checked when releng-tool attempts to fetch resources from remote sources. "
-"Ideally, hashes provided from a third-party package release can be directly "
-"added into these files (`<hash-type> <hash> <file>`). In this example, SDL "
-"provides GPG signatures of their archives. We manually download the archive "
-"and signature file to verify its contents. Once verified, we generated our "
-"own SHA-256 sum and place it into this hash file (with a helpful comment)."
+"checked when releng-tool attempts to fetch resources from remote sources."
+" Ideally, hashes provided from a third-party package release can be "
+"directly added into these files (`<hash-type> <hash> <file>`). In this "
+"example, SDL provides GPG signatures of their archives. We manually "
+"download the archive and signature file to verify its contents. Once "
+"verified, we generated our own SHA-256 sum and place it into this hash "
+"file (with a helpful comment)."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:88
@@ -130,21 +138,22 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:92
 msgid ""
-"Finally, the following shows an example of a patch scenario. For v2.28 SDL's"
-" CMake projects, the library's implementation has trouble when the "
+"Finally, the following shows an example of a patch scenario. For v2.28 "
+"SDL's CMake projects, the library's implementation has trouble when the "
 "installation prefix is empty (which releng-tool may set in Windows "
-"environments). To help fix the CMake definition, we want to patch it before "
-"running a configuration script. Along side the package definition, create a "
-"patch [`001-empty-prefix-support.patch`](assets/sdl/001-empty-prefix-"
-"support.patch) with the following contents:"
+"environments). To help fix the CMake definition, we want to patch it "
+"before running a configuration script. Along side the package definition,"
+" create a patch [`001-empty-prefix-support.patch`](assets/sdl/001-empty-"
+"prefix-support.patch) with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:124
 msgid ""
-"Without getting into the specifics of the patch, the existence of this patch"
-" file will ensure the extracted `CMakeLists.txt` is updated before `libsdl` "
-"package performs its configuration stage. This should ensure this third-"
-"party library can be built on all the platforms we wish to support."
+"Without getting into the specifics of the patch, the existence of this "
+"patch file will ensure the extracted `CMakeLists.txt` is updated before "
+"`libsdl` package performs its configuration stage. This should ensure "
+"this third-party library can be built on all the platforms we wish to "
+"support."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:129
@@ -162,10 +171,10 @@ msgstr ""
 #: ../../content/getting-started/tutorial-sdl.md:144
 msgid ""
 "Next, we will create a \"sample\" project. The sources for this sample "
-"project would typically be stored in a version control system such as a Git "
-"repository. To simplify this tutorial, we will utilize a `local` VCS type "
-"(typically used for interim development) to help demonstrate the sample "
-"project."
+"project would typically be stored in a version control system such as a "
+"Git repository. To simplify this tutorial, we will utilize a `local` VCS "
+"type (typically used for interim development) to help demonstrate the "
+"sample project."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:150
@@ -176,37 +185,38 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:163
 msgid ""
-"We specify a dependency on the `libsdl` package by adding this package in a "
-"`SAMPLE_DEPENDENCIES` list. One or more packages can be specified here if "
-"needed, and will ensure that `libsdl` is built before any attempts to "
-"configure/build the sample package."
+"We specify a dependency on the `libsdl` package by adding this package in"
+" a `SAMPLE_DEPENDENCIES` list. One or more packages can be specified here"
+" if needed, and will ensure that `libsdl` is built before any attempts to"
+" configure/build the sample package."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:167
 msgid ""
 "This package is then flagged as internal (`SAMPLE_INTERNAL`). We do this "
-"since this is our own custom package and flagging an internal package avoids"
-" warnings generated for missing license files or hash files (although "
-"developers can add hash checks for internal sources if desired)."
+"since this is our own custom package and flagging an internal package "
+"avoids warnings generated for missing license files or hash files "
+"(although developers can add hash checks for internal sources if "
+"desired)."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:171
 msgid ""
-"The sample program will also be a CMake-based project, so `SAMPLE_TYPE` will"
-" be configured."
+"The sample program will also be a CMake-based project, so `SAMPLE_TYPE` "
+"will be configured."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:173
 msgid ""
 "Lastly, we wil configure the custom `local` type in `SAMPLE_VCS_TYPE` to "
-"indicate our implementation will be found inside the package folder (until "
-"we can later add it to Git/etc. repository in the future)."
+"indicate our implementation will be found inside the package folder "
+"(until we can later add it to Git/etc. repository in the future)."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:177
 msgid ""
-"Next, we want to create the sample implementation for this demonstration. "
-"Inside the `sample` package folder, create the following file structure:"
+"Next, we want to create the sample implementation for this demonstration."
+" Inside the `sample` package folder, create the following file structure:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:188
@@ -223,8 +233,8 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:318
 msgid ""
-"Without getting into specifics of this sample program, the overall goal is "
-"to have an SDL program create a window and show an image."
+"Without getting into specifics of this sample program, the overall goal "
+"is to have an SDL program create a window and show an image."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:340
@@ -233,31 +243,32 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:342
 msgid ""
-"The project has both `libsdl` and `sample` packages ready to build. For the "
-"`sample` project, the implementation references a `releng-tool.bmp` image to"
-" render for a window, which has not been setup. This file should be added "
-"into the build system and installed into the target in the post-build "
-"stages."
+"The project has both `libsdl` and `sample` packages ready to build. For "
+"the `sample` project, the implementation references a `releng-tool.bmp` "
+"image to render for a window, which has not yet been setup. This file "
+"should be added into the build system and installed into the target in "
+"the post-build stages."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:348
 msgid ""
 "Create a new `assets` folder at the root of the project folder. Inside, "
-"place a copy of the [releng-tool.bmp](assets/sdl/releng-tool.bmp) image. At "
-"the root of the project folder, create a post-build script named `releng-"
-"post-build` with the following contents:"
+"place a copy of the [releng-tool.bmp](assets/sdl/releng-tool.bmp) image. "
+"At the root of the project folder, create a post-build script named "
+"`releng-post-build` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:359
 msgid ""
-"In this example script, we find the project's root path using a `ROOT_DIR` "
-"helper to find where we locally store the `releng-tool.bmp` image file."
+"In this example script, we find the project's root path using a "
+"`ROOT_DIR` helper to find where we locally store the `releng-tool.bmp` "
+"image file."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:361
 msgid ""
-"We then copy the image into the target directory's bin folder to be placed "
-"alongside the executable we plan to build."
+"We then copy the image into the target directory's bin folder to be "
+"placed alongside the executable we plan to build."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:364
@@ -268,14 +279,14 @@ msgid ""
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:373
-msgid ""
-"We explicitly configure releng-tool to load the `sample` package to build."
+msgid "We explicitly configure releng-tool to load the `sample` package to build."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:374
 msgid ""
-"Note that we do not need to specify the `libsdl` package since the `sample` "
-"package will load it implicitly through its dependency configuration."
+"Note that we do not need to specify the `libsdl` package since the "
+"`sample` package will load it implicitly through its dependency "
+"configuration."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:400
@@ -284,10 +295,10 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:403
 msgid ""
-"Users will want to run a build in a shell which has the host tools needed to"
-" perform a build (e.g. the compiler). For Windows, this may be invoking "
-"releng-tool in a Visual Studio command prompt on a system with `patch` "
-"installed. For example:"
+"Users will want to run a build in a shell which has the host tools needed"
+" to perform a build (e.g. the compiler). For Windows, this may be "
+"invoking releng-tool in a Visual Studio command prompt on a system with "
+"`patch` installed. For example:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:408
@@ -296,8 +307,8 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:409
 msgid ""
-"Load Visual Studio support into the shell (for example, when using VS2019): "
-"`C:\\Program Files (x86)\\Microsoft Visual "
+"Load Visual Studio support into the shell (for example, when using "
+"VS2019): `C:\\Program Files (x86)\\Microsoft Visual "
 "Studio\\2019\\Community\\Common7\\Tools\\VsDevCmd.bat`"
 msgstr ""
 
@@ -322,10 +333,10 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:447
 msgid ""
-"With the project built, we will run the recently created SDL application to "
-"verify our initial releng-tool project definitions. With Linux or OS X, "
-"navigate to the target directory's bin path and invoke the created sample "
-"application:"
+"With the project built, we will run the recently created SDL application "
+"to verify our initial releng-tool project definitions. With Linux or OS "
+"X, navigate to the target directory's bin path and invoke the created "
+"sample application:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:457
@@ -341,8 +352,8 @@ msgstr ""
 #: ../../content/getting-started/tutorial-sdl.md:462
 msgid ""
 "![Sample Linux](assets/sdl/sdl-sample-linux.png) ![Sample OS "
-"X](assets/sdl/sdl-sample-osx.png) ![Sample Windows](assets/sdl/sdl-sample-"
-"win32.png)"
+"X](assets/sdl/sdl-sample-osx.png) ![Sample Windows](assets/sdl/sdl-"
+"sample-win32.png)"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:462
@@ -360,3 +371,4 @@ msgstr ""
 #: ../../content/getting-started/tutorial-sdl.md:466
 msgid "This concludes this tutorial."
 msgstr ""
+

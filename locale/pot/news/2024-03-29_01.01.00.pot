@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../content/news/2024-03-29_01.01.00.md:1
+msgid "1.1 (2024-03-29)"
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:3
+msgid "Support for output directory overrides using environment variables"
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:5
+msgid "While users had the means of configuring a custom output directory using the [`--out-dir`][out-dir-arg] command line argument, there was no graceful way of trying to override the output directory using environment variables. As of v1.1, there are now two supported environment variables which can be used to override where output content is placed."
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:11
+msgid "The first variable to mention is `RELENG_OUTPUT_DIR`. If this variable is set, the value will define where output content is generated in the same manner as if the value was set in `--out-dir`. This can be useful for users wanting to invoke releng-tool multiple times, without wanting to define the output directory in the command line each time. Note that the command line argument takes precedence over any environment variable set."
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:18
+msgid "Support for a more advanced variable `RELENG_GLOBAL_OUTPUT_CONTAINER_DIR` has also been added. The use of this variable can be helpful for users who build multiple releng-tool projects and wants to store output content in a different location (either due to space limitations or mixed file system environments). The path set in this variable is used as a container path for all releng-tool projects. The resulting output path for a project will be a combination of this container path, along with the name of project's directory."
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:27
+msgid "For example, if a user stores multiple projects inside a `~/projects/` path and configures this option to the path `/mnt/extern-disk`:"
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:34
+msgid "The following folder structure should be expected:"
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:55
+msgid "SPDX updates -- custom licenses and database updated"
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:57
+msgid "Licenses checks for SPDX-approriate values now properly validate against custom [license identifier field][spdx-lif] values. The use of a license entry such as `Proprietary` is no longer accepted as a valid license value. Users wishing to define a custom license for a package should use a license identifier field value such as:"
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:67
+msgid "Replacing `MyCompanyLicenseId` with an appropriate identifier promoted by the organization or user licensing this package."
+msgstr ""
+
+#: ../../content/news/2024-03-29_01.01.00.md:70
+msgid "In addition, the internally managed copy of the [SPDX license identifiers][spdx] has been updated to the most recent version (v3.23)."
+msgstr ""

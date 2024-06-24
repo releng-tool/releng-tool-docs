@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-06-23 20:20-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,26 +40,26 @@ msgstr ""
 msgid "Environment (and script) variables available to context's invoked by releng-tool (may vary per context):"
 msgstr ""
 
-#: ../../content/annex-a.md:96
+#: ../../content/annex-a.md:100
 msgid "Package options"
 msgstr ""
 
-#: ../../content/annex-a.md:98
+#: ../../content/annex-a.md:102
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../../content/annex-a.md:148
+#: ../../content/annex-a.md:152
 msgid "Script helpers"
 msgstr ""
 
-#: ../../content/annex-a.md:150
+#: ../../content/annex-a.md:154
 msgid "Functions available to scripts invoked by releng-tool or importable via `from releng_tool import *`:"
 msgstr ""
 
-#: ../../content/annex-a.md:184
+#: ../../content/annex-a.md:188
 msgid "Quirks"
 msgstr ""
 
-#: ../../content/annex-a.md:186
+#: ../../content/annex-a.md:190
 msgid "Quirk options used by releng-tool:"
 msgstr ""
