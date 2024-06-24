@@ -4,9 +4,15 @@ set -e
 
 base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 
+hash sphinx-build 2>/dev/null && sphinx_build="sphinx-build" || \
+    sphinx_build="python -m sphinx"
+
+hash sphinx-intl 2>/dev/null && sphinx_intl="sphinx-intl" || \
+    sphinx_intl="python -m sphinx_intl"
+
 # generate translation files
 echo -e "\e[7mgenerate translation files (pot)...\e[0m"
-python -m sphinx -b gettext "$base/../content" "$base/pot"
+$sphinx_build -b gettext "$base/../content" "$base/pot"
 echo ""
 
 for ref in $(ls -d $base/*/LC_MESSAGES 2>/dev/null); do
@@ -16,7 +22,7 @@ for ref in $(ls -d $base/*/LC_MESSAGES 2>/dev/null); do
 
     # update language files
     echo -e "\e[7mupdating language ($lang)...\e[0m"
-    python -m sphinx_intl update \
+    $sphinx_intl update \
         --pot-dir "$base/pot" \
         --language "$lang" \
         --no-obsolete

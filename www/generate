@@ -52,6 +52,9 @@ fi
 
 ################################################################################
 
+hash sphinx-build 2>/dev/null && sphinx_build="sphinx-build" || \
+    sphinx_build="python -m sphinx"
+
 base="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 out_dir=$base/_build
 tmp_dir=$base/_tmp
@@ -97,7 +100,7 @@ if [ -z "$phase" ] || [ "$phase" == "build" ]; then
         export RELENG_LANGUAGES=$lang_list
 
         # build documentation
-        python -m sphinx \
+        $sphinx_build \
             -Dlanguage=$lang \
             -b $builder \
             $doc_dir \
@@ -254,7 +257,7 @@ if [ "$phase" == "pdf" ]; then
         echo -e "\e[7m> building $lang (PDF)...\e[0m"
 
         # build documentation (latex)
-        python -m sphinx \
+        $sphinx_build \
             -Dlanguage=$lang \
             -b latex \
             $doc_dir \
