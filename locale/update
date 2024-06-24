@@ -18,5 +18,6 @@ for ref in $(ls -d $base/*/LC_MESSAGES 2>/dev/null); do
     echo -e "\e[7mupdating language ($lang)...\e[0m"
     python -m sphinx_intl update \
         --pot-dir "$base/pot" \
-        --language "$lang"
+        --language "$lang" \
+        --no-obsolete
 done
