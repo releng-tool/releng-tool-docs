@@ -118,6 +118,7 @@ All packages will be processed up to the patch phase (inclusive).
 releng-tool patch
 ```
 
+(action-punch)=
 ### `punch`
 
 A punch request acts in a similar fashion as if no global action was provided.
@@ -145,6 +146,7 @@ releng-tool sbom
 By default, a releng-tool run will generate an SBOM file at the end of a
 run. This action can be used to generate an SBOM without requiring a build.
 
+(action-state)=
 ### `state`
 
 A request to dump active state information for a project.
@@ -289,6 +291,7 @@ releng-tool <pkg>-patch
 On success, the specified package will have completed its patch stage.
 If the provided package name does not exist, a notification will be generated.
 
+(action-pkg-rebuild)=
 ### `<pkg>-rebuild`
 
 Force a rebuild of a specific package.
@@ -330,6 +333,7 @@ If using this action, ensure
 [understanding rebuilds](/getting-started/rebuilds) has been read to
 understand this action's effect.
 
+(action-pkg-reconfigure)=
 ### `<pkg>-reconfigure`
 
 Force a re-configuration of a specific package.
@@ -373,6 +377,7 @@ If using this action, ensure
 [understanding rebuilds](/getting-started/rebuilds) has been read to
 understand this action's effect.
 
+(action-pkg-reinstall)=
 ### `<pkg>-reinstall`
 
 Force a re-installation of a specific package.

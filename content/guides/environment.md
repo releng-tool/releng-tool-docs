@@ -287,10 +287,12 @@ Flag set if performing a re-configuration request.
 
 Flag set if performing a re-install request.
 
+(env-releng-script)=
 ### `RELENG_SCRIPT`
 
 The path of the script currently being executed.
 
+(env-releng-script-dir)=
 ### `RELENG_SCRIPT_DIR`
 
 The path of the directory holding the script currently being executed.

@@ -36,6 +36,7 @@ package.
 :::{include} _pkg-build-opts.md
 :::
 
+(pkg-cmake-build-type)=
 ## `LIBFOO_CMAKE_BUILD_TYPE`
 
 Specifies the build type used for the CMake package. A package may use a
