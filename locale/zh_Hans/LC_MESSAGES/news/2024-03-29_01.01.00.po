@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"POT-Creation-Date: 2024-07-01 16:22-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: ../../content/news/2024-03-29_01.01.00.md:5
 msgid ""
 "While users had the means of configuring a custom output directory using "
-"the [`--out-dir`][out-dir-arg] command line argument, there was no "
+"the [`--out-dir`](arg-out-dir) command line argument, there was no "
 "graceful way of trying to override the output directory using environment"
 " variables. As of v1.1, there are now two supported environment variables"
 " which can be used to override where output content is placed."
@@ -39,41 +39,42 @@ msgstr ""
 
 #: ../../content/news/2024-03-29_01.01.00.md:11
 msgid ""
-"The first variable to mention is `RELENG_OUTPUT_DIR`. If this variable is"
-" set, the value will define where output content is generated in the same"
-" manner as if the value was set in `--out-dir`. This can be useful for "
-"users wanting to invoke releng-tool multiple times, without wanting to "
-"define the output directory in the command line each time. Note that the "
-"command line argument takes precedence over any environment variable set."
+"The first variable to mention is [`RELENG_OUTPUT_DIR`](env-releng-out-"
+"dir). If this variable is set, the value will define where output content"
+" is generated in the same manner as if the value was set in [`--out-dir"
+"`](arg-out-dir). This can be useful for users wanting to invoke releng-"
+"tool multiple times, without wanting to define the output directory in "
+"the command line each time. Note that the command line argument takes "
+"precedence over any environment variable set."
 msgstr ""
 
 #: ../../content/news/2024-03-29_01.01.00.md:18
 msgid ""
-"Support for a more advanced variable `RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`"
-" has also been added. The use of this variable can be helpful for users "
-"who build multiple releng-tool projects and wants to store output content"
-" in a different location (either due to space limitations or mixed file "
-"system environments). The path set in this variable is used as a "
-"container path for all releng-tool projects. The resulting output path "
-"for a project will be a combination of this container path, along with "
-"the name of project's directory."
+"Support for a more advanced variable [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR"
+"`](env-releng-global-out-container-dir) has also been added. The use of "
+"this variable can be helpful for users who build multiple releng-tool "
+"projects and wants to store output content in a different location "
+"(either due to space limitations or mixed file system environments). The "
+"path set in this variable is used as a container path for all releng-tool"
+" projects. The resulting output path for a project will be a combination "
+"of this container path, along with the name of project's directory."
 msgstr ""
 
-#: ../../content/news/2024-03-29_01.01.00.md:27
+#: ../../content/news/2024-03-29_01.01.00.md:28
 msgid ""
 "For example, if a user stores multiple projects inside a `~/projects/` "
 "path and configures this option to the path `/mnt/extern-disk`:"
 msgstr ""
 
-#: ../../content/news/2024-03-29_01.01.00.md:34
+#: ../../content/news/2024-03-29_01.01.00.md:35
 msgid "The following folder structure should be expected:"
 msgstr ""
 
-#: ../../content/news/2024-03-29_01.01.00.md:55
+#: ../../content/news/2024-03-29_01.01.00.md:56
 msgid "SPDX updates -- custom licenses and database updated"
 msgstr ""
 
-#: ../../content/news/2024-03-29_01.01.00.md:57
+#: ../../content/news/2024-03-29_01.01.00.md:58
 msgid ""
 "Licenses checks for SPDX-approriate values now properly validate against "
 "custom [license identifier field][spdx-lif] values. The use of a license "
@@ -82,13 +83,13 @@ msgid ""
 "a license identifier field value such as:"
 msgstr ""
 
-#: ../../content/news/2024-03-29_01.01.00.md:67
+#: ../../content/news/2024-03-29_01.01.00.md:68
 msgid ""
 "Replacing `MyCompanyLicenseId` with an appropriate identifier promoted by"
 " the organization or user licensing this package."
 msgstr ""
 
-#: ../../content/news/2024-03-29_01.01.00.md:70
+#: ../../content/news/2024-03-29_01.01.00.md:71
 msgid ""
 "In addition, the internally managed copy of the [SPDX license "
 "identifiers][spdx] has been updated to the most recent version (v3.23)."

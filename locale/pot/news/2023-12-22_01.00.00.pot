@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"POT-Creation-Date: 2024-07-01 16:22-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,17 +37,17 @@ msgid "As various scripts are invoked during a releng-tool run, developers may w
 msgstr ""
 
 #: ../../content/news/2023-12-22_01.00.00.md:18
-msgid "Changes have been introduced into releng-tool so that any time a script is executed, the variables `RELENG_SCRIPT` and `RELENG_SCRIPT_DIR` will be set. This includes global contexts as well as environment variables. The variable `RELENG_SCRIPT` will be set to the absolute path of the running script. As for `RELENG_SCRIPT_DIR`, the value will be a subset of the script path, holding the absolute path of the directory holding the script."
+msgid "Changes have been introduced into releng-tool so that any time a script is executed, the variables [`RELENG_SCRIPT`](env-releng-script) and [`RELENG_SCRIPT_DIR`](env-releng-script-dir) will be set. This includes global contexts as well as environment variables. The variable [`RELENG_SCRIPT`](env-releng-script) will be set to the absolute path of the running script. As for [`RELENG_SCRIPT_DIR`](env-releng-script-dir), the value will be a subset of the script path, holding the absolute path of the directory holding the script."
 msgstr ""
 
-#: ../../content/news/2023-12-22_01.00.00.md:25
-msgid "When using script helpers such as `releng_include`, the values of `RELENG_SCRIPT` and `RELENG_SCRIPT_DIR` will be updated in the included context for the included script."
+#: ../../content/news/2023-12-22_01.00.00.md:27
+msgid "When using [script helpers](/guides/script-helpers) such as `releng_include`, the values of [`RELENG_SCRIPT`](env-releng-script) and [`RELENG_SCRIPT_DIR`](env-releng-script-dir) will be updated in the included context for the included script."
 msgstr ""
 
-#: ../../content/news/2023-12-22_01.00.00.md:29
+#: ../../content/news/2023-12-22_01.00.00.md:32
 msgid "SPDX license database updated"
 msgstr ""
 
-#: ../../content/news/2023-12-22_01.00.00.md:31
+#: ../../content/news/2023-12-22_01.00.00.md:34
 msgid "The internally managed copy of the [SPDX license identifiers][spdx] has been updated to the most recent version (v3.22)."
 msgstr ""

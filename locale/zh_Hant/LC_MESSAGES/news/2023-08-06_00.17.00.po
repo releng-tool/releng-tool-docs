@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"POT-Creation-Date: 2024-07-01 16:22-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -47,56 +47,58 @@ msgstr ""
 msgid ""
 "When building with CMake in releng-tool, the default build type is "
 "configured for `RelWithDebInfo`. Developers can now override this for a "
-"package by using the newly added `LIBFOO_CMAKE_BUILD_TYPE` option "
-"(alternatively, over defining a `CMAKE_BUILD_TYPE` override in a "
-"configuration define dictionary)."
-msgstr ""
-
-#: ../../content/news/2023-08-06_00.17.00.md:26
-msgid "Improvements for development and local-sources modes"
+"package by using the newly added [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-cmake-"
+"build-type) option (alternatively, over defining a [`CMAKE_BUILD_TYPE"
+"`][cmake-build-type] override in a configuration define dictionary)."
 msgstr ""
 
 #: ../../content/news/2023-08-06_00.17.00.md:28
+msgid "Improvements for development and local-sources modes"
+msgstr ""
+
+#: ../../content/news/2023-08-06_00.17.00.md:30
 msgid ""
 "A series of changes have been made to help improve usability when taking "
-"advantage of development or local-sources modes. A new action `state` has"
-" been added to allow users to query active modes without having to "
-"manually inspect file flags or perform active run of releng-tool:"
+"advantage of development or local-sources modes. A new action [`state"
+"`](action-state) has been added to allow users to query active modes "
+"without having to manually inspect file flags or perform active run of "
+"releng-tool:"
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:40
+#: ../../content/news/2023-08-06_00.17.00.md:43
 msgid ""
 "When disabling development or local-sources mode, users would originally "
-"have to invoke a `mrproper` call or manually clear file flags. With this "
-"release, users can pass in a `-` value for these modes when attempting to"
-" unconfigure. For example, to unconfigure development mode:"
+"have to invoke a [`mrproper`](action-mrproper) call or manually clear "
+"file flags. With this release, users can pass in a `-` value for these "
+"modes when attempting to unconfigure. For example, to unconfigure "
+"development mode:"
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:51
+#: ../../content/news/2023-08-06_00.17.00.md:55
 msgid "Or remove a local-source mapping:"
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:59
+#: ../../content/news/2023-08-06_00.17.00.md:63
 msgid "Additional changes include:"
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:61
+#: ../../content/news/2023-08-06_00.17.00.md:65
 msgid ""
 "Relative paths are now properly handled when provided into a local-"
 "sources command line argument."
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:63
+#: ../../content/news/2023-08-06_00.17.00.md:67
 msgid ""
 "When listing configured local-sources for a project, releng-tool will "
 "inform users if the configured directory does not exist."
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:66
+#: ../../content/news/2023-08-06_00.17.00.md:70
 msgid "Support for Perforce sites"
 msgstr ""
 
-#: ../../content/news/2023-08-06_00.17.00.md:68
+#: ../../content/news/2023-08-06_00.17.00.md:72
 msgid ""
 "With this release, releng-tool now supports cloning from Perforce depots."
 " In a host environment with Git and Perforce client utilities installed, "

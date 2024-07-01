@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-07-01 16:22-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,19 +60,19 @@ msgstr ""
 msgid "Provides a means to pass command line options into the build process. This option can be defined as a dictionary of string pairs or a list with strings -- either way defined will generate argument values to include in the build event. This field is optional."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:39
+#: ../../content/guides/packages/pkg-type-cmake.md:40
 msgid "`LIBFOO_CMAKE_BUILD_TYPE`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:41
+#: ../../content/guides/packages/pkg-type-cmake.md:42
 msgid "Specifies the build type used for the CMake package. A package may use a common build type (`Debug`, `Release`, `RelWithDebInfo` or `MinSizeRel`), or may have a custom build type defined. A developer needing to use a specific build type can configure this option with the name of the configuration. By default, the `RelWithDebInfo` build type is used for all CMake packages."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:52
+#: ../../content/guides/packages/pkg-type-cmake.md:53
 msgid "`LIBFOO_CMAKE_NOINSTALL`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:54
+#: ../../content/guides/packages/pkg-type-cmake.md:55
 msgid "Specifies whether the CMake package should skip an attempt to invoke the install command. Ideally, projects will have an [install][cmake-install] rule configured to define how a project will install files into a target (or staging) environment. Not all CMake projects may have this rule defined, which can cause the installation stage for a package to fail. A developer can specify this no-install flag to skip a CMake-driven install request and manage installation actions through other means (such as post-processing). By default, the installation stage is invoked with a value of `False`."
 msgstr ""
 
