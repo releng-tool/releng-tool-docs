@@ -491,6 +491,13 @@ Directory for output (builds, images, etc.; defaults to `<root>/output`).
 
 See also [`RELENG_OUTPUT_DIR`](env-releng-out-dir).
 
+(arg-relaxed-args)=
+### `--relaxed-args`
+
+Do not throw an error when releng-tool is provided unknown arguments.
+
+See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
+
 ### `--root-dir <dir>`
 
 Directory to process a releng-tool project (defaults to the working
