@@ -560,6 +560,22 @@ The version of a defined package. If a package does not define a version,
 the value used will match the revision value (if set). If no revision value
 exists, this variable may be empty.
 
+## Script-only variables
+
+A series a script-only variables are also available at certain stages of
+releng-tool.
+
+### `RELENG_GENERATED_LICENSES`
+
+Defines a list of generated license files at the end of package processing
+that is available for post-processing actions to use.
+
+### `RELENG_GENERATED_SBOMS`
+
+Defines a list of generated software build of materials (SBOM) files at the
+end of package processing that is available for post-processing actions
+to use.
+
 ## Other variables
 
 releng-tool also accepts environment variables for configuring specific
