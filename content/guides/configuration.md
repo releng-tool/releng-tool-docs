@@ -60,6 +60,18 @@ default_internal = True
 
 See also [internal and external packages](intern-extern-pkgs).
 
+### `environment`
+
+A dictionary to define environment variables to apply to all stages of
+releng-tool.
+
+```python
+environment = {
+    'MY_ENV_1': 'First example',
+    'MY_ENV_2': 'Another example',
+}
+```
+
 ### `extensions`
 
 A list of extensions to load before processing a releng-tool project. If an

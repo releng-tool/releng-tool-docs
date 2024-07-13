@@ -10,6 +10,7 @@ Options which are read by releng-tool from a project's configuration script:
 ```python
 cache_ext = <callable>
 default_internal = bool
+environment = {'<key>': '<val>'}
 extensions = ['<extension>', '<extension>']
 external_packages = ['<path>', '<path>']
 extra_license_exceptions = {'<short-exception-id>': '<exception-name>'}
