@@ -2,6 +2,7 @@
 
 The following outlines common configuration options available for packages.
 
+(pkg-opt-dependencies)=
 ## `LIBFOO_DEPENDENCIES`
 
 List of package dependencies a given project has. If a project depends on

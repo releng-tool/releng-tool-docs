@@ -31,7 +31,7 @@ LIBFOO_INSTALL_OPTS = [
 ```
 
 For packages which do not have an installation alias to run, developers can
-use the [](pkg-scons-noinstall) option to skip the installation stage for
+use the [](pkg-opt-scons-noinstall) option to skip the installation stage for
 a package.
 
 Default configurations for a SCons package will not run a configuration stage.
@@ -52,43 +52,53 @@ Alternatively, if no configuration options are specified, a
 The following sections outline configuration options are available for a SCons
 package.
 
+(pkg-opt-scons-build-defs)=
 :::{include} _pkg-build-defs.md
 :::
 :::{include} _pkg-build-defs-example-default.md
 :::
 
+(pkg-opt-scons-build-env)=
 :::{include} _pkg-build-env.md
 :::
 
+(pkg-opt-scons-build-opts)=
 :::{include} _pkg-build-opts.md
 :::
 
+(pkg-opt-scons-conf-defs)=
 :::{include} _pkg-conf-defs.md
 :::
 :::{include} _pkg-conf-defs-example-default.md
 :::
 
+(pkg-opt-scons-conf-env)=
 :::{include} _pkg-conf-env.md
 :::
 
+(pkg-opt-scons-conf-opts)=
 :::{include} _pkg-conf-opts.md
 :::
 
+(pkg-opt-scons-env)=
 :::{include} _pkg-env.md
 :::
 
+(pkg-opt-scons-install-defs)=
 :::{include} _pkg-install-defs.md
 :::
 :::{include} _pkg-install-defs-example-default.md
 :::
 
+(pkg-opt-scons-install-env)=
 :::{include} _pkg-install-env.md
 :::
 
+(pkg-opt-scons-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
 
-(pkg-scons-noinstall)=
+(pkg-opt-scons-noinstall)=
 ## `LIBFOO_SCONS_NOINSTALL`
 
 Specifies whether a SCons package should skip an attempt to invoke the

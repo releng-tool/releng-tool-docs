@@ -1,3 +1,4 @@
+(quirk-releng.cmake.disable_parallel_option)=
 # Quirk `releng.cmake.disable_parallel_option`
 
 ```{warning}

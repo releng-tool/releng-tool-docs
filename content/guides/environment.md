@@ -12,6 +12,7 @@ definitions can improve configuration management.
 When configuration, package definitions or various scripts are invoked by
 releng-tool, the following environment variables are available:
 
+(env-build-dir)=
 ### `BUILD_DIR`
 
 The build directory. By default, this will be a folder `build` found inside
@@ -21,6 +22,7 @@ the configured output directory. For example:
 <root-dir>/output/build
 ```
 
+(env-cache-dir)=
 ### `CACHE_DIR`
 
 The cache directory. By default, this will be a folder `cache` found inside
@@ -30,6 +32,7 @@ the configured root directory. For example:
 <root-dir>/cache
 ```
 
+(env-dl-dir)=
 ### `DL_DIR`
 
 The download directory. By default, this will be a folder `dl` found inside
@@ -39,6 +42,7 @@ the configured root directory. For example:
 <root-dir>/dl
 ```
 
+(env-host-bin-dir)=
 ### `HOST_BIN_DIR`
 
 The host directory's prefixed bin directory. For example:
@@ -47,6 +51,7 @@ The host directory's prefixed bin directory. For example:
 <root-dir>/output/build
 ```
 
+(env-host-dir)=
 ### `HOST_DIR`
 
 The host directory. By default, this will be a folder `host` found inside
@@ -56,14 +61,17 @@ the configured output directory. For example:
 <root-dir>/output/host
 ```
 
+(env-host-include-dir)=
 ### `HOST_INCLUDE_DIR`
 
 The host directory's prefixed include directory.
 
+(env-host-lib-dir)=
 ### `HOST_LIB_DIR`
 
 The host directory's prefixed library directory.
 
+(env-images-dir)=
 ### `IMAGES_DIR`
 
 The images directory. By default, this will be a folder `images` found inside
@@ -73,6 +81,7 @@ the configured output directory. For example:
 <root-dir>/output/images
 ```
 
+(env-license-dir)=
 ### `LICENSE_DIR`
 
 The licenses directory. By default, this will be a folder `licenses` found
@@ -143,6 +152,7 @@ The directory for where a package's build output will be stored.
 
 See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 
+(env-pkg-cache-dir)=
 ### `PKG_CACHE_DIR`
 
 The location of the cache directory for a package. If a package defines
@@ -153,6 +163,7 @@ cache of the Git repository will be stored in this location. Typically,
 packages should not need to operate on the cache directory except for
 advanced cases.
 
+(env-pkg-cache-file)=
 ### `PKG_CACHE_FILE`
 
 The location of the cache file for a package. If a package defines a fetch
@@ -162,6 +173,7 @@ archive can be found in this location.
 For example, if a package defines a site `https://www.example.com/test.tgz`,
 the resulting cache file may be `<root>/output/dl/test-1.0.tgz`.
 
+(env-pkg-defdir)=
 ### `PKG_DEFDIR`
 
 The package's definition directory.
@@ -169,6 +181,7 @@ The package's definition directory.
 For example, for a package `test`, the definition directory would be
 `<root>/package/test`.
 
+(env-pkg-defmode)=
 ### `PKG_DEVMODE`
 
 Whether the package is configured for development mode. If a package is
@@ -177,6 +190,7 @@ value of one (i.e. `PKG_DEVMODE=1`).
 
 See also [development mode](development-mode).
 
+(env-pkg-internal)=
 ### `PKG_INTERNAL`
 
 Whether or not the package is considered "internal". If internal, the
@@ -184,6 +198,7 @@ environment variable will be set to a value of one (i.e. `PKG_INTERNAL=1`).
 
 See also [internal and external packages](intern-extern-pkgs).
 
+(env-pkg-localsrcs)=
 ### `PKG_LOCALSRCS`
 
 Whether the package is configured for local-sources mode. If a package is
@@ -192,34 +207,40 @@ value of one (i.e. `PKG_LOCALSRCS=1`).
 
 See also [local-sources mode](local-sources-mode).
 
+(env-pkg-name)=
 ### `PKG_NAME`
 
 The name of the package.
 
+(env-pkg-revision)=
 ### `PKG_REVISION`
 
 The site revision of the package.
 
 See also [](pkg-opt-revision).
 
+(env-pkg-site)=
 ### `PKG_SITE`
 
 The site of the package.
 
 See also [](pkg-opt-site).
 
+(env-pkg-version)=
 ### `PKG_VERSION`
 
 The version of the package.
 
 See also [](pkg-opt-version).
 
+(env-prefix)=
 ### `PREFIX`
 
 The sysroot prefix for the package. By default, this value is configured
 to `/usr`; with the exception of Windows builds where this value is empty
 by default.
 
+(env-prefixed-host-dir)=
 ### `PREFIXED_HOST_DIR`
 
 The host directory with the prefix applied. An example prefixed
@@ -229,6 +250,7 @@ directory may be as follows:
 <root-dir>/output/host/usr
 ```
 
+(env-prefixed-staging-dir)=
 ### `PREFIXED_STAGING_DIR`
 
 The staging area directory with the prefix applied. An example prefixed
@@ -238,6 +260,7 @@ directory may be as follows:
 <root-dir>/output/staging/usr
 ```
 
+(env-prefixed-target-dir)=
 ### `PREFIXED_TARGET_DIR`
 
 The target area directory with the prefix applied. An example prefixed
@@ -247,42 +270,52 @@ directory may be as follows:
 <root-dir>/output/target/usr
 ```
 
+(env-releng-clean)=
 ### `RELENG_CLEAN`
 
 Flag set if performing a clean request.
 
+(env-releng-debug)=
 ### `RELENG_DEBUG`
 
 Flag set if debug-related information should be shown.
 
+(env-releng-devmode)=
 ### `RELENG_DEVMODE`
 
 The development mode or flag set if in [development mode](development-mode).
 
+(env-releng-distclean)=
 ### `RELENG_DISTCLEAN`
 
 Flag set if performing an extreme pristine clean request.
 
+(env-releng-force)=
 ### `RELENG_FORCE`
 
 Flag set if performing a forced request from the command line.
 
+(env-releng-localsrcs)=
 ### `RELENG_LOCALSRCS`
 
 Flag set if in [local-sources mode](local-sources-mode).
 
+(env-releng-mrproper)=
 ### `RELENG_MRPROPER`
 
 Flag set if performing a pristine clean request.
 
+(env-releng-rebuild)=
 ### `RELENG_REBUILD`
 
 Flag set if performing a re-build request.
 
+(env-releng-reconfigure)=
 ### `RELENG_RECONFIGURE`
 
 Flag set if performing a re-configuration request.
 
+(env-releng-reinstall)=
 ### `RELENG_REINSTALL`
 
 Flag set if performing a re-install request.
@@ -297,22 +330,27 @@ The path of the script currently being executed.
 
 The path of the directory holding the script currently being executed.
 
+(env-releng-target-dir)=
 ### `RELENG_TARGET_PKG`
 
 The name of the target package (if any) provided by the command line.
 
+(env-releng-verbose)=
 ### `RELENG_VERBOSE`
 
 Flag set if verbose-related information should be shown.
 
+(env-releng-version)=
 ### `RELENG_VERSION`
 
 The version of releng-tool.
 
+(env-root-dir)=
 ### `ROOT_DIR`
 
 The root directory.
 
+(env-staging-bin-dir)=
 ### `STAGING_BIN_DIR`
 
 The staging area directory's prefixed bin directory. An example binary
@@ -322,6 +360,7 @@ directory may be as follows:
 <root-dir>/output/staging/usr/bin
 ```
 
+(env-staging-dir)=
 ### `STAGING_DIR`
 
 The staging area directory. By default, this will be a folder `staging` found
@@ -331,6 +370,7 @@ inside the configured output directory. For example:
 <root-dir>/output/staging
 ```
 
+(env-staging-include-dir)=
 ### `STAGING_INCLUDE_DIR`
 
 The staging area directory's prefixed include directory. An example include
@@ -340,6 +380,7 @@ directory may be as follows:
 <root-dir>/output/staging/usr/include
 ```
 
+(env-staging-lib-dir)=
 ### `STAGING_LIB_DIR`
 
 The staging area directory's prefixed library directory. An example library
@@ -349,6 +390,7 @@ directory may be as follows:
 <root-dir>/output/staging/usr/lib
 ```
 
+(env-symbols-dir)=
 ### `SYMBOLS_DIR`
 
 The symbols area directory. By default, this will be a folder `symbols` found
@@ -358,6 +400,7 @@ inside the configured output directory. For example:
 <root-dir>/output/symbols
 ```
 
+(env-target-bin-dir)=
 ### `TARGET_BIN_DIR`
 
 The target area directory's prefixed bin directory. An example binary
@@ -367,6 +410,7 @@ directory may be as follows:
 <root-dir>/output/target/usr/bin
 ```
 
+(env-target-dir)=
 ### `TARGET_DIR`
 
 The target area directory. By default, this will be a folder `target` found
@@ -376,6 +420,7 @@ inside the configured output directory. For example:
 <root-dir>/output/target
 ```
 
+(env-target-include-dir)=
 ### `TARGET_INCLUDE_DIR`
 
 The target area directory's prefixed include directory. An example include
@@ -385,6 +430,7 @@ directory may be as follows:
 <root-dir>/output/target/usr/include
 ```
 
+(env-target-lib-dir)=
 ### `TARGET_LIB_DIR`
 
 The target area directory's prefixed library directory. An example library
@@ -409,6 +455,7 @@ in other configurations and script files. The following package-specific
 environment variables are available for use, where `<PKG>` translates to a
 releng-tool's determined package key:
 
+(env-pkg-var-build-dir)=
 ### `<PKG>_BUILD_DIR`
 
 The directory for a defined package's buildable content.
@@ -470,6 +517,7 @@ the package's definition directory:
     ...
 ```
 
+(env-pkg-var-output-dir)=
 ### `<PKG>_BUILD_OUTPUT_DIR`
 
 The directory for where a defined package's build output will be stored.
@@ -525,6 +573,7 @@ for package types like CMake. For example:
     ...
 ```
 
+(env-pkg-var-defdir)=
 ### `<PKG>_DEFDIR`
 
 The directory where a defined package's definition is stored.
@@ -541,6 +590,7 @@ variable will contain a directory path matching the path seen below:
     ...
 ```
 
+(env-pkg-var-name)=
 ### `<PKG>_NAME`
 
 The name of the package.
@@ -548,12 +598,14 @@ The name of the package.
 For example, if a package `libfoo` exists, the `LIBFOO_NAME` environment
 variable will have a value of `libfoo`.
 
+(env-pkg-var-revision)=
 ### `<PKG>_REVISION`
 
 The revision of a defined package. If a package does not define a revision,
 the value used will match the version value (if set). If no version value
 exists, this variable may be empty.
 
+(env-pkg-var-version)=
 ### `<PKG>_VERSION`
 
 The version of a defined package. If a package does not define a version,
@@ -565,11 +617,13 @@ exists, this variable may be empty.
 A series a script-only variables are also available at certain stages of
 releng-tool.
 
+(env-releng-generated-licenses)=
 ### `RELENG_GENERATED_LICENSES`
 
 Defines a list of generated license files at the end of package processing
 that is available for post-processing actions to use.
 
+(env-releng-generated-sboms)=
 ### `RELENG_GENERATED_SBOMS`
 
 Defines a list of generated software build of materials (SBOM) files at the

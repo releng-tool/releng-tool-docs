@@ -54,6 +54,7 @@ LIBFOO_DEVMODE_REVISION = 'feature/alpha'
 
 See also [](pkg-opt-revision) and [](pkg-opt-version).
 
+(pkg-opt-extension)=
 ## `LIBFOO_EXTENSION`
 
 Specifies a filename extension for the package. A package may be cached inside
@@ -82,6 +83,7 @@ LIBFOO_EXTERNAL = True
 
 See also [internal and external packages](/guides/intern-extern-pkgs).
 
+(pkg-opt-extopt)=
 ## `LIBFOO_EXTOPT`
 
 Specifies extension-specific options. Packages wishing to take advantage of
@@ -95,6 +97,7 @@ LIBFOO_EXTOPT = {
 }
 ```
 
+(pkg-opt-extract-type)=
 ## `LIBFOO_EXTRACT_TYPE`
 
 Specifies a custom extraction type for a package. If a configured extension
@@ -139,6 +142,7 @@ for a package that cannot support a large or any parallel build environment.
 LIBFOO_FIXED_JOBS = 1
 ```
 
+(pkg-opt-git-config)=
 ## `LIBFOO_GIT_CONFIG`
 
 Apply additional repository-specific Git configuration settings
@@ -152,6 +156,7 @@ LIBFOO_GIT_CONFIG = {
 }
 ```
 
+(pkg-opt-git-depth)=
 ## `LIBFOO_GIT_DEPTH`
 
 Limit fetching for a Git-based source to the specified number of commits. The
@@ -184,6 +189,7 @@ fetching.
 LIBFOO_GIT_REFSPECS = ['pull/*']
 ```
 
+(pkg-opt-git-submodules)=
 ## `LIBFOO_GIT_SUBMODULES`
 
 Flag value to indicate whether a package's Git submodules should be
@@ -201,6 +207,7 @@ package and reference its contents instead.
 LIBFOO_GIT_SUBMODULES = True
 ```
 
+(pkg-opt-git-verify-revision)=
 ## `LIBFOO_GIT_VERIFY_REVISION`
 
 Flag value to indicate whether the target revision is required to be signed
@@ -258,6 +265,7 @@ LIBFOO_INTERNAL = True
 
 See also [internal and external packages](/guides/intern-extern-pkgs).
 
+(pkg-opt-no-extraction)=
 ## `LIBFOO_NO_EXTRACTION`
 
 ```{warning}
@@ -287,6 +295,7 @@ copy of the project's license file. Specifying `LIBFOO_LICENSE_FILES` for
 projects with the no-extraction flag enabled will result in a warning. By
 default, this option is disabled with a value of `False`.
 
+(pkg-opt-patch-subdir)=
 ## `LIBFOO_PATCH_SUBDIR`
 
 Sub-directory where any package patches should be applied to. By default,
@@ -339,6 +348,7 @@ LIBFOO_REVISION = {
 
 See also [](pkg-opt-devmode-revision) and [](pkg-opt-version).
 
+(pkg-opt-skip-remote-config)=
 ## `LIBFOO_SKIP_REMOTE_CONFIG`
 
 Flag value to indicate that a package should not attempt to load any
@@ -355,6 +365,7 @@ LIBFOO_SKIP_REMOTE_CONFIG = True
 
 See also [configuration quirks](/guides/quirks/quirks).
 
+(pkg-opt-skip-remote-scripts)=
 ## `LIBFOO_SKIP_REMOTE_SCRIPTS`
 
 Flag value to indicate that a package should not attempt to load any package
@@ -374,6 +385,7 @@ LIBFOO_SKIP_REMOTE_CONFIG = True
 
 See also [configuration quirks](/guides/quirks/quirks).
 
+(pkg-opt-strip-count)=
 ## `LIBFOO_STRIP_COUNT`
 
 Specifies the strip count to use when attempting to extract sources from an

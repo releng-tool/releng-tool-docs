@@ -15,6 +15,7 @@ When the build stage is reached, `make` will be invoked followed by
 The following sections outline configuration options are available for an
 autotools package.
 
+(pkg-opt-autotools-autoreconf)=
 ## `LIBFOO_AUTOTOOLS_AUTORECONF`
 
 Specifies whether the package needs to perform an autotools
@@ -27,39 +28,49 @@ changes that need to be applied. This field is optional. By default,
 LIBFOO_AUTOTOOLS_AUTORECONF = True
 ```
 
+(pkg-opt-autotools-build-defs)=
 :::{include} _pkg-build-defs.md
 :::
 :::{include} _pkg-build-defs-example-default.md
 :::
 
+(pkg-opt-autotools-build-env)=
 :::{include} _pkg-build-env.md
 :::
 
+(pkg-opt-autotools-build-opts)=
 :::{include} _pkg-build-opts.md
 :::
 
+(pkg-opt-autotools-conf-defs)=
 :::{include} _pkg-conf-defs.md
 :::
 :::{include} _pkg-conf-defs-example-default.md
 :::
 
+(pkg-opt-autotools-conf-env)=
 :::{include} _pkg-conf-env.md
 :::
 
+(pkg-opt-autotools-conf-opts)=
 :::{include} _pkg-conf-opts.md
 :::
 
+(pkg-opt-autotools-env)=
 :::{include} _pkg-env.md
 :::
 
+(pkg-opt-autotools-install-defs)=
 :::{include} _pkg-install-defs.md
 :::
 :::{include} _pkg-install-defs-example-default.md
 :::
 
+(pkg-opt-autotools-install-env)=
 :::{include} _pkg-install-env.md
 :::
 
+(pkg-opt-autotools-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
 

@@ -60,6 +60,7 @@ default_internal = True
 
 See also [internal and external packages](intern-extern-pkgs).
 
+(conf-environment)=
 ### `environment`
 
 A dictionary to define environment variables to apply to all stages of
@@ -72,6 +73,7 @@ environment = {
 }
 ```
 
+(conf-extensions)=
 ### `extensions`
 
 A list of extensions to load before processing a releng-tool project. If an
@@ -87,6 +89,7 @@ extensions = [
 
 See also [](extensions/extensions).
 
+(conf-external-packages)=
 ### `external_packages`
 
 A list of external package locations. By default, packages for a project
@@ -116,6 +119,7 @@ license_header = 'my leading content'
 
 See also [licenses](licenses).
 
+(conf-packages)=
 ### `packages`
 
 A list of packages to process. Packages listed will be processed by
@@ -130,6 +134,7 @@ packages = [
 ]
 ```
 
+(conf-prerequisites)=
 ### `prerequisites`
 
 A list of host tools to check for before running a releng-tool project.
@@ -145,6 +150,7 @@ prerequisites = [
 ]
 ```
 
+(conf-sbom-format)=
 ### `sbom_format`
 
 Configures the default format to use when generating a software build of
@@ -189,6 +195,7 @@ sysroot_prefix = '/usr'
 
 See also [](pkg-opt-prefix).
 
+(conf-url-mirror)=
 ### `url_mirror`
 
 Specifies a mirror base site to be used for URL fetch requests. If this
@@ -204,6 +211,7 @@ url_mirror = 'ftp://mirror.example.org/data/'
 
 A list of more advanced configuration options are as follows:
 
+(conf-cache-ext)=
 ### `cache_ext`
 
 A transform for cache extension interpreting. This is an advanced
@@ -239,6 +247,7 @@ cache_ext = my_translator
 The above transform indicates that all packages using the
 `static.example.org` site will be `tgz` archives.
 
+(conf-extra-license-exceptions)=
 ### `extra_license_exceptions`
 
 A dictionary to define extra license exceptions that are permitted in
@@ -256,6 +265,7 @@ extra_license_exceptions = {
 
 See also [licenses](licenses).
 
+(conf-extra-licenses)=
 ### `extra_licenses`
 
 A dictionary to define extra licenses that are permitted in package
@@ -273,6 +283,7 @@ extra_licenses = {
 
 See also [licenses](licenses).
 
+(conf-override-extract-tools)=
 ### `override_extract_tools`
 
 :::{warning}
@@ -292,6 +303,7 @@ override_extract_tools = {
 }
 ```
 
+(conf-override-revisions)=
 ### `override_revisions`
 
 :::{warning}
@@ -317,6 +329,7 @@ override_revisions = {
 The above example shows that package `module-b` will fetch using a test
 branch instead of what is defined in the actual package definition.
 
+(conf-override-sites)=
 ### `override_sites`
 
 :::{warning}

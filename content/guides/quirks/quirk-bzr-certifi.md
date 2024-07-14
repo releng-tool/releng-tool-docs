@@ -1,3 +1,4 @@
+(quirk-releng.bzr.certifi)=
 # Quirk `releng.bzr.certifi`
 
 When a package is configured to fetch [bzr][bzr] sources, select environments

@@ -26,17 +26,21 @@ LIBFOO_CONF_DEFS = {
 The following sections outline configuration options are available for a Meson
 package.
 
+(pkg-opt-meson-build-defs)=
 :::{include} _pkg-build-defs.md
 :::
 :::{include} _pkg-build-defs-example-dentry.md
 :::
 
+(pkg-opt-meson-build-env)=
 :::{include} _pkg-build-env.md
 :::
 
+(pkg-opt-meson-build-opts)=
 :::{include} _pkg-build-opts.md
 :::
 
+(pkg-opt-meson-noinstall)=
 ## `LIBFOO_MESON_NOINSTALL`
 
 Specifies whether the Meson package should skip an attempt to invoke the
@@ -53,28 +57,35 @@ installation stage is invoked with a value of `False`.
 LIBFOO_MESON_NOINSTALL = True
 ```
 
+(pkg-opt-meson-conf-defs)=
 :::{include} _pkg-conf-defs.md
 :::
 :::{include} _pkg-conf-defs-example-dentry.md
 :::
 
+(pkg-opt-meson-conf-env)=
 :::{include} _pkg-conf-env.md
 :::
 
+(pkg-opt-meson-conf-opts)=
 :::{include} _pkg-conf-opts.md
 :::
 
+(pkg-opt-meson-env)=
 :::{include} _pkg-env.md
 :::
 
+(pkg-opt-meson-install-defs)=
 :::{include} _pkg-install-defs.md
 :::
 :::{include} _pkg-install-defs-example-dentry.md
 :::
 
+(pkg-opt-meson-install-env)=
 :::{include} _pkg-install-env.md
 :::
 
+(pkg-opt-meson-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
 

@@ -1,3 +1,4 @@
+(quirk-releng.cmake.disable_direct_includes)=
 # Quirk `releng.cmake.disable_direct_includes`
 
 For CMake-based projects, releng-tool will populate a series of include

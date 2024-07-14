@@ -1,3 +1,4 @@
+(quirk-releng.git.replicate_cache)=
 # Quirk `releng.git.replicate_cache`
 
 When fetching sources for a Git-site-defined package, releng-tool will

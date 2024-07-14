@@ -25,18 +25,21 @@ LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
 The following sections outline configuration options are available for a CMake
 package.
 
+(pkg-opt-cmake-build-defs)=
 :::{include} _pkg-build-defs.md
 :::
 :::{include} _pkg-build-defs-example-dentry.md
 :::
 
+(pkg-opt-cmake-build-env)=
 :::{include} _pkg-build-env.md
 :::
 
+(pkg-opt-cmake-build-opts)=
 :::{include} _pkg-build-opts.md
 :::
 
-(pkg-cmake-build-type)=
+(pkg-opt-cmake-build-type)=
 ## `LIBFOO_CMAKE_BUILD_TYPE`
 
 Specifies the build type used for the CMake package. A package may use a
@@ -50,6 +53,7 @@ all CMake packages.
 LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
 ```
 
+(pkg-opt-cmake-noinstall)=
 ## `LIBFOO_CMAKE_NOINSTALL`
 
 Specifies whether the CMake package should skip an attempt to invoke the
@@ -65,28 +69,35 @@ By default, the installation stage is invoked with a value of `False`.
 LIBFOO_CMAKE_NOINSTALL = True
 ```
 
+(pkg-opt-cmake-conf-defs)=
 :::{include} _pkg-conf-defs.md
 :::
 :::{include} _pkg-conf-defs-example-dentry.md
 :::
 
+(pkg-opt-cmake-conf-env)=
 :::{include} _pkg-conf-env.md
 :::
 
+(pkg-opt-cmake-conf-opts)=
 :::{include} _pkg-conf-opts.md
 :::
 
+(pkg-opt-cmake-env)=
 :::{include} _pkg-env.md
 :::
 
+(pkg-opt-cmake-install-defs)=
 :::{include} _pkg-install-defs.md
 :::
 :::{include} _pkg-install-defs-example-dentry.md
 :::
 
+(pkg-opt-cmake-install-env)=
 :::{include} _pkg-install-env.md
 :::
 
+(pkg-opt-cmake-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
 

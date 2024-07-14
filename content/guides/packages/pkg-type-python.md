@@ -10,10 +10,10 @@ LIBFOO_TYPE = 'python'
 Only the build and installation phases are used when processing the sources
 for a Python package (i.e. no configuration stage is invoked). By default,
 the build phase will invoke `setup.py build` while the installation stage
-will invoke `setup.py install` (see [](pkg-python-setup-type) for other
+will invoke `setup.py install` (see [](pkg-opt-python-setup-type) for other
 setup types). When a Python package is process, it will use the system's
 default Python interpreter. A developer can override what Python interpreter
-to use by configuring the [](pkg-python-interpreter) option in a package:
+to use by configuring the [](pkg-opt-python-interpreter) option in a package:
 
 ```python
 LIBFOO_PYTHON_INTERPRETER = '/opt/my-custom-python-build/python'
@@ -22,32 +22,39 @@ LIBFOO_PYTHON_INTERPRETER = '/opt/my-custom-python-build/python'
 The following sections outline configuration options are available for a
 Python package.
 
+(pkg-opt-python-build-defs)=
 :::{include} _pkg-build-defs.md
 :::
 :::{include} _pkg-build-defs-example-default.md
 :::
 
+(pkg-opt-python-build-env)=
 :::{include} _pkg-build-env.md
 :::
 
+(pkg-opt-python-build-opts)=
 :::{include} _pkg-build-opts.md
 :::
 
+(pkg-opt-python-env)=
 :::{include} _pkg-env.md
 :::
 
+(pkg-opt-python-install-defs)=
 :::{include} _pkg-install-defs.md
 :::
 :::{include} _pkg-install-defs-example-default.md
 :::
 
+(pkg-opt-python-install-env)=
 :::{include} _pkg-install-env.md
 :::
 
+(pkg-opt-python-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
 
-(pkg-python-interpreter)=
+(pkg-opt-python-interpreter)=
 ## `LIBFOO_PYTHON_INTERPRETER`
 
 Defines a specific Python interpreter when processing the build and
@@ -58,7 +65,7 @@ interpreter will be used. This field is optional.
 LIBFOO_PYTHON_INTERPRETER = '<path>'
 ```
 
-(pkg-python-setup-type)=
+(pkg-opt-python-setup-type)=
 ## `LIBFOO_PYTHON_SETUP_TYPE`
 
 The setup type will configure how a Python package is built and installed.

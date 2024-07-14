@@ -1,3 +1,4 @@
+(quirk-releng.disable_remote_scripts)=
 # Quirk `releng.disable_remote_scripts`
 
 releng-tool package sources have the ability to define configuration,

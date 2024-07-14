@@ -30,7 +30,7 @@ LIBFOO_INSTALL_OPTS = [
 ```
 
 For packages which do not have an installation target to run, developers can
-use the [](pkg-make-noinstall) option to skip the installation stage for
+use the [](pkg-opt-make-noinstall) option to skip the installation stage for
 a package.
 
 Default configurations for a make package will not run a configuration stage.
@@ -51,43 +51,53 @@ Alternatively, if no configuration options are specified, a
 The following sections outline configuration options are available for a make
 package.
 
+(pkg-opt-make-build-defs)=
 :::{include} _pkg-build-defs.md
 :::
 :::{include} _pkg-build-defs-example-default.md
 :::
 
+(pkg-opt-make-build-env)=
 :::{include} _pkg-build-env.md
 :::
 
+(pkg-opt-make-build-opts)=
 :::{include} _pkg-build-opts.md
 :::
 
+(pkg-opt-make-conf-defs)=
 :::{include} _pkg-conf-defs.md
 :::
 :::{include} _pkg-conf-defs-example-default.md
 :::
 
+(pkg-opt-make-conf-env)=
 :::{include} _pkg-conf-env.md
 :::
 
+(pkg-opt-make-conf-opts)=
 :::{include} _pkg-conf-opts.md
 :::
 
+(pkg-opt-make-env)=
 :::{include} _pkg-env.md
 :::
 
+(pkg-opt-make-install-defs)=
 :::{include} _pkg-install-defs.md
 :::
 :::{include} _pkg-install-defs-example-default.md
 :::
 
+(pkg-opt-make-install-env)=
 :::{include} _pkg-install-env.md
 :::
 
+(pkg-opt-make-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
 
-(pkg-make-noinstall)=
+(pkg-opt-make-noinstall)=
 ## `LIBFOO_MAKE_NOINSTALL`
 
 Specifies whether a make package should skip an attempt to invoke the

@@ -1,3 +1,4 @@
+(quirk-releng.disable_spdx_check)=
 # Quirk `releng.disable_spdx_check`
 
 When package definitions are being processed, any license configurations will
