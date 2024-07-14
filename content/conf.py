@@ -4,6 +4,7 @@
 from babel import Locale
 from sphinx.errors import ConfigError
 from sphinx.ext.autodoc import cut_lines
+import docutils
 import os
 import sys
 
@@ -128,3 +129,31 @@ def setup(app):
 def on_conf(app=None, config=None):
     if app.config.language == 'ja':
         app.config.latex_engine = 'uplatex'
+
+# ######################################################################
+# replace docutil's ID generation to help improve this specific
+# documentation to have "better" anchor links for various special
+# character section names
+# ######################################################################
+
+original_make_id = docutils.nodes.make_id
+
+def new_make_id(string):
+    # sections with an equals (e.g. "TEST=1"), only use the content before
+    # the equal character
+    string = string.split('=')[0]
+
+    # if the section starts with a numeric (i.e. a version ID, "1.0 release"),
+    # prefix it with a character to not get assigned a generic id target
+    if string[:1].isdigit():
+        string = f'v{string}'
+
+    # for sections with a dynamic-hint (e.g. "<PKG>_FLAG"), replace the
+    # greater-than character with a "var" hint to make it unique; e.g.
+    #  "PKG_NAME" and "<PKG>_NAME" resolved to "PKG_NAME"; to
+    #  "PKG_NAME" and "<PKG>_NAME" resolved to "PKG_VAR_NAME"
+    string = string.replace('>', '-var')
+
+    return original_make_id(string)
+
+docutils.nodes.make_id = new_make_id
