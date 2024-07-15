@@ -74,7 +74,21 @@ artifacts when using this action in combination with the [](arg-force)
 argument.
 ```
 
-See also [offline builds](tips/offline-builds).
+See also [offline builds](tips/offline-builds) and the
+[`fetch-full`](action-fetch-full) action.
+
+(action-fetch-full)=
+### `fetch-full`
+
+All packages will be processed up to the extraction phase, as well as any
+post-extraction fetch operations for supported package types (e.g. fetching
+Cargo dependencies).
+
+```shell
+releng-tool fetch-full
+```
+
+See also the [`fetch`](action-fetch) action.
 
 ### `init`
 
@@ -251,6 +265,20 @@ releng-tool <pkg>-fetch
 ```
 
 On success, the specified package stage will have completed its fetch stage.
+If the provided package name does not exist, a notification will be
+generated.
+
+(action-pkg-fetch-full)=
+### `<pkg>-fetch-full`
+
+Performs the fetch and extraction stages for the package, as well as any
+post-extraction fetch operations for the supported package type (e.g.
+fetching Cargo dependencies).
+
+```shell
+releng-tool <pkg>-fetch-full
+```
+
 If the provided package name does not exist, a notification will be
 generated.
 

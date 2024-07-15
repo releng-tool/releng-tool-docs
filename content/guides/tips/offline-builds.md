@@ -22,4 +22,8 @@ There are a few exceptions where offline builds may not function as expected.
    performing this request. Offline builds are only possible if developers
    define their projects in a way where fetching-like operations only occur
    during a fetch-stage.
+3. If a package defines additional dependencies (e.g. Cargo packages),
+   additional downloading may be required after an extraction phase. Users
+   can use the [`fetch-full`](action-fetch-full) to help ensure all
+   dependencies required for a build have been downloaded.
 :::

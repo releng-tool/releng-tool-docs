@@ -84,6 +84,20 @@ releng-tool distclean
 This will ensure all downloaded files, cached content, etc. are removed
 from the local system, ensuring a next-build to download fresh sources.
 
+## Full fetching
+
+Most package sources are acquired during the fetch stage. However, some
+packages define dependencies within their sources. This can require
+releng-tool to first fetch a defined package's sources, extract the
+package, followed by fetching any defined dependencies. Post-fetching
+will be automatically performed for supported packages (e.g. Cargo) after
+their extraction stage. Users can invoke the [`fetch-full`](action-fetch-full)
+action to explicitly process releng-tool's fetch-post operations:
+
+```
+releng-tool fetch-full
+```
+
 ## Force re-fetch of DVCS sources
 
 When a DVCS-based package goes through its fetch stage, the contents can
