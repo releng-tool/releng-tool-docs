@@ -45,8 +45,8 @@ use:
 
 Once a package has completed its fetch stage, releng-tool should never need
 to remotely fetch content for that package again (until site, version, etc.
-changes). In the event that a user invokes a `clean` action followed by a
-full build:
+changes). In the event that a user invokes a [`clean`](action-clean) action
+followed by a full build:
 
 ```shell-session
 $ releng-tool clean
@@ -114,8 +114,8 @@ is cleaned and rebuilt again, releng-tool will referred to the locally
 cached tag. In the event that the remote site changes the tag location,
 clean builds will not be using the most recent tag location. If a user
 knows the reference for a site has been updated, they can explicitly
-request a `<pkg>-fetch` on a package which should trigger a forced update
-from the remote site. For example:
+request a [`<pkg>-fetch`](action-pkg-fetch) on a package which should
+trigger a forced update from the remote site. For example:
 
 ```
 releng-tool libfoo-fetch
