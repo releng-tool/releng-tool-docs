@@ -119,11 +119,11 @@ Configuration options parsed by releng-tool for a package definition:
 ```{parsed-literal}
 [`LIBFOO_AUTOTOOLS_AUTORECONF`](pkg-opt-autotools-autoreconf) = bool
 `LIBFOO_BUILD_DEFS` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-defs), [CMake](pkg-opt-cmake-build-defs), [Make](pkg-opt-make-build-defs), [Meson](pkg-opt-meson-build-defs), [Python](pkg-opt-python-build-defs), [SCons](pkg-opt-scons-build-defs))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-defs), [Cargo](pkg-opt-cargo-build-defs), [CMake](pkg-opt-cmake-build-defs), [Make](pkg-opt-make-build-defs), [Meson](pkg-opt-meson-build-defs), [Python](pkg-opt-python-build-defs), [SCons](pkg-opt-scons-build-defs))*
 `LIBFOO_BUILD_ENV` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-env), [CMake](pkg-opt-cmake-build-env), [Make](pkg-opt-make-build-env), [Meson](pkg-opt-meson-build-env), [Python](pkg-opt-python-build-env), [SCons](pkg-opt-scons-build-env))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-env), [Cargo](pkg-opt-cargo-build-env), [CMake](pkg-opt-cmake-build-env), [Make](pkg-opt-make-build-env), [Meson](pkg-opt-meson-build-env), [Python](pkg-opt-python-build-env), [SCons](pkg-opt-scons-build-env))*
 `LIBFOO_BUILD_OPTS` = {'--option': 'value'} or ['--option', 'value']
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-opts), [CMake](pkg-opt-cmake-build-opts), [Make](pkg-opt-make-build-opts), [Meson](pkg-opt-meson-build-opts), [Python](pkg-opt-python-build-opts), [SCons](pkg-opt-scons-build-opts))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-opts), [Cargo](pkg-opt-cargo-build-opts), [CMake](pkg-opt-cmake-build-opts), [Make](pkg-opt-make-build-opts), [Meson](pkg-opt-meson-build-opts), [Python](pkg-opt-python-build-opts), [SCons](pkg-opt-scons-build-opts))*
 [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) = '&lt;subdir&gt;'
 [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type) = str
 [`LIBFOO_CMAKE_NOINSTALL`](pkg-opt-cmake-noinstall) = bool
@@ -137,7 +137,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache) = bool
 [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) = '&lt;revision&gt;'
 `LIBFOO_ENV` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-env), [CMake](pkg-opt-cmake-env), [Make](pkg-opt-make-env), [Meson](pkg-opt-meson-env), [Python](pkg-opt-python-env), [SCons](pkg-opt-scons-env))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-env), [Cargo](pkg-opt-cargo-env), [CMake](pkg-opt-cmake-env), [Make](pkg-opt-make-env), [Meson](pkg-opt-meson-env), [Python](pkg-opt-python-env), [SCons](pkg-opt-scons-env))*
 [`LIBFOO_EXTENSION`](pkg-opt-extension) = '&lt;extension&gt;'
 [`LIBFOO_EXTERNAL`](pkg-opt-external) = bool
 [`LIBFOO_EXTOPT`](pkg-opt-extopt) = {'FOO': 'BAR'}
@@ -151,11 +151,11 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_GIT_VERIFY_REVISION`](pkg-opt-git-verify-revision) = bool
 [`LIBFOO_HOST_PROVIDES`](pkg-opt-host-provides) = '&lt;tool&gt;' or ['&lt;tool-a&gt;', '&lt;tool-b&gt;']
 `LIBFOO_INSTALL_DEFS` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-defs), [CMake](pkg-opt-cmake-install-defs), [Make](pkg-opt-make-install-defs), [Meson](pkg-opt-meson-install-defs), [Python](pkg-opt-python-install-defs), [SCons](pkg-opt-scons-install-defs))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-defs), [Cargo](pkg-opt-cargo-install-defs), [CMake](pkg-opt-cmake-install-defs), [Make](pkg-opt-make-install-defs), [Meson](pkg-opt-meson-install-defs), [Python](pkg-opt-python-install-defs), [SCons](pkg-opt-scons-install-defs))*
 `LIBFOO_INSTALL_ENV` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-env), [CMake](pkg-opt-cmake-install-env), [Make](pkg-opt-make-install-env), [Meson](pkg-opt-meson-install-env), [Python](pkg-opt-python-install-env), [SCons](pkg-opt-scons-install-env))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-env), [Cargo](pkg-opt-cargo-install-env), [CMake](pkg-opt-cmake-install-env), [Make](pkg-opt-make-install-env), [Meson](pkg-opt-meson-install-env), [Python](pkg-opt-python-install-env), [SCons](pkg-opt-scons-install-env))*
 `LIBFOO_INSTALL_OPTS` = {'--option': 'value'} or ['--option', 'value']
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-opts), [CMake](pkg-opt-cmake-install-opts), [Make](pkg-opt-make-install-opts), [Meson](pkg-opt-meson-install-opts), [Python](pkg-opt-python-install-opts), [SCons](pkg-opt-scons-install-opts))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-opts), [Cargo](pkg-opt-cargo-install-opts), [CMake](pkg-opt-cmake-install-opts), [Make](pkg-opt-make-install-opts), [Meson](pkg-opt-meson-install-opts), [Python](pkg-opt-python-install-opts), [SCons](pkg-opt-scons-install-opts))*
 [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) = '&lt;install-type&gt;'
 &nbsp;&nbsp;└── host, images, staging, staging_and_target, target
 [`LIBFOO_INTERNAL`](pkg-opt-internal) = bool
@@ -176,7 +176,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_SITE`](pkg-opt-site) = '&lt;site&gt;'
 [`LIBFOO_STRIP_COUNT`](pkg-opt-strip-count) = int # &gt;= 0
 [`LIBFOO_TYPE`](pkg-opt-type) = '&lt;type&gt;'
-&nbsp;&nbsp;└── autotools, cmake, make, meson, python, scons, script, ext-&lt;extension&gt;
+&nbsp;&nbsp;└── autotools, cargo, cmake, make, meson, python, scons, script, ext-&lt;extension&gt;
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) = '&lt;vcs-type&gt;'
 &nbsp;&nbsp;└── bzr, cvs, git, hg, local, none, perforce, rsync, scp, svn, url
 [`LIBFOO_VERSION`](pkg-opt-version) = '&lt;version&gt;'

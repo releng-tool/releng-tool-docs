@@ -73,6 +73,7 @@ hash-file
 ascii-armor
 pkg-type-script
 pkg-type-autotools
+pkg-type-cargo
 pkg-type-cmake
 pkg-type-make
 pkg-type-meson

@@ -151,6 +151,7 @@ frameworks. The following outline a series of supported type definitions:
 | Type                            | Value |
 | ------------------------------: | :- |
 | [Autotools](pkg-type-autotools) | `autotools`
+| [Cargo](pkg-type-cargo)         | `cargo`
 | [CMake](pkg-type-cmake)         | `cmake`
 | [Make](pkg-type-make)           | `make`
 | [Meson](pkg-type-meson)         | `meson`
