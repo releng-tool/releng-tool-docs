@@ -234,5 +234,6 @@ Quirk options used by releng-tool:
 [`releng.git.no_depth`](quirk-releng.git.no_depth)
 [`releng.git.no_quick_fetch`](quirk-releng.git.no_quick_fetch)
 [`releng.git.replicate_cache`](quirk-releng.git.replicate_cache)
+[`releng.log.execute_env`](quirk-releng.log.execute_env)
 [`releng.stats.no_pdf`](quirk-releng.stats.no_pdf)
 ```

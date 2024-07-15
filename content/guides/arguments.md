@@ -426,6 +426,7 @@ See also [](env-releng-cache-dir).
 
 Configuration file to load (defaults to `<root>/releng`).
 
+(arg-debug)=
 ### `--debug`
 
 Show debug-related messages.
