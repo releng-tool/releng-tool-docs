@@ -33,6 +33,11 @@ table.colwidths-auto {
     width: 100%;
 }
 
+/* avoid wrapping links */
+a {
+    white-space: nowrap;
+}
+
 /* avoid wrapping literals */
 .literal {
     white-space: nowrap;
@@ -54,11 +59,6 @@ table.colwidths-auto {
     margin-top: 1em;
     margin-right: 30px;
     text-align: center;
-}
-
-/* avoid breaking up language links */
-.injected-sidebar-i8n a {
-    white-space: nowrap;
 }
 
 /* styling injected i8n option's spacer in sidebar */
