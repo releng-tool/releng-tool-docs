@@ -88,6 +88,9 @@ html_theme_options = {
             'class': '',
         },
     ],
+    'source_branch': 'main',
+    'source_directory': 'content/',
+    'source_repository': 'https://github.com/releng-tool/releng-tool-docs',
 }
 html_use_index = False
 
