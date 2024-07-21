@@ -2,9 +2,9 @@
 
 A script-based package is the most basic package type available. By default,
 packages are considered to be script packages unless explicitly configured
-to be another package type ([](pkg-opt-type)). If a developer wishes to
-explicitly configure a project as script-based, the following configuration
-can be used:
+to be another package type ([`LIBFOO_TYPE`](pkg-opt-type)). If a developer
+wishes to explicitly configure a project as script-based, the following
+configuration can be used:
 
 ```python
 LIBFOO_TYPE = 'script'

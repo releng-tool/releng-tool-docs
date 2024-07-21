@@ -10,10 +10,13 @@ LIBFOO_TYPE = 'python'
 Only the build and installation phases are used when processing the sources
 for a Python package (i.e. no configuration stage is invoked). By default,
 the build phase will invoke `setup.py build` while the installation stage
-will invoke `setup.py install` (see [](pkg-opt-python-setup-type) for other
-setup types). When a Python package is process, it will use the system's
+will invoke `setup.py install` (see
+[`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) for other setup
+types). When a Python package is process, it will use the system's
 default Python interpreter. A developer can override what Python interpreter
-to use by configuring the [](pkg-opt-python-interpreter) option in a package:
+to use by configuring the
+[`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter) option in a
+package:
 
 ```python
 LIBFOO_PYTHON_INTERPRETER = '/opt/my-custom-python-build/python'

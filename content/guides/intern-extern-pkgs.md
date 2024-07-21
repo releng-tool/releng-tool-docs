@@ -2,10 +2,11 @@
 
 Packages are either internal packages or external packages. All packages are
 considered external packages by default unless explicitly configured as
-internal through either the package option [](pkg-opt-internal) or using
-the project configuration [`default_internal`](conf-default-internal) (see
-also [](pkg-opt-external)). Both package types are treated the same except
-for the following:
+internal through either the package option
+[`LIBFOO_INTERNAL`](pkg-opt-internal) or using the project configuration
+[`default_internal`](conf-default-internal) (see also
+[`LIBFOO_EXTERNAL`](pkg-opt-external)). Both package types are treated the
+same except for the following:
 
 - An internal package will not generate output warnings if the package is
   missing [hash information](packages/hash-file) or an

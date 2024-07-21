@@ -30,8 +30,8 @@ LIBFOO_INSTALL_OPTS = [
 ```
 
 For packages which do not have an installation target to run, developers can
-use the [](pkg-opt-make-noinstall) option to skip the installation stage for
-a package.
+use the [`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall) option to skip
+the installation stage for a package.
 
 Default configurations for a make package will not run a configuration stage.
 However, if a user wants to run a specific target during this stage, the

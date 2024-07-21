@@ -136,10 +136,11 @@ LIBFOO_SITE = 'https://example.com/libfoo-1.0.tgz'
 
 The archive `libfoo-1.0.tgz` will be locally store and used in future
 builds. In the event where a site's archive is known to have been changed,
-a user can force re-fetch these artifacts by using the [](action-pkg-fetch)
-action along with the [](arg-force) argument. For example, even if
-`libfoo-1.0.tgz` was already downloaded locally, a request as follows will
-delete the local cache file and re-download it from the configured site:
+a user can force re-fetch these artifacts by using the
+[`<pkg>-fetch`](action-pkg-fetch) action along with the
+[`-F, --force`](arg-force) argument. For example, even if `libfoo-1.0.tgz`
+was already downloaded locally, a request as follows will delete the local
+cache file and re-download it from the configured site:
 
 ```
 releng-tool libfoo-fetch --force
@@ -175,8 +176,9 @@ $ releng-tool
 ```
 
 If a user wants to automatically re-fetch new updates on a development
-branch, they can take advantage of the [](pkg-opt-devmode-ignore-cache)
-option. For example, if a site definition had:
+branch, they can take advantage of the
+[`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache) option. For
+example, if a site definition had:
 
 ```python
 LIBFOO_SITE = 'git+git@example.com:base/libfoo.git'

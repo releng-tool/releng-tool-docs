@@ -7,8 +7,8 @@ tracking this information, some may only use open source software and
 require to populate license information for a final package, or a mix.
 
 When license information is populated for a project, each project's license
-information ([](pkg-opt-license-files)) is will be populated into a single
-license document. If a developer defines the
+information ([`LIBFOO_LICENSE_FILES`](pkg-opt-license-files)) is will be
+populated into a single license document. If a developer defines the
 [`license_header`](conf-license-header) configuration, the generated
 document will be prefixed with the header content. For example, developers
 can create a new license header file `assets/license-header.tpl` in the

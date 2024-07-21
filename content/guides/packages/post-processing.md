@@ -1,11 +1,11 @@
 # Package post-processing
 
-Every package, no matter which package [](pkg-opt-type) is defined, can
-create a post-processing script to invoke after a package has completed
-an installation stage. The existence of a `<package>-post` inside a
-package directory will trigger the post-processing stage for the package.
-An example post-processing script for a package `libfoo` would be named
-`libfoo-post`:
+Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is
+defined, can create a post-processing script to invoke after a package
+has completed an installation stage. The existence of a `<package>-post`
+inside a package directory will trigger the post-processing stage for
+the package. An example post-processing script for a package `libfoo`
+would be named `libfoo-post`:
 
 ```
 └── my-releng-tool-project/

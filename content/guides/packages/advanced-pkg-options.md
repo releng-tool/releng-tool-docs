@@ -44,15 +44,17 @@ option by default (`True`) if the target revision is a branch.
 
 Specifies a development revision for a package. When a project is being
 built in [development mode](/guides/development-mode), the development
-revision is used over the configured [](pkg-opt-revision) value. If a
-development revision is not defined for a project, a package will still
-use the configured [](pkg-opt-revision) while in development mode.
+revision is used over the configured [`LIBFOO_REVISION`](pkg-opt-revision)
+value. If a development revision is not defined for a project, a package
+will still use the configured [`LIBFOO_REVISION`](pkg-opt-revision) while
+in development mode.
 
 ```python
 LIBFOO_DEVMODE_REVISION = 'feature/alpha'
 ```
 
-See also [](pkg-opt-revision) and [](pkg-opt-version).
+See also [`LIBFOO_REVISION`](pkg-opt-revision) and
+[`LIBFOO_VERSION`](pkg-opt-version).
 
 (pkg-opt-extension)=
 ## `LIBFOO_EXTENSION`
@@ -165,15 +167,16 @@ default, the depth will be set to a value of `1`. If a developer wishes use
 fetch all commits from all refspecs, a developer can specify a value of `0`.
 
 While the default depth is a value of `1`, an exception is made when the depth
-is not explicitly set and the [](pkg-opt-revision) value defined is a hash. For
-this case, if the revision is not found with the implicitly-defined shallow
-depth of `1`, the entire history of the repository will be fetched.
+is not explicitly set and the [`LIBFOO_REVISION`](pkg-opt-revision) value
+defined is a hash. For this case, if the revision is not found with the
+implicitly-defined shallow depth of `1`, the entire history of the
+repository will be fetched.
 
 ```python
 LIBFOO_GIT_DEPTH = 0
 ```
 
-See also [](pkg-opt-git-refspecs) and
+See also [`LIBFOO_GIT_REFSPECS`](pkg-opt-git-refspecs) and
 [configuration quirks](/guides/quirks/quirks).
 
 (pkg-opt-git-refspecs)=
@@ -227,12 +230,13 @@ Hints at what host tools this package may be providing. A project may have a
 series of prerequisites, which are checked at the start of a run. This is to
 help ensure required host tools are available before attempting to build a
 project. If a package is designed to provide a host package (e.g. when using
-[](pkg-opt-install-type) with the `host` option), these packages can provide
-tools other packages may rely on. However, prerequisites checks will occur
-before these packages may be built, preventing a build from running. This
-option allows a developer to hint at what tools a host package may provide.
-By specifying the name of a tool in this option, an initial prerequisites
-check will not fail if a tool is not available at the start of a run.
+[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) with the `host` option),
+these packages can provide tools other packages may rely on. However,
+prerequisites checks will occur before these packages may be built,
+preventing a build from running. This option allows a developer to hint
+at what tools a host package may provide. By specifying the name of a tool
+in this option, an initial prerequisites check will not fail if a tool is
+not available at the start of a run.
 
 ```python
 LIBFOO_HOST_PROVIDES = 'some-tool'
@@ -246,7 +250,7 @@ LIBFOO_HOST_PROVIDES = [
 ]
 ```
 
-See also [](pkg-opt-install-type).
+See also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type).
 
 (pkg-opt-internal)=
 ## `LIBFOO_INTERNAL`
@@ -300,15 +304,16 @@ default, this option is disabled with a value of `False`.
 
 Sub-directory where any package patches should be applied to. By default,
 patches are applied to the root of the extracted sources for a package. This
-option can be useful for packages which utilize [](pkg-opt-build-subdir) to
-work in a container directory for sources which contain multiple modules, but
-has prepared patches tailored for the specific module being targeted.
+option can be useful for packages which utilize
+[`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) to work in a container
+directory for sources which contain multiple modules, but has prepared
+patches tailored for the specific module being targeted.
 
 ```python
 LIBFOO_PATCH_SUBDIR = 'subdir'
 ```
 
-See also [](pkg-opt-build-subdir).
+See also [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir).
 
 (pkg-opt-prefix)=
 ## `LIBFOO_PREFIX`
@@ -329,7 +334,8 @@ See also [](conf-sysroot-prefix).
 Specifies a revision value for a package. When a package fetches content
 using source management tools, the revision value is used to determine
 which sources should be acquired (e.g. a tag). If a revision is not
-defined package, a package will use the configured [](pkg-opt-version).
+defined package, a package will use the configured
+[`LIBFOO_VERSION`](pkg-opt-version).
 
 ```python
 LIBFOO_REVISION = 'libfoo-v2.1'
@@ -346,7 +352,8 @@ LIBFOO_REVISION = {
 }
 ```
 
-See also [](pkg-opt-devmode-revision) and [](pkg-opt-version).
+See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) and
+[`LIBFOO_VERSION`](pkg-opt-version).
 
 (pkg-opt-skip-remote-config)=
 ## `LIBFOO_SKIP_REMOTE_CONFIG`
@@ -403,10 +410,10 @@ LIBFOO_STRIP_COUNT = 1
 
 Explicitly sets the version control system type to use when acquiring
 sources. releng-tool attempts to automatically determine the VCS type of
-a package based off a [](pkg-opt-site) value. In some scenarios, a site
-value may be unable to specify a desired prefix/postfix. A developer can
-instead explicitly set the VCS type to be used no matter what the site
-value is configured as.
+a package based off a [`LIBFOO_SITE`](pkg-opt-site) value. In some
+scenarios, a site value may be unable to specify a desired prefix/postfix.
+A developer can instead explicitly set the VCS type to be used no matter
+what the site value is configured as.
 
 Supported types are as follows:
 

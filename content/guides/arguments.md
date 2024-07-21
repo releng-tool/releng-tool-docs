@@ -440,7 +440,7 @@ configure a container for all assets. If a user also specifies `--cache-dir`
 or `--dl-dir` overrides, this argument has no effect.
 ```
 
-See also [](env-releng-assets-dir).
+See also [`RELENG_ASSETS_DIR`](env-releng-assets-dir).
 
 (arg-cache-dir)=
 ### `--cache-dir <dir>`
@@ -448,7 +448,7 @@ See also [](env-releng-assets-dir).
 Directory for distributed version control cache information (defaults to
 `<root>/cache`).
 
-See also [](env-releng-cache-dir).
+See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
 
 ### `--config <file>`
 
@@ -468,7 +468,7 @@ Enables [development mode](development-mode).
 
 Directory for download archives (defaults to `<root>/dl`).
 
-See also [](env-releng-dl-dir).
+See also [`RELENG_DL_DIR`](env-releng-dl-dir).
 
 (arg-force)=
 ### `-F`, `--force`

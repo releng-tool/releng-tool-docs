@@ -130,10 +130,11 @@ the configured root directory. For example:
 
 The directory for a specific package's base directory for buildable content.
 In most cases, this value will be the same as
-[`PKG_BUILD_DIR`](env-pkg-build-dir). However, if [](pkg-opt-build-subdir)
-is configured, [`PKG_BUILD_DIR`](env-pkg-build-dir) will also include the
-configured sub-directory. The value of [](pkg-opt-build-subdir) does not
-adjust the value of `PKG_BUILD_BASE_DIR`.
+[`PKG_BUILD_DIR`](env-pkg-build-dir). However, if
+[`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) is configured,
+[`PKG_BUILD_DIR`](env-pkg-build-dir) will also include the configured
+sub-directory. The value of [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir)
+does not adjust the value of `PKG_BUILD_BASE_DIR`.
 
 See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 
@@ -217,21 +218,21 @@ The name of the package.
 
 The site revision of the package.
 
-See also [](pkg-opt-revision).
+See also [`LIBFOO_REVISION`](pkg-opt-revision).
 
 (env-pkg-site)=
 ### `PKG_SITE`
 
 The site of the package.
 
-See also [](pkg-opt-site).
+See also [`LIBFOO_SITE`](pkg-opt-site).
 
 (env-pkg-version)=
 ### `PKG_VERSION`
 
 The version of the package.
 
-See also [](pkg-opt-version).
+See also [`LIBFOO_VERSION`](pkg-opt-version).
 
 (env-prefix)=
 ### `PREFIX`

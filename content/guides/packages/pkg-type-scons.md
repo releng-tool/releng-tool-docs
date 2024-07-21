@@ -31,8 +31,8 @@ LIBFOO_INSTALL_OPTS = [
 ```
 
 For packages which do not have an installation alias to run, developers can
-use the [](pkg-opt-scons-noinstall) option to skip the installation stage for
-a package.
+use the [`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall) option to skip
+the installation stage for a package.
 
 Default configurations for a SCons package will not run a configuration stage.
 However, if a user wants to run a specific target during this stage, the

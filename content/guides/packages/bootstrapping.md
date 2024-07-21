@@ -1,11 +1,11 @@
 # Package bootstrapping
 
-Every package, no matter which package [](pkg-opt-type) is defined, can
-create a bootstrapping script to invoke before a package starts a
-configuration stage. The existence of a `<package>-bootstrap` inside a
-package directory will trigger the bootstrapping stage for the package.
-An example bootstrapping script for a package `libfoo` would be named
-`libfoo-bootstrap`:
+Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is
+defined, can create a bootstrapping script to invoke before a package
+starts a configuration stage. The existence of a `<package>-bootstrap`
+inside a package directory will trigger the bootstrapping stage for the
+package. An example bootstrapping script for a package `libfoo` would be
+named `libfoo-bootstrap`:
 
 ```
 └── my-releng-tool-project/

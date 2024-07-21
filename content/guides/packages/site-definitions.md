@@ -7,7 +7,7 @@ documentation provided by the extension.
 ```{note}
 All site values can be defined with a unique prefix value (e.g. `git+` for
 Git sources); however, this is optional if a package wishes to use the
-[](pkg-opt-vcs-type) option.
+[`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) option.
 ```
 
 ## Bazaar site
@@ -74,9 +74,10 @@ to `local`. A local site can be defined as follows:
 LIBFOO_SITE = 'local'
 ```
 
-This is equivalent to configuring [](pkg-opt-vcs-type) to a `local` VCS type
-as well. Note that a local package is intended for development/testing/training
-purposes. See [](pkg-opt-vcs-type) for more information.
+This is equivalent to configuring [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type)
+to a `local` VCS type as well. Note that a local package is intended for
+development/testing/training purposes. See
+[`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) for more information.
 
 ## Mercurial site
 
@@ -127,8 +128,8 @@ The value of `<source>` will be provided to a `rsync` call's [^rsynccommand]
 `SRC` value. Fetched content will be stored in an archive inside the `dl`
 directory. Once fetched, the fetch stage will be skipped unless the archive
 is manually removed. By default, the `--recursive` argument is applied.
-Adding or replacing options can be done by using the [](pkg-opt-fetch-opts)
-option.
+Adding or replacing options can be done by using the
+[`LIBFOO_FETCH_OPTS`](pkg-opt-fetch-opts) option.
 
 ## SCP site
 
@@ -160,10 +161,10 @@ is made, the fetch stage will be skipped unless the archive is manually removed.
 
 ## URL site (default)
 
-All packages that do not define a helper prefix/postfix value (as seen in other
-site definitions) or do not explicitly set a [](pkg-opt-vcs-type) value (other
-than `url`), will be considered a URL site. A URL site can be defined as
-follows:
+All packages that do not define a helper prefix/postfix value (as seen
+in other site definitions) or do not explicitly set a
+[`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) value (other than `url`), will be
+considered a URL site. A URL site can be defined as follows:
 
 ```python
 LIBFOO_SITE = 'https://example.com/my-file'
@@ -174,7 +175,7 @@ supported are defined by the Python's `urlopen` implementation [^urlopen],
 which includes (but not limited to) `http(s)://`, `ftp://`, `file://` and
 more.
 
-See also [](conf-urlopen-context).
+See also [`urlopen_context`](conf-urlopen-context).
 
 
 [^bzrexport]: <https://web.archive.org/web/http://doc.bazaar.canonical.com/bzr.2.7/en/user-reference/export-help.html>

@@ -52,8 +52,9 @@ For example:
 For a package to take advantage of a configuration option, the package
 definition will add a variable entry with the package's prefix followed by
 the supported option name. Considering the same package with the name
-`package-a` which has a prefix `PACKAGE_A_`; to use the [](pkg-opt-version)
-configuration option, the option `PACKAGE_A_VERSION` should be defined:
+`package-a` which has a prefix `PACKAGE_A_`; to use the
+[`LIBFOO_VERSION`](pkg-opt-version) configuration option, the option
+`PACKAGE_A_VERSION` should be defined:
 
 ```python
 PACKAGE_A_VERSION = '1.0.0'

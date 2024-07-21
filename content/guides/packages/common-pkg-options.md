@@ -40,7 +40,7 @@ The default installation type is `target`.
 LIBFOO_INSTALL_TYPE = 'target'
 ```
 
-See also [](pkg-opt-host-provides).
+See also [`LIBFOO_HOST_PROVIDES`](pkg-opt-host-provides).
 
 (pkg-opt-license)=
 ## `LIBFOO_LICENSE`
@@ -65,7 +65,7 @@ or
 LIBFOO_LICENSE = 'LicenseRef-MyCompanyLicense'
 ```
 
-See also [](pkg-opt-license-files).
+See also [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files).
 
 (pkg-opt-license-files)=
 ## `LIBFOO_LICENSE_FILES`
@@ -87,7 +87,7 @@ or
 LIBFOO_LICENSE_FILES = 'LICENSE'
 ```
 
-See also [](pkg-opt-license).
+See also [`LIBFOO_LICENSE`](pkg-opt-license).
 
 (pkg-opt-site)=
 ## `LIBFOO_SITE`
@@ -121,9 +121,9 @@ LIBFOO_SITE = {
 }
 ```
 
-A developer can also use [](pkg-opt-vcs-type) to explicitly define the version
-control system type without the need for a prefix hint. The use of a
-dictionary value is only useful when operating in
+A developer can also use [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) to
+explicitly define the version control system type without the need for a
+prefix hint. The use of a dictionary value is only useful when operating in
 [development mode](/guides/development-mode). For more information on each
 type's formatting, see [site definitions](site-definitions).
 
@@ -190,9 +190,11 @@ LIBFOO_VERSION = '1.0.0'
 For some VCS types, the version value will be used to acquire a specific
 revision of sources. If for some case the desired version value cannot be
 gracefully defined (e.g. a version value `libfoo-v1.0` will produce output
-directories such as `libfoo-libfoo-v1.0`), [](pkg-opt-revision) can be used.
+directories such as `libfoo-libfoo-v1.0`),
+[`LIBFOO_REVISION`](pkg-opt-revision) can be used.
 
-See also [](pkg-opt-devmode-revision) and [](pkg-opt-revision).
+See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) and
+[`LIBFOO_REVISION`](pkg-opt-revision).
 
 
 [spdx-licenses]: https://spdx.org/licenses/
