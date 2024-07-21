@@ -382,7 +382,7 @@ import ssl
 urlopen_context = ssl.create_default_context()
 ```
 
-[^urlopen]: <https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen>
+[^urlopen]: <https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>
 
 [spdx-exceptions]: https://spdx.org/licenses/exceptions-index.html
 [spdx-licenses]: https://spdx.org/licenses/

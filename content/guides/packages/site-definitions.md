@@ -188,9 +188,9 @@ See also [`urlopen_context`](conf-urlopen-context).
 [^rsynccommand]: <https://linux.die.net/man/1/rsync>
 [^scpcommand]: <https://linux.die.net/man/1/scp>
 [^svncheckout]: <http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html>
-[^urlopen]: <https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen>
+[^urlopen]: <https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>
 
-[bazaar]: https://en.wikipedia.org/wiki/GNU_Bazaar
+[bazaar]: https://wikipedia.org/wiki/GNU_Bazaar
 [cvs]: http://cvs.nongnu.org/
 [git]: https://git-scm.com/
 [mercurial]: https://www.mercurial-scm.org/

@@ -101,12 +101,12 @@ standard Python distribution. For example, if a PDM setup type is set,
 the host system will need to have `pdm` Python module installed on
 the system.
 
-[distutils]: https://docs.python.org/library/distutils.html
+[distutils]: https://docs.python.org/3.11/library/distutils.html
 [flit]: https://flit.pypa.io
 [hatch]: https://hatch.pypa.io
-[installer]: https://installer.readthedocs.io
-[pdm]: https://pdm.fming.dev
+[installer]: https://installer.pypa.io/
+[pdm]: https://pdm-project.org/
 [poetry]: https://python-poetry.org/
-[pypa-build]: https://pypa-build.readthedocs.io
+[pypa-build]: https://build.pypa.io/
 [python]: https://www.python.org/
 [setuptools]: https://setuptools.pypa.io
