@@ -326,7 +326,7 @@ prefix value.
 LIBFOO_PREFIX = '/usr'
 ```
 
-See also [](conf-sysroot-prefix).
+See also [`sysroot_prefix`](conf-sysroot-prefix).
 
 (pkg-opt-revision)=
 ## `LIBFOO_REVISION`

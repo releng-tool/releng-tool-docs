@@ -139,7 +139,7 @@ for custom site protocols.
 Specifying a [local site](site-local) value with `local` will automatically
 configure a VCS-type of `local`.
 
-See also [](pkg-opt-vcs-type).
+See also [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type).
 
 (pkg-opt-type)=
 ## `LIBFOO_TYPE`
