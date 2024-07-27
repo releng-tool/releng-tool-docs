@@ -161,6 +161,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_INTERNAL`](pkg-opt-internal) = bool
 [`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall) = bool
 [`LIBFOO_MESON_NOINSTALL`](pkg-opt-meson-noinstall) = bool
+[`LIBFOO_NEEDS`](pkg-opt-needs) = ['&lt;pkg&gt;', '&lt;pkg&gt;']
 [`LIBFOO_NO_EXTRACTION`](pkg-opt-no-extraction) = bool
 [`LIBFOO_LICENSE`](pkg-opt-license) = '&lt;license&gt;'  or ['&lt;license&gt;', '&lt;license&gt;']
 [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files) = '&lt;file&gt;' or ['&lt;file&gt;', '&lt;file&gt;']

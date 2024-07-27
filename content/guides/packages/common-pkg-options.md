@@ -2,22 +2,6 @@
 
 The following outlines common configuration options available for packages.
 
-(pkg-opt-dependencies)=
-## `LIBFOO_DEPENDENCIES`
-
-List of package dependencies a given project has. If a project depends on
-another package, the package name should be listed in this option. This ensures
-releng-tool will process packages in the proper order. The following shows an
-example package `libc` being dependent on `liba` and `libb` being
-processed first:
-
-```python
-LIBC_DEPENDENCIES = [
-    'liba',
-    'libb',
-]
-```
-
 (pkg-opt-install-type)=
 ## `LIBFOO_INSTALL_TYPE`
 
@@ -88,6 +72,27 @@ LIBFOO_LICENSE_FILES = 'LICENSE'
 ```
 
 See also [`LIBFOO_LICENSE`](pkg-opt-license).
+
+(pkg-opt-needs)=
+## `LIBFOO_NEEDS`
+
+:::{note}
+The option replaces the legacy
+[`LIBFOO_DEPENDENCIES`](pkg-opt-dependencies) option.
+:::
+
+List of package dependencies a given project has. If a project depends on
+another package, the package name should be listed in this option. This ensures
+releng-tool will process packages in the proper order. The following shows an
+example package `libfoo` being dependent on `liba` and `libb` being
+processed first:
+
+```python
+LIBFOO_NEEDS = [
+    'liba',
+    'libb',
+]
+```
 
 (pkg-opt-site)=
 ## `LIBFOO_SITE`
@@ -195,6 +200,28 @@ directories such as `libfoo-libfoo-v1.0`),
 
 See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) and
 [`LIBFOO_REVISION`](pkg-opt-revision).
+
+
+(pkg-opt-dependencies)=
+## `LIBFOO_DEPENDENCIES`
+
+:::{warning}
+The option is deprecated and packages should use
+[`LIBFOO_NEEDS`](pkg-opt-needs) instead.
+:::
+
+List of package dependencies a given project has. If a project depends on
+another package, the package name should be listed in this option. This ensures
+releng-tool will process packages in the proper order. The following shows an
+example package `libfoo` being dependent on `liba` and `libb` being
+processed first:
+
+```python
+LIBFOO_DEPENDENCIES = [
+    'liba',
+    'libb',
+]
+```
 
 
 [spdx-licenses]: https://spdx.org/licenses/

@@ -33,7 +33,7 @@ Repeat the same steps for the `program-b` package with the file
 `my-project/program-b/program-b.py` containing:
 
 ```python
-PROGRAM_B_DEPENDENCIES = ['liba']
+PROGRAM_B_NEEDS = ['liba']
 PROGRAM_B_VERSION = '2.1.0'
 ```
 

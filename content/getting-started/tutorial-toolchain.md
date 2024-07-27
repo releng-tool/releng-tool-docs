@@ -287,7 +287,7 @@ Update the `htop` package definition (`my-tc-project/htop/htop`) with the
 following contents:
 
 ```python
-HTOP_DEPENDENCIES = [
+HTOP_NEEDS = [
     'libnl',
     'ncurses',
 ]

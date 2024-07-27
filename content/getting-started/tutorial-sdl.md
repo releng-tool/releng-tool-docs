@@ -151,7 +151,7 @@ Create a package definition `my-sdl-project/sample/sample` with the
 following contents:
 
 ```python
-SAMPLE_DEPENDENCIES = [
+SAMPLE_NEEDS = [
     'libsdl',
 ]
 
@@ -161,7 +161,7 @@ SAMPLE_VCS_TYPE = 'local'
 ```
 
 - We specify a dependency on the `libsdl` package by adding this package in
-  a `SAMPLE_DEPENDENCIES` list. One or more packages can be specified here
+  a `SAMPLE_NEEDS` list. One or more packages can be specified here
   if needed, and will ensure that `libsdl` is built before any attempts to
   configure/build the sample package.
 - This package is then flagged as internal (`SAMPLE_INTERNAL`). We do this
