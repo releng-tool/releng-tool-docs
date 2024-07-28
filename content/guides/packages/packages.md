@@ -80,4 +80,5 @@ pkg-type-make
 pkg-type-meson
 pkg-type-python
 pkg-type-scons
+Deprecated options <deprecated-pkg-options>
 :::
