@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/guides/quirks/quirk-git-no_depth.md:1
+#: ../../content/guides/quirks/quirk-git-no_depth.md:2
 msgid "Quirk `releng.git.no_depth`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_depth.md:3
+#: ../../content/guides/quirks/quirk-git-no_depth.md:4
 msgid "releng-tool may use the [`--depth`][git--depth] option for Git-based packages to to perform shallow checkouts to improve fetch performance. If a user does not want to perform shallow checkouts, the `releng.git.no_depth` quirk may be used."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_depth.md:12
+#: ../../content/guides/quirks/quirk-git-no_depth.md:13
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_depth.md:14
+#: ../../content/guides/quirks/quirk-git-no_depth.md:15
 msgid "[Git clone's `--depth` option][git--depth]"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_depth.md:15
+#: ../../content/guides/quirks/quirk-git-no_depth.md:16
 msgid "[](quirks)"
 msgstr ""

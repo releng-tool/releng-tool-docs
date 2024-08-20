@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/guides/quirks/quirk-disable_remote_configs.md:1
+#: ../../content/guides/quirks/quirk-disable_remote_configs.md:2
 msgid "Quirk `releng.disable_remote_configs`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_remote_configs.md:3
+#: ../../content/guides/quirks/quirk-disable_remote_configs.md:4
 msgid "releng-tool package sources have the ability to inject late-stage configuration options from a remote source. If a user is having issues with a project's remote options for a package, the `releng.disable_remote_configs` quirk can be used to skip any application of late-stage configuration options:"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_remote_configs.md:13
+#: ../../content/guides/quirks/quirk-disable_remote_configs.md:14
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_remote_configs.md:15
+#: ../../content/guides/quirks/quirk-disable_remote_configs.md:16
 msgid "[](quirks)"
 msgstr ""

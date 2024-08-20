@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/getting-started/fetching.md:1
 msgid "Understanding fetching"
@@ -24,9 +30,9 @@ msgstr ""
 #: ../../content/getting-started/fetching.md:3
 msgid ""
 "The first stage packages go through is the \"fetch\" phase. For packages "
-"which have content to acquire, files can be downloaded or version control "
-"sources may be locally cached. For example, if a package has a link to a "
-"file to download:"
+"which have content to acquire, files can be downloaded or version control"
+" sources may be locally cached. For example, if a package has a link to a"
+" file to download:"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:12
@@ -41,31 +47,31 @@ msgstr ""
 
 #: ../../content/getting-started/fetching.md:32
 msgid ""
-"The contents of the repository will be stored in the cache folder for later "
-"use:"
+"The contents of the repository will be stored in the cache folder for "
+"later use:"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:46
 msgid ""
-"Once a package has completed its fetch stage, releng-tool should never need "
-"to remotely fetch content for that package again (until site, version, etc. "
-"changes). In the event that a user invokes a `clean` action followed by a "
-"full build:"
+"Once a package has completed its fetch stage, releng-tool should never "
+"need to remotely fetch content for that package again (until site, "
+"version, etc. changes). In the event that a user invokes a [`clean"
+"`](action-clean) action followed by a full build:"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:57
 msgid ""
-"No fetching may occur since package contents may already be stored in the "
-"existing `dl/` and `cache/` folders."
+"No fetching may occur since package contents may already be stored in the"
+" existing `dl/` and `cache/` folders."
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:60
 msgid ""
-"A problem a user may experience is if they wish to re-acquire sources from a"
-" site if they know the sources have changed. For example, if a remote "
-"archive has been updated, if a tag has been moved or if a target branch has "
-"been updated. The following will present a series of ways a user can deal "
-"with these use cases."
+"A problem a user may experience is if they wish to re-acquire sources "
+"from a site if they know the sources have changed. For example, if a "
+"remote archive has been updated, if a tag has been moved or if a target "
+"branch has been updated. The following will present a series of ways a "
+"user can deal with these use cases."
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:66
@@ -74,106 +80,124 @@ msgstr ""
 
 #: ../../content/getting-started/fetching.md:69
 msgid ""
-"While this approach ensures the most recent sources for the existing package"
-" configurations are fetched, it can be time consuming to clear the entire "
-"cache if, for example, only a single package has changed."
+"While this approach ensures the most recent sources for the existing "
+"package configurations are fetched, it can be time consuming to clear the"
+" entire cache if, for example, only a single package has changed."
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:73
-msgid ""
-"It is recommended to look at all available options to re-fetch content."
+msgid "It is recommended to look at all available options to re-fetch content."
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:76
 msgid ""
-"The easiest way to ensure all fresh sources are downloaded is to clean all "
-"local downloads/cache for a project. This can be achieved using "
+"The easiest way to ensure all fresh sources are downloaded is to clean "
+"all local downloads/cache for a project. This can be achieved using "
 "[`distclean`](action-distclean):"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:84
 msgid ""
-"This will ensure all downloaded files, cached content, etc. are removed from"
-" the local system, ensuring a next-build to download fresh sources."
+"This will ensure all downloaded files, cached content, etc. are removed "
+"from the local system, ensuring a next-build to download fresh sources."
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:87
-msgid "Force re-fetch of DVCS sources"
+msgid "Full fetching"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:89
 msgid ""
-"When a DVCS-based package goes through its fetch stage, the contents can be "
-"locally stored in the configured cache directory. For a package definition "
-"as follows:"
+"Most package sources are acquired during the fetch stage. However, some "
+"packages define dependencies within their sources. This can require "
+"releng-tool to first fetch a defined package's sources, extract the "
+"package, followed by fetching any defined dependencies. Post-fetching "
+"will be automatically performed for supported packages (e.g. Cargo) after"
+" their extraction stage. Users can invoke the [`fetch-full`](action-"
+"fetch-full) action to explicitly process releng-tool's fetch-post "
+"operations:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:98
+#: ../../content/getting-started/fetching.md:101
+msgid "Force re-fetch of DVCS sources"
+msgstr ""
+
+#: ../../content/getting-started/fetching.md:103
 msgid ""
-"A cache of the `v1.0` tag will be fetched and stored locally. If a package "
-"is cleaned and rebuilt again, releng-tool will referred to the locally "
-"cached tag. In the event that the remote site changes the tag location, "
-"clean builds will not be using the most recent tag location. If a user knows"
-" the reference for a site has been updated, they can explicitly request a "
-"`<pkg>-fetch` on a package which should trigger a forced update from the "
-"remote site. For example:"
+"When a DVCS-based package goes through its fetch stage, the contents can "
+"be locally stored in the configured cache directory. For a package "
+"definition as follows:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:110
+#: ../../content/getting-started/fetching.md:112
 msgid ""
-"The above can recognize the new tag update, and any future clean builds made"
-" will use the new reference implementation."
+"A cache of the `v1.0` tag will be fetched and stored locally. If a "
+"package is cleaned and rebuilt again, releng-tool will referred to the "
+"locally cached tag. In the event that the remote site changes the tag "
+"location, clean builds will not be using the most recent tag location. If"
+" a user knows the reference for a site has been updated, they can "
+"explicitly request a [`<pkg>-fetch`](action-pkg-fetch) on a package which"
+" should trigger a forced update from the remote site. For example:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:113
+#: ../../content/getting-started/fetching.md:124
+msgid ""
+"The above can recognize the new tag update, and any future clean builds "
+"made will use the new reference implementation."
+msgstr ""
+
+#: ../../content/getting-started/fetching.md:127
 msgid "Force re-fetch of fixed sources"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:115
+#: ../../content/getting-started/fetching.md:129
 msgid ""
-"For packages which reference a fixed artifact, once a package has completed "
-"its fetch stage, the artifact will no longer need to be downloaded again. "
-"For example:"
+"For packages which reference a fixed artifact, once a package has "
+"completed its fetch stage, the artifact will no longer need to be "
+"downloaded again. For example:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:123
+#: ../../content/getting-started/fetching.md:137
 msgid ""
 "The archive `libfoo-1.0.tgz` will be locally store and used in future "
-"builds. In the event where a site's archive is known to have been changed, a"
-" user can force re-fetch these artifacts by using the [](action-pkg-fetch) "
-"action along with the [](arg-force) argument. For example, even if "
-"`libfoo-1.0.tgz` was already downloaded locally, a request as follows will "
-"delete the local cache file and re-download it from the configured site:"
+"builds. In the event where a site's archive is known to have been "
+"changed, a user can force re-fetch these artifacts by using the "
+"[`<pkg>-fetch`](action-pkg-fetch) action along with the [`-F, --force"
+"`](arg-force) argument. For example, even if `libfoo-1.0.tgz` was already"
+" downloaded locally, a request as follows will delete the local cache "
+"file and re-download it from the configured site:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:134
+#: ../../content/getting-started/fetching.md:149
 msgid "Automatically re-fetch development branches"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:136
+#: ../../content/getting-started/fetching.md:151
 msgid ""
 "When operating in [development mode](/guides/development-mode) where a "
 "package has a development-specific source based off a branch, it may be "
-"preferred to always ensure the most recent sources are fetched. For example,"
-" consider `libfoo` with a development revision `main`:"
+"preferred to always ensure the most recent sources are fetched. For "
+"example, consider `libfoo` with a development revision `main`:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:147
+#: ../../content/getting-started/fetching.md:162
 msgid ""
-"With the above configuration, if a builder cleans and rebuilds the project, "
-"the originally cache of `main` would still be used, even if `main` has new "
-"updates on the remote branch:"
+"With the above configuration, if a builder cleans and rebuilds the "
+"project, the originally cache of `main` would still be used, even if "
+"`main` has new updates on the remote branch:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:163
+#: ../../content/getting-started/fetching.md:178
 msgid ""
 "If a user wants to automatically re-fetch new updates on a development "
-"branch, they can take advantage of the [](pkg-opt-devmode-ignore-cache) "
-"option. For example, if a site definition had:"
+"branch, they can take advantage of the [`LIBFOO_DEVMODE_IGNORE_CACHE"
+"`](pkg-opt-devmode-ignore-cache) option. For example, if a site "
+"definition had:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:174
+#: ../../content/getting-started/fetching.md:190
 msgid ""
-"A repeat of the rebuild actions will result in an automatic update of the "
-"package's `main` branch (if updates are available):"
+"A repeat of the rebuild actions will result in an automatic update of the"
+" package's `main` branch (if updates are available):"
 msgstr ""
+

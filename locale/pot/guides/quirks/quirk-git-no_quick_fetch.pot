@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:1
+#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:2
 msgid "Quirk `releng.git.no_quick_fetch`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:3
+#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:4
 msgid "When fetching sources for a Git-site-defined package, releng-tool will attempt to acquire these sources by only pulling applicable revision references needed for a build (i.e. \"quick fetching\", in the context of releng-tool). For example, if a project defines a Git tag to fetch, only the `refs/tags/<tag>` reference will be fetched."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:9
+#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:10
 msgid "If a user does not want to utilizing quick-fetching for Git packages, this can be disabled by using the `releng.git.no_quick_fetch` quirk."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:16
+#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:17
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:18
+#: ../../content/guides/quirks/quirk-git-no_quick_fetch.md:19
 msgid "[](quirks)"
 msgstr ""

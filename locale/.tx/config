@@ -277,6 +277,12 @@ source_file  = pot/guides/packages/common-pkg-options.pot
 type         = PO
 minimum_perc = 0
 
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_deprecated_pkg_options]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/deprecated-pkg-options.po
+source_file  = pot/guides/packages/deprecated-pkg-options.pot
+type         = PO
+minimum_perc = 0
+
 [o:releng-tool:p:releng-tool-docs:r:guides_packages_hash_file]
 file_filter  = <lang>/LC_MESSAGES/guides/packages/hash-file.po
 source_file  = pot/guides/packages/hash-file.pot
@@ -292,6 +298,12 @@ minimum_perc = 0
 [o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_autotools]
 file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-autotools.po
 source_file  = pot/guides/packages/pkg-type-autotools.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_pkg_type_cargo]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/pkg-type-cargo.po
+source_file  = pot/guides/packages/pkg-type-cargo.pot
 type         = PO
 minimum_perc = 0
 
@@ -412,6 +424,12 @@ minimum_perc = 0
 [o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_git_replicate_cache]
 file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-git-replicate_cache.po
 source_file  = pot/guides/quirks/quirk-git-replicate_cache.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_log_execute_env]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-log-execute_env.po
+source_file  = pot/guides/quirks/quirk-log-execute_env.pot
 type         = PO
 minimum_perc = 0
 

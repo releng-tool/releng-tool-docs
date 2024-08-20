@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "A releng-tool project can defined multiple packages, each with the possib
 msgstr ""
 
 #: ../../content/guides/licenses.md:9
-msgid "When license information is populated for a project, each project's license information ([](pkg-opt-license-files)) is will be populated into a single license document. If a developer defines the [`license_header`](conf-license-header) configuration, the generated document will be prefixed with the header content. For example, developers can create a new license header file `assets/license-header.tpl` in the project folder:"
+msgid "When license information is populated for a project, each project's license information ([`LIBFOO_LICENSE_FILES`](pkg-opt-license-files)) is will be populated into a single license document. If a developer defines the [`license_header`](conf-license-header) configuration, the generated document will be prefixed with the header content. For example, developers can create a new license header file `assets/license-header.tpl` in the project folder:"
 msgstr ""
 
 #: ../../content/guides/licenses.md:26

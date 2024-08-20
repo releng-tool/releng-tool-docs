@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Script package (default)"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-script.md:3
-msgid "A script-based package is the most basic package type available. By default, packages are considered to be script packages unless explicitly configured to be another package type ([](pkg-opt-type)). If a developer wishes to explicitly configure a project as script-based, the following configuration can be used:"
+msgid "A script-based package is the most basic package type available. By default, packages are considered to be script packages unless explicitly configured to be another package type ([`LIBFOO_TYPE`](pkg-opt-type)). If a developer wishes to explicitly configure a project as script-based, the following configuration can be used:"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-script.md:13

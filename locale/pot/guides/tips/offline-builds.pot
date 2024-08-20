@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,4 +38,8 @@ msgstr ""
 
 #: ../../content/guides/tips/offline-builds.md:19
 msgid "If a developer defines a package definition or a post-build script which performs fetch-like calls (e.g. if custom files are downloaded when running a `libfoo-build` script), releng-tool will not stop the script from performing this request. Offline builds are only possible if developers define their projects in a way where fetching-like operations only occur during a fetch-stage."
+msgstr ""
+
+#: ../../content/guides/tips/offline-builds.md:25
+msgid "If a package defines additional dependencies (e.g. Cargo packages), additional downloading may be required after an extraction phase. Users can use the [`fetch-full`](action-fetch-full) to help ensure all dependencies required for a build have been downloaded."
 msgstr ""

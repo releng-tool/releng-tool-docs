@@ -1,21 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-"
+"tool/teams/171906/ja/)\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/guides/packages/bootstrapping.md:1
 msgid "Package bootstrapping"
@@ -23,12 +27,12 @@ msgstr ""
 
 #: ../../content/guides/packages/bootstrapping.md:3
 msgid ""
-"Every package, no matter which package [](pkg-opt-type) is defined, can "
-"create a bootstrapping script to invoke before a package starts a "
-"configuration stage. The existence of a `<package>-bootstrap` inside a "
-"package directory will trigger the bootstrapping stage for the package. An "
-"example bootstrapping script for a package `libfoo` would be named `libfoo-"
-"bootstrap`:"
+"Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is "
+"defined, can create a bootstrapping script to invoke before a package "
+"starts a configuration stage. The existence of a `<package>-bootstrap` "
+"inside a package directory will trigger the bootstrapping stage for the "
+"package. An example bootstrapping script for a package `libfoo` would be "
+"named `libfoo-bootstrap`:"
 msgstr ""
 
 #: ../../content/guides/packages/bootstrapping.md:19
@@ -41,14 +45,15 @@ msgstr ""
 
 #: ../../content/guides/packages/bootstrapping.md:36
 msgid ""
-"Bootstrapping scripts for a package are optional. If no bootstrapping script"
-" is provided for a package, no bootstrapping stage will be performed for the"
-" package."
+"Bootstrapping scripts for a package are optional. If no bootstrapping "
+"script is provided for a package, no bootstrapping stage will be "
+"performed for the package."
 msgstr ""
 
 #: ../../content/guides/packages/bootstrapping.md:40
 msgid ""
 "See [script helpers](/guides/script-helpers) for helper functions and "
-"variables available for use. Developers may also be interested in using a "
-"[post-processing script](post-processing)."
+"variables available for use. Developers may also be interested in using a"
+" [post-processing script](post-processing)."
 msgstr ""
+

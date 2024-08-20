@@ -1,21 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-"
+"tool/teams/171906/es/)\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 "
+"? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/guides/packages/pkg-type-scons.md:1
 msgid "SCons package"
@@ -23,47 +28,48 @@ msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:3
 msgid ""
-"A SCons package provides support to easily invoke [SCons][scons] commands at"
-" various stages of a package."
+"A SCons package provides support to easily invoke [SCons][scons] commands"
+" at various stages of a package."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:10
 msgid ""
-"SCons-based projects by default will invoke the default target during the "
-"build stage, and invoke the `install` alias for the installation stage. "
-"Developers can configure a specific target to invoke during the build stage "
-"by specifying a `LIBFOO_BUILD_OPTS` configuration. For example, if a package"
-" uses the target `release` for standard release builds, the following can be"
-" used:"
+"SCons-based projects by default will invoke the default target during the"
+" build stage, and invoke the `install` alias for the installation stage. "
+"Developers can configure a specific target to invoke during the build "
+"stage by specifying a `LIBFOO_BUILD_OPTS` configuration. For example, if "
+"a package uses the target `release` for standard release builds, the "
+"following can be used:"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:23
 msgid ""
 "For the installation stage, the `install` alias is typically invoked. "
-"However, developers can override what target to invoke by adding it into the"
-" install options:"
+"However, developers can override what target to invoke by adding it into "
+"the install options:"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:33
 msgid ""
-"For packages which do not have an installation alias to run, developers can "
-"use the [](pkg-scons-noinstall) option to skip the installation stage for a "
-"package."
+"For packages which do not have an installation alias to run, developers "
+"can use the [`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall) option to"
+" skip the installation stage for a package."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:37
 msgid ""
 "Default configurations for a SCons package will not run a configuration "
-"stage. However, if a user wants to run a specific target during this stage, "
-"the target can be added into the configuration options. For example, if the "
-"SCons definition has a target `prework` that should be invoked during the "
-"configuration stage, the following can be used:"
+"stage. However, if a user wants to run a specific target during this "
+"stage, the target can be added into the configuration options. For "
+"example, if the SCons definition has a target `prework` that should be "
+"invoked during the configuration stage, the following can be used:"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:49
 msgid ""
 "Alternatively, if no configuration options are specified, a "
-"`<package>-configure` [script](pkg-type-script) can be invoked if available."
+"`<package>-configure` [script](pkg-type-script) can be invoked if "
+"available."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-scons.md:52
@@ -78,8 +84,8 @@ msgstr ""
 
 #: ../../content/guides/packages/_pkg-build-defs.md:4
 msgid ""
-"Provides a means to pass definitions into the build process. This option can"
-" is defined as a dictionary of string pairs. This field is optional."
+"Provides a means to pass definitions into the build process. This option "
+"can is defined as a dictionary of string pairs. This field is optional."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-build-env.md:2
@@ -88,10 +94,10 @@ msgstr ""
 
 #: ../../content/guides/packages/_pkg-build-env.md:4
 msgid ""
-"Provides a means to pass environment variables into the build process. This "
-"option is defined as a dictionary with key-value pairs where the key is the "
-"environment name and the value is the environment variable's value. This "
-"field is optional."
+"Provides a means to pass environment variables into the build process. "
+"This option is defined as a dictionary with key-value pairs where the key"
+" is the environment name and the value is the environment variable's "
+"value. This field is optional."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-build-opts.md:2
@@ -100,10 +106,10 @@ msgstr ""
 
 #: ../../content/guides/packages/_pkg-build-opts.md:4
 msgid ""
-"Provides a means to pass command line options into the build process. This "
-"option can be defined as a dictionary of string pairs or a list with strings"
-" -- either way defined will generate argument values to include in the build"
-" event. This field is optional."
+"Provides a means to pass command line options into the build process. "
+"This option can be defined as a dictionary of string pairs or a list with"
+" strings -- either way defined will generate argument values to include "
+"in the build event. This field is optional."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-conf-defs.md:2
@@ -112,8 +118,8 @@ msgstr ""
 
 #: ../../content/guides/packages/_pkg-conf-defs.md:4
 msgid ""
-"Provides a means to pass definitions into the configuration process. This "
-"option can is defined as a dictionary of string pairs. This field is "
+"Provides a means to pass definitions into the configuration process. This"
+" option can is defined as a dictionary of string pairs. This field is "
 "optional."
 msgstr ""
 
@@ -124,9 +130,9 @@ msgstr ""
 #: ../../content/guides/packages/_pkg-conf-env.md:4
 msgid ""
 "Provides a means to pass environment variables into the configuration "
-"process. This option is defined as a dictionary with key-value pairs where "
-"the key is the environment name and the value is the environment variable's "
-"value. This field is optional."
+"process. This option is defined as a dictionary with key-value pairs "
+"where the key is the environment name and the value is the environment "
+"variable's value. This field is optional."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-conf-opts.md:2
@@ -148,9 +154,9 @@ msgstr ""
 #: ../../content/guides/packages/_pkg-env.md:4
 msgid ""
 "Provides a means to pass environment variables into all stages for a "
-"package. This option is defined as a dictionary with key-value pairs where "
-"the key is the environment name and the value is the environment variable's "
-"value. This field is optional."
+"package. This option is defined as a dictionary with key-value pairs "
+"where the key is the environment name and the value is the environment "
+"variable's value. This field is optional."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-install-defs.md:2
@@ -171,9 +177,9 @@ msgstr ""
 #: ../../content/guides/packages/_pkg-install-env.md:4
 msgid ""
 "Provides a means to pass environment variables into the installation "
-"process. This option is defined as a dictionary with key-value pairs where "
-"the key is the environment name and the value is the environment variable's "
-"value. This field is optional."
+"process. This option is defined as a dictionary with key-value pairs "
+"where the key is the environment name and the value is the environment "
+"variable's value. This field is optional."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-install-opts.md:2
@@ -182,24 +188,26 @@ msgstr ""
 
 #: ../../content/guides/packages/_pkg-install-opts.md:4
 msgid ""
-"Provides a means to pass command line options into the installation process."
-" This option can be defined as a dictionary of string pairs or a list with "
-"strings -- either way defined will generate argument values to include in "
-"the installation event. This field is optional."
+"Provides a means to pass command line options into the installation "
+"process. This option can be defined as a dictionary of string pairs or a "
+"list with strings -- either way defined will generate argument values to "
+"include in the installation event. This field is optional."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:92
+#: ../../content/guides/packages/pkg-type-scons.md:102
 msgid "`LIBFOO_SCONS_NOINSTALL`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:94
+#: ../../content/guides/packages/pkg-type-scons.md:104
 msgid ""
 "Specifies whether a SCons package should skip an attempt to invoke the "
-"install alias. Ideally, projects will have an [install alias][scons-alias] "
-"defined to specify how a project will install files into a target (or "
-"staging) environment. Not all SCons projects may have this target defined, "
-"which can cause the installation stage for a package to fail. A developer "
-"can specify this no-install flag to skip a SCons install target request and "
-"manage installation actions through other means (such as post-processing). "
-"By default, the installation stage is invoked with a value of `False`."
+"install alias. Ideally, projects will have an [install alias][scons-"
+"alias] defined to specify how a project will install files into a target "
+"(or staging) environment. Not all SCons projects may have this target "
+"defined, which can cause the installation stage for a package to fail. A "
+"developer can specify this no-install flag to skip a SCons install target"
+" request and manage installation actions through other means (such as "
+"post-processing). By default, the installation stage is invoked with a "
+"value of `False`."
 msgstr ""
+

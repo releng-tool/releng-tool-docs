@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/guides/configuration.md:1
 msgid "Configuration"
@@ -73,26 +73,36 @@ msgstr ""
 msgid "See also [internal and external packages](intern-extern-pkgs)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:63
+#: ../../content/guides/configuration.md:64
+msgid "`environment`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:66
+msgid ""
+"A dictionary to define environment variables to apply to all stages of "
+"releng-tool."
+msgstr ""
+
+#: ../../content/guides/configuration.md:77
 msgid "`extensions`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:65
+#: ../../content/guides/configuration.md:79
 msgid ""
 "A list of extensions to load before processing a releng-tool project. If "
 "an extension cannot be loaded, releng-tool will stop with information on "
 "why an extension could not be loaded."
 msgstr ""
 
-#: ../../content/guides/configuration.md:76
-msgid "See also [](extensions/extensions)."
+#: ../../content/guides/configuration.md:90
+msgid "See also [extensions](extensions/extensions)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:78
+#: ../../content/guides/configuration.md:93
 msgid "`external_packages`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:80
+#: ../../content/guides/configuration.md:95
 msgid ""
 "A list of external package locations. By default, packages for a project "
 "will be searched for in root directory's package folder "
@@ -103,11 +113,11 @@ msgid ""
 "example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:94
+#: ../../content/guides/configuration.md:109
 msgid "`license_header`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:96
+#: ../../content/guides/configuration.md:111
 msgid ""
 "As the releng-tool build process is finalized, a license document can be "
 "generated containing each package's license information. If a developer "
@@ -115,28 +125,28 @@ msgid ""
 "defined by project's configuration. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:105
-#: ../../content/guides/configuration.md:245
-#: ../../content/guides/configuration.md:262
+#: ../../content/guides/configuration.md:120
+#: ../../content/guides/configuration.md:266
+#: ../../content/guides/configuration.md:284
 msgid "See also [licenses](licenses)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:107
+#: ../../content/guides/configuration.md:123
 msgid "`packages`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:109
+#: ../../content/guides/configuration.md:125
 msgid ""
 "A list of packages to process. Packages listed will be processed by "
 "releng-tool till their completion. Package dependencies not explicitly "
 "listed will be automatically loaded and processed as well."
 msgstr ""
 
-#: ../../content/guides/configuration.md:121
+#: ../../content/guides/configuration.md:138
 msgid "`prerequisites`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:123
+#: ../../content/guides/configuration.md:140
 msgid ""
 "A list of host tools to check for before running a releng-tool project. "
 "Allows a developer to identify tools to check and fail-fast if missing, "
@@ -144,18 +154,18 @@ msgid ""
 " later during a building, packaging, etc. phase."
 msgstr ""
 
-#: ../../content/guides/configuration.md:136
+#: ../../content/guides/configuration.md:154
 msgid "`sbom_format`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:138
+#: ../../content/guides/configuration.md:156
 msgid ""
 "Configures the default format to use when generating a software build of "
 "materials (SBOM). By default, `text` format SBOMs are generated for a "
 "project."
 msgstr ""
 
-#: ../../content/guides/configuration.md:146
+#: ../../content/guides/configuration.md:164
 msgid "The following lists the available formats supported:"
 msgstr ""
 
@@ -223,30 +233,30 @@ msgstr ""
 msgid "`xml`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:158
+#: ../../content/guides/configuration.md:176
 msgid "Multiple formats can be provided. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:168
+#: ../../content/guides/configuration.md:186
 msgid "`sysroot_prefix`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:170
+#: ../../content/guides/configuration.md:188
 msgid ""
 "Define a custom sysroot prefix to provide to packages during their "
 "configuration, build and installation stages. By default, the sysroot "
 "prefix is typically set to `/usr`; for Windows, the value is empty."
 msgstr ""
 
-#: ../../content/guides/configuration.md:178
-msgid "See also [](pkg-opt-prefix)."
+#: ../../content/guides/configuration.md:196
+msgid "See also [`LIBFOO_PREFIX`](pkg-opt-prefix)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:180
+#: ../../content/guides/configuration.md:199
 msgid "`url_mirror`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:182
+#: ../../content/guides/configuration.md:201
 msgid ""
 "Specifies a mirror base site to be used for URL fetch requests. If this "
 "option is set, any URL fetch requests will first be tried on the "
@@ -254,26 +264,26 @@ msgid ""
 "a package definition."
 msgstr ""
 
-#: ../../content/guides/configuration.md:191
+#: ../../content/guides/configuration.md:210
 msgid "Advanced options"
 msgstr ""
 
-#: ../../content/guides/configuration.md:193
+#: ../../content/guides/configuration.md:212
 msgid "A list of more advanced configuration options are as follows:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:195
+#: ../../content/guides/configuration.md:215
 msgid "`cache_ext`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:197
+#: ../../content/guides/configuration.md:217
 msgid ""
 "A transform for cache extension interpreting. This is an advanced "
 "configuration and is not recommended for use except for special use cases"
 " outlined below."
 msgstr ""
 
-#: ../../content/guides/configuration.md:201
+#: ../../content/guides/configuration.md:221
 msgid ""
 "When releng-tool fetches assets from remote sites, the site value can "
 "used to determine the resulting filename of a cached asset. For example, "
@@ -286,7 +296,7 @@ msgid ""
 "a site value into a known cache extension value."
 msgstr ""
 
-#: ../../content/guides/configuration.md:211
+#: ../../content/guides/configuration.md:231
 msgid ""
 "Consider the following example: a host is used to acquire assets from a "
 "content server. The URI to download an asset uses a unique request format"
@@ -296,53 +306,53 @@ msgid ""
 "defined. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:227
+#: ../../content/guides/configuration.md:247
 msgid ""
 "The above transform indicates that all packages using the "
 "`static.example.org` site will be `tgz` archives."
 msgstr ""
 
-#: ../../content/guides/configuration.md:230
+#: ../../content/guides/configuration.md:251
 msgid "`extra_license_exceptions`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:232
+#: ../../content/guides/configuration.md:253
 msgid ""
 "A dictionary to define extra license exceptions that are permitted in "
 "package definitions. Packages which define license exceptions in a "
-"[](pkg-opt-license) option are expected to use [SPDX License Exceptions"
-"][spdx-exceptions]. If not, a warning is generated by default. A project "
-"can define their own custom exceptions by adding them into a project's "
-"`extra_license_exceptions` option to avoid this warning:"
+"[`LIBFOO_LICENSE`](pkg-opt-license) option are expected to use [SPDX "
+"License Exceptions][spdx-exceptions]. If not, a warning is generated by "
+"default. A project can define their own custom exceptions by adding them "
+"into a project's `extra_license_exceptions` option to avoid this warning:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:247
+#: ../../content/guides/configuration.md:269
 msgid "`extra_licenses`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:249
+#: ../../content/guides/configuration.md:271
 msgid ""
 "A dictionary to define extra licenses that are permitted in package "
-"definitions. Packages which define licenses in a [](pkg-opt-license) "
-"option are expected to use a licensed defined in the [SPDX License List"
-"][spdx-licenses]. If not, a warning is generated by default. A project "
-"can define their own custom license by adding them into a project's "
-"`extra_licenses` option to avoid this warning:"
+"definitions. Packages which define licenses in a [`LIBFOO_LICENSE`](pkg-"
+"opt-license) option are expected to use a licensed defined in the [SPDX "
+"License List][spdx-licenses]. If not, a warning is generated by default. "
+"A project can define their own custom license by adding them into a "
+"project's `extra_licenses` option to avoid this warning:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:264
+#: ../../content/guides/configuration.md:287
 msgid "`override_extract_tools`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:267
-#: ../../content/guides/configuration.md:286
-#: ../../content/guides/configuration.md:311
+#: ../../content/guides/configuration.md:290
+#: ../../content/guides/configuration.md:310
+#: ../../content/guides/configuration.md:336
 msgid ""
 "The use of an override option should only be used in special cases (see "
 "also [configuration overrides](configuration-overrides))."
 msgstr ""
 
-#: ../../content/guides/configuration.md:271
+#: ../../content/guides/configuration.md:294
 msgid ""
 "A dictionary to be provided to map an extension type to an external tool "
 "to indicate which tool should be used for extraction. For example, when a"
@@ -351,11 +361,11 @@ msgid ""
 " tool with their own extraction utility. Consider the following example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:283
+#: ../../content/guides/configuration.md:307
 msgid "`override_revisions`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:290
+#: ../../content/guides/configuration.md:314
 msgid ""
 "Allows a dictionary to be provided to map a package name to a new "
 "revision value. Consider the following example: a project defines "
@@ -367,17 +377,17 @@ msgid ""
 " avoid this, an override can be used instead:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:305
+#: ../../content/guides/configuration.md:329
 msgid ""
 "The above example shows that package `module-b` will fetch using a test "
 "branch instead of what is defined in the actual package definition."
 msgstr ""
 
-#: ../../content/guides/configuration.md:308
+#: ../../content/guides/configuration.md:333
 msgid "`override_sites`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:315
+#: ../../content/guides/configuration.md:340
 msgid ""
 "A dictionary to be provided to map a package name to a new site value. "
 "There may be times where a host may not have access to a specific package"
@@ -389,25 +399,25 @@ msgid ""
 "`git@example.org:myproject.git`, the following override can be used:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:331
+#: ../../content/guides/configuration.md:356
 msgid "`quirks`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:333
+#: ../../content/guides/configuration.md:358
 msgid ""
 "A list of configuration quirks to apply to deal with corner cases which "
 "can prevent releng-tool operating on a host system."
 msgstr ""
 
-#: ../../content/guides/configuration.md:342
+#: ../../content/guides/configuration.md:367
 msgid "For a list of available quirks, see [quirks](quirks/quirks)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:345
+#: ../../content/guides/configuration.md:370
 msgid "`urlopen_context`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:347
+#: ../../content/guides/configuration.md:372
 msgid ""
 "Allows a project to specify a custom SSL context [^urlopen] to apply for "
 "URL fetch requests. This can be useful for environments which may "
@@ -416,7 +426,7 @@ msgid ""
 "environment. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:360
-msgid "<https://docs.python.org/3.7/library/urllib.request.html#urllib.request.urlopen>"
+#: ../../content/guides/configuration.md:385
+msgid "<https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>"
 msgstr ""
 

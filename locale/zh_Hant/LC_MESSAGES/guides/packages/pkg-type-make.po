@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/guides/packages/pkg-type-make.md:1
 msgid "Make package"
@@ -50,8 +50,8 @@ msgstr ""
 #: ../../content/guides/packages/pkg-type-make.md:32
 msgid ""
 "For packages which do not have an installation target to run, developers "
-"can use the [](pkg-make-noinstall) option to skip the installation stage "
-"for a package."
+"can use the [`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall) option to "
+"skip the installation stage for a package."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-make.md:36
@@ -192,11 +192,11 @@ msgid ""
 "include in the installation event. This field is optional."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-make.md:91
+#: ../../content/guides/packages/pkg-type-make.md:101
 msgid "`LIBFOO_MAKE_NOINSTALL`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-make.md:93
+#: ../../content/guides/packages/pkg-type-make.md:103
 msgid ""
 "Specifies whether a make package should skip an attempt to invoke the "
 "install target. Ideally, projects will have an `install` target "

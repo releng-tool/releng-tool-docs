@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../content/guides/intern-extern-pkgs.md:1
 msgid "Internal/external packages"
@@ -23,30 +29,32 @@ msgstr ""
 
 #: ../../content/guides/intern-extern-pkgs.md:3
 msgid ""
-"Packages are either internal packages or external packages. All packages are"
-" considered external packages by default unless explicitly configured as "
-"internal through either the package option [](pkg-opt-internal) or using the"
-" project configuration [`default_internal`](conf-default-internal) (see also"
-" [](pkg-opt-external)). Both package types are treated the same except for "
-"the following:"
+"Packages are either internal packages or external packages. All packages "
+"are considered external packages by default unless explicitly configured "
+"as internal through either the package option [`LIBFOO_INTERNAL`](pkg-"
+"opt-internal) or using the project configuration [`default_internal"
+"`](conf-default-internal) (see also [`LIBFOO_EXTERNAL`](pkg-opt-"
+"external)). Both package types are treated the same except for the "
+"following:"
 msgstr ""
 
-#: ../../content/guides/intern-extern-pkgs.md:10
+#: ../../content/guides/intern-extern-pkgs.md:11
 msgid ""
 "An internal package will not generate output warnings if the package is "
 "missing [hash information](packages/hash-file) or an [ASCII-"
 "armor](packages/ascii-armor)."
 msgstr ""
 
-#: ../../content/guides/intern-extern-pkgs.md:13
+#: ../../content/guides/intern-extern-pkgs.md:14
 msgid ""
 "An internal package will not generate output warnings if the package is "
 "missing [licenses](licenses)."
 msgstr ""
 
-#: ../../content/guides/intern-extern-pkgs.md:15
+#: ../../content/guides/intern-extern-pkgs.md:16
 msgid ""
-"When configured for [local-sources mode](local-sources-mode), only internal "
-"packages which have local sources configured will have their fetch, extract "
-"and patch stages skipped."
+"When configured for [local-sources mode](local-sources-mode), only "
+"internal packages which have local sources configured will have their "
+"fetch, extract and patch stages skipped."
 msgstr ""
+

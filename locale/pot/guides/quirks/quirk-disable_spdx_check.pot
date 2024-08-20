@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,26 +16,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:1
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:2
 msgid "Quirk `releng.disable_spdx_check`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:3
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:4
 msgid "When package definitions are being processed, any license configurations will be checked to see if they conform with [SPDX license identifiers][spdx]. If not, a warning will be generated."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:7
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:8
 msgid "If a user wishes to ignore all SPDX license warnings, the `releng.disable_spdx_check` quirk can be used:"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:14
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:15
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:16
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:17
 msgid "[](quirks)"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:17
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:18
 msgid "[SPDX license identifiers][spdx]"
 msgstr ""

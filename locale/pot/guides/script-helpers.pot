@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,7 +285,7 @@ msgstr ""
 msgid "environment variables to append for the process"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:18
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:27
 #: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute:51
 msgid "whether or not to suppress output (defaults to ``False``)"
 msgstr ""
@@ -302,11 +302,16 @@ msgstr ""
 msgid "list to capture output into"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute:63
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute:62
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute_rv:33
+msgid "perform variable expansion on arguments"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute:65
 msgid "``True`` if the execution has completed with no error; ``False`` if the execution has failed"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute:66
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute:68
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
@@ -322,7 +327,7 @@ msgstr ""
 msgid "arguments to add to the command"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute_rv:34
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.execute_rv:35
 msgid "the return code and output of the execution request"
 msgstr ""
 
@@ -382,7 +387,7 @@ msgstr ""
 msgid "the script to invoke"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:77
+#: ../../content/guides/script-helpers.md:109
 msgid "An alias for ``os.path.join``. See also https://docs.python.org/library/os.path.html#os.path.join."
 msgstr ""
 
@@ -390,7 +395,7 @@ msgstr ""
 msgid "Attempts to read a directory for its contents and prints this information to the configured standard output stream."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:17
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:24
 #: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ls:11
 msgid "the directory"
 msgstr ""
@@ -400,15 +405,19 @@ msgid "``True`` if the directory could be read and its contents have been printe
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:2
-msgid "Attempts to create the provided directory. If the directory already exists, this method has no effect. If the directory does not exist and could not be created, this method will return ``False``. Also, if an error has been detected, an error message will be output to standard error (unless ``quiet`` is set to ``True``)."
-msgstr ""
-
-#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:21
-msgid "whether or not to stop execution on failure (defaults to ``False``)"
+msgid "Attempts to create the provided directory. If the directory already exists, this method has no effect. If the directory does not exist and could not be created, this method will return ``None``. Also, if an error has been detected, an error message will be output to standard error (unless ``quiet`` is set to ``True``)."
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:25
-msgid "``True`` if the directory exists; ``False`` if the directory could not be created"
+msgid "additional components of the directory"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:30
+msgid "whether or not to stop execution on failure (defaults to ``False``)"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io.ensure_dir_exists:34
+msgid "the directory that exists; ``None`` if the directory could not be created"
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/__init__.py:docstring of releng_tool.util.io_move.path_move:2
@@ -505,14 +514,14 @@ msgstr ""
 msgid "when warnings-are-errors is configured"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:129
+#: ../../content/guides/script-helpers.md:185
 msgid "Importing helpers"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:131
+#: ../../content/guides/script-helpers.md:187
 msgid "Scripts directly invoked by releng-tool will automatically have these helpers registered in the script's globals module (i.e. no import is necessary). If a project defines custom Python modules in their project and wishes to take advantage of these helper functions, the following import can be used to, for example, import a specific function:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:141
+#: ../../content/guides/script-helpers.md:197
 msgid "Or, if desired, all helper methods can be imported at once:"
 msgstr ""

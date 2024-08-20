@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Package bootstrapping"
 msgstr ""
 
 #: ../../content/guides/packages/bootstrapping.md:3
-msgid "Every package, no matter which package [](pkg-opt-type) is defined, can create a bootstrapping script to invoke before a package starts a configuration stage. The existence of a `<package>-bootstrap` inside a package directory will trigger the bootstrapping stage for the package. An example bootstrapping script for a package `libfoo` would be named `libfoo-bootstrap`:"
+msgid "Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is defined, can create a bootstrapping script to invoke before a package starts a configuration stage. The existence of a `<package>-bootstrap` inside a package directory will trigger the bootstrapping stage for the package. An example bootstrapping script for a package `libfoo` would be named `libfoo-bootstrap`:"
 msgstr ""
 
 #: ../../content/guides/packages/bootstrapping.md:19

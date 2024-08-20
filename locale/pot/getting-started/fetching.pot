@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2024-08-19 22:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "The contents of the repository will be stored in the cache folder for lat
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:46
-msgid "Once a package has completed its fetch stage, releng-tool should never need to remotely fetch content for that package again (until site, version, etc. changes). In the event that a user invokes a `clean` action followed by a full build:"
+msgid "Once a package has completed its fetch stage, releng-tool should never need to remotely fetch content for that package again (until site, version, etc. changes). In the event that a user invokes a [`clean`](action-clean) action followed by a full build:"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:57
@@ -69,49 +69,57 @@ msgid "This will ensure all downloaded files, cached content, etc. are removed f
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:87
-msgid "Force re-fetch of DVCS sources"
+msgid "Full fetching"
 msgstr ""
 
 #: ../../content/getting-started/fetching.md:89
+msgid "Most package sources are acquired during the fetch stage. However, some packages define dependencies within their sources. This can require releng-tool to first fetch a defined package's sources, extract the package, followed by fetching any defined dependencies. Post-fetching will be automatically performed for supported packages (e.g. Cargo) after their extraction stage. Users can invoke the [`fetch-full`](action-fetch-full) action to explicitly process releng-tool's fetch-post operations:"
+msgstr ""
+
+#: ../../content/getting-started/fetching.md:101
+msgid "Force re-fetch of DVCS sources"
+msgstr ""
+
+#: ../../content/getting-started/fetching.md:103
 msgid "When a DVCS-based package goes through its fetch stage, the contents can be locally stored in the configured cache directory. For a package definition as follows:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:98
-msgid "A cache of the `v1.0` tag will be fetched and stored locally. If a package is cleaned and rebuilt again, releng-tool will referred to the locally cached tag. In the event that the remote site changes the tag location, clean builds will not be using the most recent tag location. If a user knows the reference for a site has been updated, they can explicitly request a `<pkg>-fetch` on a package which should trigger a forced update from the remote site. For example:"
+#: ../../content/getting-started/fetching.md:112
+msgid "A cache of the `v1.0` tag will be fetched and stored locally. If a package is cleaned and rebuilt again, releng-tool will referred to the locally cached tag. In the event that the remote site changes the tag location, clean builds will not be using the most recent tag location. If a user knows the reference for a site has been updated, they can explicitly request a [`<pkg>-fetch`](action-pkg-fetch) on a package which should trigger a forced update from the remote site. For example:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:110
+#: ../../content/getting-started/fetching.md:124
 msgid "The above can recognize the new tag update, and any future clean builds made will use the new reference implementation."
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:113
+#: ../../content/getting-started/fetching.md:127
 msgid "Force re-fetch of fixed sources"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:115
+#: ../../content/getting-started/fetching.md:129
 msgid "For packages which reference a fixed artifact, once a package has completed its fetch stage, the artifact will no longer need to be downloaded again. For example:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:123
-msgid "The archive `libfoo-1.0.tgz` will be locally store and used in future builds. In the event where a site's archive is known to have been changed, a user can force re-fetch these artifacts by using the [](action-pkg-fetch) action along with the [](arg-force) argument. For example, even if `libfoo-1.0.tgz` was already downloaded locally, a request as follows will delete the local cache file and re-download it from the configured site:"
+#: ../../content/getting-started/fetching.md:137
+msgid "The archive `libfoo-1.0.tgz` will be locally store and used in future builds. In the event where a site's archive is known to have been changed, a user can force re-fetch these artifacts by using the [`<pkg>-fetch`](action-pkg-fetch) action along with the [`-F, --force`](arg-force) argument. For example, even if `libfoo-1.0.tgz` was already downloaded locally, a request as follows will delete the local cache file and re-download it from the configured site:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:134
+#: ../../content/getting-started/fetching.md:149
 msgid "Automatically re-fetch development branches"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:136
+#: ../../content/getting-started/fetching.md:151
 msgid "When operating in [development mode](/guides/development-mode) where a package has a development-specific source based off a branch, it may be preferred to always ensure the most recent sources are fetched. For example, consider `libfoo` with a development revision `main`:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:147
+#: ../../content/getting-started/fetching.md:162
 msgid "With the above configuration, if a builder cleans and rebuilds the project, the originally cache of `main` would still be used, even if `main` has new updates on the remote branch:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:163
-msgid "If a user wants to automatically re-fetch new updates on a development branch, they can take advantage of the [](pkg-opt-devmode-ignore-cache) option. For example, if a site definition had:"
+#: ../../content/getting-started/fetching.md:178
+msgid "If a user wants to automatically re-fetch new updates on a development branch, they can take advantage of the [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache) option. For example, if a site definition had:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:174
+#: ../../content/getting-started/fetching.md:190
 msgid "A repeat of the rebuild actions will result in an automatic update of the package's `main` branch (if updates are available):"
 msgstr ""
