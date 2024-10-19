@@ -31,7 +31,7 @@ uses the SDL library.
 ## The libsdl package
 
 Inside the `libsdl` package, create a package definition
-`my-project/libsdl/libsdl` with the following contents:
+`my-project/package/libsdl/libsdl` with the following contents:
 
 ```python
 LIBSDL_LICENSE = ['Zlib']
