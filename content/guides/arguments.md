@@ -509,8 +509,8 @@ looked for inside the provided path.
 Explicitly disable colorized output.
 
 ```{tip}
-releng-tool respects the `NO_COLOR` environment variable, if configured
-in the running environment.
+releng-tool respects the [`NO_COLOR`][no-color] environment variable, if
+configured in the running environment.
 ```
 
 (arg-out-dir)=
@@ -565,3 +565,6 @@ Show releng-tool's version.
 ### `--werror`, `-Werror`
 
 Treat warnings from releng-tool as errors.
+
+
+[no-color]: https://no-color.org/
