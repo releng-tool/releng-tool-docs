@@ -368,11 +368,15 @@ In the root folder, create a `releng` file with the following contents:
 packages = [
     'sample',
 ]
+
+vsdevcmd = True
 ```
 
 - We explicitly configure releng-tool to load the `sample` package to build.
 - Note that we do not need to specify the `libsdl` package since the `sample`
   package will load it implicitly through its dependency configuration.
+- Adding `vsdevcmd` will auto-load Visual Studio developer environment
+  variables to support Windows-based builds.
 
 The following shows the expected file structure at this stage of this
 tutorial:
@@ -398,19 +402,6 @@ tutorial:
 ```
 
 ## Performing a build
-
-```{note}
-Users will want to run a build in a shell which has the host tools needed
-to perform a build (e.g. the compiler). For Windows, this may be invoking
-releng-tool in a Visual Studio command prompt on a system with `patch`
-installed. For example:
-
-1. Start Git SCM Bash shell.
-2. Load Visual Studio support into the shell (for example, when using VS2019):
-   `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat`
-3. Navigate to the project directory.
-4. Invoke `releng-tool`.
-```
 
 With packages, assets and configurations prepared, the project should be
 ready to be built. While in the `my-sdl-project` folder, invoke
