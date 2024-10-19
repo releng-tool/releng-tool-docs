@@ -163,7 +163,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_MESON_NOINSTALL`](pkg-opt-meson-noinstall) = bool
 [`LIBFOO_NEEDS`](pkg-opt-needs) = ['&lt;pkg&gt;', '&lt;pkg&gt;']
 [`LIBFOO_NO_EXTRACTION`](pkg-opt-no-extraction) = bool
-[`LIBFOO_LICENSE`](pkg-opt-license) = '&lt;license&gt;'  or ['&lt;license&gt;', '&lt;license&gt;']
+[`LIBFOO_LICENSE`](pkg-opt-license) = '&lt;license&gt;' or ['&lt;license&gt;', '&lt;license&gt;']
 [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files) = '&lt;file&gt;' or ['&lt;file&gt;', '&lt;file&gt;']
 [`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir) = '&lt;subdir&gt;'
 [`LIBFOO_PREFIX`](pkg-opt-prefix) = '&lt;path&gt;' # '/usr'
