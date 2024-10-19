@@ -197,8 +197,8 @@ Functions available to scripts invoked by releng-tool or importable via
 [`log`](script-log)(msg, *args)
 [`note`](script-note)(msg, *args)
 [`releng_cat`](script-releng_cat)(file, *args)
-[`releng_copy`](script-releng_copy)(src, dst, quiet=False, critical=True, dst_dir=None)
-[`releng_copy_into`](script-releng_copy_into)(src, dst, quiet=False, critical=True)
+[`releng_copy`](script-releng_copy)(src, dst, quiet=False, critical=True, dst_dir=None, nested=False)
+[`releng_copy_into`](script-releng_copy_into)(src, dst, quiet=False, critical=True, nested=False)
 [`releng_env`](script-releng_env)(key, value=None)
 [`releng_execute`](script-releng_execute)(args, cwd=None, env=None, env_update=None,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quiet=False, critical=True, poll=False,
@@ -211,8 +211,8 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_join`](script-releng_tool)(path, *args)
 [`releng_ls`](script-releng_ls)(dir_)
 [`releng_mkdir`](script-releng_mkdir)(dir_, quiet=False)
-[`releng_move`](script-releng_move)(src, dst, quiet=False, critical=True, dst_dir=None)
-[`releng_move_into`](script-releng_move_into)(src, dst, quiet=False, critical=True)
+[`releng_move`](script-releng_move)(src, dst, quiet=False, critical=True, dst_dir=None, nested=False)
+[`releng_move_into`](script-releng_move_into)(src, dst, quiet=False, critical=True, nested=False)
 [`releng_remove`](script-releng_remove)(path, quiet=False)
 [`releng_require_version`](script-releng_require_version)(version)
 [`releng_tmpdir`](script-releng_tmpdir)(dir_=None)
