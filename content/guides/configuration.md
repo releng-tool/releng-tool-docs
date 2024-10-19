@@ -384,5 +384,33 @@ urlopen_context = ssl.create_default_context()
 
 [^urlopen]: <https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>
 
+(conf-vsdevcmd)=
+### `vsdevcmd`
+
+:::{note}
+The option is only available for Windows environments.
+:::
+
+Allows a project to automatically load Visual Studio Developer Command
+Prompt (`VsDevCmd.bat`) variables into the releng-tool process. This will
+allow packages and post-build scripts to invoke commands as if releng-tool
+was started from within a Visual Studio Developer Command Prompt.
+
+```python
+vsdevcmd = True
+```
+
+Projects looking to use an explicit version of Visual Studio can specify a
+version string that is compatible with [Visual Studio Locator's][vswhere]
+(vswhere) `-version` argument.
+
+```python
+vsdevcmd = '[17.0,18.0)'
+```
+
+See also [`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd).
+
+
 [spdx-exceptions]: https://spdx.org/licenses/exceptions-index.html
 [spdx-licenses]: https://spdx.org/licenses/
+[vswhere]: https://github.com/microsoft/vswhere

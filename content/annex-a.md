@@ -27,6 +27,7 @@ Options which are read by releng-tool from a project's configuration script:
 [`sysroot_prefix`](conf-sysroot-prefix) = '&lt;path&gt;' # '/usr'
 [`url_mirror`](conf-url-mirror) = '&lt;mirror-url&gt;'
 [`urlopen_context`](conf-urlopen-context) = &lt;ssl.SSLContext&gt;
+[`vsdevcmd`](conf-vsdevcmd) = bool or str
 ```
 
 ## Environment variables
@@ -183,6 +184,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) = '&lt;vcs-type&gt;'
 &nbsp;&nbsp;└── bzr, cvs, git, hg, local, none, perforce, rsync, scp, svn, url
 [`LIBFOO_VERSION`](pkg-opt-version) = '&lt;version&gt;'
+[`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd) = bool or str
 ```
 
 ## Script helpers
@@ -202,8 +204,8 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_env`](script-releng_env)(key, value=None)
 [`releng_execute`](script-releng_execute)(args, cwd=None, env=None, env_update=None,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quiet=False, critical=True, poll=False,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capture=None, expand=None)
-[`releng_execute_rv`](script-releng_execute_rv)(command, args, cwd=None, env=None, env_update=None)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capture=None, expand=None, args_native=False)
+[`releng_execute_rv`](script-releng_execute_rv)(command, args, cwd=None, env=None, env_update=None, args_native=False)
 [`releng_exists`](script-releng_exists)(path, *args)
 [`releng_exit`](script-releng_exit)(msg=None, code=None)
 [`releng_expand`](script-releng_expand)(obj, kv=None)

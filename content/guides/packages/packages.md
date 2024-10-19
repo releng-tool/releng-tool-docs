@@ -67,6 +67,7 @@ PACKAGE_A_VERSION = '1.0.0'
 
 Common options <common-pkg-options>
 Advanced options <advanced-pkg-options>
+System-specific options <system-pkg-options>
 Bootstrapping <bootstrapping>
 Post-processing <post-processing>
 site-definitions
