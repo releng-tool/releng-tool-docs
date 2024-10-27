@@ -38,7 +38,7 @@ extensions are not officially supported by releng-tool. For issues related to
 specific extension use, it is recommended to see the documentation provided
 by the providers of said extensions.
 
-For developers interesting in implementing extension, a list of available API
+For developers interesting in implementing extensions, a list of available API
 interfaces and documentation for these interfaces can be found inside the
 [API implementation][releng-tool-api]. Implementation in the API folder aims
 to be "API safe" -- there is a strong attempt to prevent the changing of

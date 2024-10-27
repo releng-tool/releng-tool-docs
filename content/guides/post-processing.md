@@ -6,7 +6,7 @@ reaches the final stage of a build.
 ```
 
 ```{admonition} Prospect
-At this time, releng-tool support only post-build scripts. It is planned to
+At this time, releng-tool supports only post-build scripts. It is planned to
 introduced support for some image-related helpers (i.e. package helpers).
 This may introduce a reserved `releng-post-image` script in future releases.
 ```
