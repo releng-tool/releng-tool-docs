@@ -139,6 +139,12 @@ are listed below:
     :members: releng_remove
     :noindex:
 
+.. _script-releng_symlink:
+
+.. automodule:: releng_tool
+    :members: releng_symlink
+    :noindex:
+
 .. _script-releng_require_version:
 
 .. automodule:: releng_tool

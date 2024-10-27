@@ -216,6 +216,7 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_move_into`](script-releng_move_into)(src, dst, quiet=False, critical=True, nested=False)
 [`releng_remove`](script-releng_remove)(path, quiet=False)
 [`releng_require_version`](script-releng_require_version)(version)
+[`releng_symlink`](script-releng_symlink)(target, link_path, quiet=False, critical=True, lpd=False, relative=True)
 [`releng_tmpdir`](script-releng_tmpdir)(dir_=None)
 [`releng_touch`](script-releng_touch)(file)
 [`releng_wd`](script-releng_wd)(dir_)
