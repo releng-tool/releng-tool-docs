@@ -202,9 +202,8 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_copy`](script-releng_copy)(src, dst, quiet=False, critical=True, dst_dir=None, nested=False)
 [`releng_copy_into`](script-releng_copy_into)(src, dst, quiet=False, critical=True, nested=False)
 [`releng_env`](script-releng_env)(key, value=None)
-[`releng_execute`](script-releng_execute)(args, cwd=None, env=None, env_update=None,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quiet=False, critical=True, poll=False,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capture=None, expand=None, args_native=False)
+[`releng_execute`](script-releng_execute)(args, cwd=None, env=None, env_update=None, quiet=False, critical=True,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;poll=False, capture=None, expand=None, args_native=False)
 [`releng_execute_rv`](script-releng_execute_rv)(command, args, cwd=None, env=None, env_update=None, args_native=False)
 [`releng_exists`](script-releng_exists)(path, *args)
 [`releng_exit`](script-releng_exit)(msg=None, code=None)
