@@ -1,5 +1,8 @@
 # SCons package
 
+:::{versionadded} 0.13
+:::
+
 A SCons package provides support to easily invoke [SCons][scons] commands
 at various stages of a package.
 

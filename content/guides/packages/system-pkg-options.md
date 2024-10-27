@@ -10,6 +10,9 @@ packages.
 The option is only available for Windows environments.
 :::
 
+:::{versionadded} 1.3
+:::
+
 Allows a package to automatically load Visual Studio Developer Command
 Prompt (`VsDevCmd.bat`) variables into the releng-tool process. This will
 allow a package to invoke commands as if releng-tool was started from

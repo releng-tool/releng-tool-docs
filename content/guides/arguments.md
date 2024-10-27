@@ -35,6 +35,9 @@ instead of the output directory (if any) found in the root directory.
 (action-distclean)=
 ### `distclean`
 
+:::{versionadded} 0.6
+:::
+
 Perform a more extreme pristine clean of the releng-tool project.
 
 ```shell
@@ -80,6 +83,9 @@ See also [offline builds](tips/offline-builds) and the
 (action-fetch-full)=
 ### `fetch-full`
 
+:::{versionadded} 1.3
+:::
+
 All packages will be processed up to the extraction phase, as well as any
 post-extraction fetch operations for supported package types (e.g. fetching
 Cargo dependencies).
@@ -91,6 +97,9 @@ releng-tool fetch-full
 See also the [`fetch`](action-fetch) action.
 
 ### `init`
+
+:::{versionadded} 0.6
+:::
 
 Initialize an empty root directory with a sample project.
 
@@ -111,6 +120,9 @@ packages. Therefore, packages will be fetched/extracted if not already done.
 
 (action-mrproper)=
 ### `mrproper`
+
+:::{versionadded} 0.6
+:::
 
 Perform a pristine clean of the releng-tool project.
 
@@ -135,6 +147,9 @@ releng-tool patch
 (action-punch)=
 ### `punch`
 
+:::{versionadded} 1.2
+:::
+
 A punch request acts in a similar fashion as if no global action was provided.
 All configured packages will be processed to their completion and any post
 actions will be run. The difference between a default run and a punch run is
@@ -151,6 +166,9 @@ releng-tool punch
 (action-sbom)=
 ### `sbom`
 
+:::{versionadded} 0.14
+:::
+
 A request to generate a software build of materials (SBOM) for the project.
 
 ```shell
@@ -162,6 +180,9 @@ run. This action can be used to generate an SBOM without requiring a build.
 
 (action-state)=
 ### `state`
+
+:::{versionadded} 0.17
+:::
 
 A request to dump active state information for a project.
 
@@ -216,6 +237,9 @@ does not exist, a notification will be generated.
 (action-pkg-distclean)=
 ### `<pkg>-distclean`
 
+:::{versionadded} 0.8
+:::
+
 Perform a pristine clean of a releng-tool package.
 
 ```shell
@@ -227,6 +251,9 @@ or directory associated with the package. See also the
 [`<pkg>-clean`](action-pkg-clean) action.
 
 ### `<pkg>-exec "<cmd>"`
+
+:::{versionadded} 0.12
+:::
 
 Invokes a provided command in the package's build output directory. This
 package action can be useful for developers attempting to develop/debug a
@@ -271,6 +298,9 @@ generated.
 (action-pkg-fetch-full)=
 ### `<pkg>-fetch-full`
 
+:::{versionadded} 1.3
+:::
+
 Performs the fetch and extraction stages for the package, as well as any
 post-extraction fetch operations for the supported package type (e.g.
 fetching Cargo dependencies).
@@ -296,6 +326,9 @@ be processed before the specified package. If the provided package name
 does not exist, a notification will be generated.
 
 ### `<pkg>-license`
+
+:::{versionadded} 0.8
+:::
 
 A request to generate the license information for a specific package
 in a project.
@@ -343,6 +376,9 @@ understand this action's effect.
 
 ### `<pkg>-rebuild-only`
 
+:::{versionadded} 0.7
+:::
+
 Force a rebuild of a specific package.
 
 ```shell
@@ -385,6 +421,9 @@ If using this action, ensure
 understand this action's effect.
 
 ### `<pkg>-reconfigure-only`
+
+:::{versionadded} 0.7
+:::
 
 Force a re-configuration of a specific package.
 
@@ -431,6 +470,9 @@ The following outlines available options:
 (arg-assets-dir)=
 ### `--assets-dir <dir>`
 
+:::{versionadded} 0.10
+:::
+
 Directory to hold cache and download folders instead of using a configured
 root directory.
 
@@ -452,6 +494,9 @@ See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
 
 ### `--config <file>`
 
+:::{versionadded} 0.13
+:::
+
 Configuration file to load (defaults to `<root>/releng`).
 
 (arg-debug)=
@@ -460,6 +505,9 @@ Configuration file to load (defaults to `<root>/releng`).
 Show debug-related messages.
 
 ### `-D`, `--development [<mode>]`
+
+:::{versionchanged} 0.13 Support configurable modes.
+:::
 
 Enables [development mode](development-mode).
 
@@ -472,6 +520,9 @@ See also [`RELENG_DL_DIR`](env-releng-dl-dir).
 
 (arg-force)=
 ### `-F`, `--force`
+
+:::{versionadded} 0.11
+:::
 
 Triggers a forced request for the releng-tool invoke. This entails:
 
@@ -487,6 +538,9 @@ Show a list of all arguments available by releng-tool.
 
 ### `--images-dir <dir>`
 
+:::{versionadded} 0.13
+:::
+
 Directory for image outputs (defaults to `<root>/output/images`).
 
 ### `-j`, `--jobs <jobs>`
@@ -494,6 +548,9 @@ Directory for image outputs (defaults to `<root>/output/images`).
 Numbers of jobs to handle (defaults to `0`; automatic).
 
 ### `-L`, `--local-sources [[<pkg>:]<dir>]`
+
+:::{versionchanged} 0.13 Support configurable packages and directories.
+:::
 
 Enables [local-sources mode](local-sources-mode).
 
@@ -523,6 +580,9 @@ See also [`RELENG_OUTPUT_DIR`](env-releng-out-dir).
 (arg-relaxed-args)=
 ### `--relaxed-args`
 
+:::{versionadded} 1.3
+:::
+
 Do not throw an error when releng-tool is provided unknown arguments.
 
 See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
@@ -533,6 +593,9 @@ Directory to process a releng-tool project (defaults to the working
 directory).
 
 ### `--sbom-format <fmt>`
+
+:::{versionadded} 0.14
+:::
 
 The format to use when generating a software build of materials (SBOM).
 Multiple formats can be provided (comma-separated).
@@ -551,6 +614,9 @@ See also [`sbom`](action-sbom).
 
 ### `--quirk <quirk-id>`
 
+:::{versionadded} 0.4
+:::
+
 Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
 process. This option can be used multiple times to apply multiple quirks.
 
@@ -563,6 +629,9 @@ Show additional messages.
 Show releng-tool's version.
 
 ### `--werror`, `-Werror`
+
+:::{versionadded} 0.14
+:::
 
 Treat warnings from releng-tool as errors.
 

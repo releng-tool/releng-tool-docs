@@ -65,3 +65,19 @@ a {
 .injected-sidebar-i8n-spacer {
     margin: 0.5em;
 }
+
+/* add a subtle border line above headers */
+h2, h3 {
+    border-top: 1px solid var(--color-background-border);
+    border-radius: 0;
+}
+
+/* adjust version notices to be a bit smaller */
+div.deprecated p,
+div.versionadded p,
+div.versionchanged p,
+div.versionremoved p {
+    font-size: small;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}

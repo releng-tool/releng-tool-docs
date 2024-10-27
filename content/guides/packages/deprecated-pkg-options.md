@@ -11,6 +11,9 @@ The option is deprecated and packages should use
 [`LIBFOO_NEEDS`](pkg-opt-needs) instead.
 :::
 
+:::{versionchanged} 1.3 Flagged as deprecated.
+:::
+
 List of package dependencies a given project has. If a project depends on
 another package, the package name should be listed in this option. This ensures
 releng-tool will process packages in the proper order. The following shows an
@@ -30,6 +33,9 @@ LIBFOO_DEPENDENCIES = [
 :::{warning}
 The option is deprecated and packages should use
 [`LIBFOO_REMOTE_CONFIG`](pkg-opt-remote-config) instead.
+:::
+
+:::{versionchanged} 1.3 Flagged as deprecated.
 :::
 
 Flag value to indicate that a package should not attempt to load any
@@ -53,6 +59,9 @@ See also
 :::{warning}
 The option is deprecated and packages should use
 [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) instead.
+:::
+
+:::{versionchanged} 1.3 Flagged as deprecated.
 :::
 
 Flag value to indicate that a package should not attempt to load any package

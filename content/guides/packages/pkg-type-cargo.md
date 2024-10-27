@@ -1,5 +1,8 @@
 # Cargo package
 
+:::{versionadded} 1.3
+:::
+
 A Cargo package provides support for processing a [Cargo][cargo] supported
 module.
 

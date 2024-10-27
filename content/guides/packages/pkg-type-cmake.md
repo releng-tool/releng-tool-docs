@@ -42,6 +42,9 @@ package.
 (pkg-opt-cmake-build-type)=
 ## `LIBFOO_CMAKE_BUILD_TYPE`
 
+:::{versionadded} 0.17
+:::
+
 Specifies the build type used for the CMake package. A package may use a
 common build type (`Debug`, `Release`, `RelWithDebInfo` or `MinSizeRel`),
 or may have a custom build type defined. A developer needing to use a
@@ -55,6 +58,9 @@ LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
 
 (pkg-opt-cmake-noinstall)=
 ## `LIBFOO_CMAKE_NOINSTALL`
+
+:::{versionadded} 0.10
+:::
 
 Specifies whether the CMake package should skip an attempt to invoke the
 install command. Ideally, projects will have an [install][cmake-install]

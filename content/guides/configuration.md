@@ -63,6 +63,9 @@ See also [internal and external packages](intern-extern-pkgs).
 (conf-environment)=
 ### `environment`
 
+:::{versionadded} 1.3
+:::
+
 A dictionary to define environment variables to apply to all stages of
 releng-tool.
 
@@ -137,6 +140,9 @@ packages = [
 (conf-prerequisites)=
 ### `prerequisites`
 
+:::{versionadded} 0.6
+:::
+
 A list of host tools to check for before running a releng-tool project.
 Allows a developer to identify tools to check and fail-fast if missing,
 instead of waiting for a stage which requires a specific tool and failing
@@ -152,6 +158,11 @@ prerequisites = [
 
 (conf-sbom-format)=
 ### `sbom_format`
+
+:::{versionadded} 0.15
+:::
+:::{versionchanged} 0.16 Support added for `json-spdx` and `rdp-spdx`.
+:::
 
 Configures the default format to use when generating a software build of
 materials (SBOM). By default, `text` format SBOMs are generated for a
@@ -250,6 +261,9 @@ The above transform indicates that all packages using the
 (conf-extra-license-exceptions)=
 ### `extra_license_exceptions`
 
+:::{versionadded} 0.14
+:::
+
 A dictionary to define extra license exceptions that are permitted in
 package definitions. Packages which define license exceptions in a
 [`LIBFOO_LICENSE`](pkg-opt-license) option are expected to use
@@ -267,6 +281,9 @@ See also [licenses](licenses).
 
 (conf-extra-licenses)=
 ### `extra_licenses`
+
+:::{versionadded} 0.14
+:::
 
 A dictionary to define extra licenses that are permitted in package
 definitions. Packages which define licenses in a
@@ -369,6 +386,9 @@ For a list of available quirks, see [quirks](quirks/quirks).
 (conf-urlopen-context)=
 ### `urlopen_context`
 
+:::{versionadded} 0.10
+:::
+
 Allows a project to specify a custom SSL context [^urlopen] to apply for
 URL fetch requests. This can be useful for environments which may
 experience `CERTIFICATE_VERIFY_FAILED` errors when attempting to fetch
@@ -389,6 +409,9 @@ urlopen_context = ssl.create_default_context()
 
 :::{note}
 The option is only available for Windows environments.
+:::
+
+:::{versionadded} 1.14
 :::
 
 Allows a project to automatically load Visual Studio Developer Command

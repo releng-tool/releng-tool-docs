@@ -1,5 +1,8 @@
 # Meson package
 
+:::{versionadded} 0.16
+:::
+
 A Meson package provides support for processing a [Meson][meson] supported
 module.
 

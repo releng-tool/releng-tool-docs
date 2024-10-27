@@ -71,6 +71,11 @@ LIBFOO_PYTHON_INTERPRETER = '<path>'
 (pkg-opt-python-setup-type)=
 ## `LIBFOO_PYTHON_SETUP_TYPE`
 
+:::{versionadded} 0.13
+:::
+:::{versionchanged} 0.14 Support added for `poetry`.
+:::
+
 The setup type will configure how a Python package is built and installed.
 The default setup type used for a Python package is a distutils package. It
 is recommended to always configure a setup type for a Python package.

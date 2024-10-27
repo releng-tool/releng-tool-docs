@@ -18,6 +18,9 @@ LIBFOO_BUILD_SUBDIR = 'subdir'
 (pkg-opt-devmode-ignore-cache)=
 ## `LIBFOO_DEVMODE_IGNORE_CACHE`
 
+:::{versionadded} 0.3
+:::
+
 Flag value to indicate that a package should ignore any generated cache
 file when operating in [development mode](/guides/development-mode).
 In most cases, users want to take advantage of cached sources to prevent
@@ -147,6 +150,9 @@ LIBFOO_FIXED_JOBS = 1
 (pkg-opt-git-config)=
 ## `LIBFOO_GIT_CONFIG`
 
+:::{versionadded} 0.6
+:::
+
 Apply additional repository-specific Git configuration settings
 ([`git config`][git-config]) after a Git repository cache has been
 initialized. By default, no repository-specific configurations are
@@ -160,6 +166,9 @@ LIBFOO_GIT_CONFIG = {
 
 (pkg-opt-git-depth)=
 ## `LIBFOO_GIT_DEPTH`
+
+:::{versionadded} 0.4
+:::
 
 Limit fetching for a Git-based source to the specified number of commits. The
 value provided will be used with the [`--depth`][git--depth] argument. By
@@ -182,6 +191,9 @@ See also [`LIBFOO_GIT_REFSPECS`](pkg-opt-git-refspecs) and
 (pkg-opt-git-refspecs)=
 ## `LIBFOO_GIT_REFSPECS`
 
+:::{versionadded} 0.4
+:::
+
 List of addition refspecs to fetch when using a `git` VCS type. By default,
 a Git fetch request will acquire all `heads` and `tags` refspecs. If a
 developer wishes use revisions from different refspecs (for example, a pull
@@ -194,6 +206,9 @@ LIBFOO_GIT_REFSPECS = ['pull/*']
 
 (pkg-opt-git-submodules)=
 ## `LIBFOO_GIT_SUBMODULES`
+
+:::{versionadded} 0.8
+:::
 
 Flag value to indicate whether a package's Git submodules should be
 fetched/extracted during a package's own fetch/extraction stages. By default,
@@ -225,6 +240,9 @@ LIBFOO_GIT_VERIFY_REVISION = True
 
 (pkg-opt-host-provides)=
 ## `LIBFOO_HOST_PROVIDES`
+
+:::{versionadded} 0.13
+:::
 
 Hints at what host tools this package may be providing. A project may have a
 series of prerequisites, which are checked at the start of a run. This is to
@@ -280,6 +298,9 @@ manage or expect to support various actions (such as building, since no
 sources are available).
 ```
 
+:::{versionadded} 0.3
+:::
+
 Flag value to indicate that a package should not extract the package
 contents. This feature is primarily used when using releng-tool to fetch
 content for one or more packages (into `DL_DIR`) to be used by another
@@ -301,6 +322,9 @@ default, this option is disabled with a value of `False`.
 
 (pkg-opt-patch-subdir)=
 ## `LIBFOO_PATCH_SUBDIR`
+
+:::{versionadded} 0.15
+:::
 
 Sub-directory where any package patches should be applied to. By default,
 patches are applied to the root of the extracted sources for a package. This
@@ -407,6 +431,13 @@ LIBFOO_STRIP_COUNT = 1
 
 (pkg-opt-vcs-type)=
 ## `LIBFOO_VCS_TYPE`
+
+:::{versionchanged} 0.4 Support added for `local`.
+:::
+:::{versionchanged} 0.10 Support added for `rsync`.
+:::
+:::{versionchanged} 0.17 Support added for `perforce`.
+:::
 
 Explicitly sets the version control system type to use when acquiring
 sources. releng-tool attempts to automatically determine the VCS type of

@@ -45,6 +45,9 @@ the configured root directory. For example:
 (env-host-bin-dir)=
 ### `HOST_BIN_DIR`
 
+:::{versionadded} 0.14
+:::
+
 The host directory's prefixed bin directory. For example:
 
 ```none
@@ -64,10 +67,16 @@ the configured output directory. For example:
 (env-host-include-dir)=
 ### `HOST_INCLUDE_DIR`
 
+:::{versionadded} 0.12
+:::
+
 The host directory's prefixed include directory.
 
 (env-host-lib-dir)=
 ### `HOST_LIB_DIR`
+
+:::{versionadded} 0.12
+:::
 
 The host directory's prefixed library directory.
 
@@ -128,6 +137,9 @@ the configured root directory. For example:
 (env-pkg-build-base-dir)=
 ### `PKG_BUILD_BASE_DIR`
 
+:::{versionadded} 0.12
+:::
+
 The directory for a specific package's base directory for buildable content.
 In most cases, this value will be the same as
 [`PKG_BUILD_DIR`](env-pkg-build-dir). However, if
@@ -185,6 +197,9 @@ For example, for a package `test`, the definition directory would be
 (env-pkg-defmode)=
 ### `PKG_DEVMODE`
 
+:::{versionadded} 0.13
+:::
+
 Whether the package is configured for development mode. If a package is
 configured for development mode, the environment variable will be set to a
 value of one (i.e. `PKG_DEVMODE=1`).
@@ -201,6 +216,9 @@ See also [internal and external packages](intern-extern-pkgs).
 
 (env-pkg-localsrcs)=
 ### `PKG_LOCALSRCS`
+
+:::{versionadded} 0.13
+:::
 
 Whether the package is configured for local-sources mode. If a package is
 configured for local-sources, the environment variable will be set to a
@@ -244,6 +262,9 @@ by default.
 (env-prefixed-host-dir)=
 ### `PREFIXED_HOST_DIR`
 
+:::{versionadded} 0.12
+:::
+
 The host directory with the prefix applied. An example prefixed
 directory may be as follows:
 
@@ -253,6 +274,9 @@ directory may be as follows:
 
 (env-prefixed-staging-dir)=
 ### `PREFIXED_STAGING_DIR`
+
+:::{versionadded} 0.12
+:::
 
 The staging area directory with the prefix applied. An example prefixed
 directory may be as follows:
@@ -264,6 +288,9 @@ directory may be as follows:
 (env-prefixed-target-dir)=
 ### `PREFIXED_TARGET_DIR`
 
+:::{versionadded} 0.12
+:::
+
 The target area directory with the prefix applied. An example prefixed
 directory may be as follows:
 
@@ -274,30 +301,48 @@ directory may be as follows:
 (env-releng-clean)=
 ### `RELENG_CLEAN`
 
+:::{versionadded} 0.7
+:::
+
 Flag set if performing a clean request.
 
 (env-releng-debug)=
 ### `RELENG_DEBUG`
+
+:::{versionadded} 0.7
+:::
 
 Flag set if debug-related information should be shown.
 
 (env-releng-devmode)=
 ### `RELENG_DEVMODE`
 
+:::{versionadded} 0.2
+:::
+
 The development mode or flag set if in [development mode](development-mode).
 
 (env-releng-distclean)=
 ### `RELENG_DISTCLEAN`
+
+:::{versionadded} 0.7
+:::
 
 Flag set if performing an extreme pristine clean request.
 
 (env-releng-force)=
 ### `RELENG_FORCE`
 
+:::{versionadded} 0.11
+:::
+
 Flag set if performing a forced request from the command line.
 
 (env-releng-localsrcs)=
 ### `RELENG_LOCALSRCS`
+
+:::{versionadded} 0.2
+:::
 
 Flag set if in [local-sources mode](local-sources-mode).
 
@@ -324,25 +369,40 @@ Flag set if performing a re-install request.
 (env-releng-script)=
 ### `RELENG_SCRIPT`
 
+:::{versionadded} 1.0
+:::
+
 The path of the script currently being executed.
 
 (env-releng-script-dir)=
 ### `RELENG_SCRIPT_DIR`
+
+:::{versionadded} 1.0
+:::
 
 The path of the directory holding the script currently being executed.
 
 (env-releng-target-dir)=
 ### `RELENG_TARGET_PKG`
 
+:::{versionadded} 0.13
+:::
+
 The name of the target package (if any) provided by the command line.
 
 (env-releng-verbose)=
 ### `RELENG_VERBOSE`
 
+:::{versionadded} 0.7
+:::
+
 Flag set if verbose-related information should be shown.
 
 (env-releng-version)=
 ### `RELENG_VERSION`
+
+:::{versionadded} 0.7
+:::
 
 The version of releng-tool.
 
@@ -353,6 +413,9 @@ The root directory.
 
 (env-staging-bin-dir)=
 ### `STAGING_BIN_DIR`
+
+:::{versionadded} 0.14
+:::
 
 The staging area directory's prefixed bin directory. An example binary
 directory may be as follows:
@@ -374,6 +437,9 @@ inside the configured output directory. For example:
 (env-staging-include-dir)=
 ### `STAGING_INCLUDE_DIR`
 
+:::{versionadded} 0.12
+:::
+
 The staging area directory's prefixed include directory. An example include
 directory may be as follows:
 
@@ -383,6 +449,9 @@ directory may be as follows:
 
 (env-staging-lib-dir)=
 ### `STAGING_LIB_DIR`
+
+:::{versionadded} 0.12
+:::
 
 The staging area directory's prefixed library directory. An example library
 directory may be as follows:
@@ -404,6 +473,9 @@ inside the configured output directory. For example:
 (env-target-bin-dir)=
 ### `TARGET_BIN_DIR`
 
+:::{versionadded} 0.14
+:::
+
 The target area directory's prefixed bin directory. An example binary
 directory may be as follows:
 
@@ -424,6 +496,9 @@ inside the configured output directory. For example:
 (env-target-include-dir)=
 ### `TARGET_INCLUDE_DIR`
 
+:::{versionadded} 0.12
+:::
+
 The target area directory's prefixed include directory. An example include
 directory may be as follows:
 
@@ -433,6 +508,9 @@ directory may be as follows:
 
 (env-target-lib-dir)=
 ### `TARGET_LIB_DIR`
+
+:::{versionadded} 0.12
+:::
 
 The target area directory's prefixed library directory. An example library
 directory may be as follows:
@@ -621,11 +699,17 @@ releng-tool.
 (env-releng-generated-licenses)=
 ### `RELENG_GENERATED_LICENSES`
 
+:::{versionadded} 1.3
+:::
+
 Defines a list of generated license files at the end of package processing
 that is available for post-processing actions to use.
 
 (env-releng-generated-sboms)=
 ### `RELENG_GENERATED_SBOMS`
+
+:::{versionadded} 1.3
+:::
 
 Defines a list of generated software build of materials (SBOM) files at the
 end of package processing that is available for post-processing actions
@@ -640,6 +724,9 @@ accepted:
 (env-releng-assets-dir)=
 ### `RELENG_ASSETS_DIR=<dir>`
 
+:::{versionadded} 0.10
+:::
+
 The asset directory to use. The asset directory is the container directory
 to use for both cache and download content. By default, no asset directory
 is configured. If a user does not override an asset directory using the
@@ -650,6 +737,9 @@ content.
 (env-releng-cache-dir)=
 ### `RELENG_CACHE_DIR=<dir>`
 
+:::{versionadded} 0.10
+:::
+
 The cache directory to use. By default, the cache directory used is configured
 to `<root>/cache`. If a user does not override a cache directory using the
 [`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR` option can
@@ -657,6 +747,9 @@ be used to override this location.
 
 (env-releng-dl-dir)=
 ### `RELENG_DL_DIR=<dir>`
+
+:::{versionadded} 0.10
+:::
 
 The download directory to use. By default, the download directory used is
 configured to `<root>/dl`. If a user does not override a download directory
@@ -671,6 +764,9 @@ This environment variable is always ignored when either the
 [`--out-dir` argument](arg-out-dir) or
 [`RELENG_OUTPUT_DIR`](env-releng-out-dir) environment variable is used.
 ```
+
+:::{versionadded} 1.1
+:::
 
 Configures a "global" container directory used to hold the output contents
 of releng-tool projects. Projects will typically generate output contents
@@ -727,11 +823,17 @@ The following folder structure should be expected:
 (env-releng-ignore-running-as-root)=
 ### `RELENG_IGNORE_RUNNING_AS_ROOT=1`
 
+:::{versionadded} 0.10
+:::
+
 Suppress the [warning](tips/privileged-builds) generated when running
 releng-tool with an elevated user.
 
 (env-releng-ignore-unknown-args)=
 ### `RELENG_IGNORE_UNKNOWN_ARGS=1`
+
+:::{versionadded} 1.3
+:::
 
 Suppress the warning/error generated when running releng-tool with unknown
 arguments.
@@ -740,6 +842,9 @@ See also the [`--relaxed-args` argument](arg-relaxed-args).
 
 (env-releng-out-dir)=
 ### `RELENG_OUTPUT_DIR=<dir>`
+
+:::{versionadded} 1.1
+:::
 
 The output directory to use. By default, the output directory used is
 configured to `<root>/output`. If a user does not override an output

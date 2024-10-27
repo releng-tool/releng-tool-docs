@@ -1,11 +1,10 @@
 (quirk-releng.cmake.disable_parallel_option)=
 # Quirk `releng.cmake.disable_parallel_option`
 
-```{warning}
-This quirk is no longer applicable as of v1.0. CMake parallelization is
-now driven internally using the `CMAKE_BUILD_PARALLEL_LEVEL` environment
-variable.
-```
+:::{deprecated} 1.0
+This quirk is no longer applicable. CMake parallelization is now driven
+internally using the `CMAKE_BUILD_PARALLEL_LEVEL` environment variable.
+:::
 
 When releng-tool invokes a build stage for a CMake project, the `--parallel`
 argument is used to trigger multiple jobs for a build. If running on a host

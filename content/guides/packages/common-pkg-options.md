@@ -81,6 +81,9 @@ The option replaces the legacy
 [`LIBFOO_DEPENDENCIES`](pkg-opt-dependencies) option.
 :::
 
+:::{versionadded} 1.3
+:::
+
 List of package dependencies a given project has. If a project depends on
 another package, the package name should be listed in this option. This ensures
 releng-tool will process packages in the proper order. The following shows an
@@ -100,6 +103,11 @@ LIBFOO_NEEDS = [
 The site where package sources/assets can be found. The site can be a URL
 of an archive, or describe a source control URL such as Git or SVN. The
 following outline a series of supported site definitions:
+
+:::{versionchanged} 0.10 Support added for `rsync+`.
+:::
+:::{versionchanged} 0.17 Support added for `perforce+`.
+:::
 
 | Type      | Prefix/Postfix |
 | --------: | :- |
@@ -148,6 +156,13 @@ See also [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type).
 
 (pkg-opt-type)=
 ## `LIBFOO_TYPE`
+
+:::{versionchanged} 0.13 Support added for `make`.
+:::
+:::{versionchanged} 0.16 Support added for `meson`.
+:::
+:::{versionchanged} 1.3 Support added for `cargo`.
+:::
 
 The package type. The default package type is a (Python) script-based package.
 releng-tool also provides a series of helper package types for common
