@@ -7,7 +7,7 @@ packages.
 ## `LIBFOO_VSDEVCMD`
 
 :::{note}
-The option is only available for Windows environments.
+The option is ignored in non-Windows environments.
 :::
 
 :::{versionadded} 1.3

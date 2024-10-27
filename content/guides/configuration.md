@@ -408,7 +408,7 @@ urlopen_context = ssl.create_default_context()
 ### `vsdevcmd`
 
 :::{note}
-The option is only available for Windows environments.
+The option is ignored in non-Windows environments.
 :::
 
 :::{versionadded} 1.14
