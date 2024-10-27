@@ -6,12 +6,8 @@ is not recommended to use these options.
 (pkg-opt-dependencies)=
 ### `LIBFOO_DEPENDENCIES`
 
-:::{warning}
-The option is deprecated and packages should use
-[`LIBFOO_NEEDS`](pkg-opt-needs) instead.
-:::
-
-:::{versionchanged} 1.3 Flagged as deprecated.
+:::{deprecated} 1.3
+Packages should use [`LIBFOO_NEEDS`](pkg-opt-needs) instead.
 :::
 
 List of package dependencies a given project has. If a project depends on
@@ -30,12 +26,8 @@ LIBFOO_DEPENDENCIES = [
 (pkg-opt-skip-remote-config)=
 ## `LIBFOO_SKIP_REMOTE_CONFIG`
 
-:::{warning}
-The option is deprecated and packages should use
-[`LIBFOO_REMOTE_CONFIG`](pkg-opt-remote-config) instead.
-:::
-
-:::{versionchanged} 1.3 Flagged as deprecated.
+:::{deprecated} 1.3
+Packages should use [`LIBFOO_REMOTE_CONFIG`](pkg-opt-remote-config) instead.
 :::
 
 Flag value to indicate that a package should not attempt to load any
@@ -56,12 +48,8 @@ See also
 (pkg-opt-skip-remote-scripts)=
 ## `LIBFOO_SKIP_REMOTE_SCRIPTS`
 
-:::{warning}
-The option is deprecated and packages should use
-[`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) instead.
-:::
-
-:::{versionchanged} 1.3 Flagged as deprecated.
+:::{deprecated} 1.3
+Packages should use [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) instead.
 :::
 
 Flag value to indicate that a package should not attempt to load any package
