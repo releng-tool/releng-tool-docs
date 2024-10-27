@@ -157,7 +157,7 @@ when a punch run is requested, any packages that have already been processed
 will be re-invoked as if a re-configuration request has been made.
 
 This allows a developer to easily attempt to rebuild all packages in their
-project when multiple packages have been updated.  
+project when multiple packages have been updated.
 
 ```shell
 releng-tool punch
