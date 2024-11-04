@@ -254,6 +254,8 @@ or directory associated with the package. See also the
 
 :::{versionadded} 0.12
 :::
+:::{versionchanged} 1.4 Support accepting arguments after `--`.
+:::
 
 Invokes a provided command in the package's build output directory. This
 package action can be useful for developers attempting to develop/debug a
@@ -266,6 +268,12 @@ An example is as follows:
 
 ```shell
 releng-tool libfoo-exec "mycmd arg1 arg2"
+```
+
+Alternatively, arguments can be passed using the format:
+
+```shell
+releng-tool libfoo-exec -- mycmd arg1 arg2
 ```
 
 Package environment variables will be available for the invoked command.
