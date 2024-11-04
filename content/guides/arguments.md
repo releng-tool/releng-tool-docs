@@ -321,6 +321,24 @@ releng-tool <pkg>-fetch-full
 If the provided package name does not exist, a notification will be
 generated.
 
+(action-pkg-fresh)=
+### `<pkg>-fresh`
+
+:::{versionadded} 1.4
+:::
+
+Prepares a package to be ready to invoke its configuration stage. A
+successful end state results in the specified package will have
+completed its patch stage. If the package has already been processed
+before, it will be cleaned ahead of time to start fresh.
+
+```shell
+releng-tool <pkg>-fresh
+```
+
+If the provided package name does not exist, a notification will be
+generated.
+
 ### `<pkg>-install`
 
 Performs the installation stage for the package.
