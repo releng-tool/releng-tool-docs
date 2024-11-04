@@ -250,6 +250,7 @@ This request not only removes the build directory but also any cached file
 or directory associated with the package. See also the
 [`<pkg>-clean`](action-pkg-clean) action.
 
+(action-pkg-exec)=
 ### `<pkg>-exec "<cmd>"`
 
 :::{versionadded} 0.12

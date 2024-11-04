@@ -69,6 +69,7 @@ releng-tool (may vary per context):
 [`RELENG_DEBUG`](env-releng-debug)
 [`RELENG_DEVMODE`](env-releng-devmode)
 [`RELENG_DISTCLEAN`](env-releng-distclean)
+[`RELENG_EXEC`](env-releng-exec)
 [`RELENG_FORCE`](env-releng-force)
 [`RELENG_GENERATED_LICENSES`](env-releng-generated-licenses)
 [`RELENG_GENERATED_SBOMS`](env-releng-generated-sboms)

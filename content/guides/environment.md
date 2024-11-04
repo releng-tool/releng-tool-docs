@@ -330,6 +330,14 @@ The development mode or flag set if in [development mode](development-mode).
 
 Flag set if performing an extreme pristine clean request.
 
+(env-releng-exec)=
+### `RELENG_EXEC`
+
+:::{versionadded} 1.4
+:::
+
+Flag set if performing a [`<pkg>-exec`](action-pkg-exec) request.
+
 (env-releng-force)=
 ### `RELENG_FORCE`
 
