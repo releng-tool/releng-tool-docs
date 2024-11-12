@@ -1,8 +1,27 @@
 # Alternative extensions
 
-A default configuration file is typically a file named `releng` at the root
-of a project. Consider the following example of a project with a `libfoo`
-package with various stage scripts:
+:::{deprecated} 2.0
+The `.releng` extension is no longer recommended and may be removed in
+a future release.
+:::
+
+A default configuration file is typically a file named `releng-tool.rt`
+at the root of a project. Consider the following example of a project
+with a `libfoo` package with various stage scripts:
+
+```
+└── my-project/
+    ├── package/
+    │   └── libfoo/
+    │       └── libfoo.rt
+    │       └── libfoo-build.rt
+    │       └── libfoo-install.rt
+    └── releng-tool.rt
+```
+
+Developers who do not perfer the `.rt` extension may use alternatives,
+such as the `.py` extension or no extension at all. For example, the
+above example is equivalent to the structure:
 
 ```
 └── my-project/
@@ -11,21 +30,7 @@ package with various stage scripts:
     │       └── libfoo
     │       └── libfoo-build
     │       └── libfoo-install
-    └── releng
-```
-
-If a developer prefers to define extensions for various configurations and
-scripts, files detected with a `.releng` or `.py` extensions can be used
-instead. For example, the above example is equivalent to the structure:
-
-```
-└── my-project/
-    ├── package/
-    │   └── libfoo/
-    │       └── libfoo.releng
-    │       └── libfoo-build.releng
-    │       └── libfoo-install.releng
-    └── releng.releng
+    └── releng-tool
 ```
 
 Or the structure:
@@ -37,14 +42,15 @@ Or the structure:
     │       └── libfoo.py
     │       └── libfoo-build.py
     │       └── libfoo-install.py
-    └── releng.py
+    └── releng-tool.py
 ```
 
 For a specific file to be loaded, releng-tool uses the following priority:
 
 1. File without an extension
-2. File with a `.releng` extension
-3. File with a `.py` extension
+1. File with a `.rt` extension
+1. File with a `.releng` extension (*deprecated*)
+1. File with a `.py` extension
 
 Only the first detected file will be loaded. For example, if a project has
 multiple releng-tool configuration files with different extensions:
@@ -54,9 +60,8 @@ multiple releng-tool configuration files with different extensions:
     ├── package/
     │   └── libfoo/
     │       └── ...
-    ├── releng
-    ├── releng.releng
-    └── releng.py
+    ├── releng-tool.rt
+    └── releng-tool.py
 ```
 
-Only the `releng` configuration script will be used.
+Only the `releng-tool.rt` configuration script will be used.

@@ -12,9 +12,9 @@ LIBFOO_TYPE = 'script'
 
 A script package has the ability to define three Python stage scripts:
 
-- `<package>-configure` - script to invoke during the configuration stage
-- `<package>-build` - script to invoke during the build stage
-- `<package>-install` - script to invoke during the installation stage
+- `<package>-configure.rt` - script to invoke during the configuration stage
+- `<package>-build.rt` - script to invoke during the build stage
+- `<package>-install.rt` - script to invoke during the installation stage
 
 For example, a `libfoo` package would have the following files for a
 script-based package:
@@ -23,14 +23,14 @@ script-based package:
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo
-    │       └── libfoo-build
-    │       └── libfoo-configure
-    │       └── libfoo-install
+    │       ├── libfoo.rt
+    │       ├── libfoo-build.rt
+    │       ├── libfoo-configure.rt
+    │       └── libfoo-install.rt
     ...
 ```
 
-An example build script (`libfoo-build`) can be as follows:
+An example build script (`libfoo-build.rt`) can be as follows:
 
 ```python
 releng_execute(['make'])

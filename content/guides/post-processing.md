@@ -8,24 +8,25 @@ reaches the final stage of a build.
 ```{admonition} Prospect
 At this time, releng-tool supports only post-build scripts. It is planned to
 introduced support for some image-related helpers (i.e. package helpers).
-This may introduce a reserved `releng-post-image` script in future releases.
+This may introduce a reserved `releng-tool-post-image.rt` script in
+future releases.
 ```
 
 After each package has been processed, a project has the ability to perform
 post-processing. Post-processing allows a developer to cleanup the target
 directory, build an archive/package from generated results and more. If a
-project contains a `releng-post-build` inside the root directory, the
-post-processing script will be invoked in the final stage of a build.
+project contains a `releng-tool-post-build.rt` inside the root directory,
+the post-processing script will be invoked in the final stage of a build.
 
 A developer may start out with the following post-processing script
-`<root>/releng-post-build`:
+`<root>/releng-tool-post-build.rt`:
 
 ```
 └── my-releng-tool-project/
     ├── package/
     │   └── ...
-    ├── releng
-    └── releng-post-build             <----
+    ├── releng-tool.rt
+    └── releng-tool-post-build.rt     <----
 ```
 
 With the contents:

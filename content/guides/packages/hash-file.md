@@ -20,16 +20,16 @@ It is recommended that:
 - A hash entry should exist for license files (additional sanity check if a
   package's license has change).
 
-To create a hash file for a package, add a `<my-package>.hash` file inside the
-package's directory. For example, for a `libfoo` package,
-the following would be expected:
+To create a hash file for a package, add a `<my-package>.hash` file
+inside the package's directory. For example, for a `libfoo` package, the
+following would be expected:
 
 ```
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo
-    │       └── libfoo.hash           <----
+    │       ├── libfoo.hash           <----
+    │       └── libfoo.rt
     ...
 ```
 

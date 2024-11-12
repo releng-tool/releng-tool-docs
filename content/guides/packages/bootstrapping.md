@@ -2,21 +2,21 @@
 
 Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is
 defined, can create a bootstrapping script to invoke before a package
-starts a configuration stage. The existence of a `<package>-bootstrap`
+starts a configuration stage. The existence of a `<package>-bootstrap.rt`
 inside a package directory will trigger the bootstrapping stage for the
 package. An example bootstrapping script for a package `libfoo` would be
-named `libfoo-bootstrap`:
+named `libfoo-bootstrap.rt`:
 
 ```
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo
-    │       └── libfoo-bootstrap      <----
+    │       ├── libfoo.rt
+    │       └── libfoo-bootstrap.rt   <----
     ...
 ```
 
-With the contents of `libfoo-bootstrap` being set to:
+With the contents of `libfoo-bootstrap.rt` being set to:
 
 ```python
  print('perform bootstrapping work')

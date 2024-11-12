@@ -561,8 +561,8 @@ in `<PKG>_BUILD_OUTPUT_DIR`:
     │               └── ...
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -581,8 +581,8 @@ out of the root directory:
     │           └── ...
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -599,8 +599,8 @@ the package's definition directory:
     │   └── libfoo/
     │       └── local/                <---- LIBFOO_BUILD_DIR
     │           └── ...
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -621,8 +621,8 @@ version (e.g. `libfoo-1.0.0`):
     │           └── ...
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -637,8 +637,8 @@ just be `libfoo`:
     │           └── ...
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -655,8 +655,8 @@ for package types like CMake. For example:
     │               └── ...
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -672,8 +672,8 @@ variable will contain a directory path matching the path seen below:
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/                   <---- LIBFOO_DEFDIR
-    │       └── libfoo.py
-    ├── releng
+    │       └── libfoo.rt
+    ├── releng-tool.rt
     ...
 ```
 
@@ -816,10 +816,10 @@ The following folder structure should be expected:
 │           └── projects/
 │               ├── my-project-a/
 │               │   ├── ...
-│               │   └── releng.py
+│               │   └── releng-tool.rt
 │               └── my-project-b/
 │                   ├── ...
-│                   └── releng.py
+│                   └── releng-tool.rt
 └── mnt/
     └── extern-disk/
         ├── my-project-a/

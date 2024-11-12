@@ -524,7 +524,10 @@ See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
 :::{versionadded} 0.13
 :::
 
-Configuration file to load (defaults to `<root>/releng`).
+Configuration file to load (defaults to `<root>/releng-tool.rt`).
+
+See also [alternative extensions](/guides/tips/alternative-extensions) that
+may apply when detecting the default configuration file.
 
 (arg-debug)=
 ### `--debug`

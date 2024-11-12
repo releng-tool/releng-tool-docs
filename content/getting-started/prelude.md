@@ -20,7 +20,7 @@ project:
 - `output/images/` - Container for final images/archives
 - `output/staging/` - Area to hold staged sysroot content
 - `output/target/` - Area to hold target sysroot content
-- `releng` - Project configuration
+- `releng-tool.rt` - Project configuration
 
 How these directories and files are used can vary on how a developer defines a
 releng-tool project. Consider the following process:

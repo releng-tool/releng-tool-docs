@@ -20,7 +20,7 @@ project folder:
     │   └── license-header.tpl        <----
     ├── package/
     │   └── ...
-    └── releng
+    └── releng-tool.rt
 ```
 
 Which then `releng` can be configured to use the header contents:

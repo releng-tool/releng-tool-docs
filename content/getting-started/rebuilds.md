@@ -31,7 +31,7 @@ C++-based packages:
     │   │   └── ...
     │   └── module-c/
     │       └── ...
-    └── releng
+    └── releng-tool.rt
 ```
 
 For this example, project `module-b` depends on `module-a` and project

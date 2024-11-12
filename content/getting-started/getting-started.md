@@ -28,14 +28,14 @@ python -m releng-tool --version
 
 ## Overview
 
-A project will typically be defined by a `releng` configuration file along
-with one or more packages found inside a `package/` folder. This location
-can be referred to as the "root directory".
+A project will typically be defined by a `releng-tool.rt` configuration
+file along with one or more packages found inside a `package/` folder.
+This location can be referred to as the "root directory".
 
 :::{note}
-releng-tool supports extensionless configuration/script files (e.g. `releng`),
-as well as configuration/scripts using a `.py` or `.releng` extension. For
-more information, please see
+releng-tool supports extensionless configuration/script files (e.g.
+`releng-tool`) as well as configuration/scripts using a `.py` extension.
+For more information, please see
 [alternative extensions](/guides/tips/alternative-extensions).
 :::
 
@@ -48,7 +48,7 @@ directory for project information to process. For example, if a folder
     ├── package/
     │   └── package-a/
     │       └── ...
-    └── releng
+    └── releng-tool.rt
 ```
 
 The following output may be observed when running releng-tool:

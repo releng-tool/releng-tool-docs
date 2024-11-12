@@ -31,7 +31,7 @@ uses the SDL library.
 ## The libsdl package
 
 Inside the `libsdl` package, create a package definition
-`my-project/package/libsdl/libsdl` with the following contents:
+`my-project/package/libsdl/libsdl.rt` with the following contents:
 
 ```python
 LIBSDL_LICENSE = ['Zlib']
@@ -134,7 +134,7 @@ tutorial:
     └── package/
         ├── libsdl/
         │   ├── 001-empty-prefix-support.patch
-        │   ├── libsdl
+        │   ├── libsdl.rt
         │   └── libsdl.hash
         └── sample/
 ```
@@ -147,7 +147,7 @@ Git repository. To simplify this tutorial, we will utilize a `local` VCS
 type (typically used for interim development) to help demonstrate the
 sample project.
 
-Create a package definition `my-sdl-project/sample/sample` with the
+Create a package definition `my-sdl-project/sample/sample.rt` with the
 following contents:
 
 ```python
@@ -326,7 +326,7 @@ tutorial:
     └── package/
         ├── libsdl/
         │   ├── 001-empty-prefix-support.patch
-        │   ├── libsdl
+        │   ├── libsdl.rt
         │   └── libsdl.hash
         └── sample/
             ├── local/
@@ -334,7 +334,7 @@ tutorial:
             │   │   └── sample/
             │   │       └── main.c
             │   └── CMakeLists.txt
-            └── sample
+            └── sample.rt
 ```
 
 ## Project configuration and post-build script
@@ -348,7 +348,7 @@ post-build stages.
 Create a new `assets` folder at the root of the project folder. Inside,
 place a copy of the [releng-tool.bmp](assets/sdl/releng-tool.bmp) image.
 At the root of the project folder, create a post-build script named
-`releng-post-build` with the following contents:
+`releng-tool-post-build.rt` with the following contents:
 
 ```python
 assets_dir = releng_join(ROOT_DIR, 'assets')
@@ -362,7 +362,8 @@ releng_copy_into(sample_img, TARGET_BIN_DIR)
   placed alongside the executable we plan to build.
 
 Lastly, we need to create our releng-tool configuration file for the project.
-In the root folder, create a `releng` file with the following contents:
+In the root folder, create a `releng-tool.rt` file with the following
+contents:
 
 ```python
 packages = [
@@ -388,7 +389,7 @@ tutorial:
     ├── package/
     │   ├── libsdl/
     │   │   ├── 001-empty-prefix-support.patch
-    │   │   ├── libsdl
+    │   │   ├── libsdl.rt
     │   │   └── libsdl.hash
     │   └── sample/
     │       ├── local/
@@ -396,9 +397,9 @@ tutorial:
     │       │   │   └── sample/
     │       │   │       └── main.c
     │       │   └── CMakeLists.txt
-    │       └── sample
-    ├── releng
-    └── releng-post-build
+    │       └── sample.rt
+    ├── releng-tool.rt
+    └── releng-tool-post-build.rt
 ```
 
 ## Performing a build

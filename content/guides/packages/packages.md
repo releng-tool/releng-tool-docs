@@ -7,15 +7,15 @@ Packages can consist of libraries, programs or even basic assets.
 └── sample-releng-tool-project/
     ├── package/
     │   └── box-firmware/
-    │   │   └── box-firmware
+    │   │   ├── box-firmware.rt
     │   │   └── box-firmware.hash
     │   └── libfw-uploader/
-    │   │   └── libfw-uploader
+    │   │   └── libfw-uploader.rt
     │   └── libsupport/
-    │   │   └── libsupport
+    │   │   └── libsupport.rt
     │   └── rack-engine/
-    │       └── rack-engine
-    └── releng
+    │       └── rack-engine.rt
+    └── releng-tool.rt
 ```
 
 ## Overview
@@ -28,13 +28,13 @@ releng-tool project.
 
 When making a package, a container folder for the package as well as a package
 definition file needs to be made. For example, for a package `package-a`,
-the file `package/package-a/package-a` should exist.
+the file `package/package-a/package-a.rt` should exist.
 
 ```
 └── my-releng-tool-project/
     ├── package/
     │   └── package-a/                <---- Container
-    │       └── package-a             <---- Definition
+    │       └── package-a.rt          <---- Definition
     ...
 ```
 

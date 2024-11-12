@@ -2,21 +2,21 @@
 
 Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is
 defined, can create a post-processing script to invoke after a package
-has completed an installation stage. The existence of a `<package>-post`
+has completed an installation stage. The existence of a `<package>-post.rt`
 inside a package directory will trigger the post-processing stage for
 the package. An example post-processing script for a package `libfoo`
-would be named `libfoo-post`:
+would be named `libfoo-post.rt`:
 
 ```
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo
-    │       └── libfoo-post           <----
+    │       ├── libfoo.rt
+    │       └── libfoo-post.rt        <----
     ...
 ```
 
-With the contents of `libfoo-post` being set to:
+With the contents of `libfoo-post.rt` being set to:
 
 ```python
  print('perform post-processing work')

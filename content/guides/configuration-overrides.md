@@ -10,7 +10,7 @@ script `releng-overrides`:
     │   └── ...
     ├── LICENSE
     ├── README.md
-    ├── releng
+    ├── releng-tool.rt
     ├── releng-overrides     <-- an override script
     ...
 ```

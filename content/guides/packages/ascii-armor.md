@@ -21,8 +21,8 @@ the following would be expected:
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo
-    │       └── libfoo.asc            <----
+    │       ├── libfoo.asc            <----
+    │       └── libfoo.rt
     ...
 ```
 

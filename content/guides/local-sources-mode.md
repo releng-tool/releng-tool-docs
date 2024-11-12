@@ -27,7 +27,7 @@ will be used from the folder `<root>/../liba` instead:
     │       └── ...
     ├── LICENSE
     ├── README.md
-    └── releng
+    └── releng-tool.rt
 ```
 
 When in local-sources mode, an internal package will skip the fetching,
@@ -79,7 +79,7 @@ sources for `liba` will be used from the folder `~/workdir2/liba`:
 │       │       └── ...
 │       ├── LICENSE
 │       ├── README.md
-│       └── releng
+│       └── releng-tool.rt
 └── workdir2/
     └── liba/
         └── ...
@@ -121,7 +121,7 @@ In the above example, if a project had internal packages `liba`,
 │       │       │       └── ...
 │       │       ├── LICENSE
 │       │       ├── README.md
-│       │       └── releng
+│       │       └── releng-tool.rt
 │       └── workdir2/
 │           └── liba/
 │               └── ...

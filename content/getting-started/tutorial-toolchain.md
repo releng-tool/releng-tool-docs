@@ -65,22 +65,22 @@ package, dependencies and project configuration:
 └── my-tc-project/
     ├── package/
     │   ├── htop/
-    │   │   ├── htop
+    │   │   ├── htop.rt
     │   │   └── htop.hash
     │   ├── libnl/
-    │   │   ├── libnl
+    │   │   ├── libnl.rt
     │   │   └── libnl.hash
     │   └── ncurses/
-    │       ├── ncurses
+    │       ├── ncurses.rt
     │       └── ncurses.hash
-    └── releng
+    └── releng-tool.rt
 ```
 
 ## The configuration
 
 The first changes we will make to our releng-tool project is to define the
-specifics of the project configuration in `releng`. Apply the following
-contents to the configuration:
+specifics of the project configuration in `releng-tool.rt`. Apply the
+following contents to the configuration:
 
 ```python
 packages = [
@@ -139,7 +139,7 @@ definitions/hashes for each package.
 
 ## The libnl package
 
-Update the `libnl` package definition (`my-tc-project/libnl/libnl`) with
+Update the `libnl` package definition (`my-tc-project/libnl/libnl.rt`) with
 the following contents:
 
 ```python
@@ -221,7 +221,7 @@ changes between versions.
 
 ## The ncurses package
 
-Update the `ncurses` package definition (`my-tc-project/ncurses/ncurses`)
+Update the `ncurses` package definition (`my-tc-project/ncurses/ncurses.rt`)
 with the following contents:
 
 ```python
@@ -283,7 +283,7 @@ provide a hash of the license document.
 
 ## The htop package
 
-Update the `htop` package definition (`my-tc-project/htop/htop`) with the
+Update the `htop` package definition (`my-tc-project/htop/htop.rt`) with the
 following contents:
 
 ```python

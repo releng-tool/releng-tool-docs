@@ -497,7 +497,7 @@ follows:
     │       │   └── src/
     │       │   |   └── ...
     │       │   └── Makefile
-    │       └── libfoo
+    │       └── libfoo.rt
     ...
 ```
 

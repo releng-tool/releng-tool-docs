@@ -15,7 +15,7 @@ $ cd my-project/
 ```
 
 Inside the `liba` package, a package definition and script-based files will
-be created. First, build the package definition `my-project/liba/liba.py` with
+be created. First, build the package definition `my-project/liba/liba.rt` with
 the following contents:
 
 ```python
@@ -23,21 +23,21 @@ LIBA_VERSION = '1.0.0'
 ```
 
 Next, create a build script for the `liba` project
-`my-project/liba/liba-build.py` with the following contents:
+`my-project/liba/liba-build.rt` with the following contents:
 
 ```python
 print('invoked liba package build stage')
 ```
 
 Repeat the same steps for the `program-b` package with the file
-`my-project/program-b/program-b.py` containing:
+`my-project/program-b/program-b.rt` containing:
 
 ```python
 PROGRAM_B_NEEDS = ['liba']
 PROGRAM_B_VERSION = '2.1.0'
 ```
 
-And `my-project/program-b/program-b-build.py` containing:
+And `my-project/program-b/program-b-build.rt` containing:
 
 ```python
 print('invoked program-b package build stage')
@@ -48,7 +48,7 @@ The second package is a bit different since it indicates that package
 releng-tool will process the `liba` package before `program-b`.
 
 With this minimal set of packages, the project's releng-tool configuration
-can now be created. At the root of the project, create a `releng.py`
+can now be created. At the root of the project, create a `releng-tool.rt`
 configuration file with the following contents:
 
 ```python
@@ -68,12 +68,12 @@ The file structure should now be as follows:
 └── my-project/
     ├── package/
     │   ├── liba/
-    │   │   ├── liba.py
-    │   │   └── liba-build.py
+    │   │   ├── liba.rt
+    │   │   └── liba-build.rt
     │   └── program-b/
-    │       ├── program-b.py
-    │       └── program-b-build.py
-    └── releng.py
+    │       ├── program-b.rt
+    │       └── program-b-build.rt
+    └── releng-tool.rt
 ```
 
 This sample project should be ready for a spin. While in the `my-project`

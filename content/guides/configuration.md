@@ -1,7 +1,7 @@
 # Configuration
 
-A releng-tool project defines its configuration options inside the a `releng`
-file at the root of a project (or `releng.releng`/`releng.py` file; see also
+A releng-tool project defines its configuration options inside the a
+`releng-tool.rt` file at the root of a project (or other defaults; see
 [alternative extensions](tips/alternative-extensions)). The primary
 configuration option for a developer to define is `packages`, which is used
 to hold a list of packages to be processed. For example, a project structure
@@ -16,7 +16,7 @@ such as follows:
     │   │   └── ...
     │   └── package-c/
     │       └── ...
-    └── releng                        <----
+    └── releng-tool.rt                <----
 ```
 
 Can have a configuration (`releng`) such as:

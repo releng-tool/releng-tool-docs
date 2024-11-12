@@ -20,7 +20,7 @@ extraction:
     ├── package/
     │   └── libfoo/
     │       └── ...
-    └── releng
+    └── releng-tool.rt
 ```
 
 And for DVCS-based sites:
@@ -40,7 +40,7 @@ use:
     ├── package/
     │   └── libfoo/
     │       └── ...
-    └── releng
+    └── releng-tool.rt
 ```
 
 Once a package has completed its fetch stage, releng-tool should never need
