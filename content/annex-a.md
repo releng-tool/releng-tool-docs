@@ -3,6 +3,62 @@
 A quick reference document listing available options to developers building a
 releng-tool project.
 
+## Arguments
+
+Arguments which are accepted by releng-tool from the command line:
+
+```{parsed-literal}
+[`clean`](action-clean)
+[`distclean`](action-distclean)
+[`extract`](action-extract)
+[`fetch`](action-fetch)
+[`fetch-full`](action-fetch-full)
+[`init`](action-init)
+[`licenses`](action-licenses)
+[`mrproper`](action-mrproper)
+[`patch`](action-patch)
+[`punch`](action-punch)
+[`sbom`](action-sbom)
+[`state`](action-state)
+[`<pkg>-build`](action-pkg-build)
+[`<pkg>-clean`](action-pkg-clean)
+[`<pkg>-configure`](action-pkg-configure)
+[`<pkg>-distclean`](action-pkg-distclean)
+[`<pkg>-exec "<cmd>"`, `<pkg>-exec -- <cmd> <arg1> <arg2>`](action-pkg-exec)
+[`<pkg>-extract`](action-pkg-extract)
+[`<pkg>-fetch`](action-pkg-fetch)
+[`<pkg>-fetch-full`](action-pkg-fetch-full)
+[`<pkg>-fresh`](action-pkg-fresh)
+[`<pkg>-install`](action-pkg-install)
+[`<pkg>-license`](action-pkg-license)
+[`<pkg>-patch`](action-pkg-patch)
+[`<pkg>-rebuild`](action-pkg-rebuild)
+[`<pkg>-rebuild-only`](action-pkg-rebuild-only)
+[`<pkg>-reconfigure`](action-pkg-reconfigure)
+[`<pkg>-reconfigure-only`](action-pkg-reconfigure-only)
+[`<pkg>-reinstall`](action-pkg-reinstall)
+[`--assets-dir <dir>`](arg-assets-dir)
+[`--cache-dir <dir>`](arg-cache-dir)
+[`--config <file>`](arg-config)
+[`--debug`](arg-debug)
+[`-D`, `--development [<mode>]`](arg-development)
+[`--dl-dir <dir>`](arg-dl-dir)
+[`-F`, `--force`](arg-force)
+[`-h`, `--help`](arg-help)
+[`--images-dir <dir>`](arg-images-dir)
+[`-j`, `--jobs <jobs>`](arg-jobs)
+[`-L`, `--local-sources [[<pkg>:]<dir>]`](arg-local-sources)
+[`--nocolorout`](arg-nocolorout)
+[`--out-dir <dir>`](arg-out-dir)
+[`--relaxed-args`](arg-relaxed-args)
+[`--root-dir <dir>`](arg-root-dir)
+[`--sbom-format <fmt>`](arg-sbom-format)
+[`--quirk <quirk-id>`](arg-quirk)
+[`-V`, `--verbose`](arg-verbose)
+[`--version`](arg-version)
+[`--werror`, `-Werror`](arg-werror)
+```
+
 ## Configuration options
 
 Options which are read by releng-tool from a project's configuration script:

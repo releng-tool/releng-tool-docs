@@ -49,6 +49,7 @@ in the root directory or overridden by respective arguments, as well as
 any mode file flags which may be set. See also the [`clean`](action-clean)
 or [`mrproper`](action-mrproper) actions.
 
+(action-extract)=
 ### `extract`
 
 All packages will be processed up to the extraction phase (inclusive).
@@ -96,6 +97,7 @@ releng-tool fetch-full
 
 See also the [`fetch`](action-fetch) action.
 
+(action-init)=
 ### `init`
 
 :::{versionadded} 0.6
@@ -107,6 +109,7 @@ Initialize an empty root directory with a sample project.
 releng-tool init
 ```
 
+(action-licenses)=
 ### `licenses`
 
 A request to generate all license information for the project.
@@ -136,6 +139,7 @@ which may be set. The `cache/` and `dl/` directories will remain untouched.
 See also the [`clean`](action-clean) or [`distclean`](action-distclean)
 actions.
 
+(action-patch)=
 ### `patch`
 
 All packages will be processed up to the patch phase (inclusive).
@@ -197,6 +201,7 @@ modes.
 
 The following outlines available package-specific actions:
 
+(action-pkg-build)=
 ### `<pkg>-build`
 
 Performs the build stage for the package.
@@ -221,6 +226,7 @@ releng-tool <pkg>-clean
 
 See also the [`<pkg>-distclean`](action-pkg-distclean) action.
 
+(action-pkg-configure)=
 ### `<pkg>-configure`
 
 Performs the configure stage for the package.
@@ -279,6 +285,7 @@ releng-tool libfoo-exec -- mycmd arg1 arg2
 
 Package environment variables will be available for the invoked command.
 
+(action-pkg-extract)=
 ### `<pkg>-extract`
 
 Performs the extraction stage for the package.
@@ -339,6 +346,7 @@ releng-tool <pkg>-fresh
 If the provided package name does not exist, a notification will be
 generated.
 
+(action-pkg-install)=
 ### `<pkg>-install`
 
 Performs the installation stage for the package.
@@ -352,6 +360,7 @@ stage. If a package has any package dependencies, these dependencies will
 be processed before the specified package. If the provided package name
 does not exist, a notification will be generated.
 
+(action-pkg-license)=
 ### `<pkg>-license`
 
 :::{versionadded} 0.8
@@ -368,6 +377,7 @@ Note that license information requires acquiring license documents from
 the package itself. Therefore, the package will be fetched/extracted if
 not already done.
 
+(action-pkg-patch)=
 ### `<pkg>-patch`
 
 Performs the patch stage for the package.
@@ -401,6 +411,7 @@ If using this action, ensure
 [understanding rebuilds](/getting-started/rebuilds) has been read to
 understand this action's effect.
 
+(action-pkg-rebuild-only)=
 ### `<pkg>-rebuild-only`
 
 :::{versionadded} 0.7
@@ -447,6 +458,7 @@ If using this action, ensure
 [understanding rebuilds](/getting-started/rebuilds) has been read to
 understand this action's effect.
 
+(action-pkg-reconfigure-only)=
 ### `<pkg>-reconfigure-only`
 
 :::{versionadded} 0.7
@@ -519,6 +531,7 @@ Directory for distributed version control cache information (defaults to
 
 See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
 
+(arg-config)=
 ### `--config <file>`
 
 :::{versionadded} 0.13
@@ -534,6 +547,7 @@ may apply when detecting the default configuration file.
 
 Show debug-related messages.
 
+(arg-development)=
 ### `-D`, `--development [<mode>]`
 
 :::{versionchanged} 0.13 Support configurable modes.
@@ -562,10 +576,12 @@ Triggers a forced request for the releng-tool invoke. This entails:
   [`<pkg>-fetch`](action-pkg-fetch)), any packages which cache to a file
   will have their cache files deleted to be re-fetched.
 
+(arg-help)=
 ### `-h`, `--help`
 
 Show a list of all arguments available by releng-tool.
 
+(arg-images-dir)=
 ### `--images-dir <dir>`
 
 :::{versionadded} 0.13
@@ -573,10 +589,12 @@ Show a list of all arguments available by releng-tool.
 
 Directory for image outputs (defaults to `<root>/output/images`).
 
+(arg-jobs)=
 ### `-j`, `--jobs <jobs>`
 
 Numbers of jobs to handle (defaults to `0`; automatic).
 
+(arg-local-sources)=
 ### `-L`, `--local-sources [[<pkg>:]<dir>]`
 
 :::{versionchanged} 0.13 Support configurable packages and directories.
@@ -591,6 +609,7 @@ argument multiple times to override the local-sources configuration. If
 a package-specific override is provided, sources for that package will be
 looked for inside the provided path.
 
+(arg-nocolorout)=
 ### `--nocolorout`
 
 Explicitly disable colorized output.
@@ -617,11 +636,13 @@ Do not throw an error when releng-tool is provided unknown arguments.
 
 See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
 
+(arg-root-dir)=
 ### `--root-dir <dir>`
 
 Directory to process a releng-tool project (defaults to the working
 directory).
 
+(arg-sbom-format)=
 ### `--sbom-format <fmt>`
 
 :::{versionadded} 0.14
@@ -642,6 +663,7 @@ Multiple formats can be provided (comma-separated).
 
 See also [`sbom`](action-sbom).
 
+(arg-quirk)=
 ### `--quirk <quirk-id>`
 
 :::{versionadded} 0.4
@@ -650,14 +672,17 @@ See also [`sbom`](action-sbom).
 Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
 process. This option can be used multiple times to apply multiple quirks.
 
+(arg-verbose)=
 ### `-V`, `--verbose`
 
 Show additional messages.
 
+(arg-version)=
 ### `--version`
 
 Show releng-tool's version.
 
+(arg-werror)=
 ### `--werror`, `-Werror`
 
 :::{versionadded} 0.14
