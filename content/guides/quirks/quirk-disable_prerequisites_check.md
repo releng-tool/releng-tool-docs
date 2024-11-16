@@ -13,7 +13,7 @@ example, if the running environment is not expected to perform a specific
 action in a project that requires an application. To avoid triggering a
 run error at start, users may set the `releng.disable_prerequisites_check`
 quirk to skip any prerequisite check:
-  
+
 ```
 releng-tool --quirk releng.disable_prerequisites_check
 ```
