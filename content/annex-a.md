@@ -24,7 +24,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`<pkg>-clean`](action-pkg-clean)
 [`<pkg>-configure`](action-pkg-configure)
 [`<pkg>-distclean`](action-pkg-distclean)
-[`<pkg>-exec "<cmd>"`, `<pkg>-exec -- <cmd> <arg1> <arg2>`](action-pkg-exec)
+[`<pkg>-exec "<cmd>"`](action-pkg-exec)
 [`<pkg>-extract`](action-pkg-extract)
 [`<pkg>-fetch`](action-pkg-fetch)
 [`<pkg>-fetch-full`](action-pkg-fetch-full)
