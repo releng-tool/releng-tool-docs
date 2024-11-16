@@ -108,9 +108,12 @@ following outline a series of supported site definitions:
 :::
 :::{versionchanged} 0.17 Support added for `perforce+`.
 :::
+:::{versionchanged} 1.4 Support added for `brz+`.
+:::
 
 | Type      | Prefix/Postfix |
 | --------: | :- |
+| Breezy    | `brz+`
 | Bazaar    | `bzr+`
 | CVS       | `cvs+`
 | Git       | `git+` or `.git`

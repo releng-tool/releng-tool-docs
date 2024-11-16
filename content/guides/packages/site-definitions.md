@@ -10,6 +10,22 @@ Git sources); however, this is optional if a package wishes to use the
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) option.
 ```
 
+## Breezy site
+
+To define a [Breezy][breezy]-based location, the site value must be
+prefixed with a `brz+` value. A site can be defined as follows:
+
+```python
+LIBFOO_SITE = 'brz+https://example.com/project/trunk'
+# (or)
+LIBFOO_SITE = 'brz+lp:<project>'
+```
+
+The value after the prefix is a path which will be provided to a `brz export`
+call [^brzexport]. Content from a Bazaar or Git repository will be fetched and
+archived into a file during fetch stage. Once a cached archive is made, the
+fetch stage will be skipped unless the archive is manually removed.
+
 ## Bazaar site
 
 To define a [Bazaar][bazaar]-based location, the site value must be
@@ -178,6 +194,7 @@ more.
 See also [`urlopen_context`](conf-urlopen-context).
 
 
+[^brzexport]: <https://www.breezy-vcs.org/doc/en/user-reference/export-help.html>
 [^bzrexport]: <https://web.archive.org/web/http://doc.bazaar.canonical.com/bzr.2.7/en/user-reference/export-help.html>
 [^cvsmodule]: <https://www.gnu.org/software/trans-coord/manual/cvs/html_node/checkout.html#checkout>
 [^cvsroot]: <https://www.gnu.org/software/trans-coord/manual/cvs/html_node/Specifying-a-repository.html>
@@ -191,6 +208,7 @@ See also [`urlopen_context`](conf-urlopen-context).
 [^urlopen]: <https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>
 
 [bazaar]: https://wikipedia.org/wiki/GNU_Bazaar
+[breezy]: https://www.breezy-vcs.org/
 [cvs]: http://cvs.nongnu.org/
 [git]: https://git-scm.com/
 [mercurial]: https://www.mercurial-scm.org/

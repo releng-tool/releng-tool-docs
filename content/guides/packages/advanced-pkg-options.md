@@ -438,6 +438,8 @@ LIBFOO_STRIP_COUNT = 1
 :::
 :::{versionchanged} 0.17 Support added for `perforce`.
 :::
+:::{versionchanged} 1.4 Support added for `brz+`.
+:::
 
 Explicitly sets the version control system type to use when acquiring
 sources. releng-tool attempts to automatically determine the VCS type of
@@ -448,6 +450,7 @@ what the site value is configured as.
 
 Supported types are as follows:
 
+- `brz` (Breezy)
 - `bzr` (Bazaar)
 - `cvs` (CVS)
 - `git` (Git)

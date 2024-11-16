@@ -239,7 +239,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_TYPE`](pkg-opt-type) = '&lt;type&gt;'
 &nbsp;&nbsp;└── autotools, cargo, cmake, make, meson, python, scons, script, ext-&lt;extension&gt;
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) = '&lt;vcs-type&gt;'
-&nbsp;&nbsp;└── bzr, cvs, git, hg, local, none, perforce, rsync, scp, svn, url
+&nbsp;&nbsp;└── brz, bzr, cvs, git, hg, local, none, perforce, rsync, scp, svn, url
 [`LIBFOO_VERSION`](pkg-opt-version) = '&lt;version&gt;'
 [`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd) = bool or str
 ```
