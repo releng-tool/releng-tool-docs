@@ -183,6 +183,8 @@ Configuration options parsed by releng-tool for a package definition:
 `LIBFOO_BUILD_OPTS` = {'--option': 'value'} or ['--option', 'value']
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-opts), [Cargo](pkg-opt-cargo-build-opts), [CMake](pkg-opt-cmake-build-opts), [Make](pkg-opt-make-build-opts), [Meson](pkg-opt-meson-build-opts), [Python](pkg-opt-python-build-opts), [SCons](pkg-opt-scons-build-opts))*
 [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) = '&lt;subdir&gt;'
+[`LIBFOO_CARGO_NAME`](pkg-opt-cargo-name) = str
+[`LIBFOO_CARGO_NOINSTALL`](pkg-opt-cargo-noinstall) = bool
 [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type) = str
 [`LIBFOO_CMAKE_NOINSTALL`](pkg-opt-cmake-noinstall) = bool
 `LIBFOO_CONF_DEFS` = {'FOO': 'BAR'}
