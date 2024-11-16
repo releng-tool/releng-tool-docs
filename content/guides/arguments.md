@@ -285,6 +285,8 @@ releng-tool libfoo-exec -- mycmd arg1 arg2
 
 Package environment variables will be available for the invoked command.
 
+See also [`RELENG_EXEC`](env-releng-exec).
+
 (action-pkg-extract)=
 ### `<pkg>-extract`
 
