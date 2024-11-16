@@ -86,12 +86,17 @@ from the local system, ensuring a next-build to download fresh sources.
 
 ## Full fetching
 
+:::{versionchanged} 1.4
+Post-fetching will occur after the patching stage instead of the
+extraction phase.
+:::
+
 Most package sources are acquired during the fetch stage. However, some
 packages define dependencies within their sources. This can require
 releng-tool to first fetch a defined package's sources, extract the
 package, followed by fetching any defined dependencies. Post-fetching
 will be automatically performed for supported packages (e.g. Cargo) after
-their extraction stage. Users can invoke the [`fetch-full`](action-fetch-full)
+their patch stage. Users can invoke the [`fetch-full`](action-fetch-full)
 action to explicitly process releng-tool's fetch-post operations:
 
 ```
