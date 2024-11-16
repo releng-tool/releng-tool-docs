@@ -411,7 +411,7 @@ urlopen_context = ssl.create_default_context()
 The option is ignored in non-Windows environments.
 :::
 
-:::{versionadded} 1.14
+:::{versionadded} 1.4
 :::
 
 Allows a project to automatically load Visual Studio Developer Command
