@@ -4,23 +4,30 @@ hide-toc: true
 
 # releng-tool
 
-releng-tool can be used to assist in the building of a project. This
-tool allows a user to define one or more packages to process. Each package has
-the ability to perform several stages: fetching, extraction, patching,
-configuration, building and installation. What a package defines will vary for a
-given project. The simplest type of package is script-based that allows a user
-to define custom scripts on how to perform various stages. A package is not
-required to handle every stage. Helper package types are provided
-(e.g. autotools, CMake, etc.), for projects using common build capabilities.
+releng-tool aims to provide a way for developers to tailor the building of
+multiple software components to help prepare packages for desired runtime
+environments (e.g. cross-platform portable packages, embedded targets, etc.).
+When building a package, assets may be located in multiple locations and may
+require various methods to extract, build and more. releng-tool allows
+developers to define a set of packages, specifying where resources should be
+fetched from, how packages should be extracted and the processes for
+patching, configuring, building and installing each package for a target
+sysroot.
 
 :::{raw} html
 :file: _static/overview-furo.svg
 :::
 
-While this tool can assist in the configuration and building of a project, the
-framework does not attempt to provide a perfect sandbox for the process. Users
-defining their projects will have ownership on what compilers/toolchains are
-used and the interaction between the staging/target area and the host system.
+The structure of a package depends on the specific project. The simplest
+type is a script-based package, where users can define custom scripts for
+various stages. A package does not need to handle every stage. Helper
+package types are available (e.g. autotools, Cargo, CMake, Make, Meson,
+various Python types, and SCons) for projects using common build systems.
+
+While releng-tool assists in configuring and building projects, it does not
+aim to provide a perfect sandbox for the process. Users are responsible
+for defining the compilers/toolchains used and managing the interaction
+between the staging/target area and the host system.
 
 :::{toctree}
 :maxdepth: 5
