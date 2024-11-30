@@ -23,7 +23,7 @@ project folder:
     └── releng-tool.rt
 ```
 
-Which then `releng` can be configured to use the header contents:
+Which then `releng-tool.rt` can be configured to use the header contents:
 
 ```python
 import os
