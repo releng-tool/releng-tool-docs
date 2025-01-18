@@ -60,7 +60,6 @@ To build [htop][htop], this requires two dependencies:
 Build a new project with the following structure to support our `htop`
 package, dependencies and project configuration:
 
-
 ```
 └── my-tc-project/
     ├── package/
