@@ -106,6 +106,29 @@ standard Python distribution. For example, if a PDM setup type is set,
 the host system will need to have `pdm` Python module installed on
 the system.
 
+(pkg-opt-python-use-installer)=
+## `LIBFOO_PYTHON_USE_INSTALLER`
+
+:::{versionadded} 2.0
+:::
+
+Forces a Python package to use the [`installer`][installer] module when
+installing to their destination folders. While most modules already use
+the installer module, this option can be used to override package types
+that provide their own installation method. For example, packages using
+`setuptools` can use this option to allow building with setuptools, but
+instead use the installer module for installation.
+
+For example:
+
+```python
+LIBFOO_PYTHON_USE_INSTALLER = True
+```
+
+When using this option, ensure [`wheel`][wheel] is available to help build
+as packages will be built with `bdist_wheel` instead of `build`.
+
+
 [distutils]: https://docs.python.org/3.11/library/distutils.html
 [flit]: https://flit.pypa.io
 [hatch]: https://hatch.pypa.io
@@ -115,3 +138,4 @@ the system.
 [pypa-build]: https://build.pypa.io/
 [python]: https://www.python.org/
 [setuptools]: https://setuptools.pypa.io
+[wheel]: https://wheel.readthedocs.io/

@@ -230,6 +230,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter) = '&lt;path&gt;'
 [`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) = '&lt;setup-type&gt;'
 &nbsp;&nbsp;└── distutils, setuptools, flit, hatch, pdm, pep517, poetry
+[`LIBFOO_PYTHON_USE_INSTALLER`](pkg-opt-python-use-installer) = bool
 [`LIBFOO_REMOTE_CONFIG`](pkg-opt-remote-config) = bool
 [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) = bool
 [`LIBFOO_REVISION`](pkg-opt-revision) = '&lt;revision&gt;'
