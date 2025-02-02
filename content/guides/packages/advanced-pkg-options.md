@@ -350,7 +350,7 @@ prefix value.
 LIBFOO_PREFIX = '/usr'
 ```
 
-See also [`sysroot_prefix`](conf-sysroot-prefix).
+See also [`PREFIX`](env-prefix) and [`sysroot_prefix`](conf-sysroot-prefix).
 
 (pkg-opt-remote-config)=
 ## `LIBFOO_REMOTE_CONFIG`

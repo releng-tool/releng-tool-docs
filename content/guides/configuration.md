@@ -204,7 +204,7 @@ prefix is typically set to `/usr`; for Windows, the value is empty.
 sysroot_prefix = '/usr'
 ```
 
-See also [`LIBFOO_PREFIX`](pkg-opt-prefix).
+See also [`LIBFOO_PREFIX`](pkg-opt-prefix) and [`PREFIX`](env-prefix).
 
 (conf-url-mirror)=
 ### `url_mirror`

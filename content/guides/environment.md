@@ -259,6 +259,9 @@ The sysroot prefix for the package. By default, this value is configured
 to `/usr`; with the exception of Windows builds where this value is empty
 by default.
 
+See also [`LIBFOO_PREFIX`](pkg-opt-prefix) and
+[`sysroot_prefix`](conf-sysroot-prefix).
+
 (env-prefixed-host-dir)=
 ### `PREFIXED_HOST_DIR`
 
