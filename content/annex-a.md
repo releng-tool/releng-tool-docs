@@ -212,11 +212,11 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_GIT_VERIFY_REVISION`](pkg-opt-git-verify-revision) = bool
 [`LIBFOO_HOST_PROVIDES`](pkg-opt-host-provides) = '&lt;tool&gt;' or ['&lt;tool-a&gt;', '&lt;tool-b&gt;']
 `LIBFOO_INSTALL_DEFS` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-defs), [Cargo](pkg-opt-cargo-install-defs), [CMake](pkg-opt-cmake-install-defs), [Make](pkg-opt-make-install-defs), [Meson](pkg-opt-meson-install-defs), [Python](pkg-opt-python-install-defs), [SCons](pkg-opt-scons-install-defs))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-defs), [Cargo](pkg-opt-cargo-install-defs), [CMake](pkg-opt-cmake-install-defs), [Make](pkg-opt-make-install-defs), [Meson](pkg-opt-meson-install-defs), [SCons](pkg-opt-scons-install-defs))*
 `LIBFOO_INSTALL_ENV` = {'FOO': 'BAR'}
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-env), [Cargo](pkg-opt-cargo-install-env), [CMake](pkg-opt-cmake-install-env), [Make](pkg-opt-make-install-env), [Meson](pkg-opt-meson-install-env), [Python](pkg-opt-python-install-env), [SCons](pkg-opt-scons-install-env))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-env), [Cargo](pkg-opt-cargo-install-env), [CMake](pkg-opt-cmake-install-env), [Make](pkg-opt-make-install-env), [Meson](pkg-opt-meson-install-env), [SCons](pkg-opt-scons-install-env))*
 `LIBFOO_INSTALL_OPTS` = {'--option': 'value'} or ['--option', 'value']
-&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-opts), [Cargo](pkg-opt-cargo-install-opts), [CMake](pkg-opt-cmake-install-opts), [Make](pkg-opt-make-install-opts), [Meson](pkg-opt-meson-install-opts), [Python](pkg-opt-python-install-opts), [SCons](pkg-opt-scons-install-opts))*
+&nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-opts), [Cargo](pkg-opt-cargo-install-opts), [CMake](pkg-opt-cmake-install-opts), [Make](pkg-opt-make-install-opts), [Meson](pkg-opt-meson-install-opts), [SCons](pkg-opt-scons-install-opts))*
 [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) = '&lt;install-type&gt;'
 &nbsp;&nbsp;└── host, images, staging, staging_and_target, target
 [`LIBFOO_INTERNAL`](pkg-opt-internal) = bool
@@ -228,10 +228,11 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files) = '&lt;file&gt;' or ['&lt;file&gt;', '&lt;file&gt;']
 [`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir) = '&lt;subdir&gt;'
 [`LIBFOO_PREFIX`](pkg-opt-prefix) = '&lt;path&gt;' # '/usr'
+[`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`](pkg-opt-python-installer-launcher-kind) = str
+[`LIBFOO_PYTHON_INSTALLER_SCHEME`](pkg-opt-python-installer-scheme) = dict or str
 [`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter) = '&lt;path&gt;'
 [`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) = '&lt;setup-type&gt;'
 &nbsp;&nbsp;└── distutils, setuptools, flit, hatch, pdm, pep517, poetry
-[`LIBFOO_PYTHON_USE_INSTALLER`](pkg-opt-python-use-installer) = bool
 [`LIBFOO_REMOTE_CONFIG`](pkg-opt-remote-config) = bool
 [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) = bool
 [`LIBFOO_REVISION`](pkg-opt-revision) = '&lt;revision&gt;'

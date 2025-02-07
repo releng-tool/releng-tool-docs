@@ -43,19 +43,100 @@ Python package.
 :::{include} _pkg-env.md
 :::
 
-(pkg-opt-python-install-defs)=
-:::{include} _pkg-install-defs.md
-:::
-:::{include} _pkg-install-defs-example-default.md
+## `LIBFOO_INSTALL_DEFS`
+
+:::{versionremoved} 2.0 
+No longer applicable as all Python packages are  installed using the
+[`installer`][installer] module.
 :::
 
-(pkg-opt-python-install-env)=
-:::{include} _pkg-install-env.md
+## `LIBFOO_INSTALL_ENV`
+
+:::{versionremoved} 2.0
+No longer applicable as all Python packages are installed using the
+[`installer`][installer] module.
 :::
 
-(pkg-opt-python-install-opts)=
-:::{include} _pkg-install-opts.md
+## `LIBFOO_INSTALL_OPTS`
+
+:::{versionremoved} 2.0
+No longer applicable as all Python packages are installed using the
+[`installer`][installer] module.
 :::
+
+(pkg-opt-python-installer-launcher-kind)=
+## `LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`
+
+:::{versionadded} 2.0
+:::
+
+Defines the launcher-kind to build when generating any executable scripts
+defined in the Python package's project configuration (`pyproject.toml`).
+By default, the launcher-kind is chosen based on the host platform building
+the package. Supported options are dictated by [`installer`][installer].
+Options may include:
+
+- `posix`
+- `win-amd64`
+- `win-arm64`
+- `win-arm`
+- `win-ia32`
+
+For example, to explicitly build POSIX executable scripts, the following
+configuration can be defined:
+
+```
+LIBFOO_PYTHON_INSTALLER_SCHEME = 'posix'
+```
+
+(pkg-opt-python-installer-scheme)=
+## `LIBFOO_PYTHON_INSTALLER_SCHEME`
+
+:::{versionadded} 2.0
+:::
+
+Defines the installation scheme used for Python packages. By default,
+releng-tool uses the following scheme entries:
+
+| Path        | Installation directory |
+| ----------: | :- |
+| data        | `prefix`
+| include     | `prefix/include/python`
+| platinclude | `prefix/include/python`
+| platlib     | `prefix/lib/python`
+| platstdlib  | `prefix/lib/python`
+| purelib     | `prefix/lib/python`
+| scripts     | `prefix/bin`
+| stdlib      | `prefix/lib/python`
+
+A package can be configured with a scheme `native` to use the default
+install target based on the native system:
+
+```
+LIBFOO_PYTHON_INSTALLER_SCHEME = 'native'
+```
+
+Packages can also use schemes supported by Python's [`sysconfig`][sysconfig]
+module. For example:
+
+```
+LIBFOO_PYTHON_INSTALLER_SCHEME = 'posix_prefix'
+```
+
+A package may also define a custom scheme:
+
+```
+LIBFOO_PYTHON_INSTALLER_SCHEME = {
+    'data':        '',
+    'include':     'include/python',
+    'platinclude': 'include/python',
+    'platlib':     'lib/python',
+    'platstdlib':  'lib/python',
+    'purelib':     'lib/python',
+    'scripts':     'bin',
+    'stdlib':      'lib/python',
+}
+```
 
 (pkg-opt-python-interpreter)=
 ## `LIBFOO_PYTHON_INTERPRETER`
@@ -74,6 +155,9 @@ LIBFOO_PYTHON_INTERPRETER = '<path>'
 :::{versionadded} 0.13
 :::
 :::{versionchanged} 0.14 Support added for `poetry`.
+:::
+:::{versionchanged} 2.0
+Use of [`installer`][installer] is required for all package types.
 :::
 
 The setup type will configure how a Python package is built and installed.
@@ -97,36 +181,16 @@ For example:
 LIBFOO_PYTHON_SETUP_TYPE = 'setuptools'
 ```
 
-For setup types other than Setuptools/distutils, the [`installer`][installer]
-module will be used to install packages to their destination folders.
-
 Host environments are required to pre-install needed packages in their
 running Python environment to support setup types not available in a
 standard Python distribution. For example, if a PDM setup type is set,
 the host system will need to have `pdm` Python module installed on
 the system.
 
-(pkg-opt-python-use-installer)=
-## `LIBFOO_PYTHON_USE_INSTALLER`
-
-:::{versionadded} 2.0
-:::
-
-Forces a Python package to use the [`installer`][installer] module when
-installing to their destination folders. While most modules already use
-the installer module, this option can be used to override package types
-that provide their own installation method. For example, packages using
-`setuptools` can use this option to allow building with setuptools, but
-instead use the installer module for installation.
-
-For example:
-
-```python
-LIBFOO_PYTHON_USE_INSTALLER = True
-```
-
-When using this option, ensure [`wheel`][wheel] is available to help build
-as packages will be built with `bdist_wheel` instead of `build`.
+The [`installer`][installer] module will be used to install packages to
+their destination folders. For  Setuptools/distutils packages, ensure
+[`wheel`][wheel] is available to help build as packages will be built
+with `bdist_wheel`.
 
 
 [distutils]: https://docs.python.org/3.11/library/distutils.html
@@ -138,4 +202,5 @@ as packages will be built with `bdist_wheel` instead of `build`.
 [pypa-build]: https://build.pypa.io/
 [python]: https://www.python.org/
 [setuptools]: https://setuptools.pypa.io
+[sysconfig]: https://docs.python.org/3/library/sysconfig.html
 [wheel]: https://wheel.readthedocs.io/
