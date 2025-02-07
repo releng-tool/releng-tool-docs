@@ -49,6 +49,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`-j`, `--jobs <jobs>`](arg-jobs)
 [`-L`, `--local-sources [[<pkg>:]<dir>]`](arg-local-sources)
 [`--nocolorout`](arg-nocolorout)
+[`--only-mirror`](arg-only-mirror)
 [`--out-dir <dir>`](arg-out-dir)
 [`--relaxed-args`](arg-relaxed-args)
 [`--root-dir <dir>`](arg-root-dir)

@@ -621,6 +621,17 @@ releng-tool respects the [`NO_COLOR`][no-color] environment variable, if
 configured in the running environment.
 ```
 
+(arg-only-mirror)=
+### `--only-mirror`
+
+Only fetch [external](pkg-opt-external) projects with configured mirror.
+
+When releng-tool is fetching sources with [`url_mirror`](conf-url-mirror)
+configured, package downloads will be first attempted on the mirror before
+using their package-defined site. If a developer wishes to enforce a build
+to only download external packages from the configured mirror, this option
+can be provided when invoking releng-tool.
+
 (arg-out-dir)=
 ### `--out-dir <dir>`
 
