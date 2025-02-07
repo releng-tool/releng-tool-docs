@@ -188,6 +188,44 @@ are listed below:
     :noindex:
 ```
 
+## Available variables
+
+The following variables are registered in the global context for any
+project or package definition/script.
+
+### `releng_args`
+
+A list of arguments forwarded into a releng-tool invoke. If a caller uses
+the `--` argument, all trailing arguments will be populated into
+"forwarded argument" list. A project may use these arguments for their own
+tailoring.
+
+A user can use Python's [`argparse`][argparse] module to manage custom
+arguments. For example, if trying to add a new flag `--custom` to a build,
+the following can be added into a project's `releng-tool.rt` definition:
+
+```python
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--custom', action='store_true')
+args = parser.parse_args(args=releng_args)
+print(args.custom)
+```
+
+The flag can be enabled by invoking releng-tool using:
+
+```
+releng-tool -- --custom
+```
+
+### `releng_version`
+
+The version of releng-tool.
+
+```python
+print(f'Using version {releng_version}')
+```
+
 ## Importing helpers
 
 Scripts directly invoked by releng-tool will automatically have these helpers
@@ -205,3 +243,6 @@ Or, if desired, all helper methods can be imported at once:
 ```python
 from releng_tool import *
 ```
+
+
+[argparse]: https://docs.python.org/3/library/argparse.html
