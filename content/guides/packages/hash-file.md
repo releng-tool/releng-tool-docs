@@ -68,5 +68,23 @@ sha1 602effb4893c7504ffee8a8efcd265d86cd21609 LICENSE
 sha1 9e79b84ef32e911f8056d80a311cf281b2121469 LICENSE
 ```
 
+If operating in a [development mode](/guides/development-mode) where an
+external package is configured with an alternative revision, hash checks
+will for a package can fail. A developer can override hash checks for a
+specific revision by adding an additional file in the package directory.
+The format is `libfoo.hash-<revision>`. For example, if a development
+run points to a package revision `canary`, if a file named
+`libfoo.hash-canary` exists, it will be used as the source of hashes for
+this revision.
+
+```
+└── my-releng-tool-project/
+    ├── package/
+    │   └── libfoo/
+    │       ├── libfoo.hash
+    │       ├── libfoo.hash-canary    <----
+    │       └── libfoo.rt
+    ...
+```
 
 [^hashlib]: <https://docs.python.org/library/hashlib.html>
