@@ -218,6 +218,19 @@ definition.
 url_mirror = 'ftp://mirror.example.org/data/'
 ```
 
+The `url_mirror` configuration also accepts the following format options:
+
+- `name`: the name of a package
+- `version`: the version of a package
+
+For example:
+
+```python
+url_mirror = 'ftp://mirror.example.org/cache/{name}/'
+```
+
+Where `{name}` will be replaced by the package name being fetched.
+
 ## Advanced options
 
 A list of more advanced configuration options are as follows:
