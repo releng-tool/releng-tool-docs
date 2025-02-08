@@ -64,6 +64,26 @@ No longer applicable as all Python packages are installed using the
 [`installer`][installer] module.
 :::
 
+(pkg-opt-python-dist-path)=
+## `LIBFOO_PYTHON_DIST_PATH`
+
+:::{versionadded} 2.0
+:::
+
+When a Python package is built, it will scan the `dist/` directory in
+package's output directory for a wheel package. It is possible for some
+Python packages to configure their projects to output built wheels into an
+alternative path. If an alternative path is configured, releng-tool will
+fail to find and install the package.
+
+This option informs releng-tool what container folder hosts the provided
+wheel package. For example, if the Python package configures itself to
+output into `build/dist`, the following configuration can be used:
+
+```
+LIBFOO_PYTHON_DIST_PATH = 'build/dist'
+```
+
 (pkg-opt-python-installer-launcher-kind)=
 ## `LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`
 
