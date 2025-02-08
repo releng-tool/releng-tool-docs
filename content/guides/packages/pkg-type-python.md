@@ -45,7 +45,7 @@ Python package.
 
 ## `LIBFOO_INSTALL_DEFS`
 
-:::{versionremoved} 2.0 
+:::{versionremoved} 2.0
 No longer applicable as all Python packages are  installed using the
 [`installer`][installer] module.
 :::
@@ -178,6 +178,9 @@ LIBFOO_PYTHON_INTERPRETER = '<path>'
 :::
 :::{versionchanged} 2.0
 Use of [`installer`][installer] is required for all package types.
+:::
+:::{deprecated} 2.0
+Support for `distutils` packages is deprecated.
 :::
 
 The setup type will configure how a Python package is built and installed.

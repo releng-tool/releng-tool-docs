@@ -440,6 +440,9 @@ LIBFOO_STRIP_COUNT = 1
 :::
 :::{versionchanged} 1.4 Support added for `brz+`.
 :::
+:::{deprecated} 2.0
+Support for `bzr` (Bazaar) sites is deprecated.
+:::
 
 Explicitly sets the version control system type to use when acquiring
 sources. releng-tool attempts to automatically determine the VCS type of

@@ -110,6 +110,8 @@ following outline a series of supported site definitions:
 :::
 :::{versionchanged} 1.4 Support added for `brz+`.
 :::
+:::{deprecated} 2.0 Support for Bazaar sites is deprecated.
+:::
 
 | Type      | Prefix/Postfix |
 | --------: | :- |

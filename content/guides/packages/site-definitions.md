@@ -28,6 +28,9 @@ fetch stage will be skipped unless the archive is manually removed.
 
 ## Bazaar site
 
+:::{deprecated} 2.0 Support for Bazaar sites is deprecated.
+:::
+
 To define a [Bazaar][bazaar]-based location, the site value must be
 prefixed with a `bzr+` value. A site can be defined as follows:
 
