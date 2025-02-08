@@ -184,9 +184,9 @@ Configuration options parsed by releng-tool for a package definition:
 `LIBFOO_BUILD_OPTS` = {'--option': 'value'} or ['--option', 'value']
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-build-opts), [Cargo](pkg-opt-cargo-build-opts), [CMake](pkg-opt-cmake-build-opts), [Make](pkg-opt-make-build-opts), [Meson](pkg-opt-meson-build-opts), [Python](pkg-opt-python-build-opts), [SCons](pkg-opt-scons-build-opts))*
 [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) = '&lt;subdir&gt;'
-[`LIBFOO_CARGO_NAME`](pkg-opt-cargo-name) = str
+[`LIBFOO_CARGO_NAME`](pkg-opt-cargo-name) = '&lt;name&gt;'
 [`LIBFOO_CARGO_NOINSTALL`](pkg-opt-cargo-noinstall) = bool
-[`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type) = str
+[`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type) = '&lt;build-type&gt;'
 [`LIBFOO_CMAKE_NOINSTALL`](pkg-opt-cmake-noinstall) = bool
 `LIBFOO_CONF_DEFS` = {'FOO': 'BAR'}
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-conf-defs), [CMake](pkg-opt-cmake-conf-defs), [Make](pkg-opt-make-conf-defs), [Meson](pkg-opt-meson-conf-defs), [SCons](pkg-opt-scons-conf-defs))*
@@ -230,6 +230,8 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_PREFIX`](pkg-opt-prefix) = '&lt;path&gt;' # '/usr'
 [`LIBFOO_PYTHON_DIST_PATH`](pkg-opt-python-dist-path) = '&lt;path&gt;'  # e.g. 'dist/'
 [`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`](pkg-opt-python-installer-launcher-kind) = str
+[`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`](pkg-opt-python-installer-launcher-kind) = '&lt;kind&gt;'
+&nbsp;&nbsp;└── posix, win-amd64, win-arm64, win-arm, win-ia32
 [`LIBFOO_PYTHON_INSTALLER_SCHEME`](pkg-opt-python-installer-scheme) = dict or str
 [`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter) = '&lt;path&gt;'
 [`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) = '&lt;setup-type&gt;'
