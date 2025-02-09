@@ -440,8 +440,16 @@ LIBFOO_STRIP_COUNT = 1
 :::
 :::{versionchanged} 1.4 Support added for `brz`.
 :::
+:::{versionchanged} 2.0 Support added for `file`.
+:::
 :::{deprecated} 2.0
 Support for `bzr` (Bazaar) sites is deprecated.
+:::
+:::{deprecated} 2.0
+URL types no longer accept `file://` URIs. Packages explicitly defining
+a `url` type with a file URI will automatically be converted into a `file`
+type. Projects should switch to defining `file` if they wish to explicitly
+set the VCS type.
 :::
 
 Explicitly sets the version control system type to use when acquiring
@@ -456,6 +464,7 @@ Supported types are as follows:
 - `brz` (Breezy)
 - `bzr` (Bazaar)
 - `cvs` (CVS)
+- `file` (File URI)
 - `git` (Git)
 - `hg`  (Mercurial)
 - `local` (no VCS; local interim-development package)

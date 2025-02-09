@@ -64,6 +64,17 @@ fetched and archived into a file during fetch stage. Once a cached archive
 is made, the fetch stage will be skipped unless the archive is manually
 removed.
 
+## File site
+
+Site type dedicated for accepting a file uniform resource identifier
+(`file://`). The site value also accepts the `file+` prefix.
+
+```python
+LIBFOO_SITE = 'file:///mnt/share/libfoo.tgz'
+# (or)
+LIBFOO_SITE = 'file+/mnt/share/libfoo.tgz'
+```
+
 ## Git site
 
 To define a [Git][git]-based location, the site value must be prefixed with
@@ -191,8 +202,7 @@ LIBFOO_SITE = 'https://example.com/my-file'
 
 The site value provided will be directly used in a URL request. URL values
 supported are defined by the Python's `urlopen` implementation [^urlopen],
-which includes (but not limited to) `http(s)://`, `ftp://`, `file://` and
-more.
+which includes (but not limited to) `http(s)://`, `ftp://` and more.
 
 See also [`urlopen_context`](conf-urlopen-context).
 

@@ -110,6 +110,8 @@ following outline a series of supported site definitions:
 :::
 :::{versionchanged} 1.4 Support added for `brz+`.
 :::
+:::{versionchanged} 2.0 Support added for `file+`.
+:::
 :::{deprecated} 2.0 Support for Bazaar sites is deprecated.
 :::
 
@@ -118,6 +120,7 @@ following outline a series of supported site definitions:
 | Breezy    | `brz+`
 | Bazaar    | `bzr+`
 | CVS       | `cvs+`
+| File      | `file+` or `file://`
 | Git       | `git+` or `.git`
 | Mercurial | `hg+`
 | Perforce  | `perforce+`
