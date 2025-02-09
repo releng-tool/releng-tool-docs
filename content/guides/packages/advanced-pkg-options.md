@@ -525,5 +525,5 @@ releng-tool project, thus using the `local` type will always generate a
 warning message.
 
 
-[git--depth]: https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt---depthltdepthgt
+[git--depth]: https://git-scm.com/docs/git-clone#Documentation/git-clone.txt-code--depthltdepthgtcode
 [git-config]: https://git-scm.com/docs/git-config

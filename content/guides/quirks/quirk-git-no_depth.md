@@ -16,4 +16,4 @@ releng-tool --quirk releng.git.no_depth
 - [](quirks)
 
 
-[git--depth]: https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---depthltdepthgt
+[git--depth]: https://git-scm.com/docs/git-clone#Documentation/git-clone.txt-code--depthltdepthgtcode
