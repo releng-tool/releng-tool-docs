@@ -171,6 +171,21 @@ Other environment variables accepted by releng-tool:
 [`RELENG_OUTPUT_DIR`](env-releng-out-dir)
 ```
 
+## Package types
+
+Package types supported by releng-tool:
+
+```{parsed-literal}
+[Autotools](/guides/packages/pkg-type-autotools)
+[CMake](/guides/packages/pkg-type-cmake)
+[Cargo](/guides/packages/pkg-type-cargo)
+[Make](/guides/packages/pkg-type-make)
+[Meson](/guides/packages/pkg-type-meson)
+[Python](/guides/packages/pkg-type-python)
+[SCons](/guides/packages/pkg-type-scons)
+[Script](/guides/packages/pkg-type-script) *(default)*
+```
+
 ## Package options
 
 Configuration options parsed by releng-tool for a package definition:
