@@ -74,8 +74,8 @@ Options which are read by releng-tool from a project's configuration script:
 [`extra_licenses`](conf-extra-licenses) = {'&lt;short-license-id&gt;': '&lt;license-name&gt;'}
 [`license_header`](conf-license-header) = '&lt;data&gt;'
 [`override_extract_tools`](conf-override-extract-tools) = {'&lt;tool&gt;': '&lt;tool-path&gt;'}
-[`override_revisions`](conf-override-revisions) = {'&lt;pkg&gt;': '&lt;revision&gt;'}
-[`override_sites`](conf-override-sites) = {'&lt;pkg&gt;': '&lt;site&gt;'}
+[`override_revisions`](conf-override-revisions) = {'&lt;pkg&gt;': '&lt;revision&gt;'}   *(deprecated)*
+[`override_sites`](conf-override-sites) = {'&lt;pkg&gt;': '&lt;site&gt;'}   *(deprecated)*
 [`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;']
 [`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
 [`quirks`](conf-quirks) = ['&lt;quirk-id&gt;']
@@ -195,7 +195,7 @@ Configuration options parsed by releng-tool for a package definition:
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-conf-env), [CMake](pkg-opt-cmake-conf-env), [Make](pkg-opt-make-conf-env), [Meson](pkg-opt-meson-conf-env), [SCons](pkg-opt-scons-conf-env))*
 `LIBFOO_CONF_OPTS` = {'--option': 'value'} or ['--option', 'value']
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-conf-opts), [CMake](pkg-opt-cmake-conf-opts), [Make](pkg-opt-make-conf-opts), [Meson](pkg-opt-meson-conf-opts), [SCons](pkg-opt-scons-conf-opts))*
-[`LIBFOO_DEPENDENCIES`](pkg-opt-dependencies) = ['&lt;pkg&gt;', '&lt;pkg&gt;']
+[`LIBFOO_DEPENDENCIES`](pkg-opt-dependencies) = ['&lt;pkg&gt;', '&lt;pkg&gt;']   *(deprecated)*
 [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache) = bool
 [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) = '&lt;revision&gt;'
 `LIBFOO_ENV` = {'FOO': 'BAR'}
@@ -240,8 +240,8 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) = bool
 [`LIBFOO_REVISION`](pkg-opt-revision) = '&lt;revision&gt;'
 [`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall) = bool
-[`LIBFOO_SKIP_REMOTE_CONFIG`](pkg-opt-skip-remote-config) = bool
-[`LIBFOO_SKIP_REMOTE_SCRIPTS`](pkg-opt-skip-remote-scripts) = bool
+[`LIBFOO_SKIP_REMOTE_CONFIG`](pkg-opt-skip-remote-config) = bool   *(deprecated)*
+[`LIBFOO_SKIP_REMOTE_SCRIPTS`](pkg-opt-skip-remote-scripts) = bool   *(deprecated)*
 [`LIBFOO_SITE`](pkg-opt-site) = '&lt;site&gt;'
 [`LIBFOO_STRIP_COUNT`](pkg-opt-strip-count) = int # &gt;= 0
 [`LIBFOO_TYPE`](pkg-opt-type) = '&lt;type&gt;'
