@@ -115,19 +115,19 @@ following outline a series of supported site definitions:
 :::{deprecated} 2.0 Support for Bazaar sites is deprecated.
 :::
 
-| Type      | Prefix/Postfix |
-| --------: | :- |
-| Breezy    | `brz+`
-| Bazaar    | `bzr+`
-| CVS       | `cvs+`
-| File      | `file+` or `file://`
-| Git       | `git+` or `.git`
-| Mercurial | `hg+`
-| Perforce  | `perforce+`
-| rsync     | `rsync+`
-| SCP       | `scp+`
-| SVN       | `svn+`
-| URL       | `(wildcard)`
+| Type                        | Prefix/Postfix |
+| --------------------------: | :- |
+| [Breezy](site-breezy)       | `brz+`
+| [Bazaar](site-bazaar)       | `bzr+` *(deprecated)*
+| [CVS](site-cvs)             | `cvs+`
+| [File](site-file)           | `file+` or `file://`
+| [Git](site-git)             | `git+` or `.git`
+| [Mercurial](site-mercurial) | `hg+`
+| [Perforce](site-perforce)   | `perforce+`
+| [rsync](site-rsync)         | `rsync+`
+| [SCP](site-scp)             | `scp+`
+| [SVN](site-svn)             | `svn+`
+| [URL](site-url)             | `(wildcard)`
 
 Examples include:
 
@@ -145,8 +145,7 @@ LIBFOO_SITE = {
 A developer can also use [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) to
 explicitly define the version control system type without the need for a
 prefix hint. The use of a dictionary value is only useful when operating in
-[development mode](/guides/development-mode). For more information on each
-type's formatting, see [site definitions](site-definitions).
+[development mode](/guides/development-mode).
 
 Using a specific type will create a dependency for a project that the
 respective host tool is installed on the host system. For example, if a
@@ -160,7 +159,8 @@ for custom site protocols.
 Specifying a [local site](site-local) value with `local` will automatically
 configure a VCS-type of `local`.
 
-See also [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type).
+See also [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) and
+[site definitions](site-definitions).
 
 (pkg-opt-type)=
 ## `LIBFOO_TYPE`

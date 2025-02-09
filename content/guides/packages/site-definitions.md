@@ -10,6 +10,7 @@ Git sources); however, this is optional if a package wishes to use the
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) option.
 ```
 
+(site-breezy)=
 ## Breezy site
 
 To define a [Breezy][breezy]-based location, the site value must be
@@ -26,6 +27,7 @@ call [^brzexport]. Content from a Bazaar or Git repository will be fetched and
 archived into a file during fetch stage. Once a cached archive is made, the
 fetch stage will be skipped unless the archive is manually removed.
 
+(site-bazaar)=
 ## Bazaar site
 
 :::{deprecated} 2.0 Support for Bazaar sites is deprecated.
@@ -45,6 +47,7 @@ call [^bzrexport]. Content from a Bazaar repository will be fetched and
 archived into a file during fetch stage. Once a cached archive is made, the
 fetch stage will be skipped unless the archive is manually removed.
 
+(site-cvs)=
 ## CVS site
 
 To define a [CVS][cvs]-based location, the site value must be prefixed
@@ -64,6 +67,7 @@ fetched and archived into a file during fetch stage. Once a cached archive
 is made, the fetch stage will be skipped unless the archive is manually
 removed.
 
+(site-file)=
 ## File site
 
 Site type dedicated for accepting a file uniform resource identifier
@@ -75,6 +79,7 @@ LIBFOO_SITE = 'file:///mnt/share/libfoo.tgz'
 LIBFOO_SITE = 'file+/mnt/share/libfoo.tgz'
 ```
 
+(site-git)=
 ## Git site
 
 To define a [Git][git]-based location, the site value must be prefixed with
@@ -109,6 +114,7 @@ to a `local` VCS type as well. Note that a local package is intended for
 development/testing/training purposes. See
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) for more information.
 
+(site-mercurial)=
 ## Mercurial site
 
 To define a [Mercurial][mercurial]-based location, the site value must be
@@ -125,6 +131,7 @@ repository. If a desired revision exists, content will be acquired from the
 cache location. If a desired revision does not exist, the origin remote will be
 pulled for the new revision (if it exists).
 
+(site-perforce)=
 ## Perforce site
 
 To define a Perforce-based location, the site value must be prefixed with
@@ -145,6 +152,7 @@ installed. Content from a Perforce depot will be fetched and archived into
 a file during fetch stage. Once a cached archive is made, the fetch stage
 ill be skipped unless the archive is manually removed.
 
+(site-rsync)=
 ## rsync site
 
 To define an rsync-based location, the site value must be prefixed with an
@@ -161,6 +169,7 @@ is manually removed. By default, the `--recursive` argument is applied.
 Adding or replacing options can be done by using the
 [`LIBFOO_FETCH_OPTS`](pkg-opt-fetch-opts) option.
 
+(site-scp)=
 ## SCP site
 
 To define an SCP-based location, the site value must be prefixed with a `scp+`
@@ -175,6 +184,7 @@ The value after the prefix is a path which will be provided to a `scp` call's
 a remote host. The fetched file will be stored inside the `dl` directory. Once
 fetched, the fetch stage will be skipped unless the file is manually removed.
 
+(site-svn)=
 ## SVN site
 
 To define a [Subversion][subversion]-based location, the site value must be
@@ -189,6 +199,7 @@ The value after the prefix is a path which will be provided to a
 be fetched and archived into a file during fetch stage. Once a cached archive
 is made, the fetch stage will be skipped unless the archive is manually removed.
 
+(site-url)=
 ## URL site (default)
 
 All packages that do not define a helper prefix/postfix value (as seen
