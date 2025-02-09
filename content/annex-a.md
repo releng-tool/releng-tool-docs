@@ -229,7 +229,6 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir) = '&lt;subdir&gt;'
 [`LIBFOO_PREFIX`](pkg-opt-prefix) = '&lt;path&gt;' # '/usr'
 [`LIBFOO_PYTHON_DIST_PATH`](pkg-opt-python-dist-path) = '&lt;path&gt;'  # e.g. 'dist/'
-[`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`](pkg-opt-python-installer-launcher-kind) = str
 [`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`](pkg-opt-python-installer-launcher-kind) = '&lt;kind&gt;'
 &nbsp;&nbsp;└── posix, win-amd64, win-arm64, win-arm, win-ia32
 [`LIBFOO_PYTHON_INSTALLER_SCHEME`](pkg-opt-python-installer-scheme) = dict or str
