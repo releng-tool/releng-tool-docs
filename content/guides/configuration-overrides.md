@@ -1,5 +1,11 @@
 # Configuration overrides
 
+:::{deprecated} 2.0
+The use of a `releng-overrides` script is deprecated. Various override
+capabilities noted below can either be supported in a `releng-tool.rt`
+configuration or have alternative approaches to performing overrides.
+:::
+
 If a builder needs to (for example) override a tool location or package site, a
 user can define either environment options or setup a configuration override
 script `releng-overrides`:
@@ -21,23 +27,15 @@ hosts (e.g. injecting overrides when running with legacy build images).
 
 ## Extraction tool overrides
 
-The `override_extract_tools` option inside a configuration override script
-allows a dictionary to be provided to map an extension type to an external tool
-to indicate which tool should be used for extraction. For example, when a
-`.zip` archive is being processed for extraction, releng-tool will internally
-extract the archive. However, a user may wish to override this tool with their
-own extraction utility. Consider the following example:
-
-```python
-override_extract_tools = {
-    'zip': '/opt/my-custom-unzip {file} {dir}',
-}
-```
-
-The `{file}` key will be replaced with the file to be extracted, and the
-`{dir}` key will be replaced where the contents should extract to.
+See [`override_extract_tools`](conf-override-extract-tools).
 
 ## Revision overrides
+
+:::{deprecated} 2.0
+The use of revision overrides is deprecated.
+Users wanting to override revisions without source modification are
+recommended to use [variable injection](arg-variable-injection).
+:::
 
 The `override_revisions` option inside a configuration override script allows
 a dictionary to be provided to map a package name to a new revision value.
@@ -58,6 +56,12 @@ The above example shows that package `module-b` will fetch using a test branch
 instead of what is defined in the actual package definition.
 
 ## Site overrides
+
+:::{deprecated} 2.0
+The use of site overrides is deprecated.
+Users wanting to override sites without source modification are
+recommended to use [variable injection](arg-variable-injection).
+:::
 
 The `override_sites` option inside a configuration override script allows a
 dictionary to be provided to map a package name to a new site value. There may
