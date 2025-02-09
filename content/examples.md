@@ -1,6 +1,11 @@
 # Examples
 
 :::{tip}
+New developers may be interested in reading the
+[tutorials](/getting-started/tutorials) section for step-by-step examples.
+:::
+
+:::{tip}
 Developers wishing to quickly generate an initial project skeleton in
 their working directory can use the `init` action:
 
