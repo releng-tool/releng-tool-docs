@@ -76,15 +76,4 @@ override_sites = {
 
 ## Tool overrides
 
-Environment variables can be used to help override external tool invoked by the
-releng-tool process. For example, when invoking CMake-based projects, the tool
-`cmake` will be invoked. However, if a builder is running on CentOS and CMake
-v3.x is desired, the tool `cmake3` needs to be invoked instead. To configure
-this, an environment variable can be set to switch which tool to invoke.
-Consider the following example:
-
-```shell-session
-$ export RELENG_CMAKE=cmake3
-$ releng-tool
-[cmake3 will be used for cmake projects]
-```
+See [Environment — Tool overrides](env-tool-overrides).
