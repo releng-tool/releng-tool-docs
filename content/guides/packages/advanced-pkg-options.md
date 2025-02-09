@@ -438,7 +438,7 @@ LIBFOO_STRIP_COUNT = 1
 :::
 :::{versionchanged} 0.17 Support added for `perforce`.
 :::
-:::{versionchanged} 1.4 Support added for `brz+`.
+:::{versionchanged} 1.4 Support added for `brz`.
 :::
 :::{deprecated} 2.0
 Support for `bzr` (Bazaar) sites is deprecated.

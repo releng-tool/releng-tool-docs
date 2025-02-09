@@ -131,7 +131,7 @@ part specifies the Perforce depot path. Perforce data is fetched using
 `git p4 <option>` [^git-p4] command. This requires a host to have both
 [Git][git] and Perforce's [Helix Command-Line Client (P4)][perforce-cli]
 installed. Content from a Perforce depot will be fetched and archived into
-a file during fetch stage. Once a cached archive is made, the fetch stage 
+a file during fetch stage. Once a cached archive is made, the fetch stage
 ill be skipped unless the archive is manually removed.
 
 ## rsync site
