@@ -703,5 +703,25 @@ Show releng-tool's version.
 
 Treat warnings from releng-tool as errors.
 
+(arg-variable-injection)=
+## Variable injection
+
+:::{versionadded} 0.12
+:::
+
+Users can override a select set of variables by defining them in the command
+line arguments. For example, consider a project that defines a `libfoo`
+package with a version `1.0`:
+
+```python
+LIBFOO_VERSION = '1.0'
+```
+
+If a user wants to override this a run with `1.1`, the following can be used:
+
+```shell
+releng-tool LIBFOO_VERSION=1.1
+```
+
 
 [no-color]: https://no-color.org/
