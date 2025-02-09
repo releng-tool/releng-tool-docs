@@ -187,6 +187,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_CARGO_NAME`](pkg-opt-cargo-name) = '&lt;name&gt;'
 [`LIBFOO_CARGO_NOINSTALL`](pkg-opt-cargo-noinstall) = bool
 [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type) = '&lt;build-type&gt;'
+&nbsp;&nbsp;└── Debug, Release, RelWithDebInfo, MinSizeRel
 [`LIBFOO_CMAKE_NOINSTALL`](pkg-opt-cmake-noinstall) = bool
 `LIBFOO_CONF_DEFS` = {'FOO': 'BAR'}
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-conf-defs), [CMake](pkg-opt-cmake-conf-defs), [Make](pkg-opt-make-conf-defs), [Meson](pkg-opt-meson-conf-defs), [SCons](pkg-opt-scons-conf-defs))*
