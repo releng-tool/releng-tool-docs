@@ -1,4 +1,4 @@
-# ANNEX A - Quick reference
+# ANNEX A — Quick reference
 
 A quick reference document listing available options to developers building a
 releng-tool project.
