@@ -51,7 +51,7 @@ the configured root directory. For example:
 The host directory's prefixed bin directory. For example:
 
 ```none
-<root-dir>/output/build
+<root-dir>/output/host/usr/bin
 ```
 
 (env-host-dir)=
@@ -70,7 +70,12 @@ the configured output directory. For example:
 :::{versionadded} 0.12
 :::
 
-The host directory's prefixed include directory.
+The host directory's prefixed include directory. An example include
+directory may be as follows:
+
+```none
+<root-dir>/output/host/usr/include
+```
 
 (env-host-lib-dir)=
 ### `HOST_LIB_DIR`
@@ -78,7 +83,12 @@ The host directory's prefixed include directory.
 :::{versionadded} 0.12
 :::
 
-The host directory's prefixed library directory.
+The host directory's prefixed library directory. An example library
+directory may be as follows:
+
+```none
+<root-dir>/output/host/usr/lib
+```
 
 (env-host-share-dir)=
 ### `HOST_SHARE_DIR`
@@ -86,7 +96,12 @@ The host directory's prefixed library directory.
 :::{versionadded} 2.1
 :::
 
-The host directory's prefixed share directory.
+The host directory's prefixed share directory. An example share
+directory may be as follows:
+
+```none
+<root-dir>/output/host/usr/share
+```
 
 (env-images-dir)=
 ### `IMAGES_DIR`
@@ -192,15 +207,22 @@ of an archive from a remote source, after the fetch stage is completed, the
 archive can be found in this location.
 
 For example, if a package defines a site `https://www.example.com/test.tgz`,
-the resulting cache file may be `<root>/output/dl/test-1.0.tgz`.
+the resulting cache file may be:
+
+```
+<root>/output/dl/test-1.0.tgz
+```
 
 (env-pkg-defdir)=
 ### `PKG_DEFDIR`
 
 The package's definition directory.
 
-For example, for a package `test`, the definition directory would be
-`<root>/package/test`.
+For example, for a package `test`, the definition directory would be:
+
+```
+<root>/package/test
+```
 
 (env-pkg-defmode)=
 ### `PKG_DEVMODE`
