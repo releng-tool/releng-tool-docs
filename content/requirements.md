@@ -5,7 +5,7 @@ releng-tool is developed in [Python][python] and requires either
 tools are required if certain stages or features are used. For example,
 projects fetching sources from [Git][git] will require the `git` tool
 installed; projects with patches will required the `patch` tool. While
-some features may be operating system-specific (e.g. autotools features are
+some features may be operating system-specific (e.g. Autotools features are
 designed for Linux-based hosts), releng-tool can work on various operating
 system variants.
 

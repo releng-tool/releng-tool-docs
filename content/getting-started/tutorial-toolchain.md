@@ -27,7 +27,7 @@ toolchain package:
 - libc: glibc
 - <https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64--glibc--stable-2022.08-1.tar.bz2>
 - <https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64--glibc--stable-2022.08-1.sha256>
-- (sha256: 844df3c99508030ee9cb1152cb182500bb9816ff01968f2e18591d51d766c9e7)
+- (sha256: `844df3c99508030ee9cb1152cb182500bb9816ff01968f2e18591d51d766c9e7`)
 
 Extract and place the toolchain into a desired location. In this example,
 we will place the toolchain under `/opt`. However, users can install the
@@ -188,7 +188,7 @@ LIBNL_CONF_OPTS = [
   by this package. We only need a static library, so we explicitly indicate
   to enable static builds and disable shared builds. We also disable a series
   of other features not needed for this example.
-  
+
   Using configuration options can be useful for disabling certain project
   options such as disabling unit tests (which may not be desired for these
   types of builds). It is always good to explicitly define configuration

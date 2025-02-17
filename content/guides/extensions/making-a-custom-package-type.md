@@ -3,7 +3,7 @@
 This is an extension example for the following use case:
 
 > I'm using several packages in a project which use a custom package type
-> (i.e. they are not a typical autotools or CMake project). I want to have
+> (i.e. they are not a typical Autotools or CMake project). I want to have
 > an extension so that I can trigger custom prepare and build actions for
 > project that is downloaded from version control.
 

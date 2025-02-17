@@ -170,7 +170,7 @@ SAMPLE_VCS_TYPE = 'local'
   (although developers can add hash checks for internal sources if desired).
 - The sample program will also be a CMake-based project, so `SAMPLE_TYPE`
   will be configured.
-- Lastly, we wil configure the custom `local` type in `SAMPLE_VCS_TYPE` to
+- Lastly, we will configure the custom `local` type in `SAMPLE_VCS_TYPE` to
   indicate our implementation will be found inside the package folder (until
   we can later add it to Git/etc. repository in the future).
 

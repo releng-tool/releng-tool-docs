@@ -19,7 +19,7 @@ with a `libfoo` package with various stage scripts:
     └── releng-tool.rt
 ```
 
-Developers who do not perfer the `.rt` extension may use alternatives,
+Developers who do not prefer the `.rt` extension may use alternatives,
 such as the `.py` extension or no extension at all. For example, the
 above example is equivalent to the structure:
 

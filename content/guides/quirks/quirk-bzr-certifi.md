@@ -5,8 +5,8 @@ When a package is configured to fetch [bzr][bzr] sources, select environments
 may have issues attempting to download from Launchpad (or other hosting) due
 to legacy certificates.
 
-> See `bzr help ssl.ca_certs` for how to specify trusted CAcertificates.\
-> Pass -Ossl.cert_reqs=none to disable certificate verification entirely.
+> See `bzr help ssl.ca_certs` for how to specify trusted CA certificates.\
+> Pass `-Ossl.cert_reqs=none` to disable certificate verification entirely.
 
 If a user's environment has [`certifi`][certifi] installed, a user can invoke
 releng-tool with the quirk `releng.bzr.certifi` enabled to use certifi's

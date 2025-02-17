@@ -1,24 +1,24 @@
 # Autotools package
 
-An autotools package provides support for processing a
+An Autotools package provides support for processing a
 [GNU Build System][gnu-build-sys] supported module.
 
 ```python
 LIBFOO_TYPE = 'autotools'
 ```
 
-When an autotools package performs a configuration stage, the package may
+When an Autotools package performs a configuration stage, the package may
 invoke `autoreconf` (if configured to do so) and then invoke `configure`.
 When the build stage is reached, `make` will be invoked followed by
 `make install` during the installation stage.
 
 The following sections outline configuration options are available for an
-autotools package.
+Autotools package.
 
 (pkg-opt-autotools-autoreconf)=
 ## `LIBFOO_AUTOTOOLS_AUTORECONF`
 
-Specifies whether the package needs to perform an autotools
+Specifies whether the package needs to perform an Autotools
 re-configuration. This is to assist in the rebuilding of GNU Build System
 files which may be broken or a patch has introduced new build script
 changes that need to be applied. This field is optional. By default,
