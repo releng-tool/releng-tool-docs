@@ -355,6 +355,9 @@ See also [`PREFIX`](env-prefix) and [`sysroot_prefix`](conf-sysroot-prefix).
 (pkg-opt-remote-config)=
 ## `LIBFOO_REMOTE_CONFIG`
 
+:::{versionadded} 1.3
+:::
+
 Flag value to indicate that a package should attempt to load any package
 configurations which may be defined in the package's source. If the package
 includes a `.releng-tool` file at the root of their sources, supported
@@ -370,6 +373,9 @@ See also
 
 (pkg-opt-remote-scripts)=
 ## `LIBFOO_REMOTE_SCRIPTS`
+
+:::{versionadded} 1.3
+:::
 
 Flag value to indicate that a package should attempt to load any package
 scripts which may be defined in the package's source. Typically, a

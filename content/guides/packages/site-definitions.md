@@ -13,6 +13,9 @@ Git sources); however, this is optional if a package wishes to use the
 (site-breezy)=
 ## Breezy site
 
+:::{versionadded} 1.4
+:::
+
 To define a [Breezy][breezy]-based location, the site value must be
 prefixed with a `brz+` value. A site can be defined as follows:
 
@@ -69,6 +72,9 @@ removed.
 
 (site-file)=
 ## File site
+
+:::{versionadded} 2.0
+:::
 
 Site type dedicated for accepting a file uniform resource identifier
 (`file://`). The site value also accepts the `file+` prefix.
@@ -134,6 +140,9 @@ pulled for the new revision (if it exists).
 (site-perforce)=
 ## Perforce site
 
+:::{versionadded} 0.17
+:::
+
 To define a Perforce-based location, the site value must be prefixed with
 an `perforce+` value. A site can be defined as follows:
 
@@ -154,6 +163,9 @@ ill be skipped unless the archive is manually removed.
 
 (site-rsync)=
 ## rsync site
+
+:::{versionadded} 0.10
+:::
 
 To define an rsync-based location, the site value must be prefixed with an
 `rsync+` value. A site can be defined as follows:

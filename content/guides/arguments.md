@@ -601,6 +601,8 @@ Numbers of jobs to handle (defaults to `0`; automatic).
 
 :::{versionchanged} 0.13 Support configurable packages and directories.
 :::
+:::{versionchanged} 0.16 Support `:` (new) or `@` (original) as a separator.
+:::
 
 Enables [local-sources mode](local-sources-mode).
 
@@ -623,6 +625,9 @@ configured in the running environment.
 
 (arg-only-mirror)=
 ### `--only-mirror`
+
+:::{versionadded} 2.0
+:::
 
 Only fetch [external](pkg-opt-external) projects with configured mirror.
 

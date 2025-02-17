@@ -1,5 +1,8 @@
 # Package bootstrapping
 
+:::{versionadded} 0.3
+:::
+
 Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is
 defined, can create a bootstrapping script to invoke before a package
 starts a configuration stage. The existence of a `<package>-bootstrap.rt`
