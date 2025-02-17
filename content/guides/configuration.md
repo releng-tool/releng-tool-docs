@@ -271,6 +271,29 @@ cache_ext = my_translator
 The above transform indicates that all packages using the
 `static.example.org` site will be `tgz` archives.
 
+(conf-default-devmode-ignore-cache)=
+### `default_devmode_ignore_cache`
+
+:::{versionadded} 2.1
+:::
+
+When operating in [development mode](/guides/development-mode), packages may
+configure [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache) to
+indicate that a package should ignore any generated cache when operating
+from a clean state. If a developer is managing a package set in a project
+where most (if not all) packages would want to use this feature, a global
+override can be configured.
+
+```python
+default_devmode_ignore_cache = True
+```
+
+Setting this value to `True` will default all packages to operate with a
+manner as if `LIBFOO_DEVMODE_IGNORE_CACHE = True`. Individual packages may
+opt-out in this scenario by configuring `LIBFOO_DEVMODE_IGNORE_CACHE = False`.
+
+See also [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache).
+
 (conf-extra-license-exceptions)=
 ### `extra_license_exceptions`
 

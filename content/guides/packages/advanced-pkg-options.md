@@ -42,6 +42,8 @@ type being fetched. In most cases, fetch operations will treat the default case
 of this option as disabled (`False`). DVCS site types may elect to enable this
 option by default (`True`) if the target revision is a branch.
 
+See also [`default_devmode_ignore_cache`](conf-default-devmode-ignore-cache).
+
 (pkg-opt-devmode-revision)=
 ## `LIBFOO_DEVMODE_REVISION`
 
