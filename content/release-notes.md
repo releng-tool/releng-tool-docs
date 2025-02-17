@@ -14,7 +14,7 @@ releng-tool, please see the project's [repository commits][commits].
 news/*
 :::
 
-:::{include} ../../releng-tool/CHANGELOG.rst
+:::{include} ../../releng-tool/CHANGELOG.md
 :::
 
 [commits]: https://github.com/releng-tool/releng-tool/commits
