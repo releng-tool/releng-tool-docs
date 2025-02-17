@@ -25,8 +25,8 @@ toolchain package:
 
 - Architecture: aarch64
 - libc: glibc
-- <https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64--glibc--stable-2022.08-1.tar.bz2>
-- <https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64--glibc--stable-2022.08-1.sha256>
+- [https://toolchains.bootlin.com/.../aarch64--glibc--stable-2022.08-1.tar.bz2][toolchain-archive]
+- [https://toolchains.bootlin.com/.../aarch64--glibc--stable-2022.08-1.sha256][toolchain-hash]
 - (sha256: `844df3c99508030ee9cb1152cb182500bb9816ff01968f2e18591d51d766c9e7`)
 
 Extract and place the toolchain into a desired location. In this example,
@@ -356,3 +356,5 @@ This concludes this tutorial.
 [libnl]: https://www.infradead.org/~tgr/libnl/
 [ncurses]: https://invisible-island.net/ncurses/
 [spdx]: https://spdx.org/licenses/
+[toolchain-archive]: https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64--glibc--stable-2022.08-1.tar.bz2
+[toolchain-hash]: https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64--glibc--stable-2022.08-1.sha256
