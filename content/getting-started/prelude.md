@@ -13,7 +13,7 @@ project:
 - `dl/` - Archives for select package sources (e.g. `.tgz`, `.zip`, etc.)
 - `package/` - Container for packages
 - `package/<package>/` - A package-specific folder
-- `package/<package>/<package>` - A package definition
+- `package/<package>/<package>.rt` - A package definition
 - `output/` - Container for all output content
 - `output/build/` - Container for package building
 - `output/host/` - Area to hold host-specific content
