@@ -80,6 +80,14 @@ The host directory's prefixed include directory.
 
 The host directory's prefixed library directory.
 
+(env-host-share-dir)=
+### `HOST_SHARE_DIR`
+
+:::{versionadded} 2.1
+:::
+
+The host directory's prefixed share directory.
+
 (env-images-dir)=
 ### `IMAGES_DIR`
 
@@ -471,6 +479,19 @@ directory may be as follows:
 <root-dir>/output/staging/usr/lib
 ```
 
+(env-staging-share-dir)=
+### `STAGING_SHARE_DIR`
+
+:::{versionadded} 2.1
+:::
+
+The staging area directory's prefixed share directory. An example share
+directory may be as follows:
+
+```none
+<root-dir>/output/staging/usr/share
+```
+
 (env-symbols-dir)=
 ### `SYMBOLS_DIR`
 
@@ -528,6 +549,19 @@ directory may be as follows:
 
 ```none
 <root-dir>/output/target/usr/lib
+```
+
+(env-target-share-dir)=
+### `TARGET_SHARE_DIR`
+
+:::{versionadded} 2.1
+:::
+
+The target area directory's prefixed share directory. An example share
+directory may be as follows:
+
+```none
+<root-dir>/output/target/usr/share
 ```
 
 ## Package-specific variables
