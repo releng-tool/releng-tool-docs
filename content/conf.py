@@ -25,6 +25,10 @@ extensions = [
     'sphinx_inline_tabs',
 ]
 
+if any('spelling' in arg for arg in sys.argv):
+    extensions.append('sphinxcontrib.spelling')
+    spelling_word_list_filename = '.spelling'
+
 suppress_warnings = [
     # suppress various header levels with the use of includes
     'myst.header',
