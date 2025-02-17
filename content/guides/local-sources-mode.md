@@ -141,3 +141,9 @@ A user can either disable local sources mode by:
 - Providing a local-source path of `-` or `unset`;
 - Invoking [`mrproper`](action-mrproper); or,
 - By manually removing the file flag found at the root of the project.
+
+For example:
+
+```
+releng-tool --local-sources unset
+```
