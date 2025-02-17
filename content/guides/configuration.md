@@ -104,7 +104,7 @@ locations can be provided. For example:
 
 ```python
 external_packages = [
-    os.environ['MY_EXTERNAL_PKG_DIR'],
+    releng_env('MY_EXTERNAL_PKG_DIR'),
 ]
 ```
 
