@@ -87,3 +87,7 @@ A user can either disable development sources mode by:
 - Providing a development mode of `-` or `unset`;
 - Invoking [`mrproper`](action-mrproper); or,
 - By manually removing the file flag found at the root of the project.
+
+```
+releng-tool --development unset
+```
