@@ -8,15 +8,28 @@ LIBFOO_TYPE = 'python'
 ```
 
 Only the build and installation phases are used when processing the sources
-for a Python package (i.e. no configuration stage is invoked). By default,
-the build phase will invoke `setup.py build` while the installation stage
-will invoke `setup.py install` (see
-[`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) for other setup
-types). When a Python package is process, it will use the system's
-default Python interpreter. A developer can override what Python interpreter
-to use by configuring the
-[`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter) option in a
-package:
+for a Python package (i.e. no configuration stage is invoked). The
+[`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) configuration dictates
+which build approach is performed for a package. The installation stage
+for all Python packages uses the [`installer`][installer] module. When a Python
+package is processed, it will use the same Python interpreter used by
+releng-tool.
+
+````{note}
+For environments where releng-tool has been installed using `pipx`, a user
+will need to install any required build backend desired using the
+[`pipx inject`][pipx-inject] command. For example, packages requiring
+[Flit][flit] can install the build backend for their isolated environment
+using:
+
+```
+pipx inject releng-tool flit-core
+```
+````
+
+A developer can override what Python interpreter to use by
+configuring the [`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter)
+option in a package:
 
 ```python
 LIBFOO_PYTHON_INTERPRETER = '/opt/my-custom-python-build/python'
@@ -221,6 +234,7 @@ with `bdist_wheel`.
 [hatch]: https://hatch.pypa.io
 [installer]: https://installer.pypa.io/
 [pdm]: https://pdm-project.org/
+[pipx-inject]: https://pipx.pypa.io/#inject-a-package
 [poetry]: https://python-poetry.org/
 [pypa-build]: https://build.pypa.io/
 [python]: https://www.python.org/
