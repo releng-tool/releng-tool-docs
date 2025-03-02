@@ -7,185 +7,41 @@ are listed below:
 ## Available functions
 
 ```{eval-rst}
+.. currentmodule:: releng_tool
+.. autofunction:: debug
+.. autofunction:: err
+.. autofunction:: hint
+.. autofunction:: log
+.. autofunction:: note
+.. autofunction:: releng_cat
+.. autofunction:: releng_copy
+.. autofunction:: releng_copy_into
+.. autofunction:: releng_env
+.. autofunction:: releng_execute
+.. autofunction:: releng_execute_rv
+.. autofunction:: releng_exists
+.. autofunction:: releng_exit
+.. autofunction:: releng_expand
+.. autofunction:: releng_include
 
-.. _script-debug:
+.. method:: releng_join(path: str | bytes | PathLike, *paths: str | bytes | PathLike)
 
-.. automodule:: releng_tool
-    :members: debug
-    :noindex:
+    An alias for ``os.path.join``. See also
+    https://docs.python.org/library/os.path.html#os.path.join.
 
-.. _script-err:
-
-.. automodule:: releng_tool
-    :members: err
-    :noindex:
-
-.. _script-hint:
-
-.. automodule:: releng_tool
-    :members: hint
-    :noindex:
-
-.. _script-log:
-
-.. automodule:: releng_tool
-    :members: log
-    :noindex:
-
-.. _script-note:
-
-.. automodule:: releng_tool
-    :members: note
-    :noindex:
-
-.. _script-releng_cat:
-
-.. automodule:: releng_tool
-    :members: releng_cat
-    :noindex:
-
-.. _script-releng_copy:
-
-.. automodule:: releng_tool
-    :members: releng_copy
-    :noindex:
-
-.. _script-releng_copy_into:
-
-.. automodule:: releng_tool
-    :members: releng_copy_into
-    :noindex:
-
-.. _script-releng_env:
-
-.. automodule:: releng_tool
-    :members: releng_env
-    :noindex:
-
-.. _script-releng_execute:
-
-.. automodule:: releng_tool
-    :members: releng_execute
-    :noindex:
-
-.. _script-releng_execute_rv:
-
-.. automodule:: releng_tool
-    :members: releng_execute_rv
-    :noindex:
-
-.. _script-releng_exists:
-
-.. automodule:: releng_tool
-    :members: releng_exists
-    :noindex:
-
-.. _script-releng_exit:
-
-.. automodule:: releng_tool
-    :members: releng_exit
-    :noindex:
-
-.. _script-releng_expand:
-
-.. automodule:: releng_tool
-    :members: releng_expand
-    :noindex:
-
-.. _script-releng_include:
-
-.. automodule:: releng_tool
-    :members: releng_include
-    :noindex:
-
-.. _script-releng_tool:
-
-.. automodule:: releng_tool
-    :noindex:
-
-    .. method:: releng_join(path, *paths)
-        :noindex:
-
-        An alias for ``os.path.join``. See also
-        https://docs.python.org/library/os.path.html#os.path.join.
-
-.. _script-releng_ls:
-
-.. automodule:: releng_tool
-    :members: releng_ls
-    :noindex:
-
-.. _script-releng_mkdir:
-
-.. automodule:: releng_tool
-    :members: releng_mkdir
-    :noindex:
-
-.. _script-releng_move:
-
-.. automodule:: releng_tool
-    :members: releng_move
-    :noindex:
-
-.. _script-releng_move_into:
-
-.. automodule:: releng_tool
-    :members: releng_move_into
-    :noindex:
-
-.. _script-releng_remove:
-
-.. automodule:: releng_tool
-    :members: releng_remove
-    :noindex:
-
-.. _script-releng_symlink:
-
-.. automodule:: releng_tool
-    :members: releng_symlink
-    :noindex:
-
-.. _script-releng_require_version:
-
-.. automodule:: releng_tool
-    :members: releng_require_version
-    :noindex:
-
-.. _script-releng_tmpdir:
-
-.. automodule:: releng_tool
-    :members: releng_tmpdir
-    :noindex:
-
-.. _script-releng_touch:
-
-.. automodule:: releng_tool
-    :members: releng_touch
-    :noindex:
-
-.. _script-releng_wd:
-
-.. automodule:: releng_tool
-    :members: releng_wd
-    :noindex:
-
-.. _script-success:
-
-.. automodule:: releng_tool
-    :members: success
-    :noindex:
-
-.. _script-verbose:
-
-.. automodule:: releng_tool
-    :members: verbose
-    :noindex:
-
-.. _script-warn:
-
-.. automodule:: releng_tool
-    :members: warn
-    :noindex:
+.. autofunction:: releng_ls
+.. autofunction:: releng_mkdir
+.. autofunction:: releng_move
+.. autofunction:: releng_move_into
+.. autofunction:: releng_remove
+.. autofunction:: releng_symlink
+.. autofunction:: releng_require_version
+.. autofunction:: releng_tmpdir
+.. autofunction:: releng_touch
+.. autofunction:: releng_wd
+.. autofunction:: success
+.. autofunction:: verbose
+.. autofunction:: warn
 ```
 
 ## Available variables
