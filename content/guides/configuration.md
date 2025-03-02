@@ -19,7 +19,7 @@ such as follows:
     └── releng-tool.rt                <----
 ```
 
-Can have a configuration (`releng`) such as:
+Can have a configuration (`releng-tool.rt`) such as:
 
 ```python
 packages = [
