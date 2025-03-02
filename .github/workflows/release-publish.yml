@@ -9,7 +9,7 @@ jobs:
   doc-update:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/jdknight/docs-support-container:latest
+      image: ghcr.io/releng-tool/docs-container:latest
 
     steps:
     - name: Checkout releng-tool
