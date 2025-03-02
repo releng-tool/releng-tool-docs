@@ -4,15 +4,18 @@ The following provides the notable features, bug fixes and more for each
 release of releng-tool. For a complete list of detailed changes to
 releng-tool, please see the project's [repository commits][commits].
 
-## News
+```{eval-rst}
+.. only:: html
 
-:::{toctree}
-:glob:
-:maxdepth: 1
-:reversed:
+    ## News
 
-news/*
-:::
+    .. toctree::
+        :glob:
+        :maxdepth: 1
+        :reversed:
+
+        news/*
+```
 
 :::{include} ../../releng-tool/CHANGELOG.md
 :::
