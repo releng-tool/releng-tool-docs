@@ -62,7 +62,8 @@ Arguments which are accepted by releng-tool from the command line:
 
 ## Configuration options
 
-Options which are read by releng-tool from a project's configuration script:
+Options which are read by releng-tool from a project's configuration script
+(`releng-tool.rt`):
 
 ```{parsed-literal}
 [`cache_ext`](conf-cache-ext) = &lt;callable&gt;
