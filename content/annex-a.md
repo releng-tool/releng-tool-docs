@@ -317,6 +317,7 @@ Quirk options used by releng-tool:
 ```{parsed-literal}
 [`releng.bzr.certifi`](quirk-releng.bzr.certifi)
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
+[`releng.disable_binary_patch`](quirk-releng.disable_binary_patch)
 [`releng.disable_local_site_warn`](quirk-releng.disable_local_site_warn)
 [`releng.disable_prerequisites_check`](quirk-releng.disable_prerequisites_check)
 [`releng.disable_remote_configs`](quirk-releng.disable_remote_configs)

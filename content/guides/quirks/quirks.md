@@ -51,6 +51,7 @@ The following is a list of all available quirks supported by releng-tool:
 releng.bzr.certifi <quirk-bzr-certifi>
 releng.cmake.disable_direct_includes <quirk-cmake-disable_direct_includes>
 releng.cmake.disable_parallel_option <quirk-cmake-disable_parallel_option>
+releng.disable_binary_patch <quirk-disable_binary_patch>
 releng.disable_local_site_warn <quirk-disable_local_site_warn>
 releng.disable_prerequisites_check <quirk-disable_prerequisites_check>
 releng.disable_remote_configs <quirk-disable_remote_configs>
