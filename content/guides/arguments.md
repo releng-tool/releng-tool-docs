@@ -148,6 +148,8 @@ All packages will be processed up to the patch phase (inclusive).
 releng-tool patch
 ```
 
+See also [Patching](patching).
+
 (action-punch)=
 ### `punch`
 
