@@ -33,10 +33,8 @@ file along with one or more packages found inside a `package/` folder.
 This location can be referred to as the "root directory".
 
 :::{note}
-releng-tool supports extensionless configuration/script files (e.g.
-`releng-tool`) as well as configuration/scripts using a `.py` extension.
-For more information, please see
-[alternative extensions](/guides/tips/alternative-extensions).
+releng-tool supports using a `.py` extension. For more information, please
+see [alternative extensions](/guides/tips/alternative-extensions).
 :::
 
 When invoking `releng-tool`, the tool will look in the current working
