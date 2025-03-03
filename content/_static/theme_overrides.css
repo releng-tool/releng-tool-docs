@@ -81,3 +81,8 @@ div.versionremoved p {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
 }
+
+/* use "Cascadia Code" for a font for better block element support */
+pre {
+    font-family: Cascadia Code, var(--font-stack--monospace) !important;
+}
