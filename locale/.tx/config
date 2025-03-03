@@ -355,6 +355,12 @@ source_file  = pot/guides/packages/site-definitions.pot
 type         = PO
 minimum_perc = 0
 
+[o:releng-tool:p:releng-tool-docs:r:guides_packages_system_pkg_options]
+file_filter  = <lang>/LC_MESSAGES/guides/packages/system-pkg-options.po
+source_file  = pot/guides/packages/system-pkg-options.pot
+type         = PO
+minimum_perc = 0
+
 [o:releng-tool:p:releng-tool-docs:r:guides_patching]
 file_filter  = <lang>/LC_MESSAGES/guides/patching.po
 source_file  = pot/guides/patching.pot
@@ -382,6 +388,18 @@ minimum_perc = 0
 [o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_cmake_disable_parallel_option]
 file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-cmake-disable_parallel_option.po
 source_file  = pot/guides/quirks/quirk-cmake-disable_parallel_option.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_disable_binary_patch]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-disable_binary_patch.po
+source_file  = pot/guides/quirks/quirk-disable_binary_patch.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_disable_local_site_warn]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-disable_local_site_warn.po
+source_file  = pot/guides/quirks/quirk-disable_local_site_warn.pot
 type         = PO
 minimum_perc = 0
 
@@ -424,6 +442,12 @@ minimum_perc = 0
 [o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_git_replicate_cache]
 file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-git-replicate_cache.po
 source_file  = pot/guides/quirks/quirk-git-replicate_cache.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:guides_quirks_quirk_log_execute_args]
+file_filter  = <lang>/LC_MESSAGES/guides/quirks/quirk-log-execute_args.po
+source_file  = pot/guides/quirks/quirk-log-execute_args.pot
 type         = PO
 minimum_perc = 0
 
@@ -580,6 +604,24 @@ minimum_perc = 0
 [o:releng-tool:p:releng-tool-docs:r:news_2024_08_01_01_03_00]
 file_filter  = <lang>/LC_MESSAGES/news/2024-08-01_01.03.00.po
 source_file  = pot/news/2024-08-01_01.03.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2025_01_19_01_04_00]
+file_filter  = <lang>/LC_MESSAGES/news/2025-01-19_01.04.00.po
+source_file  = pot/news/2025-01-19_01.04.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2025_02_09_02_00_00]
+file_filter  = <lang>/LC_MESSAGES/news/2025-02-09_02.00.00.po
+source_file  = pot/news/2025-02-09_02.00.00.pot
+type         = PO
+minimum_perc = 0
+
+[o:releng-tool:p:releng-tool-docs:r:news_2025_02_17_02_01_00]
+file_filter  = <lang>/LC_MESSAGES/news/2025-02-17_02.01.00.po
+source_file  = pot/news/2025-02-17_02.01.00.pot
 type         = PO
 minimum_perc = 0
 

@@ -1,24 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-#
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool \n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-03 00:17+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: es\n"
-"Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"PO-Revision-Date: 2025-03-03 00:39+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ../../content/news/2025-02-17_02.01.00.md:1
 msgid "2.1 (2025-02-17)"
@@ -30,10 +27,10 @@ msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:5
 msgid ""
-"While releng-tool's previous releases included path helpers for a "
-"project's `bin`/`include`/`lib` directories (e.g. [`TARGET_INCLUDE_DIR"
-"`](env-target-include-dir)), no helpers existed for a `share` path. This "
-"release introduces support for the following new variables:"
+"While releng-tool's previous releases included path helpers for a project's "
+"`bin`/`include`/`lib` directories (e.g. [`TARGET_INCLUDE_DIR`](env-target-"
+"include-dir)), no helpers existed for a `share` path. This release "
+"introduces support for the following new variables:"
 msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:10
@@ -55,9 +52,9 @@ msgstr ""
 #: ../../content/news/2025-02-17_02.01.00.md:16
 msgid ""
 "[CMake](/guides/packages/pkg-type-cmake) packages now populate a "
-"[`CMAKE_MODULE_PATH`][cmake-module-path] configuration by default. The "
-"value used for this option is a share-folder path (`share/cmake/Modules`)"
-" based on the configured [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)."
+"[`CMAKE_MODULE_PATH`][cmake-module-path] configuration by default. The value"
+" used for this option is a share-folder path (`share/cmake/Modules`) based "
+"on the configured [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)."
 msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:21
@@ -68,8 +65,8 @@ msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:28
 msgid ""
-"CMake packages which install provided modules into the standard share "
-"path can be automatically used by other CMake dependent packages."
+"CMake packages which install provided modules into the standard share path "
+"can be automatically used by other CMake dependent packages."
 msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:31
@@ -78,28 +75,27 @@ msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:33
 msgid ""
-"Two minor tweaks have been made towards the [local-sources](/guides"
-"/local-sources-mode) capability. For package-specific overrides, users "
-"can now include a `package/` prefix as part of the package name. For "
-"example, projects would typically register a local-sources override for "
-"`libfoo` using:"
+"Two minor tweaks have been made towards the [local-sources](/guides/local-"
+"sources-mode) capability. For package-specific overrides, users can now "
+"include a `package/` prefix as part of the package name. For example, "
+"projects would typically register a local-sources override for `libfoo` "
+"using:"
 msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:45
 msgid ""
-"With this release, the above example and below example will result in the"
-" same configuration applied:"
+"With this release, the above example and below example will result in the "
+"same configuration applied:"
 msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:54
 msgid ""
-"This allows users to easily populate desired packages in a shell "
-"environment that supports completions."
+"This allows users to easily populate desired packages in a shell environment"
+" that supports completions."
 msgstr ""
 
 #: ../../content/news/2025-02-17_02.01.00.md:57
 msgid ""
-"Second, clearing all local-sources configurations can now be cleared "
-"using a single `unset` request. For example:"
+"Second, clearing all local-sources configurations can now be cleared using a"
+" single `unset` request. For example:"
 msgstr ""
-

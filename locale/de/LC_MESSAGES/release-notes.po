@@ -1,27 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 # Translators:
 # James Knight <james.d.knight@live.com>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  releng-tool\n"
+"Project-Id-Version: releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
-"Language: de\n"
-"Language-Team: German (https://app.transifex.com/releng-"
-"tool/teams/171906/de/)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../content/release-notes.md:1
 msgid "Release notes"
@@ -30,14 +28,13 @@ msgstr "Versionshinweise"
 #: ../../content/release-notes.md:3
 msgid ""
 "The following provides the notable features, bug fixes and more for each "
-"release of releng-tool. For a complete list of detailed changes to "
-"releng-tool, please see the project's [repository commits][commits]."
+"release of releng-tool. For a complete list of detailed changes to releng-"
+"tool, please see the project's [repository commits][commits]."
 msgstr ""
 
 #: ../../content/release-notes.md:10
-#, fuzzy
 msgid "## News"
-msgstr "Nachricht"
+msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:2
 msgid "Development"
@@ -95,8 +92,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:18
 msgid ""
-"Fixed extraction warnings for non-empty folders due to improper fetch "
-"flags"
+"Fixed extraction warnings for non-empty folders due to improper fetch flags"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:20
@@ -108,7 +104,8 @@ msgid "Avoid multi-fetching packages with ignore-cache in development mode"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:23
-msgid "Improve ease of unconfiguring local-sources mode with single `unset` call"
+msgid ""
+"Improve ease of unconfiguring local-sources mode with single `unset` call"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:24
@@ -120,7 +117,8 @@ msgid "Introduce `default_devmode_ignore_cache` project configuration"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:26
-msgid "Local-sources configurations can now accept `package/`-prefixed entries"
+msgid ""
+"Local-sources configurations can now accept `package/`-prefixed entries"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:27
@@ -154,19 +152,19 @@ msgid "Fixed handling of Git submodules using incorrect revisions"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:38
-msgid "Fixed issue where configured prefixes could be ignored in Python packages"
+msgid ""
+"Fixed issue where configured prefixes could be ignored in Python packages"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:39
 msgid ""
-"Fixed issue where file URIs sites may prevent other URL sites from "
-"fetching"
+"Fixed issue where file URIs sites may prevent other URL sites from fetching"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:40
 msgid ""
-"Fixed issue where triggering a re-install on select Python packages would"
-" fail"
+"Fixed issue where triggering a re-install on select Python packages would "
+"fail"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:41
@@ -185,8 +183,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:44
 msgid ""
-"Overhaul of Python package processing with install scheme configuration "
-"via `LIBFOO_PYTHON_INSTALLER_SCHEME`, launcher configuration via "
+"Overhaul of Python package processing with install scheme configuration via "
+"`LIBFOO_PYTHON_INSTALLER_SCHEME`, launcher configuration via "
 "`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND` and dist overrides via "
 "`LIBFOO_PYTHON_DIST_PATH`"
 msgstr ""
@@ -237,8 +235,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:61
 msgid ""
-"Allow adding a package without a definition that defines at least one "
-"script"
+"Allow adding a package without a definition that defines at least one script"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:62
@@ -267,8 +264,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:68
 msgid ""
-"Fixed incorrect JSON/SPDX SBOM documents for projects with empty/local "
-"sites"
+"Fixed incorrect JSON/SPDX SBOM documents for projects with empty/local sites"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:69
@@ -276,7 +272,8 @@ msgid "Fixed issue where `releng_copy` could not copy a broken symbolic link"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:70
-msgid "Fixed issue where `releng_remove` could not remove a broken symbolic link"
+msgid ""
+"Fixed issue where `releng_remove` could not remove a broken symbolic link"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:71
@@ -316,7 +313,8 @@ msgid "Perform automatic Cargo patching for project-managed dependencies"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:80
-msgid "Post-fetching Cargo dependencies now occurs after a package's patch stage"
+msgid ""
+"Post-fetching Cargo dependencies now occurs after a package's patch stage"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:81
@@ -360,7 +358,8 @@ msgid "Automatic debugging mode when detecting CI debugging runs"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:93
-msgid "Correct unexpected dot in prefix path variables for empty prefixed builds"
+msgid ""
+"Correct unexpected dot in prefix path variables for empty prefixed builds"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:94
@@ -368,7 +367,8 @@ msgid "Fixed incorrect specification version tag in RDF/SPDX SBOM documents"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:95
-msgid "Fixed issue where an aborted Mercurial fetch could require manual cleanup"
+msgid ""
+"Fixed issue where an aborted Mercurial fetch could require manual cleanup"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:96
@@ -429,8 +429,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:112
 msgid ""
-"Support automatic package preparation for compatible local-sourced "
-"packages"
+"Support automatic package preparation for compatible local-sourced packages"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:113
@@ -454,7 +453,8 @@ msgid "Support environment output directory override (`RELENG_OUTPUT_DIR`)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:120
-msgid "Support global output containers (`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`)"
+msgid ""
+"Support global output containers (`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:121
@@ -478,11 +478,13 @@ msgid "0.17 (2023-08-06)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:130
-msgid "Fixed issue with CMake-generated export targets missing prefix overrides"
+msgid ""
+"Fixed issue with CMake-generated export targets missing prefix overrides"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:131
-msgid "Fixed issue with local-source configurations when provided relative paths"
+msgid ""
+"Fixed issue with local-source configurations when provided relative paths"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:132
@@ -490,7 +492,8 @@ msgid "Introduce `LIBFOO_CMAKE_BUILD_TYPE` to override CMake build types"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:133
-msgid "Introduce `LIBFOO_ENV` to apply environment variables on multiple stages"
+msgid ""
+"Introduce `LIBFOO_ENV` to apply environment variables on multiple stages"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:134
@@ -525,8 +528,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:143
 msgid ""
-"Enforce strict hash checking in development mode for external packages "
-"which define a development revision"
+"Enforce strict hash checking in development mode for external packages which"
+" define a development revision"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:145
@@ -536,7 +539,8 @@ msgid ""
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:147
-msgid "Fixed issue where HTML-based software build of materials would be empty"
+msgid ""
+"Fixed issue where HTML-based software build of materials would be empty"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:148
@@ -544,7 +548,8 @@ msgid "Introduce support for Meson-based packages"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:149
-msgid "Prevent processing packages when SBOM generation is explicitly requested"
+msgid ""
+"Prevent processing packages when SBOM generation is explicitly requested"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:150
@@ -553,8 +558,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:151
 msgid ""
-"Support module-specific local-sources to accept `:` instead of `@`, "
-"allowing certain shells to take advantage of path auto-completion"
+"Support module-specific local-sources to accept `:` instead of `@`, allowing"
+" certain shells to take advantage of path auto-completion"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:154
@@ -570,7 +575,8 @@ msgid "Fixed issue where extension loading may cause issues in Python 2.7"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:158
-msgid "Fixed issue where reconfiguration may not flag rebuild flags (and related)"
+msgid ""
+"Fixed issue where reconfiguration may not flag rebuild flags (and related)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:159
@@ -580,7 +586,8 @@ msgid ""
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:160
-msgid "Improve support for patching a root build directory and sub-directories"
+msgid ""
+"Improve support for patching a root build directory and sub-directories"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:161
@@ -597,8 +604,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:164
 msgid ""
-"Support setting software build of materials format in project "
-"configuration"
+"Support setting software build of materials format in project configuration"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:166
@@ -620,7 +626,8 @@ msgid ""
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:172
-msgid "Fixed issue where `libfoo-exec` action with an `=` character would crash"
+msgid ""
+"Fixed issue where `libfoo-exec` action with an `=` character would crash"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:173
@@ -632,7 +639,8 @@ msgid "Introduce `releng_move_into` helper script function"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:175
-msgid "Local VCS-type packages should now place sources inside a `local` folder"
+msgid ""
+"Local VCS-type packages should now place sources inside a `local` folder"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:176
@@ -644,7 +652,8 @@ msgid "Support `.releng` extensions for scripts"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:178
-msgid "Support automatic include injection for CMake staging/target/host areas"
+msgid ""
+"Support automatic include injection for CMake staging/target/host areas"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:179
@@ -656,7 +665,8 @@ msgid "Support generating a software build of materials"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:181
-msgid "Support treating releng-tool warnings as errors with `--werror` argument"
+msgid ""
+"Support treating releng-tool warnings as errors with `--werror` argument"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:182
@@ -669,8 +679,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:186
 msgid ""
-"Avoid interaction with target area when using CMake projects that only "
-"uses the staging area"
+"Avoid interaction with target area when using CMake projects that only uses "
+"the staging area"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:188
@@ -685,14 +695,14 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:191
 msgid ""
-"Fixed a rare chance that an explicit package run provided via command "
-"line may be ignored"
+"Fixed a rare chance that an explicit package run provided via command line "
+"may be ignored"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:193
 msgid ""
-"Fixed issue in older Python interpreters where the executed package order"
-" may not be consistent"
+"Fixed issue in older Python interpreters where the executed package order "
+"may not be consistent"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:195
@@ -759,7 +769,8 @@ msgid "Support Bazaar quirk to utilize `certifi` certificates"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:213
-msgid "Support users overriding a project's configuration path from command line"
+msgid ""
+"Support users overriding a project's configuration path from command line"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:215
@@ -778,12 +789,13 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:219
 msgid ""
-"Fixed an issue where forced Git-fetches with branch revisions may have "
-"stale content on first extract"
+"Fixed an issue where forced Git-fetches with branch revisions may have stale"
+" content on first extract"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:221
-msgid "Fixed where package-specific prefixes/njobs would leak to other projects"
+msgid ""
+"Fixed where package-specific prefixes/njobs would leak to other projects"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:222
@@ -872,8 +884,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:246
 msgid ""
-"Fixed an issue where `releng_mkdir` reports success if the target path is"
-" a file that already exists"
+"Fixed an issue where `releng_mkdir` reports success if the target path is a "
+"file that already exists"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:248
@@ -891,7 +903,8 @@ msgid "Introduce `<PKG_NAME>_DEFDIR` environment/script variable"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:252
-msgid "Introduce `LIBFOO_CMAKE_NOINSTALL` for CMake packages with no install rule"
+msgid ""
+"Introduce `LIBFOO_CMAKE_NOINSTALL` for CMake packages with no install rule"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:253
@@ -907,7 +920,8 @@ msgid "Remove the requirement to have a package version entry"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:256
-msgid "Support configuring cache/download directories using environment variables"
+msgid ""
+"Support configuring cache/download directories using environment variables"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:257
@@ -916,8 +930,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:258
 msgid ""
-"Support providing an assets container directory (for cache/download "
-"folders)"
+"Support providing an assets container directory (for cache/download folders)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:260
@@ -964,19 +977,20 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:273
 msgid ""
-"Fixed an issue where tools/`releng_execute` requests would fail on Python"
-" 2.7 with Unicode-defined environment variables"
+"Fixed an issue where tools/`releng_execute` requests would fail on Python "
+"2.7 with Unicode-defined environment variables"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:275
 msgid ""
-"Fixed an issue where a diverged revision in Git would incorrectly "
-"populate a package's build directory with the cached revision instead of "
-"the remote revision"
+"Fixed an issue where a diverged revision in Git would incorrectly populate a"
+" package's build directory with the cached revision instead of the remote "
+"revision"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:278
-msgid "Introduce `LIBFOO_GIT_SUBMODULES` for package Git-specific configurations"
+msgid ""
+"Introduce `LIBFOO_GIT_SUBMODULES` for package Git-specific configurations"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:279
@@ -985,8 +999,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:280
 msgid ""
-"Introduce statistic tracking (stage durations) which generate to into the"
-" output folder after execution"
+"Introduce statistic tracking (stage durations) which generate to into the "
+"output folder after execution"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:282
@@ -1005,9 +1019,9 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:285
 msgid ""
-"Rework `LIBTOOL_GIT_REFSPECS` to provide more control over custom "
-"revisions that can be fixed (i.e. no longer fixed on `<target>/*/head`; "
-"instead, a configured value-wildcard string should be used)"
+"Rework `LIBTOOL_GIT_REFSPECS` to provide more control over custom revisions "
+"that can be fixed (i.e. no longer fixed on `<target>/*/head`; instead, a "
+"configured value-wildcard string should be used)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:288
@@ -1020,8 +1034,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:290
 msgid ""
-"Support pruning any remote-tracked references in a Git-cached project "
-"when a forced fetch request is made"
+"Support pruning any remote-tracked references in a Git-cached project when a"
+" forced fetch request is made"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:293
@@ -1051,7 +1065,8 @@ msgid ""
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:302
-msgid "Fixed issue where the host directory was not registered in a stage's path"
+msgid ""
+"Fixed issue where the host directory was not registered in a stage's path"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:303
@@ -1062,8 +1077,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:304
 msgid ""
-"Only fetch a single package if only said package is requested to be "
-"fetched"
+"Only fetch a single package if only said package is requested to be fetched"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:305
@@ -1072,8 +1086,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:306
 msgid ""
-"Reconfigure/rebuild requests will now perform all trailing stages for the"
-" package(s) being redone; rebuild/reconfigure-only actions have been "
+"Reconfigure/rebuild requests will now perform all trailing stages for the "
+"package(s) being redone; rebuild/reconfigure-only actions have been "
 "introduced to force re-invoking a specific stage"
 msgstr ""
 
@@ -1087,8 +1101,7 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:311
 msgid ""
-"releng-tool will now full stop if external package definition fails to "
-"load"
+"releng-tool will now full stop if external package definition fails to load"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:313
@@ -1097,8 +1110,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:315
 msgid ""
-"Always register optional flags inside scripts (allowing developers to use"
-" flags like `RELENG_RECONFIGURE` without needing to check environment "
+"Always register optional flags inside scripts (allowing developers to use "
+"flags like `RELENG_RECONFIGURE` without needing to check environment "
 "variables)"
 msgstr ""
 
@@ -1126,8 +1139,8 @@ msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:324
 msgid ""
-"Namespace moved from `releng` to `releng_tool` (`releng` deprecated for "
-"an interim)"
+"Namespace moved from `releng` to `releng_tool` (`releng` deprecated for an "
+"interim)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:327
@@ -1143,7 +1156,8 @@ msgid "0.4 (2020-09-07)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:333
-msgid "Allow developers to fetch from addition Git refspecs (e.g. pull requests)"
+msgid ""
+"Allow developers to fetch from addition Git refspecs (e.g. pull requests)"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:334
@@ -1159,7 +1173,8 @@ msgid "Fixed Git fetch/extraction if package is cached and site has changed"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:337
-msgid "Improved handling of output files which may set the read-only attribute"
+msgid ""
+"Improved handling of output files which may set the read-only attribute"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:338
@@ -1213,7 +1228,8 @@ msgid ""
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:355
-msgid "Allow tracking project's license files when found in multiple directories"
+msgid ""
+"Allow tracking project's license files when found in multiple directories"
 msgstr ""
 
 #: ../../../releng-tool/CHANGELOG.md:356
@@ -1231,4 +1247,3 @@ msgstr ""
 #: ../../../releng-tool/CHANGELOG.md:361
 msgid "Hello world"
 msgstr ""
-
