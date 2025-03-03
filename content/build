@@ -3,6 +3,9 @@
 DOC_DIR="$(cd -- "$(dirname "$0")" >/dev/null 2>&1; pwd -P)"
 BASE_DIR=$(dirname $DOC_DIR)
 
+hash sphinx-build 2>/dev/null && sphinx_build="sphinx-build" || \
+    sphinx_build="python -m sphinx"
+
 builder=
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -18,4 +21,4 @@ done
 [[ -z "$builder" ]] && builder=html
 
 cd $BASE_DIR
-exec python -m sphinx -M $builder $DOC_DIR $DOC_DIR/_build/ -E -a -W
+exec $sphinx_build -M $builder $DOC_DIR $DOC_DIR/_build/ -E -a -W
