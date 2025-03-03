@@ -516,8 +516,8 @@ follows:
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/
-    │       └── local/                <----
-    │       │   └── src/
+    │       ├── local/                <----
+    │       │   ├── src/
     │       │   |   └── ...
     │       │   └── Makefile
     │       └── libfoo.rt

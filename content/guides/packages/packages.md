@@ -6,12 +6,12 @@ Packages can consist of libraries, programs or even basic assets.
 ```
 └── sample-releng-tool-project/
     ├── package/
-    │   └── box-firmware/
+    │   ├── box-firmware/
     │   │   ├── box-firmware.rt
     │   │   └── box-firmware.hash
-    │   └── libfw-uploader/
+    │   ├── libfw-uploader/
     │   │   └── libfw-uploader.rt
-    │   └── libsupport/
+    │   ├── libsupport/
     │   │   └── libsupport.rt
     │   └── rack-engine/
     │       └── rack-engine.rt
