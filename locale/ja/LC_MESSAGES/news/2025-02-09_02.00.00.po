@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/news/2025-02-09_02.00.00.md:1
+msgid "2.0 (2025-02-09)"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:3
+msgid "Dropping support for end-of-life versions of Python"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:5
+msgid ""
+"To help improve maintenance work for releng-tool, the utility will now "
+"only support versions of Python that have not reached [end-of-life"
+"][python-release-cycle]. At the time of this release, this includes "
+"support for Python 3.9 and later."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:10
+msgid "Overhaul of Python package processing"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:12
+msgid ""
+"A significant rework of the management of Python packages has been made. "
+"This aims to address the shortcomings on how packages were installed to a"
+" target. All Python packages will use [Python's `installer` module"
+"][python-installer] for their install stage. A consistent scheme (similar"
+" to [`posix_home`][python-sysconfig-posix_home]) will be used no matter "
+"what platform or distribution releng-tool is running on. This should "
+"prevent oddities in the location where Python files are installed into a "
+"host, staging or target area."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:21
+msgid ""
+"Developers can override the scheme used by configuring "
+"[`LIBFOO_PYTHON_INSTALLER_SCHEME`](pkg-opt-python-installer-scheme) for a"
+" package. The scheme may be configured to `native` to observe the same "
+"results in older versions of releng-tool. The option can also be "
+"configured with a supported variant defined by [`sysconfig`][python-"
+"sysconfig] or even a completely customized scheme for the "
+"project/package."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:28
+msgid ""
+"Additional configurations for Python package includes "
+"[`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`](pkg-opt-python-installer-"
+"launcher-kind), which can be used to tailor what type of package script "
+"is generated during an install; as well as [`LIBFOO_PYTHON_DIST_PATH"
+"`](pkg-opt-python-dist-path), which can be used to indicate the "
+"alternative location for a `dist/` (if required). Note that older Python "
+"setup types will require [`wheel`][wheel] to be available to ensure a "
+"proper wheel is generated to be installed."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:36
+msgid ""
+"Related to the above changes, the following improvements have been made "
+"to Python packages:"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:39
+msgid ""
+"Addressed some installation scenarios where configured package "
+"installation prefixes were not applied."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:41
+msgid ""
+"Improve the automatic path registration for host-configured Python "
+"packages. This includes both installed scripts and provided Python "
+"modules."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:43
+msgid ""
+"Developers can now issue re-install events on Python packages without the"
+" process complaining about overwriting files in a target."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:46
+msgid "Corrections to Git submodule using incorrect revisions"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:48
+msgid ""
+"While releng-tool has aimed to support the use of Git submodules for Git-"
+"based sites, limitations existed in which revisions were used when "
+"cloning these modules. When a submodule was processed in previous "
+"versions, releng-tool would incorrectly determine the revision based on "
+"the most recent release of a target branch instead of the fixed revision "
+"tracked by the Git repository (unless a package defined an explicit "
+"revision to use)."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:55
+msgid ""
+"This releases corrects this by querying the specific revision in the Git "
+"repository for the submodule path instead of incorrectly relying on a "
+"submodule configuration used for synchronization."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:59
+msgid "Alternative hash-files for package development revisions"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:61
+msgid ""
+"A project can define [hashes](/guides/packages/hash-file) (e.g. "
+"`libfoo.hash` for packages to validate fetched sources. An issue for "
+"users operating in a [development mode](/guides/development-mode) is that"
+" configured hash checks may fail if using an alternate revision for a "
+"package. This release now supports creating revision-specific hash sets. "
+"A package may define a respective `libfoo.hash-<rev>` file in a package, "
+"where `<rev>` matches the revision being fetched:"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:80
+msgid "Additional control/capabilities on fetching URL sources"
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:82
+msgid ""
+"Two improvements have been added into releng-tool in relation to managing"
+" URL sources for a project. The first change adds support for retrying "
+"fetch attempts if a transient error is detected. This includes scenarios "
+"where a server has indicated a timeout, an internal server error or more."
+" A fetch attempt will now try up to a total of three times before "
+"stopping. This aims to improve use cases such as preventing scheduled "
+"build failures if a site is only down for a small interval."
+msgstr ""
+
+#: ../../content/news/2025-02-09_02.00.00.md:90
+msgid ""
+"A second change related to URL fetching is the introduction of the "
+"[`--only-mirror`](arg-only-mirror) argument. When the argument is set for"
+" a project that also defines [`url_mirror`](conf-url-mirror), all "
+"[external packages](pkg-opt-external) will only be attempted to be "
+"downloaded through the configured mirror. This may be helpful for "
+"developers wanting to sanity check all expected resources are locally "
+"cached."
+msgstr ""
+

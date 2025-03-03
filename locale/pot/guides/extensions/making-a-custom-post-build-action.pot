@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,10 +37,6 @@ msgid "This extension example uses the name `my-awesome-extension`. Developers a
 msgstr ""
 
 #: ../../content/guides/extensions/_tutorial-prelude.md:5
-msgid "This extension example assumes a Python 3-supported interpreter. Developers looking to support running under a Python 2 interpreter may require additional steps not covered in this tutorial."
-msgstr ""
-
-#: ../../content/guides/extensions/_tutorial-prelude.md:8
 msgid "This tutorial does not cover steps on publishing an extension to an index such as [PyPI][pypi]. Instead, steps will be provided to load a extension's sources into the system path for releng-tool (which is optional whenever a given extension can be installed from an index or runs in an environment that already manages the installation of the extension)."
 msgstr ""
 

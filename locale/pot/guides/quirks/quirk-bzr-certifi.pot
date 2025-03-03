@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "When a package is configured to fetch [bzr][bzr] sources, select environm
 msgstr ""
 
 #: ../../content/guides/quirks/quirk-bzr-certifi.md:8
-msgid "See `bzr help ssl.ca_certs` for how to specify trusted CAcertificates.\\ Pass -Ossl.cert_reqs=none to disable certificate verification entirely."
+msgid "See `bzr help ssl.ca_certs` for how to specify trusted CA certificates.\\ Pass `-Ossl.cert_reqs=none` to disable certificate verification entirely."
 msgstr ""
 
 #: ../../content/guides/quirks/quirk-bzr-certifi.md:11

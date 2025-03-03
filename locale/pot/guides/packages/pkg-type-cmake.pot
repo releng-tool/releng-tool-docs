@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,15 +64,15 @@ msgstr ""
 msgid "`LIBFOO_CMAKE_BUILD_TYPE`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:45
+#: ../../content/guides/packages/pkg-type-cmake.md:48
 msgid "Specifies the build type used for the CMake package. A package may use a common build type (`Debug`, `Release`, `RelWithDebInfo` or `MinSizeRel`), or may have a custom build type defined. A developer needing to use a specific build type can configure this option with the name of the configuration. By default, the `RelWithDebInfo` build type is used for all CMake packages."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:57
+#: ../../content/guides/packages/pkg-type-cmake.md:60
 msgid "`LIBFOO_CMAKE_NOINSTALL`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cmake.md:59
+#: ../../content/guides/packages/pkg-type-cmake.md:65
 msgid "Specifies whether the CMake package should skip an attempt to invoke the install command. Ideally, projects will have an [install][cmake-install] rule configured to define how a project will install files into a target (or staging) environment. Not all CMake projects may have this rule defined, which can cause the installation stage for a package to fail. A developer can specify this no-install flag to skip a CMake-driven install request and manage installation actions through other means (such as post-processing). By default, the installation stage is invoked with a value of `False`."
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "`LIBFOO_ENV`"
 msgstr ""
 
-#: ../../content/guides/packages/_pkg-env.md:4
+#: ../../content/guides/packages/_pkg-env.md:7
 msgid "Provides a means to pass environment variables into all stages for a package. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""
 

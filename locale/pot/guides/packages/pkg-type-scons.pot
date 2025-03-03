@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,31 +20,31 @@ msgstr ""
 msgid "SCons package"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:3
+#: ../../content/guides/packages/pkg-type-scons.md:6
 msgid "A SCons package provides support to easily invoke [SCons][scons] commands at various stages of a package."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:10
+#: ../../content/guides/packages/pkg-type-scons.md:13
 msgid "SCons-based projects by default will invoke the default target during the build stage, and invoke the `install` alias for the installation stage. Developers can configure a specific target to invoke during the build stage by specifying a `LIBFOO_BUILD_OPTS` configuration. For example, if a package uses the target `release` for standard release builds, the following can be used:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:23
+#: ../../content/guides/packages/pkg-type-scons.md:26
 msgid "For the installation stage, the `install` alias is typically invoked. However, developers can override what target to invoke by adding it into the install options:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:33
+#: ../../content/guides/packages/pkg-type-scons.md:36
 msgid "For packages which do not have an installation alias to run, developers can use the [`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall) option to skip the installation stage for a package."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:37
+#: ../../content/guides/packages/pkg-type-scons.md:40
 msgid "Default configurations for a SCons package will not run a configuration stage. However, if a user wants to run a specific target during this stage, the target can be added into the configuration options. For example, if the SCons definition has a target `prework` that should be invoked during the configuration stage, the following can be used:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:49
+#: ../../content/guides/packages/pkg-type-scons.md:52
 msgid "Alternatively, if no configuration options are specified, a `<package>-configure` [script](pkg-type-script) can be invoked if available."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:52
+#: ../../content/guides/packages/pkg-type-scons.md:55
 msgid "The following sections outline configuration options are available for a SCons package."
 msgstr ""
 
@@ -100,7 +100,7 @@ msgstr ""
 msgid "`LIBFOO_ENV`"
 msgstr ""
 
-#: ../../content/guides/packages/_pkg-env.md:4
+#: ../../content/guides/packages/_pkg-env.md:7
 msgid "Provides a means to pass environment variables into all stages for a package. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""
 
@@ -128,10 +128,10 @@ msgstr ""
 msgid "Provides a means to pass command line options into the installation process. This option can be defined as a dictionary of string pairs or a list with strings -- either way defined will generate argument values to include in the installation event. This field is optional."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:102
+#: ../../content/guides/packages/pkg-type-scons.md:105
 msgid "`LIBFOO_SCONS_NOINSTALL`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-scons.md:104
+#: ../../content/guides/packages/pkg-type-scons.md:107
 msgid "Specifies whether a SCons package should skip an attempt to invoke the install alias. Ideally, projects will have an [install alias][scons-alias] defined to specify how a project will install files into a target (or staging) environment. Not all SCons projects may have this target defined, which can cause the installation stage for a package to fail. A developer can specify this no-install flag to skip a SCons install target request and manage installation actions through other means (such as post-processing). By default, the installation stage is invoked with a value of `False`."
 msgstr ""

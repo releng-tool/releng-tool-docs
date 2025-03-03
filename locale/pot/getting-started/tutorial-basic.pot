@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,19 +29,19 @@ msgid "To start, make a new folder for the project, folders for each package and
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:17
-msgid "Inside the `liba` package, a package definition and script-based files will be created. First, build the package definition `my-project/liba/liba.py` with the following contents:"
+msgid "Inside the `liba` package, a package definition and script-based files will be created. First, build the package definition `my-project/liba/liba.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:25
-msgid "Next, create a build script for the `liba` project `my-project/liba/liba-build.py` with the following contents:"
+msgid "Next, create a build script for the `liba` project `my-project/liba/liba-build.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:32
-msgid "Repeat the same steps for the `program-b` package with the file `my-project/program-b/program-b.py` containing:"
+msgid "Repeat the same steps for the `program-b` package with the file `my-project/program-b/program-b.rt` containing:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:40
-msgid "And `my-project/program-b/program-b-build.py` containing:"
+msgid "And `my-project/program-b/program-b-build.rt` containing:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:46
@@ -49,7 +49,7 @@ msgid "The second package is a bit different since it indicates that package `pr
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:50
-msgid "With this minimal set of packages, the project's releng-tool configuration can now be created. At the root of the project, create a `releng.py` configuration file with the following contents:"
+msgid "With this minimal set of packages, the project's releng-tool configuration can now be created. At the root of the project, create a `releng-tool.rt` configuration file with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:60

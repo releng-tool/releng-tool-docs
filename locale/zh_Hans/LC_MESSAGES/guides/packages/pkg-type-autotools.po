@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/packages/pkg-type-autotools.md:1
 msgid "Autotools package"
@@ -26,13 +26,13 @@ msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:3
 msgid ""
-"An autotools package provides support for processing a [GNU Build System"
+"An Autotools package provides support for processing a [GNU Build System"
 "][gnu-build-sys] supported module."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:10
 msgid ""
-"When an autotools package performs a configuration stage, the package may"
+"When an Autotools package performs a configuration stage, the package may"
 " invoke `autoreconf` (if configured to do so) and then invoke "
 "`configure`. When the build stage is reached, `make` will be invoked "
 "followed by `make install` during the installation stage."
@@ -41,16 +41,16 @@ msgstr ""
 #: ../../content/guides/packages/pkg-type-autotools.md:15
 msgid ""
 "The following sections outline configuration options are available for an"
-" autotools package."
+" Autotools package."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-autotools.md:18
+#: ../../content/guides/packages/pkg-type-autotools.md:19
 msgid "`LIBFOO_AUTOTOOLS_AUTORECONF`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-autotools.md:20
+#: ../../content/guides/packages/pkg-type-autotools.md:21
 msgid ""
-"Specifies whether the package needs to perform an autotools re-"
+"Specifies whether the package needs to perform an Autotools re-"
 "configuration. This is to assist in the rebuilding of GNU Build System "
 "files which may be broken or a patch has introduced new build script "
 "changes that need to be applied. This field is optional. By default, "
@@ -130,7 +130,7 @@ msgstr ""
 msgid "`LIBFOO_ENV`"
 msgstr ""
 
-#: ../../content/guides/packages/_pkg-env.md:4
+#: ../../content/guides/packages/_pkg-env.md:7
 msgid ""
 "Provides a means to pass environment variables into all stages for a "
 "package. This option is defined as a dictionary with key-value pairs "

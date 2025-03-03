@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "`package/<package>/` - A package-specific folder"
 msgstr ""
 
 #: ../../content/getting-started/prelude.md:16
-msgid "`package/<package>/<package>` - A package definition"
+msgid "`package/<package>/<package>.rt` - A package definition"
 msgstr ""
 
 #: ../../content/getting-started/prelude.md:17
@@ -73,7 +73,7 @@ msgid "`output/target/` - Area to hold target sysroot content"
 msgstr ""
 
 #: ../../content/getting-started/prelude.md:23
-msgid "`releng` - Project configuration"
+msgid "`releng-tool.rt` - Project configuration"
 msgstr ""
 
 #: ../../content/getting-started/prelude.md:25

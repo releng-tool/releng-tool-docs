@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,6 +60,10 @@ msgstr ""
 msgid "Multiple hash entries can be provided for the same file if desired. This is to assist in scenarios where a checked out asset's content changes based on the system it is checked out on. For example, a text file checked out from Git may use Windows line-ending on Windows system, and Unix-line endings on other systems:"
 msgstr ""
 
-#: ../../content/guides/packages/hash-file.md:72
+#: ../../content/guides/packages/hash-file.md:71
+msgid "If operating in a [development mode](/guides/development-mode) where an external package is configured with an alternative revision, hash checks will for a package can fail. A developer can override hash checks for a specific revision by adding an additional file in the package directory. The format is `libfoo.hash-<revision>`. For example, if a development run points to a package revision `canary`, if a file named `libfoo.hash-canary` exists, it will be used as the source of hashes for this revision."
+msgstr ""
+
+#: ../../content/guides/packages/hash-file.md:90
 msgid "<https://docs.python.org/library/hashlib.html>"
 msgstr ""

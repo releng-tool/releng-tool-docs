@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -18,19 +18,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/packages/pkg-type-cargo.md:1
 msgid "Cargo package"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cargo.md:3
+#: ../../content/guides/packages/pkg-type-cargo.md:5
+msgid "Added support for dependency patching."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-cargo.md:8
 msgid ""
 "A Cargo package provides support for processing a [Cargo][cargo] "
 "supported module."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cargo.md:10
+#: ../../content/guides/packages/pkg-type-cargo.md:15
 msgid ""
 "During the configuration stage of a Cargo package, `cargo` will be "
 "invoked to generate build files for the module. After fetching and "
@@ -42,7 +46,23 @@ msgid ""
 "Cargo executable."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-cargo.md:18
+#: ../../content/guides/packages/pkg-type-cargo.md:23
+msgid ""
+"Cargo packages are handled a bit differently compared to other package "
+"types. In order to support having Cargo application packages work with "
+"library dependencies managed in a releng-tool project, all Cargo packages"
+" in play will need to be extracted ahead of time before any individual "
+"Cargo package can be built."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-cargo.md:29
+msgid ""
+"For any Cargo package that defines a dependency to another Cargo package "
+"that is defined inside a releng-tool project, dependencies will be "
+"automatically [patched][cargo-patch] to use the local package definition."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-cargo.md:33
 msgid ""
 "The following sections outline configuration options are available for a "
 "Cargo package."
@@ -82,11 +102,36 @@ msgid ""
 "in the build event. This field is optional."
 msgstr ""
 
+#: ../../content/guides/packages/pkg-type-cargo.md:51
+msgid "`LIBFOO_CARGO_NAME`"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-cargo.md:56
+msgid ""
+"Provides an explicit name to use for a Cargo package. By default, the "
+"used Cargo name is assumed to be the same as the package name used in "
+"releng-tool. If the names do not match, it is recommended to explicitly "
+"set the package name as it will be used to patch package dependencies "
+"together."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-cargo.md:66
+msgid "`LIBFOO_CARGO_NOINSTALL`"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-cargo.md:71
+msgid ""
+"Specifies whether the Cargo package should skip an attempt to invoke the "
+"install command. This option can be helpful when defining a Cargo package"
+" that is used as a library (instead of a full application). By default, "
+"the installation stage is invoked with a value of `False`."
+msgstr ""
+
 #: ../../content/guides/packages/_pkg-env.md:2
 msgid "`LIBFOO_ENV`"
 msgstr ""
 
-#: ../../content/guides/packages/_pkg-env.md:4
+#: ../../content/guides/packages/_pkg-env.md:7
 msgid ""
 "Provides a means to pass environment variables into all stages for a "
 "package. This option is defined as a dictionary with key-value pairs "

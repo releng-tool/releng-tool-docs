@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/guides/quirks/quirk-log-execute_args.md:2
+msgid "Quirk `releng.log.execute_args`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-log-execute_args.md:4
+msgid ""
+"When releng-tool is configured with [`--debug`](arg-debug), the tool will"
+" log (among other things) process executions. Debugging can print "
+"information such as working directory of an execution, as well as "
+"arguments used for a call. For some commands, the command line and "
+"arguments can be long and may be difficult to quickly scan for issues. To"
+" help improve the use experience, the `releng.log.execute_args` quick can"
+" be used to print each argument on their own line."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-log-execute_args.md:16
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-log-execute_args.md:18
+msgid "[](quirks)"
+msgstr ""
+

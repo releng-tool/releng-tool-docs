@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/examples.md:1
 msgid "Examples"
@@ -26,19 +26,25 @@ msgstr ""
 
 #: ../../content/examples.md:4
 msgid ""
+"New developers may be interested in reading the [tutorials](/getting-"
+"started/tutorials) section for step-by-step examples."
+msgstr ""
+
+#: ../../content/examples.md:9
+msgid ""
 "Developers wishing to quickly generate an initial project skeleton in "
 "their working directory can use the `init` action:"
 msgstr ""
 
-#: ../../content/examples.md:12
+#: ../../content/examples.md:17
 msgid ""
 "A series of demonstration projects can be found in the following "
 "repository:"
 msgstr ""
 
-#: ../../content/examples.md:14
+#: ../../content/examples.md:19
 msgid ""
-"releng-tool – Examples repository\\ <https://github.com/releng-tool"
+"releng-tool — Examples repository \\ <https://github.com/releng-tool"
 "/releng-tool-examples>"
 msgstr ""
 

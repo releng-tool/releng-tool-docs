@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/getting-started/getting-started.md:1
 msgid "Getting started"
@@ -62,31 +62,29 @@ msgstr ""
 
 #: ../../content/getting-started/getting-started.md:31
 msgid ""
-"A project will typically be defined by a `releng` configuration file "
-"along with one or more packages found inside a `package/` folder. This "
-"location can be referred to as the \"root directory\"."
+"A project will typically be defined by a `releng-tool.rt` configuration "
+"file along with one or more packages found inside a `package/` folder. "
+"This location can be referred to as the \"root directory\"."
 msgstr ""
 
 #: ../../content/getting-started/getting-started.md:36
 msgid ""
-"releng-tool supports extensionless configuration/script files (e.g. "
-"`releng`), as well as configuration/scripts using a `.py` or `.releng` "
-"extension. For more information, please see [alternative "
-"extensions](/guides/tips/alternative-extensions)."
+"releng-tool supports using a `.py` extension. For more information, "
+"please see [alternative extensions](/guides/tips/alternative-extensions)."
 msgstr ""
 
-#: ../../content/getting-started/getting-started.md:42
+#: ../../content/getting-started/getting-started.md:40
 msgid ""
 "When invoking `releng-tool`, the tool will look in the current working "
 "directory for project information to process. For example, if a folder "
 "`my-project` had a skeleton such as:"
 msgstr ""
 
-#: ../../content/getting-started/getting-started.md:54
+#: ../../content/getting-started/getting-started.md:52
 msgid "The following output may be observed when running releng-tool:"
 msgstr ""
 
-#: ../../content/getting-started/getting-started.md:68
+#: ../../content/getting-started/getting-started.md:66
 msgid ""
 "On a successful execution, it is most likely that the releng-tool process"
 " will have an asset (or multiple) generated into a `images/` location. It"
@@ -94,19 +92,19 @@ msgid ""
 "generated files will be stored."
 msgstr ""
 
-#: ../../content/getting-started/getting-started.md:73
+#: ../../content/getting-started/getting-started.md:71
 msgid ""
 "If a user wishes to pass the directory of a project location via command "
 "line, the argument `--root-dir` can be used:"
 msgstr ""
 
-#: ../../content/getting-started/getting-started.md:80
+#: ../../content/getting-started/getting-started.md:78
 msgid ""
 "For a complete list of actions and other argument options provided by the"
 " tool, the `--help` option can be used to show this information:"
 msgstr ""
 
-#: ../../content/getting-started/getting-started.md:87
+#: ../../content/getting-started/getting-started.md:85
 msgid "Topics"
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/getting-started/tutorial-sdl.md:1
 msgid "Tutorial \"An SDL example\""
@@ -66,7 +66,7 @@ msgstr ""
 #: ../../content/getting-started/tutorial-sdl.md:33
 msgid ""
 "Inside the `libsdl` package, create a package definition `my-"
-"project/libsdl/libsdl` with the following contents:"
+"project/package/libsdl/libsdl.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:50
@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:129
 #: ../../content/getting-started/tutorial-sdl.md:321
-#: ../../content/getting-started/tutorial-sdl.md:377
+#: ../../content/getting-started/tutorial-sdl.md:382
 msgid ""
 "The following shows the expected file structure at this stage of this "
 "tutorial:"
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:150
 msgid ""
-"Create a package definition `my-sdl-project/sample/sample` with the "
+"Create a package definition `my-sdl-project/sample/sample.rt` with the "
 "following contents:"
 msgstr ""
 
@@ -205,8 +205,8 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:173
 msgid ""
-"Lastly, we wil configure the custom `local` type in `SAMPLE_VCS_TYPE` to "
-"indicate our implementation will be found inside the package folder "
+"Lastly, we will configure the custom `local` type in `SAMPLE_VCS_TYPE` to"
+" indicate our implementation will be found inside the package folder "
 "(until we can later add it to Git/etc. repository in the future)."
 msgstr ""
 
@@ -252,7 +252,7 @@ msgid ""
 "Create a new `assets` folder at the root of the project folder. Inside, "
 "place a copy of the [releng-tool.bmp](assets/sdl/releng-tool.bmp) image. "
 "At the root of the project folder, create a post-build script named "
-"`releng-post-build` with the following contents:"
+"`releng-tool-post-build.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:359
@@ -271,64 +271,43 @@ msgstr ""
 #: ../../content/getting-started/tutorial-sdl.md:364
 msgid ""
 "Lastly, we need to create our releng-tool configuration file for the "
-"project. In the root folder, create a `releng` file with the following "
-"contents:"
+"project. In the root folder, create a `releng-tool.rt` file with the "
+"following contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:373
+#: ../../content/getting-started/tutorial-sdl.md:376
 msgid "We explicitly configure releng-tool to load the `sample` package to build."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:374
+#: ../../content/getting-started/tutorial-sdl.md:377
 msgid ""
 "Note that we do not need to specify the `libsdl` package since the "
 "`sample` package will load it implicitly through its dependency "
 "configuration."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:400
+#: ../../content/getting-started/tutorial-sdl.md:379
+msgid ""
+"Adding `vsdevcmd` will auto-load Visual Studio developer environment "
+"variables to support Windows-based builds."
+msgstr ""
+
+#: ../../content/getting-started/tutorial-sdl.md:405
 msgid "Performing a build"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:403
-msgid ""
-"Users will want to run a build in a shell which has the host tools needed"
-" to perform a build (e.g. the compiler). For Windows, this may be "
-"invoking releng-tool in a Visual Studio command prompt on a system with "
-"`patch` installed. For example:"
-msgstr ""
-
-#: ../../content/getting-started/tutorial-sdl.md:408
-msgid "Start Git SCM Bash shell."
-msgstr ""
-
-#: ../../content/getting-started/tutorial-sdl.md:409
-msgid ""
-"Load Visual Studio support into the shell (for example, when using "
-"VS2019): `C:\\Program Files (x86)\\Microsoft Visual "
-"Studio\\2019\\Community\\Common7\\Tools\\VsDevCmd.bat`"
-msgstr ""
-
-#: ../../content/getting-started/tutorial-sdl.md:411
-msgid "Navigate to the project directory."
-msgstr ""
-
-#: ../../content/getting-started/tutorial-sdl.md:412
-msgid "Invoke `releng-tool`."
-msgstr ""
-
-#: ../../content/getting-started/tutorial-sdl.md:415
+#: ../../content/getting-started/tutorial-sdl.md:407
 msgid ""
 "With packages, assets and configurations prepared, the project should be "
 "ready to be built. While in the `my-sdl-project` folder, invoke `releng-"
 "tool`:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:445
+#: ../../content/getting-started/tutorial-sdl.md:437
 msgid "Testing"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:447
+#: ../../content/getting-started/tutorial-sdl.md:439
 msgid ""
 "With the project built, we will run the recently created SDL application "
 "to verify our initial releng-tool project definitions. With Linux or OS "
@@ -336,36 +315,36 @@ msgid ""
 "sample application:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:457
+#: ../../content/getting-started/tutorial-sdl.md:449
 msgid ""
 "With Windows, users can navigate to `output/target/bin` using the file "
 "explorer and click-open the `sample.exe` executable."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:460
+#: ../../content/getting-started/tutorial-sdl.md:452
 msgid "In all cases, a window should be presented with the releng-tool logo:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:462
+#: ../../content/getting-started/tutorial-sdl.md:454
 msgid ""
 "![Sample Linux](assets/sdl/sdl-sample-linux.png) ![Sample OS "
 "X](assets/sdl/sdl-sample-osx.png) ![Sample Windows](assets/sdl/sdl-"
 "sample-win32.png)"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:462
+#: ../../content/getting-started/tutorial-sdl.md:454
 msgid "Sample Linux"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:462
+#: ../../content/getting-started/tutorial-sdl.md:454
 msgid "Sample OS X"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:462
+#: ../../content/getting-started/tutorial-sdl.md:454
 msgid "Sample Windows"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:466
+#: ../../content/getting-started/tutorial-sdl.md:458
 msgid "This concludes this tutorial."
 msgstr ""
 

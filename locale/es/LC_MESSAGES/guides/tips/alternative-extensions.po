@@ -1,67 +1,89 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-"
+"tool/teams/171906/es/)\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 "
+"? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/tips/alternative-extensions.md:1
 msgid "Alternative extensions"
 msgstr ""
 
-#: ../../content/guides/tips/alternative-extensions.md:3
+#: ../../content/guides/tips/alternative-extensions.md:4
 msgid ""
-"A default configuration file is typically a file named `releng` at the root "
-"of a project. Consider the following example of a project with a `libfoo` "
-"package with various stage scripts:"
+"The `.releng` extension is no longer recommended and will be removed in a"
+" future release."
 msgstr ""
 
-#: ../../content/guides/tips/alternative-extensions.md:17
+#: ../../content/guides/tips/alternative-extensions.md:8
 msgid ""
-"If a developer prefers to define extensions for various configurations and "
-"scripts, files detected with a `.releng` or `.py` extensions can be used "
-"instead. For example, the above example is equivalent to the structure:"
+"Extensionless configurations/scripts are no longer recommended and may be"
+" removed in a future release."
 msgstr ""
 
-#: ../../content/guides/tips/alternative-extensions.md:31
-msgid "Or the structure:"
+#: ../../content/guides/tips/alternative-extensions.md:12
+msgid ""
+"Extension priority orders have changed (<2.2: *(none)*, `.rt`, `.releng`,"
+" `.py`; >=2.2: `.rt`, `.py`, *(none)*, `.releng`)."
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:16
+msgid ""
+"A default configuration file is typically a file named `releng-tool.rt` "
+"at the root of a project. Consider the following example of a project "
+"with a `libfoo` package with various stage scripts:"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:30
+msgid ""
+"Developers who do not prefer the `.rt` extension may use the `.py` "
+"extension. For example, the above example is equivalent to the structure:"
 msgstr ""
 
 #: ../../content/guides/tips/alternative-extensions.md:43
-msgid ""
-"For a specific file to be loaded, releng-tool uses the following priority:"
+msgid "For a specific file to be loaded, releng-tool uses the following priority:"
 msgstr ""
 
 #: ../../content/guides/tips/alternative-extensions.md:45
-msgid "File without an extension"
+msgid "File with a `.rt` extension"
 msgstr ""
 
 #: ../../content/guides/tips/alternative-extensions.md:46
-msgid "File with a `.releng` extension"
-msgstr ""
-
-#: ../../content/guides/tips/alternative-extensions.md:47
 msgid "File with a `.py` extension"
 msgstr ""
 
-#: ../../content/guides/tips/alternative-extensions.md:49
+#: ../../content/guides/tips/alternative-extensions.md:47
+msgid "File without an extension (*deprecated*)"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:48
+msgid "File with a `.releng` extension (*deprecated*)"
+msgstr ""
+
+#: ../../content/guides/tips/alternative-extensions.md:50
 msgid ""
-"Only the first detected file will be loaded. For example, if a project has "
-"multiple releng-tool configuration files with different extensions:"
+"Only the first detected file will be loaded. For example, if a project "
+"has multiple releng-tool configuration files with different extensions:"
 msgstr ""
 
 #: ../../content/guides/tips/alternative-extensions.md:62
-msgid "Only the `releng` configuration script will be used."
+msgid "Only the `releng-tool.rt` configuration script will be used."
 msgstr ""
+

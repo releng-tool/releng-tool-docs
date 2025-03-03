@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "If not already installed, download the most recent version of [Python][py
 msgstr ""
 
 #: ../../content/install.md:191
-msgid "Python - Downloads\\ <https://www.python.org/downloads/>"
+msgid "Python — Downloads \\ <https://www.python.org/downloads/>"
 msgstr ""
 
 #: ../../content/install.md:194

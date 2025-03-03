@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/licenses.md:1
 msgid "Licenses"
@@ -46,7 +46,7 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/licenses.md:26
-msgid "Which then `releng` can be configured to use the header contents:"
+msgid "Which then `releng-tool.rt` can be configured to use the header contents:"
 msgstr ""
 
 #: ../../content/guides/licenses.md:40

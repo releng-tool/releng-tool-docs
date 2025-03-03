@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Package-specific command line execution"
 msgstr ""
 
 #: ../../content/news/2022-05-02_00.12.00.md:60
-msgid "Developer now have an easy way to issue raw commands inside a package's prepared build directory. For example, developing/testing with an autotools project, a developer can issue a manual configuration request to test/sanity check options:"
+msgid "Developer now have an easy way to issue raw commands inside a package's prepared build directory. For example, developing/testing with an Autotools project, a developer can issue a manual configuration request to test/sanity check options:"
 msgstr ""
 
 #: ../../content/news/2022-05-02_00.12.00.md:69

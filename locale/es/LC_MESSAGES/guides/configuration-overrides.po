@@ -1,34 +1,46 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-"
+"tool/teams/171906/es/)\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 "
+"? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/configuration-overrides.md:1
 msgid "Configuration overrides"
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:3
+#: ../../content/guides/configuration-overrides.md:4
 msgid ""
-"If a builder needs to (for example) override a tool location or package "
-"site, a user can define either environment options or setup a configuration "
-"override script `releng-overrides`:"
+"The use of a `releng-overrides` script is deprecated. Various override "
+"capabilities noted below can either be supported in a `releng-tool.rt` "
+"configuration or have alternative approaches to performing overrides."
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:18
+#: ../../content/guides/configuration-overrides.md:9
+msgid ""
+"If a builder needs to (for example) override a tool location or package "
+"site, a user can define either environment options or setup a "
+"configuration override script `releng-overrides`:"
+msgstr ""
+
+#: ../../content/guides/configuration-overrides.md:24
 msgid ""
 "It is never recommended to persist a configuration overrides file into a "
 "project's source repository. Overrides are intended for dealing with "
@@ -36,76 +48,73 @@ msgid ""
 "images)."
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:22
+#: ../../content/guides/configuration-overrides.md:28
 msgid "Extraction tool overrides"
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:24
-msgid ""
-"The `override_extract_tools` option inside a configuration override script "
-"allows a dictionary to be provided to map an extension type to an external "
-"tool to indicate which tool should be used for extraction. For example, when"
-" a `.zip` archive is being processed for extraction, releng-tool will "
-"internally extract the archive. However, a user may wish to override this "
-"tool with their own extraction utility. Consider the following example:"
+#: ../../content/guides/configuration-overrides.md:30
+msgid "See [`override_extract_tools`](conf-override-extract-tools)."
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:37
-msgid ""
-"The `{file}` key will be replaced with the file to be extracted, and the "
-"`{dir}` key will be replaced where the contents should extract to."
-msgstr ""
-
-#: ../../content/guides/configuration-overrides.md:40
+#: ../../content/guides/configuration-overrides.md:32
 msgid "Revision overrides"
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:42
+#: ../../content/guides/configuration-overrides.md:35
 msgid ""
-"The `override_revisions` option inside a configuration override script "
-"allows a dictionary to be provided to map a package name to a new revision "
-"value. Consider the following example: a project defines `module-a` and "
-"`module-b` packages with package `module-b` depending on package `module-a`."
-" A developer may be attempting to tweak package `module-b` on the fly to "
-"test a new capabilities against the current stable version of `module-a`. "
-"However, the developer does not want to explicitly change the revision "
-"inside package `module-b`'s definition. To avoid this, an override can be "
-"used instead:"
+"The use of revision overrides is deprecated. Users wanting to override "
+"revisions without source modification are recommended to use [variable "
+"injection](arg-variable-injection)."
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:57
+#: ../../content/guides/configuration-overrides.md:40
+msgid ""
+"The `override_revisions` option inside a configuration override script "
+"allows a dictionary to be provided to map a package name to a new "
+"revision value. Consider the following example: a project defines "
+"`module-a` and `module-b` packages with package `module-b` depending on "
+"package `module-a`. A developer may be attempting to tweak package "
+"`module-b` on the fly to test a new capabilities against the current "
+"stable version of `module-a`. However, the developer does not want to "
+"explicitly change the revision inside package `module-b`'s definition. To"
+" avoid this, an override can be used instead:"
+msgstr ""
+
+#: ../../content/guides/configuration-overrides.md:55
 msgid ""
 "The above example shows that package `module-b` will fetch using a test "
 "branch instead of what is defined in the actual package definition."
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:60
+#: ../../content/guides/configuration-overrides.md:58
 msgid "Site overrides"
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:62
+#: ../../content/guides/configuration-overrides.md:61
 msgid ""
-"The `override_sites` option inside a configuration override script allows a "
-"dictionary to be provided to map a package name to a new site value. There "
-"may be times where a host may not have access to a specific package site. To"
-" have a host to use a mirror location without having to adjust the package "
-"definition, the site override option can be used. For example, consider a "
-"package pulls from site `git@example.com:myproject.git`. However, the host "
-"`example.com` cannot be access from the host machine. If a mirror location "
-"has been setup at `git@example.org:myproject.git`, the following override "
-"can be used:"
+"The use of site overrides is deprecated. Users wanting to override sites "
+"without source modification are recommended to use [variable injection"
+"](arg-variable-injection)."
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:77
+#: ../../content/guides/configuration-overrides.md:66
+msgid ""
+"The `override_sites` option inside a configuration override script allows"
+" a dictionary to be provided to map a package name to a new site value. "
+"There may be times where a host may not have access to a specific package"
+" site. To have a host to use a mirror location without having to adjust "
+"the package definition, the site override option can be used. For "
+"example, consider a package pulls from site "
+"`git@example.com:myproject.git`. However, the host `example.com` cannot "
+"be access from the host machine. If a mirror location has been setup at "
+"`git@example.org:myproject.git`, the following override can be used:"
+msgstr ""
+
+#: ../../content/guides/configuration-overrides.md:81
 msgid "Tool overrides"
 msgstr ""
 
-#: ../../content/guides/configuration-overrides.md:79
-msgid ""
-"Environment variables can be used to help override external tool invoked by "
-"the releng-tool process. For example, when invoking CMake-based projects, "
-"the tool `cmake` will be invoked. However, if a builder is running on CentOS"
-" and CMake v3.x is desired, the tool `cmake3` needs to be invoked instead. "
-"To configure this, an environment variable can be set to switch which tool "
-"to invoke. Consider the following example:"
+#: ../../content/guides/configuration-overrides.md:83
+msgid "See [Environment — Tool overrides](env-tool-overrides)."
 msgstr ""
+

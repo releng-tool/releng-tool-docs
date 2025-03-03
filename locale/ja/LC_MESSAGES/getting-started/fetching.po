@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,7 +19,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/getting-started/fetching.md:1
 msgid "Understanding fetching"
@@ -104,30 +104,35 @@ msgstr ""
 msgid "Full fetching"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:89
+#: ../../content/getting-started/fetching.md:90
+msgid ""
+"Post-fetching will occur after the patching stage instead of the "
+"extraction phase."
+msgstr ""
+
+#: ../../content/getting-started/fetching.md:94
 msgid ""
 "Most package sources are acquired during the fetch stage. However, some "
 "packages define dependencies within their sources. This can require "
 "releng-tool to first fetch a defined package's sources, extract the "
 "package, followed by fetching any defined dependencies. Post-fetching "
 "will be automatically performed for supported packages (e.g. Cargo) after"
-" their extraction stage. Users can invoke the [`fetch-full`](action-"
-"fetch-full) action to explicitly process releng-tool's fetch-post "
-"operations:"
+" their patch stage. Users can invoke the [`fetch-full`](action-fetch-"
+"full) action to explicitly process releng-tool's fetch-post operations:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:101
+#: ../../content/getting-started/fetching.md:106
 msgid "Force re-fetch of DVCS sources"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:103
+#: ../../content/getting-started/fetching.md:108
 msgid ""
 "When a DVCS-based package goes through its fetch stage, the contents can "
 "be locally stored in the configured cache directory. For a package "
 "definition as follows:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:112
+#: ../../content/getting-started/fetching.md:117
 msgid ""
 "A cache of the `v1.0` tag will be fetched and stored locally. If a "
 "package is cleaned and rebuilt again, releng-tool will referred to the "
@@ -138,24 +143,24 @@ msgid ""
 " should trigger a forced update from the remote site. For example:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:124
+#: ../../content/getting-started/fetching.md:129
 msgid ""
 "The above can recognize the new tag update, and any future clean builds "
 "made will use the new reference implementation."
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:127
+#: ../../content/getting-started/fetching.md:132
 msgid "Force re-fetch of fixed sources"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:129
+#: ../../content/getting-started/fetching.md:134
 msgid ""
 "For packages which reference a fixed artifact, once a package has "
 "completed its fetch stage, the artifact will no longer need to be "
 "downloaded again. For example:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:137
+#: ../../content/getting-started/fetching.md:142
 msgid ""
 "The archive `libfoo-1.0.tgz` will be locally store and used in future "
 "builds. In the event where a site's archive is known to have been "
@@ -166,11 +171,11 @@ msgid ""
 "file and re-download it from the configured site:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:149
+#: ../../content/getting-started/fetching.md:154
 msgid "Automatically re-fetch development branches"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:151
+#: ../../content/getting-started/fetching.md:156
 msgid ""
 "When operating in [development mode](/guides/development-mode) where a "
 "package has a development-specific source based off a branch, it may be "
@@ -178,14 +183,14 @@ msgid ""
 "example, consider `libfoo` with a development revision `main`:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:162
+#: ../../content/getting-started/fetching.md:167
 msgid ""
 "With the above configuration, if a builder cleans and rebuilds the "
 "project, the originally cache of `main` would still be used, even if "
 "`main` has new updates on the remote branch:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:178
+#: ../../content/getting-started/fetching.md:183
 msgid ""
 "If a user wants to automatically re-fetch new updates on a development "
 "branch, they can take advantage of the [`LIBFOO_DEVMODE_IGNORE_CACHE"
@@ -193,7 +198,7 @@ msgid ""
 "definition had:"
 msgstr ""
 
-#: ../../content/getting-started/fetching.md:190
+#: ../../content/getting-started/fetching.md:195
 msgid ""
 "A repeat of the rebuild actions will result in an automatic update of the"
 " package's `main` branch (if updates are available):"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/release-notes.md:1
 msgid "Release notes"
@@ -31,894 +31,1200 @@ msgid ""
 "releng-tool, please see the project's [repository commits][commits]."
 msgstr ""
 
-#: ../../content/release-notes.md:7
-msgid "News"
+#: ../../content/release-notes.md:10
+msgid "## News"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:2
+#: ../../../releng-tool/CHANGELOG.md:2
+msgid "Development"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:4
+msgid "Cleanup unexpected prints in `releng_require_version`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:5
+msgid ""
+"Extension priority changed: (1) `.rt`, (2) `.py`, (3) *(none)*, (4) "
+"`.releng`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:6
+msgid "Improve accepting of path-like arguments into `releng_cat`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:7
+msgid "Improve accepting of path-like arguments into `releng_ls`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:8
+msgid "Improve accepting of path-like arguments into `releng_mkdir`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:9
+msgid "Improve accepting of path-like arguments into `releng_remove`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:10
+msgid "Improve accepting of path-like arguments into `releng_tmpdir`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:11
+msgid "Improve accepting of path-like arguments into `releng_wd`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:12
+msgid "Patches are applied with the `--binary` argument"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:13
+msgid "Support for extensionless configuration/scripts is deprecated"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:14
+msgid "Support working-directory changing with `releng_tmpdir`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:16
+msgid "2.1.1 (2025-02-17)"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:18
+msgid ""
+"Fixed extraction warnings for non-empty folders due to improper fetch "
+"flags"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:20
+msgid "2.1.0 (2025-02-17)"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:22
+msgid "Avoid multi-fetching packages with ignore-cache in development mode"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:23
+msgid "Improve ease of unconfiguring local-sources mode with single `unset` call"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:24
+msgid "Introduce `*_SHARE_DIR` environment/script variables"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:25
+msgid "Introduce `default_devmode_ignore_cache` project configuration"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:26
+msgid "Local-sources configurations can now accept `package/`-prefixed entries"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:27
+msgid "Prevent unused CLI warnings with CMake for releng-tool-managed options"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:28
+msgid ""
+"Support a pre-defined `CMAKE_MODULE_PATH` for CMake staging/target/host "
+"areas"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:30
+msgid "2.0.1 (2025-02-09)"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:32
+msgid "Including missing completion scripts and man page in source package"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:34
+msgid "2.0 (2025-02-09)"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:36
+msgid "**(note)** Support for non-LTS version of Python have been dropped"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:37
+msgid "Fixed handling of Git submodules using incorrect revisions"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:38
+msgid "Fixed issue where configured prefixes could be ignored in Python packages"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:39
+msgid ""
+"Fixed issue where file URIs sites may prevent other URL sites from "
+"fetching"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:40
+msgid ""
+"Fixed issue where triggering a re-install on select Python packages would"
+" fail"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:41
+msgid "Improved support for host tool integration with Python packages"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:42
+msgid ""
+"Introduce `--only-mirror` argument to force external package fetch with "
+"mirror"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:43
+msgid "Introduce alternative hash-files for package development revisions"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:44
+msgid ""
+"Overhaul of Python package processing with install scheme configuration "
+"via `LIBFOO_PYTHON_INSTALLER_SCHEME`, launcher configuration via "
+"`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND` and dist overrides via "
+"`LIBFOO_PYTHON_DIST_PATH`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:48
+msgid "Script function `releng_ls` now accepts a `recursive` argument"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:49
+msgid "Support URL fetch retries on transient errors"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:50
+msgid "Support for GNU Bazaar sites is deprecated"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:51
+msgid "Support for Python distutils packages is deprecated"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:52
+msgid "Support for `override_revisions` is deprecated"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:53
+msgid "Support for `override_sites` is deprecated"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:54
+msgid "Support format hints in `url_mirror`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:55
+msgid "Support ignoring `stderr` output in execute calls"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:56
+msgid "Support maximum checks when using `releng_require_version`"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:57
+msgid "Use of Python's `installer` required for all Python packages"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:59
+msgid "1.4 (2025-01-19)"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:61
+msgid ""
+"Allow adding a package without a definition that defines at least one "
+"script"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:62
+msgid "Allow users to suppress local-site package warnings"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:63
+msgid "Correct `hint` missing from script environments"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:64
+msgid "Disable garbage collection and maintenance tasks for Git caches"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:65
+msgid "Disable update checks for PDM when processing PDM packages"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:66
+msgid "Ensure the `punch` action triggers the post-build stage"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:67
+msgid "Fixed configuration failure when using older Meson (pre-v1.1.1)"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:68
+msgid ""
+"Fixed incorrect JSON/SPDX SBOM documents for projects with empty/local "
+"sites"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:69
+msgid "Fixed issue where `releng_copy` could not copy a broken symbolic link"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:70
+msgid "Fixed issue where `releng_remove` could not remove a broken symbolic link"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:71
+msgid "Fixed patch overrides not supporting alternative file extensions"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:72
+msgid "Flag `RELENG_FORCE` when using the `punch` action"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:73
+msgid "Introduce `LIBFOO_CARGO_NOINSTALL` to support Cargo libraries"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:74
+msgid "Introduce `RELENG_EXEC` environment/script variable"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:75
+msgid "Introduce `libfoo-fresh` action"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:76
+msgid "Introduce `releng_symlink` helper script function"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:77
+msgid "Introduce a `nested` option for I/O copy/move utility calls"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:78
+msgid "Introduce a shared build target for Cargo packages"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:79
+msgid "Perform automatic Cargo patching for project-managed dependencies"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:80
+msgid "Post-fetching Cargo dependencies now occurs after a package's patch stage"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:81
+msgid "Promote use of `.rt` extensions for definitions/scripts"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:82
+msgid "Promote use of `releng-tool.rt` for project configuration"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:83
+msgid "Support Breezy VCS-type"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:84
+msgid "Support injecting Visual Studio development environment variables"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:85
+msgid "Support newer GitLab CI flag for automatic debugging mode"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:86
+msgid "Support preallocated list/dictionary package configurations"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:87
+msgid "Update SPDX license database to v3.26"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:88
+msgid "Utilize forwarded arguments as fallback for `libfoo-exec` action"
+msgstr ""
+
+#: ../../../releng-tool/CHANGELOG.md:90
 msgid "1.3 (2024-08-19)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:5
+#: ../../../releng-tool/CHANGELOG.md:92
 msgid "Automatic debugging mode when detecting CI debugging runs"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:6
+#: ../../../releng-tool/CHANGELOG.md:93
 msgid "Correct unexpected dot in prefix path variables for empty prefixed builds"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:7
+#: ../../../releng-tool/CHANGELOG.md:94
 msgid "Fixed incorrect specification version tag in RDF/SPDX SBOM documents"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:8
+#: ../../../releng-tool/CHANGELOG.md:95
 msgid "Fixed issue where an aborted Mercurial fetch could require manual cleanup"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:9
+#: ../../../releng-tool/CHANGELOG.md:96
 msgid "Include license list version in SPDX SBOM documents"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:10
-msgid "Introduce ``LIBFOO_NEEDS`` to replace ``LIBFOO_DEPENDENCIES``"
+#: ../../../releng-tool/CHANGELOG.md:97
+msgid "Introduce `LIBFOO_NEEDS` to replace `LIBFOO_DEPENDENCIES`"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:11
-msgid "Introduce ``RELENG_GENERATED_LICENSES`` script variable"
+#: ../../../releng-tool/CHANGELOG.md:98
+msgid "Introduce `RELENG_GENERATED_LICENSES` script variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:12
-msgid "Introduce ``RELENG_GENERATED_SBOMS`` script variable"
+#: ../../../releng-tool/CHANGELOG.md:99
+msgid "Introduce `RELENG_GENERATED_SBOMS` script variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:13
-msgid "Introduce ``environment`` project configuration"
+#: ../../../releng-tool/CHANGELOG.md:100
+msgid "Introduce `environment` project configuration"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:14
+#: ../../../releng-tool/CHANGELOG.md:101
 msgid "Introduce support for Cargo-based packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:15
+#: ../../../releng-tool/CHANGELOG.md:102
 msgid "Remote package configuration/scripting is now opt-in"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:16
-msgid "Script helper ``releng_mkdir`` will now return the path"
+#: ../../../releng-tool/CHANGELOG.md:103
+msgid "Script helper `releng_mkdir` will now return the path"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:17
-msgid "Support multiple path components in ``releng_mkdir``"
+#: ../../../releng-tool/CHANGELOG.md:104
+msgid "Support multiple path components in `releng_mkdir`"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:18
-msgid "Support variable expansion for ``releng_execute`` arguments"
+#: ../../../releng-tool/CHANGELOG.md:105
+msgid "Support variable expansion for `releng_execute` arguments"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:19
+#: ../../../releng-tool/CHANGELOG.md:106
 msgid "Unknown arguments will now generate an error by default"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:20
+#: ../../../releng-tool/CHANGELOG.md:107
 msgid "Update SPDX license database to v3.25"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:22
+#: ../../../releng-tool/CHANGELOG.md:109
 msgid "1.2 (2024-07-01)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:25
-msgid "Introduce the ``punch`` action to support forced rebuild of packages"
+#: ../../../releng-tool/CHANGELOG.md:111
+msgid "Introduce the `punch` action to support forced rebuild of packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:26
+#: ../../../releng-tool/CHANGELOG.md:112
 msgid ""
 "Support automatic package preparation for compatible local-sourced "
 "packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:27
+#: ../../../releng-tool/CHANGELOG.md:113
 msgid "Update SPDX license database to v3.24"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:29
+#: ../../../releng-tool/CHANGELOG.md:115
 msgid "1.1 (2024-03-29)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:32
+#: ../../../releng-tool/CHANGELOG.md:117
 msgid "Prevent SSH authentication prompts that may occur when using Git"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:33
+#: ../../../releng-tool/CHANGELOG.md:118
 msgid "Support SPDX license identifier field for custom licenses"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:34
-msgid "Support environment output directory override (``RELENG_OUTPUT_DIR``)"
+#: ../../../releng-tool/CHANGELOG.md:119
+msgid "Support environment output directory override (`RELENG_OUTPUT_DIR`)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:35
-msgid "Support global output containers (``RELENG_GLOBAL_OUTPUT_CONTAINER_DIR``)"
+#: ../../../releng-tool/CHANGELOG.md:120
+msgid "Support global output containers (`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:36
+#: ../../../releng-tool/CHANGELOG.md:121
 msgid "Update SPDX license database to v3.23"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:38
+#: ../../../releng-tool/CHANGELOG.md:123
 msgid "1.0 (2023-12-22)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:41
-msgid "Introduce ``RELENG_SCRIPT`` and ``RELENG_SCRIPT_DIR`` variables"
+#: ../../../releng-tool/CHANGELOG.md:125
+msgid "Introduce `RELENG_SCRIPT` and `RELENG_SCRIPT_DIR` variables"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:42
+#: ../../../releng-tool/CHANGELOG.md:126
 msgid "Update SPDX license database to v3.22"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:44
+#: ../../../releng-tool/CHANGELOG.md:128
 msgid "0.17 (2023-08-06)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:47
+#: ../../../releng-tool/CHANGELOG.md:130
 msgid "Fixed issue with CMake-generated export targets missing prefix overrides"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:48
+#: ../../../releng-tool/CHANGELOG.md:131
 msgid "Fixed issue with local-source configurations when provided relative paths"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:49
-msgid "Introduce ``LIBFOO_CMAKE_BUILD_TYPE`` to override CMake build types"
+#: ../../../releng-tool/CHANGELOG.md:132
+msgid "Introduce `LIBFOO_CMAKE_BUILD_TYPE` to override CMake build types"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:50
-msgid "Introduce ``LIBFOO_ENV`` to apply environment variables on multiple stages"
+#: ../../../releng-tool/CHANGELOG.md:133
+msgid "Introduce `LIBFOO_ENV` to apply environment variables on multiple stages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:51
-msgid "Introduce ``state`` action for dumping configured releng-tool state"
+#: ../../../releng-tool/CHANGELOG.md:134
+msgid "Introduce `state` action for dumping configured releng-tool state"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:52
+#: ../../../releng-tool/CHANGELOG.md:135
 msgid "Introduce support for Perforce sites"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:53
+#: ../../../releng-tool/CHANGELOG.md:136
 msgid ""
 "Support Git repository interaction in output directories for Git-based "
 "sources"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:54
+#: ../../../releng-tool/CHANGELOG.md:137
 msgid "Support ability to unconfigure development/local-sources mode"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:55
-msgid "Support the existence of a ``NO_COLOR`` environment variable"
+#: ../../../releng-tool/CHANGELOG.md:138
+msgid "Support the existence of a `NO_COLOR` environment variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:56
+#: ../../../releng-tool/CHANGELOG.md:139
 msgid "Update SPDX license database to v3.21"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:58
+#: ../../../releng-tool/CHANGELOG.md:141
 msgid "0.16 (2023-05-07)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:61
+#: ../../../releng-tool/CHANGELOG.md:143
 msgid ""
 "Enforce strict hash checking in development mode for external packages "
 "which define a development revision"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:63
+#: ../../../releng-tool/CHANGELOG.md:145
 msgid ""
-"Fixed issue where ``releng_copy`` may fail when provided a single part "
+"Fixed issue where `releng_copy` may fail when provided a single part "
 "relative destination"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:65
+#: ../../../releng-tool/CHANGELOG.md:147
 msgid "Fixed issue where HTML-based software build of materials would be empty"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:66
+#: ../../../releng-tool/CHANGELOG.md:148
 msgid "Introduce support for Meson-based packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:67
+#: ../../../releng-tool/CHANGELOG.md:149
 msgid "Prevent processing packages when SBOM generation is explicitly requested"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:68
+#: ../../../releng-tool/CHANGELOG.md:150
 msgid "Support SPDX-tailored software build of materials"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:69
+#: ../../../releng-tool/CHANGELOG.md:151
 msgid ""
-"Support module-specific local-sources to accept ``:`` instead of ``@``, "
+"Support module-specific local-sources to accept `:` instead of `@`, "
 "allowing certain shells to take advantage of path auto-completion"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:72
+#: ../../../releng-tool/CHANGELOG.md:154
 msgid "0.15 (2023-02-12)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:75
+#: ../../../releng-tool/CHANGELOG.md:156
 msgid "CMake install events will now always skip dependency checks"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:76
+#: ../../../releng-tool/CHANGELOG.md:157
 msgid "Fixed issue where extension loading may cause issues in Python 2.7"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:77
+#: ../../../releng-tool/CHANGELOG.md:158
 msgid "Fixed issue where reconfiguration may not flag rebuild flags (and related)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:78
+#: ../../../releng-tool/CHANGELOG.md:159
 msgid ""
 "Fixed issue where statistics (PDF) may fail on legacy matplotlib "
 "environments"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:79
+#: ../../../releng-tool/CHANGELOG.md:160
 msgid "Improve support for patching a root build directory and sub-directories"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:80
+#: ../../../releng-tool/CHANGELOG.md:161
 msgid "Introduce extension support for event listeners"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:81
-msgid "Make projects will now be provided a ``PREFIX`` override"
+#: ../../../releng-tool/CHANGELOG.md:162
+msgid "Make projects will now be provided a `PREFIX` override"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:82
+#: ../../../releng-tool/CHANGELOG.md:163
 msgid "Source distribution now includes completion scripts and tests"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:83
+#: ../../../releng-tool/CHANGELOG.md:164
 msgid ""
 "Support setting software build of materials format in project "
 "configuration"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:85
+#: ../../../releng-tool/CHANGELOG.md:166
 msgid "0.14 (2023-02-05)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:88
-msgid "**(note)** The deprecated ``releng`` namespace has been removed"
+#: ../../../releng-tool/CHANGELOG.md:168
+msgid "**(note)** The deprecated `releng` namespace has been removed"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:89
+#: ../../../releng-tool/CHANGELOG.md:169
 msgid "CMake install events will now always force installs by default"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:90
+#: ../../../releng-tool/CHANGELOG.md:170
 msgid ""
 "Fixed issue where CMake projects with implicit target area installs have "
-"issues finding includes/libraries with ``find_<x>`` calls"
+"issues finding includes/libraries with `find_<x>` calls"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:92
-msgid ""
-"Fixed issue where ``libfoo-exec`` action with an ``=`` character would "
-"crash"
+#: ../../../releng-tool/CHANGELOG.md:172
+msgid "Fixed issue where `libfoo-exec` action with an `=` character would crash"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:93
-msgid "Introduce ``*_BIN_DIR`` environment/script variables"
+#: ../../../releng-tool/CHANGELOG.md:173
+msgid "Introduce `*_BIN_DIR` environment/script variables"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:94
-msgid "Introduce ``releng_move_into`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:174
+msgid "Introduce `releng_move_into` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:95
-msgid "Local VCS-type packages should now place sources inside a ``local`` folder"
+#: ../../../releng-tool/CHANGELOG.md:175
+msgid "Local VCS-type packages should now place sources inside a `local` folder"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:96
+#: ../../../releng-tool/CHANGELOG.md:176
 msgid "Promote the use of SPDX license identifiers in package license options"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:97
-msgid "Support ``.releng`` extensions for scripts"
+#: ../../../releng-tool/CHANGELOG.md:177
+msgid "Support `.releng` extensions for scripts"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:98
+#: ../../../releng-tool/CHANGELOG.md:178
 msgid "Support automatic include injection for CMake staging/target/host areas"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:99
+#: ../../../releng-tool/CHANGELOG.md:179
 msgid "Support for Poetry Python setup type"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:100
+#: ../../../releng-tool/CHANGELOG.md:180
 msgid "Support generating a software build of materials"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:101
-msgid "Support treating releng-tool warnings as errors with ``--werror`` argument"
+#: ../../../releng-tool/CHANGELOG.md:181
+msgid "Support treating releng-tool warnings as errors with `--werror` argument"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:102
+#: ../../../releng-tool/CHANGELOG.md:182
 msgid "Support user paths in package-specific local-sources overrides"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:104
+#: ../../../releng-tool/CHANGELOG.md:184
 msgid "0.13 (2022-08-10)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:107
+#: ../../../releng-tool/CHANGELOG.md:186
 msgid ""
 "Avoid interaction with target area when using CMake projects that only "
 "uses the staging area"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:109
-msgid "Downloaded files will now be stored in sub-directories under ``dl/``"
+#: ../../../releng-tool/CHANGELOG.md:188
+msgid "Downloaded files will now be stored in sub-directories under `dl/`"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:110
+#: ../../../releng-tool/CHANGELOG.md:189
 msgid ""
 "Ensure clean-related environment/script variables are set for package-"
 "specific clean requests"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:112
+#: ../../../releng-tool/CHANGELOG.md:191
 msgid ""
 "Fixed a rare chance that an explicit package run provided via command "
 "line may be ignored"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:114
+#: ../../../releng-tool/CHANGELOG.md:193
 msgid ""
 "Fixed issue in older Python interpreters where the executed package order"
 " may not be consistent"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:116
+#: ../../../releng-tool/CHANGELOG.md:195
 msgid ""
 "Fixed issue where select package-specific environment variables may leak "
 "into other packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:118
-msgid "Improve handling of ``file://`` sites in Windows"
+#: ../../../releng-tool/CHANGELOG.md:197
+msgid "Improve handling of `file://` sites in Windows"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:119
+#: ../../../releng-tool/CHANGELOG.md:198
 msgid "Improve support for host-built Python packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:120
-msgid "Introduce ``LIBFOO_HOST_PROVIDES`` to help skip prerequisite checks"
+#: ../../../releng-tool/CHANGELOG.md:199
+msgid "Introduce `LIBFOO_HOST_PROVIDES` to help skip prerequisite checks"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:121
-msgid "Introduce ``PKG_DEVMODE`` environment/script variable"
+#: ../../../releng-tool/CHANGELOG.md:200
+msgid "Introduce `PKG_DEVMODE` environment/script variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:122
-msgid "Introduce ``RELENG_TARGET_PKG`` environment/script variable"
+#: ../../../releng-tool/CHANGELOG.md:201
+msgid "Introduce `RELENG_TARGET_PKG` environment/script variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:123
-msgid "Introduce ``releng_copy_into`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:202
+msgid "Introduce `releng_copy_into` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:124
+#: ../../../releng-tool/CHANGELOG.md:203
 msgid "Introduce support for Python setup types"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:125
+#: ../../../releng-tool/CHANGELOG.md:204
 msgid "Introduce support for SCons-based packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:126
+#: ../../../releng-tool/CHANGELOG.md:205
 msgid ""
 "Introduce support for development mode configurations, allowing users to "
 "target specific revisions or sites for packages supporting alternative "
 "source revisions"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:129
+#: ../../../releng-tool/CHANGELOG.md:208
 msgid ""
 "Introduce support for global and package-specific path overrides when "
 "operating in local-sources mode"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:131
+#: ../../../releng-tool/CHANGELOG.md:210
 msgid "Introduce support for make-based packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:132
-msgid "Support ``PKG_DEFDIR`` usage inside a package's definition"
+#: ../../../releng-tool/CHANGELOG.md:211
+msgid "Support `PKG_DEFDIR` usage inside a package's definition"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:133
-msgid "Support Bazaar quirk to utilize ``certifi`` certificates"
+#: ../../../releng-tool/CHANGELOG.md:212
+msgid "Support Bazaar quirk to utilize `certifi` certificates"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:134
+#: ../../../releng-tool/CHANGELOG.md:213
 msgid "Support users overriding a project's configuration path from command line"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:136
+#: ../../../releng-tool/CHANGELOG.md:215
 msgid "0.12 (2022-05-02)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:139
-msgid "Adding ``dst_dir`` to ``releng_copy`` for explicit copies to directories"
+#: ../../../releng-tool/CHANGELOG.md:217
+msgid "Adding `dst_dir` to `releng_copy` for explicit copies to directories"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:140
+#: ../../../releng-tool/CHANGELOG.md:218
 msgid ""
 "Adjust automatic job detection to use physical cores instead of logical "
 "cores"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:141
+#: ../../../releng-tool/CHANGELOG.md:219
 msgid ""
 "Fixed an issue where forced Git-fetches with branch revisions may have "
 "stale content on first extract"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:143
+#: ../../../releng-tool/CHANGELOG.md:221
 msgid "Fixed where package-specific prefixes/njobs would leak to other projects"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:144
-msgid "Introduce ``*_[INCLUDE,LIB]_DIR`` environment/script variables"
+#: ../../../releng-tool/CHANGELOG.md:222
+msgid "Introduce `*_[INCLUDE,LIB]_DIR` environment/script variables"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:145
-msgid "Introduce ``PKG_BUILD_BASE_DIR`` environment/script variable"
+#: ../../../releng-tool/CHANGELOG.md:223
+msgid "Introduce `PKG_BUILD_BASE_DIR` environment/script variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:146
-msgid "Introduce ``PREFIXED_*_DIR`` environment/script variables"
+#: ../../../releng-tool/CHANGELOG.md:224
+msgid "Introduce `PREFIXED_*_DIR` environment/script variables"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:147
-msgid "Introduce ``libfoo-exec`` action"
+#: ../../../releng-tool/CHANGELOG.md:225
+msgid "Introduce `libfoo-exec` action"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:148
-msgid "Introduce ``releng_include`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:226
+msgid "Introduce `releng_include` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:149
+#: ../../../releng-tool/CHANGELOG.md:227
 msgid "Support Make-styled environment injections via command line"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:150
+#: ../../../releng-tool/CHANGELOG.md:228
 msgid "Support package variable overrides via command line"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:152
+#: ../../../releng-tool/CHANGELOG.md:230
 msgid "0.11 (2022-02-26)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:155
+#: ../../../releng-tool/CHANGELOG.md:232
 msgid ""
 "Always pre-create install directory before package install scripts are "
 "invoked"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:156
+#: ../../../releng-tool/CHANGELOG.md:233
 msgid "Fixed an issue where nested zip files could not extract"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:157
-msgid "Introduce ``releng_cat`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:234
+msgid "Introduce `releng_cat` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:158
-msgid "Introduce ``releng_ls`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:235
+msgid "Introduce `releng_ls` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:159
-msgid "Introduce ``releng_require_version`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:236
+msgid "Introduce `releng_require_version` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:160
+#: ../../../releng-tool/CHANGELOG.md:237
 msgid ""
 "No longer extract with non-local-supported tar command if host format "
 "detected"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:161
+#: ../../../releng-tool/CHANGELOG.md:238
 msgid "No longer warn if hash file is empty for extracted contents check"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:162
+#: ../../../releng-tool/CHANGELOG.md:239
 msgid "Support removing cached assets through a forced fetch argument"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:163
+#: ../../../releng-tool/CHANGELOG.md:240
 msgid ""
 "Support triggering a reconfiguration of all packages through a force "
 "argument"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:165
+#: ../../../releng-tool/CHANGELOG.md:242
 msgid "0.10 (2021-12-31)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:168
+#: ../../../releng-tool/CHANGELOG.md:244
 msgid ""
-"Fixed an issue where a configured ``sysroot_prefix`` bin path would not "
-"be registered in the script environment's path"
+"Fixed an issue where a configured `sysroot_prefix` bin path would not be "
+"registered in the script environment's path"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:170
+#: ../../../releng-tool/CHANGELOG.md:246
 msgid ""
-"Fixed an issue where ``releng_mkdir`` reports success if the target path "
-"is a file that already exists"
+"Fixed an issue where `releng_mkdir` reports success if the target path is"
+" a file that already exists"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:172
+#: ../../../releng-tool/CHANGELOG.md:248
 msgid "Fixed an issue where extensions may not load on Python 2.7"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:173
+#: ../../../releng-tool/CHANGELOG.md:249
 msgid ""
 "Fixed an issue where post-processing may be invoked even if a package's "
 "stage would fail"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:175
-msgid "Introduce ``<PKG_NAME>_DEFDIR`` environment/script variable"
+#: ../../../releng-tool/CHANGELOG.md:251
+msgid "Introduce `<PKG_NAME>_DEFDIR` environment/script variable"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:176
-msgid ""
-"Introduce ``LIBFOO_CMAKE_NOINSTALL`` for CMake packages with no install "
-"rule"
+#: ../../../releng-tool/CHANGELOG.md:252
+msgid "Introduce `LIBFOO_CMAKE_NOINSTALL` for CMake packages with no install rule"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:177
+#: ../../../releng-tool/CHANGELOG.md:253
 msgid "Introduce support for rsync sites"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:178
-msgid "Provide an option to suppress root warning (for zero-uid containers)"
+#: ../../../releng-tool/CHANGELOG.md:254
+msgid "Provide an option to suppress root warning (for zero-UID containers)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:179
+#: ../../../releng-tool/CHANGELOG.md:255
 msgid "Remove the requirement to have a package version entry"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:180
+#: ../../../releng-tool/CHANGELOG.md:256
 msgid "Support configuring cache/download directories using environment variables"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:181
-msgid "Support custom SSL context overrides via ``urlopen_context``"
+#: ../../../releng-tool/CHANGELOG.md:257
+msgid "Support custom SSL context overrides via `urlopen_context`"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:182
+#: ../../../releng-tool/CHANGELOG.md:258
 msgid ""
 "Support providing an assets container directory (for cache/download "
 "folders)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:184
+#: ../../../releng-tool/CHANGELOG.md:260
 msgid "0.9 (2021-10-02)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:187
+#: ../../../releng-tool/CHANGELOG.md:262
 msgid "Fixed an import issue when running with Python 3.10"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:188
+#: ../../../releng-tool/CHANGELOG.md:263
 msgid "Fixed an issue where a cyclic package check provided a bad message"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:189
+#: ../../../releng-tool/CHANGELOG.md:264
 msgid ""
 "Fixed an issue where a Git submodule with a target branch may fail to "
 "extract"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:190
-msgid "Post-processing script renamed to ``releng-post-build``"
+#: ../../../releng-tool/CHANGELOG.md:265
+msgid "Post-processing script renamed to `releng-post-build`"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:191
+#: ../../../releng-tool/CHANGELOG.md:266
 msgid "Support development mode relaxed branch fetching for Git sites"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:192
+#: ../../../releng-tool/CHANGELOG.md:267
 msgid "Support requiring a Git source's revision to be GnuPG-signed (GPG)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:193
+#: ../../../releng-tool/CHANGELOG.md:268
 msgid "Support using ASCII-armor (asc) files to package integrity checks"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:195
+#: ../../../releng-tool/CHANGELOG.md:270
 msgid "0.8 (2021-08-28)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:198
+#: ../../../releng-tool/CHANGELOG.md:272
 msgid "Allow DVCS packages to share caches (to minimize space/time fetching)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:199
+#: ../../../releng-tool/CHANGELOG.md:273
 msgid ""
-"Fixed an issue where tools/``releng_execute`` requests would fail on "
-"Python 2.7 with Unicode-defined environment variables"
+"Fixed an issue where tools/`releng_execute` requests would fail on Python"
+" 2.7 with Unicode-defined environment variables"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:201
+#: ../../../releng-tool/CHANGELOG.md:275
 msgid ""
 "Fixed an issue where a diverged revision in Git would incorrectly "
 "populate a package's build directory with the cached revision instead of "
 "the remote revision"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:204
-msgid ""
-"Introduce ``LIBFOO_GIT_SUBMODULES`` for package Git-specific "
-"configurations"
+#: ../../../releng-tool/CHANGELOG.md:278
+msgid "Introduce `LIBFOO_GIT_SUBMODULES` for package Git-specific configurations"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:205
-msgid "Introduce ``releng_execute_rv`` helper script function"
+#: ../../../releng-tool/CHANGELOG.md:279
+msgid "Introduce `releng_execute_rv` helper script function"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:206
+#: ../../../releng-tool/CHANGELOG.md:280
 msgid ""
 "Introduce statistic tracking (stage durations) which generate to into the"
 " output folder after execution"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:208
+#: ../../../releng-tool/CHANGELOG.md:282
 msgid "Introduce support for package-specific distclean"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:209
+#: ../../../releng-tool/CHANGELOG.md:283
 msgid "Introduce support for package-specific license processing"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:210
+#: ../../../releng-tool/CHANGELOG.md:284
 msgid ""
 "Package-specific extraction/patching no longer requires dependency "
 "processing"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:211
+#: ../../../releng-tool/CHANGELOG.md:285
 msgid ""
-"Rework ``LIBTOOL_GIT_REFSPECS`` to provide more control over custom "
-"revisions that can be fixed (i.e. no longer fixed on ``<target>/*/head``;"
-" instead, a configured value-wildcard string should be used)"
+"Rework `LIBTOOL_GIT_REFSPECS` to provide more control over custom "
+"revisions that can be fixed (i.e. no longer fixed on `<target>/*/head`; "
+"instead, a configured value-wildcard string should be used)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:214
+#: ../../../releng-tool/CHANGELOG.md:288
 msgid "Support auto-detecting Python interpreter path overrides in windows"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:215
+#: ../../../releng-tool/CHANGELOG.md:289
 msgid "Support faster Git fetching"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:216
+#: ../../../releng-tool/CHANGELOG.md:290
 msgid ""
 "Support pruning any remote-tracked references in a Git-cached project "
 "when a forced fetch request is made"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:219
+#: ../../../releng-tool/CHANGELOG.md:293
 msgid "0.7 (2021-08-08)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:222
+#: ../../../releng-tool/CHANGELOG.md:295
 msgid ""
 "Fetch from an already cached package's site if the fetch is explicitly "
 "requested"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:224
+#: ../../../releng-tool/CHANGELOG.md:297
 msgid "Fixed an issue with registry failing to import on Python 2.7"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:225
+#: ../../../releng-tool/CHANGELOG.md:298
 msgid ""
 "Fixed issue where build/install definitions where not used in in their "
 "respective stages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:227
+#: ../../../releng-tool/CHANGELOG.md:300
 msgid ""
 "Fixed issue where mercurial packages fetched using the version option "
 "instead of the revision option"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:229
+#: ../../../releng-tool/CHANGELOG.md:302
 msgid "Fixed issue where the host directory was not registered in a stage's path"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:230
+#: ../../../releng-tool/CHANGELOG.md:303
 msgid ""
 "Introduce clean, logging flags and releng-version into the script "
 "environments"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:231
+#: ../../../releng-tool/CHANGELOG.md:304
 msgid ""
 "Only fetch a single package if only said package is requested to be "
 "fetched"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:232
+#: ../../../releng-tool/CHANGELOG.md:305
 msgid "Package without a site will throw an error when VCS-type is set"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:233
+#: ../../../releng-tool/CHANGELOG.md:306
 msgid ""
 "Reconfigure/rebuild requests will now perform all trailing stages for the"
 " package(s) being redone; rebuild/reconfigure-only actions have been "
 "introduced to force re-invoking a specific stage"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:236
+#: ../../../releng-tool/CHANGELOG.md:309
 msgid "Support loading remote package configuration"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:237
+#: ../../../releng-tool/CHANGELOG.md:310
 msgid "Support loading remote package scripts"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:238
+#: ../../../releng-tool/CHANGELOG.md:311
 msgid ""
 "releng-tool will now full stop if external package definition fails to "
 "load"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:240
+#: ../../../releng-tool/CHANGELOG.md:313
 msgid "0.6 (2020-10-10)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:243
+#: ../../../releng-tool/CHANGELOG.md:315
 msgid ""
 "Always register optional flags inside scripts (allowing developers to use"
-" flags like ``RELENG_RECONFIGURE`` without needing to check environment "
+" flags like `RELENG_RECONFIGURE` without needing to check environment "
 "variables)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:246
+#: ../../../releng-tool/CHANGELOG.md:318
 msgid ""
-"Fixed issued when capturing with ``releng_execute`` which did not "
-"suppress output by default"
+"Fixed issued when capturing with `releng_execute` which did not suppress "
+"output by default"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:248
-msgid "Introduce ``LIBTOOL_GIT_CONFIG`` for package git-specific configurations"
+#: ../../../releng-tool/CHANGELOG.md:320
+msgid "Introduce `LIBTOOL_GIT_CONFIG` for package git-specific configurations"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:249
-msgid "Introduce a ``releng-tool init`` action for a quick-sample project"
+#: ../../../releng-tool/CHANGELOG.md:321
+msgid "Introduce a `releng-tool init` action for a quick-sample project"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:250
+#: ../../../releng-tool/CHANGELOG.md:322
 msgid "Introduce support for distclean"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:251
+#: ../../../releng-tool/CHANGELOG.md:323
 msgid "Introduce support for prerequisites"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:252
+#: ../../../releng-tool/CHANGELOG.md:324
 msgid ""
-"Namespace moved from ``releng`` to ``releng_tool`` (``releng`` deprecated"
-" for an interim)"
+"Namespace moved from `releng` to `releng_tool` (`releng` deprecated for "
+"an interim)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:255
+#: ../../../releng-tool/CHANGELOG.md:327
 msgid "0.5 (2020-09-07)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:258
+#: ../../../releng-tool/CHANGELOG.md:329
 msgid "Fixed false error when verifying cached Git reference"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:260
+#: ../../../releng-tool/CHANGELOG.md:331
 msgid "0.4 (2020-09-07)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:263
+#: ../../../releng-tool/CHANGELOG.md:333
 msgid "Allow developers to fetch from addition Git refspecs (e.g. pull requests)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:264
+#: ../../../releng-tool/CHANGELOG.md:334
 msgid "Allow setting quirks in command line"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:265
+#: ../../../releng-tool/CHANGELOG.md:335
 msgid "Fixed a scenario where a Git extraction stage could fetch sources"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:266
+#: ../../../releng-tool/CHANGELOG.md:336
 msgid "Fixed Git fetch/extraction if package is cached and site has changed"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:267
-msgid "Improved handling of output files which may set the readonly attribute"
+#: ../../../releng-tool/CHANGELOG.md:337
+msgid "Improved handling of output files which may set the read-only attribute"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:268
+#: ../../../releng-tool/CHANGELOG.md:338
 msgid "Introduce support for local interim-development package content"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:269
+#: ../../../releng-tool/CHANGELOG.md:339
 msgid "Introduce support for shallow Git fetching"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:271
+#: ../../../releng-tool/CHANGELOG.md:341
 msgid "0.3 (2019-10-19)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:274
+#: ../../../releng-tool/CHANGELOG.md:343
 msgid "Allow packages to configure to ignore cache while in development mode"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:275
+#: ../../../releng-tool/CHANGELOG.md:344
 msgid "Allow packages to configure for no-extraction for sources"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:276
+#: ../../../releng-tool/CHANGELOG.md:345
 msgid "Fixed default interpreter detection for Python packages"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:277
+#: ../../../releng-tool/CHANGELOG.md:346
 msgid "Fixed fetching from Mercurial sources"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:278
+#: ../../../releng-tool/CHANGELOG.md:347
 msgid "Fixed fetching from newer Git hashes if repository was already cached"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:279
-msgid "Introduce ``releng_env`` and ``releng_mkdir`` helper script functions"
+#: ../../../releng-tool/CHANGELOG.md:348
+msgid "Introduce `releng_env` and `releng_mkdir` helper script functions"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:280
+#: ../../../releng-tool/CHANGELOG.md:349
 msgid "Introduce support for package-specific bootstrapping stage"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:282
+#: ../../../releng-tool/CHANGELOG.md:351
 msgid "0.2 (2019-03-15)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:285
+#: ../../../releng-tool/CHANGELOG.md:353
 msgid ""
 "A project's host directory will now be registered in the system's path "
 "during execution"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:287
+#: ../../../releng-tool/CHANGELOG.md:355
 msgid "Allow tracking project's license files when found in multiple directories"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:288
+#: ../../../releng-tool/CHANGELOG.md:356
 msgid "Fixed loading configuration overrides script if one actually exists"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:289
-msgid "Re-work various script names (e.g. ``releng.py`` -> ``releng``)"
+#: ../../../releng-tool/CHANGELOG.md:357
+msgid "Re-work various script names (e.g. `releng.py` -> `releng`)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:291
+#: ../../../releng-tool/CHANGELOG.md:359
 msgid "0.1 (2019-02-24)"
 msgstr ""
 
-#: ../../../releng-tool/CHANGELOG.rst:294
+#: ../../../releng-tool/CHANGELOG.md:361
 msgid "Hello world"
 msgstr ""
 

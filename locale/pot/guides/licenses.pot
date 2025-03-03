@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "When license information is populated for a project, each project's licen
 msgstr ""
 
 #: ../../content/guides/licenses.md:26
-msgid "Which then `releng` can be configured to use the header contents:"
+msgid "Which then `releng-tool.rt` can be configured to use the header contents:"
 msgstr ""
 
 #: ../../content/guides/licenses.md:40

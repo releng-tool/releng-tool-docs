@@ -1,58 +1,64 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
+"Language-Team: German (https://app.transifex.com/releng-"
+"tool/teams/171906/de/)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:1
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:2
 msgid "Quirk `releng.bzr.certifi`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:3
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:4
 msgid ""
 "When a package is configured to fetch [bzr][bzr] sources, select "
-"environments may have issues attempting to download from Launchpad (or other"
-" hosting) due to legacy certificates."
+"environments may have issues attempting to download from Launchpad (or "
+"other hosting) due to legacy certificates."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:7
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:8
 msgid ""
-"See `bzr help ssl.ca_certs` for how to specify trusted CAcertificates.\\ "
-"Pass -Ossl.cert_reqs=none to disable certificate verification entirely."
+"See `bzr help ssl.ca_certs` for how to specify trusted CA certificates.\\"
+" Pass `-Ossl.cert_reqs=none` to disable certificate verification "
+"entirely."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:10
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:11
 msgid ""
 "If a user's environment has [`certifi`][certifi] installed, a user can "
 "invoke releng-tool with the quirk `releng.bzr.certifi` enabled to use "
 "certifi's certificates instead. For example:"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:18
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:19
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:20
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:21
 msgid "[GNU Bazaar][bzr]"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:21
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:22
 msgid "[GNU Bazaar (The Wayback Machine)][bzr-wbm]"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-bzr-certifi.md:22
+#: ../../content/guides/quirks/quirk-bzr-certifi.md:23
 msgid "[](quirks)"
 msgstr ""
+

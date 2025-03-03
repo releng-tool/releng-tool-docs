@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/packages/hash-file.md:1
 msgid "Hash file"
@@ -23,19 +29,19 @@ msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:4
 msgid ""
-"An alternative to using a hash to validate a package's cache is to use an "
-"[ASCII-armor](ascii-armor) instead. Although users can benefit from using "
-"both validation methods, if desired."
+"An alternative to using a hash to validate a package's cache is to use an"
+" [ASCII-armor](ascii-armor) instead. Although users can benefit from "
+"using both validation methods, if desired."
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:9
 msgid ""
-"When downloading assets from a remote instance, a package's hash file can be"
-" used to help verify the integrity of any fetched content. For example, if a"
-" package lists a site with a `my-archive.tgz` to download, the fetch process"
-" will download the archive and verify its hash to a listed entry before "
-"continuing. If a hash does not match, the build process stops indicating an "
-"unexpected asset was downloaded."
+"When downloading assets from a remote instance, a package's hash file can"
+" be used to help verify the integrity of any fetched content. For "
+"example, if a package lists a site with a `my-archive.tgz` to download, "
+"the fetch process will download the archive and verify its hash to a "
+"listed entry before continuing. If a hash does not match, the build "
+"process stops indicating an unexpected asset was downloaded."
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:16
@@ -44,58 +50,73 @@ msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:18
 msgid ""
-"Any URL-based site asset have a hash entry defined for the asset (to ensure "
-"the package sources are not corrupted or have been unexpectedly replaced)."
+"Any URL-based site asset have a hash entry defined for the asset (to "
+"ensure the package sources are not corrupted or have been unexpectedly "
+"replaced)."
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:20
 msgid ""
-"A hash entry should exist for license files (additional sanity check if a "
-"package's license has change)."
+"A hash entry should exist for license files (additional sanity check if a"
+" package's license has change)."
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:23
 msgid ""
-"To create a hash file for a package, add a `<my-package>.hash` file inside "
-"the package's directory. For example, for a `libfoo` package, the following "
-"would be expected:"
+"To create a hash file for a package, add a `<my-package>.hash` file "
+"inside the package's directory. For example, for a `libfoo` package, the "
+"following would be expected:"
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:36
 msgid ""
-"The hash file should be a UTF-8 encoded file and can contain multiple hash "
-"entries. A hash entry is a 3-tuple defining the type of hash algorithm used,"
-" the hash value expected and the asset associated with the hash. A tuple "
-"entry is defined on a single line with each entry separated by whitespace "
-"characters. For example:"
+"The hash file should be a UTF-8 encoded file and can contain multiple "
+"hash entries. A hash entry is a 3-tuple defining the type of hash "
+"algorithm used, the hash value expected and the asset associated with the"
+" hash. A tuple entry is defined on a single line with each entry "
+"separated by whitespace characters. For example:"
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:49
 msgid ""
-"Comments are permitted in the file. Lines leading with a `#` character or "
-"inlined leading `#` character after a whitespace character will be ignored."
+"Comments are permitted in the file. Lines leading with a `#` character or"
+" inlined leading `#` character after a whitespace character will be "
+"ignored."
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:52
 msgid ""
-"Supported hash types will vary on the Python interpreter [^hashlib] used. "
-"Typically, this include FIPS secure hash algorithms (e.g. `sha1`, `sha224`, "
-"`sha256`, `sha384` and `sha512`) as well as (but not recommended) RSA'S MD5 "
-"algorithm. For hash algorithms requiring a key length, a user can define a "
-"hash entry using the format `<hash-type>:<key-length>`. For example, "
-"`shake_128:32`. Other algorithms may be used if provided by the system's "
-"OpenSSL library."
+"Supported hash types will vary on the Python interpreter [^hashlib] used."
+" Typically, this include FIPS secure hash algorithms (e.g. `sha1`, "
+"`sha224`, `sha256`, `sha384` and `sha512`) as well as (but not "
+"recommended) RSA'S MD5 algorithm. For hash algorithms requiring a key "
+"length, a user can define a hash entry using the format `<hash-type"
+">:<key-length>`. For example, `shake_128:32`. Other algorithms may be "
+"used if provided by the system's OpenSSL library."
 msgstr ""
 
 #: ../../content/guides/packages/hash-file.md:60
 msgid ""
-"Multiple hash entries can be provided for the same file if desired. This is "
-"to assist in scenarios where a checked out asset's content changes based on "
-"the system it is checked out on. For example, a text file checked out from "
-"Git may use Windows line-ending on Windows system, and Unix-line endings on "
-"other systems:"
+"Multiple hash entries can be provided for the same file if desired. This "
+"is to assist in scenarios where a checked out asset's content changes "
+"based on the system it is checked out on. For example, a text file "
+"checked out from Git may use Windows line-ending on Windows system, and "
+"Unix-line endings on other systems:"
 msgstr ""
 
-#: ../../content/guides/packages/hash-file.md:72
+#: ../../content/guides/packages/hash-file.md:71
+msgid ""
+"If operating in a [development mode](/guides/development-mode) where an "
+"external package is configured with an alternative revision, hash checks "
+"will for a package can fail. A developer can override hash checks for a "
+"specific revision by adding an additional file in the package directory. "
+"The format is `libfoo.hash-<revision>`. For example, if a development run"
+" points to a package revision `canary`, if a file named `libfoo.hash-"
+"canary` exists, it will be used as the source of hashes for this "
+"revision."
+msgstr ""
+
+#: ../../content/guides/packages/hash-file.md:90
 msgid "<https://docs.python.org/library/hashlib.html>"
 msgstr ""
+

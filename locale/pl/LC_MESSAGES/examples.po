@@ -1,25 +1,29 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 # Translators:
 # James Knight <james.d.knight@live.com>, 2023
-# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/examples.md:1
 msgid "Examples"
@@ -27,17 +31,25 @@ msgstr "Przykłady"
 
 #: ../../content/examples.md:4
 msgid ""
-"Developers wishing to quickly generate an initial project skeleton in their "
-"working directory can use the `init` action:"
+"New developers may be interested in reading the [tutorials](/getting-"
+"started/tutorials) section for step-by-step examples."
 msgstr ""
 
-#: ../../content/examples.md:12
+#: ../../content/examples.md:9
 msgid ""
-"A series of demonstration projects can be found in the following repository:"
+"Developers wishing to quickly generate an initial project skeleton in "
+"their working directory can use the `init` action:"
 msgstr ""
 
-#: ../../content/examples.md:14
+#: ../../content/examples.md:17
 msgid ""
-"releng-tool – Examples repository\\ <https://github.com/releng-tool/releng-"
-"tool-examples>"
+"A series of demonstration projects can be found in the following "
+"repository:"
 msgstr ""
+
+#: ../../content/examples.md:19
+msgid ""
+"releng-tool — Examples repository \\ <https://github.com/releng-tool"
+"/releng-tool-examples>"
+msgstr ""
+

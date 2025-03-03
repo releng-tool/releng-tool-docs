@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/getting-started/tutorial-basic.md:1
 msgid "Tutorial \"Basic packages\""
@@ -23,38 +29,39 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:3
 msgid ""
-"This tutorial shows an example using very simple script-based packages. This"
-" example will make a project with two packages, setup a dependency between "
-"them and setup scripts to help show a developer how packages are processed."
+"This tutorial shows an example using very simple script-based packages. "
+"This example will make a project with two packages, setup a dependency "
+"between them and setup scripts to help show a developer how packages are "
+"processed."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:8
 msgid ""
-"To start, make a new folder for the project, folders for each package and "
-"move into the root folder:"
+"To start, make a new folder for the project, folders for each package and"
+" move into the root folder:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:17
 msgid ""
-"Inside the `liba` package, a package definition and script-based files will "
-"be created. First, build the package definition `my-project/liba/liba.py` "
-"with the following contents:"
+"Inside the `liba` package, a package definition and script-based files "
+"will be created. First, build the package definition `my-"
+"project/liba/liba.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:25
 msgid ""
 "Next, create a build script for the `liba` project `my-project/liba/liba-"
-"build.py` with the following contents:"
+"build.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:32
 msgid ""
 "Repeat the same steps for the `program-b` package with the file `my-"
-"project/program-b/program-b.py` containing:"
+"project/program-b/program-b.rt` containing:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:40
-msgid "And `my-project/program-b/program-b-build.py` containing:"
+msgid "And `my-project/program-b/program-b-build.rt` containing:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:46
@@ -66,17 +73,17 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:50
 msgid ""
-"With this minimal set of packages, the project's releng-tool configuration "
-"can now be created. At the root of the project, create a `releng.py` "
-"configuration file with the following contents:"
+"With this minimal set of packages, the project's releng-tool "
+"configuration can now be created. At the root of the project, create a "
+"`releng-tool.rt` configuration file with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:60
 msgid ""
-"The `packages` key indicates a list of required packages to be processed. In"
-" this example, we only need to list `program-b` since `liba` will be "
-"implicitly loaded through the dependency configuration set in program B's "
-"package definition."
+"The `packages` key indicates a list of required packages to be processed."
+" In this example, we only need to list `program-b` since `liba` will be "
+"implicitly loaded through the dependency configuration set in program B's"
+" package definition."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:65
@@ -85,16 +92,17 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:79
 msgid ""
-"This sample project should be ready for a spin. While in the `my-project` "
-"folder, invoke `releng-tool`:"
+"This sample project should be ready for a spin. While in the `my-project`"
+" folder, invoke `releng-tool`:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:97
 msgid ""
 "This above output shows that the `liba` stages are invoke followed by "
 "`program-b` stages. For the build stage in each package, each respective "
-"package script has been invoked. While this example only prints a message, "
-"more elaborate scripts can be made to handle a package's source to build."
+"package script has been invoked. While this example only prints a "
+"message, more elaborate scripts can be made to handle a package's source "
+"to build."
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:102
@@ -110,3 +118,4 @@ msgstr ""
 #: ../../content/getting-started/tutorial-basic.md:111
 msgid "This concludes this tutorial."
 msgstr ""
+

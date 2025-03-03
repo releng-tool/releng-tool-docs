@@ -1,21 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-"
+"tool/teams/171906/es/)\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 "
+"? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/help.md:1
 msgid "Requesting help"
@@ -23,11 +28,13 @@ msgstr ""
 
 #: ../../content/help.md:3
 msgid ""
-"If experience issues with using releng-tool, developing extensions, etc.; do"
-" not hesitate to create an issue in this project's GitHub page:"
+"If experience issues with using releng-tool, developing extensions, etc.;"
+" do not hesitate to create an issue in this project's GitHub page:"
 msgstr ""
 
 #: ../../content/help.md:6
 msgid ""
-"releng-tool – Issues\\ <https://github.com/releng-tool/releng-tool/issues>"
+"releng-tool — Issues \\ <https://github.com/releng-tool/releng-"
+"tool/issues>"
 msgstr ""
+

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/packages/hash-file.md:1
 msgid "Hash file"
@@ -101,7 +101,19 @@ msgid ""
 "Unix-line endings on other systems:"
 msgstr ""
 
-#: ../../content/guides/packages/hash-file.md:72
+#: ../../content/guides/packages/hash-file.md:71
+msgid ""
+"If operating in a [development mode](/guides/development-mode) where an "
+"external package is configured with an alternative revision, hash checks "
+"will for a package can fail. A developer can override hash checks for a "
+"specific revision by adding an additional file in the package directory. "
+"The format is `libfoo.hash-<revision>`. For example, if a development run"
+" points to a package revision `canary`, if a file named `libfoo.hash-"
+"canary` exists, it will be used as the source of hashes for this "
+"revision."
+msgstr ""
+
+#: ../../content/guides/packages/hash-file.md:90
 msgid "<https://docs.python.org/library/hashlib.html>"
 msgstr ""
 

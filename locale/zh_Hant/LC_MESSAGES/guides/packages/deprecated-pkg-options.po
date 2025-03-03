@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/packages/deprecated-pkg-options.md:1
 msgid "Deprecated package options"
@@ -35,12 +35,10 @@ msgid "`LIBFOO_DEPENDENCIES`"
 msgstr ""
 
 #: ../../content/guides/packages/deprecated-pkg-options.md:10
-msgid ""
-"The option is deprecated and packages should use [`LIBFOO_NEEDS`](pkg-"
-"opt-needs) instead."
+msgid "Packages should use [`LIBFOO_NEEDS`](pkg-opt-needs) instead."
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:14
+#: ../../content/guides/packages/deprecated-pkg-options.md:13
 msgid ""
 "List of package dependencies a given project has. If a project depends on"
 " another package, the package name should be listed in this option. This "
@@ -49,17 +47,17 @@ msgid ""
 " `libb` being processed first:"
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:28
+#: ../../content/guides/packages/deprecated-pkg-options.md:27
 msgid "`LIBFOO_SKIP_REMOTE_CONFIG`"
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:31
+#: ../../content/guides/packages/deprecated-pkg-options.md:30
 msgid ""
-"The option is deprecated and packages should use [`LIBFOO_REMOTE_CONFIG"
-"`](pkg-opt-remote-config) instead."
+"Packages should use [`LIBFOO_REMOTE_CONFIG`](pkg-opt-remote-config) "
+"instead."
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:35
+#: ../../content/guides/packages/deprecated-pkg-options.md:33
 msgid ""
 "Flag value to indicate that a package should not attempt to load any "
 "package configurations which may be defined in the package's source. A "
@@ -70,23 +68,23 @@ msgid ""
 "package's configuration stage."
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:47
+#: ../../content/guides/packages/deprecated-pkg-options.md:45
 msgid ""
 "See also [`releng.disable_remote_configs` quirk](quirk-"
 "releng.disable_remote_configs)."
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:51
+#: ../../content/guides/packages/deprecated-pkg-options.md:49
 msgid "`LIBFOO_SKIP_REMOTE_SCRIPTS`"
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:54
+#: ../../content/guides/packages/deprecated-pkg-options.md:52
 msgid ""
-"The option is deprecated and packages should use [`LIBFOO_REMOTE_SCRIPTS"
-"`](pkg-opt-remote-scripts) instead."
+"Packages should use [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) "
+"instead."
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:58
+#: ../../content/guides/packages/deprecated-pkg-options.md:55
 msgid ""
 "Flag value to indicate that a package should not attempt to load any "
 "package scripts which may be defined in the package's source. Typically, "
@@ -101,7 +99,7 @@ msgid ""
 "contents."
 msgstr ""
 
-#: ../../content/guides/packages/deprecated-pkg-options.md:73
+#: ../../content/guides/packages/deprecated-pkg-options.md:70
 msgid ""
 "See also [`releng.disable_remote_scripts` quirk](quirk-"
 "releng.disable_remote_scripts)."

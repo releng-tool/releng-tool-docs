@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 15:18-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,4 +82,8 @@ msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:143
 msgid "By manually removing the file flag found at the root of the project."
+msgstr ""
+
+#: ../../content/guides/local-sources-mode.md:145
+msgid "For example:"
 msgstr ""

@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:2
+msgid "Quirk `releng.disable_local_site_warn`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:4
+msgid ""
+"Users can create packages using a [local site](site-local) for initial "
+"development and testing scenarios. However, using local sites is not "
+"recommended for long-term use; hence a warning is generated when releng-"
+"tool runs. While the warning aims to promote a user to move the package "
+"into their own site of some sort (e.g. Git), a user may be good enough "
+"with using a specific package as a local one. For such cases, using this "
+"quirk can prevent any warnings generated when a local site is used."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:17
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:19
+msgid "[](quirks)"
+msgstr ""
+

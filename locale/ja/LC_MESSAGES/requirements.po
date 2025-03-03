@@ -1,25 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 # Translators:
 # James Knight <james.d.knight@live.com>, 2023
-# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 15:18-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: James Knight <james.d.knight@live.com>, 2023\n"
-"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-"
+"tool/teams/171906/ja/)\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/requirements.md:1
 msgid "Requirements"
@@ -28,11 +30,12 @@ msgstr "必要条件"
 #: ../../content/requirements.md:3
 msgid ""
 "releng-tool is developed in [Python][python] and requires either "
-"[Python][python] 2.7 or 3.4+ to run on a host system. A series of optional "
-"tools are required if certain stages or features are used. For example, "
+"[Python][python] 3.9+ to run on a host system. A series of optional tools"
+" are required if certain stages or features are used. For example, "
 "projects fetching sources from [Git][git] will require the `git` tool "
-"installed; projects with patches will required the `patch` tool. While some "
-"features may be operating system-specific (e.g. autotools features are "
-"designed for Linux-based hosts), releng-tool can work on various operating "
-"system variants."
+"installed; projects with patches will required the `patch` tool. While "
+"some features may be operating system-specific (e.g. Autotools features "
+"are designed for Linux-based hosts), releng-tool can work on various "
+"operating system variants."
 msgstr ""
+

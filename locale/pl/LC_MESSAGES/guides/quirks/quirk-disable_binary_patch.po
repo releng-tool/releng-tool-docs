@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/guides/quirks/quirk-disable_binary_patch.md:2
+msgid "Quirk `releng.disable_binary_patch`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_binary_patch.md:7
+msgid ""
+"When utilizing [patching](/guides/patching) capabilities in releng-tool, "
+"all patches are by default applied with a `--binary` argument. If this is"
+" not preferred by a project, this quirk can be set to omit the argument."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_binary_patch.md:15
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_binary_patch.md:17
+msgid "[Patching](/guides/patching)"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_binary_patch.md:18
+msgid "[](quirks)"
+msgstr ""
+

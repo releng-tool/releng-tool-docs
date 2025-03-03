@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/getting-started/tutorial-toolchain.md:1
 msgid "Tutorial \"A toolchain example\""
@@ -68,18 +68,20 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-toolchain.md:28
 msgid ""
-"<https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64"
-"--glibc--stable-2022.08-1.tar.bz2>"
+"[https://toolchains.bootlin.com/.../aarch64--glibc--"
+"stable-2022.08-1.tar.bz2][toolchain-archive]"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-toolchain.md:29
 msgid ""
-"<https://toolchains.bootlin.com/downloads/releases/toolchains/aarch64/tarballs/aarch64"
-"--glibc--stable-2022.08-1.sha256>"
+"[https://toolchains.bootlin.com/.../aarch64--glibc--"
+"stable-2022.08-1.sha256][toolchain-hash]"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-toolchain.md:30
-msgid "(sha256: 844df3c99508030ee9cb1152cb182500bb9816ff01968f2e18591d51d766c9e7)"
+msgid ""
+"(sha256: "
+"`844df3c99508030ee9cb1152cb182500bb9816ff01968f2e18591d51d766c9e7`)"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-toolchain.md:32
@@ -115,25 +117,25 @@ msgid ""
 "package, dependencies and project configuration:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:79
+#: ../../content/getting-started/tutorial-toolchain.md:78
 msgid "The configuration"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:81
+#: ../../content/getting-started/tutorial-toolchain.md:80
 msgid ""
 "The first changes we will make to our releng-tool project is to define "
-"the specifics of the project configuration in `releng`. Apply the "
-"following contents to the configuration:"
+"the specifics of the project configuration in `releng-tool.rt`. Apply the"
+" following contents to the configuration:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:117
+#: ../../content/getting-started/tutorial-toolchain.md:116
 msgid ""
 "Create a package list which defines `htop` as a required package to "
 "build. Since we plan to make `libnl` and `ncurses` dependencies to "
 "`htop`, they do not need to be included."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:120
+#: ../../content/getting-started/tutorial-toolchain.md:119
 msgid ""
 "This project will rely on the host system having the toolchain installed."
 " We create some variables to help point to the toolchain's path and "
@@ -142,7 +144,7 @@ msgid ""
 "but this will not be done here to simplify this tutorial."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:125
+#: ../../content/getting-started/tutorial-toolchain.md:124
 msgid ""
 "We configure `BR_COMPILER_PARANOID_UNSAFE_PATH`, an option supported by "
 "the generated Bootlin (Buildroot) toolchain to error when using an unsafe"
@@ -150,7 +152,7 @@ msgid ""
 "system's `/usr/include` path over a releng-tool sysroot path)."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:129
+#: ../../content/getting-started/tutorial-toolchain.md:128
 msgid ""
 "Prepares two variables `MY_TOOLCHAIN_CONF_ENV` and "
 "`MY_TOOLCHAIN_CONF_DEFS` which we can later use for the Autotools "
@@ -162,23 +164,23 @@ msgid ""
 "toolchain file)."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:137
+#: ../../content/getting-started/tutorial-toolchain.md:136
 msgid ""
 "The releng-tool project's configuration is ready. Now to define the "
 "package definitions/hashes for each package."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:140
+#: ../../content/getting-started/tutorial-toolchain.md:139
 msgid "The libnl package"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:142
+#: ../../content/getting-started/tutorial-toolchain.md:141
 msgid ""
-"Update the `libnl` package definition (`my-tc-project/libnl/libnl`) with "
-"the following contents:"
+"Update the `libnl` package definition (`my-tc-project/libnl/libnl.rt`) "
+"with the following contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:167
+#: ../../content/getting-started/tutorial-toolchain.md:166
 msgid ""
 "The libnl library uses a LGPL-2.1+ license. We configure `LIBNL_LICENSE` "
 "to the equivalent [SPDX][spdx] license identifier, as well as define "
@@ -187,18 +189,18 @@ msgid ""
 "license data or software bill of materials (SBOM) for a project."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:172
+#: ../../content/getting-started/tutorial-toolchain.md:171
 msgid ""
 "This example uses libnl v3.7.0, which we set in the `LIBNL_VERSION` "
 "option. The version value is useful for managing output folders and "
 "logging versions of packages."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:175
+#: ../../content/getting-started/tutorial-toolchain.md:174
 msgid "We specify the location to download sources in `LIBNL_SITE`."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:176
+#: ../../content/getting-started/tutorial-toolchain.md:175
 msgid ""
 "The libnl library uses Autotools. This means we can use `LIBNL_TYPE` to "
 "configure the helper type and avoid the need to create custom "
@@ -206,14 +208,14 @@ msgid ""
 "will handle this for us)."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:180
+#: ../../content/getting-started/tutorial-toolchain.md:179
 msgid ""
 "We configure `LIBNL_CONF_ENV` and `LIBNL_CONF_DEFS` to use the "
 "configuration options we prepared in the root configuration. This allows "
 "this Autotools package to use the desired toolchain."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:183
+#: ../../content/getting-started/tutorial-toolchain.md:182
 msgid ""
 "This package is configured to install (`LIBNL_INSTALL_TYPE`) into the "
 "staging area (instead of, by default, into the target directory). Since "
@@ -222,7 +224,7 @@ msgid ""
 "target area."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:188
+#: ../../content/getting-started/tutorial-toolchain.md:187
 msgid ""
 "Finally, we configure `LIBNL_CONF_OPTS` to tweak other options supported "
 "by this package. We only need a static library, so we explicitly indicate"
@@ -230,7 +232,7 @@ msgid ""
 "series of other features not needed for this example."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:193
+#: ../../content/getting-started/tutorial-toolchain.md:192
 msgid ""
 "Using configuration options can be useful for disabling certain project "
 "options such as disabling unit tests (which may not be desired for these "
@@ -238,7 +240,7 @@ msgid ""
 "entries when possible, just in case default values change for an option."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:198
+#: ../../content/getting-started/tutorial-toolchain.md:197
 msgid ""
 "The above `libnl` package specifies a remote URL to download library "
 "sources. These sources should be validated to ensure data is not "
@@ -246,7 +248,7 @@ msgid ""
 "package definition called `libnl.hash` with the contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:210
+#: ../../content/getting-started/tutorial-toolchain.md:209
 msgid ""
 "In this hash file, expected hashes for resources can be configured and "
 "checked when releng-tool attempts to fetch resources from remote sources."
@@ -257,37 +259,37 @@ msgid ""
 "helpful comment to indicate where it came from)."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:218
+#: ../../content/getting-started/tutorial-toolchain.md:217
 msgid ""
 "In addition, we also provide a hash of the license document. While not "
 "required, this can be useful in detecting if the license of a package "
 "changes between versions."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:222
+#: ../../content/getting-started/tutorial-toolchain.md:221
 msgid "The ncurses package"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:224
+#: ../../content/getting-started/tutorial-toolchain.md:223
 msgid ""
-"Update the `ncurses` package definition (`my-tc-project/ncurses/ncurses`)"
-" with the following contents:"
+"Update the `ncurses` package definition (`my-tc-"
+"project/ncurses/ncurses.rt`) with the following contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:260
+#: ../../content/getting-started/tutorial-toolchain.md:259
 msgid ""
 "The above almost mimics the previous `libnl` package with the exception "
 "of this package having a different license and different configuration "
 "options available."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:264
+#: ../../content/getting-started/tutorial-toolchain.md:263
 msgid ""
 "Since `ncurses` package specifies a remote URL to download library "
 "sources, we also want to update `ncurses.hash` with the contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:276
+#: ../../content/getting-started/tutorial-toolchain.md:275
 msgid ""
 "In the previous `libnl` package, maintainers provided an official SHA-256"
 " hash to use for our local hash file. For `ncurses`, maintainers provide "
@@ -298,47 +300,47 @@ msgid ""
 "also provide a hash of the license document."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:284
+#: ../../content/getting-started/tutorial-toolchain.md:283
 msgid "The htop package"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:286
+#: ../../content/getting-started/tutorial-toolchain.md:285
 msgid ""
-"Update the `htop` package definition (`my-tc-project/htop/htop`) with the"
-" following contents:"
+"Update the `htop` package definition (`my-tc-project/htop/htop.rt`) with "
+"the following contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:317
+#: ../../content/getting-started/tutorial-toolchain.md:316
 msgid ""
 "This package defines a list of package dependencies for `htop`. "
 "Specifically, we list `libnl` and `ncurses`, which will force releng-tool"
 " to configure/build these packages before processing the `htop` package."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:321
+#: ../../content/getting-started/tutorial-toolchain.md:320
 msgid ""
 "Since `htop` package specifies a remote URL to download library sources, "
 "we also want to update `htop.hash` with the contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:331
+#: ../../content/getting-started/tutorial-toolchain.md:330
 msgid "Performing a build"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:333
+#: ../../content/getting-started/tutorial-toolchain.md:332
 msgid ""
 "With a configuration and packages prepared, the project should be ready "
 "to be built. While in the `my-tc-project` folder, invoke `releng-tool`:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:349
+#: ../../content/getting-started/tutorial-toolchain.md:348
 msgid ""
 "Once completed, the target directory will have a compiled `htop` "
 "executable that can be copied over to and run on an aarch64-running "
 "target."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-toolchain.md:352
+#: ../../content/getting-started/tutorial-toolchain.md:351
 msgid "This concludes this tutorial."
 msgstr ""
 

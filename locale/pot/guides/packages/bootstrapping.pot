@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,22 +20,22 @@ msgstr ""
 msgid "Package bootstrapping"
 msgstr ""
 
-#: ../../content/guides/packages/bootstrapping.md:3
-msgid "Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is defined, can create a bootstrapping script to invoke before a package starts a configuration stage. The existence of a `<package>-bootstrap` inside a package directory will trigger the bootstrapping stage for the package. An example bootstrapping script for a package `libfoo` would be named `libfoo-bootstrap`:"
+#: ../../content/guides/packages/bootstrapping.md:6
+msgid "Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is defined, can create a bootstrapping script to invoke before a package starts a configuration stage. The existence of a `<package>-bootstrap.rt` inside a package directory will trigger the bootstrapping stage for the package. An example bootstrapping script for a package `libfoo` would be named `libfoo-bootstrap.rt`:"
 msgstr ""
 
-#: ../../content/guides/packages/bootstrapping.md:19
-msgid "With the contents of `libfoo-bootstrap` being set to:"
+#: ../../content/guides/packages/bootstrapping.md:22
+msgid "With the contents of `libfoo-bootstrap.rt` being set to:"
 msgstr ""
 
-#: ../../content/guides/packages/bootstrapping.md:25
+#: ../../content/guides/packages/bootstrapping.md:28
 msgid "May generate an output such as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/bootstrapping.md:36
+#: ../../content/guides/packages/bootstrapping.md:39
 msgid "Bootstrapping scripts for a package are optional. If no bootstrapping script is provided for a package, no bootstrapping stage will be performed for the package."
 msgstr ""
 
-#: ../../content/guides/packages/bootstrapping.md:40
+#: ../../content/guides/packages/bootstrapping.md:43
 msgid "See [script helpers](/guides/script-helpers) for helper functions and variables available for use. Developers may also be interested in using a [post-processing script](post-processing)."
 msgstr ""

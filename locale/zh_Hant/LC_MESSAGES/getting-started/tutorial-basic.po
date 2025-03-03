@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/getting-started/tutorial-basic.md:1
 msgid "Tutorial \"Basic packages\""
@@ -42,23 +42,23 @@ msgstr ""
 msgid ""
 "Inside the `liba` package, a package definition and script-based files "
 "will be created. First, build the package definition `my-"
-"project/liba/liba.py` with the following contents:"
+"project/liba/liba.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:25
 msgid ""
 "Next, create a build script for the `liba` project `my-project/liba/liba-"
-"build.py` with the following contents:"
+"build.rt` with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:32
 msgid ""
 "Repeat the same steps for the `program-b` package with the file `my-"
-"project/program-b/program-b.py` containing:"
+"project/program-b/program-b.rt` containing:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:40
-msgid "And `my-project/program-b/program-b-build.py` containing:"
+msgid "And `my-project/program-b/program-b-build.rt` containing:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:46
@@ -72,7 +72,7 @@ msgstr ""
 msgid ""
 "With this minimal set of packages, the project's releng-tool "
 "configuration can now be created. At the root of the project, create a "
-"`releng.py` configuration file with the following contents:"
+"`releng-tool.rt` configuration file with the following contents:"
 msgstr ""
 
 #: ../../content/getting-started/tutorial-basic.md:60

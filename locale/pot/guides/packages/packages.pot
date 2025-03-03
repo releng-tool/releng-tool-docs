@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,10 @@ msgstr ""
 
 #: ../../content/guides/packages/packages.md:65
 msgid "Advanced options"
+msgstr ""
+
+#: ../../content/guides/packages/packages.md:65
+msgid "System-specific options"
 msgstr ""
 
 #: ../../content/guides/packages/packages.md:65
@@ -53,7 +57,7 @@ msgid "There is no explicit limit on the total number of packages a project can 
 msgstr ""
 
 #: ../../content/guides/packages/packages.md:29
-msgid "When making a package, a container folder for the package as well as a package definition file needs to be made. For example, for a package `package-a`, the file `package/package-a/package-a` should exist."
+msgid "When making a package, a container folder for the package as well as a package definition file needs to be made. For example, for a package `package-a`, the file `package/package-a/package-a.rt` should exist."
 msgstr ""
 
 #: ../../content/guides/packages/packages.md:41

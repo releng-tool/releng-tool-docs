@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,15 +21,15 @@ msgid "Autotools package"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:3
-msgid "An autotools package provides support for processing a [GNU Build System][gnu-build-sys] supported module."
+msgid "An Autotools package provides support for processing a [GNU Build System][gnu-build-sys] supported module."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:10
-msgid "When an autotools package performs a configuration stage, the package may invoke `autoreconf` (if configured to do so) and then invoke `configure`. When the build stage is reached, `make` will be invoked followed by `make install` during the installation stage."
+msgid "When an Autotools package performs a configuration stage, the package may invoke `autoreconf` (if configured to do so) and then invoke `configure`. When the build stage is reached, `make` will be invoked followed by `make install` during the installation stage."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:15
-msgid "The following sections outline configuration options are available for an autotools package."
+msgid "The following sections outline configuration options are available for an Autotools package."
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:19
@@ -37,7 +37,7 @@ msgid "`LIBFOO_AUTOTOOLS_AUTORECONF`"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-autotools.md:21
-msgid "Specifies whether the package needs to perform an autotools re-configuration. This is to assist in the rebuilding of GNU Build System files which may be broken or a patch has introduced new build script changes that need to be applied. This field is optional. By default, `autoreconf` is not invoked."
+msgid "Specifies whether the package needs to perform an Autotools re-configuration. This is to assist in the rebuilding of GNU Build System files which may be broken or a patch has introduced new build script changes that need to be applied. This field is optional. By default, `autoreconf` is not invoked."
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-build-defs.md:2
@@ -92,7 +92,7 @@ msgstr ""
 msgid "`LIBFOO_ENV`"
 msgstr ""
 
-#: ../../content/guides/packages/_pkg-env.md:4
+#: ../../content/guides/packages/_pkg-env.md:7
 msgid "Provides a means to pass environment variables into all stages for a package. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""
 

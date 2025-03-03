@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:35-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgid "Package post-processing"
 msgstr ""
 
 #: ../../content/guides/packages/post-processing.md:3
-msgid "Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is defined, can create a post-processing script to invoke after a package has completed an installation stage. The existence of a `<package>-post` inside a package directory will trigger the post-processing stage for the package. An example post-processing script for a package `libfoo` would be named `libfoo-post`:"
+msgid "Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is defined, can create a post-processing script to invoke after a package has completed an installation stage. The existence of a `<package>-post.rt` inside a package directory will trigger the post-processing stage for the package. An example post-processing script for a package `libfoo` would be named `libfoo-post.rt`:"
 msgstr ""
 
 #: ../../content/guides/packages/post-processing.md:19
-msgid "With the contents of `libfoo-post` being set to:"
+msgid "With the contents of `libfoo-post.rt` being set to:"
 msgstr ""
 
 #: ../../content/guides/packages/post-processing.md:25

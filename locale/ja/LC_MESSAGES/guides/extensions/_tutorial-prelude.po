@@ -1,41 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-"
+"tool/teams/171906/ja/)\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/extensions/_tutorial-prelude.md:1
 msgid ""
-"This extension example uses the name `my-awesome-extension`. Developers are "
-"free to change this with whatever name is applicable for their own "
+"This extension example uses the name `my-awesome-extension`. Developers "
+"are free to change this with whatever name is applicable for their own "
 "extension."
 msgstr ""
 
 #: ../../content/guides/extensions/_tutorial-prelude.md:4
 msgid ""
-"This extension example assumes a Python 3-supported interpreter. Developers "
-"looking to support running under a Python 2 interpreter may require "
-"additional steps not covered in this tutorial."
+"This tutorial does not cover steps on publishing an extension to an index"
+" such as [PyPI][pypi]. Instead, steps will be provided to load a "
+"extension's sources into the system path for releng-tool (which is "
+"optional whenever a given extension can be installed from an index or "
+"runs in an environment that already manages the installation of the "
+"extension)."
 msgstr ""
 
-#: ../../content/guides/extensions/_tutorial-prelude.md:7
-msgid ""
-"This tutorial does not cover steps on publishing an extension to an index "
-"such as [PyPI][pypi]. Instead, steps will be provided to load a extension's "
-"sources into the system path for releng-tool (which is optional whenever a "
-"given extension can be installed from an index or runs in an environment "
-"that already manages the installation of the extension)."
-msgstr ""

@@ -1,21 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-06 15:18-0400\n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
+"Language-Team: German (https://app.transifex.com/releng-"
+"tool/teams/171906/de/)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/local-sources-mode.md:1
 msgid "Local-sources mode"
@@ -29,70 +33,70 @@ msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:8
 msgid ""
-"Local-sources mode provides a way for a developer to build internal-flagged "
-"packages using sources found alongside the root directory (or a specific "
-"provided directory), instead of having releng-tool attempt to fetch them "
-"from remote instances. This is primarily for developers who desire to "
-"manually manage source content outside the releng-tool environment. Local-"
-"sources mode only works for internally flagged packaged. Consider the "
-"following example: a releng-tool project has a package called `liba`. When "
-"releng-tool is invoked in normal configurations, the package will do "
-"fetching, extraction and patching to prepare the directory "
-"`<root>/output/build/liba-<version>`. However, if a builder has configured "
-"the working root for local-sources mode, sources for `liba` will be used "
-"from the folder `<root>/../liba` instead:"
+"Local-sources mode provides a way for a developer to build internal-"
+"flagged packages using sources found alongside the root directory (or a "
+"specific provided directory), instead of having releng-tool attempt to "
+"fetch them from remote instances. This is primarily for developers who "
+"desire to manually manage source content outside the releng-tool "
+"environment. Local-sources mode only works for internally flagged "
+"packaged. Consider the following example: a releng-tool project has a "
+"package called `liba`. When releng-tool is invoked in normal "
+"configurations, the package will do fetching, extraction and patching to "
+"prepare the directory `<root>/output/build/liba-<version>`. However, if a"
+" builder has configured the working root for local-sources mode, sources "
+"for `liba` will be used from the folder `<root>/../liba` instead:"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:33
 msgid ""
 "When in local-sources mode, an internal package will skip the fetching, "
-"extraction and patching stages in order to prevent undesired manipulation of"
-" developer-prepared sources. Another consideration to note is the use of "
-"clean operators while in local-sources mode. Continuing with the above "
-"example, if a user invokes `releng-tool liba-clean`, the operation will not "
-"remove the `<root>/../liba` folder. Responsibility to managing a clean "
-"`liba` package will be left with the user."
+"extraction and patching stages in order to prevent undesired manipulation"
+" of developer-prepared sources. Another consideration to note is the use "
+"of clean operators while in local-sources mode. Continuing with the above"
+" example, if a user invokes `releng-tool liba-clean`, the operation will "
+"not remove the `<root>/../liba` folder. Responsibility to managing a "
+"clean `liba` package will be left with the user."
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:41
 msgid ""
 "To enable local-sources mode, invoking `releng-tool` with the `--local-"
 "sources` (or `-L`) argument will enable the mode. Future calls to releng-"
-"tool for the project will use local sources for packages defined as internal"
-" packages. For example:"
+"tool for the project will use local sources for packages defined as "
+"internal packages. For example:"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:55
 msgid ""
-"Local-sources mode is persisted through the use of a file flag in the root "
-"directory."
+"Local-sources mode is persisted through the use of a file flag in the "
+"root directory."
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:58
 msgid ""
-"If a user provides a directory for the `--local-sources` argument, packages "
-"will be looked for in the provided folder instead of the parent of the "
-"configured root directory. For example:"
+"If a user provides a directory for the `--local-sources` argument, "
+"packages will be looked for in the provided folder instead of the parent "
+"of the configured root directory. For example:"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:71
 msgid ""
-"In the above example, if a project had an internal package `liba`, sources "
-"for `liba` will be used from the folder `~/workdir2/liba`:"
+"In the above example, if a project had an internal package `liba`, "
+"sources for `liba` will be used from the folder `~/workdir2/liba`:"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:88
 msgid ""
-"Users can also provide package-specific overrides. If a user provides a path"
-" which is prefixed with a package's name with either a colon (`:`) or at "
-"sign (`@`), the sources for the provided package will be used from the "
-"respective folder:"
+"Users can also provide package-specific overrides. If a user provides a "
+"path which is prefixed with a package's name with either a colon (`:`) or"
+" at sign (`@`), the sources for the provided package will be used from "
+"the respective folder:"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:106
 msgid ""
-"In the above example, if a project had internal packages `liba`, `libb` and "
-"`libc`, the following paths will be used:"
+"In the above example, if a project had internal packages `liba`, `libb` "
+"and `libc`, the following paths will be used:"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:135
@@ -100,8 +104,7 @@ msgid "Sources for `liba` will be used from the folder `~/workdir2/liba`,"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:136
-msgid ""
-"Sources for `libb` will be used from the folder `/mnt/sources/libb`; and,"
+msgid "Sources for `libb` will be used from the folder `/mnt/sources/libb`; and,"
 msgstr ""
 
 #: ../../content/guides/local-sources-mode.md:137
@@ -123,3 +126,8 @@ msgstr ""
 #: ../../content/guides/local-sources-mode.md:143
 msgid "By manually removing the file flag found at the root of the project."
 msgstr ""
+
+#: ../../content/guides/local-sources-mode.md:145
+msgid "For example:"
+msgstr ""
+

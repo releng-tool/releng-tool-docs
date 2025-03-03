@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../content/news/2025-01-19_01.04.00.md:1
+msgid "1.4 (2025-01-19)"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:3
+msgid "Introducing the `.rt` file extension"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:5
+msgid "Changes to the promoted file extension used for project and packages have been made. When releng-tool was originally released, no extension was used for various package definitions and scripts. While functional, this was not always ideal for development environments wanting some level of syntax highlighting support. Over the years, alternative extension support has been added, allowing `.releng` or even `.py` for an extension type to be used."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:12
+msgid "For this release, the promoted extension type to use will now be `.rt`. It is a minimal file extension with a name appropriate to this tool and is believed to not be in conflict with other modern applications/tools that exist today. releng-tool still supports extensionless files as well as the `.py` extension. The use of `.rt` over only using `.py` will allow developers to have a distinction between releng-tool-compatible Python files and generic Python files."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:20
+msgid "With these changes, the default project configuration will also be `releng-tool.rt`. An example project structure is as follows:"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:35
+msgid "Copy/remove corrections when handling broken symbolic links"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:37
+msgid "Script helpers [`releng_copy`](releng_tool.releng_copy) and [`releng_remove`](releng_tool.releng_remove) have been updated to improve handling when managing symbolic links that are dangling. This allows a script definition to handle scenarios where symbolic links are broken or when a build prepares symbolic links for a target environment that are considered invalid in a host environment."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:44
+msgid "Previous versions would detect an issue with a symbolic link and a copy or remove event would stop with an error."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:47
+msgid "Improved Cargo support"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:49
+msgid "Support for Cargo-based packages have been improved. Cargo packages now share a build target to prevent re-compiling package dependencies multiple times when multiple Cargo applications exist."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:53
+msgid "This update also supports automatic Cargo patching for projects that define Cargo libraries. Cargo applications will automatically be patched to use a defined Cargo library in a releng-tool project, if a developer wishes to manage specific libraries in a project."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:58
+msgid "Lastly, the fetching of Cargo dependencies now occurs after a package's patch stage. This will allow developers to patch downloaded sources before attempts are made to post-fetch any configured dependencies on a Cargo project."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:62
+msgid "New \"fresh\" package action"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:64
+msgid "A new package action named \"fresh\" ([`<pkg>-fresh`](action-pkg-fresh)) is now supported by releng-tool. This action can be used by default to easily setup a package into a \"fresh\" state for development/testing purposes. Essentially, the fresh action is a combination of performing [`<pkg>-clean`](action-pkg-clean) then [`<pkg>-configure`](action-pkg-configure)."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:75
+msgid "Improved Visual Studio integration"
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:77
+msgid "For builds running in a Windows environment, variables provided by a Visual Studio Developer Command Prompt (`VsDevCmd.bat`) can be preloaded into a projects or package context."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:85
+msgid "This can be used to avoid any requirement to run releng-tool from inside a Visual Studio Developer Command Prompt when attempting to perform a build."
+msgstr ""
+
+#: ../../content/news/2025-01-19_01.04.00.md:88
+msgid "Projects looking to use an explicit version of Visual Studio can specify a version string that is compatible with [Visual Studio Locator's][vswhere] (vswhere) `-version` argument."
+msgstr ""
