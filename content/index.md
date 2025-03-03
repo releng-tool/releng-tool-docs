@@ -39,11 +39,11 @@ guides/guides
 examples
 help
 contributors
-annex-a
 :::
 
 :::{toctree}
 :maxdepth: 1
 
 release-notes
+annex-a
 :::
