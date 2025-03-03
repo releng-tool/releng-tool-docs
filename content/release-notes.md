@@ -7,7 +7,8 @@ releng-tool, please see the project's [repository commits][commits].
 ```{eval-rst}
 .. only:: html
 
-    ## News
+    News
+    ####
 
     .. toctree::
         :glob:
