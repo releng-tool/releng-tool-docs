@@ -317,12 +317,12 @@ Quirk options used by releng-tool:
 ```{parsed-literal}
 [`releng.bzr.certifi`](quirk-releng.bzr.certifi)
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
-[`releng.disable_binary_patch`](quirk-releng.disable_binary_patch)
 [`releng.disable_local_site_warn`](quirk-releng.disable_local_site_warn)
 [`releng.disable_prerequisites_check`](quirk-releng.disable_prerequisites_check)
 [`releng.disable_remote_configs`](quirk-releng.disable_remote_configs)
 [`releng.disable_remote_scripts`](quirk-releng.disable_remote_scripts)
 [`releng.disable_spdx_check`](quirk-releng.disable_spdx_check)
+[`releng.disable_verbose_patch`](quirk-releng.disable_verbose_patch)
 [`releng.git.no_depth`](quirk-releng.git.no_depth)
 [`releng.git.no_quick_fetch`](quirk-releng.git.no_quick_fetch)
 [`releng.git.replicate_cache`](quirk-releng.git.replicate_cache)
