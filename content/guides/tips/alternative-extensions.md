@@ -21,8 +21,8 @@ with a `libfoo` package with various stage scripts:
 └── my-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.rt
-    │       └── libfoo-build.rt
+    │       ├── libfoo.rt
+    │       ├── libfoo-build.rt
     │       └── libfoo-install.rt
     └── releng-tool.rt
 ```
@@ -34,8 +34,8 @@ For example, the above example is equivalent to the structure:
 └── my-project/
     ├── package/
     │   └── libfoo/
-    │       └── libfoo.py
-    │       └── libfoo-build.py
+    │       ├── libfoo.py
+    │       ├── libfoo-build.py
     │       └── libfoo-install.py
     └── releng-tool.py
 ```
