@@ -71,21 +71,6 @@ releng-tool <version>
 This package is also [available on AUR][releng-tool-aur].
 ````
 
-````{tab} CentOS
-```{eval-rst}
-.. only:: latex
-
-    **CentOS**
-```
-```shell-session
-$ sudo yum install epel-release
-$ sudo yum install python-pip
-$ sudo pip install -U releng-tool
-$ releng-tool --version
-releng-tool <version>
-```
-````
-
 ````{tab} Fedora
 ```{eval-rst}
 .. only:: latex
