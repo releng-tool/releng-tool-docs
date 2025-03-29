@@ -6,6 +6,9 @@ packages.
 (pkg-opt-build-subdir)=
 ## `LIBFOO_BUILD_SUBDIR`
 
+:::{versionchanged} 2.2 Support added for path-like values.
+:::
+
 Sub-directory where a package's extracted sources holds its buildable content.
 Sources for a package may be nested inside one or more directories. A package
 can specify the sub-directory where the configuration, build and installation
@@ -153,6 +156,8 @@ LIBFOO_FIXED_JOBS = 1
 ## `LIBFOO_GIT_CONFIG`
 
 :::{versionadded} 0.6
+:::
+:::{versionchanged} 2.2 Support added for path-like values.
 :::
 
 Apply additional repository-specific Git configuration settings
@@ -327,6 +332,8 @@ default, this option is disabled with a value of `False`.
 
 :::{versionadded} 0.15
 :::
+:::{versionchanged} 2.2 Support added for path-like values.
+:::
 
 Sub-directory where any package patches should be applied to. By default,
 patches are applied to the root of the extracted sources for a package. This
@@ -343,6 +350,9 @@ See also [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir).
 
 (pkg-opt-prefix)=
 ## `LIBFOO_PREFIX`
+
+:::{versionchanged} 2.2 Support added for path-like values.
+:::
 
 Specifies the sysroot prefix value to use for the package. An explicitly
 provided prefix value will override the project-defined or default sysroot

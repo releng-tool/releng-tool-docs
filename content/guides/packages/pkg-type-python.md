@@ -82,6 +82,8 @@ No longer applicable as all Python packages are installed using the
 
 :::{versionadded} 2.0
 :::
+:::{versionchanged} 2.2 Support added for path-like values.
+:::
 
 When a Python package is built, it will scan the `dist/` directory in
 package's output directory for a wheel package. It is possible for some
@@ -173,6 +175,9 @@ LIBFOO_PYTHON_INSTALLER_SCHEME = {
 
 (pkg-opt-python-interpreter)=
 ## `LIBFOO_PYTHON_INTERPRETER`
+
+:::{versionchanged} 2.2 Support added for path-like values.
+:::
 
 Defines a specific Python interpreter when processing the build and
 installation stages for a package. If not specified, the system's Python
