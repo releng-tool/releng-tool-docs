@@ -351,8 +351,7 @@ At the root of the project folder, create a post-build script named
 `releng-tool-post-build.rt` with the following contents:
 
 ```python
-assets_dir = releng_join(ROOT_DIR, 'assets')
-sample_img = releng_join(assets_dir, 'releng-tool.bmp')
+sample_img = ROOT_DIR / 'assets' / 'releng-tool.bmp'
 releng_copy_into(sample_img, TARGET_BIN_DIR)
 ```
 
