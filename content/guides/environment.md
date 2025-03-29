@@ -15,6 +15,9 @@ releng-tool, the following environment variables are available:
 (env-build-dir)=
 ### `BUILD_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The build directory. By default, this will be a folder `build` found inside
 the configured output directory. For example:
 
@@ -25,6 +28,9 @@ the configured output directory. For example:
 (env-cache-dir)=
 ### `CACHE_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The cache directory. By default, this will be a folder `cache` found inside
 the configured root directory. For example:
 
@@ -34,6 +40,9 @@ the configured root directory. For example:
 
 (env-dl-dir)=
 ### `DL_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The download directory. By default, this will be a folder `dl` found inside
 the configured root directory. For example:
@@ -47,6 +56,8 @@ the configured root directory. For example:
 
 :::{versionadded} 0.14
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The host directory's prefixed bin directory. For example:
 
@@ -56,6 +67,9 @@ The host directory's prefixed bin directory. For example:
 
 (env-host-dir)=
 ### `HOST_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The host directory. By default, this will be a folder `host` found inside
 the configured output directory. For example:
@@ -68,6 +82,8 @@ the configured output directory. For example:
 ### `HOST_INCLUDE_DIR`
 
 :::{versionadded} 0.12
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The host directory's prefixed include directory. An example include
@@ -82,6 +98,8 @@ directory may be as follows:
 
 :::{versionadded} 0.12
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The host directory's prefixed library directory. An example library
 directory may be as follows:
@@ -95,6 +113,8 @@ directory may be as follows:
 
 :::{versionadded} 2.1
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The host directory's prefixed share directory. An example share
 directory may be as follows:
@@ -106,6 +126,9 @@ directory may be as follows:
 (env-images-dir)=
 ### `IMAGES_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The images directory. By default, this will be a folder `images` found inside
 the configured output directory. For example:
 
@@ -115,6 +138,9 @@ the configured output directory. For example:
 
 (env-license-dir)=
 ### `LICENSE_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The licenses directory. By default, this will be a folder `licenses` found
 inside the configured output directory. For example:
@@ -150,6 +176,9 @@ overrides the number of jobs to use, the
 (env-output-dir)=
 ### `OUTPUT_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The output directory.  By default, this will be a folder `output` found inside
 the configured root directory. For example:
 
@@ -176,6 +205,9 @@ See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 (env-pkg-build-dir)=
 ### `PKG_BUILD_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The directory for a specific package's buildable content.
 
 See also [`PKG_BUILD_BASE_DIR`](env-pkg-build-base-dir) and
@@ -184,12 +216,18 @@ See also [`PKG_BUILD_BASE_DIR`](env-pkg-build-base-dir) and
 (env-pkg-build-output-dir)=
 ### `PKG_BUILD_OUTPUT_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The directory for where a package's build output will be stored.
 
 See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 
 (env-pkg-cache-dir)=
 ### `PKG_CACHE_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The location of the cache directory for a package. If a package defines
 a fetch from a repository which can be locally cached, this cache
@@ -201,6 +239,9 @@ advanced cases.
 
 (env-pkg-cache-file)=
 ### `PKG_CACHE_FILE`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The location of the cache file for a package. If a package defines a fetch
 of an archive from a remote source, after the fetch stage is completed, the
@@ -215,6 +256,9 @@ the resulting cache file may be:
 
 (env-pkg-defdir)=
 ### `PKG_DEFDIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The package's definition directory.
 
@@ -297,6 +341,8 @@ See also [`LIBFOO_PREFIX`](pkg-opt-prefix) and
 
 :::{versionadded} 0.12
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The host directory with the prefix applied. An example prefixed
 directory may be as follows:
@@ -310,6 +356,8 @@ directory may be as follows:
 
 :::{versionadded} 0.12
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The staging area directory with the prefix applied. An example prefixed
 directory may be as follows:
@@ -322,6 +370,8 @@ directory may be as follows:
 ### `PREFIXED_TARGET_DIR`
 
 :::{versionadded} 0.12
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The target area directory with the prefix applied. An example prefixed
@@ -412,6 +462,8 @@ Flag set if performing a re-install request.
 
 :::{versionadded} 1.0
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The path of the script currently being executed.
 
@@ -419,6 +471,8 @@ The path of the script currently being executed.
 ### `RELENG_SCRIPT_DIR`
 
 :::{versionadded} 1.0
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The path of the directory holding the script currently being executed.
@@ -450,12 +504,17 @@ The version of releng-tool.
 (env-root-dir)=
 ### `ROOT_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The root directory.
 
 (env-staging-bin-dir)=
 ### `STAGING_BIN_DIR`
 
 :::{versionadded} 0.14
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The staging area directory's prefixed bin directory. An example binary
@@ -468,6 +527,9 @@ directory may be as follows:
 (env-staging-dir)=
 ### `STAGING_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The staging area directory. By default, this will be a folder `staging` found
 inside the configured output directory. For example:
 
@@ -479,6 +541,8 @@ inside the configured output directory. For example:
 ### `STAGING_INCLUDE_DIR`
 
 :::{versionadded} 0.12
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The staging area directory's prefixed include directory. An example include
@@ -493,6 +557,8 @@ directory may be as follows:
 
 :::{versionadded} 0.12
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The staging area directory's prefixed library directory. An example library
 directory may be as follows:
@@ -506,6 +572,8 @@ directory may be as follows:
 
 :::{versionadded} 2.1
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The staging area directory's prefixed share directory. An example share
 directory may be as follows:
@@ -516,6 +584,9 @@ directory may be as follows:
 
 (env-symbols-dir)=
 ### `SYMBOLS_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The symbols area directory. By default, this will be a folder `symbols` found
 inside the configured output directory. For example:
@@ -529,6 +600,8 @@ inside the configured output directory. For example:
 
 :::{versionadded} 0.14
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The target area directory's prefixed bin directory. An example binary
 directory may be as follows:
@@ -539,6 +612,9 @@ directory may be as follows:
 
 (env-target-dir)=
 ### `TARGET_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The target area directory. By default, this will be a folder `target` found
 inside the configured output directory. For example:
@@ -551,6 +627,8 @@ inside the configured output directory. For example:
 ### `TARGET_INCLUDE_DIR`
 
 :::{versionadded} 0.12
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The target area directory's prefixed include directory. An example include
@@ -565,6 +643,8 @@ directory may be as follows:
 
 :::{versionadded} 0.12
 :::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The target area directory's prefixed library directory. An example library
 directory may be as follows:
@@ -577,6 +657,8 @@ directory may be as follows:
 ### `TARGET_SHARE_DIR`
 
 :::{versionadded} 2.1
+:::
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
 The target area directory's prefixed share directory. An example share
@@ -603,6 +685,9 @@ releng-tool's determined package key:
 
 (env-pkg-var-build-dir)=
 ### `<PKG>_BUILD_DIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The directory for a defined package's buildable content.
 
@@ -666,6 +751,9 @@ the package's definition directory:
 (env-pkg-var-output-dir)=
 ### `<PKG>_BUILD_OUTPUT_DIR`
 
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
+
 The directory for where a defined package's build output will be stored.
 
 This location is a path is a folder inside the project's `output/build`
@@ -721,6 +809,9 @@ for package types like CMake. For example:
 
 (env-pkg-var-defdir)=
 ### `<PKG>_DEFDIR`
+
+:::{versionchanged} 2.2 Variable is path-like in a script environment.
+:::
 
 The directory where a defined package's definition is stored.
 
