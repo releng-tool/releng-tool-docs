@@ -19,7 +19,7 @@ would be named `libfoo-post.rt`:
 With the contents of `libfoo-post.rt` being set to:
 
 ```python
- print('perform post-processing work')
+print('perform post-processing work')
 ```
 
 May generate an output such as follows:

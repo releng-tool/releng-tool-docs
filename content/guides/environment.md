@@ -716,7 +716,7 @@ point to the specified local source path. For example, when configured for
 out of the root directory:
 
 ```
-└── libfoo/                           <---- LIBFOO_BUILD_DIR
+├── libfoo/                           <---- LIBFOO_BUILD_DIR
 │   └── ...
 └── my-releng-tool-project/
     ├── output/
