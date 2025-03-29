@@ -7,8 +7,13 @@ hash sphinx-build 2>/dev/null && sphinx_build="sphinx-build" || \
     sphinx_build="python -m sphinx"
 
 builder=
+opts=
 while [[ $# -gt 0 ]]; do
     case $1 in
+    --fresh)
+        opts="-E -a"
+        shift
+        ;;
     -*)
         shift
         ;;
@@ -21,4 +26,4 @@ done
 [[ -z "$builder" ]] && builder=html
 
 cd $BASE_DIR
-exec $sphinx_build -M $builder $DOC_DIR $DOC_DIR/_build/ -E -a -W
+exec $sphinx_build -M $builder $DOC_DIR $DOC_DIR/_build/ $opts -W
