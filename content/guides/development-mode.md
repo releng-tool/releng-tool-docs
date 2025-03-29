@@ -42,6 +42,8 @@ an environment is configured to use the `develop` development mode:
 
 ```shell-session
 $ releng-tool --development develop
+ (or)
+$ releng-tool -D develop
 ```
 
 This package would use the `main` branch instead.
