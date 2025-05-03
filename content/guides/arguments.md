@@ -593,6 +593,8 @@ Show a list of all arguments available by releng-tool.
 
 Directory for image outputs (defaults to `<root>/output/images`).
 
+See also [`RELENG_IMAGES_DIR`](env-releng-images-dir).
+
 (arg-jobs)=
 ### `-j`, `--jobs <jobs>`
 

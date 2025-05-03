@@ -136,6 +136,8 @@ the configured output directory. For example:
 <root-dir>/output/images
 ```
 
+See also [`RELENG_IMAGES_DIR`](env-releng-images-dir).
+
 (env-license-dir)=
 ### `LICENSE_DIR`
 
@@ -997,6 +999,19 @@ Suppress the warning/error generated when running releng-tool with unknown
 arguments.
 
 See also the [`--relaxed-args` argument](arg-relaxed-args).
+
+(env-releng-images-dir)=
+### `RELENG_IMAGES_DIR=<dir>`
+
+:::{versionadded} 0.13
+:::
+
+The images directory to use. By default, the images directory used is
+configured to `<root>/output/images`. If a user does not override a images
+directory using the [`--images-dir` argument](arg-images-dir), the
+`RELENG_IMAGES_DIR` option can be used to override this location.
+
+See also [`IMAGES_DIR`](env-images-dir).
 
 (env-releng-out-dir)=
 ### `RELENG_OUTPUT_DIR=<dir>`

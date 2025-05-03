@@ -173,6 +173,7 @@ Other environment variables accepted by releng-tool:
 [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir)
 [`RELENG_IGNORE_RUNNING_AS_ROOT`](env-releng-ignore-running-as-root)
 [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args)
+[`RELENG_IMAGES_DIR`](env-releng-images-dir)
 [`RELENG_OUTPUT_DIR`](env-releng-out-dir)
 [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level)
 ```
