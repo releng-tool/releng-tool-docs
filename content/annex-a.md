@@ -302,6 +302,7 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_mkdir`](releng_tool.releng_mkdir)(dir_, *args, quiet=False)
 [`releng_move`](releng_tool.releng_move)(src, dst, quiet=False, critical=True, dst_dir=None, nested=False)
 [`releng_move_into`](releng_tool.releng_move_into)(src, dst, quiet=False, critical=True, nested=False)
+[`releng_path`](releng_tool.releng_path)(*pathsegments)
 [`releng_remove`](releng_tool.releng_remove)(path, quiet=False)
 [`releng_require_version`](releng_tool.releng_require_version)(minver, maxver=None, quiet=False, critical=True)
 [`releng_symlink`](releng_tool.releng_symlink)(target, link_path, quiet=False, critical=True, lpd=False, relative=True)

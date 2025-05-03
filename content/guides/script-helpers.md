@@ -33,6 +33,12 @@ are listed below:
 .. autofunction:: releng_mkdir
 .. autofunction:: releng_move
 .. autofunction:: releng_move_into
+
+.. method:: releng_path(*pathsegments)
+
+    An alias for ``pathlib.Path``. See also
+    https://docs.python.org/3/library/pathlib.html#pathlib.Path.
+
 .. autofunction:: releng_remove
 .. autofunction:: releng_symlink
 .. autofunction:: releng_require_version
