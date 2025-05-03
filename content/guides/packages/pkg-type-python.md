@@ -99,6 +99,41 @@ output into `build/dist`, the following configuration can be used:
 LIBFOO_PYTHON_DIST_PATH = 'build/dist'
 ```
 
+(pkg-opt-python-installer-interpreter)=
+## `LIBFOO_PYTHON_INSTALLER_INTERPRETER`
+
+:::{versionadded} 2.3
+:::
+
+Configures the interpreter path to use when generating launcher scripts
+when installing a Python package. This is passed into [`installer`][installer]
+which handles the creations of launchers for an application (if a given
+Python package defines project scripts).
+
+The default interpreter used for project scripts is as follows:
+
+| Type | Value |
+| -: | :- |
+| Non-Windows | `/usr/bin/python` |
+| Windows | `python.exe` |
+
+An example using a custom interpreter `/opt/custom/python` for project
+scripts can be done using:
+
+```
+LIBFOO_PYTHON_INSTALLER_INTERPRETER = '/opt/custom/python'
+```
+
+Which should generate project scripts with a shebang:
+
+```
+#!/opt/custom/python
+...
+```
+
+Before the introduction of this variable, the interpreter used would
+be configured to the same interpreter used by releng-tool.
+
 (pkg-opt-python-installer-launcher-kind)=
 ## `LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`
 
