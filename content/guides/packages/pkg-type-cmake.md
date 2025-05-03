@@ -45,12 +45,12 @@ package.
 :::{versionadded} 0.17
 :::
 
-Specifies the build type used for the CMake package. A package may use a
-common build type (`Debug`, `Release`, `RelWithDebInfo` or `MinSizeRel`),
-or may have a custom build type defined. A developer needing to use a
-specific build type can configure this option with the name of the
-configuration. By default, the `RelWithDebInfo` build type is used for
-all CMake packages.
+Specifies the [build type][cmake-build-type] used for the CMake package.
+A package may use a common build type (`Debug`, `Release`, `RelWithDebInfo`
+or `MinSizeRel`), or may have a custom build type defined. A developer
+needing to use a specific build type can configure this option with the
+name of the configuration. By default, the `RelWithDebInfo` build type is
+used for all CMake packages.
 
 ```python
 LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
@@ -108,5 +108,6 @@ LIBFOO_CMAKE_NOINSTALL = True
 :::
 
 
+[cmake-build-type]: https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html
 [cmake-install]: https://cmake.org/cmake/help/latest/command/install.html
 [cmake]: https://cmake.org/
