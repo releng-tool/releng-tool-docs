@@ -38,6 +38,8 @@ the configured root directory. For example:
 <root-dir>/cache
 ```
 
+See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
+
 (env-dl-dir)=
 ### `DL_DIR`
 
@@ -50,6 +52,8 @@ the configured root directory. For example:
 ```none
 <root-dir>/dl
 ```
+
+See also [`RELENG_DL_DIR`](env-releng-dl-dir).
 
 (env-host-bin-dir)=
 ### `HOST_BIN_DIR`
@@ -905,6 +909,8 @@ to `<root>/cache`. If a user does not override a cache directory using the
 [`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR` option can
 be used to override this location.
 
+See also [`CACHE_DIR`](env-cache-dir).
+
 (env-releng-dl-dir)=
 ### `RELENG_DL_DIR=<dir>`
 
@@ -915,6 +921,8 @@ The download directory to use. By default, the download directory used is
 configured to `<root>/dl`. If a user does not override a download directory
 using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR` option
 can be used to override this location.
+
+See also [`DL_DIR`](env-dl-dir).
 
 (env-releng-global-out-container-dir)=
 ### `RELENG_GLOBAL_OUTPUT_CONTAINER_DIR=<dir>`
