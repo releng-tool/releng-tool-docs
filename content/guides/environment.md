@@ -1012,6 +1012,17 @@ directory using the [`--out-dir` argument](arg-out-dir), the
 See also
 [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir).
 
+(env-releng-parallel-level)=
+### `RELENG_PARALLEL_LEVEL=<level>`
+
+:::{versionadded} 2.3
+:::
+
+Numbers of jobs to handle (defaults to `0`; automatic).
+
+See also the [`--jobs` argument](arg-jobs), [`NJOBS`](env-njobs) and
+[`NJOBSCONF`](env-njobsconf)).
+
 (env-tool-overrides)=
 ### Tool overrides
 

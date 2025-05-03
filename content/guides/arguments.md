@@ -598,6 +598,8 @@ Directory for image outputs (defaults to `<root>/output/images`).
 
 Numbers of jobs to handle (defaults to `0`; automatic).
 
+See also [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level).
+
 (arg-local-sources)=
 ### `-L`, `--local-sources [[<pkg>:]<dir>]`
 

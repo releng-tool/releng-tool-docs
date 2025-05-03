@@ -174,6 +174,7 @@ Other environment variables accepted by releng-tool:
 [`RELENG_IGNORE_RUNNING_AS_ROOT`](env-releng-ignore-running-as-root)
 [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args)
 [`RELENG_OUTPUT_DIR`](env-releng-out-dir)
+[`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level)
 ```
 
 ## Package types
