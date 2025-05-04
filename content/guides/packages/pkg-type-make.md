@@ -3,7 +3,7 @@
 :::{versionadded} 0.13
 :::
 
-A make package provides support to easily invoke [GNU Make][gnu-make]
+A Make package provides support to easily invoke [GNU Make][gnu-make]
 commands at various stages of a package.
 
 ```python
