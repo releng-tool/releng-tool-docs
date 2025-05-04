@@ -36,6 +36,8 @@ are listed below:
 
 .. method:: releng_path(*pathsegments)
 
+    .. versionadded:: 2.3
+
     An alias for ``pathlib.Path``. See also
     https://docs.python.org/3/library/pathlib.html#pathlib.Path.
 
