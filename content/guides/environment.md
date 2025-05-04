@@ -1044,7 +1044,7 @@ See also
 Numbers of jobs to handle (defaults to `0`; automatic).
 
 See also the [`--jobs` argument](arg-jobs), [`NJOBS`](env-njobs) and
-[`NJOBSCONF`](env-njobsconf)).
+[`NJOBSCONF`](env-njobsconf).
 
 (env-tool-overrides)=
 ### Tool overrides
