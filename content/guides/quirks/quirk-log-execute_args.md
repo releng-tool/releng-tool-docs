@@ -1,6 +1,9 @@
 (quirk-releng.log.execute_args)=
 # Quirk `releng.log.execute_args`
 
+:::{versionadded} 1.4
+:::
+
 When releng-tool is configured with [`--debug`](arg-debug), the tool
 will log (among other things) process executions. Debugging can print
 information such as working directory of an execution, as well as arguments

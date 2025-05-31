@@ -1,6 +1,9 @@
 (quirk-releng.disable_local_site_warn)=
 # Quirk `releng.disable_local_site_warn`
 
+:::{versionadded} 1.4
+:::
+
 Users can create packages using a [local site](site-local) for initial
 development and testing scenarios. However, using local sites is not
 recommended for long-term use; hence a warning is generated when

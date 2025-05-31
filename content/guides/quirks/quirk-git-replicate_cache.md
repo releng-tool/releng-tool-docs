@@ -1,6 +1,9 @@
 (quirk-releng.git.replicate_cache)=
 # Quirk `releng.git.replicate_cache`
 
+:::{versionadded} 0.17
+:::
+
 When fetching sources for a Git-site-defined package, releng-tool will
 keep a project's Git repository inside a cache folder and use the project's
 build directory as the Git work-tree. When extracting a given revision for
