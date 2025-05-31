@@ -195,6 +195,8 @@ sbom_format = [
 ]
 ```
 
+The `all` value is accepted to generate all supported SBOM variants.
+
 (conf-sysroot-prefix)=
 ### `sysroot_prefix`
 
