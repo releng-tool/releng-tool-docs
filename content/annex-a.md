@@ -41,6 +41,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`--cache-dir <dir>`](arg-cache-dir)
 [`--config <file>`](arg-config)
 [`--debug`](arg-debug)
+[`--debug-extended`](arg-debug-extended)
 [`-D`, `--development [<mode>]`](arg-development)
 [`--dl-dir <dir>`](arg-dl-dir)
 [`-F`, `--force`](arg-force)

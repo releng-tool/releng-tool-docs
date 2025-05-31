@@ -551,6 +551,12 @@ may apply when detecting the default configuration file.
 
 Show debug-related messages.
 
+(arg-debug-extended)=
+### `--debug-extended`
+
+Show extended debug-related messages, such as process execution arguments and
+environment variables.
+
 (arg-development)=
 ### `-D`, `--development [<mode>]`
 
