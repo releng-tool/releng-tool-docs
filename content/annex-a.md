@@ -88,6 +88,7 @@ Options which are read by releng-tool from a project's configuration script
 [`url_mirror`](conf-url-mirror) = '&lt;mirror-url&gt;'
 [`urlopen_context`](conf-urlopen-context) = &lt;ssl.SSLContext&gt;
 [`vsdevcmd`](conf-vsdevcmd) = bool or str
+[`vsdevcmd_products`](conf-vsdevcmd-products) = str
 ```
 
 ## Environment variables
@@ -274,6 +275,7 @@ Configuration options parsed by releng-tool for a package definition:
 &nbsp;&nbsp;└── brz, bzr, cvs, file, git, hg, local, none, perforce, rsync, scp, svn, url
 [`LIBFOO_VERSION`](pkg-opt-version) = '&lt;version&gt;'
 [`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd) = bool or str
+[`LIBFOO_VSDEVCMD_PRODUCTS`](pkg-opt-vsdevcmd-products) = str
 ```
 
 ## Script helpers
