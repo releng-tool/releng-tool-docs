@@ -197,6 +197,9 @@ sbom_format = [
 
 The `all` value is accepted to generate all supported SBOM variants.
 
+See also [`sbom`](action-sbom) (action) and
+[`--sbom-format <fmt>`](arg-sbom-format) (argument).
+
 (conf-sysroot-prefix)=
 ### `sysroot_prefix`
 

@@ -184,6 +184,9 @@ releng-tool sbom
 By default, a releng-tool run will generate an SBOM file at the end of a
 run. This action can be used to generate an SBOM without requiring a build.
 
+See also [`--sbom-format <fmt>`](arg-sbom-format) (argument) and
+[`sbom_format`](conf-sbom-format) (configuration).
+
 (action-state)=
 ### `state`
 
@@ -693,7 +696,8 @@ Multiple formats can be provided (comma-separated).
 | Text | `text` (default) |
 | XML | `xml` |
 
-See also [`sbom`](action-sbom).
+See also [`sbom`](action-sbom) (action) and [`sbom_format`](conf-sbom-format)
+(configuration).
 
 (arg-quirk)=
 ### `--quirk <quirk-id>`
