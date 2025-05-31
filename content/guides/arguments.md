@@ -677,6 +677,8 @@ directory).
 
 :::{versionadded} 0.14
 :::
+:::{versionchanged} 2.4 `rdp-spdx` renamed to `rdf-spdx`.
+:::
 
 The format to use when generating a software build of materials (SBOM).
 Multiple formats can be provided (comma-separated).
@@ -687,7 +689,7 @@ Multiple formats can be provided (comma-separated).
 | HTML | `html` |
 | JSON | `json` |
 | JSON (SPDX) | `json-spdx` |
-| RDP (SPDX) | `rdp-spdx` |
+| RDF (SPDX) | `rdf-spdx` |
 | Text | `text` (default) |
 | XML | `xml` |
 

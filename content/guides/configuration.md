@@ -163,6 +163,8 @@ prerequisites = [
 :::
 :::{versionchanged} 0.16 Support added for `json-spdx` and `rdp-spdx`.
 :::
+:::{versionchanged} 2.4 `rdp-spdx` renamed to `rdf-spdx`.
+:::
 
 Configures the default format to use when generating a software build of
 materials (SBOM). By default, `text` format SBOMs are generated for a
@@ -180,7 +182,7 @@ The following lists the available formats supported:
 | HTML | `html` |
 | JSON | `json` |
 | JSON (SPDX) | `json-spdx` |
-| RDP (SPDX) | `rdp-spdx` |
+| RDF (SPDX) | `rdf-spdx` |
 | Text | `text` (default) |
 | XML | `xml` |
 

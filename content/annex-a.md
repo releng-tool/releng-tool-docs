@@ -83,7 +83,7 @@ Options which are read by releng-tool from a project's configuration script
 [`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
 [`quirks`](conf-quirks) = ['&lt;quirk-id&gt;']
 [`sbom_format`](conf-sbom-format) = '&lt;format&gt;'
-&nbsp;&nbsp;└── csv, html, json, json-spdx, rdp-spdx, text, xml
+&nbsp;&nbsp;└── csv, html, json, json-spdx, rdf-spdx, text, xml
 [`sysroot_prefix`](conf-sysroot-prefix) = '&lt;path&gt;' # '/usr'
 [`url_mirror`](conf-url-mirror) = '&lt;mirror-url&gt;'
 [`urlopen_context`](conf-urlopen-context) = &lt;ssl.SSLContext&gt;
