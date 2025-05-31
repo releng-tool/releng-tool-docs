@@ -4,6 +4,7 @@ Buildroot
 CMake
 LTS
 Makefile
+PathLike
 SCP
 SCons
 Setuptools
@@ -57,11 +58,13 @@ stdout
 submodule
 submodules
 substrings
+symlinks
 sysroot
 toolchain
 toolchains
 unconfigure
 unconfiguring
 vendored
+virtualized
 vswhere
 whitespace
