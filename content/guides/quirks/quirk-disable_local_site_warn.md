@@ -3,6 +3,10 @@
 
 :::{versionadded} 1.4
 :::
+:::{deprecated} 2.5
+This quirk is no longer applicable. releng-tool will no longer generate
+a warning when using a local package.
+:::
 
 Users can create packages using a [local site](site-local) for initial
 development and testing scenarios. However, using local sites is not
