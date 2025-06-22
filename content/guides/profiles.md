@@ -21,7 +21,7 @@ can be added in a project's `releng-tool.rt` file:
 
 ```python
 packages = [
-    'minimal',
+    'example',
 ]
 
 if 'awesome-mode' in RELENG_PROFILES:
