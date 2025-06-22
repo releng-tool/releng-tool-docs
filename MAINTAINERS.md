@@ -3,6 +3,27 @@
 This document serves as a guide for maintainers. For users wishes to contribute
 to this repository, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Local Builds and Checks
+
+To locally build documentation:
+
+```
+cd content
+./build
+```
+
+To easily open documentation in a browser, invoke:
+
+```
+./open
+```
+
+To spellcheck the documentation, invoke:
+
+```
+./build spelling
+```
+
 ## Synchronization
 
 When attempting to update the persisted state of this repository, first
