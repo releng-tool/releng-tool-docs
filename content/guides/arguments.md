@@ -268,6 +268,10 @@ or directory associated with the package. See also the
 :::
 :::{versionchanged} 1.4 Support accepting arguments after `--`.
 :::
+:::{versionchanged} 2.5
+When using `--` with this call, [`releng_args`](vars-releng_args) is no
+longer populated.
+:::
 
 Invokes a provided command in the package's build output directory. This
 package action can be useful for developers attempting to develop/debug a
@@ -290,7 +294,7 @@ releng-tool libfoo-exec -- mycmd arg1 arg2
 
 Package environment variables will be available for the invoked command.
 
-See also [`RELENG_EXEC`](env-releng-exec).
+See also [`RELENG_EXEC`](env-releng-exec) and [`releng_args`](vars-releng_args).
 
 (action-pkg-extract)=
 ### `<pkg>-extract`

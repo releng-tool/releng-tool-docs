@@ -57,7 +57,18 @@ are listed below:
 The following variables are registered in the global context for any
 project or package definition/script.
 
+(vars-releng_args)=
 ### `releng_args`
+
+:::{versionchanged} 2.5
+Variable no longer populated when [`action-pkg-exec`](action-pkg-exec) is set.
+:::
+
+```{note}
+When using [`<pkg>-exec "<cmd>"`](action-pkg-exec), the `releng_args` variable
+will not be populated. This is to prevent conflicts from project-specific
+argument processing and package-specific run arguments.
+```
 
 A list of arguments forwarded into a releng-tool invoke. If a caller uses
 the `--` argument, all trailing arguments will be populated into
