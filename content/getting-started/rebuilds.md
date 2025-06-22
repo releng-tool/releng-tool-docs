@@ -1,5 +1,17 @@
 # Understanding rebuilds
 
+- Completed stages for a package are not executed again when releng-tool is
+  re-run.
+- Users looking to re-run a completed stage for a specific package need to
+  manually re-trigger the stage (e.g.
+  [`releng-tool <pkg>-rebuild`](action-pkg-rebuild),
+  [`releng-tool <pkg>-reconfigure`](action-pkg-reconfigure),
+  [`releng-tool <pkg>-reinstall`](action-pkg-reinstall)).
+- Users can also invoke [`releng-tool punch`](action-punch) for force
+  re-trigger all package stages.
+
+## Details
+
 As packages are processed in order (based off of detected dependencies, if any),
 each package will go through their respective stages:
 
