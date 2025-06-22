@@ -671,7 +671,9 @@ See also [`RELENG_OUTPUT_DIR`](env-releng-out-dir).
 
 Configure a profile to run with. Providing this option is only applicable if
 a project accepts custom profile options. Multiple profiles can be provided
-by repeating this argument.
+by repeating this argument. Multiple profiles can also be provided in a
+single argument where profiles are separated by a comma (`,`) or a
+semicolon (`;`).
 
 See also [using profiles](profiles).
 

@@ -30,6 +30,10 @@ Multiple profiles can be provided as well:
 
 ```
 releng-tool --profile awesome-mode --profile another-example
+ (or)
+releng-tool --profile awesome-mode,another-example
+ (or)
+releng-tool --profile "awesome-mode;another-example"
 ```
 
 The script environment provides a list of known profiles. However, if reading
