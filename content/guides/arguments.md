@@ -565,7 +565,7 @@ Show extended debug-related messages, such as process execution arguments and
 environment variables.
 
 (arg-development)=
-### `-D`, `--development [<mode>]`
+### `--development [<mode>]`, `-D [<mode>]`
 
 :::{versionchanged} 0.13 Support configurable modes.
 :::
@@ -580,7 +580,7 @@ Directory for download archives (defaults to `<root>/dl`).
 See also [`RELENG_DL_DIR`](env-releng-dl-dir).
 
 (arg-force)=
-### `-F`, `--force`
+### `--force`, `-F`
 
 :::{versionadded} 0.11
 :::
@@ -594,7 +594,7 @@ Triggers a forced request for the releng-tool invoke. This entails:
   will have their cache files deleted to be re-fetched.
 
 (arg-help)=
-### `-h`, `--help`
+### `--help`, `-h`
 
 Show a list of all arguments available by releng-tool.
 
@@ -609,14 +609,14 @@ Directory for image outputs (defaults to `<root>/output/images`).
 See also [`RELENG_IMAGES_DIR`](env-releng-images-dir).
 
 (arg-jobs)=
-### `-j`, `--jobs <jobs>`
+### `--jobs <jobs>`, `-j <jobs>`
 
 Numbers of jobs to handle (defaults to `0`; automatic).
 
 See also [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level).
 
 (arg-local-sources)=
-### `-L`, `--local-sources [[<pkg>:]<dir>]`
+### `--local-sources [[<pkg>:]<dir>]`, `-L [[<pkg>:]<dir>]`
 
 :::{versionchanged} 0.13 Support configurable packages and directories.
 :::
@@ -727,7 +727,7 @@ Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
 process. This option can be used multiple times to apply multiple quirks.
 
 (arg-verbose)=
-### `-V`, `--verbose`
+### `--verbose`, `-V`
 
 Show additional messages.
 
