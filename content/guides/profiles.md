@@ -15,15 +15,17 @@ releng-tool --profile awesome-mode
 
 A project configuration or package stage can then check the
 [`RELENG_PROFILES`](env-releng-profiles) variable to determine if a
-conditional event should be performed:
+conditional event should be performed. To continue with this example, if
+looking to add an additional package when using this profile, the following
+can be added in a project's `releng-tool.rt` file:
 
 ```python
-...
+packages = [
+    'minimal',
+]
 
 if 'awesome-mode' in RELENG_PROFILES:
-	...
-
-...
+	packages.append('awesome-mods')
 ```
 
 Multiple profiles can be provided as well:
