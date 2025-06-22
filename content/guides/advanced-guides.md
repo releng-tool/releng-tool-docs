@@ -10,6 +10,7 @@ patching
 intern-extern-pkgs
 development-mode
 local-sources-mode
+profiles
 configuration-overrides
 quirks/quirks
 :::

@@ -448,6 +448,17 @@ Flag set if in [local-sources mode](local-sources-mode).
 
 Flag set if performing a pristine clean request.
 
+(env-releng-profiles)=
+### `RELENG_PROFILES`
+
+:::{versionadded} 2.5
+:::
+
+Defines one or more semicolon-separated profile values actively configured
+for a run.
+
+See also [using profiles](profiles).
+
 (env-releng-rebuild)=
 ### `RELENG_REBUILD`
 

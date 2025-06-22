@@ -663,6 +663,18 @@ Directory for output (builds, images, etc.; defaults to `<root>/output`).
 
 See also [`RELENG_OUTPUT_DIR`](env-releng-out-dir).
 
+(arg-profile)=
+### `--profile [<profile>]`, `-P [<profile>]`
+
+:::{versionadded} 2.5
+:::
+
+Configure a profile to run with. Providing this option is only applicable if
+a project accepts custom profile options. Multiple profiles can be provided
+by repeating this argument.
+
+See also [using profiles](profiles).
+
 (arg-relaxed-args)=
 ### `--relaxed-args`
 
