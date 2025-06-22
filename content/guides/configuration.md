@@ -405,6 +405,10 @@ The option is ignored in non-Windows environments.
 
 :::{versionadded} 1.4
 :::
+:::{versionchanged} 2.5
+Cycles through all applicable configured products until the first install
+that provides `VsDevCmd.bat` is found.
+:::
 
 Allows a project to automatically load Visual Studio Developer Command
 Prompt (`VsDevCmd.bat`) variables into the releng-tool process. This will
@@ -415,9 +419,14 @@ was started from within a Visual Studio Developer Command Prompt.
 vsdevcmd = True
 ```
 
+The version of which Visual Studio application it used is determined with
+the help of [Visual Studio Locator][vswhere] (vswhere). By default, the
+newest version of Visual Studio and the most recent installed version is
+used (assuming the installation includes a `VsDevCmd.bat` script).
+
 Projects looking to use an explicit version of Visual Studio can specify a
-version string that is compatible with [Visual Studio Locator's][vswhere]
-(vswhere) `-version` argument.
+version string that is compatible with Visual Studio Locator's `-version`
+argument.
 
 ```python
 vsdevcmd = '[17.0,18.0)'
