@@ -1,5 +1,9 @@
 # CMake package
 
+:::{versionchanged} 2.6
+releng-tool now populates `CMAKE_FIND_ROOT_PATH`.
+:::
+
 A CMake package provides support for processing a [CMake][cmake] supported
 module.
 
@@ -20,6 +24,28 @@ can override this option by explicitly adjusting the configuration option
 
 ```python
 LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
+```
+
+Packages can be configured with a toolchain using with the define
+[`CMAKE_TOOLCHAIN_FILE`][cmake-toolchain-file] (via
+[`LIBFOO_CONF_DEFS`](pkg-opt-cmake-conf-defs)) or using the command line option
+[`--toolchain`][cmake-opt-toolchain] (via
+[`LIBFOO_CONF_OPTS`](pkg-opt-cmake-conf-opts)). releng-tool will provide
+required staging/target paths through the
+[`CMAKE_FIND_ROOT_PATH`][cmake-find-root-path] configuration. Ensure the
+toolchain configuration accepts `CMAKE_FIND_ROOT_PATH` hints. For example,
+using either:
+
+```
+list(APPEND CMAKE_FIND_ROOT_PATH "INTERNAL_SDK_PATH")
+```
+
+Or:
+
+```
+if(NOT DEFINED CMAKE_FIND_ROOT_PATH)
+    set(CMAKE_FIND_ROOT_PATH "INTERNAL_SDK_PATH")
+endif()
 ```
 
 The following sections outline configuration options are available for a CMake
@@ -109,5 +135,8 @@ LIBFOO_CMAKE_NOINSTALL = True
 
 
 [cmake-build-type]: https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html
+[cmake-find-root-path]: https://cmake.org/cmake/help/latest/variable/CMAKE_FIND_ROOT_PATH.html
 [cmake-install]: https://cmake.org/cmake/help/latest/command/install.html
+[cmake-opt-toolchain]: https://cmake.org/cmake/help/latest/manual/cmake.1.html#cmdoption-cmake-toolchain
+[cmake-toolchain-file]: https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html
 [cmake]: https://cmake.org/
