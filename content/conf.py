@@ -136,18 +136,27 @@ latex_logo = '_static/logo.png'
 
 # documentation setup
 def setup(app):
-    app.add_css_file('theme_overrides.css')
-
     # remove first line description docstrings in documentation
     app.connect('autodoc-process-docstring', cut_lines(1))
 
     # listen for configuration events
     app.connect("config-inited", on_conf)
 
+    # add hook for html builders
+    app.connect('html-page-context', add_singlehtml_css)
+
 
 def on_conf(app=None, config=None):
     if app.config.language == 'ja':
         app.config.latex_engine = 'uplatex'
+
+
+def on_html_page_context(app, pagename, templatename, context, doctree):
+    app.add_css_file('theme_overrides.css')
+
+    if app.builder.name == 'singlehtml':
+        app.add_css_file('theme_overrides_singlebuilder.css')
+
 
 # ######################################################################
 # replace docutil's ID generation to help improve this specific

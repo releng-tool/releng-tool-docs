@@ -1,0 +1,13 @@
+﻿.mobile-header, .sidebar-drawer {
+    display: none !important;
+}
+
+.theme-toggle-content {
+    display: block !important;
+}
+
+.content {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 1em !important;
+}
