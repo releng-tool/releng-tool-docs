@@ -143,7 +143,7 @@ def setup(app):
     app.connect("config-inited", on_conf)
 
     # add hook for html builders
-    app.connect('html-page-context', add_singlehtml_css)
+    app.connect('html-page-context', on_html_page_context)
 
 
 def on_conf(app=None, config=None):
