@@ -25,13 +25,9 @@ releng-tool.
 
 ## Configuration-driven quirks
 
-Quirks can also be enabled through configuration override scripts. This can
-be used in certain build scenarios where defining a script override is
-easier than specifying multiple command line options.
-
-For example, if an override script
-[`releng-overrides`](/guides/configuration-overrides) is created, the following
-can be used to enable one or more quirks for a releng-tool run:
+Quirks can also be enabled through the [project configuration](conf-quirks).
+For example, the following can be used to enable one or more quirks for a
+releng-tool run:
 
 ```python
 quirks = [
