@@ -25,7 +25,7 @@ packages = [
 ]
 
 if 'awesome-mode' in RELENG_PROFILES:
-	packages.append('awesome-mods')
+    packages.append('awesome-mods')
 ```
 
 Multiple profiles can be provided as well:
