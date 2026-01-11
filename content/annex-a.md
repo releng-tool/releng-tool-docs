@@ -117,7 +117,7 @@ releng-tool (may vary per context):
 [`PKG_CACHE_DIR`](env-pkg-cache-dir)
 [`PKG_CACHE_FILE`](env-pkg-cache-file)
 [`PKG_DEFDIR`](env-pkg-defdir)
-[`PKG_DEVMODE`](env-pkg-defmode)
+[`PKG_DEVMODE`](env-pkg-devmode)
 [`PKG_INTERNAL`](env-pkg-internal)
 [`PKG_LOCALSRCS`](env-pkg-localsrcs)
 [`PKG_NAME`](env-pkg-name)

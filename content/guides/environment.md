@@ -274,7 +274,7 @@ For example, for a package `test`, the definition directory would be:
 <root>/package/test
 ```
 
-(env-pkg-defmode)=
+(env-pkg-devmode)=
 ### `PKG_DEVMODE`
 
 :::{versionadded} 0.13
