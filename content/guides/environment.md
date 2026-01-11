@@ -1,5 +1,28 @@
 # Environment variables
 
+Variables outlined below are available in both the environment and in
+applicable script contexts (unless noted otherwise). For example, the
+[`RELENG_VERSION`](env-releng-version) variable can be accessed by invoked
+programs such as a Makefile definition:
+
+```make
+all:
+	@echo Using version ${RELENG_VERSION}
+```
+
+Or an invoked shell script:
+
+```sh
+echo "Using version $RELENG_VERSION"
+```
+
+For package definitions and releng-tool scripts, these variables can be
+directly used:
+
+```python
+print(f'Using version {RELENG_VERSION}')
+```
+
 :::{tip}
 Avoid using external environment variables for a project to configure
 package options such as compiler flags or interpreters. Managing these
