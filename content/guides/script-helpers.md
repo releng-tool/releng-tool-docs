@@ -9,6 +9,9 @@ are listed below:
 ```{eval-rst}
 .. currentmodule:: releng_tool
 .. autofunction:: debug
+
+    See also the ``--debug`` :ref:`argument <arg-debug>`.
+
 .. autofunction:: err
 .. autofunction:: hint
 .. autofunction:: log
@@ -49,6 +52,9 @@ are listed below:
 .. autofunction:: releng_wd
 .. autofunction:: success
 .. autofunction:: verbose
+
+    See also the ``--verbose`` :ref:`argument <arg-verbose>`.
+
 .. autofunction:: warn
 ```
 

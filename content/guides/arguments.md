@@ -202,6 +202,7 @@ releng-tool state
 A state request can be used to dump any active configuration and operating
 modes.
 
+(package-actions)=
 ## Package actions
 
 The following outlines available package-specific actions:
@@ -558,6 +559,8 @@ may apply when detecting the default configuration file.
 
 Show debug-related messages.
 
+See also [`RELENG_DEBUG`](env-releng-debug).
+
 (arg-debug-extended)=
 ### `--debug-extended`
 
@@ -572,12 +575,14 @@ environment variables.
 
 Enables [development mode](development-mode).
 
+See also [`RELENG_DEVMODE`](env-releng-devmode).
+
 (arg-dl-dir)=
 ### `--dl-dir <dir>`
 
 Directory for download archives (defaults to `<root>/dl`).
 
-See also [`RELENG_DL_DIR`](env-releng-dl-dir).
+See also [`DL_DIR`](env-dl-dir) and [`RELENG_DL_DIR`](env-releng-dl-dir).
 
 (arg-force)=
 ### `--force`, `-F`
@@ -593,6 +598,8 @@ Triggers a forced request for the releng-tool invoke. This entails:
   [`<pkg>-fetch`](action-pkg-fetch)), any packages which cache to a file
   will have their cache files deleted to be re-fetched.
 
+See also [`RELENG_FORCE`](env-releng-force).
+
 (arg-help)=
 ### `--help`, `-h`
 
@@ -606,7 +613,8 @@ Show a list of all arguments available by releng-tool.
 
 Directory for image outputs (defaults to `<root>/output/images`).
 
-See also [`RELENG_IMAGES_DIR`](env-releng-images-dir).
+See also [`IMAGES_DIR`](env-images-dir) and
+[`RELENG_IMAGES_DIR`](env-releng-images-dir).
 
 (arg-jobs)=
 ### `--jobs <jobs>`, `-j <jobs>`
@@ -690,8 +698,10 @@ See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
 (arg-root-dir)=
 ### `--root-dir <dir>`
 
-Directory to process a releng-tool project (defaults to the working
-directory).
+Directory to process a releng-tool project. By default, the root directory is
+configured to the working directory.
+
+See also [`ROOT_DIR`](env-root-dir).
 
 (arg-sbom-format)=
 ### `--sbom-format <fmt>`
@@ -730,6 +740,8 @@ process. This option can be used multiple times to apply multiple quirks.
 ### `--verbose`, `-V`
 
 Show additional messages.
+
+See also [`RELENG_VERBOSE`](env-releng-verbose).
 
 (arg-version)=
 ### `--version`

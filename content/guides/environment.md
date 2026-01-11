@@ -41,12 +41,15 @@ releng-tool, the following environment variables are available:
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The build directory. By default, this will be a folder `build` found inside
-the configured output directory. For example:
+The build directory for a project. By default, this will be a folder `build`
+found inside the configured output directory. For example:
 
 ```none
 <root-dir>/output/build
 ```
+
+For package-specific build directories, see
+[`PKG_BUILD_DIR`](env-pkg-build-dir).
 
 (env-cache-dir)=
 ### `CACHE_DIR`
@@ -54,14 +57,16 @@ the configured output directory. For example:
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The cache directory. By default, this will be a folder `cache` found inside
-the configured root directory. For example:
+The cache directory which holds distributed version control cache data (e.g.
+Git data). By default, this will be a folder `cache` found inside the
+configured root directory. For example:
 
 ```none
 <root-dir>/cache
 ```
 
-See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
+See also [`RELENG_CACHE_DIR`](env-releng-cache-dir) and the
+[`--cache-dir` argument](arg-cache-dir).
 
 (env-dl-dir)=
 ### `DL_DIR`
@@ -69,14 +74,16 @@ See also [`RELENG_CACHE_DIR`](env-releng-cache-dir).
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The download directory. By default, this will be a folder `dl` found inside
-the configured root directory. For example:
+The download directory which holds a local copy of package artifacts. By
+default, this will be a folder `dl` found inside the configured root
+directory. For example:
 
 ```none
 <root-dir>/dl
 ```
 
-See also [`RELENG_DL_DIR`](env-releng-dl-dir).
+See also [`RELENG_DL_DIR`](env-releng-dl-dir) and the
+[`--dl-dir` argument](arg-dl-dir).
 
 (env-host-bin-dir)=
 ### `HOST_BIN_DIR`
@@ -156,14 +163,16 @@ directory may be as follows:
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The images directory. By default, this will be a folder `images` found inside
-the configured output directory. For example:
+The images directory which holds final images/packages from a run. By default,
+this will be a folder `images` found inside the configured output directory.
+For example:
 
 ```none
 <root-dir>/output/images
 ```
 
-See also [`RELENG_IMAGES_DIR`](env-releng-images-dir).
+See also [`RELENG_IMAGES_DIR`](env-releng-images-dir) and the
+[`--images-dir` argument](arg-images-dir).
 
 (env-license-dir)=
 ### `LICENSE_DIR`
@@ -171,8 +180,9 @@ See also [`RELENG_IMAGES_DIR`](env-releng-images-dir).
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The licenses directory. By default, this will be a folder `licenses` found
-inside the configured output directory. For example:
+The licenses directory which holds tracked license information from a run.
+By default, this will be a folder `licenses` found inside the configured output
+directory. For example:
 
 ```none
 <root-dir>/output/licenses
@@ -208,12 +218,20 @@ overrides the number of jobs to use, the
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The output directory.  By default, this will be a folder `output` found inside
+The output directory. By default, this will be a folder `output` found inside
 the configured root directory. For example:
 
 ```none
 <root-dir>/output
 ```
+
+The output directory can be configured using either:
+
+- The [`--out-dir` argument](arg-out-dir).
+- The [`RELENG_OUTPUT_DIR`](env-releng-out-dir) environment variable.
+- The
+  [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir)
+  environment variable.
 
 (env-pkg-build-base-dir)=
 ### `PKG_BUILD_BASE_DIR`
@@ -229,6 +247,12 @@ In most cases, this value will be the same as
 sub-directory. The value of [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir)
 does not adjust the value of `PKG_BUILD_BASE_DIR`.
 
+For example, for a package `test`, the package build base directory may be:
+
+```none
+<root>/build/test-1.0
+```
+
 See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 
 (env-pkg-build-dir)=
@@ -238,6 +262,15 @@ See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 :::
 
 The directory for a specific package's buildable content.
+
+For example, for a package `test`, the package build directory may be:
+
+```none
+<root>/build/test-1.0
+```
+
+If [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) is configured, the
+sub-directory path will be appended.
 
 See also [`PKG_BUILD_BASE_DIR`](env-pkg-build-base-dir) and
 [`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
@@ -249,6 +282,12 @@ See also [`PKG_BUILD_BASE_DIR`](env-pkg-build-base-dir) and
 :::
 
 The directory for where a package's build output will be stored.
+
+For example, for a package `test`, the package build output directory may be:
+
+```none
+<root>/build/test-1.0/releng-output
+```
 
 See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 
@@ -266,6 +305,12 @@ cache of the Git repository will be stored in this location. Typically,
 packages should not need to operate on the cache directory except for
 advanced cases.
 
+For example, for a package `test`, the package cache directory would be:
+
+```none
+<root>/cache/test
+```
+
 (env-pkg-cache-file)=
 ### `PKG_CACHE_FILE`
 
@@ -279,7 +324,7 @@ archive can be found in this location.
 For example, if a package defines a site `https://www.example.com/test.tgz`,
 the resulting cache file may be:
 
-```
+```none
 <root>/output/dl/test-1.0.tgz
 ```
 
@@ -293,7 +338,7 @@ The package's definition directory.
 
 For example, for a package `test`, the definition directory would be:
 
-```
+```none
 <root>/package/test
 ```
 
@@ -303,11 +348,15 @@ For example, for a package `test`, the definition directory would be:
 :::{versionadded} 0.13
 :::
 
-Whether the package is configured for development mode. If a package is
-configured for development mode, the environment variable will be set to a
-value of one (i.e. `PKG_DEVMODE=1`).
+Whether the package is configured for development mode. While runtime may be
+configured in a development mode, not all packages may be designed for
+development (e.g. [external packages](intern-extern-pkgs)). If both a package
+is aimed for internal development and the runtime is configured in a
+development mode, the environment variable will be set to a value of one
+(i.e. `PKG_DEVMODE=1`).
 
-See also [development mode](development-mode).
+See also [`RELENG_DEVMODE`](env-releng-devmode) and
+[development mode](development-mode).
 
 (env-pkg-internal)=
 ### `PKG_INTERNAL`
@@ -418,6 +467,9 @@ directory may be as follows:
 
 Flag set if performing a clean request.
 
+This includes when a user invokes either a [`clean`](action-clean),
+[`distclean`](action-distclean) or [`mrproper`](action-mrproper) action request.
+
 (env-releng-debug)=
 ### `RELENG_DEBUG`
 
@@ -425,6 +477,8 @@ Flag set if performing a clean request.
 :::
 
 Flag set if debug-related information should be shown.
+
+This flag is enabled when the [`--debug` argument](arg-debug) is configured.
 
 (env-releng-devmode)=
 ### `RELENG_DEVMODE`
@@ -434,6 +488,9 @@ Flag set if debug-related information should be shown.
 
 The development mode or flag set if in [development mode](development-mode).
 
+See also [`PKG_DEVMODE`](env-pkg-devmode) and
+[`--development`](arg-development).
+
 (env-releng-distclean)=
 ### `RELENG_DISTCLEAN`
 
@@ -441,6 +498,9 @@ The development mode or flag set if in [development mode](development-mode).
 :::
 
 Flag set if performing an extreme pristine clean request.
+
+This includes when a user invokes either the [`distclean`](action-distclean)
+action request.
 
 (env-releng-exec)=
 ### `RELENG_EXEC`
@@ -458,6 +518,8 @@ Flag set if performing a [`<pkg>-exec`](action-pkg-exec) request.
 
 Flag set if performing a forced request from the command line.
 
+See also [`--force`](arg-force).
+
 (env-releng-localsrcs)=
 ### `RELENG_LOCALSRCS`
 
@@ -466,10 +528,15 @@ Flag set if performing a forced request from the command line.
 
 Flag set if in [local-sources mode](local-sources-mode).
 
+See also [`--local-sources`](arg-local-sources).
+
 (env-releng-mrproper)=
 ### `RELENG_MRPROPER`
 
 Flag set if performing a pristine clean request.
+
+This includes when a user invokes either a [`distclean`](action-distclean) or
+[`mrproper`](action-mrproper) action request.
 
 (env-releng-profiles)=
 ### `RELENG_PROFILES`
@@ -480,22 +547,30 @@ Flag set if performing a pristine clean request.
 Defines one or more semicolon-separated profile values actively configured
 for a run.
 
-See also [using profiles](profiles).
+See also [`--profile`](arg-profile) and [using profiles](profiles).
 
 (env-releng-rebuild)=
 ### `RELENG_REBUILD`
 
 Flag set if performing a re-build request.
 
+See also [`<pkg>-rebuild`](action-pkg-rebuild) and
+[`<pkg>-rebuild-only`](action-pkg-rebuild-only).
+
 (env-releng-reconfigure)=
 ### `RELENG_RECONFIGURE`
 
 Flag set if performing a re-configuration request.
 
+See also [`<pkg>-reconfigure`](action-pkg-reconfigure) and
+[`<pkg>-reconfigure-only`](action-pkg-reconfigure-only).
+
 (env-releng-reinstall)=
 ### `RELENG_REINSTALL`
 
 Flag set if performing a re-install request.
+
+See also [`<pkg>-reinstall`](action-pkg-reinstall).
 
 (env-releng-script)=
 ### `RELENG_SCRIPT`
@@ -507,6 +582,8 @@ Flag set if performing a re-install request.
 
 The path of the script currently being executed.
 
+See also [`RELENG_SCRIPT_DIR`](env-releng-script-dir).
+
 (env-releng-script-dir)=
 ### `RELENG_SCRIPT_DIR`
 
@@ -517,6 +594,8 @@ The path of the script currently being executed.
 
 The path of the directory holding the script currently being executed.
 
+See also [`RELENG_SCRIPT`](env-releng-script).
+
 (env-releng-target-dir)=
 ### `RELENG_TARGET_PKG`
 
@@ -525,6 +604,14 @@ The path of the directory holding the script currently being executed.
 
 The name of the target package (if any) provided by the command line.
 
+For example, if running `libfoo-rebuild`, the target package would be:
+
+```none
+libfoo
+```
+
+See also [package actions](package-actions).
+
 (env-releng-verbose)=
 ### `RELENG_VERBOSE`
 
@@ -532,6 +619,8 @@ The name of the target package (if any) provided by the command line.
 :::
 
 Flag set if verbose-related information should be shown.
+
+This flag is enabled when the [`--verbose` argument](arg-verbose) is configured.
 
 (env-releng-version)=
 ### `RELENG_VERSION`
@@ -547,7 +636,10 @@ The version of releng-tool.
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The root directory.
+Directory to process a releng-tool project.
+
+The root directory can be configured using the
+[`--root-dir` argument](arg-root-dir).
 
 (env-staging-bin-dir)=
 ### `STAGING_BIN_DIR`
@@ -736,7 +828,7 @@ For most packages, this path will match the value specified in
 building (e.g. CMake), this path may be the parent of the value specified
 in `<PKG>_BUILD_OUTPUT_DIR`:
 
-```
+```none
 └── my-releng-tool-project/
     ├── output/
     │   └── build/
@@ -755,7 +847,7 @@ point to the specified local source path. For example, when configured for
 [local-sources mode](local-sources-mode), the build directory may exist
 out of the root directory:
 
-```
+```none
 ├── libfoo/                           <---- LIBFOO_BUILD_DIR
 │   └── ...
 └── my-releng-tool-project/
@@ -773,7 +865,7 @@ out of the root directory:
 Or, when using a `local` VCS type, the path may be set for a folder inside
 the package's definition directory:
 
-```
+```none
 └── my-releng-tool-project/
     ├── output/
     │   └── build/
@@ -800,7 +892,7 @@ This location is a path is a folder inside the project's `output/build`
 directory. The name is typically a combination of the package's name and
 version (e.g. `libfoo-1.0.0`):
 
-```
+```none
 └── my-releng-tool-project/
     ├── output/
     │   └── build/
@@ -816,7 +908,7 @@ version (e.g. `libfoo-1.0.0`):
 However, if no version is specified for a package, the folder name may
 just be `libfoo`:
 
-```
+```none
 └── my-releng-tool-project/
     ├── output/
     │   └── build/
@@ -833,7 +925,7 @@ Note for some package types, the build output directory may be changed to
 have an additional path (e.g. `output/build/libfoo-1.0.0/releng-output`)
 for package types like CMake. For example:
 
-```
+```none
 └── my-releng-tool-project/
     ├── output/
     │   └── build/
@@ -858,7 +950,7 @@ The directory where a defined package's definition is stored.
 For example, if a package `libfoo` exists, the `LIBFOO_DEFDIR` environment
 variable will contain a directory path matching the path seen below:
 
-```
+```none
 └── my-releng-tool-project/
     ├── package/
     │   └── libfoo/                   <---- LIBFOO_DEFDIR
@@ -925,10 +1017,10 @@ accepted:
 :::{versionadded} 0.10
 :::
 
-The asset directory to use. The asset directory is the container directory
-to use for both cache and download content. By default, no asset directory
-is configured. If a user does not override an asset directory using the
-[`--assets-dir` argument](arg-assets-dir), the `RELENG_ASSETS_DIR` can be
+Configures the asset directory to use. The asset directory is the container
+directory to use for both cache and download content. By default, no asset
+directory is configured. If a user does not override an asset directory using
+the [`--assets-dir` argument](arg-assets-dir), the `RELENG_ASSETS_DIR` can be
 used as the container directory override for both cache and download
 content.
 
@@ -938,10 +1030,10 @@ content.
 :::{versionadded} 0.10
 :::
 
-The cache directory to use. By default, the cache directory used is configured
-to `<root>/cache`. If a user does not override a cache directory using the
-[`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR` option can
-be used to override this location.
+Configures the cache directory to use. By default, the cache directory used is
+configured to `<root>/cache`. If a user does not override a cache directory
+using the [`--cache-dir` argument](arg-cache-dir), the `RELENG_CACHE_DIR`
+option can be used to override this location.
 
 See also [`CACHE_DIR`](env-cache-dir).
 
@@ -951,10 +1043,10 @@ See also [`CACHE_DIR`](env-cache-dir).
 :::{versionadded} 0.10
 :::
 
-The download directory to use. By default, the download directory used is
-configured to `<root>/dl`. If a user does not override a download directory
-using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR` option
-can be used to override this location.
+Configures the download directory to use. By default, the download directory
+used is configured to `<root>/dl`. If a user does not override a download
+directory using the [`--dl-dir` argument](arg-dl-dir), the `RELENG_DL_DIR`
+option can be used to override this location.
 
 See also [`DL_DIR`](env-dl-dir).
 
@@ -1003,7 +1095,7 @@ export RELENG_GLOBAL_OUTPUT_CONTAINER_DIR=/mnt/extern-disk
 
 The following folder structure should be expected:
 
-```
+```none
 ├── usr/
 │   └── home/
 │       └── myuser/
@@ -1048,7 +1140,7 @@ See also the [`--relaxed-args` argument](arg-relaxed-args).
 :::{versionadded} 0.13
 :::
 
-The images directory to use. By default, the images directory used is
+Configures the images directory to use. By default, the images directory used is
 configured to `<root>/output/images`. If a user does not override a images
 directory using the [`--images-dir` argument](arg-images-dir), the
 `RELENG_IMAGES_DIR` option can be used to override this location.
@@ -1061,7 +1153,7 @@ See also [`IMAGES_DIR`](env-images-dir).
 :::{versionadded} 1.1
 :::
 
-The output directory to use. By default, the output directory used is
+Configures the output directory to use. By default, the output directory used is
 configured to `<root>/output`. If a user does not override an output
 directory using the [`--out-dir` argument](arg-out-dir), the
 `RELENG_OUTPUT_DIR` option can be used to override this location.
@@ -1075,7 +1167,7 @@ See also
 :::{versionadded} 2.3
 :::
 
-Numbers of jobs to handle (defaults to `0`; automatic).
+Configures the number of jobs to use (defaults to `0`; automatic).
 
 See also the [`--jobs` argument](arg-jobs), [`NJOBS`](env-njobs) and
 [`NJOBSCONF`](env-njobsconf).
