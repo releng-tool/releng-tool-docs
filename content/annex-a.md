@@ -145,7 +145,7 @@ releng-tool (may vary per context):
 [`RELENG_SCRIPT`](env-releng-script)
 [`RELENG_SCRIPT_DIR`](env-releng-script-dir)
 [`RELENG_TARGET_PKG`](env-releng-target-dir)
-[`RELENG_VERBOSE`](env-releng-version)
+[`RELENG_VERBOSE`](env-releng-verbose)
 [`RELENG_VERSION`](env-releng-version)
 [`ROOT_DIR`](env-root-dir)
 [`STAGING_BIN_DIR`](env-staging-bin-dir)
