@@ -480,7 +480,7 @@ what the site value is configured as.
 Supported types are as follows:
 
 - `brz` (Breezy)
-- `bzr` (Bazaar)
+- `bzr` (Bazaar) *(deprecated)*
 - `cvs` (CVS)
 - `file` (File URI)
 - `git` (Git)
