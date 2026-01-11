@@ -1,7 +1,7 @@
 # Development mode
 
-Development mode provides a way for a user to request to process packages
-against development versions of sources rather than using fixed versions.
+Development mode provides a way for a user to process packages using
+variant/development versions of sources rather than using fixed stable versions.
 A package will typically target a stable release, either pointing to a
 specific archive to download or a specific tag to clone from. However, for
 some builds, a user may wish to build a specific package against their main
