@@ -11,33 +11,23 @@ LIBFOO_TYPE = 'make'
 ```
 
 Make-based projects by default will invoke the default target during the build
-stage, and invoke the `install` target for the installation stage. Developers
-can configure a specific target to invoke during the build stage by specifying
-a `LIBFOO_BUILD_OPTS` configuration. For example, if a package uses the
-target `release` for standard release builds, the following can be used:
+stage, and invoke the `install` target for the installation stage.
 
-```python
-LIBFOO_BUILD_OPTS = [
-    'release',
-]
+The following shows the default arguments used in stages and outlines
+configuration options that are available for a Make package to set.
+See also the [Make package examples](/examples/examples-make). All stages
+are invoked with a [`PKG_BUILD_DIR`](env-pkg-build-dir) working directory.
+
+````{tab} Configuration
+```{eval-rst}
+.. only:: latex
+
+    Configuration stage
+    -------------------
 ```
 
-For the installation stage, the `install` target is typically invoked.
-However, developers can override what target to invoke by adding it into the
-install options:
-
-```python
-LIBFOO_INSTALL_OPTS = [
-    'install-minimal',
-]
-```
-
-For packages which do not have an installation target to run, developers can
-use the [`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall) option to skip
-the installation stage for a package.
-
-Default configurations for a make package will not run a configuration stage.
-However, if a user wants to run a specific target during this stage, the
+Default configurations for make packages will not run a configuration stage.
+However, if a user wants to run a specific target during this stage, a
 target can be added into the configuration options. For example, if the
 Makefile configuration has a target `prework` that should be invoked
 during the configuration stage, the following can be used:
@@ -48,11 +38,85 @@ LIBFOO_CONF_OPTS = [
 ]
 ```
 
-Alternatively, if no configuration options are specified, a
-`<package>-configure`  [script](pkg-type-script) can be invoked if available.
+Which will invoke `make` with the arguments:
 
-The following sections outline configuration options are available for a make
-package.
+```none
+make prework
+```
+
+Alternatively, if no configuration options are specified, a
+`<package>-configure` [script](pkg-type-script) can be invoked if available.
+````
+
+````{tab} Build
+```{eval-rst}
+.. only:: latex
+
+    Build stage
+    -----------
+```
+
+The build stage invokes `make` with the arguments:
+
+```none
+make --jobs <NJOBS>
+```
+
+This will trigger the default target for the Makefile configuration.
+Developers can configure a specific target to invoke during the build stage by
+specifying a [`LIBFOO_BUILD_OPTS`](pkg-opt-make-build-opts) configuration. For
+example, if a package uses the target `release` for standard release builds,
+the following can be used:
+
+```python
+LIBFOO_BUILD_OPTS = [
+    'release',
+]
+```
+
+The number of jobs is populated by either the [`--jobs` argument](arg-jobs) or
+[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs). Although, if the configuration
+results in a single job, the argument will not be used.
+````
+
+````{tab} Install
+```{eval-rst}
+.. only:: latex
+
+    Install stage
+    -------------
+```
+
+The install stage invokes `make` with an `install` target:
+
+```none
+make install
+```
+
+With the following environment variables set:
+
+```none
+DESTDIR=<TARGET_DIR>
+```
+
+The `DESTDIR` path will be set to the target sysroot the package should
+install into (see also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)).
+`make install` may be invoked multiple times for each target it needs to
+install into.
+
+If a package defines install options, the `install` target is not provided
+by default. Developers can override what target to invoke by adding it into
+the install options:
+
+```python
+LIBFOO_INSTALL_OPTS = [
+    'install-minimal',
+]
+```
+
+The installation stage can be skipped by configuring
+[`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall).
+````
 
 (pkg-opt-make-build-defs)=
 :::{include} _pkg-build-defs.md
