@@ -32,4 +32,5 @@ examples-autotools
 examples-cargo
 examples-cmake
 examples-make
+examples-meson
 :::
