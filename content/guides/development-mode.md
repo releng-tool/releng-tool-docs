@@ -37,6 +37,17 @@ LIBFOO_REVISION = {
 }
 ```
 
+Or an equivalent:
+
+```python
+LIBFOO_SITE = 'https://example.com/libfoo.git'
+LIBFOO_REVISION = {
+    '*': '1.2',
+    'develop': 'main',
+    'lts': '1.1.x',
+}
+```
+
 A build would normally use the `1.2` tag for this package. However, if
 an environment is configured to use the `develop` development mode:
 
