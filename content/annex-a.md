@@ -294,6 +294,7 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_cat`](releng_tool.releng_cat)(file, *args)
 [`releng_copy`](releng_tool.releng_copy)(src, dst, quiet=False, critical=True, dst_dir=None, nested=False)
 [`releng_copy_into`](releng_tool.releng_copy_into)(src, dst, quiet=False, critical=True, nested=False)
+[`releng_define`](releng_tool.releng_define)(var, default=None)
 [`releng_env`](releng_tool.releng_env)(key, value=None)
 [`releng_execute`](releng_tool.releng_execute)(args, cwd=None, env=None, env_update=None, quiet=False, critical=True,
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;poll=False, capture=None, expand=None, args_native=False)

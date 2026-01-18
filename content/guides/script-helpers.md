@@ -19,6 +19,7 @@ are listed below:
 .. autofunction:: releng_cat
 .. autofunction:: releng_copy
 .. autofunction:: releng_copy_into
+.. autofunction:: releng_define
 .. autofunction:: releng_env
 .. autofunction:: releng_execute
 .. autofunction:: releng_execute_rv
