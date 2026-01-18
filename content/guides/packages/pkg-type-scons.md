@@ -12,36 +12,25 @@ LIBFOO_TYPE = 'scons'
 
 SCons-based projects by default will invoke the default target during the
 build stage, and invoke the `install` alias for the installation stage.
-Developers can configure a specific target to invoke during the build stage
-by specifying a `LIBFOO_BUILD_OPTS` configuration. For example, if a
-package uses the target `release` for standard release builds, the
-following can be used:
 
-```python
-LIBFOO_BUILD_OPTS = [
-    'release',
-]
+The following shows the default arguments used in stages and outlines
+configuration options that are available for a SCons package to set.
+See also the [SCons package examples](/examples/examples-scons). All stages
+are invoked with a [`PKG_BUILD_DIR`](env-pkg-build-dir) working directory.
+
+````{tab} Configuration
+```{eval-rst}
+.. only:: latex
+
+    Configuration stage
+    -------------------
 ```
 
-For the installation stage, the `install` alias is typically invoked.
-However, developers can override what target to invoke by adding it into the
-install options:
-
-```python
-LIBFOO_INSTALL_OPTS = [
-    'install-minimal',
-]
-```
-
-For packages which do not have an installation alias to run, developers can
-use the [`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall) option to skip
-the installation stage for a package.
-
-Default configurations for a SCons package will not run a configuration stage.
-However, if a user wants to run a specific target during this stage, the
+Default configurations for SCons packages will not run a configuration stage.
+However, if a user wants to run a specific target during this stage, a
 target can be added into the configuration options. For example, if the
-SCons definition has a target `prework` that should be invoked
-during the configuration stage, the following can be used:
+package has a target `prework` that should be invoked during the
+configuration stage, the following can be used:
 
 ```python
 LIBFOO_CONF_OPTS = [
@@ -49,11 +38,88 @@ LIBFOO_CONF_OPTS = [
 ]
 ```
 
+Which will invoke `scons` with the arguments:
+
+```none
+scons -Q prework
+```
+
 Alternatively, if no configuration options are specified, a
 `<package>-configure` [script](pkg-type-script) can be invoked if available.
+````
 
-The following sections outline configuration options are available for a SCons
-package.
+````{tab} Build
+```{eval-rst}
+.. only:: latex
+
+    Build stage
+    -----------
+```
+
+The build stage invokes `scons` with the arguments:
+
+```none
+scons -Q --jobs=<NJOBS>
+```
+
+This will trigger the default target for the SCons configuration.
+Developers can configure a specific target to invoke during the build stage by
+specifying a [`LIBFOO_BUILD_OPTS`](pkg-opt-scons-build-opts) configuration. For
+example, if a package uses the target `release` for standard release builds,
+the following can be used:
+
+```python
+LIBFOO_BUILD_OPTS = [
+    'release',
+]
+```
+
+The number of jobs is populated by either the [`--jobs` argument](arg-jobs) or
+[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs). Although, if the configuration
+results in a single job, the argument will not be used.
+````
+
+````{tab} Install
+```{eval-rst}
+.. only:: latex
+
+    Install stage
+    -------------
+```
+
+The install stage invokes `scons` with an `install` target:
+
+```none
+scons -Q install
+```
+
+With the following variables set:
+
+```none
+DESTDIR=<TARGET_DIR>
+PREFIX=<PREFIX>
+```
+
+The `DESTDIR` path will be set to the target sysroot the package should
+install into (see also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)).
+`scons install` may be invoked multiple times for each target it needs to
+install into.
+
+The prefix argument is configured to [`LIBFOO_PREFIX`](pkg-opt-prefix).
+
+If a package defines install options, the `install` target is not provided
+by default. Developers can override what target to invoke by adding it into
+the install options:
+
+```python
+LIBFOO_INSTALL_OPTS = [
+    'install-minimal',
+]
+```
+
+The installation stage can be skipped by configuring
+[`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall).
+````
 
 (pkg-opt-scons-build-defs)=
 :::{include} _pkg-build-defs.md

@@ -34,4 +34,5 @@ examples-cmake
 examples-make
 examples-meson
 examples-python
+examples-scons
 :::
