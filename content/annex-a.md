@@ -248,6 +248,8 @@ Configuration options parsed by releng-tool for a package definition:
 &nbsp;&nbsp;└── host, images, staging, staging_and_target, target
 [`LIBFOO_INTERNAL`](pkg-opt-internal) = bool
 [`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall) = bool
+[`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type) = '&lt;build-type&gt;'
+&nbsp;&nbsp;└── plain, debug, debugoptimized (default), release, minsiz
 [`LIBFOO_MESON_NOINSTALL`](pkg-opt-meson-noinstall) = bool
 [`LIBFOO_NEEDS`](pkg-opt-needs) = ['&lt;pkg&gt;', '&lt;pkg&gt;']
 [`LIBFOO_NO_EXTRACTION`](pkg-opt-no-extraction) = bool

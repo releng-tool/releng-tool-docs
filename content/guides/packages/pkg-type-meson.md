@@ -18,12 +18,10 @@ configured to manipulate environment variables and options used by Meson.
 
 The default configuration built for projects is `debugoptimized`. A developer
 can override this option by explicitly adjusting the configuration option
-`LIBFOO_CONF_DEFS` to, for example, `debug`:
+`LIBFOO_MESON_BUILD_TYPE` to, for example, `debug`:
 
 ```python
-LIBFOO_CONF_DEFS = {
-    'buildtype': 'debug',
-}
+LIBFOO_MESON_BUILD_TYPE = 'debug'
 ```
 
 The following shows the default arguments used in stages and outlines
@@ -51,6 +49,9 @@ meson setup \
     -Dwrap_mode=nodownload \
     <BUILD_OUTPUT_DIR>
 ```
+
+The build type is configured by
+[`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type).
 
 The build output directory is configured to
 [`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
@@ -169,6 +170,23 @@ The installation stage can be skipped by configuring
 (pkg-opt-meson-install-opts)=
 :::{include} _pkg-install-opts.md
 :::
+
+(pkg-opt-meson-build-type)=
+## `LIBFOO_MESON_BUILD_TYPE`
+
+:::{versionadded} 2.7
+:::
+
+Specifies the [build type][meson-build-type] used for the Meson package.
+A package may use a Meson-supported build type (`plain`, `debug`,
+`debugoptimized`, `release` or `minsize`). A developer needing to use a
+specific build type can configure this option with the name of the
+configuration. By default, the `debugoptimized` build type is used for all
+Meson packages.
+
+```python
+LIBFOO_MESON_BUILD_TYPE = 'debugoptimized'
+```
 
 (pkg-opt-meson-noinstall)=
 ## `LIBFOO_MESON_NOINSTALL`
