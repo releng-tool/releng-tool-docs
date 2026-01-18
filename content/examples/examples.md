@@ -30,4 +30,5 @@ A series of demonstration projects can be found in the following repository:
 
 examples-autotools
 examples-cargo
+examples-cmake
 :::

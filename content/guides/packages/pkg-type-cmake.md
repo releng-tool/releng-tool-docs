@@ -20,7 +20,7 @@ environment variables and options used by the CMake executable.
 
 The default configuration built for projects is `RelWithDebInfo`. A developer
 can override this option by explicitly adjusting the configuration option
-`--config` to, for example, `Debug`:
+`LIBFOO_CMAKE_BUILD_TYPE` to, for example, `Debug`:
 
 ```python
 LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
@@ -48,8 +48,135 @@ if(NOT DEFINED CMAKE_FIND_ROOT_PATH)
 endif()
 ```
 
-The following sections outline configuration options are available for a CMake
-package.
+The following shows the default arguments used in stages and outlines
+configuration options that are available for an CMake package to set.
+See also the [CMake package examples](/examples/examples-cmake). All stages
+are invoked with a [`PKG_BUILD_DIR`](env-pkg-build-dir) working directory.
+
+````{tab} Configuration
+```{eval-rst}
+.. only:: latex
+
+    Configuration stage
+    -------------------
+```
+
+The configuration stage invokes `cmake` with the arguments:
+
+```none
+cmake -C <RELENG-TOOL-CONFIG-CACHE> <PROJECT_DIR>
+```
+
+With the configuration cache that populates the options:
+
+```none
+CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES=<INCLUDE_PATHS>
+CMAKE_BUILD_TYPE=<BUILD_TYPE>
+CMAKE_FIND_ROOT_PATH=<SYSROOT_PATHS>
+CMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER
+CMAKE_INCLUDE_PATH=<INCLUDE_PATHS>
+CMAKE_INSTALL_LIBDIR="lib"
+CMAKE_INSTALL_PREFIX=<PREFIX>
+CMAKE_LIBRARY_PATH=<LIBRARY_PATHS>
+CMAKE_MODULE_PATH=<MODULE_PATHS>
+CMAKE_SKIP_INSTALL_ALL_DEPENDENCY=ON
+```
+
+The project directory is configured to [`PKG_BUILD_DIR`](env-pkg-build-dir).
+
+The build type is configured by
+[`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type).
+
+Paths may vary based on how the package's
+[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. System root paths
+provided will only include the staging directory if `staging` is configured.
+Both the staging and target directories are provided is the `target` is
+configured. Likewise with the host directory if `host` is configured.
+
+The same concepts apply for defined include (`<sysroot>[/<prefix>]/include`),
+library (`<sysroot>[/<prefix>]/lib`) and module paths
+(`<sysroot>[/<prefix>]/share/cmake/Modules`).
+
+Packages may override default defines using the
+[`LIBFOO_CONF_DEFS`](pkg-opt-cmake-conf-defs) option.
+
+A package may opt-out of configuring `CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES`
+variables using the
+[`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
+quirk.
+````
+
+````{tab} Build
+```{eval-rst}
+.. only:: latex
+
+    Build stage
+    -----------
+```
+
+The build stage invokes `cmake` with the arguments:
+
+```none
+cmake --build <BUILD_OUTPUT_DIR> --config <BUILD_TYPE>
+```
+
+With the following environment variables set:
+
+```none
+CMAKE_BUILD_PARALLEL_LEVEL=<NJOBS>
+```
+
+The `--build` directory is configured to
+[`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
+
+The `--config` type is configured to the value defined for
+[`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type). Although, this option
+may not be applicable/used in all build environments.
+
+The environment variable `CMAKE_BUILD_PARALLEL_LEVEL` is populated by either
+the [`--jobs` argument](arg-jobs) or [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs).
+Although, if the configuration results in a single job, the environment
+variable will not be set.
+````
+
+````{tab} Install
+```{eval-rst}
+.. only:: latex
+
+    Install stage
+    -------------
+```
+
+The install stage invokes `cmake` with the arguments:
+
+```none
+cmake \
+    --build <BUILD_OUTPUT_DIR> \
+    --config <BUILD_TYPE> \
+    --target install
+```
+
+With the following environment variables set:
+
+```none
+CMAKE_INSTALL_ALWAYS=1
+DESTDIR=<TARGET_DIR>
+```
+
+The `--build` directory is configured to
+[`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
+
+The `--config` type is configured to the value defined for
+[`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type). Although, this option
+may not be applicable/used in all build environments.
+
+The `DESTDIR` path will be set to the target sysroot the package should
+install into (see also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)).
+`cmake` may be invoked multiple times for each target it needs to install into.
+
+The installation stage can be skipped by configuring
+[`LIBFOO_CMAKE_NOINSTALL`](pkg-opt-cmake-noinstall).
+````
 
 (pkg-opt-cmake-build-defs)=
 :::{include} _pkg-build-defs.md
