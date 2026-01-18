@@ -35,8 +35,122 @@ option in a package:
 LIBFOO_PYTHON_INTERPRETER = '/opt/my-custom-python-build/python'
 ```
 
-The following sections outline configuration options are available for a
-Python package.
+The following shows the default arguments used in a package's build stage based
+on the configured setup type and outlines options that are available for a
+Python package to set. See also the
+[Python package examples](/examples/examples-python)
+
+````{tab} Flit
+```{eval-rst}
+.. only:: latex
+
+    Flit build stage
+    ----------------
+```
+
+The build stage invokes Python with the `flit_core.wheel` module and arguments:
+
+```none
+python -m flit_core.wheel
+```
+````
+
+````{tab} Hatch
+```{eval-rst}
+.. only:: latex
+
+    Hatch build stage
+    -----------------
+```
+
+The build stage invokes Python with the `hatch` module and arguments:
+
+```none
+python -m hatch --no-interactive build --target wheel
+```
+````
+
+````{tab} PDM
+```{eval-rst}
+.. only:: latex
+
+    PDM build stage
+    ---------------
+```
+
+The build stage invokes Python with the `pdm` module and arguments:
+
+```none
+python -m pdm --ignore-python build --no-isolation --no-sdist
+```
+````
+
+````{tab} PEP 517 build
+```{eval-rst}
+.. only:: latex
+
+    PEP 517 build stage
+    -------------------
+```
+
+The build stage invokes Python with the `build` module and arguments:
+
+```none
+python -m build --no-isolation --wheel
+```
+````
+
+````{tab} Poetry
+```{eval-rst}
+.. only:: latex
+
+    Poetry build stage
+    ------------------
+```
+
+The build stage invokes Python with the `poetry` module and arguments:
+
+```none
+python -m poetry build --no-interaction
+```
+````
+
+````{tab} Setuptools
+```{eval-rst}
+.. only:: latex
+
+    Setuptools build stage
+    ----------------------
+```
+
+The build stage invokes Python with the `setup.py` file and arguments:
+
+```none
+python setup.py --no-user-cfg bdist_wheel
+```
+
+However, if `setup.py` does not exist, the `setuptools` module will be
+imported and `setup()` will be triggered:
+
+```none
+python -c "import setuptools; setuptools.setup()" --no-user-cfg bdist_wheel
+```
+````
+
+````{tab} distutils
+```{eval-rst}
+.. only:: latex
+
+    distutils build stage
+    ---------------------
+```
+
+The build stage invokes Python with the `setup.py` file and arguments:
+
+```none
+python setup.py --no-user-cfg bdist_wheel
+```
+````
 
 (pkg-opt-python-build-defs)=
 :::{include} _pkg-build-defs.md
