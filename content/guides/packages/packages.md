@@ -18,7 +18,8 @@ Packages can consist of libraries, programs or even basic assets.
     └── releng-tool.rt
 ```
 
-## Overview
+:::{rubric} Overview
+:::
 
 There is no explicit limit on the total number of packages a project can have.
 Package names are recommended to be lower-case with dash-separated (`-`)
@@ -60,7 +61,8 @@ the supported option name. Considering the same package with the name
 PACKAGE_A_VERSION = '1.0.0'
 ```
 
-## Topics
+:::{rubric} Topics
+:::
 
 :::{toctree}
 :maxdepth: 1
