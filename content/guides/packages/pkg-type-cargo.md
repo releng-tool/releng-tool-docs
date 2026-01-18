@@ -30,8 +30,105 @@ For any Cargo package that defines a dependency to another Cargo package
 that is defined inside a releng-tool project, dependencies will be
 automatically [patched][cargo-patch] to use the local package definition.
 
-The following sections outline configuration options are available for a
-Cargo package.
+The following shows the default arguments used in stages and outlines
+configuration options that are available for an Cargo package to set.
+See also the [Cargo package examples](/examples/examples-cargo). All stages
+are invoked with:
+
+- A [`PKG_BUILD_DIR`](env-pkg-build-dir) working directory.
+- The environment variable `CARGO_HOME` set to `<CACHE_DIR>/.cargo`
+  (see also [`CACHE_DIR`](env-cache-dir)).
+
+````{tab} Configuration
+```{eval-rst}
+.. only:: latex
+
+    Configuration stage
+    -------------------
+```
+
+Cargo package do not have a configuration stage.
+````
+
+````{tab} Build
+```{eval-rst}
+.. only:: latex
+
+    Build stage
+    -----------
+```
+
+The build stage invokes `cargo build` with the arguments:
+
+```none
+cargo build \
+    --locked \
+    --manifest-path Cargo.toml \
+    --offline \
+    --release \
+    --target-dir <CARGO_STAGING_DIR>
+```
+
+With the following environment variables set:
+
+```none
+CARGO_BUILD_JOBS=<NJOBS>
+```
+
+If [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) is configured to `local`, the
+`--locked` argument is not provided by default.
+
+If a package defines build options that define a build profile (`--profile`),
+the `--release` argument is not provided by default.
+
+The Cargo target directory is based on [`BUILD_DIR`](env-build-dir) and
+`.releng-tool-cargo-target` folder:
+
+```none
+<root-dir>/output/build/.releng-tool-cargo-target
+```
+
+The environment variable `CARGO_BUILD_JOBS` is populated by either the
+[`--jobs` argument](arg-jobs) or [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs).
+````
+
+````{tab} Install
+```{eval-rst}
+.. only:: latex
+
+    Install stage
+    -------------
+```
+
+The install stage invokes `cargo install` with the arguments:
+
+```none
+cargo install \
+    --force \
+    --locked \
+    --no-track \
+    --offline \
+    --path . \
+    --root <TARGET_DIR> \
+    --target-dir <CARGO_STAGING_DIR>
+```
+
+The Cargo target directory is based on [`BUILD_DIR`](env-build-dir) and
+`.releng-tool-cargo-target` folder:
+
+```none
+<root-dir>/output/build/.releng-tool-cargo-target
+```
+
+The `--root` path will be set to the target sysroot the package should
+install into (see also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)).
+`cargo install` may be invoked multiple times for each target it needs to
+install into. Although, if a package defines build options that define a root
+path (`--root`), an install is only invoked once with the provided path.
+
+The installation stage can be skipped by configuring
+[`LIBFOO_CARGO_NOINSTALL`](pkg-opt-cargo-noinstall).
+````
 
 (pkg-opt-cargo-build-defs)=
 :::{include} _pkg-build-defs.md
