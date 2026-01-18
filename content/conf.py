@@ -118,6 +118,7 @@ latex_elements = {
     # disable justified text
     # remove italics from links
     # color tweaks
+    # new page for each section
     'preamble': r'''
         \usepackage[none]{hyphenat}
         \usepackage[document]{ragged2e}
@@ -127,6 +128,7 @@ latex_elements = {
         \definecolor{OuterLinkColor}{rgb}{0.04,0.08,0.21}
         \definecolor{TitleColor}{rgb}{0,0,0}
         \definecolor{VerbatimColor}{rgb}{0.98,0.98,0.98}
+        \newcommand{\sectionbreak}{\newpage}
     ''',
 }
 
