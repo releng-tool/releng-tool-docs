@@ -36,7 +36,7 @@ requirements
 install
 getting-started/getting-started
 guides/guides
-examples
+examples/examples
 help
 contributors
 :::

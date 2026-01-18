@@ -18,3 +18,15 @@ A series of demonstration projects can be found in the following repository:
 
 > releng-tool — Examples repository \
 > <https://github.com/releng-tool/releng-tool-examples>
+
+```{eval-rst}
+.. only:: html
+
+    Package examples:
+```
+
+:::{toctree}
+:maxdepth: 1
+
+examples-autotools
+:::
