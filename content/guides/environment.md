@@ -261,16 +261,35 @@ See also [`PKG_BUILD_DIR`](env-pkg-build-dir).
 :::{versionchanged} 2.2 Variable is path-like in a script environment.
 :::
 
-The directory for a specific package's buildable content.
+The directory for a specific package's buildable content. This path is the
+working directory for package stages (e.g. configuration, build, etc.).
 
-For example, for a package `test`, the package build directory may be:
 
 ```none
+<root>/build/<pkg-name>[-<pkg-version>]
+```
+
+For example, for a package `test` with a version set (e.g.
+`PKG_VERSION='1.0'`), the package build directory may be:
+
+```none 
 <root>/build/test-1.0
 ```
 
+If [`PKG_VERSION`](env-pkg-version) is not configure, the package build
+directory may be:
+
+```none
+<root>/build/test
+```
+
 If [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir) is configured, the
-sub-directory path will be appended.
+sub-directory path will be appended. For example:
+
+```none
+# LIBFOO_BUILD_SUBDIR='subdir/subdir2'
+<root>/build/test/subdir/subdir2
+```
 
 See also [`PKG_BUILD_BASE_DIR`](env-pkg-build-base-dir) and
 [`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
