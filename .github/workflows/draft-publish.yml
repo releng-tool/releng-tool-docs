@@ -19,19 +19,19 @@ jobs:
 
     steps:
     - name: Checkout releng-tool
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: releng-tool/releng-tool
         path: releng-tool
 
     - name: Checkout releng-tool-docs
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: releng-tool/releng-tool-docs
         path: releng-tool-docs
 
     - name: Checkout releng-tool-www-docs-develop
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: releng-tool/releng-tool-www-docs-develop
         path: releng-tool-www-docs-develop
