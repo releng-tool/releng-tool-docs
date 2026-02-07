@@ -97,6 +97,8 @@ LIBFOO_NEEDS = [
 ]
 ```
 
+See also [`LIBFOO_PREEXTRACT`](pkg-opt-preextract).
+
 (pkg-opt-site)=
 ## `LIBFOO_SITE`
 

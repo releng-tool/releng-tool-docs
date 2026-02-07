@@ -348,6 +348,34 @@ LIBFOO_PATCH_SUBDIR = 'subdir'
 
 See also [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir).
 
+(pkg-opt-preextract)=
+## `LIBFOO_PREEXTRACT`
+
+:::{versionadded} 2.7
+:::
+
+Flag value to indicate that a package should attempt to extract the package
+contents before any configuration stage of all other packages are performed.
+By default, this option is disabled with a value of `False`.
+
+```python
+LIBFOO_PREEXTRACT = True
+```
+
+Ideally, package configurations can utilize [`LIBFOO_NEEDS`](pkg-opt-needs) to
+manage the order of processed packages. However, in the scenario where package
+dependencies result in a cyclic dependency, releng-tool will report an error
+since a known dependency order is require for a consistent build pipeline.
+
+In situations where two or more packages do depend on each other, developers
+can utilize this pre-extraction flag to hint that packages should already be
+extracted before any other package attempts to configure/build. For example,
+if `libfoo` and `libbar` both depend on each other, developers can configure
+`LIBFOO_PREEXTRACT = True` and `LIBBAR_PREEXTRACT = True` in each package's
+respective definition. The process order of packages will still be driven by
+any [`LIBFOO_NEEDS`](pkg-opt-needs) options set (that do not result in a
+cyclic error) and the order defined by [`packages`](conf-packages).
+
 (pkg-opt-prefix)=
 ## `LIBFOO_PREFIX`
 

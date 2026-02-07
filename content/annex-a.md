@@ -256,6 +256,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_LICENSE`](pkg-opt-license) = '&lt;license&gt;' or ['&lt;license&gt;', '&lt;license&gt;']
 [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files) = '&lt;file&gt;' or ['&lt;file&gt;', '&lt;file&gt;']
 [`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir) = '&lt;subdir&gt;'
+[`LIBFOO_PREEXTRACT`](pkg-opt-preextract) = bool
 [`LIBFOO_PREFIX`](pkg-opt-prefix) = '&lt;path&gt;' # '/usr'
 [`LIBFOO_PYTHON_DIST_PATH`](pkg-opt-python-dist-path) = '&lt;path&gt;'  # e.g. 'dist/'
 [`LIBFOO_PYTHON_INSTALLER_INTERPRETER`](pkg-opt-python-installer-interpreter) = '&lt;interpreter&gt;'
