@@ -20,7 +20,6 @@ The following outlines available global actions:
 Clean (removes) a series of folders holding content such as extracted
 archives, built libraries and more.
 
-
 ```shell
 releng-tool clean
 ```
