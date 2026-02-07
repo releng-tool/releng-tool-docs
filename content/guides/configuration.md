@@ -137,6 +137,10 @@ packages = [
 ]
 ```
 
+The order of listed packages is used to determine the order of processed
+packages (outside of ordered dictated by [`LIBFOO_NEEDS`](pkg-opt-needs)
+configurations).
+
 (conf-prerequisites)=
 ### `prerequisites`
 
