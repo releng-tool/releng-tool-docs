@@ -161,7 +161,7 @@ The installation stage can be skipped by configuring
 :::
 
 (pkg-opt-make-install-opts)=
-:::{include} _pkg-install-opts.md
+:::{include} _pkg-install-opts-with-install.md
 :::
 
 (pkg-opt-make-noinstall)=

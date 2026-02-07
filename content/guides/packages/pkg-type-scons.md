@@ -164,7 +164,7 @@ The installation stage can be skipped by configuring
 :::
 
 (pkg-opt-scons-install-opts)=
-:::{include} _pkg-install-opts.md
+:::{include} _pkg-install-opts-with-install.md
 :::
 
 (pkg-opt-scons-noinstall)=

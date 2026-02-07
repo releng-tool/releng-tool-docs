@@ -141,13 +141,8 @@ LIBFOO_AUTOTOOLS_AUTORECONF = True
 :::
 
 (pkg-opt-autotools-install-opts)=
-:::{include} _pkg-install-opts.md
+:::{include} _pkg-install-opts-with-install.md
 :::
-
-Defining custom install options will prevent the default `install` target from
-being added. Users looking to utilize the `install` target for the install
-stage with custom arguments should explicitly include the `install` in their
-options.
 
 
 [gnu-build-sys]: https://www.gnu.org/software/automake/manual/html_node/index.html
