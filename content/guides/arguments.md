@@ -31,6 +31,9 @@ directory. If an output directory is provided (i.e. `--out-dir <dir>`)
 during a clean event, select folders inside this directory will be removed
 instead of the output directory (if any) found in the root directory.
 
+See also the [`distclean`](action-distclean), [`mrproper`](action-mrproper) and
+[`<pkg>-clean`](action-pkg-clean) actions.
+
 (action-distclean)=
 ### `distclean`
 
@@ -48,6 +51,9 @@ in the root directory or overridden by respective arguments, as well as
 any mode file flags which may be set. See also the [`clean`](action-clean)
 or [`mrproper`](action-mrproper) actions.
 
+See also the [`clean`](action-clean), [`mrproper`](action-mrproper) and
+[`<pkg>-distclean`](action-pkg-distclean) actions.
+
 (action-extract)=
 ### `extract`
 
@@ -56,6 +62,8 @@ All packages will be processed up to the extraction phase (inclusive).
 ```shell
 releng-tool extract
 ```
+
+See also the [`<pkg>-extract`](action-pkg-extract) action.
 
 (action-fetch)=
 ### `fetch`
@@ -77,8 +85,9 @@ artifacts when using this action in combination with the [](arg-force)
 argument.
 ```
 
-See also [offline builds](tips/offline-builds) and the
-[`fetch-full`](action-fetch-full) action.
+See also [offline builds](tips/offline-builds), the
+[`fetch-full`](action-fetch-full) action and the
+[`<pkg>-fetch`](action-pkg-fetch) action.
 
 (action-fetch-full)=
 ### `fetch-full`
@@ -94,7 +103,8 @@ Cargo dependencies).
 releng-tool fetch-full
 ```
 
-See also the [`fetch`](action-fetch) action.
+See also the [`fetch`](action-fetch) and
+[`<pkg>-fetch-full`](action-pkg-fetch-full) actions.
 
 (action-init)=
 ### `init`
@@ -120,6 +130,8 @@ releng-tool licenses
 Note that license information requires acquiring license documents from
 packages. Therefore, packages will be fetched/extracted if not already done.
 
+See also the [`<pkg>-license`](action-pkg-license) action.
+
 (action-mrproper)=
 ### `mrproper`
 
@@ -135,7 +147,8 @@ releng-tool mrproper
 This request removes the `output/` directory found in the root directory or
 overridden by the `--out-dir` argument, as well as any mode file flags
 which may be set. The `cache/` and `dl/` directories will remain untouched.
-See also the [`clean`](action-clean) or [`distclean`](action-distclean)
+
+See also the [`clean`](action-clean) and [`distclean`](action-distclean)
 actions.
 
 (action-patch)=
@@ -147,7 +160,7 @@ All packages will be processed up to the patch phase (inclusive).
 releng-tool patch
 ```
 
-See also [Patching](patching).
+See also [Patching](patching) and the [`<pkg>-patch`](action-pkg-patch) action.
 
 (action-printvars)=
 ### `printvars`
@@ -246,7 +259,8 @@ Cleans the build directory for package (if it exists).
 releng-tool <pkg>-clean
 ```
 
-See also the [`<pkg>-distclean`](action-pkg-distclean) action.
+See also the [`clean`](action-clean) and
+[`<pkg>-distclean`](action-pkg-distclean) actions.
 
 (action-pkg-configure)=
 ### `<pkg>-configure`
@@ -275,8 +289,10 @@ releng-tool <pkg>-distclean
 ```
 
 This request not only removes the build directory but also any cached file
-or directory associated with the package. See also the
-[`<pkg>-clean`](action-pkg-clean) action.
+or directory associated with the package.
+
+See also the [`distclean`](action-distclean) and
+[`<pkg>-clean`](action-pkg-clean) actions.
 
 (action-pkg-exec)=
 ### `<pkg>-exec "<cmd>"`
@@ -311,7 +327,8 @@ releng-tool libfoo-exec -- mycmd arg1 arg2
 
 Package environment variables will be available for the invoked command.
 
-See also [`RELENG_EXEC`](env-releng-exec) and [`releng_args`](vars-releng_args).
+See also [`RELENG_EXEC`](env-releng-exec) (environment) and
+[`releng_args`](vars-releng_args) (configuration).
 
 (action-pkg-extract)=
 ### `<pkg>-extract`
@@ -326,6 +343,8 @@ On success, the specified package will have completed its extraction stage.
 If the provided package name does not exist, a notification will be
 generated.
 
+See also the [`extract`](action-extract) action.
+
 (action-pkg-fetch)=
 ### `<pkg>-fetch`
 
@@ -338,6 +357,9 @@ releng-tool <pkg>-fetch
 On success, the specified package stage will have completed its fetch stage.
 If the provided package name does not exist, a notification will be
 generated.
+
+See also the [`fetch`](action-fetch) and
+[`<pkg>-fetch-full`](action-pkg-fetch-full) actions.
 
 (action-pkg-fetch-full)=
 ### `<pkg>-fetch-full`
@@ -355,6 +377,9 @@ releng-tool <pkg>-fetch-full
 
 If the provided package name does not exist, a notification will be
 generated.
+
+See also the [`fetch-full`](action-fetch-full) and
+[`<pkg>-fetch`](action-pkg-fetch) actions.
 
 (action-pkg-fresh)=
 ### `<pkg>-fresh`
@@ -405,6 +430,8 @@ Note that license information requires acquiring license documents from
 the package itself. Therefore, the package will be fetched/extracted if
 not already done.
 
+See also the [`licenses`](action-licenses) action.
+
 (action-pkg-patch)=
 ### `<pkg>-patch`
 
@@ -416,6 +443,8 @@ releng-tool <pkg>-patch
 
 On success, the specified package will have completed its patch stage.
 If the provided package name does not exist, a notification will be generated.
+
+See also [Patching](patching) and the [`patch`](action-patch) action.
 
 (action-pkg-printvars)=
 ### `<pkg>-printvars`
