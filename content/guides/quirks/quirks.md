@@ -57,6 +57,7 @@ releng.disable_verbose_patch <quirk-disable_verbose_patch>
 releng.git.no_depth <quirk-git-no_depth>
 releng.git.no_quick_fetch <quirk-git-no_quick_fetch>
 releng.git.replicate_cache <quirk-git-replicate_cache>
+releng.ignore_failed_extensions <quirk-ignore_failed_extensions>
 releng.log.execute_args <quirk-log-execute_args>
 releng.log.execute_env <quirk-log-execute_env>
 releng.stats.no_pdf <quirk-stats-no_pdf>
