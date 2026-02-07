@@ -149,6 +149,23 @@ releng-tool patch
 
 See also [Patching](patching).
 
+(action-printvars)=
+### `printvars`
+
+:::{versionadded} 2.7
+:::
+
+Print configuration variables associated with the project.
+
+```shell
+releng-tool printvars
+```
+
+Printed variables will also note whether the variable is known to be set in
+the active configuration/execution context.
+
+See also the [`<pkg>-printvars`](action-pkg-printvars) action.
+
 (action-punch)=
 ### `punch`
 
@@ -399,6 +416,23 @@ releng-tool <pkg>-patch
 
 On success, the specified package will have completed its patch stage.
 If the provided package name does not exist, a notification will be generated.
+
+(action-pkg-printvars)=
+### `<pkg>-printvars`
+
+:::{versionadded} 2.7
+:::
+
+Print configuration variables associated with the package.
+
+```shell
+releng-tool <pkg>-printvars
+```
+
+Printed variables will also note whether the variable is known to be set in
+the active configuration/execution context.
+
+See also the [`printvars`](action-printvars) action.
 
 (action-pkg-rebuild)=
 ### `<pkg>-rebuild`
