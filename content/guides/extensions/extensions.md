@@ -1,5 +1,8 @@
 # Extensions
 
+:::{versionchanged} 2.7 releng-tool will now stop if an extension fails to load.
+:::
+
 A releng-tool project can use an extension by registering the extension name
 in the `extensions` configuration option inside the project configuration
 (`releng`). For example, to load an extension `my_awesome_extension` into
