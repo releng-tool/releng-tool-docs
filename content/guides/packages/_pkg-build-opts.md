@@ -12,6 +12,8 @@ the build event. This field is optional.
 LIBFOO_BUILD_OPTS = {
     # adds "--option value" to the command
     '--option': 'value',
+    # adds "--flag" to the command
+    '--flag': '',
 }
 
 # (or)

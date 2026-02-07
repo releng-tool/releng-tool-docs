@@ -12,6 +12,8 @@ configuration event. This field is optional.
 LIBFOO_CONF_OPTS = {
     # adds "--option value" to the command
     '--option': 'value',
+    # adds "--flag" to the command
+    '--flag': '',
 }
 
 # (or)

@@ -12,6 +12,8 @@ the installation event. This field is optional.
 LIBFOO_INSTALL_OPTS = {
     # adds "--option value" to the command
     '--option': 'value',
+    # adds "--flag" to the command
+    '--flag': '',
 }
 
 # (or)
