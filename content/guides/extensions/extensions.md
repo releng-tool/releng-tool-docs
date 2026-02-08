@@ -2,6 +2,10 @@
 
 :::{versionchanged} 2.7 releng-tool will now stop if an extension fails to load.
 :::
+:::{versionchanged} 2.7
+releng-tool projects can define a `releng_setup` hook in their project
+configurations to perform similar actions as extensions can.
+:::
 
 A releng-tool project can use an extension by registering the extension name
 in the `extensions` configuration option inside the project configuration
@@ -42,6 +46,14 @@ interfaces and documentation for these interfaces can be found inside the
 to be "API safe" -- there is a strong attempt to prevent the changing of
 classes, methods, etc. to prevent compatibility issues as both releng-tool
 and extensions (if any) evolve.
+
+Advanced users may also register application hooks by defining a `releng_setup`
+hook in their project's `releng-tool.rt` configuration. For example:
+
+```python
+def releng_setup(app):
+    ...
+```
 
 ## Examples
 
