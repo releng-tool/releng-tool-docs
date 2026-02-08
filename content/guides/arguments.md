@@ -708,8 +708,15 @@ looked for inside the provided path.
 Explicitly disable colorized output.
 
 ```{tip}
-releng-tool respects the [`NO_COLOR`][no-color] environment variable, if
-configured in the running environment.
+
+:::{versionadded} 0.17 Added `NO_COLOR` support.
+:::
+:::{versionadded} 2.7 Added `FORCE_COLOR` support.
+:::
+
+releng-tool respects the [`NO_COLOR`][no-color] and
+[`FORCE_COLOR`][force-color] environment variables, if configured in the
+running environment.
 ```
 
 (arg-only-mirror)=
@@ -839,4 +846,5 @@ releng-tool LIBFOO_VERSION=1.1
 ```
 
 
+[force-color]: https://force-color.org/
 [no-color]: https://no-color.org/

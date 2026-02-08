@@ -174,6 +174,7 @@ releng-tool (may vary per context):
 Other environment variables accepted by releng-tool:
 
 ```{parsed-literal}
+`FORCE_COLOR`
 `NO_COLOR`
 [`RELENG_ASSETS_DIR`](env-releng-assets-dir)
 [`RELENG_CACHE_DIR`](env-releng-cache-dir)
