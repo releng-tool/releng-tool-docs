@@ -45,6 +45,7 @@ are listed below:
     An alias for ``pathlib.Path``. See also
     https://docs.python.org/3/library/pathlib.html#pathlib.Path.
 
+.. autofunction:: releng_register_path
 .. autofunction:: releng_remove
 .. autofunction:: releng_symlink
 .. autofunction:: releng_require_version
