@@ -188,6 +188,8 @@ Meson packages.
 LIBFOO_MESON_BUILD_TYPE = 'debugoptimized'
 ```
 
+See also [`default_meson_build_type`](conf-default-meson-build-type).
+
 (pkg-opt-meson-noinstall)=
 ## `LIBFOO_MESON_NOINSTALL`
 

@@ -73,6 +73,7 @@ Options which are read by releng-tool from a project's configuration script
 [`cache_ext`](conf-cache-ext) = &lt;callable&gt;
 [`default_devmode_ignore_cache`](conf-default-devmode-ignore-cache) = bool
 [`default_cmake_build_type`](conf-default-cmake-build-type) = str
+[`default_meson_build_type`](conf-default-meson-build-type) = str
 [`default_internal`](conf-default-internal) = bool
 [`environment`](conf-environment) = {'&lt;key&gt;': '&lt;val&gt;'}
 [`extensions`](conf-extensions) = ['&lt;extension&gt;', '&lt;extension&gt;']

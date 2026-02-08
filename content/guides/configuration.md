@@ -324,6 +324,25 @@ opt-out in this scenario by configuring `LIBFOO_DEVMODE_IGNORE_CACHE = False`.
 
 See also [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache).
 
+(conf-default-meson-build-type)=
+### `default_meson_build_type`
+
+:::{versionadded} 2.7
+:::
+
+[Meson](/guides/packages/pkg-type-meson) packages can configure their default
+build type on individual packages using
+[`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type). However, if a developer
+wishes to configure the default build type across all Meson packages, this
+option may be used. For example, to default to using the `Release` build type,
+the following may be used:
+
+```python
+default_meson_build_type = 'release'
+```
+
+See also [`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type).
+
 (conf-extra-license-exceptions)=
 ### `extra_license_exceptions`
 
