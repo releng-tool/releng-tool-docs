@@ -69,9 +69,7 @@ extensions = [
 ]
 
 # add local extension path into system path
-container_dir = os.path.dirname(ROOT_DIR)
-ext_dir = os.path.join(container_dir, 'my-awesome-extension')
-sys.path.append(ext_dir)
+releng_register_path(ROOT_DIR.parent / 'my-awesome-extension')
 ```
 
 When running releng-tool, the following message should be printed at the end of

@@ -28,12 +28,7 @@ project checked out alongside a checked out extension in a folder named
 system path using the following:
 
 ```python
-import os
-import sys
-
-container_dir = os.path.dirname(ROOT_DIR)
-ext_dir = os.path.join(container_dir, 'my-awesome-extension')
-sys.path.append(ext_dir)
+releng_register_path(ROOT_DIR.parent / 'my-awesome-extension')
 ```
 
 While the ability to load extensions is supported, capabilities provided by
