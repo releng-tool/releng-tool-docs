@@ -196,6 +196,8 @@ To install the most recent development sources, the following [pip][pip]
 command can be used:
 
 ```shell
+pipx install git+https://github.com/releng-tool/releng-tool.git
+ (or)
 pip install git+https://github.com/releng-tool/releng-tool.git
 ```
 
