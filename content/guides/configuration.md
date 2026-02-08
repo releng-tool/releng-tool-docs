@@ -282,6 +282,25 @@ cache_ext = my_translator
 The above transform indicates that all packages using the
 `static.example.org` site will be `tgz` archives.
 
+(conf-default-cmake-build-type)=
+### `default_cmake_build_type`
+
+:::{versionadded} 2.7
+:::
+
+[CMake](/guides/packages/pkg-type-cmake) packages can configure their default
+build type on individual packages using
+[`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type). However, if a developer
+wishes to configure the default build type across all CMake packages, this
+option may be used. For example, to default to using the `Release` build type,
+the following may be used:
+
+```python
+default_cmake_build_type = 'Release'
+```
+
+See also [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type).
+
 (conf-default-devmode-ignore-cache)=
 ### `default_devmode_ignore_cache`
 

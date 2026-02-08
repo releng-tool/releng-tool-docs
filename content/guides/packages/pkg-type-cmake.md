@@ -209,6 +209,8 @@ used for all CMake packages.
 LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
 ```
 
+See also [`default_cmake_build_type`](conf-default-cmake-build-type).
+
 (pkg-opt-cmake-noinstall)=
 ## `LIBFOO_CMAKE_NOINSTALL`
 
