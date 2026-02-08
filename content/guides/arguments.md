@@ -132,6 +132,27 @@ packages. Therefore, packages will be fetched/extracted if not already done.
 
 See also the [`<pkg>-license`](action-pkg-license) action.
 
+(action-lint)=
+### `lint`
+
+:::{versionadded} 2.7
+:::
+
+A request to lint the quality of a project.
+
+```shell
+releng-tool lint
+```
+
+To ignore lines based on preference or false-positives, lines can be commented
+with a `noqa` keyword to not be flagged. For example:
+
+```python
+UNEXPECTED_KEY = True  # noqa
+```
+
+See also the [`<pkg>-lint`](action-pkg-lint) action.
+
 (action-mrproper)=
 ### `mrproper`
 
@@ -431,6 +452,20 @@ the package itself. Therefore, the package will be fetched/extracted if
 not already done.
 
 See also the [`licenses`](action-licenses) action.
+
+(action-pkg-lint)=
+### `<pkg>-lint`
+
+:::{versionadded} 2.7
+:::
+
+A request to lint the quality of a specific package in a project.
+
+```shell
+releng-tool <pkg>-lint
+```
+
+See also the [`lint`](action-lint) action.
 
 (action-pkg-patch)=
 ### `<pkg>-patch`
