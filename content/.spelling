@@ -17,6 +17,7 @@ backend
 basename
 buildable
 cachable
+config
 distclean
 distutils
 executables
