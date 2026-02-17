@@ -86,6 +86,9 @@ LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK = True
 (pkg-opt-extension)=
 ## `LIBFOO_EXTENSION`
 
+:::{versionchanged} 2.8 Support an empty extension value.
+:::
+
 Specifies a filename extension for the package. A package may be cached inside
 the download directory to be used when the extraction phase is invoked.
 releng-tool attempts to determine the most ideal extension for this cache file;
