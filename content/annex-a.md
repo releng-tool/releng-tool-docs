@@ -233,6 +233,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) = '&lt;revision&gt;'
 `LIBFOO_ENV` = {'FOO': 'BAR'}
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-env), [Cargo](pkg-opt-cargo-env), [CMake](pkg-opt-cmake-env), [Make](pkg-opt-make-env), [Meson](pkg-opt-meson-env), [Python](pkg-opt-python-env), [SCons](pkg-opt-scons-env))*
+[`LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK`](pkg-opt-devmode-skip-integrity-check) = bool
 [`LIBFOO_EXTENSION`](pkg-opt-extension) = '&lt;extension&gt;'
 [`LIBFOO_EXTERNAL`](pkg-opt-external) = bool
 [`LIBFOO_EXTOPT`](pkg-opt-extopt) = {'FOO': 'BAR'}

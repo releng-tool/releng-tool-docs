@@ -64,6 +64,25 @@ LIBFOO_DEVMODE_REVISION = 'feature/alpha'
 See also [`LIBFOO_REVISION`](pkg-opt-revision) and
 [`LIBFOO_VERSION`](pkg-opt-version).
 
+(pkg-opt-devmode-skip-integrity-check)=
+## `LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK`
+
+:::{versionadded} 2.8
+:::
+
+Flag value to indicate that a package can skip an integrity check when fetching
+a development revision when operating in
+[development mode](/guides/development-mode). This option can be used when
+a package defines a static resource with an explicit hash but opts for an
+alternative resource when in a development mode. Switching to an alternative
+static resource can result in the fetch stage failing if no alternative
+hashes are defined. Developers not wanting to maintain development hashes can
+instead configure this option if not needing an integrity check.
+
+```python
+LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK = True
+```
+
 (pkg-opt-extension)=
 ## `LIBFOO_EXTENSION`
 
