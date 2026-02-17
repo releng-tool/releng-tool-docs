@@ -88,9 +88,10 @@ meson compile -C <BUILD_OUTPUT_DIR> --jobs <NJOBS>
 The `-C` directory is configured to
 [`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
 
-The number of jobs is populated by either the [`--jobs` argument](arg-jobs) or
-[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs). Although, if the configuration
-results in a single job, the argument will not be used.
+The number of jobs is populated by either the [`--jobs` argument](arg-jobs),
+[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) or
+[`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs). Although, if the configuration results
+in a single job, the argument will not be used.
 ````
 
 ````{tab} Install

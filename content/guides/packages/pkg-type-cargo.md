@@ -89,7 +89,8 @@ The Cargo target directory is based on [`BUILD_DIR`](env-build-dir) and
 ```
 
 The environment variable `CARGO_BUILD_JOBS` is populated by either the
-[`--jobs` argument](arg-jobs) or [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs).
+[`--jobs` argument](arg-jobs), [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) or
+[`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs). 
 ````
 
 ````{tab} Install

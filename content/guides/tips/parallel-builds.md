@@ -11,6 +11,7 @@ for stages to two jobs, the following can be used:
 releng-tool --jobs 2
 ```
 
-Note that a developer may restrict the amount of jobs allowed for a specific
+Note that a developer may adjust the amount of jobs allowed for a specific
 package if a package cannot support parallel processing using the
-[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) package option.
+[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) or
+[`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs) package options.

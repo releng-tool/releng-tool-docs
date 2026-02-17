@@ -134,9 +134,9 @@ The `--config` type is configured to the value defined for
 may not be applicable/used in all build environments.
 
 The environment variable `CMAKE_BUILD_PARALLEL_LEVEL` is populated by either
-the [`--jobs` argument](arg-jobs) or [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs).
-Although, if the configuration results in a single job, the environment
-variable will not be set.
+the [`--jobs` argument](arg-jobs), [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) or
+[`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs). Although, if the configuration results
+in a single job, the environment variable will not be set.
 ````
 
 ````{tab} Install

@@ -163,13 +163,23 @@ LIBFOO_FETCH_OPTS = [
 (pkg-opt-fixed-jobs)=
 ## `LIBFOO_FIXED_JOBS`
 
-Explicitly configure the total number of jobs a package can use. The
+```{tip}
+It is recommended to use [`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs) instead.
+```
+
+Explicitly configure the total number of jobs a package will use. The
 primary use case for this option is to help limit the total number of jobs
 for a package that cannot support a large or any parallel build environment.
 
 ```python
 LIBFOO_FIXED_JOBS = 1
 ```
+
+Note that this option will override the [`--jobs` argument](arg-jobs) and can
+be used to exceed the jobs count (although not recommended in most scenarios).
+
+See also the [`--jobs` argument](arg-jobs) and
+[`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs).
 
 (pkg-opt-git-config)=
 ## `LIBFOO_GIT_CONFIG`
@@ -312,6 +322,31 @@ LIBFOO_INTERNAL = True
 ```
 
 See also [internal and external packages](/guides/intern-extern-pkgs).
+
+(pkg-opt-max-jobs)=
+## `LIBFOO_MAX_JOBS`
+
+:::{versionadded} 2.8
+:::
+
+Configure the maximum number of jobs a package can use. This option can be used
+for packages that cannot support a large or any parallel build environment.
+
+```python
+LIBFOO_MAX_JOBS = 1
+```
+
+This option also accepts negative values. When a negative option is provided,
+the total number of jobs used for a package will be the default job count less
+the provided value (to a minimum of one). For example, to use one less job than
+the total number of cores, the following can be used:
+
+```python
+LIBFOO_MAX_JOBS = -1
+```
+
+See also the [`--jobs` argument](arg-jobs) and
+[`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs).
 
 (pkg-opt-no-extraction)=
 ## `LIBFOO_NO_EXTRACTION`
