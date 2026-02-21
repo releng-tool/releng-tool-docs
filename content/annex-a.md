@@ -60,6 +60,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`--relaxed-args`](arg-relaxed-args)
 [`--root-dir <dir>`](arg-root-dir)
 [`--sbom-format <fmt>`](arg-sbom-format)
+[`--success-exit-code <code>`](arg-success-exit-code)
 [`--quirk <quirk-id>`](arg-quirk)
 [`--verbose`, `-V`](arg-verbose)
 [`--version`](arg-version)

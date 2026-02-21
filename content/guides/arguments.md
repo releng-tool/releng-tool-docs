@@ -807,6 +807,15 @@ configured to the working directory.
 
 See also [`ROOT_DIR`](env-root-dir).
 
+(arg-success-exit-code)=
+### `--success-exit-code <code>`
+
+:::{versionadded} 2.8
+:::
+
+Allows overriding the exit code reported on a successful run. By default, a
+successful run will have an exit code of `0`.
+
 (arg-sbom-format)=
 ### `--sbom-format <fmt>`
 
