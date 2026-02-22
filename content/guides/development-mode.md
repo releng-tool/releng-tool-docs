@@ -74,6 +74,19 @@ LIBFOO_REVISION = {
 }
 ```
 
+Or an equivalent:
+
+```python
+LIBFOO_SITE = {
+    '*': 'https://pkgs.example.com/releases/libfoo-${LIBFOO_VERSION}.tar.gz',
+    'test': 'https://git.example.com/libfoo.git',
+}
+
+LIBFOO_REVISION = {
+    'test': 'main',
+}
+```
+
 In a normal execution, a tar.gz archive would be downloaded for the package.
 However, if an environment is configured to use the `test` development
 mode, sources will be fetched from the Git repository on the `main` branch.
