@@ -243,6 +243,9 @@ See also [`sbom`](action-sbom) (action) and
 (conf-sysroot-prefix)=
 ### `sysroot_prefix`
 
+:::{versionchanged} 2.8 Support added for path-like values.
+:::
+
 Define a custom sysroot prefix to provide to packages during their
 configuration, build and installation stages. By default, the sysroot
 prefix is typically set to `/usr`; for Windows, the value is empty.
