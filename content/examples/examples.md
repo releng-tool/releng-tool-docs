@@ -35,4 +35,5 @@ examples-make
 examples-meson
 examples-python
 examples-scons
+examples-waf
 :::

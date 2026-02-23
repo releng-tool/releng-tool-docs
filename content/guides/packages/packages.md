@@ -83,6 +83,7 @@ pkg-type-make
 pkg-type-meson
 pkg-type-python
 pkg-type-scons
+pkg-type-waf
 hacking
 Deprecated options <deprecated-pkg-options>
 :::
