@@ -516,8 +516,8 @@ LIBFOO_REVISION = {
 }
 ```
 
-See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) and
-[`LIBFOO_VERSION`](pkg-opt-version).
+See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision),
+[`LIBFOO_VERSION`](pkg-opt-version) and [`revisions`](conf-revisions).
 
 (pkg-opt-strip-count)=
 ## `LIBFOO_STRIP_COUNT`

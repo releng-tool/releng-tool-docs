@@ -160,6 +160,42 @@ prerequisites = [
 ]
 ```
 
+(conf-revisions)=
+### `revisions`
+
+:::{note}
+Users are encouraged to use [`LIBFOO_VERSION`](pkg-opt-version) or
+[`LIBFOO_REVISION`](pkg-opt-revision) over this option.
+:::
+
+:::{versionadded} 2.8
+:::
+
+Provides a dictionary that defines which revisions to use for packages. While
+package revisions are typically set using [`LIBFOO_VERSION`](pkg-opt-version)
+or [`LIBFOO_REVISION`](pkg-opt-revision), using the project configuration's
+`revisions` can provide a convenience factor when revisions want to be
+maintained in a single location.
+
+```python
+revisions = {
+    'libfoo': 'libfoo-v2.1',
+    'myapp': '1.0.0',
+}
+```
+
+The dictionary will map a package name to a revision value. If an entry
+exists for a package, its provided revision value will be used as if
+[`LIBFOO_REVISION`](pkg-opt-revision) was configured with this same value.
+
+Also consider:
+
+- A package definition's revision value (i.e.
+  [`LIBFOO_VERSION`](pkg-opt-version) or [`LIBFOO_REVISION`](pkg-opt-revision))
+  takes precedence over revision values defined by this configuration option.
+- If this option is used and a revision is not defined for a package, packages
+  will use their standard way to resolving a revision.
+
 (conf-sbom-format)=
 ### `sbom_format`
 

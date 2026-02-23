@@ -90,6 +90,7 @@ Options which are read by releng-tool from a project's configuration script
 [`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;']
 [`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
 [`quirks`](conf-quirks) = ['&lt;quirk-id&gt;']
+[`revisions`](conf-revisions) = {'&lt;pkg&gt;': '&lt;revision&gt;'}
 [`sbom_format`](conf-sbom-format) = '&lt;format&gt;'
 &nbsp;&nbsp;└── csv, html, json, json-spdx, rdf-spdx, text, xml
 [`sysroot_prefix`](conf-sysroot-prefix) = '&lt;path&gt;' # '/usr'
