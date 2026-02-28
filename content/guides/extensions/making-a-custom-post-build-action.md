@@ -90,13 +90,11 @@ Update the extension with the following:
 ```python
 def my_awesome_postbuild_handler(env):
     # find the NOTICE PDF document
-    ext_dir = os.path.dirname(os.path.realpath(__file__))
-    assets_dir = os.path.join(ext_dir, 'assets')
-    notice_pdf = os.path.join(assets_dir, 'NOTICE.pdf')
+    notice_pdf = ROOT_DIR / 'assets' / 'NOTICE.pdf'
 
     # copy this file into the target directory
-    target = os.path.join(env['TARGET_DIR'], 'NOTICE.pdf')
-    shutil.copyfile(notice_pdf, target)
+    target = TARGET_DIR / 'NOTICE.pdf'
+    releng_copy(notice_pdf, target)
 ```
 
 With this change, a re-run of the releng-tool project should have the

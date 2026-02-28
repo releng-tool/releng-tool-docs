@@ -30,11 +30,8 @@ import os
 
 ... (other configuration options)
 
-root_dir = os.path.dirname(os.path.realpath(__file__))
-license_header_file = os.path.join(root_dir, 'assets', 'license-header.tpl')
-
-with open(license_header_file) as f:
-   license_header = ''.join(f.readlines())
+license_header_file = ROOT_DIR / 'assets' / 'license-header.tpl'
+license_header = license_header_file.read_text()
 ```
 
 Licenses for a project are generated before the
