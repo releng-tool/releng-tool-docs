@@ -233,6 +233,7 @@ Configuration options parsed by releng-tool for a package definition:
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-conf-opts), [CMake](pkg-opt-cmake-conf-opts), [Make](pkg-opt-make-conf-opts), [Meson](pkg-opt-meson-conf-opts), [SCons](pkg-opt-scons-conf-opts), [Waf](pkg-opt-waf-conf-opts))*
 [`LIBFOO_DEPENDENCIES`](pkg-opt-dependencies) = ['&lt;pkg&gt;', '&lt;pkg&gt;']   *(deprecated)*
 [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache) = bool
+[`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) = bool, '&lt;pattern&gt;', ['&lt;pattern&gt;'] or {'&lt;mode&gt;': bool or str}
 [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) = '&lt;revision&gt;'
 `LIBFOO_ENV` = {'FOO': 'BAR'}
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-env), [Cargo](pkg-opt-cargo-env), [CMake](pkg-opt-cmake-env), [Make](pkg-opt-make-env), [Meson](pkg-opt-meson-env), [Python](pkg-opt-python-env), [SCons](pkg-opt-scons-env), [Waf](pkg-opt-waf-env))*
@@ -249,6 +250,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_GIT_SUBMODULES`](pkg-opt-git-submodules) = bool
 [`LIBFOO_GIT_VERIFY_REVISION`](pkg-opt-git-verify-revision) = bool
 [`LIBFOO_HOST_PROVIDES`](pkg-opt-host-provides) = '&lt;tool&gt;' or ['&lt;tool-a&gt;', '&lt;tool-b&gt;']
+[`LIBFOO_IGNORE_PATCHES`](pkg-opt-ignore-patches) = bool, '&lt;pattern&gt;' or ['&lt;pattern&gt;']
 `LIBFOO_INSTALL_DEFS` = {'FOO': 'BAR'}
 &nbsp;&nbsp;└── *([Autotools](pkg-opt-autotools-install-defs), [Cargo](pkg-opt-cargo-install-defs), [CMake](pkg-opt-cmake-install-defs), [Make](pkg-opt-make-install-defs), [Meson](pkg-opt-meson-install-defs), [SCons](pkg-opt-scons-install-defs), [Waf](pkg-opt-waf-install-defs))*
 `LIBFOO_INSTALL_ENV` = {'FOO': 'BAR'}

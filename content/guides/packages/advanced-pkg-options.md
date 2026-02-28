@@ -47,6 +47,58 @@ option by default (`True`) if the target revision is a branch.
 
 See also [`default_devmode_ignore_cache`](conf-default-devmode-ignore-cache).
 
+(pkg-opt-devmode-patches)=
+## `LIBFOO_DEVMODE_PATCHES`
+
+:::{versionadded} 2.9
+:::
+
+Allow configuring a package to apply patches when operating in
+[development mode](/guides/development-mode). Typically, patches are not
+enabled for packages in development mode since they are primarily for helping
+to patch fixed revisions that have issues. However, this option can be used
+to allow a package in a development mode to have patches applied to them.
+By default, patches are never applied to development mode packages with a
+value of `False`.
+
+To enable all patches to be applied when in development mode, the following
+flag can be set:
+
+```python
+LIBFOO_DEVMODE_PATCHES = True
+```
+
+A developer can provide a pattern of patches to include:
+
+```python
+LIBFOO_DEVMODE_PATCHES = '*variable-shift*'
+```
+
+Or multiple patterns:
+
+```python
+LIBFOO_DEVMODE_PATCHES = [
+    '007-add-mode-x.patch',
+    '*-experimental-shuffle-*',
+]
+```
+
+A developer can also configure the inclusion or patterns based on the
+specific development mode being operated on:
+
+```python
+LIBFOO_DEVMODE_PATCHES = {
+    'custom-mode-2': True,
+    'custom-mode-3': [
+        '002-disable-help.patch',
+        '*-ui-tweaks-*',
+    ],
+}
+```
+
+See also [`LIBFOO_IGNORE_PATCHES`](pkg-opt-ignore-patches) and
+[patching](/guides/patching).
+
 (pkg-opt-devmode-revision)=
 ## `LIBFOO_DEVMODE_REVISION`
 
@@ -308,6 +360,36 @@ LIBFOO_HOST_PROVIDES = [
 ```
 
 See also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type).
+
+(pkg-opt-ignore-patches)=
+## `LIBFOO_IGNORE_PATCHES`
+
+:::{versionadded} 2.9
+:::
+
+Flag value to indicate that a package should ignore patches found alongside
+the package definition. This option can be useful with
+[`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) to allow a package to
+manage packages aimed for development mode over a primary build.
+By default, this option is disabled with a value of `False`.
+
+For example, to ignore all patches in a default run:
+
+```python
+LIBFOO_IGNORE_PATCHES = True
+```
+
+Developers can also configure patterns of patches to ignore:
+
+```python
+LIBFOO_IGNORE_PATCHES = [
+    '*-new-engine-*',
+    '006-custom-int.patch',
+]
+```
+
+See also [`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) and
+[patching](/guides/patching).
 
 (pkg-opt-internal)=
 ## `LIBFOO_INTERNAL`
