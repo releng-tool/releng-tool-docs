@@ -269,6 +269,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_NO_EXTRACTION`](pkg-opt-no-extraction) = bool
 [`LIBFOO_LICENSE`](pkg-opt-license) = '&lt;license&gt;' or ['&lt;license&gt;', '&lt;license&gt;']
 [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files) = '&lt;file&gt;' or ['&lt;file&gt;', '&lt;file&gt;']
+[`LIBFOO_ONLY_DEVMODE`](pkg-opt-only-devmode) = bool, '&lt;mode&gt;' or ['&lt;mode&gt;']
 [`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir) = '&lt;subdir&gt;'
 [`LIBFOO_PREEXTRACT`](pkg-opt-preextract) = bool
 [`LIBFOO_PREFIX`](pkg-opt-prefix) = '&lt;path&gt;' # '/usr'

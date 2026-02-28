@@ -466,6 +466,40 @@ copy of the project's license file. Specifying `LIBFOO_LICENSE_FILES` for
 projects with the no-extraction flag enabled will result in a warning. By
 default, this option is disabled with a value of `False`.
 
+(pkg-opt-only-devmode)=
+## `LIBFOO_ONLY_DEVMODE`
+
+:::{versionadded} 2.9
+:::
+
+Flag whether this package should only be used when running in a
+[development mode](/guides/development-mode). Typically, packages that are
+registered in the releng-tool pipeline will get processed for a build. If a
+developer wishes to introduced a new package that is aimed for development,
+they may use various conditionals to avoid enabling a package in the main
+pipeline.
+
+This option aims to make a developers life a bit more flexible by allow a
+package to be excluded even if registered in the package chain. This can
+allow a project to easily prepare for a future package integration with a
+single flag until the primary build is ready to enable the new package. By
+default, this option is disabled with a value of `False`.
+
+```python
+LIBFOO_ONLY_DEVMODE = True
+```
+
+Developers can also hint specific development modes this package is enabled.
+For example, if looking to target two specific development modes, the
+following may be used:
+
+```python
+LIBFOO_ONLY_DEVMODE = [
+    'mode-a',
+    'mode-c',
+]
+```
+
 (pkg-opt-patch-subdir)=
 ## `LIBFOO_PATCH_SUBDIR`
 
