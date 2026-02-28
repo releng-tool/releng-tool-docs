@@ -1,8 +1,8 @@
 # Quirks
 
 releng-tool also provides a series of configuration quirks to change the
-default running state of a releng-tool run. This can be used to help manage
-rare host environment scenarios where releng-tool may be experiencing issues.
+default running state of a run. This can be used to help manage rare host
+environment scenarios where releng-tool may be experiencing issues.
 
 ## Command line quirks
 
