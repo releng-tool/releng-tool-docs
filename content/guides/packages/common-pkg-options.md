@@ -34,7 +34,10 @@ Outlining the license of a package is recommended.
 It is recommended to use [SPDX registered licenses][spdx-licenses].
 
 ```python
-LIBFOO_LICENSE = ['GPL-2.0-only', 'MIT']
+LIBFOO_LICENSE = [
+    'GPL-2.0-only',
+    'MIT',
+]
 ```
 
 or
