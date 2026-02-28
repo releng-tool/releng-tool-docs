@@ -48,7 +48,7 @@ Sources can either be fetched and placed into an archive, in a similar fashion
 as fetching an archive from HTTP/FTP locations, or sources can be fetched into a
 "cache directory" if supported (typically distributed version controlled
 sources). For example, [Git][git] repositories (see also Git's
-[`--git-dir`][--git-dir] will be stored in the root directory's cache folder
+[`--git-dir`][--git-dir]) will be stored in the root directory's cache folder
 (e.g. `<ROOT>/cache`). During the extraction stage, target revisions will
 be pulled from the cache location using the `git` client.
 
