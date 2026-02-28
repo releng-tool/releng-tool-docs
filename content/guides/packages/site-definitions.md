@@ -380,7 +380,7 @@ See also [`urlopen_context`](conf-urlopen-context).
 [^cvsroot]: <https://www.gnu.org/software/trans-coord/manual/cvs/html_node/Specifying-a-repository.html>
 [^git-p4]: <https://git-scm.com/docs/git-p4>
 [^gitremote]: <https://git-scm.com/docs/git-remote>
-[^hgclone]: <https://www.mercurial-scm.org/doc/hg.1.html#clone>
+[^hgclone]: <https://www.mercurial-scm.org/help/commands/clone>
 [^p4port]: <https://www.perforce.com/manuals/cmdref/Content/CmdRef/P4PORT.html>
 [^rsynccommand]: <https://linux.die.net/man/1/rsync>
 [^scpcommand]: <https://linux.die.net/man/1/scp>
