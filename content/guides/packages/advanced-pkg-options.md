@@ -429,7 +429,7 @@ can utilize this pre-extraction flag to hint that packages should already be
 extracted before any other package attempts to configure/build. For example,
 if `libfoo` and `libbar` both depend on each other, developers can configure
 `LIBFOO_PREEXTRACT = True` and `LIBBAR_PREEXTRACT = True` in each package's
-respective definition. The process order of packages will still be driven by
+respective definition. The processed order of packages will still be driven by
 any [`LIBFOO_NEEDS`](pkg-opt-needs) options set (that do not result in a
 cyclic error) and the order defined by [`packages`](conf-packages).
 
