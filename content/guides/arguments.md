@@ -716,7 +716,13 @@ See also [`IMAGES_DIR`](env-images-dir) and
 (arg-jobs)=
 ### `--jobs <jobs>`, `-j <jobs>`
 
+:::{versionchanged} 2.9 Added support for negative jobs.
+:::
+
 Numbers of jobs to handle (defaults to `0`; automatic).
+
+If the total number of jobs provided is negative, it will subtract the
+provided value from the automatic job detection count (to a minimum of one).
 
 See also [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level).
 

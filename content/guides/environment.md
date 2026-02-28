@@ -1185,8 +1185,13 @@ See also
 
 :::{versionadded} 2.3
 :::
+:::{versionchanged} 2.9 Added support for negative jobs.
+:::
 
 Configures the number of jobs to use (defaults to `0`; automatic).
+
+If the total number of jobs provided is negative, it will subtract the
+provided value from the automatic job detection count (to a minimum of one).
 
 See also the [`--jobs` argument](arg-jobs), [`NJOBS`](env-njobs) and
 [`NJOBSCONF`](env-njobsconf).
