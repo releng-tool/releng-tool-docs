@@ -1,6 +1,11 @@
 (quirk-releng.disable_spdx_check)=
 # Quirk `releng.disable_spdx_check`
 
+:::{deprecated} 2.9
+This quirk is no longer applicable. SPDX license checks are now handled by
+the [lint action](action-lint).
+:::
+
 When package definitions are being processed, any license configurations will
 be checked to see if they conform with [SPDX license identifiers][spdx]. If
 not, a warning will be generated.
