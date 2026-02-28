@@ -1,18 +1,23 @@
 # Local-sources mode
 
 :::{note}
+Local-sources mode only applies to [internally flagged](intern-extern-pkgs)
+packages.
+:::
+
+:::{note}
 Clean events (such as `releng-tool clean`) will not touch packages using
 sources found alongside the output directory
 :::
 
-Local-sources mode provides a way for a developer to build internal-flagged
-packages using sources found alongside the root directory (or a specific
-provided directory), instead of having releng-tool attempt to fetch them
-from remote instances. This is primarily for developers who desire to
-manually manage source content outside the releng-tool environment.
-Local-sources mode only works for internally flagged packaged. Consider
-the following example: a releng-tool project has a package called
-`liba`. When releng-tool is invoked in normal configurations, the
+Local-sources mode provides a way for a developer to build
+[internal-flagged](intern-extern-pkgs) packages using sources found alongside
+the root directory (or a specific provided directory), instead of having
+releng-tool attempt to fetch them from remote instances. This is primarily
+for developers who desire to manually manage source content outside the
+releng-tool environment. Local-sources mode only applies to internally flagged
+packages. Consider the following example: a releng-tool project has a package
+called `liba`. When releng-tool is invoked in normal configurations, the
 package will do fetching, extraction and patching to prepare the directory
 `<root>/output/build/liba-<version>`. However, if a builder has
 configured the working root for local-sources mode, sources for `liba`
