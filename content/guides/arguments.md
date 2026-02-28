@@ -800,7 +800,7 @@ Do not throw an error when releng-tool is provided unknown arguments.
 See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
 
 (arg-root-dir)=
-### `--root-dir <dir>`
+### `--root-dir <dir>`, `-R <dir>`
 
 Directory to process a releng-tool project. By default, the root directory is
 configured to the working directory.

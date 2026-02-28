@@ -58,7 +58,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`--out-dir <dir>`](arg-out-dir)
 [`--profile [<profile>]`, `-P [<profile>]`](arg-profile)
 [`--relaxed-args`](arg-relaxed-args)
-[`--root-dir <dir>`](arg-root-dir)
+[`--root-dir <dir>`, `-R <dir>`](arg-root-dir)
 [`--sbom-format <fmt>`](arg-sbom-format)
 [`--success-exit-code <code>`](arg-success-exit-code)
 [`--quirk <quirk-id>`](arg-quirk)
