@@ -1,6 +1,6 @@
 # System-specific package options
 
-The following outlines systems-specific configuration options available for
+The following outlines system-specific configuration options available for
 packages.
 
 (pkg-opt-vsdevcmd)=
