@@ -570,6 +570,9 @@ See also [`PREFIX`](env-prefix) and [`sysroot_prefix`](conf-sysroot-prefix).
 
 :::{versionadded} 1.3
 :::
+:::{deprecated} 2.9
+This feature is planned to be removed in the future.
+:::
 
 Flag value to indicate that a package should attempt to load any package
 configurations which may be defined in the package's source. If the package
@@ -588,6 +591,9 @@ See also
 ## `LIBFOO_REMOTE_SCRIPTS`
 
 :::{versionadded} 1.3
+:::
+:::{deprecated} 2.9
+This feature is planned to be removed in the future.
 :::
 
 Flag value to indicate that a package should attempt to load any package
