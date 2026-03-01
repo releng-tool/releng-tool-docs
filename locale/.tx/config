@@ -1,5 +1,6 @@
 [main]
 host = https://app.transifex.com
+lang_map = zh-Hans: zh_Hans, zh-Hant: zh_Hant
 
 [o:releng-tool:p:releng-tool-docs:r:annex_a]
 file_filter            = <lang>/LC_MESSAGES/annex-a.po
