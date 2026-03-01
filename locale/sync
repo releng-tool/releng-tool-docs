@@ -66,5 +66,5 @@ fi
 
 if [ -z "$phase" ] || [ "$phase" == "tx-pull" ]; then
     echo -e "\e[7mpulling updates...\e[0m"
-    tx pull
+    tx pull --use-git-timestamps
 fi
