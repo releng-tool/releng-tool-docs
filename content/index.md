@@ -22,7 +22,7 @@ The structure of a package depends on the specific project. The simplest
 type is a script-based package, where users can define custom scripts for
 various stages. A package does not need to handle every stage. Helper
 package types are available (e.g. Autotools, Cargo, CMake, Make, Meson,
-various Python types and SCons) for projects using common build systems.
+various Python types, SCons and Waf) for projects using common build systems.
 
 While releng-tool assists in configuring and building projects, it does not
 aim to provide a perfect sandbox for the process. Users are responsible
