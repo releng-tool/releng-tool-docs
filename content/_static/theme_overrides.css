@@ -56,7 +56,6 @@ a {
 
 /* styling injected extra references in sidebar */
 .injected-sidebar-extras {
-    margin-top: 1em;
     padding:
         var(--sidebar-item-spacing-vertical)
         var(--sidebar-item-spacing-horizontal);
