@@ -1,9 +1,14 @@
 # Patching
 
 :::{note}
-Patches are ignored when in [development mode](development-mode) for
-packages with a development revision, for `local` VCS packages or when in
-[local-sources mode](local-sources-mode) for internal packages.
+Patches are ignored when in [development mode](development-mode) by default
+for packages with a development revision, for `local` VCS packages or when
+in [local-sources mode](local-sources-mode) for internal packages.
+:::
+
+:::{versionchanged} 2.9
+Additional configuration modes to permit development revisions to have
+patches applied.
 :::
 
 The patching stage for a package provides the ability for a developer to apply
@@ -41,11 +46,27 @@ With be applied in the following order:
 3. `0003-support-disabling-test-build.patch`
 
 If a user configures their build environment in
-[development mode](development-mode), patches will not be applied if a
-package defines a development revision. The idea is that a development
+[development mode](development-mode), patches will not be applied by default
+if a package defines a development revision. The idea is that a development
 revision is most likely the bleeding edge source of a package and does not
 need any patches. If a user configures their build environment in
 [local-sources mode](local-sources-mode) and a package is defined as
 internal, patches will not be applied to the sources. This is to prevent the
 patching system from making unexpected modifications to a developer's local
 sources.
+
+In the scenario where a developer does want to override when patches are
+applied, there are a couple of advanced options. First, the option
+[`LIBFOO_IGNORE_PATCHES`](pkg-opt-ignore-patches) allows a developer to avoid
+the automatic application of patches on a package during normal runs. Second,
+the option [`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) can be
+configured to permit a package to utilize patches in a development mode.
+
+For example, the following configuration will instead only apply patches on
+a package when releng-tool is operating in a development mode and the package
+defines a development revision:
+
+```python
+LIBFOO_DEVMODE_PATCHES = True
+LIBFOO_IGNORE_PATCHES = True
+```
