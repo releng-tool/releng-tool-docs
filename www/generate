@@ -240,8 +240,7 @@ SITEMAP_ENTRY_END
 SITEMAP_END
 fi
 
-#if [ -z "$phase" ] || [ "$phase" == "pdf" ]; then
-if [ "$phase" == "pdf" ]; then
+if [ -z "$phase" ] || [ "$phase" == "pdf" ]; then
     echo -e "\e[7mgenerating pdfs...\e[0m"
 
     # fresh start
@@ -256,19 +255,18 @@ if [ "$phase" == "pdf" ]; then
         lang_tmp_dir=$tmp_dir/$lang
         echo -e "\e[7m> building $lang (PDF)...\e[0m"
 
-        # build documentation (latex)
+        # build documentation (latex-pdf)
         $sphinx_build \
-            -Dlanguage=$lang \
-            -b latex \
+            -M latexpdf \
             $doc_dir \
             $lang_tmp_dir \
+            -Dlanguage=$lang \
             -Dlocale_dirs=$locale_dir \
             -E -a -W
 
-        # build documentation (pdf)
-        pushd $lang_tmp_dir >/dev/null
-        ./make.bat
-        cp releng-tool.pdf $lang_target_dir/releng-tool.pdf
-        popd >/dev/null
+        # copy over generated pdf into base folder of target language
+        cp \
+            $lang_tmp_dir/latex/releng-tool.pdf \
+            $lang_target_dir/releng-tool.pdf
     done
 fi
