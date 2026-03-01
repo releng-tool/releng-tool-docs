@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -20,63 +20,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.bzr.certifi"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.cmake.disable_direct_includes"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.cmake.disable_parallel_option"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
-msgid "releng.disable_binary_patch"
+#: ../../content/guides/quirks/quirks.md:44
+msgid "releng.disable_devmode_ignore_cache"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.disable_local_site_warn"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.disable_prerequisites_check"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.disable_remote_configs"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.disable_remote_scripts"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.disable_spdx_check"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
+msgid "releng.disable_verbose_patch"
+msgstr ""
+
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.git.no_depth"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.git.no_quick_fetch"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.git.replicate_cache"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
+msgid "releng.ignore_failed_extensions"
+msgstr ""
+
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.log.execute_args"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.log.execute_env"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:48
+#: ../../content/guides/quirks/quirks.md:44
 msgid "releng.stats.no_pdf"
 msgstr ""
 
@@ -87,9 +95,8 @@ msgstr ""
 #: ../../content/guides/quirks/quirks.md:3
 msgid ""
 "releng-tool also provides a series of configuration quirks to change the "
-"default running state of a releng-tool run. This can be used to help "
-"manage rare host environment scenarios where releng-tool may be "
-"experiencing issues."
+"default running state of a run. This can be used to help manage rare host"
+" environment scenarios where releng-tool may be experiencing issues."
 msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:7
@@ -120,23 +127,16 @@ msgstr ""
 
 #: ../../content/guides/quirks/quirks.md:28
 msgid ""
-"Quirks can also be enabled through configuration override scripts. This "
-"can be used in certain build scenarios where defining a script override "
-"is easier than specifying multiple command line options."
+"Quirks can also be enabled through the [project configuration](conf-"
+"quirks). For example, the following can be used to enable one or more "
+"quirks for a releng-tool run:"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:32
-msgid ""
-"For example, if an override script [`releng-overrides`](/guides"
-"/configuration-overrides) is created, the following can be used to enable"
-" one or more quirks for a releng-tool run:"
-msgstr ""
-
-#: ../../content/guides/quirks/quirks.md:44
+#: ../../content/guides/quirks/quirks.md:40
 msgid "Available quirks"
 msgstr ""
 
-#: ../../content/guides/quirks/quirks.md:46
+#: ../../content/guides/quirks/quirks.md:42
 msgid "The following is a list of all available quirks supported by releng-tool:"
 msgstr ""
 

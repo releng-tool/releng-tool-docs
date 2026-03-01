@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,5 +21,9 @@ msgid "`LIBFOO_CONF_OPTS`"
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-conf-opts.md:3
+msgid "Support added for path-like values."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-opts.md:6
 msgid "Provides a means to pass command line options into the configuration process. This option can be defined as a dictionary of string pairs or a list with strings -- either way defined will generate argument values to include in the configuration event. This field is optional."
 msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -36,6 +36,13 @@ msgid "`LIBFOO_BUILD_SUBDIR`"
 msgstr ""
 
 #: ../../content/guides/packages/advanced-pkg-options.md:9
+#: ../../content/guides/packages/advanced-pkg-options.md:244
+#: ../../content/guides/packages/advanced-pkg-options.md:508
+#: ../../content/guides/packages/advanced-pkg-options.md:555
+msgid "Support added for path-like values."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:12
 msgid ""
 "Sub-directory where a package's extracted sources holds its buildable "
 "content. Sources for a package may be nested inside one or more "
@@ -43,11 +50,11 @@ msgid ""
 "configuration, build and installation processes are invoked from."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:19
+#: ../../content/guides/packages/advanced-pkg-options.md:22
 msgid "`LIBFOO_DEVMODE_IGNORE_CACHE`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:24
+#: ../../content/guides/packages/advanced-pkg-options.md:27
 msgid ""
 "Flag value to indicate that a package should ignore any generated cache "
 "file when operating in [development mode](/guides/development-mode). In "
@@ -62,7 +69,7 @@ msgid ""
 "clean state."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:40
+#: ../../content/guides/packages/advanced-pkg-options.md:43
 msgid ""
 "By default, this option is not defined and results can vary based off the"
 " site type being fetched. In most cases, fetch operations will treat the "
@@ -71,17 +78,58 @@ msgid ""
 " a branch."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:45
+#: ../../content/guides/packages/advanced-pkg-options.md:48
 msgid ""
 "See also [`default_devmode_ignore_cache`](conf-default-devmode-ignore-"
 "cache)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:48
+#: ../../content/guides/packages/advanced-pkg-options.md:51
+msgid "`LIBFOO_DEVMODE_PATCHES`"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:56
+msgid ""
+"Allow configuring a package to apply patches when operating in "
+"[development mode](/guides/development-mode). Typically, patches are not "
+"enabled for packages in development mode since they are primarily for "
+"helping to patch fixed revisions that have issues. However, this option "
+"can be used to allow a package in a development mode to have patches "
+"applied to them. By default, patches are never applied to development "
+"mode packages with a value of `False`."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:64
+msgid ""
+"To enable all patches to be applied when in development mode, the "
+"following flag can be set:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:71
+msgid "A developer can provide a pattern of patches to include:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:77
+msgid "Or multiple patterns:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:86
+msgid ""
+"A developer can also configure the inclusion or patterns based on the "
+"specific development mode being operated on:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:99
+msgid ""
+"See also [`LIBFOO_IGNORE_PATCHES`](pkg-opt-ignore-patches) and "
+"[patching](/guides/patching)."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:103
 msgid "`LIBFOO_DEVMODE_REVISION`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:50
+#: ../../content/guides/packages/advanced-pkg-options.md:105
 msgid ""
 "Specifies a development revision for a package. When a project is being "
 "built in [development mode](/guides/development-mode), the development "
@@ -91,17 +139,38 @@ msgid ""
 "revision) while in development mode."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:61
+#: ../../content/guides/packages/advanced-pkg-options.md:116
 msgid ""
 "See also [`LIBFOO_REVISION`](pkg-opt-revision) and [`LIBFOO_VERSION"
 "`](pkg-opt-version)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:65
+#: ../../content/guides/packages/advanced-pkg-options.md:120
+msgid "`LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK`"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:125
+msgid ""
+"Flag value to indicate that a package can skip an integrity check when "
+"fetching a development revision when operating in [development "
+"mode](/guides/development-mode). This option can be used when a package "
+"defines a static resource with an explicit hash but opts for an "
+"alternative resource when in a development mode. Switching to an "
+"alternative static resource can result in the fetch stage failing if no "
+"alternative hashes are defined. Developers not wanting to maintain "
+"development hashes can instead configure this option if not needing an "
+"integrity check."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:139
 msgid "`LIBFOO_EXTENSION`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:67
+#: ../../content/guides/packages/advanced-pkg-options.md:141
+msgid "Support an empty extension value."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:144
 msgid ""
 "Specifies a filename extension for the package. A package may be cached "
 "inside the download directory to be used when the extraction phase is "
@@ -111,11 +180,11 @@ msgid ""
 "specify the extension value using this option."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:79
+#: ../../content/guides/packages/advanced-pkg-options.md:156
 msgid "`LIBFOO_EXTERNAL`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:81
+#: ../../content/guides/packages/advanced-pkg-options.md:158
 msgid ""
 "Flag value to indicate that a package is an external package. External "
 "packages will generate warnings if [hashes](hash-file), an [ASCII-armor"
@@ -124,38 +193,38 @@ msgid ""
 "internal."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:91
-#: ../../content/guides/packages/advanced-pkg-options.md:290
+#: ../../content/guides/packages/advanced-pkg-options.md:168
+#: ../../content/guides/packages/advanced-pkg-options.md:409
 msgid "See also [internal and external packages](/guides/intern-extern-pkgs)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:94
+#: ../../content/guides/packages/advanced-pkg-options.md:171
 msgid "`LIBFOO_EXTOPT`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:96
+#: ../../content/guides/packages/advanced-pkg-options.md:173
 msgid ""
 "Specifies extension-specific options. Packages wishing to take advantage "
 "of extension-specific capabilities can forward options to extensions by "
 "defining a dictionary of values."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:108
+#: ../../content/guides/packages/advanced-pkg-options.md:185
 msgid "`LIBFOO_EXTRACT_TYPE`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:110
+#: ../../content/guides/packages/advanced-pkg-options.md:187
 msgid ""
 "Specifies a custom extraction type for a package. If a configured "
 "extension supports a custom extraction capability, the registered "
 "extraction type can be explicitly registered in this option."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:119
+#: ../../content/guides/packages/advanced-pkg-options.md:196
 msgid "`LIBFOO_FETCH_OPTS`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:121
+#: ../../content/guides/packages/advanced-pkg-options.md:198
 msgid ""
 "Provides a means to pass command line options into the fetch process. "
 "This option can be defined as a dictionary of string pairs or a list with"
@@ -164,23 +233,40 @@ msgid ""
 "may support this option."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:142
+#: ../../content/guides/packages/advanced-pkg-options.md:219
 msgid "`LIBFOO_FIXED_JOBS`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:144
+#: ../../content/guides/packages/advanced-pkg-options.md:222
+msgid "It is recommended to use [`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs) instead."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:225
 msgid ""
-"Explicitly configure the total number of jobs a package can use. The "
+"Explicitly configure the total number of jobs a package will use. The "
 "primary use case for this option is to help limit the total number of "
 "jobs for a package that cannot support a large or any parallel build "
 "environment."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:153
+#: ../../content/guides/packages/advanced-pkg-options.md:233
+msgid ""
+"Note that this option will override the [`--jobs` argument](arg-jobs) and"
+" can be used to exceed the jobs count (although not recommended in most "
+"scenarios)."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:236
+msgid ""
+"See also the [`--jobs` argument](arg-jobs) and [`LIBFOO_MAX_JOBS`](pkg-"
+"opt-max-jobs)."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:240
 msgid "`LIBFOO_GIT_CONFIG`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:158
+#: ../../content/guides/packages/advanced-pkg-options.md:247
 msgid ""
 "Apply additional repository-specific Git configuration settings ([`git "
 "config`][git-config]) after a Git repository cache has been initialized. "
@@ -188,11 +274,11 @@ msgid ""
 "all Git calls will use the global configuration set)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:170
+#: ../../content/guides/packages/advanced-pkg-options.md:259
 msgid "`LIBFOO_GIT_DEPTH`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:175
+#: ../../content/guides/packages/advanced-pkg-options.md:264
 msgid ""
 "Limit fetching for a Git-based source to the specified number of commits."
 " The value provided will be used with the [`--depth`][git--depth] "
@@ -201,7 +287,7 @@ msgid ""
 " specify a value of `0`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:180
+#: ../../content/guides/packages/advanced-pkg-options.md:269
 msgid ""
 "While the default depth is a value of `1`, an exception is made when the "
 "depth is not explicitly set and the [`LIBFOO_REVISION`](pkg-opt-revision)"
@@ -210,17 +296,17 @@ msgid ""
 "the repository will be fetched."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:190
+#: ../../content/guides/packages/advanced-pkg-options.md:279
 msgid ""
 "See also [`LIBFOO_GIT_REFSPECS`](pkg-opt-git-refspecs) and [configuration"
 " quirks](/guides/quirks/quirks)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:194
+#: ../../content/guides/packages/advanced-pkg-options.md:283
 msgid "`LIBFOO_GIT_REFSPECS`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:199
+#: ../../content/guides/packages/advanced-pkg-options.md:288
 msgid ""
 "List of addition refspecs to fetch when using a `git` VCS type. By "
 "default, a Git fetch request will acquire all `heads` and `tags` "
@@ -229,11 +315,11 @@ msgid ""
 "refspecs to acquire when fetching."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:210
+#: ../../content/guides/packages/advanced-pkg-options.md:299
 msgid "`LIBFOO_GIT_SUBMODULES`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:215
+#: ../../content/guides/packages/advanced-pkg-options.md:304
 msgid ""
 "Flag value to indicate whether a package's Git submodules should be "
 "fetched/extracted during a package's own fetch/extraction stages. By "
@@ -248,11 +334,11 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:231
+#: ../../content/guides/packages/advanced-pkg-options.md:320
 msgid "`LIBFOO_GIT_VERIFY_REVISION`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:233
+#: ../../content/guides/packages/advanced-pkg-options.md:322
 msgid ""
 "Flag value to indicate whether the target revision is required to be "
 "signed before it can be used. When this value is set, the configured "
@@ -261,11 +347,11 @@ msgid ""
 "registered in the local system or if the target revision is not signed."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:244
+#: ../../content/guides/packages/advanced-pkg-options.md:333
 msgid "`LIBFOO_HOST_PROVIDES`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:249
+#: ../../content/guides/packages/advanced-pkg-options.md:338
 msgid ""
 "Hints at what host tools this package may be providing. A project may "
 "have a series of prerequisites, which are checked at the start of a run. "
@@ -280,15 +366,42 @@ msgid ""
 "check will not fail if a tool is not available at the start of a run."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:273
+#: ../../content/guides/packages/advanced-pkg-options.md:362
 msgid "See also [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:276
+#: ../../content/guides/packages/advanced-pkg-options.md:365
+msgid "`LIBFOO_IGNORE_PATCHES`"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:370
+msgid ""
+"Flag value to indicate that a package should ignore patches found "
+"alongside the package definition. This option can be useful with "
+"[`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) to allow a package to"
+" manage packages aimed for development mode over a primary build. By "
+"default, this option is disabled with a value of `False`."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:376
+msgid "For example, to ignore all patches in a default run:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:382
+msgid "Developers can also configure patterns of patches to ignore:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:391
+msgid ""
+"See also [`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) and "
+"[patching](/guides/patching)."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:395
 msgid "`LIBFOO_INTERNAL`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:278
+#: ../../content/guides/packages/advanced-pkg-options.md:397
 msgid ""
 "Flag value to indicate that a package is an internal package. Internal "
 "packages will not generate warnings if [hashes](hash-file), an [ASCII-"
@@ -299,11 +412,37 @@ msgid ""
 "configured to be internal."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:293
+#: ../../content/guides/packages/advanced-pkg-options.md:412
+msgid "`LIBFOO_MAX_JOBS`"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:417
+msgid ""
+"Configure the maximum number of jobs a package can use. This option can "
+"be used for packages that cannot support a large or any parallel build "
+"environment."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:424
+msgid ""
+"This option also accepts negative values. When a negative option is "
+"provided, the total number of jobs used for a package will be the default"
+" job count less the provided value (to a minimum of one). For example, to"
+" use one less job than the total number of cores, the following can be "
+"used:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:433
+msgid ""
+"See also the [`--jobs` argument](arg-jobs) and [`LIBFOO_FIXED_JOBS`](pkg-"
+"opt-fixed-jobs)."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:437
 msgid "`LIBFOO_NO_EXTRACTION`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:296
+#: ../../content/guides/packages/advanced-pkg-options.md:440
 msgid ""
 "If `LIBFOO_NO_EXTRACTION` is configured for a package, the package cannot"
 " define additional [hashes](hash-file), configure an [ASCII-armor](ascii-"
@@ -312,7 +451,7 @@ msgid ""
 "available)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:306
+#: ../../content/guides/packages/advanced-pkg-options.md:450
 msgid ""
 "Flag value to indicate that a package should not extract the package "
 "contents. This feature is primarily used when using releng-tool to fetch "
@@ -320,7 +459,7 @@ msgid ""
 "package the releng-tool project defines."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:315
+#: ../../content/guides/packages/advanced-pkg-options.md:459
 msgid ""
 "Limitations exist when using the `LIBFOO_NO_EXTRACTION` option. Since "
 "releng-tool will not be used to extract a package's archive (if any), "
@@ -334,11 +473,41 @@ msgid ""
 "value of `False`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:326
+#: ../../content/guides/packages/advanced-pkg-options.md:470
+msgid "`LIBFOO_ONLY_DEVMODE`"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:475
+msgid ""
+"Flag whether this package should only be used when running in a "
+"[development mode](/guides/development-mode). Typically, packages that "
+"are registered in the releng-tool pipeline will get processed for a "
+"build. If a developer wishes to introduced a new package that is aimed "
+"for development, they may use various conditionals to avoid enabling a "
+"package in the main pipeline."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:482
+msgid ""
+"This option aims to make a developers life a bit more flexible by allow a"
+" package to be excluded even if registered in the package chain. This can"
+" allow a project to easily prepare for a future package integration with "
+"a single flag until the primary build is ready to enable the new package."
+" By default, this option is disabled with a value of `False`."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:492
+msgid ""
+"Developers can also hint specific development modes this package is "
+"enabled. For example, if looking to target two specific development "
+"modes, the following may be used:"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:504
 msgid "`LIBFOO_PATCH_SUBDIR`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:331
+#: ../../content/guides/packages/advanced-pkg-options.md:511
 msgid ""
 "Sub-directory where any package patches should be applied to. By default,"
 " patches are applied to the root of the extracted sources for a package. "
@@ -348,32 +517,70 @@ msgid ""
 "patches tailored for the specific module being targeted."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:342
+#: ../../content/guides/packages/advanced-pkg-options.md:522
 msgid "See also [`LIBFOO_BUILD_SUBDIR`](pkg-opt-build-subdir)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:345
+#: ../../content/guides/packages/advanced-pkg-options.md:525
+msgid "`LIBFOO_PREEXTRACT`"
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:530
+msgid ""
+"Flag value to indicate that a package should attempt to extract the "
+"package contents before any configuration stage of all other packages are"
+" performed. By default, this option is disabled with a value of `False`."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:538
+msgid ""
+"Ideally, package configurations can utilize [`LIBFOO_NEEDS`](pkg-opt-"
+"needs) to manage the order of processed packages. However, in the "
+"scenario where package dependencies result in a cyclic dependency, "
+"releng-tool will report an error since a known dependency order is "
+"require for a consistent build pipeline."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:543
+msgid ""
+"In situations where two or more packages do depend on each other, "
+"developers can utilize this pre-extraction flag to hint that packages "
+"should already be extracted before any other package attempts to "
+"configure/build. For example, if `libfoo` and `libbar` both depend on "
+"each other, developers can configure `LIBFOO_PREEXTRACT = True` and "
+"`LIBBAR_PREEXTRACT = True` in each package's respective definition. The "
+"processed order of packages will still be driven by any [`LIBFOO_NEEDS"
+"`](pkg-opt-needs) options set (that do not result in a cyclic error) and "
+"the order defined by [`packages`](conf-packages)."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:553
 msgid "`LIBFOO_PREFIX`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:347
+#: ../../content/guides/packages/advanced-pkg-options.md:558
 msgid ""
 "Specifies the sysroot prefix value to use for the package. An explicitly "
 "provided prefix value will override the project-defined or default "
 "sysroot prefix value."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:355
+#: ../../content/guides/packages/advanced-pkg-options.md:566
 msgid ""
 "See also [`PREFIX`](env-prefix) and [`sysroot_prefix`](conf-sysroot-"
 "prefix)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:358
+#: ../../content/guides/packages/advanced-pkg-options.md:569
 msgid "`LIBFOO_REMOTE_CONFIG`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:363
+#: ../../content/guides/packages/advanced-pkg-options.md:574
+#: ../../content/guides/packages/advanced-pkg-options.md:596
+msgid "This feature is planned to be removed in the future."
+msgstr ""
+
+#: ../../content/guides/packages/advanced-pkg-options.md:577
 msgid ""
 "Flag value to indicate that a package should attempt to load any package "
 "configurations which may be defined in the package's source. If the "
@@ -383,42 +590,42 @@ msgid ""
 "stage."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:373
+#: ../../content/guides/packages/advanced-pkg-options.md:587
 msgid ""
 "See also [`releng.disable_remote_configs` quirk](quirk-"
 "releng.disable_remote_configs)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:377
+#: ../../content/guides/packages/advanced-pkg-options.md:591
 msgid "`LIBFOO_REMOTE_SCRIPTS`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:382
+#: ../../content/guides/packages/advanced-pkg-options.md:599
 msgid ""
 "Flag value to indicate that a package should attempt to load any package "
 "scripts which may be defined in the package's source. Typically, a "
 "script-based package will load configuration, build, etc. scripts from "
 "its package definition folder. If a script-based package is missing a "
 "stage script to invoke and finds an associated script in the package's "
-"source, the detected script will be invoked. For example, if `libfoo` "
-"package may attempt to load a `libfoo-configure` script for a "
+"source, the detected script will be invoked. For example, if `libfoo.rt` "
+"package may attempt to load a `libfoo-configure.rt` script for a "
 "configuration stage. In the event that the script cannot be found and "
 "remote scripting is permitted for a package, the script (if exists) "
-"`releng-configure` will be loaded from the root of the package's "
+"`releng-configure.rt` will be loaded from the root of the package's "
 "contents."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:397
+#: ../../content/guides/packages/advanced-pkg-options.md:614
 msgid ""
 "See also [`releng.disable_remote_scripts` quirk](quirk-"
 "releng.disable_remote_scripts)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:401
+#: ../../content/guides/packages/advanced-pkg-options.md:618
 msgid "`LIBFOO_REVISION`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:403
+#: ../../content/guides/packages/advanced-pkg-options.md:620
 msgid ""
 "Specifies a revision value for a package. When a package fetches content "
 "using source management tools, the revision value is used to determine "
@@ -427,24 +634,24 @@ msgid ""
 "`](pkg-opt-version)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:413
+#: ../../content/guides/packages/advanced-pkg-options.md:630
 msgid ""
 "For users planning to take advantage of [development mode](/guides"
 "/development-mode) capabilities, multiple revisions can be configured "
 "based off the mode:"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:424
+#: ../../content/guides/packages/advanced-pkg-options.md:641
 msgid ""
-"See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) and "
-"[`LIBFOO_VERSION`](pkg-opt-version)."
+"See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision), "
+"[`LIBFOO_VERSION`](pkg-opt-version) and [`revisions`](conf-revisions)."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:428
+#: ../../content/guides/packages/advanced-pkg-options.md:645
 msgid "`LIBFOO_STRIP_COUNT`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:430
+#: ../../content/guides/packages/advanced-pkg-options.md:647
 msgid ""
 "Specifies the strip count to use when attempting to extract sources from "
 "an archive. By default, the extraction process will strip a single "
@@ -454,35 +661,35 @@ msgid ""
 " be set."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:441
+#: ../../content/guides/packages/advanced-pkg-options.md:658
 msgid "`LIBFOO_VCS_TYPE`"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:443
+#: ../../content/guides/packages/advanced-pkg-options.md:660
 msgid "Support added for `local`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:445
+#: ../../content/guides/packages/advanced-pkg-options.md:662
 msgid "Support added for `rsync`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:447
+#: ../../content/guides/packages/advanced-pkg-options.md:664
 msgid "Support added for `perforce`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:449
+#: ../../content/guides/packages/advanced-pkg-options.md:666
 msgid "Support added for `brz`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:451
+#: ../../content/guides/packages/advanced-pkg-options.md:668
 msgid "Support added for `file`."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:454
+#: ../../content/guides/packages/advanced-pkg-options.md:671
 msgid "Support for `bzr` (Bazaar) sites is deprecated."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:457
+#: ../../content/guides/packages/advanced-pkg-options.md:674
 msgid ""
 "URL types no longer accept `file://` URIs. Packages explicitly defining a"
 " `url` type with a file URI will automatically be converted into a `file`"
@@ -490,7 +697,7 @@ msgid ""
 "explicitly set the VCS type."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:463
+#: ../../content/guides/packages/advanced-pkg-options.md:680
 msgid ""
 "Explicitly sets the version control system type to use when acquiring "
 "sources. releng-tool attempts to automatically determine the VCS type of "
@@ -500,76 +707,76 @@ msgid ""
 " used no matter what the site value is configured as."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:470
+#: ../../content/guides/packages/advanced-pkg-options.md:687
 msgid "Supported types are as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:472
+#: ../../content/guides/packages/advanced-pkg-options.md:689
 msgid "`brz` (Breezy)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:473
-msgid "`bzr` (Bazaar)"
+#: ../../content/guides/packages/advanced-pkg-options.md:690
+msgid "`bzr` (Bazaar) *(deprecated)*"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:474
+#: ../../content/guides/packages/advanced-pkg-options.md:691
 msgid "`cvs` (CVS)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:475
+#: ../../content/guides/packages/advanced-pkg-options.md:692
 msgid "`file` (File URI)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:476
+#: ../../content/guides/packages/advanced-pkg-options.md:693
 msgid "`git` (Git)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:477
+#: ../../content/guides/packages/advanced-pkg-options.md:694
 msgid "`hg`  (Mercurial)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:478
+#: ../../content/guides/packages/advanced-pkg-options.md:695
 msgid "`local` (no VCS; local interim-development package)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:479
+#: ../../content/guides/packages/advanced-pkg-options.md:696
 msgid "`none` (no VCS; virtual package)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:480
+#: ../../content/guides/packages/advanced-pkg-options.md:697
 msgid "`perforce` (Perforce)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:481
+#: ../../content/guides/packages/advanced-pkg-options.md:698
 msgid "`rsync` (rsync)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:482
+#: ../../content/guides/packages/advanced-pkg-options.md:699
 msgid "`scp` (SCP)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:483
+#: ../../content/guides/packages/advanced-pkg-options.md:700
 msgid "`svn` (SVN)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:484
+#: ../../content/guides/packages/advanced-pkg-options.md:701
 msgid "`url` (URL)"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:490
+#: ../../content/guides/packages/advanced-pkg-options.md:707
 msgid ""
 "If a project registers a custom extension which provides a custom VCS "
 "type, the extension type can be set in this option."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:493
+#: ../../content/guides/packages/advanced-pkg-options.md:710
 msgid ""
 "For users planning to take advantage of [development mode](/guides"
 "/development-mode) capabilities with mode-specific sites, users can "
 "provide an explicit VCS type based off a configured mode:"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:504
+#: ../../content/guides/packages/advanced-pkg-options.md:721
 msgid ""
 "Using a specific type will create a dependency for a project that the "
 "respective host tool is installed on the host system. For example, if a "
@@ -577,7 +784,7 @@ msgid ""
 " the system."
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:509
+#: ../../content/guides/packages/advanced-pkg-options.md:726
 msgid ""
 "The use of the `local` type is designed to be a special/development-"
 "helper type only. When set, this option allows placing the sources of a "
@@ -586,7 +793,7 @@ msgid ""
 "structured as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/advanced-pkg-options.md:527
+#: ../../content/guides/packages/advanced-pkg-options.md:744
 msgid ""
 "This approach is similar to using [local-sources mode](/guides/local-"
 "sources-mode), where it avoids the need to have the module content "

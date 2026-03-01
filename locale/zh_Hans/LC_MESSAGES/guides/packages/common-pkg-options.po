@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -43,8 +43,8 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/packages/common-pkg-options.md
-#: ../../content/guides/packages/common-pkg-options.md:115
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:120
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "Type"
 msgstr ""
 
@@ -111,42 +111,42 @@ msgid ""
 "recommended to use [SPDX registered licenses][spdx-licenses]."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:40
-#: ../../content/guides/packages/common-pkg-options.md:46
-#: ../../content/guides/packages/common-pkg-options.md:68
+#: ../../content/guides/packages/common-pkg-options.md:43
+#: ../../content/guides/packages/common-pkg-options.md:49
+#: ../../content/guides/packages/common-pkg-options.md:71
 msgid "or"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:52
+#: ../../content/guides/packages/common-pkg-options.md:55
 msgid "See also [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files)."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:55
+#: ../../content/guides/packages/common-pkg-options.md:58
 msgid "`LIBFOO_LICENSE_FILES`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:57
+#: ../../content/guides/packages/common-pkg-options.md:60
 msgid ""
 "A string or list of strings identifying the license files found inside "
 "the package sources which typically would match up to the defined "
 "`LICENSE` entries (respectively)."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:74
+#: ../../content/guides/packages/common-pkg-options.md:77
 msgid "See also [`LIBFOO_LICENSE`](pkg-opt-license)."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:77
+#: ../../content/guides/packages/common-pkg-options.md:80
 msgid "`LIBFOO_NEEDS`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:80
+#: ../../content/guides/packages/common-pkg-options.md:83
 msgid ""
 "The option replaces the legacy [`LIBFOO_DEPENDENCIES`](pkg-opt-"
 "dependencies) option."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:87
+#: ../../content/guides/packages/common-pkg-options.md:90
 msgid ""
 "List of package dependencies a given project has. If a project depends on"
 " another package, the package name should be listed in this option. This "
@@ -155,134 +155,138 @@ msgid ""
 " `libb` being processed first:"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:101
+#: ../../content/guides/packages/common-pkg-options.md:103
+msgid "See also [`LIBFOO_PREEXTRACT`](pkg-opt-preextract)."
+msgstr ""
+
+#: ../../content/guides/packages/common-pkg-options.md:106
 msgid "`LIBFOO_SITE`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:103
+#: ../../content/guides/packages/common-pkg-options.md:108
 msgid ""
 "The site where package sources/assets can be found. The site can be a URL"
 " of an archive, or describe a source control URL such as Git or SVN. The "
 "following outline a series of supported site definitions:"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:107
+#: ../../content/guides/packages/common-pkg-options.md:112
 msgid "Support added for `rsync+`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:109
+#: ../../content/guides/packages/common-pkg-options.md:114
 msgid "Support added for `perforce+`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:111
+#: ../../content/guides/packages/common-pkg-options.md:116
 msgid "Support added for `brz+`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:113
+#: ../../content/guides/packages/common-pkg-options.md:118
 msgid "Support added for `file+`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "Support for Bazaar sites is deprecated."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "Prefix/Postfix"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[Breezy](site-breezy)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`brz+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[Bazaar](site-bazaar)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`bzr+` *(deprecated)*"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[CVS](site-cvs)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`cvs+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[File](site-file)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`file+` or `file://`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[Git](site-git)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`git+` or `.git`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[Mercurial](site-mercurial)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`hg+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[Perforce](site-perforce)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`perforce+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[rsync](site-rsync)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`rsync+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[SCP](site-scp)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`scp+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[SVN](site-svn)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`svn+`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "[URL](site-url)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:115
+#: ../../content/guides/packages/common-pkg-options.md:120
 msgid "`(wildcard)`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:132
+#: ../../content/guides/packages/common-pkg-options.md:137
 msgid "Examples include:"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:145
+#: ../../content/guides/packages/common-pkg-options.md:150
 msgid ""
 "A developer can also use [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) to "
 "explicitly define the version control system type without the need for a "
@@ -290,7 +294,7 @@ msgid ""
 "in [development mode](/guides/development-mode)."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:150
+#: ../../content/guides/packages/common-pkg-options.md:155
 msgid ""
 "Using a specific type will create a dependency for a project that the "
 "respective host tool is installed on the host system. For example, if a "
@@ -298,42 +302,46 @@ msgid ""
 " system."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:155
+#: ../../content/guides/packages/common-pkg-options.md:160
 msgid ""
 "If no site is defined for a package, it will be considered a virtual "
 "package (i.e. has no content). If applicable, loaded extensions may "
 "provide support for custom site protocols."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:159
+#: ../../content/guides/packages/common-pkg-options.md:164
 msgid ""
 "Specifying a [local site](site-local) value with `local` will "
 "automatically configure a VCS-type of `local`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:162
+#: ../../content/guides/packages/common-pkg-options.md:167
 msgid ""
 "See also [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) and [site definitions"
 "](site-definitions)."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:166
+#: ../../content/guides/packages/common-pkg-options.md:171
 msgid "`LIBFOO_TYPE`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:168
+#: ../../content/guides/packages/common-pkg-options.md:173
 msgid "Support added for `make`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:170
+#: ../../content/guides/packages/common-pkg-options.md:175
 msgid "Support added for `meson`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:177
 msgid "Support added for `cargo`."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:175
+#: ../../content/guides/packages/common-pkg-options.md:179
+msgid "Support added for `waf`."
+msgstr ""
+
+#: ../../content/guides/packages/common-pkg-options.md:182
 msgid ""
 "The package type. The default package type is a (Python) script-based "
 "package. releng-tool also provides a series of helper package types for "
@@ -341,86 +349,94 @@ msgid ""
 "definitions:"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "Value"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[Autotools](pkg-type-autotools)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`autotools`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[Cargo](pkg-type-cargo)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`cargo`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[CMake](pkg-type-cmake)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`cmake`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[Make](pkg-type-make)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`make`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[Meson](pkg-type-meson)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`meson`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[Python](pkg-type-python)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`python`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[SCons](pkg-type-scons)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`scons`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "[Script](pkg-type-script)"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:172
+#: ../../content/guides/packages/common-pkg-options.md:179
 msgid "`script`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:190
+#: ../../content/guides/packages/common-pkg-options.md:179
+msgid "[Waf](pkg-type-waf)"
+msgstr ""
+
+#: ../../content/guides/packages/common-pkg-options.md:179
+msgid "`waf`"
+msgstr ""
+
+#: ../../content/guides/packages/common-pkg-options.md:198
 msgid "For example:"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:196
+#: ../../content/guides/packages/common-pkg-options.md:204
 msgid ""
 "If no type is defined for a package, it will be considered a script-based"
 " package. If applicable, loaded extensions may provide support for custom"
 " types."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:200
+#: ../../content/guides/packages/common-pkg-options.md:208
 msgid ""
 "Using a specific type will create a dependency for a project that the "
 "respective host tool is installed on the host system. For example, if a "
@@ -428,11 +444,11 @@ msgid ""
 " the system."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:206
+#: ../../content/guides/packages/common-pkg-options.md:214
 msgid "`LIBFOO_VERSION`"
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:208
+#: ../../content/guides/packages/common-pkg-options.md:216
 msgid ""
 "The version of the package. Typically the version value should be "
 "formatted in a semantic versioning style, but it is up to the developer "
@@ -441,7 +457,7 @@ msgid ""
 "names, cache files and more."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:218
+#: ../../content/guides/packages/common-pkg-options.md:226
 msgid ""
 "For some VCS types, the version value will be used to acquire a specific "
 "revision of sources. If for some case the desired version value cannot be"
@@ -450,7 +466,7 @@ msgid ""
 "`](pkg-opt-revision) can be used."
 msgstr ""
 
-#: ../../content/guides/packages/common-pkg-options.md:224
+#: ../../content/guides/packages/common-pkg-options.md:232
 msgid ""
 "See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision) and "
 "[`LIBFOO_REVISION`](pkg-opt-revision)."

@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hant\n"
+"Language-Team: zh_Hant <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/news/2026-02-22_02.08.00.md:1
+msgid "2.8 (2026-02-22)"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:3
+msgid "Support for Waf package types"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:5
+msgid ""
+"Introduction of the [`waf` package type](/guides/packages/pkg-type-waf). "
+"This new package type allow a developer to easily invoke Waf targets at "
+"various stages, without needing invoke these tools inside a scripts "
+"package."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:9
+msgid "Introduce package configurable maximum job limit"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:11
+msgid ""
+"This release introduces support for [`LIBFOO_MAX_JOBS`](pkg-opt-max-"
+"jobs), allowing a specific package to configure maximum number of jobs it"
+" should use for a build."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:15
+msgid ""
+"While [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) somewhat served this "
+"capability before, its use was tailored for restricting packages to a "
+"single job only. If a project could use a subset of jobs to run, there "
+"was no easy way to configure this. This could be tricky for packages "
+"which might have memory requirements per job unit which cannot be "
+"provided by a builder."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:21
+msgid ""
+"If a build environment has tens to hundreds of cores, but a developer "
+"knows a package can only run around four jobs for package, they may "
+"tailor a maximum count as follows:"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:29
+msgid ""
+"In addition to limiting job counts, the max-jobs value also accepts "
+"negative values. This can be used to hint to using N-less jobs than the "
+"detected amount. For example, if a package is best to use all cores but "
+"one for a build, a package may define negative one as follows:"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:38
+msgid "Project configuration revisions options"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:40
+msgid ""
+"Packages will typically define revisions to fetch through "
+"[`LIBFOO_VERSION`](pkg-opt-version) and [`LIBFOO_REVISION`](pkg-opt-"
+"revision) options. This follows the idea of containing package-specific "
+"information inside a package's definition. However, developers may "
+"instead wish to manage fixed revisions in a single location due to their "
+"possible volatility when compared to other options."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:47
+msgid ""
+"Developers looking for the convenience of managing revisions in a single "
+"location can do so by defining a [`revisions`](conf-revisions) project "
+"configuration option. For example:"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:58
+msgid ""
+"For the package `libfoo`, the its [`LIBFOO_REVISION`](pkg-opt-revision) "
+"will be configured to `libfoo-v2.1`. As well as the package `myapp` will "
+"have its [`MYAPP_REVISION`](pkg-opt-revision) configured to `1.0.0`."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:62
+msgid "Support skipping integrity checks for development-marked packages"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:64
+msgid ""
+"Support has been added to allow developers to skip integrity checks for "
+"specific packages when in [development mode](/guides/development-mode)."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:67
+msgid ""
+"A package definition will typically have hashes defined for static "
+"resources to verify their contents. While this is desired approach for "
+"standard packages, a developer which defines a development-variant "
+"package when testing bleeding edge sources can experience fetch failures "
+"since development assets will have a mismatched hash. A developer can "
+"workaround this by appending additional hashes for a package, but this "
+"can remove the flexibility of acquiring bleeding edge assets for an "
+"internal package."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:75
+msgid ""
+"To workaround this scenario, the package configuration "
+"[`LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK`](pkg-opt-devmode-skip-integrity-"
+"check) has been introduced. Consider this example:"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:88
+msgid ""
+"This package defines a default and development site for a package "
+"resource. If the package defined a hash file (`libfoo.hash`), the hash "
+"definition would typically require explicit hashes for both "
+"`libfoo-1.2.3.tar.gz` and `libfoo-latest.tar.gz`. However, if "
+"`LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK` is set, when running with in a "
+"`test` development mode, no hashes are required for the latest artifact."
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:95
+msgid "SPDX license database updated"
+msgstr ""
+
+#: ../../content/news/2026-02-22_02.08.00.md:97
+msgid ""
+"The internally managed copy of the [SPDX license identifiers][spdx] has "
+"been updated to the most recent version (v3.28)."
+msgstr ""
+

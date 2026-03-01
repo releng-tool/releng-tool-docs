@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -31,8 +31,6 @@ msgid ""
 msgstr ""
 
 #: ../../content/help.md:6
-msgid ""
-"releng-tool — Issues \\ <https://github.com/releng-tool/releng-"
-"tool/issues>"
+msgid "releng-tool — Issues <https://github.com/releng-tool/releng-tool/issues>"
 msgstr ""
 

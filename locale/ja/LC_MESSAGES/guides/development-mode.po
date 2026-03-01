@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../content/guides/development-mode.md:3
 msgid ""
-"Development mode provides a way for a user to request to process packages"
-" against development versions of sources rather than using fixed "
+"Development mode provides a way for a user to process packages using "
+"variant/development versions of sources rather than using fixed stable "
 "versions. A package will typically target a stable release, either "
 "pointing to a specific archive to download or a specific tag to clone "
 "from. However, for some builds, a user may wish to build a specific "
@@ -59,17 +59,22 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/development-mode.md:40
+#: ../../content/guides/development-mode.md:77
+msgid "Or an equivalent:"
+msgstr ""
+
+#: ../../content/guides/development-mode.md:51
 msgid ""
 "A build would normally use the `1.2` tag for this package. However, if an"
 " environment is configured to use the `develop` development mode:"
 msgstr ""
 
-#: ../../content/guides/development-mode.md:47
-#: ../../content/guides/development-mode.md:83
+#: ../../content/guides/development-mode.md:60
+#: ../../content/guides/development-mode.md:109
 msgid "This package would use the `main` branch instead."
 msgstr ""
 
-#: ../../content/guides/development-mode.md:49
+#: ../../content/guides/development-mode.md:62
 msgid ""
 "Projects can also target specific sites based off the development mode. "
 "This can be useful if a package uses a built archive for a stable "
@@ -77,7 +82,7 @@ msgid ""
 "example:"
 msgstr ""
 
-#: ../../content/guides/development-mode.md:64
+#: ../../content/guides/development-mode.md:90
 msgid ""
 "In a normal execution, a tar.gz archive would be downloaded for the "
 "package. However, if an environment is configured to use the `test` "
@@ -85,36 +90,36 @@ msgid ""
 "`main` branch."
 msgstr ""
 
-#: ../../content/guides/development-mode.md:68
+#: ../../content/guides/development-mode.md:94
 msgid ""
 "Simple development modes are also supported. Packages can use the "
 "`LIBFOO_DEVMODE_REVISION` option to hint at a development revision to "
 "pull."
 msgstr ""
 
-#: ../../content/guides/development-mode.md:76
+#: ../../content/guides/development-mode.md:102
 msgid ""
 "A build would normally use the `v3.0` tag for this package. However, if "
 "an environment is configured a non-explicit development mode:"
 msgstr ""
 
-#: ../../content/guides/development-mode.md:85
+#: ../../content/guides/development-mode.md:111
 msgid "A user can either disable development sources mode by:"
 msgstr ""
 
-#: ../../content/guides/development-mode.md:87
+#: ../../content/guides/development-mode.md:113
 msgid "Providing a development mode of `-` or `unset`;"
 msgstr ""
 
-#: ../../content/guides/development-mode.md:88
+#: ../../content/guides/development-mode.md:114
 msgid "Invoking [`mrproper`](action-mrproper); or,"
 msgstr ""
 
-#: ../../content/guides/development-mode.md:89
+#: ../../content/guides/development-mode.md:115
 msgid "By manually removing the file flag found at the root of the project."
 msgstr ""
 
-#: ../../content/guides/development-mode.md:91
+#: ../../content/guides/development-mode.md:117
 msgid "For example:"
 msgstr ""
 

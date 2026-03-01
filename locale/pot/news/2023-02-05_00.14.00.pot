@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 20:20-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "If a package is required to use a license string that is not a listed SPD
 msgstr ""
 
 #: ../../content/news/2023-02-05_00.14.00.md:61
-msgid "~~Note that releng-tool will not generate a warning if the license value `Proprietary` is provided.~~ \\ **Edit**: As of v1.1+, we no longer a `Proprietary` marking; use a [license identifier field][spdx-lif] instead."
+msgid "~~Note that releng-tool will not generate a warning if the license value `Proprietary` is provided.~~ **Edit**: As of v1.1+, we no longer a `Proprietary` marking; use a [license identifier field][spdx-lif] instead."
 msgstr ""
 
 #: ../../content/news/2023-02-05_00.14.00.md:70

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../content/getting-started/tutorial-sdl.md:129
 #: ../../content/getting-started/tutorial-sdl.md:321
-#: ../../content/getting-started/tutorial-sdl.md:382
+#: ../../content/getting-started/tutorial-sdl.md:381
 msgid "The following shows the expected file structure at this stage of this tutorial:"
 msgstr ""
 
@@ -154,70 +154,70 @@ msgstr ""
 msgid "Create a new `assets` folder at the root of the project folder. Inside, place a copy of the [releng-tool.bmp](assets/sdl/releng-tool.bmp) image. At the root of the project folder, create a post-build script named `releng-tool-post-build.rt` with the following contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:359
+#: ../../content/getting-started/tutorial-sdl.md:358
 msgid "In this example script, we find the project's root path using a `ROOT_DIR` helper to find where we locally store the `releng-tool.bmp` image file."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:361
+#: ../../content/getting-started/tutorial-sdl.md:360
 msgid "We then copy the image into the target directory's bin folder to be placed alongside the executable we plan to build."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:364
+#: ../../content/getting-started/tutorial-sdl.md:363
 msgid "Lastly, we need to create our releng-tool configuration file for the project. In the root folder, create a `releng-tool.rt` file with the following contents:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:376
+#: ../../content/getting-started/tutorial-sdl.md:375
 msgid "We explicitly configure releng-tool to load the `sample` package to build."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:377
+#: ../../content/getting-started/tutorial-sdl.md:376
 msgid "Note that we do not need to specify the `libsdl` package since the `sample` package will load it implicitly through its dependency configuration."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:379
+#: ../../content/getting-started/tutorial-sdl.md:378
 msgid "Adding `vsdevcmd` will auto-load Visual Studio developer environment variables to support Windows-based builds."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:405
+#: ../../content/getting-started/tutorial-sdl.md:404
 msgid "Performing a build"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:407
+#: ../../content/getting-started/tutorial-sdl.md:406
 msgid "With packages, assets and configurations prepared, the project should be ready to be built. While in the `my-sdl-project` folder, invoke `releng-tool`:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:437
+#: ../../content/getting-started/tutorial-sdl.md:436
 msgid "Testing"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:439
+#: ../../content/getting-started/tutorial-sdl.md:438
 msgid "With the project built, we will run the recently created SDL application to verify our initial releng-tool project definitions. With Linux or OS X, navigate to the target directory's bin path and invoke the created sample application:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:449
+#: ../../content/getting-started/tutorial-sdl.md:448
 msgid "With Windows, users can navigate to `output/target/bin` using the file explorer and click-open the `sample.exe` executable."
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:452
+#: ../../content/getting-started/tutorial-sdl.md:451
 msgid "In all cases, a window should be presented with the releng-tool logo:"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:454
+#: ../../content/getting-started/tutorial-sdl.md:453
 msgid "![Sample Linux](assets/sdl/sdl-sample-linux.png) ![Sample OS X](assets/sdl/sdl-sample-osx.png) ![Sample Windows](assets/sdl/sdl-sample-win32.png)"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:454
+#: ../../content/getting-started/tutorial-sdl.md:453
 msgid "Sample Linux"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:454
+#: ../../content/getting-started/tutorial-sdl.md:453
 msgid "Sample OS X"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:454
+#: ../../content/getting-started/tutorial-sdl.md:453
 msgid "Sample Windows"
 msgstr ""
 
-#: ../../content/getting-started/tutorial-sdl.md:458
+#: ../../content/getting-started/tutorial-sdl.md:457
 msgid "This concludes this tutorial."
 msgstr ""

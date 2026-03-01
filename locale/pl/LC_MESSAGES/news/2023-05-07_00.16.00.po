@@ -1,21 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/news/2023-05-07_00.16.00.md:1
 msgid "0.16 (2023-05-07)"
@@ -27,10 +33,10 @@ msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:5
 msgid ""
-"As of v0.14, releng-tool supported a series of formats to use for generating"
-" a SBOM document. All these formats are generic documents, not following any"
-" specification. With v0.16, this release introduces initial support for "
-"SPDX-styled SBOM documents (JSON and RDP/XML formats)."
+"As of v0.14, releng-tool supported a series of formats to use for "
+"generating a SBOM document. All these formats are generic documents, not "
+"following any specification. With v0.16, this release introduces initial "
+"support for SPDX-styled SBOM documents (JSON and RDF/XML formats)."
 msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:10
@@ -46,9 +52,9 @@ msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:18
 msgid ""
-"Introduction of the `meson` package type. These new package types allow a "
-"developer to easily invoke Meson targets at various stages, without needing "
-"invoke these tools inside a scripts package."
+"Introduction of the `meson` package type. This new package type allow a "
+"developer to easily invoke Meson targets at various stages, without "
+"needing invoke these tools inside a scripts package."
 msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:22
@@ -57,16 +63,16 @@ msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:24
 msgid ""
-"Users overriding module-specific local-sources could do so using an at sign "
-"(`@`) to identify between a package and a target path. For example:"
+"Users overriding module-specific local-sources could do so using an at "
+"sign (`@`) to identify between a package and a target path. For example:"
 msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:31
 msgid ""
 "An issue using the `@` is that a user may not easily be able to use tab "
 "completion for a target path in their shell environment. To help support "
-"shells with tab completion support, these commands now accept an alternative"
-" format using a colon (`:`) character. For example:"
+"shells with tab completion support, these commands now accept an "
+"alternative format using a colon (`:`) character. For example:"
 msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:40
@@ -83,16 +89,18 @@ msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:46
 msgid ""
-"SBOM support when using the `html` format would generate a document with no "
-"package information. This has been corrected in this version."
+"SBOM support when using the `html` format would generate a document with "
+"no package information. This has been corrected in this version."
 msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:48
 msgid ""
-"A regression with `releng_copy` has been corrected. When using the copy call"
-" with a destination of a single relative path, the call would throw an "
-"exception (e.g. a call such as `releng_copy(src, 'output')` would always "
-"fail). This was a result of an incorrect check that attempts to ensure the "
-"output directory exists, and fails to create an \"empty\" directory. With "
-"this new release, `releng_copy` properly handles a single relative path."
+"A regression with `releng_copy` has been corrected. When using the copy "
+"call with a destination of a single relative path, the call would throw "
+"an exception (e.g. a call such as `releng_copy(src, 'output')` would "
+"always fail). This was a result of an incorrect check that attempts to "
+"ensure the output directory exists, and fails to create an \"empty\" "
+"directory. With this new release, `releng_copy` properly handles a single"
+" relative path."
 msgstr ""
+

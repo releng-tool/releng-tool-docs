@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,15 +60,15 @@ msgstr ""
 msgid "To test that the post-build event is triggered, use an existing releng-tool project and register this new example extension into the releng-tool process:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-post-build-action.md:77
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:75
 msgid "When running releng-tool, the following message should be printed at the end of a run:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-post-build-action.md:87
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:85
 msgid "Next, we can now adjust our handler to help modify the output directory when the event is triggered. In this example, we want to copy an extension-managed `NOTICE.pdf` file and place it into the output directory. Update the extension with the following:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-post-build-action.md:104
+#: ../../content/guides/extensions/making-a-custom-post-build-action.md:100
 msgid "With this change, a re-run of the releng-tool project should have the `NOTICE.pdf` document copied into the target directory for the project."
 msgstr ""
 

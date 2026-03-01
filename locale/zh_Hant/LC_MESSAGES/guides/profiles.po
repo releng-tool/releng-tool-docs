@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hant\n"
+"Language-Team: zh_Hant <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/guides/profiles.md:1
+msgid "Profiles"
+msgstr ""
+
+#: ../../content/guides/profiles.md:3
+msgid ""
+"Profiles provide a way to support tailoring the execution of a releng-"
+"tool run for select project requirements. A user can define a profile to "
+"enable by providing a [`--profile` argument](arg-profile). A profile "
+"value can then be read by a project's configuration or various package "
+"stages to manipulate a run as desired. Note that releng-tool does not use"
+" any provided profile values other than normalizing profile strings to be"
+" forwarded to project/package scripts. For example, consider the "
+"following run that flags a profile named `awesome-mode`:"
+msgstr ""
+
+#: ../../content/guides/profiles.md:16
+msgid ""
+"A project configuration or package stage can then check the "
+"[`RELENG_PROFILES`](env-releng-profiles) variable to determine if a "
+"conditional event should be performed. To continue with this example, if "
+"looking to add an additional package when using this profile, the "
+"following can be added in a project's `releng-tool.rt` file:"
+msgstr ""
+
+#: ../../content/guides/profiles.md:31
+msgid "Multiple profiles can be provided as well:"
+msgstr ""
+
+#: ../../content/guides/profiles.md:41
+msgid ""
+"The script environment provides a list of known profiles. However, if "
+"reading the environment variable `RELENG_PROFILES`, note that if more "
+"than one profile is defined, the environment string will be semicolon-"
+"separated values. Considering the above example, the environment variable"
+" would be populated as follows:"
+msgstr ""
+
+#: ../../content/guides/profiles.md:51
+msgid ""
+"Profile names are normalized when processed by releng-tool. A profile "
+"value will replace special characters with dashes and will lowercase the "
+"resulting value. The following shows an example of normalized profile "
+"names that are all equivalent:"
+msgstr ""
+
+#: ../../content/guides/profiles.md:56
+msgid "`red-backed-shrike` (normalized form)"
+msgstr ""
+
+#: ../../content/guides/profiles.md:57
+msgid "`Red_Backed_Shrike`"
+msgstr ""
+
+#: ../../content/guides/profiles.md:58
+msgid "`Red Backed Shrike`"
+msgstr ""
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,18 @@ msgid "Available functions"
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.debug:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:4
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:2
+#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:2
+msgid "Provided message will now expand variables."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.debug:4
 msgid "Logs a debug message to standard out with a trailing new line. By default, debug messages will not be output to standard out unless the instance is configured with debugging enabled."
 msgstr ""
 
@@ -36,29 +48,33 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.debug:10
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:9
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:12
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:8
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:9
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:9
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:10
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:9
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.debug:12
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:11
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:13
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:10
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:11
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:11
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:12
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:11
 msgid "the message"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.debug:11
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:10
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:13
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:9
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:10
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:10
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:11
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:10
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.debug:13
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:12
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:14
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:11
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:12
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:12
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:13
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:12
 msgid "an arbitrary set of positional and keyword arguments used when generating a formatted message"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:2
+#: ../../content/guides/script-helpers.md:13
+msgid "See also the ``--debug`` :ref:`argument <arg-debug>`."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.err:4
 msgid "Logs an error message to standard error with a trailing new line and (if enabled) a red colorization."
 msgstr ""
 
@@ -66,61 +82,75 @@ msgstr ""
 msgid "Ensure availability in script helpers."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:5
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.hint:6
 msgid "Logs a hint message to standard out with a trailing new line and (if enabled) a cyan colorization."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.log:4
 msgid "Logs a (normal) message to standard out with a trailing new line."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.note:4
 msgid "Logs a notification message to standard out with a trailing new line and (if enabled) an inverted colorization."
 msgstr ""
 
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:3
 #: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:3
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:4
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:4
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:2
 #: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:4
 #: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:6
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:4
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:4
 #: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:2
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:8
 #: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:2
 #: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:2
 #: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:2
 msgid "Accepts a str, bytes or os.PathLike."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:5
+#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:4
+#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:4
+msgid "Provided file will now expand variables."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:6
 msgid "Attempts to read one or more files provided to this call. For each file, it will be read and printed out to the standard output."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:9
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:12
 #: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.require_version:13
-#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:11
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:42
+#: ../../../releng-tool/releng_tool/util/__init__.py:docstring of releng_tool.util.global_define:7
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:13
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:36
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:26
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.path_exists:5
-#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:8
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:17
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:14
-#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:9
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:14
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:19
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:16
-#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:10
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:29
-#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:11
-#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:9
-#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:10
-#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:11
+#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:9
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:19
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:16
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:8
+#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:10
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:15
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:21
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:18
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:14
+#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:11
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:31
+#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:12
+#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:10
+#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:11
+#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:13
 #: ../../../releng-tool/releng_tool/util/string.py:docstring of releng_tool.util.string.expand:14
 msgid "An example when using in the context of script helpers is as follows:"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:14
-#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:18
+#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:15
+#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:19
 msgid "the file"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:15
+#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:16
 msgid "additional files to include"
 msgstr ""
 
@@ -128,7 +158,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:18
+#: ../../../releng-tool/releng_tool/util/io_cat.py:docstring of releng_tool.util.io_cat.cat:19
 msgid "``True`` if all the files exists and were printed to the standard output; ``False`` if one or more files could not be read"
 msgstr ""
 
@@ -145,52 +175,61 @@ msgid "Add support for ``nested``."
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:5
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:5
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:5
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:5
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:9
+msgid "Provided paths will now expand variables."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:7
 msgid "This call will attempt to copy a provided file, directory's contents or directory itself (if ``nested`` is ``True``); defined by ``src`` into a destination file or directory defined by ``dst``. If ``src`` is a file, then ``dst`` is considered to be a file or directory; if ``src`` is a directory, ``dst`` is considered a target directory. If a target directory or target file's directory does not exist, it will be automatically created. In the event that a file or directory could not be copied, an error message will be output to standard error (unless ``quiet`` is set to ``True``). If ``critical`` is set to ``True`` and the specified file/directory could not be copied for any reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:39
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:36
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:35
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:35
-msgid "the source directory or file"
-msgstr ""
-
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:40
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:36
-msgid "the destination directory or file\\* (\\*if ``src`` is a file)"
-msgstr ""
-
-#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.require_version:21
 #: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:41
 #: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:38
 #: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:37
 #: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:37
-#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:19
-msgid "whether or not to suppress output"
+msgid "the source directory or file"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.require_version:23
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:42
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:38
+msgid "the destination directory or file\\* (\\*if ``src`` is a file)"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.require_version:21
 #: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:43
 #: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:40
 #: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:39
 #: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:39
+#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:20
+msgid "whether or not to suppress output"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.require_version:23
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:45
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:42
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:41
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:41
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:21
 msgid "whether or not to stop execution on failure"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:45
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:41
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:47
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:43
 msgid "force hint that the destination is a directory"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:47
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:42
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:43
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:41
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:49
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:44
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:45
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:43
 msgid "nest a source directory into the destination"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:50
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:45
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:52
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:47
 msgid "``True`` if the copy has completed with no error; ``False`` if the copy has failed"
 msgstr ""
 
@@ -198,35 +237,59 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:53
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:48
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:49
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:47
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy:55
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:50
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:51
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:49
 msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:5
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:7
 msgid "This call will attempt to copy a provided file, directory's contents or directory itself (if ``nested`` is ``True``); defined by ``src`` into a destination directory defined by ``dst``. If a target directory does not exist, it will be automatically created. In the event that a file or directory could not be copied, an error message will be output to standard error (unless ``quiet`` is set to ``True``). If ``critical`` is set to ``True`` and the specified file/directory could not be copied for any reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:37
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:36
+#: ../../../releng-tool/releng_tool/util/io_copy.py:docstring of releng_tool.util.io_copy.path_copy_into:39
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:38
 msgid "the destination directory"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:4
-msgid "Provides a caller a simple method to fetch or configure an environment variable for the current context. This call is the same as if one directly fetched from or managed a key-value with ``os.environ``. If ``value`` is not provided, the environment variable's value (if set) will be returned. If ``value`` is set to a value of ``None``, any set environment variable will be removed."
+#: ../../../releng-tool/releng_tool/util/__init__.py:docstring of releng_tool.util.global_define:4
+msgid "Ensures a provided variable is defined in the caller's global context. If not, the variable will be defined with the provided default value."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:21
+#: ../../../releng-tool/releng_tool/util/__init__.py:docstring of releng_tool.util.global_define:17
+msgid "the define/variable name"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/__init__.py:docstring of releng_tool.util.global_define:18
+msgid "the default value to use if the define is not set"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/__init__.py:docstring of releng_tool.util.global_define:21
+msgid "the set value for this define"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:3
+msgid "Support the ``overwrite`` argument."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:5
+msgid "Provides a caller a simple method to fetch or configure an environment variable for the current context. This call is the same as if one directly fetched from or managed a key-value with ``os.environ``. If ``value`` is not provided, the environment variable's value (if set) will be returned. If ``value`` is set to a value of ``None``, any set environment variable will be removed. A caller can also set ``overwrite=False`` to avoid overwriting an already configured environment variable."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:26
 msgid "the environment key"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:22
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:27
 msgid "the environment value to set"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:25
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:29
+msgid "whether to overwrite an environment variable"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/env.py:docstring of releng_tool.util.env.env_value:32
 msgid "the value of the environment variable"
 msgstr ""
 
@@ -259,69 +322,65 @@ msgid "If ``critical`` is set to ``True`` and the execution fails for any reason
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:32
-msgid "In special cases, an executing process may not provide carriage returns/new lines to simple output processing. This can lead the output of a process to be undesirably buffered. To workaround this issue, the execution call can instead poll for output results by using the ``poll`` option with a value of ``True``. By default, polling is disabled with a value of ``False``."
-msgstr ""
-
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:38
 msgid "A caller may wish to capture the provided output from a process for examination. If a list is provided in the call argument ``capture``, the list will be populated with the output provided from an invoked process."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:48
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:42
 msgid "the list of arguments to execute"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:49
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:43
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:35
 msgid "working directory to use"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:51
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:45
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:36
 msgid "environment variables to use for the process"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:53
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:47
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:37
 msgid "environment variables to append for the process"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:55
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:33
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:49
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:34
 msgid "whether or not to suppress output (defaults to ``False``)"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:58
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:52
 msgid "whether or not to stop execution on failure (defaults to ``True``)"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:61
-msgid "force polling stdin/stdout for output data (defaults to ``False``)"
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:55
+msgid "obsolete/ignored argument"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:64
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:57
 msgid "list to capture output into"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:66
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:59
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:38
 msgid "perform variable expansion on arguments"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:68
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:61
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:39
 msgid "invoke arguments as a single string"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:70
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:63
 #: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute_rv:40
 msgid "ignore any stderr output"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:73
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:66
 msgid "``True`` if the execution has completed with no error; ``False`` if the execution has failed"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:76
+#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.execute:69
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
@@ -341,35 +400,41 @@ msgstr ""
 msgid "the return code and output of the execution request"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.path_exists:2
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:3
+#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:3
+msgid "Provided path will now expand variables."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:5
 msgid "Allows a caller to verify the existence of a file on the file system. This call will return ``True`` if the path exists; ``False`` otherwise."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.path_exists:14
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:17
 msgid "the path"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.path_exists:15
-msgid "additional path parts"
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:18
+#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:20
+msgid "additional components of the file"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io.py:docstring of releng_tool.util.io.path_exists:17
+#: ../../../releng-tool/releng_tool/util/io_exists.py:docstring of releng_tool.util.io_exists.path_exists:21
 msgid "``True`` if the path exists; ``False`` otherwise"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:2
+#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:4
 msgid "Provides a convenience method to help invoke a system exit call without needing to explicitly use ``sys``. A caller can provide a message to indicate the reason for the exit. The provide message will output to standard error. The exit code, if not explicit set, will vary on other arguments. If a message is provided to this call, the default exit code will be ``1``. If no message is provided, the default exit code will be ``0``. In any case, if the caller explicitly sets a code value, the provided code value will be used."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:17
+#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:19
 msgid "error message to print"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:19
+#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:21
 msgid "exit code; defaults to 0 if no message or defaults to 1 if a message is set"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:23
+#: ../../../releng-tool/releng_tool/util/platform.py:docstring of releng_tool.util.platform.platform_exit:25
 msgid "always raised"
 msgstr ""
 
@@ -390,14 +455,30 @@ msgid "the expanded object"
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:4
+msgid "Provided file path will now expand variables."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:5
+msgid "Introduce the ``source`` argument."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:7
 msgid "The provided call will execute code at the provided file path. The path will be relative to the caller's script, unless an absolute path is provided. The executed script will be initialized with globals matching the caller's script."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:16
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:19
+msgid "Changes to the global context can be imported into the caller's context by enabling the ``source`` argument. For example:"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:29
 msgid "the script to invoke"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:29
+#: ../../../releng-tool/releng_tool/support.py:docstring of releng_tool.support.releng_include:30
+msgid "import globals into invoking script"
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:33
 msgid "An alias for ``os.path.join``. See also https://docs.python.org/library/os.path.html#os.path.join."
 msgstr ""
 
@@ -405,20 +486,27 @@ msgstr ""
 msgid "Add support for ``recursive``."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:6
+#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:5
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:7
+#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:4
+#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:3
+msgid "Provided directory will now expand variables."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:7
 msgid "Attempts to read a directory for its contents and prints this information to the configured standard output stream."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:15
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:30
+#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:16
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:31
 msgid "the directory"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:16
+#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:17
 msgid "recursive search of entries"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:19
+#: ../../../releng-tool/releng_tool/util/io_ls.py:docstring of releng_tool.util.io_ls.ls:20
 msgid "``True`` if the directory could be read and its contents have been printed to the standard output; ``False`` if the directory could not be read"
 msgstr ""
 
@@ -434,97 +522,121 @@ msgstr ""
 msgid "Returns the created path."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:8
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:9
 msgid "Attempts to create the provided directory. If the directory already exists, this method has no effect. If the directory does not exist and could not be created, this method will return ``None``. Also, if an error has been detected, an error message will be output to standard error (unless ``quiet`` is set to ``True``)."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:31
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:32
 msgid "additional components of the directory"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:36
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:37
 msgid "whether or not to stop execution on failure (defaults to ``False``)"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:40
+#: ../../../releng-tool/releng_tool/util/io_mkdir.py:docstring of releng_tool.util.io_mkdir.mkdir:41
 msgid "the directory that exists; ``None`` if the directory could not be created"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:5
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:7
 msgid "This call will attempt to move a provided file, directory's contents or directory itself (if ``nested`` is ``True``); defined by ``src`` into a destination file or directory defined by ``dst``. If ``src`` is a file, then ``dst`` is considered to be a file or directory; if ``src`` is a directory, ``dst`` is considered a target directory. If a target directory or target file's directory does not exist, it will be automatically created."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:13
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:10
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:15
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:12
 msgid "In the event that a file or directory could not be moved, an error message will be output to standard error (unless ``quiet`` is set to ``True``). If ``critical`` is set to ``True`` and the specified file/directory could not be moved for any reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:46
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:44
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move:48
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:46
 msgid "``True`` if the move has completed with no error; ``False`` if the move has failed"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:5
+#: ../../../releng-tool/releng_tool/util/io_move.py:docstring of releng_tool.util.io_move.path_move_into:7
 msgid "This call will attempt to move a provided file, directory's contents or directory itself (if ``nested`` is ``True``); defined by ``src`` into a destination directory defined by ``dst``. If a target directory directory does not exist, it will be automatically created."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:4
+#: ../../content/guides/script-helpers.md:45
+msgid "An alias for ``pathlib.Path``. See also https://docs.python.org/3/library/pathlib.html#pathlib.Path."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:4
+msgid "This call will register a provided path into the Python module search path (``sys.path``). This can be useful for situations when trying to load a local/relative folder containing extensions or other enhancements a developer wants to use/import. If ``critical`` is set to ``True`` and the specified directory could not be registered for any reason, this call will issue a system exit (``SystemExit``)."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:11
+msgid "If the provided path is already registered, the call is ignored and will return as if a registration was made (``True``)."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:20
+msgid "the directory to register"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:24
+msgid "``True`` if the path has been registered; ``False`` if the registration has failed"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_path.py:docstring of releng_tool.util.io_path.releng_register_path:27
+msgid "if the registration fails with ``critical=True``"
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:5
 msgid "Attempts to remove the provided path if it exists. The path value can either be a directory or a specific file. If the provided path does not exist, this method has no effect. In the event that a file or directory could not be removed due to an error other than unable to be found, an error message will be output to standard error (unless ``quiet`` is set to ``True``)."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:18
+#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:19
 msgid "the path to remove"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:22
+#: ../../../releng-tool/releng_tool/util/io_remove.py:docstring of releng_tool.util.io_remove.path_remove:23
 msgid "``True`` if the path was removed or does not exist; ``False`` if the path could not be removed from the system"
 msgstr ""
 
 #: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:4
-msgid "this call may not work in Windows environments if the user invoking releng-tool does not have permission to create symbolic links."
+msgid "This call may not work in Windows environments if the user invoking releng-tool does not have permission to create symbolic links."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:9
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:11
 msgid "This call will attempt to create a symbolic link to a ``target`` path. A provided ``link_path`` determines where the symbolic link will be created. By default, the ``link_path`` identifies the symbolic link file to be created. However, if ``lpd`` is set to ``True``, it will consider the ``link_path`` as a directory to create a symbolic link in. For this case, the resulting symbolic link's filename will match the basename of the provided ``target`` path."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:17
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:19
 msgid "If a symbolic link already exists at the provided link path, the symbolic link will be replaced with the new ``target``. If the resolved link path already exists and is not a symbolic link, this operation will not attempt to create a symbolic link."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:22
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:24
 msgid "If the directory structure of a provided ``link_path`` does not exist, it will be automatically created. In the event that a symbolic link or directory could not be created, an error message will be output to standard error (unless ``quiet`` is set to ``True``). If ``critical`` is set to ``True`` and the symbolic link could not be created for any reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:48
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:50
 msgid "the source path to link to"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:49
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:51
 msgid "the symbolic link path"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:50
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:52
 msgid "whether to suppress output"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:52
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:54
 msgid "whether to stop execution on failure"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:54
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:56
 msgid "hint that the link is a directory to create in"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:56
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:58
 msgid "whether to build a relative link"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:59
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:61
 msgid "``True`` if the symbolic link has been created; ``False`` if the symbolic link could not be created"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:62
+#: ../../../releng-tool/releng_tool/util/io_symlink.py:docstring of releng_tool.util.io_symlink.symlink:64
 msgid "if the symbolic link operation fails with ``critical=True``"
 msgstr ""
 
@@ -556,19 +668,19 @@ msgstr ""
 msgid "Add support for ``*args`` and ``**wd``."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:5
+#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:6
 msgid "Creates a temporary directory in the provided directory ``dir_`` (or system default, is not provided). This is a context-supported call and will automatically remove the directory when completed. If the provided directory does not exist, it will created. If the directory could not be created, an ``FailedToPrepareBaseDirectoryError`` exception will be thrown."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:18
+#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:19
 msgid "the directory to create the temporary directory in"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:20
+#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:21
 msgid "whether to use the temporary directory as the working directory (defaults to ``False``)"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:24
+#: ../../../releng-tool/releng_tool/util/io_temp_dir.py:docstring of releng_tool.util.io_temp_dir.temp_dir:25
 msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
@@ -576,86 +688,94 @@ msgstr ""
 msgid "Add support for ``*args``."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:5
+#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:6
 msgid "Attempts to update the access/modifications times on a file. If the file does not exist, it will be created. This utility call operates in the same fashion as the ``touch`` system command."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:19
-msgid "additional components of the file"
-msgstr ""
-
-#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:22
+#: ../../../releng-tool/releng_tool/util/io_touch.py:docstring of releng_tool.util.io_touch.touch:23
 msgid "``True`` if the file was created/updated; ``False`` if the file could not be created/updated"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:4
+#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:5
 msgid "Moves the current context into the provided working directory ``dir``. When returned, the original working directory will be restored. If the provided directory does not exist, it will created. If the directory could not be created, an ``FailedToPrepareWorkingDirectoryError`` exception will be thrown."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:19
+#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:20
 msgid "the target working directory"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:21
+#: ../../../releng-tool/releng_tool/util/io_wd.py:docstring of releng_tool.util.io_wd.wd:22
 msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.success:4
 msgid "Logs a success message to standard error with a trailing new line and (if enabled) a green colorization."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:2
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.verbose:4
 msgid "Logs a verbose message to standard out with a trailing new line and (if enabled) an inverted colorization. By default, verbose messages will not be output to standard out unless the instance is configured with verbosity."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:2
+#: ../../content/guides/script-helpers.md:58
+msgid "See also the ``--verbose`` :ref:`argument <arg-verbose>`."
+msgstr ""
+
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:4
 msgid "Logs a warning message to standard error with a trailing new line and (if enabled) a purple colorization."
 msgstr ""
 
-#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:13
+#: ../../../releng-tool/releng_tool/util/log.py:docstring of releng_tool.util.log.warn:15
 msgid "when warnings-are-errors is configured"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:47
+#: ../../content/guides/script-helpers.md:63
 msgid "Available variables"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:49
+#: ../../content/guides/script-helpers.md:65
 msgid "The following variables are registered in the global context for any project or package definition/script."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:52
+#: ../../content/guides/script-helpers.md:69
 msgid "`releng_args`"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:54
+#: ../../content/guides/script-helpers.md:72
+msgid "Variable no longer populated when [`action-pkg-exec`](action-pkg-exec) is set."
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:76
+msgid "When using [`<pkg>-exec \"<cmd>\"`](action-pkg-exec), the `releng_args` variable will not be populated. This is to prevent conflicts from project-specific argument processing and package-specific run arguments."
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:81
 msgid "A list of arguments forwarded into a releng-tool invoke. If a caller uses the `--` argument, all trailing arguments will be populated into \"forwarded argument\" list. A project may use these arguments for their own tailoring."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:59
+#: ../../content/guides/script-helpers.md:86
 msgid "A user can use Python's [`argparse`][argparse] module to manage custom arguments. For example, if trying to add a new flag `--custom` to a build, the following can be added into a project's `releng-tool.rt` definition:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:71
+#: ../../content/guides/script-helpers.md:98
 msgid "The flag can be enabled by invoking releng-tool using:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:77
+#: ../../content/guides/script-helpers.md:104
 msgid "`releng_version`"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:79
+#: ../../content/guides/script-helpers.md:106
 msgid "The version of releng-tool."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:85
+#: ../../content/guides/script-helpers.md:112
 msgid "Importing helpers"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:87
+#: ../../content/guides/script-helpers.md:114
 msgid "Scripts directly invoked by releng-tool will automatically have these helpers registered in the script's globals module (i.e. no import is necessary). If a project defines custom Python modules in their project and wishes to take advantage of these helper functions, the following import can be used to, for example, import a specific function:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:97
+#: ../../content/guides/script-helpers.md:124
 msgid "Or, if desired, all helper methods can be imported at once:"
 msgstr ""

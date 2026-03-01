@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: 2026-03-01 16:37+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/guides/quirks/quirk-ignore_failed_extensions.md:2
+msgid "Quirk `releng.ignore_failed_extensions`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-ignore_failed_extensions.md:7
+msgid ""
+"For projects that configure extensions, if an extension fails to load "
+"(either missing or a bad extension definition), the releng-tool process will"
+" stop with an error."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-ignore_failed_extensions.md:11
+msgid ""
+"If a user wants to ignore the failed loading of extension for a given run, "
+"they may do so by configuring the `releng.ignore_failed_extensions` quirk."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-ignore_failed_extensions.md:18
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-ignore_failed_extensions.md:20
+msgid "[](quirks)"
+msgstr ""

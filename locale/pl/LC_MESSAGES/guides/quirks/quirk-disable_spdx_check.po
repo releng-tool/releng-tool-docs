@@ -1,47 +1,60 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Polish (https://app.transifex.com/releng-tool/teams/171906/pl/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language-Team: Polish (https://app.transifex.com/releng-"
+"tool/teams/171906/pl/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:1
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:2
 msgid "Quirk `releng.disable_spdx_check`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:3
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:5
+msgid ""
+"This quirk is no longer applicable. SPDX license checks are now handled "
+"by the [lint action](action-lint)."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:9
 msgid ""
 "When package definitions are being processed, any license configurations "
 "will be checked to see if they conform with [SPDX license "
 "identifiers][spdx]. If not, a warning will be generated."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:7
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:13
 msgid ""
 "If a user wishes to ignore all SPDX license warnings, the "
 "`releng.disable_spdx_check` quirk can be used:"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:14
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:20
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:16
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:22
 msgid "[](quirks)"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_spdx_check.md:17
+#: ../../content/guides/quirks/quirk-disable_spdx_check.md:23
 msgid "[SPDX license identifiers][spdx]"
 msgstr ""
+

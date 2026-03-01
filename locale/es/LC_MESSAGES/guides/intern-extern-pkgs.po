@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 22:58-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/intern-extern-pkgs.md:1
 msgid "Internal/external packages"
@@ -28,32 +28,46 @@ msgstr ""
 
 #: ../../content/guides/intern-extern-pkgs.md:3
 msgid ""
-"Packages are either internal packages or external packages. All packages "
-"are considered external packages by default unless explicitly configured "
-"as internal through either the package option [`LIBFOO_INTERNAL`](pkg-"
-"opt-internal) or using the project configuration [`default_internal"
-"`](conf-default-internal) (see also [`LIBFOO_EXTERNAL`](pkg-opt-"
-"external)). Both package types are treated the same except for the "
-"following:"
+"Packages are either internal or external packages. All packages are "
+"considered external by default unless explicitly configured as internal "
+"through either a project configuration or a package option. Internal or "
+"external packages are treated the same except for the following:"
 msgstr ""
 
-#: ../../content/guides/intern-extern-pkgs.md:11
+#: ../../content/guides/intern-extern-pkgs.md:8
 msgid ""
 "An internal package will not generate output warnings if the package is "
 "missing [hash information](packages/hash-file) or an [ASCII-"
 "armor](packages/ascii-armor)."
 msgstr ""
 
-#: ../../content/guides/intern-extern-pkgs.md:14
+#: ../../content/guides/intern-extern-pkgs.md:11
 msgid ""
 "An internal package will not generate output warnings if the package is "
 "missing [licenses](licenses)."
 msgstr ""
 
-#: ../../content/guides/intern-extern-pkgs.md:16
+#: ../../content/guides/intern-extern-pkgs.md:13
 msgid ""
 "When configured for [local-sources mode](local-sources-mode), only "
 "internal packages which have local sources configured will have their "
 "fetch, extract and patch stages skipped."
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:17
+msgid ""
+"An individual package can be configured as internal using "
+"[`LIBFOO_INTERNAL`](pkg-opt-internal). For example:"
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:24
+msgid ""
+"Developers may want to instead use the project configuration "
+"[`default_internal`](conf-default-internal) to configure all packages as "
+"internal by default:"
+msgstr ""
+
+#: ../../content/guides/intern-extern-pkgs.md:32
+msgid "See also [`LIBFOO_EXTERNAL`](pkg-opt-external)."
 msgstr ""
 

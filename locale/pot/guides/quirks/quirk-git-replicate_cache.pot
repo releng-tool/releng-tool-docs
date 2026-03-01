@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,18 +20,18 @@ msgstr ""
 msgid "Quirk `releng.git.replicate_cache`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-replicate_cache.md:4
+#: ../../content/guides/quirks/quirk-git-replicate_cache.md:7
 msgid "When fetching sources for a Git-site-defined package, releng-tool will keep a project's Git repository inside a cache folder and use the project's build directory as the Git work-tree. When extracting a given revision for a project, releng-tool will also attempt to setup a `.git` file to point to the cache directory, if users want to perform Git-related commands (typically, only for unique development/testing scenarios)."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-replicate_cache.md:11
+#: ../../content/guides/quirks/quirk-git-replicate_cache.md:14
 msgid "In the case where developers want a complete copy of the Git repository in the build folder instead of a pointer to the cache, the `releng.git.replicate_cache` quirk can be enabled to force releng-tool to copy over the Git repository when a package is extracted."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-replicate_cache.md:20
+#: ../../content/guides/quirks/quirk-git-replicate_cache.md:23
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-git-replicate_cache.md:22
+#: ../../content/guides/quirks/quirk-git-replicate_cache.md:25
 msgid "[](quirks)"
 msgstr ""

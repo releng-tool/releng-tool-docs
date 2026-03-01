@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/news/2023-05-07_00.16.00.md:1
 msgid "0.16 (2023-05-07)"
@@ -33,7 +33,7 @@ msgid ""
 "As of v0.14, releng-tool supported a series of formats to use for "
 "generating a SBOM document. All these formats are generic documents, not "
 "following any specification. With v0.16, this release introduces initial "
-"support for SPDX-styled SBOM documents (JSON and RDP/XML formats)."
+"support for SPDX-styled SBOM documents (JSON and RDF/XML formats)."
 msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:10
@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../content/news/2023-05-07_00.16.00.md:18
 msgid ""
-"Introduction of the `meson` package type. These new package types allow a"
-" developer to easily invoke Meson targets at various stages, without "
+"Introduction of the `meson` package type. This new package type allow a "
+"developer to easily invoke Meson targets at various stages, without "
 "needing invoke these tools inside a scripts package."
 msgstr ""
 

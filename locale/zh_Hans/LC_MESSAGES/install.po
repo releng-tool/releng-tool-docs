@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -66,12 +66,12 @@ msgstr ""
 msgid "**Arch**"
 msgstr ""
 
-#: ../../content/install.md:52 ../../content/install.md:95
+#: ../../content/install.md:52 ../../content/install.md:80
 msgid "Using `pipx`:"
 msgstr ""
 
-#: ../../content/install.md:62 ../../content/install.md:104
-#: ../../content/install.md:119 ../../content/install.md:143
+#: ../../content/install.md:62 ../../content/install.md:89
+#: ../../content/install.md:104 ../../content/install.md:128
 msgid "Using `pip`:"
 msgstr ""
 
@@ -80,52 +80,48 @@ msgid "This package is also [available on AUR][releng-tool-aur]."
 msgstr ""
 
 #: ../../content/install.md:78
-msgid "**CentOS**"
-msgstr ""
-
-#: ../../content/install.md:93
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../content/install.md:117
+#: ../../content/install.md:102
 msgid "**openSUSE**"
 msgstr ""
 
-#: ../../content/install.md:131
+#: ../../content/install.md:116
 msgid "**Ubuntu**"
 msgstr ""
 
-#: ../../content/install.md:133
+#: ../../content/install.md:118
 msgid "Using `pipx` (Ubuntu 23.04 or above):"
 msgstr ""
 
-#: ../../content/install.md:159
+#: ../../content/install.md:144
 msgid "OS X"
 msgstr ""
 
-#: ../../content/install.md:161
+#: ../../content/install.md:146
 msgid "From a terminal, invoke the following commands if using `pipx`:"
 msgstr ""
 
-#: ../../content/install.md:171
+#: ../../content/install.md:156
 msgid "Or, if using `pip`:"
 msgstr ""
 
-#: ../../content/install.md:186
+#: ../../content/install.md:171
 msgid "Windows"
 msgstr ""
 
-#: ../../content/install.md:189
+#: ../../content/install.md:174
 msgid ""
 "If not already installed, download the most recent version of "
 "[Python][python]:"
 msgstr ""
 
-#: ../../content/install.md:191
-msgid "Python — Downloads \\ <https://www.python.org/downloads/>"
+#: ../../content/install.md:176
+msgid "Python — Downloads <https://www.python.org/downloads/>"
 msgstr ""
 
-#: ../../content/install.md:194
+#: ../../content/install.md:179
 msgid ""
 "When invoking the installer, it is recommended to select the option to "
 "\"Add Python to PATH\". However, users can explicitly invoked Python from"
@@ -133,15 +129,15 @@ msgid ""
 "available in the path)."
 msgstr ""
 
-#: ../../content/install.md:199
+#: ../../content/install.md:184
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr ""
 
-#: ../../content/install.md:208
+#: ../../content/install.md:193
 msgid "Development"
 msgstr ""
 
-#: ../../content/install.md:210
+#: ../../content/install.md:195
 msgid ""
 "To install the most recent development sources, the following [pip][pip] "
 "command can be used:"

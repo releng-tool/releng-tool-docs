@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hant\n"
+"Language-Team: zh_Hant <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../content/guides/packages/hacking.md:1
+msgid "Package hacking"
+msgstr ""
+
+#: ../../content/guides/packages/hacking.md:3
+msgid ""
+"Package types may define various command line defines and options to help"
+" support certain features or practices that best fit with releng-tool's "
+"staged processing. In some advanced scenarios, developers may wish to "
+"override these defines/options due to corner cases or preferences. "
+"Developers can perform overrides by hinting in configurations for things "
+"to remove."
+msgstr ""
+
+#: ../../content/guides/packages/hacking.md:9
+msgid ""
+"For example, [Make](/guides/packages/pkg-type-make)-based packages will "
+"include a `PREFIX` variable assignment based on the project's or "
+"package's configured prefix. This can result in the following "
+"installation command to be invoked:"
+msgstr ""
+
+#: ../../content/guides/packages/hacking.md:18
+msgid ""
+"If the assignment of `PREFIX` causes issues for a package, a developer "
+"can hint to remove such an option by configuring [`LIBFOO_INSTALL_DEFS"
+"`](pkg-opt-make-install-defs) to be as follows:"
+msgstr ""
+
+#: ../../content/guides/packages/hacking.md:28
+msgid ""
+"This will then result in the following installation command for the "
+"package:"
+msgstr ""
+
+#: ../../content/guides/packages/hacking.md:34
+msgid ""
+"Overrides are typically support on each configuration, build and install-"
+"related configurations. Not all defines/options can be overridden. As "
+"such overrides are advanced, developers are recommended to refer to the "
+"implementation for specifics. Developers can also use the [`--debug"
+"`](arg-debug) argument to see explicit commands invoked:"
+msgstr ""
+

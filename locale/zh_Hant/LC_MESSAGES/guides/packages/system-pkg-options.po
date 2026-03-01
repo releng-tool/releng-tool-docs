@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../../content/guides/packages/system-pkg-options.md:3
 msgid ""
-"The following outlines systems-specific configuration options available "
+"The following outlines system-specific configuration options available "
 "for packages."
 msgstr ""
 
@@ -35,6 +35,7 @@ msgid "`LIBFOO_VSDEVCMD`"
 msgstr ""
 
 #: ../../content/guides/packages/system-pkg-options.md:10
+#: ../../content/guides/packages/system-pkg-options.md:40
 msgid "The option is ignored in non-Windows environments."
 msgstr ""
 
@@ -54,6 +55,27 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/packages/system-pkg-options.md:33
-msgid "See also [`vsdevcmd`](conf-vsdevcmd)."
+msgid ""
+"See also [`vsdevcmd`](conf-vsdevcmd) and [`LIBFOO_VSDEVCMD_PRODUCTS"
+"`](pkg-opt-vsdevcmd-products)."
+msgstr ""
+
+#: ../../content/guides/packages/system-pkg-options.md:37
+msgid "`LIBFOO_VSDEVCMD_PRODUCTS`"
+msgstr ""
+
+#: ../../content/guides/packages/system-pkg-options.md:46
+msgid ""
+"Allows a package to configure which products to search for when releng-"
+"tool invokes [Visual Studio Locator][vswhere] to find which Visual Studio"
+" tooling to use. By default, releng-tool operates as if `vswhere` is "
+"invoked with the `-products *` argument. Providing a string in this "
+"option replaces the asterisk value with the configured value."
+msgstr ""
+
+#: ../../content/guides/packages/system-pkg-options.md:56
+msgid ""
+"See also [`vsdevcmd_products`](conf-vsdevcmd-products) and "
+"[`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd)."
 msgstr ""
 

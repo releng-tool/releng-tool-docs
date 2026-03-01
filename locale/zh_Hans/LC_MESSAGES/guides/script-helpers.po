@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -35,7 +35,15 @@ msgstr ""
 msgid "Available functions"
 msgstr ""
 
-#: of releng_tool.util.log.debug:2
+#: of releng_tool.util.log.debug:2 releng_tool.util.log.err:2
+#: releng_tool.util.log.hint:4 releng_tool.util.log.log:2
+#: releng_tool.util.log.note:2 releng_tool.util.log.success:2
+#: releng_tool.util.log.verbose:2 releng_tool.util.log.warn:2
+#: releng_tool.util.platform.platform_exit:2
+msgid "Provided message will now expand variables."
+msgstr ""
+
+#: of releng_tool.util.log.debug:4
 msgid ""
 "Logs a debug message to standard out with a trailing new line. By "
 "default, debug messages will not be output to standard out unless the "
@@ -46,23 +54,27 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: of releng_tool.util.log.debug:10 releng_tool.util.log.err:9
-#: releng_tool.util.log.hint:12 releng_tool.util.log.log:8
-#: releng_tool.util.log.note:9 releng_tool.util.log.success:9
-#: releng_tool.util.log.verbose:10 releng_tool.util.log.warn:9
+#: of releng_tool.util.log.debug:12 releng_tool.util.log.err:11
+#: releng_tool.util.log.hint:13 releng_tool.util.log.log:10
+#: releng_tool.util.log.note:11 releng_tool.util.log.success:11
+#: releng_tool.util.log.verbose:12 releng_tool.util.log.warn:11
 msgid "the message"
 msgstr ""
 
-#: of releng_tool.util.log.debug:11 releng_tool.util.log.err:10
-#: releng_tool.util.log.hint:13 releng_tool.util.log.log:9
-#: releng_tool.util.log.note:10 releng_tool.util.log.success:10
-#: releng_tool.util.log.verbose:11 releng_tool.util.log.warn:10
+#: of releng_tool.util.log.debug:13 releng_tool.util.log.err:12
+#: releng_tool.util.log.hint:14 releng_tool.util.log.log:11
+#: releng_tool.util.log.note:12 releng_tool.util.log.success:12
+#: releng_tool.util.log.verbose:13 releng_tool.util.log.warn:12
 msgid ""
 "an arbitrary set of positional and keyword arguments used when generating"
 " a formatted message"
 msgstr ""
 
-#: of releng_tool.util.log.err:2
+#: ../../content/guides/script-helpers.md:13
+msgid "See also the ``--debug`` :ref:`argument <arg-debug>`."
+msgstr ""
+
+#: of releng_tool.util.log.err:4
 msgid ""
 "Logs an error message to standard error with a trailing new line and (if "
 "enabled) a red colorization."
@@ -72,56 +84,68 @@ msgstr ""
 msgid "Ensure availability in script helpers."
 msgstr ""
 
-#: of releng_tool.util.log.hint:5
+#: of releng_tool.util.log.hint:6
 msgid ""
 "Logs a hint message to standard out with a trailing new line and (if "
 "enabled) a cyan colorization."
 msgstr ""
 
-#: of releng_tool.util.log.log:2
+#: of releng_tool.util.log.log:4
 msgid "Logs a (normal) message to standard out with a trailing new line."
 msgstr ""
 
-#: of releng_tool.util.log.note:2
+#: of releng_tool.util.log.note:4
 msgid ""
 "Logs a notification message to standard out with a trailing new line and "
 "(if enabled) an inverted colorization."
 msgstr ""
 
-#: of releng_tool.util.io_cat.cat:3 releng_tool.util.io_ls.ls:4
-#: releng_tool.util.io_mkdir.mkdir:6 releng_tool.util.io_remove.path_remove:2
+#: of releng_tool.support.releng_include:3 releng_tool.util.io_cat.cat:3
+#: releng_tool.util.io_copy.path_copy:4
+#: releng_tool.util.io_copy.path_copy_into:4
+#: releng_tool.util.io_exists.path_exists:2 releng_tool.util.io_ls.ls:4
+#: releng_tool.util.io_mkdir.mkdir:6 releng_tool.util.io_move.path_move:4
+#: releng_tool.util.io_move.path_move_into:4
+#: releng_tool.util.io_remove.path_remove:2
+#: releng_tool.util.io_symlink.symlink:8
 #: releng_tool.util.io_temp_dir.temp_dir:2 releng_tool.util.io_touch.touch:2
 #: releng_tool.util.io_wd.wd:2
 msgid "Accepts a str, bytes or os.PathLike."
 msgstr ""
 
-#: of releng_tool.util.io_cat.cat:5
+#: of releng_tool.util.io_cat.cat:4 releng_tool.util.io_touch.touch:4
+msgid "Provided file will now expand variables."
+msgstr ""
+
+#: of releng_tool.util.io_cat.cat:6
 msgid ""
 "Attempts to read one or more files provided to this call. For each file, "
 "it will be read and printed out to the standard output."
 msgstr ""
 
-#: of releng_tool.support.releng_include:9
-#: releng_tool.support.require_version:13 releng_tool.util.env.env_value:11
-#: releng_tool.util.io.execute:42 releng_tool.util.io.execute_rv:26
-#: releng_tool.util.io.path_exists:5 releng_tool.util.io_cat.cat:8
-#: releng_tool.util.io_copy.path_copy:17
-#: releng_tool.util.io_copy.path_copy_into:14 releng_tool.util.io_ls.ls:9
-#: releng_tool.util.io_mkdir.mkdir:14 releng_tool.util.io_move.path_move:19
-#: releng_tool.util.io_move.path_move_into:16
-#: releng_tool.util.io_remove.path_remove:10
-#: releng_tool.util.io_symlink.symlink:29
-#: releng_tool.util.io_temp_dir.temp_dir:11 releng_tool.util.io_touch.touch:9
-#: releng_tool.util.io_wd.wd:10 releng_tool.util.platform.platform_exit:11
+#: of releng_tool.support.releng_include:12
+#: releng_tool.support.require_version:13 releng_tool.util.env.env_value:13
+#: releng_tool.util.global_define:7 releng_tool.util.io.execute:36
+#: releng_tool.util.io.execute_rv:26 releng_tool.util.io_cat.cat:9
+#: releng_tool.util.io_copy.path_copy:19
+#: releng_tool.util.io_copy.path_copy_into:16
+#: releng_tool.util.io_exists.path_exists:8 releng_tool.util.io_ls.ls:10
+#: releng_tool.util.io_mkdir.mkdir:15 releng_tool.util.io_move.path_move:21
+#: releng_tool.util.io_move.path_move_into:18
+#: releng_tool.util.io_path.releng_register_path:14
+#: releng_tool.util.io_remove.path_remove:11
+#: releng_tool.util.io_symlink.symlink:31
+#: releng_tool.util.io_temp_dir.temp_dir:12 releng_tool.util.io_touch.touch:10
+#: releng_tool.util.io_wd.wd:11 releng_tool.util.platform.platform_exit:13
 #: releng_tool.util.string.expand:14
 msgid "An example when using in the context of script helpers is as follows:"
 msgstr ""
 
-#: of releng_tool.util.io_cat.cat:14 releng_tool.util.io_touch.touch:18
+#: of releng_tool.util.io_cat.cat:15 releng_tool.util.io_touch.touch:19
 msgid "the file"
 msgstr ""
 
-#: of releng_tool.util.io_cat.cat:15
+#: of releng_tool.util.io_cat.cat:16
 msgid "additional files to include"
 msgstr ""
 
@@ -129,7 +153,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: of releng_tool.util.io_cat.cat:18
+#: of releng_tool.util.io_cat.cat:19
 msgid ""
 "``True`` if all the files exists and were printed to the standard output;"
 " ``False`` if one or more files could not be read"
@@ -147,6 +171,14 @@ msgid "Add support for ``nested``."
 msgstr ""
 
 #: of releng_tool.util.io_copy.path_copy:5
+#: releng_tool.util.io_copy.path_copy_into:5
+#: releng_tool.util.io_move.path_move:5
+#: releng_tool.util.io_move.path_move_into:5
+#: releng_tool.util.io_symlink.symlink:9
+msgid "Provided paths will now expand variables."
+msgstr ""
+
+#: of releng_tool.util.io_copy.path_copy:7
 msgid ""
 "This call will attempt to copy a provided file, directory's contents or "
 "directory itself (if ``nested`` is ``True``); defined by ``src`` into a "
@@ -161,49 +193,50 @@ msgid ""
 "will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy:39
-#: releng_tool.util.io_copy.path_copy_into:36
-#: releng_tool.util.io_move.path_move:35
-#: releng_tool.util.io_move.path_move_into:35
+#: of releng_tool.util.io_copy.path_copy:41
+#: releng_tool.util.io_copy.path_copy_into:38
+#: releng_tool.util.io_move.path_move:37
+#: releng_tool.util.io_move.path_move_into:37
 msgid "the source directory or file"
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy:40
-#: releng_tool.util.io_move.path_move:36
+#: of releng_tool.util.io_copy.path_copy:42
+#: releng_tool.util.io_move.path_move:38
 msgid "the destination directory or file\\* (\\*if ``src`` is a file)"
 msgstr ""
 
 #: of releng_tool.support.require_version:21
-#: releng_tool.util.io_copy.path_copy:41
-#: releng_tool.util.io_copy.path_copy_into:38
-#: releng_tool.util.io_move.path_move:37
-#: releng_tool.util.io_move.path_move_into:37
-#: releng_tool.util.io_remove.path_remove:19
-msgid "whether or not to suppress output"
-msgstr ""
-
-#: of releng_tool.support.require_version:23
 #: releng_tool.util.io_copy.path_copy:43
 #: releng_tool.util.io_copy.path_copy_into:40
 #: releng_tool.util.io_move.path_move:39
 #: releng_tool.util.io_move.path_move_into:39
+#: releng_tool.util.io_remove.path_remove:20
+msgid "whether or not to suppress output"
+msgstr ""
+
+#: of releng_tool.support.require_version:23
+#: releng_tool.util.io_copy.path_copy:45
+#: releng_tool.util.io_copy.path_copy_into:42
+#: releng_tool.util.io_move.path_move:41
+#: releng_tool.util.io_move.path_move_into:41
+#: releng_tool.util.io_path.releng_register_path:21
 msgid "whether or not to stop execution on failure"
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy:45
-#: releng_tool.util.io_move.path_move:41
+#: of releng_tool.util.io_copy.path_copy:47
+#: releng_tool.util.io_move.path_move:43
 msgid "force hint that the destination is a directory"
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy:47
-#: releng_tool.util.io_copy.path_copy_into:42
-#: releng_tool.util.io_move.path_move:43
-#: releng_tool.util.io_move.path_move_into:41
+#: of releng_tool.util.io_copy.path_copy:49
+#: releng_tool.util.io_copy.path_copy_into:44
+#: releng_tool.util.io_move.path_move:45
+#: releng_tool.util.io_move.path_move_into:43
 msgid "nest a source directory into the destination"
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy:50
-#: releng_tool.util.io_copy.path_copy_into:45
+#: of releng_tool.util.io_copy.path_copy:52
+#: releng_tool.util.io_copy.path_copy_into:47
 msgid ""
 "``True`` if the copy has completed with no error; ``False`` if the copy "
 "has failed"
@@ -213,14 +246,14 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy:53
-#: releng_tool.util.io_copy.path_copy_into:48
-#: releng_tool.util.io_move.path_move:49
-#: releng_tool.util.io_move.path_move_into:47
+#: of releng_tool.util.io_copy.path_copy:55
+#: releng_tool.util.io_copy.path_copy_into:50
+#: releng_tool.util.io_move.path_move:51
+#: releng_tool.util.io_move.path_move_into:49
 msgid "if the copy operation fails with ``critical=True``"
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy_into:5
+#: of releng_tool.util.io_copy.path_copy_into:7
 msgid ""
 "This call will attempt to copy a provided file, directory's contents or "
 "directory itself (if ``nested`` is ``True``); defined by ``src`` into a "
@@ -232,30 +265,58 @@ msgid ""
 "any reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng_tool.util.io_copy.path_copy_into:37
-#: releng_tool.util.io_move.path_move_into:36
+#: of releng_tool.util.io_copy.path_copy_into:39
+#: releng_tool.util.io_move.path_move_into:38
 msgid "the destination directory"
 msgstr ""
 
-#: of releng_tool.util.env.env_value:4
+#: of releng_tool.util.global_define:4
+msgid ""
+"Ensures a provided variable is defined in the caller's global context. If"
+" not, the variable will be defined with the provided default value."
+msgstr ""
+
+#: of releng_tool.util.global_define:17
+msgid "the define/variable name"
+msgstr ""
+
+#: of releng_tool.util.global_define:18
+msgid "the default value to use if the define is not set"
+msgstr ""
+
+#: of releng_tool.util.global_define:21
+msgid "the set value for this define"
+msgstr ""
+
+#: of releng_tool.util.env.env_value:3
+msgid "Support the ``overwrite`` argument."
+msgstr ""
+
+#: of releng_tool.util.env.env_value:5
 msgid ""
 "Provides a caller a simple method to fetch or configure an environment "
 "variable for the current context. This call is the same as if one "
 "directly fetched from or managed a key-value with ``os.environ``. If "
 "``value`` is not provided, the environment variable's value (if set) will"
 " be returned. If ``value`` is set to a value of ``None``, any set "
-"environment variable will be removed."
+"environment variable will be removed. A caller can also set "
+"``overwrite=False`` to avoid overwriting an already configured "
+"environment variable."
 msgstr ""
 
-#: of releng_tool.util.env.env_value:21
+#: of releng_tool.util.env.env_value:26
 msgid "the environment key"
 msgstr ""
 
-#: of releng_tool.util.env.env_value:22
+#: of releng_tool.util.env.env_value:27
 msgid "the environment value to set"
 msgstr ""
 
-#: of releng_tool.util.env.env_value:25
+#: of releng_tool.util.env.env_value:29
+msgid "whether to overwrite an environment variable"
+msgstr ""
+
+#: of releng_tool.util.env.env_value:32
 msgid "the value of the environment variable"
 msgstr ""
 
@@ -309,72 +370,62 @@ msgstr ""
 
 #: of releng_tool.util.io.execute:32
 msgid ""
-"In special cases, an executing process may not provide carriage "
-"returns/new lines to simple output processing. This can lead the output "
-"of a process to be undesirably buffered. To workaround this issue, the "
-"execution call can instead poll for output results by using the ``poll`` "
-"option with a value of ``True``. By default, polling is disabled with a "
-"value of ``False``."
-msgstr ""
-
-#: of releng_tool.util.io.execute:38
-msgid ""
 "A caller may wish to capture the provided output from a process for "
 "examination. If a list is provided in the call argument ``capture``, the "
 "list will be populated with the output provided from an invoked process."
 msgstr ""
 
-#: of releng_tool.util.io.execute:48
+#: of releng_tool.util.io.execute:42
 msgid "the list of arguments to execute"
 msgstr ""
 
-#: of releng_tool.util.io.execute:49 releng_tool.util.io.execute_rv:35
+#: of releng_tool.util.io.execute:43 releng_tool.util.io.execute_rv:35
 msgid "working directory to use"
 msgstr ""
 
-#: of releng_tool.util.io.execute:51 releng_tool.util.io.execute_rv:36
+#: of releng_tool.util.io.execute:45 releng_tool.util.io.execute_rv:36
 msgid "environment variables to use for the process"
 msgstr ""
 
-#: of releng_tool.util.io.execute:53 releng_tool.util.io.execute_rv:37
+#: of releng_tool.util.io.execute:47 releng_tool.util.io.execute_rv:37
 msgid "environment variables to append for the process"
 msgstr ""
 
-#: of releng_tool.util.io.execute:55 releng_tool.util.io_mkdir.mkdir:33
+#: of releng_tool.util.io.execute:49 releng_tool.util.io_mkdir.mkdir:34
 msgid "whether or not to suppress output (defaults to ``False``)"
 msgstr ""
 
-#: of releng_tool.util.io.execute:58
+#: of releng_tool.util.io.execute:52
 msgid "whether or not to stop execution on failure (defaults to ``True``)"
 msgstr ""
 
-#: of releng_tool.util.io.execute:61
-msgid "force polling stdin/stdout for output data (defaults to ``False``)"
+#: of releng_tool.util.io.execute:55
+msgid "obsolete/ignored argument"
 msgstr ""
 
-#: of releng_tool.util.io.execute:64
+#: of releng_tool.util.io.execute:57
 msgid "list to capture output into"
 msgstr ""
 
-#: of releng_tool.util.io.execute:66 releng_tool.util.io.execute_rv:38
+#: of releng_tool.util.io.execute:59 releng_tool.util.io.execute_rv:38
 msgid "perform variable expansion on arguments"
 msgstr ""
 
-#: of releng_tool.util.io.execute:68 releng_tool.util.io.execute_rv:39
+#: of releng_tool.util.io.execute:61 releng_tool.util.io.execute_rv:39
 msgid "invoke arguments as a single string"
 msgstr ""
 
-#: of releng_tool.util.io.execute:70 releng_tool.util.io.execute_rv:40
+#: of releng_tool.util.io.execute:63 releng_tool.util.io.execute_rv:40
 msgid "ignore any stderr output"
 msgstr ""
 
-#: of releng_tool.util.io.execute:73
+#: of releng_tool.util.io.execute:66
 msgid ""
 "``True`` if the execution has completed with no error; ``False`` if the "
 "execution has failed"
 msgstr ""
 
-#: of releng_tool.util.io.execute:76
+#: of releng_tool.util.io.execute:69
 msgid "if the execution operation fails with ``critical=True``"
 msgstr ""
 
@@ -398,25 +449,31 @@ msgstr ""
 msgid "the return code and output of the execution request"
 msgstr ""
 
-#: of releng_tool.util.io.path_exists:2
+#: of releng_tool.util.io_exists.path_exists:3
+#: releng_tool.util.io_remove.path_remove:3
+msgid "Provided path will now expand variables."
+msgstr ""
+
+#: of releng_tool.util.io_exists.path_exists:5
 msgid ""
 "Allows a caller to verify the existence of a file on the file system. "
 "This call will return ``True`` if the path exists; ``False`` otherwise."
 msgstr ""
 
-#: of releng_tool.util.io.path_exists:14
+#: of releng_tool.util.io_exists.path_exists:17
 msgid "the path"
 msgstr ""
 
-#: of releng_tool.util.io.path_exists:15
-msgid "additional path parts"
+#: of releng_tool.util.io_exists.path_exists:18
+#: releng_tool.util.io_touch.touch:20
+msgid "additional components of the file"
 msgstr ""
 
-#: of releng_tool.util.io.path_exists:17
+#: of releng_tool.util.io_exists.path_exists:21
 msgid "``True`` if the path exists; ``False`` otherwise"
 msgstr ""
 
-#: of releng_tool.util.platform.platform_exit:2
+#: of releng_tool.util.platform.platform_exit:4
 msgid ""
 "Provides a convenience method to help invoke a system exit call without "
 "needing to explicitly use ``sys``. A caller can provide a message to "
@@ -428,17 +485,17 @@ msgid ""
 "provided code value will be used."
 msgstr ""
 
-#: of releng_tool.util.platform.platform_exit:17
+#: of releng_tool.util.platform.platform_exit:19
 msgid "error message to print"
 msgstr ""
 
-#: of releng_tool.util.platform.platform_exit:19
+#: of releng_tool.util.platform.platform_exit:21
 msgid ""
 "exit code; defaults to 0 if no message or defaults to 1 if a message is "
 "set"
 msgstr ""
 
-#: of releng_tool.util.platform.platform_exit:23
+#: of releng_tool.util.platform.platform_exit:25
 msgid "always raised"
 msgstr ""
 
@@ -471,6 +528,14 @@ msgid "the expanded object"
 msgstr ""
 
 #: of releng_tool.support.releng_include:4
+msgid "Provided file path will now expand variables."
+msgstr ""
+
+#: of releng_tool.support.releng_include:5
+msgid "Introduce the ``source`` argument."
+msgstr ""
+
+#: of releng_tool.support.releng_include:7
 msgid ""
 "The provided call will execute code at the provided file path. The path "
 "will be relative to the caller's script, unless an absolute path is "
@@ -478,11 +543,21 @@ msgid ""
 "the caller's script."
 msgstr ""
 
-#: of releng_tool.support.releng_include:16
+#: of releng_tool.support.releng_include:19
+msgid ""
+"Changes to the global context can be imported into the caller's context "
+"by enabling the ``source`` argument. For example:"
+msgstr ""
+
+#: of releng_tool.support.releng_include:29
 msgid "the script to invoke"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:29
+#: of releng_tool.support.releng_include:30
+msgid "import globals into invoking script"
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:33
 msgid ""
 "An alias for ``os.path.join``. See also "
 "https://docs.python.org/library/os.path.html#os.path.join."
@@ -492,21 +567,26 @@ msgstr ""
 msgid "Add support for ``recursive``."
 msgstr ""
 
-#: of releng_tool.util.io_ls.ls:6
+#: of releng_tool.util.io_ls.ls:5 releng_tool.util.io_mkdir.mkdir:7
+#: releng_tool.util.io_temp_dir.temp_dir:4 releng_tool.util.io_wd.wd:3
+msgid "Provided directory will now expand variables."
+msgstr ""
+
+#: of releng_tool.util.io_ls.ls:7
 msgid ""
 "Attempts to read a directory for its contents and prints this information"
 " to the configured standard output stream."
 msgstr ""
 
-#: of releng_tool.util.io_ls.ls:15 releng_tool.util.io_mkdir.mkdir:30
+#: of releng_tool.util.io_ls.ls:16 releng_tool.util.io_mkdir.mkdir:31
 msgid "the directory"
 msgstr ""
 
-#: of releng_tool.util.io_ls.ls:16
+#: of releng_tool.util.io_ls.ls:17
 msgid "recursive search of entries"
 msgstr ""
 
-#: of releng_tool.util.io_ls.ls:19
+#: of releng_tool.util.io_ls.ls:20
 msgid ""
 "``True`` if the directory could be read and its contents have been "
 "printed to the standard output; ``False`` if the directory could not be "
@@ -525,7 +605,7 @@ msgstr ""
 msgid "Returns the created path."
 msgstr ""
 
-#: of releng_tool.util.io_mkdir.mkdir:8
+#: of releng_tool.util.io_mkdir.mkdir:9
 msgid ""
 "Attempts to create the provided directory. If the directory already "
 "exists, this method has no effect. If the directory does not exist and "
@@ -534,19 +614,19 @@ msgid ""
 "(unless ``quiet`` is set to ``True``)."
 msgstr ""
 
-#: of releng_tool.util.io_mkdir.mkdir:31
+#: of releng_tool.util.io_mkdir.mkdir:32
 msgid "additional components of the directory"
 msgstr ""
 
-#: of releng_tool.util.io_mkdir.mkdir:36
+#: of releng_tool.util.io_mkdir.mkdir:37
 msgid "whether or not to stop execution on failure (defaults to ``False``)"
 msgstr ""
 
-#: of releng_tool.util.io_mkdir.mkdir:40
+#: of releng_tool.util.io_mkdir.mkdir:41
 msgid "the directory that exists; ``None`` if the directory could not be created"
 msgstr ""
 
-#: of releng_tool.util.io_move.path_move:5
+#: of releng_tool.util.io_move.path_move:7
 msgid ""
 "This call will attempt to move a provided file, directory's contents or "
 "directory itself (if ``nested`` is ``True``); defined by ``src`` into a "
@@ -557,8 +637,8 @@ msgid ""
 "automatically created."
 msgstr ""
 
-#: of releng_tool.util.io_move.path_move:13
-#: releng_tool.util.io_move.path_move_into:10
+#: of releng_tool.util.io_move.path_move:15
+#: releng_tool.util.io_move.path_move_into:12
 msgid ""
 "In the event that a file or directory could not be moved, an error "
 "message will be output to standard error (unless ``quiet`` is set to "
@@ -567,14 +647,14 @@ msgid ""
 "system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng_tool.util.io_move.path_move:46
-#: releng_tool.util.io_move.path_move_into:44
+#: of releng_tool.util.io_move.path_move:48
+#: releng_tool.util.io_move.path_move_into:46
 msgid ""
 "``True`` if the move has completed with no error; ``False`` if the move "
 "has failed"
 msgstr ""
 
-#: of releng_tool.util.io_move.path_move_into:5
+#: of releng_tool.util.io_move.path_move_into:7
 msgid ""
 "This call will attempt to move a provided file, directory's contents or "
 "directory itself (if ``nested`` is ``True``); defined by ``src`` into a "
@@ -582,7 +662,43 @@ msgid ""
 " does not exist, it will be automatically created."
 msgstr ""
 
-#: of releng_tool.util.io_remove.path_remove:4
+#: ../../content/guides/script-helpers.md:45
+msgid ""
+"An alias for ``pathlib.Path``. See also "
+"https://docs.python.org/3/library/pathlib.html#pathlib.Path."
+msgstr ""
+
+#: of releng_tool.util.io_path.releng_register_path:4
+msgid ""
+"This call will register a provided path into the Python module search "
+"path (``sys.path``). This can be useful for situations when trying to "
+"load a local/relative folder containing extensions or other enhancements "
+"a developer wants to use/import. If ``critical`` is set to ``True`` and "
+"the specified directory could not be registered for any reason, this call"
+" will issue a system exit (``SystemExit``)."
+msgstr ""
+
+#: of releng_tool.util.io_path.releng_register_path:11
+msgid ""
+"If the provided path is already registered, the call is ignored and will "
+"return as if a registration was made (``True``)."
+msgstr ""
+
+#: of releng_tool.util.io_path.releng_register_path:20
+msgid "the directory to register"
+msgstr ""
+
+#: of releng_tool.util.io_path.releng_register_path:24
+msgid ""
+"``True`` if the path has been registered; ``False`` if the registration "
+"has failed"
+msgstr ""
+
+#: of releng_tool.util.io_path.releng_register_path:27
+msgid "if the registration fails with ``critical=True``"
+msgstr ""
+
+#: of releng_tool.util.io_remove.path_remove:5
 msgid ""
 "Attempts to remove the provided path if it exists. The path value can "
 "either be a directory or a specific file. If the provided path does not "
@@ -592,11 +708,11 @@ msgid ""
 "to ``True``)."
 msgstr ""
 
-#: of releng_tool.util.io_remove.path_remove:18
+#: of releng_tool.util.io_remove.path_remove:19
 msgid "the path to remove"
 msgstr ""
 
-#: of releng_tool.util.io_remove.path_remove:22
+#: of releng_tool.util.io_remove.path_remove:23
 msgid ""
 "``True`` if the path was removed or does not exist; ``False`` if the path"
 " could not be removed from the system"
@@ -604,11 +720,11 @@ msgstr ""
 
 #: of releng_tool.util.io_symlink.symlink:4
 msgid ""
-"this call may not work in Windows environments if the user invoking "
+"This call may not work in Windows environments if the user invoking "
 "releng-tool does not have permission to create symbolic links."
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:9
+#: of releng_tool.util.io_symlink.symlink:11
 msgid ""
 "This call will attempt to create a symbolic link to a ``target`` path. A "
 "provided ``link_path`` determines where the symbolic link will be "
@@ -619,7 +735,7 @@ msgid ""
 "the provided ``target`` path."
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:17
+#: of releng_tool.util.io_symlink.symlink:19
 msgid ""
 "If a symbolic link already exists at the provided link path, the symbolic"
 " link will be replaced with the new ``target``. If the resolved link path"
@@ -627,7 +743,7 @@ msgid ""
 "attempt to create a symbolic link."
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:22
+#: of releng_tool.util.io_symlink.symlink:24
 msgid ""
 "If the directory structure of a provided ``link_path`` does not exist, it"
 " will be automatically created. In the event that a symbolic link or "
@@ -637,37 +753,37 @@ msgid ""
 "reason, this call will issue a system exit (``SystemExit``)."
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:48
+#: of releng_tool.util.io_symlink.symlink:50
 msgid "the source path to link to"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:49
+#: of releng_tool.util.io_symlink.symlink:51
 msgid "the symbolic link path"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:50
+#: of releng_tool.util.io_symlink.symlink:52
 msgid "whether to suppress output"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:52
+#: of releng_tool.util.io_symlink.symlink:54
 msgid "whether to stop execution on failure"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:54
+#: of releng_tool.util.io_symlink.symlink:56
 msgid "hint that the link is a directory to create in"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:56
+#: of releng_tool.util.io_symlink.symlink:58
 msgid "whether to build a relative link"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:59
+#: of releng_tool.util.io_symlink.symlink:61
 msgid ""
 "``True`` if the symbolic link has been created; ``False`` if the symbolic"
 " link could not be created"
 msgstr ""
 
-#: of releng_tool.util.io_symlink.symlink:62
+#: of releng_tool.util.io_symlink.symlink:64
 msgid "if the symbolic link operation fails with ``critical=True``"
 msgstr ""
 
@@ -708,7 +824,7 @@ msgstr ""
 msgid "Add support for ``*args`` and ``**wd``."
 msgstr ""
 
-#: of releng_tool.util.io_temp_dir.temp_dir:5
+#: of releng_tool.util.io_temp_dir.temp_dir:6
 msgid ""
 "Creates a temporary directory in the provided directory ``dir_`` (or "
 "system default, is not provided). This is a context-supported call and "
@@ -718,17 +834,17 @@ msgid ""
 "thrown."
 msgstr ""
 
-#: of releng_tool.util.io_temp_dir.temp_dir:18
+#: of releng_tool.util.io_temp_dir.temp_dir:19
 msgid "the directory to create the temporary directory in"
 msgstr ""
 
-#: of releng_tool.util.io_temp_dir.temp_dir:20
+#: of releng_tool.util.io_temp_dir.temp_dir:21
 msgid ""
 "whether to use the temporary directory as the working directory (defaults"
 " to ``False``)"
 msgstr ""
 
-#: of releng_tool.util.io_temp_dir.temp_dir:24
+#: of releng_tool.util.io_temp_dir.temp_dir:25
 msgid "the base directory does not exist and     could not be created"
 msgstr ""
 
@@ -736,24 +852,20 @@ msgstr ""
 msgid "Add support for ``*args``."
 msgstr ""
 
-#: of releng_tool.util.io_touch.touch:5
+#: of releng_tool.util.io_touch.touch:6
 msgid ""
 "Attempts to update the access/modifications times on a file. If the file "
 "does not exist, it will be created. This utility call operates in the "
 "same fashion as the ``touch`` system command."
 msgstr ""
 
-#: of releng_tool.util.io_touch.touch:19
-msgid "additional components of the file"
-msgstr ""
-
-#: of releng_tool.util.io_touch.touch:22
+#: of releng_tool.util.io_touch.touch:23
 msgid ""
 "``True`` if the file was created/updated; ``False`` if the file could not"
 " be created/updated"
 msgstr ""
 
-#: of releng_tool.util.io_wd.wd:4
+#: of releng_tool.util.io_wd.wd:5
 msgid ""
 "Moves the current context into the provided working directory ``dir``. "
 "When returned, the original working directory will be restored. If the "
@@ -762,21 +874,21 @@ msgid ""
 "exception will be thrown."
 msgstr ""
 
-#: of releng_tool.util.io_wd.wd:19
+#: of releng_tool.util.io_wd.wd:20
 msgid "the target working directory"
 msgstr ""
 
-#: of releng_tool.util.io_wd.wd:21
+#: of releng_tool.util.io_wd.wd:22
 msgid "the working directory does not     exist and could not be created"
 msgstr ""
 
-#: of releng_tool.util.log.success:2
+#: of releng_tool.util.log.success:4
 msgid ""
 "Logs a success message to standard error with a trailing new line and (if"
 " enabled) a green colorization."
 msgstr ""
 
-#: of releng_tool.util.log.verbose:2
+#: of releng_tool.util.log.verbose:4
 msgid ""
 "Logs a verbose message to standard out with a trailing new line and (if "
 "enabled) an inverted colorization. By default, verbose messages will not "
@@ -784,31 +896,48 @@ msgid ""
 "verbosity."
 msgstr ""
 
-#: of releng_tool.util.log.warn:2
+#: ../../content/guides/script-helpers.md:58
+msgid "See also the ``--verbose`` :ref:`argument <arg-verbose>`."
+msgstr ""
+
+#: of releng_tool.util.log.warn:4
 msgid ""
 "Logs a warning message to standard error with a trailing new line and (if"
 " enabled) a purple colorization."
 msgstr ""
 
-#: of releng_tool.util.log.warn:13
+#: of releng_tool.util.log.warn:15
 msgid "when warnings-are-errors is configured"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:47
+#: ../../content/guides/script-helpers.md:63
 msgid "Available variables"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:49
+#: ../../content/guides/script-helpers.md:65
 msgid ""
 "The following variables are registered in the global context for any "
 "project or package definition/script."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:52
+#: ../../content/guides/script-helpers.md:69
 msgid "`releng_args`"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:54
+#: ../../content/guides/script-helpers.md:72
+msgid ""
+"Variable no longer populated when [`action-pkg-exec`](action-pkg-exec) is"
+" set."
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:76
+msgid ""
+"When using [`<pkg>-exec \"<cmd>\"`](action-pkg-exec), the `releng_args` "
+"variable will not be populated. This is to prevent conflicts from "
+"project-specific argument processing and package-specific run arguments."
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:81
 msgid ""
 "A list of arguments forwarded into a releng-tool invoke. If a caller uses"
 " the `--` argument, all trailing arguments will be populated into "
@@ -816,7 +945,7 @@ msgid ""
 "own tailoring."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:59
+#: ../../content/guides/script-helpers.md:86
 msgid ""
 "A user can use Python's [`argparse`][argparse] module to manage custom "
 "arguments. For example, if trying to add a new flag `--custom` to a "
@@ -824,23 +953,23 @@ msgid ""
 "definition:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:71
+#: ../../content/guides/script-helpers.md:98
 msgid "The flag can be enabled by invoking releng-tool using:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:77
+#: ../../content/guides/script-helpers.md:104
 msgid "`releng_version`"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:79
+#: ../../content/guides/script-helpers.md:106
 msgid "The version of releng-tool."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:85
+#: ../../content/guides/script-helpers.md:112
 msgid "Importing helpers"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:87
+#: ../../content/guides/script-helpers.md:114
 msgid ""
 "Scripts directly invoked by releng-tool will automatically have these "
 "helpers registered in the script's globals module (i.e. no import is "
@@ -849,7 +978,7 @@ msgid ""
 "import can be used to, for example, import a specific function:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:97
+#: ../../content/guides/script-helpers.md:124
 msgid "Or, if desired, all helper methods can be imported at once:"
 msgstr ""
 

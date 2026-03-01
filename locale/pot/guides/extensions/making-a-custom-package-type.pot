@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,117 +104,117 @@ msgstr ""
 msgid "To test that the new package type is triggered at desired stages, use an existing releng-tool project and register this new example extension into the releng-tool process:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:116
+#: ../../content/guides/extensions/making-a-custom-package-type.md:114
 msgid "Next, we will create/update a package which will use this new type. For example, for a `libfoo` package, we will configure the package type to `ext-mapt` and track a custom extension option `mapt-build-type` with a value of `release` (which we can later use to forward to our build script)."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:130
+#: ../../content/guides/extensions/making-a-custom-package-type.md:128
 msgid "When running releng-tool, the following messages should be printed during a run:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:143
+#: ../../content/guides/extensions/making-a-custom-package-type.md:141
 msgid "Implement the configuration stage"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:145
+#: ../../content/guides/extensions/making-a-custom-package-type.md:143
 msgid "With the extension being triggered at expected locations, we can now provide implementation for these hooks to trigger the required `prepare` and `build` scripts. The following steps will edit the existing `MyAwesomePackageType.py` file."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:150
+#: ../../content/guides/extensions/making-a-custom-package-type.md:148
 msgid "First, add some utility calls for the upcoming implementation:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:167
+#: ../../content/guides/extensions/making-a-custom-package-type.md:165
 msgid "The above adds the following:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:169
+#: ../../content/guides/extensions/making-a-custom-package-type.md:167
 msgid "`SHELL_BIN`: we define the shell executable to be invoked"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:170
+#: ../../content/guides/extensions/making-a-custom-package-type.md:168
 msgid "`releng_execute`: to be used to invoke our prepare/build scripts"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:171
+#: ../../content/guides/extensions/making-a-custom-package-type.md:169
 msgid "`releng_exists`: to help check if a package has expected scripts"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:172
+#: ../../content/guides/extensions/making-a-custom-package-type.md:170
 msgid "`releng_exit`: to help exit configure/build events on error"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:173
+#: ../../content/guides/extensions/making-a-custom-package-type.md:171
 msgid "`releng_join`: to help join paths for script targets"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:174
+#: ../../content/guides/extensions/making-a-custom-package-type.md:172
 msgid "`verbose`: some verbose message support to help development/error cases"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:176
+#: ../../content/guides/extensions/making-a-custom-package-type.md:174
 msgid "Developers can use any supported Python packages/modules for this running environment, and this example uses a series of helper functions provided by releng-tool for convenience. Using releng-tool helper functions is not required if implementations wish to use another approach for their implementation."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:182
+#: ../../content/guides/extensions/making-a-custom-package-type.md:180
 msgid "We will implement the configuration event for our extension:"
+msgstr ""
+
+#: ../../content/guides/extensions/making-a-custom-package-type.md:195
+#: ../../content/guides/extensions/making-a-custom-package-type.md:224
+msgid "The above will:"
 msgstr ""
 
 #: ../../content/guides/extensions/making-a-custom-package-type.md:197
 #: ../../content/guides/extensions/making-a-custom-package-type.md:226
-msgid "The above will:"
-msgstr ""
-
-#: ../../content/guides/extensions/making-a-custom-package-type.md:199
-#: ../../content/guides/extensions/making-a-custom-package-type.md:228
 msgid "Trigger a verbose message (if releng-tool is running with `--verbose`)."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:200
+#: ../../content/guides/extensions/making-a-custom-package-type.md:198
 msgid "Build the `prepare` script path expected in the project's build directory."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:201
+#: ../../content/guides/extensions/making-a-custom-package-type.md:199
 msgid "Verify that the script exists. If not, stop the configuration event."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:202
+#: ../../content/guides/extensions/making-a-custom-package-type.md:200
 msgid "Execute the prepare shell script."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:204
+#: ../../content/guides/extensions/making-a-custom-package-type.md:202
 msgid "Implement the build stage"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:206
+#: ../../content/guides/extensions/making-a-custom-package-type.md:204
 msgid "With the configuration stage completed, we will now implement the build stage:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:229
+#: ../../content/guides/extensions/making-a-custom-package-type.md:227
 msgid "Build the `build` script path expected in the project's build directory."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:230
+#: ../../content/guides/extensions/making-a-custom-package-type.md:228
 msgid "Verify that the script exists. If not, stop the build event."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:231
+#: ../../content/guides/extensions/making-a-custom-package-type.md:229
 msgid "Extract the expected `mapt-build-type` option from the package definition. If the option does not exist, the build event will be stopped."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:233
+#: ../../content/guides/extensions/making-a-custom-package-type.md:231
 msgid "Execute the build shell script."
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:235
+#: ../../content/guides/extensions/making-a-custom-package-type.md:233
 msgid "Final testing"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:237
+#: ../../content/guides/extensions/making-a-custom-package-type.md:235
 msgid "With the extension events implemented, re-run the releng-tool project from the package's configuration stage to see expected output:"
 msgstr ""
 
-#: ../../content/guides/extensions/making-a-custom-package-type.md:247
+#: ../../content/guides/extensions/making-a-custom-package-type.md:245
 msgid "Based on the package's `prepare` and `build` script, inspect the console output and build output to verify the respective scripts have performed their tasks."
 msgstr ""
 

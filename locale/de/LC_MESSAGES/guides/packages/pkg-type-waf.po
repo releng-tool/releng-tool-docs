@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: 2026-03-01 16:36+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/guides/packages/pkg-type-waf.md:1
+msgid "Waf package"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:6
+msgid ""
+"A Waf package provides support to easily invoke [Waf][waf] commands at "
+"various stages of a package."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:13
+msgid ""
+"During the configuration stage of a Waf package, `waf configure` will be "
+"invoked to prepare a build. For the build stage, `waf build` will invoke the"
+" build event. For the installation stage (if enabled), `waf install` will be"
+" used. Each stage can be configured to manipulate environment variables and "
+"options used by Waf."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:19
+msgid ""
+"The following shows the default arguments used in stages and outlines "
+"configuration options that are available for a Waf package to set. See also "
+"the [Waf package examples](/examples/examples-waf). All stages are invoked "
+"with a [`PKG_BUILD_DIR`](env-pkg-build-dir) working directory."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:29
+msgid "Configuration stage"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:32
+msgid "The configuration stage invokes `waf` with the arguments:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:42
+msgid ""
+"The prefix arguments are configured to [`LIBFOO_PREFIX`](pkg-opt-prefix)."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:44
+msgid ""
+"The build output directory is configured to [`PKG_BUILD_OUTPUT_DIR`](env-"
+"pkg-build-output-dir)."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:53
+msgid "Build stage"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:56
+msgid "The build stage invokes `waf` with the arguments:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:62
+msgid ""
+"The number of jobs is populated by either the [`--jobs` argument](arg-jobs),"
+" [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) or [`LIBFOO_MAX_JOBS`](pkg-opt-"
+"max-jobs). Although, if the configuration results in a single job, the "
+"argument will not be used."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:73
+msgid "Install stage"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:76
+msgid "The install stage invokes `waf` with an `install` target:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:82
+msgid "With the following environment variables set:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:88
+msgid ""
+"The `--destdir` argument and `DESTDIR` environment path will be set to the "
+"target sysroot the package should install into (see also "
+"[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type)). `waf install` may be invoked"
+" multiple times for each target it needs to install into."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:93
+msgid ""
+"The installation stage can be skipped by configuring "
+"[`LIBFOO_WAF_NOINSTALL`](pkg-opt-waf-noinstall)."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-defs.md:2
+msgid "`LIBFOO_BUILD_DEFS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-defs.md:4
+#: ../../content/guides/packages/_pkg-build-env.md:4
+#: ../../content/guides/packages/_pkg-build-opts.md:4
+#: ../../content/guides/packages/_pkg-conf-defs.md:4
+#: ../../content/guides/packages/_pkg-conf-env.md:4
+#: ../../content/guides/packages/_pkg-conf-opts.md:4
+#: ../../content/guides/packages/_pkg-env.md:6
+#: ../../content/guides/packages/_pkg-install-defs.md:4
+#: ../../content/guides/packages/_pkg-install-env.md:4
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:4
+msgid "Support added for path-like values."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-defs.md:7
+msgid ""
+"Provides a means to pass definitions into the build process. This option can"
+" is defined as a dictionary of string pairs. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-env.md:2
+msgid "`LIBFOO_BUILD_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-env.md:7
+msgid ""
+"Provides a means to pass environment variables into the build process. This "
+"option is defined as a dictionary with key-value pairs where the key is the "
+"environment name and the value is the environment variable's value. This "
+"field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-opts.md:2
+msgid "`LIBFOO_BUILD_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-build-opts.md:7
+msgid ""
+"Provides a means to pass command line options into the build process. This "
+"option can be defined as a dictionary of string pairs or a list with strings"
+" -- either way defined will generate argument values to include in the build"
+" event. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-defs.md:2
+msgid "`LIBFOO_CONF_DEFS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-defs.md:7
+msgid ""
+"Provides a means to pass definitions into the configuration process. This "
+"option can is defined as a dictionary of string pairs. This field is "
+"optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-env.md:2
+msgid "`LIBFOO_CONF_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-env.md:7
+msgid ""
+"Provides a means to pass environment variables into the configuration "
+"process. This option is defined as a dictionary with key-value pairs where "
+"the key is the environment name and the value is the environment variable's "
+"value. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-opts.md:2
+msgid "`LIBFOO_CONF_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-opts.md:7
+msgid ""
+"Provides a means to pass command line options into the configuration "
+"process. This option can be defined as a dictionary of string pairs or a "
+"list with strings -- either way defined will generate argument values to "
+"include in the configuration event. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-env.md:2
+msgid "`LIBFOO_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-env.md:9
+msgid ""
+"Provides a means to pass environment variables into all stages for a "
+"package. This option is defined as a dictionary with key-value pairs where "
+"the key is the environment name and the value is the environment variable's "
+"value. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-defs.md:2
+msgid "`LIBFOO_INSTALL_DEFS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-defs.md:7
+msgid ""
+"Provides a means to pass definitions into the installation process. This "
+"option can is defined as a dictionary of string pairs. This field is "
+"optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-env.md:2
+msgid "`LIBFOO_INSTALL_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-env.md:7
+msgid ""
+"Provides a means to pass environment variables into the installation "
+"process. This option is defined as a dictionary with key-value pairs where "
+"the key is the environment name and the value is the environment variable's "
+"value. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:2
+msgid "`LIBFOO_INSTALL_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:7
+msgid ""
+"Provides a means to pass command line options into the installation process."
+" This option can be defined as a dictionary of string pairs or a list with "
+"strings -- either way defined will generate argument values to include in "
+"the installation event. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:30
+msgid ""
+"Defining custom install options will prevent the default `install` target "
+"from being added. Users looking to utilize the `install` target for the "
+"install stage with custom arguments should explicitly include the `install` "
+"target in their options."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:144
+msgid "`LIBFOO_WAF_NOINSTALL`"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-waf.md:146
+msgid ""
+"Specifies whether the Waf package should skip an attempt to invoke the "
+"install command. Ideally, projects can support an install invoke to help "
+"install files into a target (or staging) environment. Not all Waf projects "
+"may support an install stage, or there can be cases where installation stage"
+" for a package to fail due to issues with some host environments. A "
+"developer can specify this no-install flag to skip a Waf-driven install "
+"request and manage installation actions through other means (such as post-"
+"processing). By default, the installation stage is invoked with a value of "
+"`False`."
+msgstr ""

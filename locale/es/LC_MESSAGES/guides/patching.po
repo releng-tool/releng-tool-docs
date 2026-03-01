@@ -1,21 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) releng-tool
-# This file is distributed under the same license as the releng-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# This file is distributed under the same license as the releng-tool
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: releng-tool\n"
+"Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
-"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-"
+"tool/teams/171906/es/)\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 "
+"? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/patching.md:1
 msgid "Patching"
@@ -23,59 +28,87 @@ msgstr ""
 
 #: ../../content/guides/patching.md:4
 msgid ""
-"Patches are ignored when in [development mode](development-mode) for "
-"packages with a development revision, for `local` VCS packages or when in "
-"[local-sources mode](local-sources-mode) for internal packages."
+"Patches are ignored when in [development mode](development-mode) by "
+"default for packages with a development revision, for `local` VCS "
+"packages or when in [local-sources mode](local-sources-mode) for internal"
+" packages."
 msgstr ""
 
-#: ../../content/guides/patching.md:9
+#: ../../content/guides/patching.md:10
+msgid ""
+"Additional configuration modes to permit development revisions to have "
+"patches applied."
+msgstr ""
+
+#: ../../content/guides/patching.md:14
 msgid ""
 "The patching stage for a package provides the ability for a developer to "
-"apply one or more patches to extracted sources. A project may take advantage"
-" of acquiring sources from one or more externally managed implementations. "
-"Fetched sources may not be able to build in a developer's releng-tool "
-"project due to limitations of the implementation or build scripts provided "
-"by the package. A developer can prepare a series of patches to apply to a "
-"package and submit changes upstream to correct the issue. However, the "
-"developer is then left to either wait for the changes to be merged in or "
-"needs to make a custom archive with the appropriate modifications already "
-"applied. To avoid this, a developer can include patches directly in the "
-"package folder to be automatically applied during patching stage."
+"apply one or more patches to extracted sources. A project may take "
+"advantage of acquiring sources from one or more externally managed "
+"implementations. Fetched sources may not be able to build in a "
+"developer's releng-tool project due to limitations of the implementation "
+"or build scripts provided by the package. A developer can prepare a "
+"series of patches to apply to a package and submit changes upstream to "
+"correct the issue. However, the developer is then left to either wait for"
+" the changes to be merged in or needs to make a custom archive with the "
+"appropriate modifications already applied. To avoid this, a developer can"
+" include patches directly in the package folder to be automatically "
+"applied during patching stage."
 msgstr ""
 
-#: ../../content/guides/patching.md:21
+#: ../../content/guides/patching.md:26
 msgid ""
-"When a package's patch stage is reached, releng-tool will look for patches "
-"found inside the package folder with the extension `.patch`. Patches found "
-"inside a package folder are applied in ascending order. It is recommended to"
-" prefix patch filenames with a numerical value for clarity. For example, the"
-" following package patches:"
+"When a package's patch stage is reached, releng-tool will look for "
+"patches found inside the package folder with the extension `.patch`. "
+"Patches found inside a package folder are applied in ascending order. It "
+"is recommended to prefix patch filenames with a numerical value for "
+"clarity. For example, the following package patches:"
 msgstr ""
 
-#: ../../content/guides/patching.md:37
+#: ../../content/guides/patching.md:42
 msgid "With be applied in the following order:"
 msgstr ""
 
-#: ../../content/guides/patching.md:39
+#: ../../content/guides/patching.md:44
 msgid "`0001-accept-linker-flags.patch`"
 msgstr ""
 
-#: ../../content/guides/patching.md:40
+#: ../../content/guides/patching.md:45
 msgid "`0002-correct-output-path.patch`"
 msgstr ""
 
-#: ../../content/guides/patching.md:41
+#: ../../content/guides/patching.md:46
 msgid "`0003-support-disabling-test-build.patch`"
 msgstr ""
 
-#: ../../content/guides/patching.md:43
+#: ../../content/guides/patching.md:48
 msgid ""
-"If a user configures their build environment in [development "
-"mode](development-mode), patches will not be applied if a package defines a "
-"development revision. The idea is that a development revision is most likely"
-" the bleeding edge source of a package and does not need any patches. If a "
-"user configures their build environment in [local-sources mode](local-"
-"sources-mode) and a package is defined as internal, patches will not be "
-"applied to the sources. This is to prevent the patching system from making "
-"unexpected modifications to a developer's local sources."
+"If a user configures their build environment in [development mode"
+"](development-mode), patches will not be applied by default if a package "
+"defines a development revision. The idea is that a development revision "
+"is most likely the bleeding edge source of a package and does not need "
+"any patches. If a user configures their build environment in [local-"
+"sources mode](local-sources-mode) and a package is defined as internal, "
+"patches will not be applied to the sources. This is to prevent the "
+"patching system from making unexpected modifications to a developer's "
+"local sources."
 msgstr ""
+
+#: ../../content/guides/patching.md:58
+msgid ""
+"In the scenario where a developer does want to override when patches are "
+"applied, there are a couple of advanced options. First, the option "
+"[`LIBFOO_IGNORE_PATCHES`](pkg-opt-ignore-patches) allows a developer to "
+"avoid the automatic application of patches on a package during normal "
+"runs. Second, the option [`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-"
+"patches) can be configured to permit a package to utilize patches in a "
+"development mode."
+msgstr ""
+
+#: ../../content/guides/patching.md:65
+msgid ""
+"For example, the following configuration will instead only apply patches "
+"on a package when releng-tool is operating in a development mode and the "
+"package defines a development revision:"
+msgstr ""
+

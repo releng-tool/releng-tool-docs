@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: 2026-03-01 16:37+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/guides/quirks/quirk-disable_devmode_ignore_cache.md:2
+msgid "Quirk `releng.disable_devmode_ignore_cache`"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_devmode_ignore_cache.md:7
+msgid ""
+"Packages may be configured with [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-"
+"devmode-ignore-cache) to always attempt a new fetch of sources for a "
+"development-configured revision. However, if a remote is not available "
+"during a rebuild event, the process will fail since the package cannot be "
+"re-fetched from the configured site. To help a builder hint that using the "
+"cache is fine for an invoke, this quirk can be provided to avoid any re-"
+"fetch attempt."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_devmode_ignore_cache.md:19
+msgid "See also"
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_devmode_ignore_cache.md:21
+msgid "[](quirks)"
+msgstr ""

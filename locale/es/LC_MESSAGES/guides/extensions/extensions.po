@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -27,6 +27,16 @@ msgid "Extensions"
 msgstr ""
 
 #: ../../content/guides/extensions/extensions.md:3
+msgid "releng-tool will now stop if an extension fails to load."
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:6
+msgid ""
+"releng-tool projects can define a `releng_setup` hook in their project "
+"configurations to perform similar actions as extensions can."
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:10
 msgid ""
 "A releng-tool project can use an extension by registering the extension "
 "name in the `extensions` configuration option inside the project "
@@ -34,7 +44,7 @@ msgid ""
 "`my_awesome_extension` into releng-tool, the following can be defined:"
 msgstr ""
 
-#: ../../content/guides/extensions/extensions.md:14
+#: ../../content/guides/extensions/extensions.md:21
 msgid ""
 "During the initial stages of a releng-tool process, the process will "
 "check and load any configured extension. In the event that an extension "
@@ -42,7 +52,7 @@ msgid ""
 "to load; a detailed error message will be presented to the user."
 msgstr ""
 
-#: ../../content/guides/extensions/extensions.md:19
+#: ../../content/guides/extensions/extensions.md:26
 msgid ""
 "Extensions are typically Python packages installed for the running Python"
 " environment. If extensions are not packaged/installed, users can "
@@ -53,7 +63,7 @@ msgid ""
 "can be registered into the system path using the following:"
 msgstr ""
 
-#: ../../content/guides/extensions/extensions.md:36
+#: ../../content/guides/extensions/extensions.md:38
 msgid ""
 "While the ability to load extensions is supported, capabilities provided "
 "by extensions are not officially supported by releng-tool. For issues "
@@ -61,7 +71,7 @@ msgid ""
 "documentation provided by the providers of said extensions."
 msgstr ""
 
-#: ../../content/guides/extensions/extensions.md:41
+#: ../../content/guides/extensions/extensions.md:43
 msgid ""
 "For developers interesting in implementing extensions, a list of "
 "available API interfaces and documentation for these interfaces can be "
@@ -71,11 +81,18 @@ msgid ""
 "issues as both releng-tool and extensions (if any) evolve."
 msgstr ""
 
-#: ../../content/guides/extensions/extensions.md:48
+#: ../../content/guides/extensions/extensions.md:50
+msgid ""
+"Advanced users may also register application hooks by defining a "
+"`releng_setup` hook in their project's `releng-tool.rt` configuration. "
+"For example:"
+msgstr ""
+
+#: ../../content/guides/extensions/extensions.md:58
 msgid "Examples"
 msgstr ""
 
-#: ../../content/guides/extensions/extensions.md:50
+#: ../../content/guides/extensions/extensions.md:60
 msgid ""
 "The following provides a series of examples for developers on how to "
 "develop extensions for releng-tool:"

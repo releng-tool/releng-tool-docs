@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: 2026-03-01 16:37+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../content/news/2026-02-08_02.07.00.md:1
+msgid "2.7 (2026-02-08)"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:3
+msgid "Improved processing of command outputs"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:5
+msgid ""
+"For executable calls, all command line output is now processed as a stream "
+"over character polling for newlines. This should help improve a user's "
+"experience for outputs that utilize a carriage return character to update an"
+" existing line."
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:10
+msgid ""
+"For example, Git fetch attempts would previously output multiple lines of "
+"fetch status updates:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:41
+msgid ""
+"Where now the output operates in a similar fashion as one would experience "
+"if invoking `git` calls directly:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:56
+msgid "Linting support"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:58
+msgid ""
+"New linting actions have been added into releng-tool. Users can perform a "
+"quality check on a project using:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:65
+msgid "Or perform a package-specific lint using:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:71
+msgid ""
+"Linting checks are very limited at this time by only checking for expected "
+"package definition variables. Ideally it can be improved/expanded on over "
+"time."
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:75
+msgid "Meson Build Type package option"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:77
+msgid ""
+"A new package option [`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type) "
+"has been added for Meson packages. In previous releases, to override the "
+"build type, an option override was required to be set:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:87
+msgid ""
+"Alternatively, users can now specify the build type without needing to "
+"prepare package options:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:94
+msgid "Only show SSH error logs for remote Git actions"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:96
+msgid ""
+"Git operations will now suppress non-error log messages by default. This it "
+"to help avoid possible MOTDs or other instance banner messages that is not "
+"typically desired in an automated fetch/build context."
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:100
+msgid "New Package Stage Extension Events"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:102
+msgid ""
+"Extension support now includes events for individual package stages (e.g. "
+"configuration, build, etc.). Each stage will now emit events at the start of"
+" a stage and after a stage has been successfully run."
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:106
+msgid ""
+"For example, to hook into the start and end events of each package's "
+"configuration stage, the following can be used:"
+msgstr ""
+
+#: ../../content/news/2026-02-08_02.07.00.md:121
+msgid "For more information, see [extensions](/guides/extensions/extensions)."
+msgstr ""

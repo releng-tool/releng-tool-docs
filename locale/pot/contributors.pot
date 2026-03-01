@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "Packages can describe where external content should be fetched from. The 
 msgstr ""
 
 #: ../../content/contributors.md:46
-msgid "releng-tool also supports the fetching of content from version control systems. Sources can either be fetched and placed into an archive, in a similar fashion as fetching an archive from HTTP/FTP locations, or sources can be fetched into a \"cache directory\" if supported (typically distributed version controlled sources). For example, [Git][git] repositories (see also Git's [`--git-dir`][--git-dir] will be stored in the root directory's cache folder (e.g. `<ROOT>/cache`). During the extraction stage, target revisions will be pulled from the cache location using the `git` client."
+msgid "releng-tool also supports the fetching of content from version control systems. Sources can either be fetched and placed into an archive, in a similar fashion as fetching an archive from HTTP/FTP locations, or sources can be fetched into a \"cache directory\" if supported (typically distributed version controlled sources). For example, [Git][git] repositories (see also Git's [`--git-dir`][--git-dir]) will be stored in the root directory's cache folder (e.g. `<ROOT>/cache`). During the extraction stage, target revisions will be pulled from the cache location using the `git` client."
 msgstr ""
 
 #: ../../content/contributors.md:55
@@ -125,5 +125,5 @@ msgid "For users interested in documentation for this project, please see the fo
 msgstr ""
 
 #: ../../content/contributors.md:86
-msgid "releng-tool -- Documentation\\ <https://github.com/releng-tool/releng-tool-docs>"
+msgid "releng-tool -- Documentation <https://github.com/releng-tool/releng-tool-docs>"
 msgstr ""

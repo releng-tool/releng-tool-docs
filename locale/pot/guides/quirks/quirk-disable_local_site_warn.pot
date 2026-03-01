@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,18 @@ msgstr ""
 msgid "Quirk `releng.disable_local_site_warn`"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:4
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:7
+msgid "This quirk is no longer applicable. releng-tool will no longer generate a warning when using a local package."
+msgstr ""
+
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:11
 msgid "Users can create packages using a [local site](site-local) for initial development and testing scenarios. However, using local sites is not recommended for long-term use; hence a warning is generated when releng-tool runs. While the warning aims to promote a user to move the package into their own site of some sort (e.g. Git), a user may be good enough with using a specific package as a local one. For such cases, using this quirk can prevent any warnings generated when a local site is used."
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:17
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:24
 msgid "See also"
 msgstr ""
 
-#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:19
+#: ../../content/guides/quirks/quirk-disable_local_site_warn.md:26
 msgid "[](quirks)"
 msgstr ""

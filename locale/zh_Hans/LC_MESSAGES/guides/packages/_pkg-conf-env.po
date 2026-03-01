@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -18,13 +18,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../content/guides/packages/_pkg-conf-env.md:1
 msgid "`LIBFOO_CONF_ENV`"
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-conf-env.md:3
+msgid "Support added for path-like values."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-conf-env.md:6
 msgid ""
 "Provides a means to pass environment variables into the configuration "
 "process. This option is defined as a dictionary with key-value pairs "

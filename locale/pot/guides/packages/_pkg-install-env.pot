@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 21:08-0400\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,5 +21,9 @@ msgid "`LIBFOO_INSTALL_ENV`"
 msgstr ""
 
 #: ../../content/guides/packages/_pkg-install-env.md:3
+msgid "Support added for path-like values."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-env.md:6
 msgid "Provides a means to pass environment variables into the installation process. This option is defined as a dictionary with key-value pairs where the key is the environment name and the value is the environment variable's value. This field is optional."
 msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 00:17+0000\n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -36,9 +36,8 @@ msgstr ""
 
 #: ../../content/guides/quirks/quirk-bzr-certifi.md:8
 msgid ""
-"See `bzr help ssl.ca_certs` for how to specify trusted CA certificates.\\"
-" Pass `-Ossl.cert_reqs=none` to disable certificate verification "
-"entirely."
+"See `bzr help ssl.ca_certs` for how to specify trusted CA certificates. "
+"Pass `-Ossl.cert_reqs=none` to disable certificate verification entirely."
 msgstr ""
 
 #: ../../content/guides/quirks/quirk-bzr-certifi.md:11

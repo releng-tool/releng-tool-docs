@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"PO-Revision-Date: 2026-03-01 16:36+0000\n"
+"Language-Team: Spanish (https://app.transifex.com/releng-tool/teams/171906/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:1
+msgid "`LIBFOO_INSTALL_OPTS`"
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:3
+msgid "Support added for path-like values."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:6
+msgid ""
+"Provides a means to pass command line options into the installation process."
+" This option can be defined as a dictionary of string pairs or a list with "
+"strings -- either way defined will generate argument values to include in "
+"the installation event. This field is optional."
+msgstr ""
+
+#: ../../content/guides/packages/_pkg-install-opts-with-install.md:29
+msgid ""
+"Defining custom install options will prevent the default `install` target "
+"from being added. Users looking to utilize the `install` target for the "
+"install stage with custom arguments should explicitly include the `install` "
+"target in their options."
+msgstr ""
