@@ -240,6 +240,39 @@ SITEMAP_ENTRY_END
 SITEMAP_END
 fi
 
+if [ -z "$phase" ] || [ "$phase" == "singlehtml" ]; then
+    echo -e "\e[7mgenerating singlehtml...\e[0m"
+
+    # fresh start
+    rm -rf $tmp_dir
+    mkdir -p $tmp_dir
+
+    # build outputs for each language
+    for lang in "${languages[@]}"; do
+        [[ -n "$target_lang" && "$target_lang" != "$lang" ]] && continue
+
+        lang_target_dir=$out_dir/$lang/_
+        echo -e "\e[7m> building $lang (singlehtml)...\e[0m"
+
+        # options
+        export RELENG_DOMAIN=$domain
+        export RELENG_LANGUAGES=$lang_list
+
+        # build documentation (latex)
+        $sphinx_build \
+            -Dlanguage=$lang \
+            -b singlehtml \
+            $doc_dir \
+            $lang_target_dir \
+            -Dlocale_dirs=$locale_dir \
+            -E -a -W
+
+        # cleanup
+        rm -rf $lang_target_dir/.doctrees
+        rm $lang_target_dir/.buildinfo
+    done
+fi
+
 if [ -z "$phase" ] || [ "$phase" == "pdf" ]; then
     echo -e "\e[7mgenerating pdfs...\e[0m"
 
