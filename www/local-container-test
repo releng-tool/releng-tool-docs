@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Copyright releng-tool
+set -eu
+
+workdir=$(cd -- "${BASH_SOURCE%/*}/../.." &> /dev/null && pwd)
+
+if [ "$#" -ne 0 ]; then
+    args=($@)
+else
+    args=(
+        ./generate
+    )
+fi
+
+exec docker run \
+    --interactive \
+    --rm \
+    --tty \
+    --volume "$workdir":/workdir \
+    --workdir /workdir/releng-tool-docs/www \
+    ghcr.io/releng-tool/docs-container:latest \
+    "${args[@]}"
