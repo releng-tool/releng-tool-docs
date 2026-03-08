@@ -51,27 +51,6 @@ LIBFOO_SITE = 'brz+https://example.com/project/trunk'
 ```
 ````
 
-
-(site-bazaar)=
-## Bazaar site
-
-:::{deprecated} 2.0 Support for Bazaar sites is deprecated.
-:::
-
-To define a [Bazaar][bazaar]-based location, the site value must be
-prefixed with a `bzr+` value. A site can be defined as follows:
-
-```python
-LIBFOO_SITE = 'bzr+ssh://example.com/project/trunk'
-# (or)
-LIBFOO_SITE = 'bzr+lp:<project>'
-```
-
-The value after the prefix is a path which will be provided to a `bzr export`
-call [^bzrexport]. Content from a Bazaar repository will be fetched and
-archived into a file during fetch stage. Once a cached archive is made, the
-fetch stage will be skipped unless the archive is manually removed.
-
 (site-cvs)=
 ## CVS site
 
@@ -375,7 +354,6 @@ See also [`urlopen_context`](conf-urlopen-context).
 
 
 [^brzexport]: <https://www.breezy-vcs.org/doc/en/user-reference/export-help.html>
-[^bzrexport]: <https://web.archive.org/web/http://doc.bazaar.canonical.com/bzr.2.7/en/user-reference/export-help.html>
 [^cvsmodule]: <https://www.gnu.org/software/trans-coord/manual/cvs/html_node/checkout.html#checkout>
 [^cvsroot]: <https://www.gnu.org/software/trans-coord/manual/cvs/html_node/Specifying-a-repository.html>
 [^git-p4]: <https://git-scm.com/docs/git-p4>
@@ -387,7 +365,6 @@ See also [`urlopen_context`](conf-urlopen-context).
 [^svncheckout]: <http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html>
 [^urlopen]: <https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>
 
-[bazaar]: https://wikipedia.org/wiki/GNU_Bazaar
 [breezy]: https://www.breezy-vcs.org/
 [cvs]: http://cvs.nongnu.org/
 [git]: https://git-scm.com/

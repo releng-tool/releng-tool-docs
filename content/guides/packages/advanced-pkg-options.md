@@ -676,6 +676,8 @@ a `url` type with a file URI will automatically be converted into a `file`
 type. Projects should switch to defining `file` if they wish to explicitly
 set the VCS type.
 :::
+:::{versionremoved} 2.10 Support for Bazaar sites has been removed.
+:::
 
 Explicitly sets the version control system type to use when acquiring
 sources. releng-tool attempts to automatically determine the VCS type of
@@ -687,7 +689,6 @@ what the site value is configured as.
 Supported types are as follows:
 
 - `brz` (Breezy)
-- `bzr` (Bazaar) *(deprecated)*
 - `cvs` (CVS)
 - `file` (File URI)
 - `git` (Git)

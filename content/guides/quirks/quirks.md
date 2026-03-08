@@ -44,7 +44,6 @@ The following is a list of all available quirks supported by releng-tool:
 :::{toctree}
 :maxdepth: 1
 
-releng.bzr.certifi <quirk-bzr-certifi>
 releng.cmake.disable_direct_includes <quirk-cmake-disable_direct_includes>
 releng.cmake.disable_parallel_option <quirk-cmake-disable_parallel_option>
 releng.disable_devmode_ignore_cache <quirk-disable_devmode_ignore_cache>

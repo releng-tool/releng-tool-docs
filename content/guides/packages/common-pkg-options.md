@@ -119,11 +119,12 @@ following outline a series of supported site definitions:
 :::
 :::{deprecated} 2.0 Support for Bazaar sites is deprecated.
 :::
+:::{versionremoved} 2.10 Support for Bazaar sites has been removed.
+:::
 
 | Type                        | Prefix/Postfix |
 | --------------------------: | :- |
 | [Breezy](site-breezy)       | `brz+`
-| [Bazaar](site-bazaar)       | `bzr+` *(deprecated)*
 | [CVS](site-cvs)             | `cvs+`
 | [File](site-file)           | `file+` or `file://`
 | [Git](site-git)             | `git+` or `.git`

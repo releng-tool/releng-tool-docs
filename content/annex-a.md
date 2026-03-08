@@ -293,7 +293,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_TYPE`](pkg-opt-type) = '&lt;type&gt;'
 &nbsp;&nbsp;└── autotools, cargo, cmake, make, meson, python, scons, script, waf, ext-&lt;extension&gt;
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) = '&lt;vcs-type&gt;'
-&nbsp;&nbsp;└── brz, bzr, cvs, file, git, hg, local, none, perforce, rsync, scp, svn, url
+&nbsp;&nbsp;└── brz, cvs, file, git, hg, local, none, perforce, rsync, scp, svn, url
 [`LIBFOO_VERSION`](pkg-opt-version) = '&lt;version&gt;'
 [`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd) = bool or str
 [`LIBFOO_VSDEVCMD_PRODUCTS`](pkg-opt-vsdevcmd-products) = str
@@ -348,7 +348,6 @@ Functions available to scripts invoked by releng-tool or importable via
 Quirk options used by releng-tool:
 
 ```{parsed-literal}
-[`releng.bzr.certifi`](quirk-releng.bzr.certifi)
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
 [`releng.disable_devmode_ignore_cache`](quirk-releng.disable_devmode_ignore_cache)
 [`releng.disable_local_site_warn`](quirk-releng.disable_local_site_warn)
