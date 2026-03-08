@@ -114,7 +114,7 @@ latex_elements = {
             \vspace*{\stretch{1.2}}
         \end{titlepage}
     ''',
-    # disable hyphenatation
+    # disable hyphenation
     # disable justified text
     # remove italics from links
     # color tweaks

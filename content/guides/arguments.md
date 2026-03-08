@@ -243,13 +243,13 @@ See also [`--sbom-format <fmt>`](arg-sbom-format) (argument) and
 :::{versionadded} 0.17
 :::
 
-A request to dump active state information for a project.
+A request to output active state information for a project.
 
 ```shell
 releng-tool state
 ```
 
-A state request can be used to dump any active configuration and operating
+A state request can be used to output any active configuration and operating
 modes.
 
 (package-actions)=
