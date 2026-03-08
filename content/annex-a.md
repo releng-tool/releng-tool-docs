@@ -286,8 +286,6 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_REMOTE_SCRIPTS`](pkg-opt-remote-scripts) = bool   *(deprecated)*
 [`LIBFOO_REVISION`](pkg-opt-revision) = '&lt;revision&gt;'
 [`LIBFOO_SCONS_NOINSTALL`](pkg-opt-scons-noinstall) = bool
-[`LIBFOO_SKIP_REMOTE_CONFIG`](pkg-opt-skip-remote-config) = bool   *(deprecated)*
-[`LIBFOO_SKIP_REMOTE_SCRIPTS`](pkg-opt-skip-remote-scripts) = bool   *(deprecated)*
 [`LIBFOO_SITE`](pkg-opt-site) = '&lt;site&gt;'
 [`LIBFOO_STRIP_COUNT`](pkg-opt-strip-count) = int # &gt;= 0
 [`LIBFOO_TYPE`](pkg-opt-type) = '&lt;type&gt;'
