@@ -838,10 +838,12 @@ Multiple formats can be provided (comma-separated).
 | CSV | `csv` |
 | HTML | `html` |
 | JSON | `json` |
+| JSON (CycloneDX) | `json-cyclonedx` |
 | JSON (SPDX) | `json-spdx` |
 | RDF (SPDX) | `rdf-spdx` |
 | Text | `text` (default) |
 | XML | `xml` |
+| XML (CycloneDX) | `xml-cyclonedx` |
 
 See also [`sbom`](action-sbom) (action) and [`sbom_format`](conf-sbom-format)
 (configuration).

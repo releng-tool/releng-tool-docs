@@ -205,6 +205,8 @@ Also consider:
 :::
 :::{versionchanged} 2.4 `rdp-spdx` renamed to `rdf-spdx`.
 :::
+:::{versionchanged} 2.10 Support added for `json-cyclonedx` and `xml-cyclonedx`.
+:::
 
 Configures the default format to use when generating a software build of
 materials (SBOM). By default, `text` format SBOMs are generated for a
@@ -221,10 +223,12 @@ The following lists the available formats supported:
 | CSV | `csv` |
 | HTML | `html` |
 | JSON | `json` |
+| JSON (CycloneDX) | `json-cyclonedx` |
 | JSON (SPDX) | `json-spdx` |
 | RDF (SPDX) | `rdf-spdx` |
 | Text | `text` (default) |
 | XML | `xml` |
+| XML (CycloneDX) | `xml-cyclonedx` |
 
 Multiple formats can be provided. For example:
 
