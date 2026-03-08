@@ -5,6 +5,7 @@ supported module.
 
 ```python
 LIBFOO_TYPE = 'python'
+LIBFOO_PYTHON_SETUP_TYPE = 'setuptools'
 ```
 
 Only the build and installation phases are used when processing the sources
@@ -349,10 +350,11 @@ Use of [`installer`][installer] is required for all package types.
 :::{deprecated} 2.0
 Support for `distutils` packages is deprecated.
 :::
+:::{versionchanged} 2.10 Explicit setup type is required.
+:::
 
 The setup type will configure how a Python package is built and installed.
-The default setup type used for a Python package is a distutils package. It
-is recommended to always configure a setup type for a Python package.
+It is required to configure a setup type for a Python package.
 The following outlines available setup types in releng-tool:
 
 | Type                        | Value |
@@ -363,7 +365,7 @@ The following outlines available setup types in releng-tool:
 | [PEP 517 build][pypa-build] | `pep517`
 | [Poetry][poetry]            | `poetry`
 | [Setuptools][setuptools]    | `setuptools`
-| [distutils][distutils]      | `distutils` (default)
+| [distutils][distutils]      | `distutils`
 
 For example:
 
