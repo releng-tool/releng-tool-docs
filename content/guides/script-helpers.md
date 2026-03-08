@@ -27,6 +27,9 @@ are listed below:
 .. autofunction:: releng_exit
 .. autofunction:: releng_expand
 .. autofunction:: releng_include
+.. autofunction:: releng_is_api_mode
+.. autofunction:: releng_is_debug_mode
+.. autofunction:: releng_is_verbose_mode
 
 .. method:: releng_join(path: str | bytes | PathLike, *paths: str | bytes | PathLike)
 
