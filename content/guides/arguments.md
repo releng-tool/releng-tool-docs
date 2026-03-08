@@ -807,6 +807,15 @@ semicolon (`;`).
 
 See also [using profiles](profiles).
 
+(arg-quirk)=
+### `--quirk <quirk-id>`
+
+:::{versionadded} 0.4
+:::
+
+Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
+process. This option can be used multiple times to apply multiple quirks.
+
 (arg-relaxed-args)=
 ### `--relaxed-args`
 
@@ -859,15 +868,6 @@ Multiple formats can be provided (comma-separated).
 
 See also [`sbom`](action-sbom) (action) and [`sbom_format`](conf-sbom-format)
 (configuration).
-
-(arg-quirk)=
-### `--quirk <quirk-id>`
-
-:::{versionadded} 0.4
-:::
-
-Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
-process. This option can be used multiple times to apply multiple quirks.
 
 (arg-verbose)=
 ### `--verbose`, `-V`
