@@ -58,6 +58,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`--only-mirror`](arg-only-mirror)
 [`--out-dir <dir>`](arg-out-dir)
 [`--profile [<profile>]`, `-P [<profile>]`](arg-profile)
+[`--quiet`](arg-quiet)
 [`--quirk <quirk-id>`](arg-quirk)
 [`--relaxed-args`](arg-relaxed-args)
 [`--root-dir <dir>`, `-R <dir>`](arg-root-dir)

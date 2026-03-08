@@ -807,6 +807,14 @@ semicolon (`;`).
 
 See also [using profiles](profiles).
 
+(arg-quiet)=
+### `--quiet`
+
+:::{versionadded} 2.10
+:::
+
+Enable a quiet output.
+
 (arg-quirk)=
 ### `--quirk <quirk-id>`
 
