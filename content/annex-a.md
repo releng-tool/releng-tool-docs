@@ -18,6 +18,7 @@ Arguments which are accepted by releng-tool from the command line:
 [`lint`](action-lint)
 [`mrproper`](action-mrproper)
 [`patch`](action-patch)
+[`printpkgs`](action-printpkgs)
 [`printvars`](action-printvars)
 [`punch`](action-punch)
 [`sbom`](action-sbom)

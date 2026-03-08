@@ -183,6 +183,18 @@ releng-tool patch
 
 See also [Patching](patching) and the [`<pkg>-patch`](action-pkg-patch) action.
 
+(action-printpkgs)=
+### `printpkgs`
+
+:::{versionadded} 2.10
+:::
+
+Print the names of packages to be used for the configured state.
+
+```shell
+releng-tool printpkgs
+```
+
 (action-printvars)=
 ### `printvars`
 
