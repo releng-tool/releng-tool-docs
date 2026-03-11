@@ -87,8 +87,6 @@ Options which are read by releng-tool from a project's configuration script
 [`extra_licenses`](conf-extra-licenses) = {'&lt;short-license-id&gt;': '&lt;license-name&gt;'}
 [`license_header`](conf-license-header) = '&lt;data&gt;'
 [`override_extract_tools`](conf-override-extract-tools) = {'&lt;tool&gt;': '&lt;tool-path&gt;'}
-[`override_revisions`](conf-override-revisions) = {'&lt;pkg&gt;': '&lt;revision&gt;'}   *(deprecated)*
-[`override_sites`](conf-override-sites) = {'&lt;pkg&gt;': '&lt;site&gt;'}   *(deprecated)*
 [`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;']
 [`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
 [`quirks`](conf-quirks) = ['&lt;quirk-id&gt;']
