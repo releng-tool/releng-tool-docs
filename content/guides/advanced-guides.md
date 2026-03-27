@@ -12,6 +12,5 @@ development-mode
 local-sources-mode
 profiles
 api-mode
-configuration-overrides
 quirks/quirks
 :::
