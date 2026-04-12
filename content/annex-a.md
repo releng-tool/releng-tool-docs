@@ -244,6 +244,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_EXTRACT_TYPE`](pkg-opt-extract-type) = 'ext-&lt;extraction-extension&gt;'
 [`LIBFOO_FETCH_OPTS`](pkg-opt-fetch-opts) = {'--option': 'value'} or ['--option', 'value']
 [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs) = int # &gt;= 1
+[`LIBFOO_FORCE_REVISION`](pkg-opt-force-revision) = '&lt;revision&gt;'
 [`LIBFOO_GIT_CONFIG`](pkg-opt-git-config) = {'FOO': 'BAR'}
 [`LIBFOO_GIT_DEPTH`](pkg-opt-git-depth) = int # &gt;= 0
 [`LIBFOO_GIT_REFSPECS`](pkg-opt-git-refspecs) = ['&lt;refspec&gt;'] # e.g. pull

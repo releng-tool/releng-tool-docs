@@ -236,6 +236,31 @@ be used to exceed the jobs count (although not recommended in most scenarios).
 See also the [`--jobs` argument](arg-jobs) and
 [`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs).
 
+(pkg-opt-force-revision)=
+## `LIBFOO_FORCE_REVISION`
+
+:::{versionadded} 3.0
+:::
+
+```{caution}
+This options is not recommended for use inside a package definition.
+```
+
+Specifies a forced revision to use for a package. This option is not
+recommended for use inside a package definition. It is designed for users
+trying to override a used revision from the command line. The primary use
+case is to help override a specific revision for projects that may utilize
+both regular and development revisions. A user may be in a situation where
+the active runtime mode may vary but wants a consistent revision to use no
+matter what mode is configured.
+
+```python
+releng-tool LIBFOO_FORCE_REVISION="1.2.3"
+```
+
+See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision),
+[`LIBFOO_REVISION`](pkg-opt-revision) and [`revisions`](conf-revisions).
+
 (pkg-opt-git-config)=
 ## `LIBFOO_GIT_CONFIG`
 
