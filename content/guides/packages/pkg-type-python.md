@@ -390,7 +390,7 @@ with `bdist_wheel`.
 [hatch]: https://hatch.pypa.io
 [installer]: https://installer.pypa.io/
 [pdm]: https://pdm-project.org/
-[pipx-inject]: https://pipx.pypa.io/#inject-a-package
+[pipx-inject]: https://pipx.pypa.io/stable/how-to/inject-packages/
 [poetry]: https://python-poetry.org/
 [pypa-build]: https://build.pypa.io/
 [python]: https://www.python.org/
