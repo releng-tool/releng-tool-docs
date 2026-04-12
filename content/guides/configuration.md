@@ -428,6 +428,22 @@ extra_licenses = {
 
 See also [licenses](licenses).
 
+(conf-lint-max-version)=
+### `lint_max_version`
+
+:::{versionadded} 3.0
+:::
+
+Configures the maximum lint version checks when using the [`lint`](action-lint)
+action.
+
+```python
+lint_max_version = '3.0'
+```
+
+See also [Linting](linting) and
+[`RELENG_LINT_MAX_VERSION`](env-releng-lint-max-version).
+
 (conf-override-extract-tools)=
 ### `override_extract_tools`
 

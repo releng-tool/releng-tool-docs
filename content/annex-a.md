@@ -86,6 +86,7 @@ Options which are read by releng-tool from a project's configuration script
 [`extra_license_exceptions`](conf-extra-license-exceptions) = {'&lt;short-exception-id&gt;': '&lt;exception-name&gt;'}
 [`extra_licenses`](conf-extra-licenses) = {'&lt;short-license-id&gt;': '&lt;license-name&gt;'}
 [`license_header`](conf-license-header) = '&lt;data&gt;'
+[`lint_max_version`](conf-lint-max-version) = '&lt;max-version&gt;'
 [`override_extract_tools`](conf-override-extract-tools) = {'&lt;tool&gt;': '&lt;tool-path&gt;'}
 [`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;']
 [`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
@@ -187,6 +188,7 @@ Other environment variables accepted by releng-tool:
 [`RELENG_IGNORE_RUNNING_AS_ROOT`](env-releng-ignore-running-as-root)
 [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args)
 [`RELENG_IMAGES_DIR`](env-releng-images-dir)
+[`RELENG_LINT_MAX_VERSION`](env-releng-lint-max-version)
 [`RELENG_OUTPUT_DIR`](env-releng-out-dir)
 [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level)
 ```

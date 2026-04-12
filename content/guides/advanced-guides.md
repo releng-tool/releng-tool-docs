@@ -6,6 +6,7 @@ want to use for more involved use cases.
 :::{toctree}
 :maxdepth: 1
 
+linting
 patching
 intern-extern-pkgs
 development-mode

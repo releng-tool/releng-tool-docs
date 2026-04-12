@@ -1153,6 +1153,21 @@ arguments.
 
 See also the [`--relaxed-args` argument](arg-relaxed-args).
 
+(env-releng-lint-max-version)=
+### `RELENG_LINT_MAX_VERSION=<dir>`
+
+:::{versionadded} 3.0
+:::
+
+Configures the maximum lint version checks when using the [`lint`](action-lint)
+action.
+
+```
+export RELENG_LINT_MAX_VERSION=3.0
+```
+
+See also [Linting](linting) and [`lint_max_version`](conf-lint-max-version).
+
 (env-releng-images-dir)=
 ### `RELENG_IMAGES_DIR=<dir>`
 

@@ -151,7 +151,7 @@ with a `noqa` keyword to not be flagged. For example:
 UNEXPECTED_KEY = True  # noqa
 ```
 
-See also the [`<pkg>-lint`](action-pkg-lint) action.
+See also [Linting](linting) and the [`<pkg>-lint`](action-pkg-lint) action.
 
 (action-mrproper)=
 ### `mrproper`
@@ -477,7 +477,7 @@ A request to lint the quality of a specific package in a project.
 releng-tool <pkg>-lint
 ```
 
-See also the [`lint`](action-lint) action.
+See also [Linting](linting) and the [`lint`](action-lint) action.
 
 (action-pkg-patch)=
 ### `<pkg>-patch`
