@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -126,8 +126,8 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/configuration.md:123
-#: ../../content/guides/configuration.md:404
-#: ../../content/guides/configuration.md:425
+#: ../../content/guides/configuration.md:408
+#: ../../content/guides/configuration.md:429
 msgid "See also [licenses](licenses)."
 msgstr ""
 
@@ -217,119 +217,139 @@ msgstr ""
 msgid "`rdp-spdx` renamed to `rdf-spdx`."
 msgstr ""
 
-#: ../../content/guides/configuration.md:209
+#: ../../content/guides/configuration.md:208
+msgid "Support added for `json-cyclonedx` and `xml-cyclonedx`."
+msgstr ""
+
+#: ../../content/guides/configuration.md:211
 msgid ""
 "Configures the default format to use when generating a software build of "
 "materials (SBOM). By default, `text` format SBOMs are generated for a "
 "project."
 msgstr ""
 
-#: ../../content/guides/configuration.md:217
+#: ../../content/guides/configuration.md:219
 msgid "The following lists the available formats supported:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "Type"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "Value"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "CSV"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`csv`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "HTML"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`html`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "JSON"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`json`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
+msgid "JSON (CycloneDX)"
+msgstr ""
+
+#: ../../content/guides/configuration.md:208
+msgid "`json-cyclonedx`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:208
 msgid "JSON (SPDX)"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`json-spdx`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "RDF (SPDX)"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`rdf-spdx`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "Text"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`text` (default)"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "XML"
 msgstr ""
 
-#: ../../content/guides/configuration.md:206
+#: ../../content/guides/configuration.md:208
 msgid "`xml`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:229
+#: ../../content/guides/configuration.md:208
+msgid "XML (CycloneDX)"
+msgstr ""
+
+#: ../../content/guides/configuration.md:208
+msgid "`xml-cyclonedx`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:233
 msgid "Multiple formats can be provided. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:238
+#: ../../content/guides/configuration.md:242
 msgid "The `all` value is accepted to generate all supported SBOM variants."
 msgstr ""
 
-#: ../../content/guides/configuration.md:240
+#: ../../content/guides/configuration.md:244
 msgid ""
 "See also [`sbom`](action-sbom) (action) and [`--sbom-format <fmt>`](arg-"
 "sbom-format) (argument)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:244
+#: ../../content/guides/configuration.md:248
 msgid "`sysroot_prefix`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:246
+#: ../../content/guides/configuration.md:250
 msgid "Support added for path-like values."
 msgstr ""
 
-#: ../../content/guides/configuration.md:249
+#: ../../content/guides/configuration.md:253
 msgid ""
 "Define a custom sysroot prefix to provide to packages during their "
 "configuration, build and installation stages. By default, the sysroot "
 "prefix is typically set to `/usr`; for Windows, the value is empty."
 msgstr ""
 
-#: ../../content/guides/configuration.md:257
+#: ../../content/guides/configuration.md:261
 msgid "See also [`LIBFOO_PREFIX`](pkg-opt-prefix) and [`PREFIX`](env-prefix)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:260
+#: ../../content/guides/configuration.md:264
 msgid "`url_mirror`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:262
+#: ../../content/guides/configuration.md:266
 msgid ""
 "Specifies a mirror base site to be used for URL fetch requests. If this "
 "option is set, any URL fetch requests will first be tried on the "
@@ -337,47 +357,47 @@ msgid ""
 "a package definition."
 msgstr ""
 
-#: ../../content/guides/configuration.md:271
+#: ../../content/guides/configuration.md:275
 msgid "The `url_mirror` configuration also accepts the following format options:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:273
+#: ../../content/guides/configuration.md:277
 msgid "`name`: the name of a package"
 msgstr ""
 
-#: ../../content/guides/configuration.md:274
+#: ../../content/guides/configuration.md:278
 msgid "`version`: the version of a package"
 msgstr ""
 
-#: ../../content/guides/configuration.md:276
+#: ../../content/guides/configuration.md:280
 msgid "For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:282
+#: ../../content/guides/configuration.md:286
 #, python-brace-format
 msgid "Where `{name}` will be replaced by the package name being fetched."
 msgstr ""
 
-#: ../../content/guides/configuration.md:284
+#: ../../content/guides/configuration.md:288
 msgid "Advanced options"
 msgstr ""
 
-#: ../../content/guides/configuration.md:286
+#: ../../content/guides/configuration.md:290
 msgid "A list of more advanced configuration options are as follows:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:289
+#: ../../content/guides/configuration.md:293
 msgid "`cache_ext`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:291
+#: ../../content/guides/configuration.md:295
 msgid ""
 "A transform for cache extension interpreting. This is an advanced "
 "configuration and is not recommended for use except for special use cases"
 " outlined below."
 msgstr ""
 
-#: ../../content/guides/configuration.md:295
+#: ../../content/guides/configuration.md:299
 msgid ""
 "When releng-tool fetches assets from remote sites, the site value can "
 "used to determine the resulting filename of a cached asset. For example, "
@@ -390,7 +410,7 @@ msgid ""
 "a site value into a known cache extension value."
 msgstr ""
 
-#: ../../content/guides/configuration.md:305
+#: ../../content/guides/configuration.md:309
 msgid ""
 "Consider the following example: a host is used to acquire assets from a "
 "content server. The URI to download an asset uses a unique request format"
@@ -400,17 +420,17 @@ msgid ""
 "defined. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:321
+#: ../../content/guides/configuration.md:325
 msgid ""
 "The above transform indicates that all packages using the "
 "`static.example.org` site will be `tgz` archives."
 msgstr ""
 
-#: ../../content/guides/configuration.md:325
+#: ../../content/guides/configuration.md:329
 msgid "`default_cmake_build_type`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:330
+#: ../../content/guides/configuration.md:334
 msgid ""
 "[CMake](/guides/packages/pkg-type-cmake) packages can configure their "
 "default build type on individual packages using [`LIBFOO_CMAKE_BUILD_TYPE"
@@ -420,15 +440,15 @@ msgid ""
 "following may be used:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:341
+#: ../../content/guides/configuration.md:345
 msgid "See also [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:344
+#: ../../content/guides/configuration.md:348
 msgid "`default_devmode_ignore_cache`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:349
+#: ../../content/guides/configuration.md:353
 msgid ""
 "When operating in [development mode](/guides/development-mode), packages "
 "may configure [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-"
@@ -438,7 +458,7 @@ msgid ""
 "feature, a global override can be configured."
 msgstr ""
 
-#: ../../content/guides/configuration.md:360
+#: ../../content/guides/configuration.md:364
 msgid ""
 "Setting this value to `True` will default all packages to operate with a "
 "manner as if `LIBFOO_DEVMODE_IGNORE_CACHE = True`. Individual packages "
@@ -446,15 +466,15 @@ msgid ""
 "= False`."
 msgstr ""
 
-#: ../../content/guides/configuration.md:364
+#: ../../content/guides/configuration.md:368
 msgid "See also [`LIBFOO_DEVMODE_IGNORE_CACHE`](pkg-opt-devmode-ignore-cache)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:367
+#: ../../content/guides/configuration.md:371
 msgid "`default_meson_build_type`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:372
+#: ../../content/guides/configuration.md:376
 msgid ""
 "[Meson](/guides/packages/pkg-type-meson) packages can configure their "
 "default build type on individual packages using [`LIBFOO_MESON_BUILD_TYPE"
@@ -464,15 +484,15 @@ msgid ""
 "following may be used:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:383
+#: ../../content/guides/configuration.md:387
 msgid "See also [`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:386
+#: ../../content/guides/configuration.md:390
 msgid "`extra_license_exceptions`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:391
+#: ../../content/guides/configuration.md:395
 msgid ""
 "A dictionary to define extra license exceptions that are permitted in "
 "package definitions. Packages which define license exceptions in a "
@@ -482,11 +502,11 @@ msgid ""
 "into a project's `extra_license_exceptions` option to avoid this warning:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:407
+#: ../../content/guides/configuration.md:411
 msgid "`extra_licenses`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:412
+#: ../../content/guides/configuration.md:416
 msgid ""
 "A dictionary to define extra licenses that are permitted in package "
 "definitions. Packages which define licenses in a [`LIBFOO_LICENSE`](pkg-"
@@ -496,11 +516,27 @@ msgid ""
 "project's `extra_licenses` option to avoid this warning:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:428
+#: ../../content/guides/configuration.md:432
+msgid "`lint_max_version`"
+msgstr ""
+
+#: ../../content/guides/configuration.md:437
+msgid ""
+"Configures the maximum lint version checks when using the [`lint"
+"`](action-lint) action."
+msgstr ""
+
+#: ../../content/guides/configuration.md:444
+msgid ""
+"See also [Linting](linting) and [`RELENG_LINT_MAX_VERSION`](env-releng-"
+"lint-max-version)."
+msgstr ""
+
+#: ../../content/guides/configuration.md:448
 msgid "`override_extract_tools`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:430
+#: ../../content/guides/configuration.md:450
 msgid ""
 "A dictionary to be provided to map an extension type to an external tool "
 "to indicate which tool should be used for extraction. For example, when a"
@@ -509,32 +545,32 @@ msgid ""
 " tool with their own extraction utility. Consider the following example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:442
+#: ../../content/guides/configuration.md:462
 #, python-brace-format
 msgid ""
 "The `{file}` key will be replaced with the file to be extracted, and the "
 "`{dir}` key will be replaced where the contents should extract to."
 msgstr ""
 
-#: ../../content/guides/configuration.md:446
+#: ../../content/guides/configuration.md:466
 msgid "`quirks`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:448
+#: ../../content/guides/configuration.md:468
 msgid ""
 "A list of configuration quirks to apply to deal with corner cases which "
 "can prevent releng-tool operating on a host system."
 msgstr ""
 
-#: ../../content/guides/configuration.md:457
+#: ../../content/guides/configuration.md:477
 msgid "For a list of available quirks, see [quirks](quirks/quirks)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:460
+#: ../../content/guides/configuration.md:480
 msgid "`urlopen_context`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:465
+#: ../../content/guides/configuration.md:485
 msgid ""
 "Allows a project to specify a custom SSL context [^urlopen] to apply for "
 "URL fetch requests. This can be useful for environments which may "
@@ -543,22 +579,22 @@ msgid ""
 "environment. For example:"
 msgstr ""
 
-#: ../../content/guides/configuration.md:481
+#: ../../content/guides/configuration.md:501
 msgid "`vsdevcmd`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:484
-#: ../../content/guides/configuration.md:523
+#: ../../content/guides/configuration.md:504
+#: ../../content/guides/configuration.md:543
 msgid "The option is ignored in non-Windows environments."
 msgstr ""
 
-#: ../../content/guides/configuration.md:490
+#: ../../content/guides/configuration.md:510
 msgid ""
 "Cycles through all applicable configured products until the first install"
 " that provides `VsDevCmd.bat` is found."
 msgstr ""
 
-#: ../../content/guides/configuration.md:494
+#: ../../content/guides/configuration.md:514
 msgid ""
 "Allows a project to automatically load Visual Studio Developer Command "
 "Prompt (`VsDevCmd.bat`) variables into the releng-tool process. This will"
@@ -566,7 +602,7 @@ msgid ""
 "tool was started from within a Visual Studio Developer Command Prompt."
 msgstr ""
 
-#: ../../content/guides/configuration.md:503
+#: ../../content/guides/configuration.md:523
 msgid ""
 "The version of which Visual Studio application it used is determined with"
 " the help of [Visual Studio Locator][vswhere] (vswhere). By default, the "
@@ -574,24 +610,24 @@ msgid ""
 "used (assuming the installation includes a `VsDevCmd.bat` script)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:508
+#: ../../content/guides/configuration.md:528
 msgid ""
 "Projects looking to use an explicit version of Visual Studio can specify "
 "a version string that is compatible with Visual Studio Locator's "
 "`-version` argument."
 msgstr ""
 
-#: ../../content/guides/configuration.md:516
+#: ../../content/guides/configuration.md:536
 msgid ""
 "See also [`vsdevcmd_products`](conf-vsdevcmd-products) and "
 "[`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:520
+#: ../../content/guides/configuration.md:540
 msgid "`vsdevcmd_products`"
 msgstr ""
 
-#: ../../content/guides/configuration.md:529
+#: ../../content/guides/configuration.md:549
 msgid ""
 "Allows a project to configure which products to search for when releng-"
 "tool invokes [Visual Studio Locator][vswhere] to find which Visual Studio"
@@ -600,82 +636,13 @@ msgid ""
 "option replaces the asterisk value with the configured value."
 msgstr ""
 
-#: ../../content/guides/configuration.md:539
+#: ../../content/guides/configuration.md:559
 msgid ""
 "See also [`vsdevcmd`](conf-vsdevcmd) and [`LIBFOO_VSDEVCMD_PRODUCTS"
 "`](pkg-opt-vsdevcmd-products)."
 msgstr ""
 
-#: ../../content/guides/configuration.md:542
-msgid "Deprecated options"
-msgstr ""
-
-#: ../../content/guides/configuration.md:544
-msgid ""
-"The following outlines deprecated configuration options. It is not "
-"recommended to use these options."
-msgstr ""
-
-#: ../../content/guides/configuration.md:548
-msgid "`override_revisions`"
-msgstr ""
-
-#: ../../content/guides/configuration.md:551
-msgid ""
-"The use of revision overrides is deprecated. Users wanting to override "
-"revisions without source modification are recommended to use [variable "
-"injection](arg-variable-injection)."
-msgstr ""
-
-#: ../../content/guides/configuration.md:557
-#: ../../content/guides/configuration.md:589
-msgid ""
-"The use of an override option should only be used in special cases (see "
-"also [configuration overrides](configuration-overrides))."
-msgstr ""
-
-#: ../../content/guides/configuration.md:561
-msgid ""
-"Allows a dictionary to be provided to map a package name to a new "
-"revision value. Consider the following example: a project defines "
-"`module-a` and `module-b` packages with package `module-b` depending on "
-"package `module-a`. A developer may be attempting to tweak package "
-"`module-b` on the fly to test a new capabilities against the current "
-"stable version of `module-a`. However, the developer does not want to "
-"explicitly change the revision inside package `module-b`'s definition. To"
-" avoid this, an override can be used instead:"
-msgstr ""
-
-#: ../../content/guides/configuration.md:576
-msgid ""
-"The above example shows that package `module-b` will fetch using a test "
-"branch instead of what is defined in the actual package definition."
-msgstr ""
-
-#: ../../content/guides/configuration.md:580
-msgid "`override_sites`"
-msgstr ""
-
-#: ../../content/guides/configuration.md:583
-msgid ""
-"The use of site overrides is deprecated. Users wanting to override sites "
-"without source modification are recommended to use [variable injection"
-"](arg-variable-injection)."
-msgstr ""
-
-#: ../../content/guides/configuration.md:593
-msgid ""
-"A dictionary to be provided to map a package name to a new site value. "
-"There may be times where a host may not have access to a specific package"
-" site. To have a host to use a mirror location without having to adjust "
-"the package definition, the site override option can be used. For "
-"example, consider a package pulls from site "
-"`git@example.com:myproject.git`. However, the host `example.com` cannot "
-"be access from the host machine. If a mirror location has been setup at "
-"`git@example.org:myproject.git`, the following override can be used:"
-msgstr ""
-
-#: ../../content/guides/configuration.md:478
+#: ../../content/guides/configuration.md:498
 msgid "<https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>"
 msgstr ""
 

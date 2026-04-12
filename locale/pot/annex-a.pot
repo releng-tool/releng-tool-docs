@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,54 +32,58 @@ msgstr ""
 msgid "Arguments which are accepted by releng-tool from the command line:"
 msgstr ""
 
-#: ../../content/annex-a.md:70
+#: ../../content/annex-a.md:72
 msgid "Configuration options"
 msgstr ""
 
-#: ../../content/annex-a.md:72
+#: ../../content/annex-a.md:74
 msgid "Options which are read by releng-tool from a project's configuration script (`releng-tool.rt`):"
 msgstr ""
 
-#: ../../content/annex-a.md:103
+#: ../../content/annex-a.md:104
 msgid "Environment variables"
 msgstr ""
 
-#: ../../content/annex-a.md:105
+#: ../../content/annex-a.md:106
 msgid "Environment (and script) variables available to context's invoked by releng-tool (may vary per context):"
 msgstr ""
 
-#: ../../content/annex-a.md:178
+#: ../../content/annex-a.md:179
 msgid "Other environment variables accepted by releng-tool:"
 msgstr ""
 
-#: ../../content/annex-a.md:194
+#: ../../content/annex-a.md:196
 msgid "Package types"
 msgstr ""
 
-#: ../../content/annex-a.md:196
+#: ../../content/annex-a.md:198
 msgid "Package types supported by releng-tool:"
 msgstr ""
 
-#: ../../content/annex-a.md:210
+#: ../../content/annex-a.md:212
 msgid "Package options"
 msgstr ""
 
-#: ../../content/annex-a.md:212
+#: ../../content/annex-a.md:214
 msgid "Configuration options parsed by releng-tool for a package definition:"
 msgstr ""
 
-#: ../../content/annex-a.md:302
+#: ../../content/annex-a.md:303
 msgid "Script helpers"
 msgstr ""
 
-#: ../../content/annex-a.md:304
+#: ../../content/annex-a.md:305
 msgid "Functions available to scripts invoked by releng-tool or importable via `from releng_tool import *`:"
 msgstr ""
 
-#: ../../content/annex-a.md:342
+#: ../../content/annex-a.md:346
+msgid "Variables available to scripts invoked by releng-tool:"
+msgstr ""
+
+#: ../../content/annex-a.md:353
 msgid "Quirks"
 msgstr ""
 
-#: ../../content/annex-a.md:344
+#: ../../content/annex-a.md:355
 msgid "Quirk options used by releng-tool:"
 msgstr ""

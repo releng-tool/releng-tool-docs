@@ -1,6 +1,6 @@
 [main]
 host     = https://app.transifex.com
-lang_map = zh-Hans: zh_Hans, zh-Hant: zh_Hant
+lang_map = zh-Hant: zh_Hant, zh-Hans: zh_Hans
 
 [o:releng-tool:p:releng-tool-docs:r:annex_a]
 file_filter            = <lang>/LC_MESSAGES/annex-a.po
@@ -170,6 +170,14 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:releng-tool:p:releng-tool-docs:r:guides_api_mode]
+file_filter            = <lang>/LC_MESSAGES/guides/api-mode.po
+source_file            = pot/guides/api-mode.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:releng-tool:p:releng-tool-docs:r:guides_arguments]
 file_filter            = <lang>/LC_MESSAGES/guides/arguments.po
 source_file            = pot/guides/arguments.pot
@@ -269,6 +277,14 @@ keep_translations      = false
 [o:releng-tool:p:releng-tool-docs:r:guides_licenses]
 file_filter            = <lang>/LC_MESSAGES/guides/licenses.po
 source_file            = pot/guides/licenses.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:releng-tool:p:releng-tool-docs:r:guides_linting]
+file_filter            = <lang>/LC_MESSAGES/guides/linting.po
+source_file            = pot/guides/linting.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
@@ -1013,6 +1029,30 @@ keep_translations      = false
 [o:releng-tool:p:releng-tool-docs:r:news_2026_02_22_02_08_00]
 file_filter            = <lang>/LC_MESSAGES/news/2026-02-22_02.08.00.po
 source_file            = pot/news/2026-02-22_02.08.00.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:releng-tool:p:releng-tool-docs:r:news_2026_03_01_02_09_00]
+file_filter            = <lang>/LC_MESSAGES/news/2026-03-01_02.09.00.po
+source_file            = pot/news/2026-03-01_02.09.00.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:releng-tool:p:releng-tool-docs:r:news_2026_03_08_02_10_00]
+file_filter            = <lang>/LC_MESSAGES/news/2026-03-08_02.10.00.po
+source_file            = pot/news/2026-03-08_02.10.00.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:releng-tool:p:releng-tool-docs:r:news_2026_03_10_02_11_00]
+file_filter            = <lang>/LC_MESSAGES/news/2026-03-10_02.11.00.po
+source_file            = pot/news/2026-03-10_02.11.00.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false

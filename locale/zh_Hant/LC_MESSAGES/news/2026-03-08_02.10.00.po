@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
+"PO-Revision-Date: 2026-04-12 23:32+0000\n"
+"Language-Team: Chinese Traditional (https://app.transifex.com/releng-tool/teams/171906/zh-Hant/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/news/2026-03-08_02.10.00.md:1
+msgid "2.10 (2026-03-08)"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:3
+msgid "Lint False-Positive Corrections"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:5
+msgid ""
+"With the newly added linter support, a series of package/VCS type checks "
+"(RT105-RT113) resulted in false-positive events when package definitions use"
+" non-constant value for select configuration entries. This release includes "
+"a series of improvements towards the detection of these types to help reduce"
+" the chance of these warnings being generated."
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:11
+msgid "Support for CycloneDX SBOM Generation"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:13
+msgid ""
+"Support has been added for generating [CycloneDX][cyclonedx]-compatible "
+"software build of materials (SBOM) documents. This includes CycloneDX v1.7 "
+"JSON and XML compatible documents."
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:17
+msgid "API Mode"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:19
+msgid ""
+"This release introduces a new [API mode](/guides/api-mode). Callers can now "
+"trigger releng-tool with the `--api` argument to have the standard output "
+"stream generate a programmatic response (JSON) for scripts/etc. to use."
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:23
+msgid "API response data is limited at this time."
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:25
+msgid "Removals"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:27
+msgid "A series of deprecated features have now been removed:"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:29
+msgid "An implicit Python package setup type"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:30
+msgid "Bazaar-site support"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:31
+msgid "Package configurations `override_revisions` and `override_sites`"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:32
+msgid "Support for Python 3.9 (EOL)"
+msgstr ""
+
+#: ../../content/news/2026-03-08_02.10.00.md:33
+msgid "`LIBFOO_SKIP_REMOTE_*`"
+msgstr ""

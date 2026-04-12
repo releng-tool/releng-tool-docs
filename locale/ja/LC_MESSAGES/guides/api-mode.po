@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
+"PO-Revision-Date: 2026-04-12 23:32+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/releng-tool/teams/171906/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/guides/api-mode.md:1
+msgid "API Mode"
+msgstr ""
+
+#: ../../content/guides/api-mode.md:6
+msgid ""
+"Running releng-tool can be invoked in an \"API mode\" where an execution "
+"will generate a programmatic response for a caller. When in an API mode, the"
+" resulting standard output stream will contain a JSON-compatible output for "
+"external applications to process. All other messages that may typically be "
+"generated on the standard output stream will instead be written to the "
+"standard error stream."
+msgstr ""
+
+#: ../../content/guides/api-mode.md:13
+msgid "Running releng-tool with `--api` enables API mode for that run:"
+msgstr ""
+
+#: ../../content/guides/api-mode.md:19
+msgid ""
+"Responses may vary on the action and other options used. Callers will always"
+" get a `code` response (matching the return value):"
+msgstr ""
+
+#: ../../content/guides/api-mode.md:29
+msgid ""
+"There is no definitive schema for this output at this time. Results may vary"
+" as this feature evolves."
+msgstr ""
+
+#: ../../content/guides/api-mode.md:32
+msgid ""
+"Due to the flexibility of how projects/extensions can manipulate a run and "
+"generate data on the standard output stream, it is recommended that "
+"developers utilize logging calls provided by this tooling to ensure the "
+"standard output stream is not populated during an API mode run."
+msgstr ""
+
+#: ../../content/guides/api-mode.md:37
+msgid "Example"
+msgstr ""
+
+#: ../../content/guides/api-mode.md:39
+msgid "The following shows an example API mode:"
+msgstr ""

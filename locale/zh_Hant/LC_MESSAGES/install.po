@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant\n"
@@ -56,72 +56,77 @@ msgstr ""
 
 #: ../../content/install.md:41
 msgid ""
-"While the use of [Python][python]/[pip][pip] is almost consistent between"
-" Linux distributions, below is a series of helpful steps to install this "
-"package under specific distributions of Linux. From a terminal, invoke "
-"the following commands:"
+"While the use of [Python][python]/[pipx][pipx] is almost consistent "
+"between Linux distributions, below is a series of helpful steps to "
+"install this package under specific distributions of Linux. From a "
+"terminal, invoke the following commands:"
 msgstr ""
 
 #: ../../content/install.md:50
+msgid "**Alpine**"
+msgstr ""
+
+#: ../../content/install.md:60
+msgid "Using `dosas`:"
+msgstr ""
+
+#: ../../content/install.md:73
 msgid "**Arch**"
 msgstr ""
 
-#: ../../content/install.md:52 ../../content/install.md:80
-msgid "Using `pipx`:"
+#: ../../content/install.md:83 ../../content/install.md:107
+#: ../../content/install.md:129 ../../content/install.md:151
+#: ../../content/install.md:174
+msgid "Using `sudo`:"
 msgstr ""
 
-#: ../../content/install.md:62 ../../content/install.md:89
-#: ../../content/install.md:104 ../../content/install.md:128
-msgid "Using `pip`:"
-msgstr ""
-
-#: ../../content/install.md:71
+#: ../../content/install.md:91
 msgid "This package is also [available on AUR][releng-tool-aur]."
 msgstr ""
 
-#: ../../content/install.md:78
+#: ../../content/install.md:98
+msgid "**Debian**"
+msgstr ""
+
+#: ../../content/install.md:120
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../content/install.md:102
+#: ../../content/install.md:142
 msgid "**openSUSE**"
 msgstr ""
 
-#: ../../content/install.md:116
+#: ../../content/install.md:164
 msgid "**Ubuntu**"
 msgstr ""
 
-#: ../../content/install.md:118
-msgid "Using `pipx` (Ubuntu 23.04 or above):"
-msgstr ""
-
-#: ../../content/install.md:144
+#: ../../content/install.md:190
 msgid "OS X"
 msgstr ""
 
-#: ../../content/install.md:146
+#: ../../content/install.md:192
 msgid "From a terminal, invoke the following commands if using `pipx`:"
 msgstr ""
 
-#: ../../content/install.md:156
+#: ../../content/install.md:202
 msgid "Or, if using `pip`:"
 msgstr ""
 
-#: ../../content/install.md:171
+#: ../../content/install.md:217
 msgid "Windows"
 msgstr ""
 
-#: ../../content/install.md:174
+#: ../../content/install.md:220
 msgid ""
 "If not already installed, download the most recent version of "
 "[Python][python]:"
 msgstr ""
 
-#: ../../content/install.md:176
+#: ../../content/install.md:222
 msgid "Python — Downloads <https://www.python.org/downloads/>"
 msgstr ""
 
-#: ../../content/install.md:179
+#: ../../content/install.md:225
 msgid ""
 "When invoking the installer, it is recommended to select the option to "
 "\"Add Python to PATH\". However, users can explicitly invoked Python from"
@@ -129,17 +134,166 @@ msgid ""
 "available in the path)."
 msgstr ""
 
-#: ../../content/install.md:184
+#: ../../content/install.md:230
 msgid "Open a Windows command prompt and invoke the following:"
 msgstr ""
 
-#: ../../content/install.md:193
+#: ../../content/install.md:240
+msgid "Optional Python Dependencies"
+msgstr ""
+
+#: ../../content/install.md:243
+msgid ""
+"The following only applies to releng-tool installations performed using "
+"[pipx][pipx] or using a virtual environment. If an installation is "
+"performed through a system's package manager, any dependencies should "
+"also be installed using the system's package manager."
+msgstr ""
+
+#: ../../content/install.md:249
+msgid ""
+"A releng-tool installation also supports the automatic installation of "
+"optional Python-based dependencies (if required for a project and not "
+"manually installed)."
+msgstr ""
+
+#: ../../content/install.md:253
+msgid ""
+"The following outlines the various configuration sets supported when "
+"installing releng-tool:"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Feature"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Value"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Version"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "All Dependencies"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`all`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "3.0"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Meson Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`meson`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Python Support (All)"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`py-all`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Python Flit Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`py-flit`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Python Hatch Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`py-hatch`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Python PDM Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`py-pdm`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Python Poetry Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`py-poetry`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Python Setuptools Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`py-setuptools`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "SCons Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`scons`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "Statistics (PDF) Support"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "`statistics`"
+msgstr ""
+
+#: ../../content/install.md:242
+msgid "0.8"
+msgstr ""
+
+#: ../../content/install.md:269
+msgid "Users may install all dependencies using:"
+msgstr ""
+
+#: ../../content/install.md:275
+msgid ""
+"For example, if a project contains Meson-based packages, releng-tool can "
+"utilize a Meson installation available from the native system or the "
+"version found in the running interpreter (if even different). Users could"
+" either:"
+msgstr ""
+
+#: ../../content/install.md:279
+msgid "Install Meson using the system package manager."
+msgstr ""
+
+#: ../../content/install.md:280
+msgid "Install Meson in their releng-tool installation environment:"
+msgstr ""
+
+#: ../../content/install.md:286
+msgid "Install Meson dependency when installing releng-tool:"
+msgstr ""
+
+#: ../../content/install.md:292
 msgid "Development"
 msgstr ""
 
-#: ../../content/install.md:195
+#: ../../content/install.md:294
 msgid ""
-"To install the most recent development sources, the following [pip][pip] "
-"command can be used:"
+"To install the most recent development sources, the following "
+"[pipx][pipx]/[pip][pip] command can be used:"
 msgstr ""
 

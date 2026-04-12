@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -144,7 +144,7 @@ msgid ""
 "fetching Cargo dependencies)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:106 ../../content/guides/arguments.md:382
+#: ../../content/guides/arguments.md:106 ../../content/guides/arguments.md:394
 msgid ""
 "See also the [`fetch`](action-fetch) and [`<pkg>-fetch-full`](action-pkg-"
 "fetch-full) actions."
@@ -192,7 +192,9 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/arguments.md:154
-msgid "See also the [`<pkg>-lint`](action-pkg-lint) action."
+msgid ""
+"See also [Linting](linting) and the [`<pkg>-lint`](action-pkg-lint) "
+"action."
 msgstr ""
 
 #: ../../content/guides/arguments.md:157
@@ -232,28 +234,36 @@ msgid ""
 msgstr ""
 
 #: ../../content/guides/arguments.md:187
-msgid "`printvars`"
+msgid "`printpkgs`"
 msgstr ""
 
 #: ../../content/guides/arguments.md:192
+msgid "Print the names of packages to be used for the configured state."
+msgstr ""
+
+#: ../../content/guides/arguments.md:199
+msgid "`printvars`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:204
 msgid "Print configuration variables associated with the project."
 msgstr ""
 
-#: ../../content/guides/arguments.md:198 ../../content/guides/arguments.md:496
+#: ../../content/guides/arguments.md:210 ../../content/guides/arguments.md:508
 msgid ""
 "Printed variables will also note whether the variable is known to be set "
 "in the active configuration/execution context."
 msgstr ""
 
-#: ../../content/guides/arguments.md:201
+#: ../../content/guides/arguments.md:213
 msgid "See also the [`<pkg>-printvars`](action-pkg-printvars) action."
 msgstr ""
 
-#: ../../content/guides/arguments.md:204
+#: ../../content/guides/arguments.md:216
 msgid "`punch`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:209
+#: ../../content/guides/arguments.md:221
 msgid ""
 "A punch request acts in a similar fashion as if no global action was "
 "provided. All configured packages will be processed to their completion "
@@ -263,66 +273,66 @@ msgid ""
 "request has been made."
 msgstr ""
 
-#: ../../content/guides/arguments.md:215
+#: ../../content/guides/arguments.md:227
 msgid ""
 "This allows a developer to easily attempt to rebuild all packages in "
 "their project when multiple packages have been updated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:223
+#: ../../content/guides/arguments.md:235
 msgid "`sbom`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:228
+#: ../../content/guides/arguments.md:240
 msgid ""
 "A request to generate a software build of materials (SBOM) for the "
 "project."
 msgstr ""
 
-#: ../../content/guides/arguments.md:234
+#: ../../content/guides/arguments.md:246
 msgid ""
 "By default, a releng-tool run will generate an SBOM file at the end of a "
 "run. This action can be used to generate an SBOM without requiring a "
 "build."
 msgstr ""
 
-#: ../../content/guides/arguments.md:237
+#: ../../content/guides/arguments.md:249
 msgid ""
 "See also [`--sbom-format <fmt>`](arg-sbom-format) (argument) and "
 "[`sbom_format`](conf-sbom-format) (configuration)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:241
+#: ../../content/guides/arguments.md:253
 msgid "`state`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:246
-msgid "A request to dump active state information for a project."
+#: ../../content/guides/arguments.md:258
+msgid "A request to output active state information for a project."
 msgstr ""
 
-#: ../../content/guides/arguments.md:252
+#: ../../content/guides/arguments.md:264
 msgid ""
-"A state request can be used to dump any active configuration and "
+"A state request can be used to output any active configuration and "
 "operating modes."
 msgstr ""
 
-#: ../../content/guides/arguments.md:256
+#: ../../content/guides/arguments.md:268
 msgid "Package actions"
 msgstr ""
 
-#: ../../content/guides/arguments.md:258
+#: ../../content/guides/arguments.md:270
 msgid "The following outlines available package-specific actions:"
 msgstr ""
 
-#: ../../content/guides/arguments.md:261
+#: ../../content/guides/arguments.md:273
 msgid "`<pkg>-build`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:263
+#: ../../content/guides/arguments.md:275
 msgid "Performs the build stage for the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:269
+#: ../../content/guides/arguments.md:281
 msgid ""
 "On success, the specified package will have completed its build. If a "
 "package has any package dependencies, these dependencies will be "
@@ -330,29 +340,29 @@ msgid ""
 " not exist, a notification will be generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:275
+#: ../../content/guides/arguments.md:287
 msgid "`<pkg>-clean`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:277
+#: ../../content/guides/arguments.md:289
 msgid "Cleans the build directory for package (if it exists)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:283
+#: ../../content/guides/arguments.md:295
 msgid ""
 "See also the [`clean`](action-clean) and [`<pkg>-distclean`](action-pkg-"
 "distclean) actions."
 msgstr ""
 
-#: ../../content/guides/arguments.md:287
+#: ../../content/guides/arguments.md:299
 msgid "`<pkg>-configure`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:289
+#: ../../content/guides/arguments.md:301
 msgid "Performs the configure stage for the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:295
+#: ../../content/guides/arguments.md:307
 msgid ""
 "On success, the specified package will have completed its configuration "
 "stage. If a package has any package dependencies, these dependencies will"
@@ -360,41 +370,41 @@ msgid ""
 "does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:301
+#: ../../content/guides/arguments.md:313
 msgid "`<pkg>-distclean`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:306
+#: ../../content/guides/arguments.md:318
 msgid "Perform a pristine clean of a releng-tool package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:312
+#: ../../content/guides/arguments.md:324
 msgid ""
 "This request not only removes the build directory but also any cached "
 "file or directory associated with the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:315
+#: ../../content/guides/arguments.md:327
 msgid ""
 "See also the [`distclean`](action-distclean) and [`<pkg>-clean`](action-"
 "pkg-clean) actions."
 msgstr ""
 
-#: ../../content/guides/arguments.md:319
+#: ../../content/guides/arguments.md:331
 msgid "`<pkg>-exec \"<cmd>\"`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:323
+#: ../../content/guides/arguments.md:335
 msgid "Support accepting arguments after `--`."
 msgstr ""
 
-#: ../../content/guides/arguments.md:326
+#: ../../content/guides/arguments.md:338
 msgid ""
 "When using `--` with this call, [`releng_args`](vars-releng_args) is no "
 "longer populated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:330
+#: ../../content/guides/arguments.md:342
 msgid ""
 "Invokes a provided command in the package's build output directory. This "
 "package action can be useful for developers attempting to develop/debug a"
@@ -404,86 +414,86 @@ msgid ""
 " before a provided command is issued."
 msgstr ""
 
-#: ../../content/guides/arguments.md:337
+#: ../../content/guides/arguments.md:349
 msgid "An example is as follows:"
 msgstr ""
 
-#: ../../content/guides/arguments.md:343
+#: ../../content/guides/arguments.md:355
 msgid "Alternatively, arguments can be passed using the format:"
 msgstr ""
 
-#: ../../content/guides/arguments.md:349
+#: ../../content/guides/arguments.md:361
 msgid "Package environment variables will be available for the invoked command."
 msgstr ""
 
-#: ../../content/guides/arguments.md:351
+#: ../../content/guides/arguments.md:363
 msgid ""
 "See also [`RELENG_EXEC`](env-releng-exec) (environment) and [`releng_args"
 "`](vars-releng_args) (configuration)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:355
+#: ../../content/guides/arguments.md:367
 msgid "`<pkg>-extract`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:357
+#: ../../content/guides/arguments.md:369
 msgid "Performs the extraction stage for the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:363
+#: ../../content/guides/arguments.md:375
 msgid ""
 "On success, the specified package will have completed its extraction "
 "stage. If the provided package name does not exist, a notification will "
 "be generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:367
+#: ../../content/guides/arguments.md:379
 msgid "See also the [`extract`](action-extract) action."
 msgstr ""
 
-#: ../../content/guides/arguments.md:370
+#: ../../content/guides/arguments.md:382
 msgid "`<pkg>-fetch`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:372
+#: ../../content/guides/arguments.md:384
 msgid "Performs the fetch stage for the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:378
+#: ../../content/guides/arguments.md:390
 msgid ""
 "On success, the specified package stage will have completed its fetch "
 "stage. If the provided package name does not exist, a notification will "
 "be generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:386
+#: ../../content/guides/arguments.md:398
 msgid "`<pkg>-fetch-full`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:391
+#: ../../content/guides/arguments.md:403
 msgid ""
 "Performs the fetch and extraction stages for the package, as well as any "
 "post-extraction fetch operations for the supported package type (e.g. "
 "fetching Cargo dependencies)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:399 ../../content/guides/arguments.md:420
+#: ../../content/guides/arguments.md:411 ../../content/guides/arguments.md:432
 msgid ""
 "If the provided package name does not exist, a notification will be "
 "generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:402
+#: ../../content/guides/arguments.md:414
 msgid ""
 "See also the [`fetch-full`](action-fetch-full) and [`<pkg>-fetch"
 "`](action-pkg-fetch) actions."
 msgstr ""
 
-#: ../../content/guides/arguments.md:406
+#: ../../content/guides/arguments.md:418
 msgid "`<pkg>-fresh`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:411
+#: ../../content/guides/arguments.md:423
 msgid ""
 "Prepares a package to be ready to invoke its configuration stage. A "
 "successful end state results in the specified package will have completed"
@@ -491,15 +501,15 @@ msgid ""
 "will be cleaned ahead of time to start fresh."
 msgstr ""
 
-#: ../../content/guides/arguments.md:424
+#: ../../content/guides/arguments.md:436
 msgid "`<pkg>-install`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:426
+#: ../../content/guides/arguments.md:438
 msgid "Performs the installation stage for the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:432
+#: ../../content/guides/arguments.md:444
 msgid ""
 "On success, the specified package will have completed its installation "
 "stage. If a package has any package dependencies, these dependencies will"
@@ -507,79 +517,79 @@ msgid ""
 "does not exist, a notification will be generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:438
+#: ../../content/guides/arguments.md:450
 msgid "`<pkg>-license`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:443
+#: ../../content/guides/arguments.md:455
 msgid ""
 "A request to generate the license information for a specific package in a"
 " project."
 msgstr ""
 
-#: ../../content/guides/arguments.md:450
+#: ../../content/guides/arguments.md:462
 msgid ""
 "Note that license information requires acquiring license documents from "
 "the package itself. Therefore, the package will be fetched/extracted if "
 "not already done."
 msgstr ""
 
-#: ../../content/guides/arguments.md:454
+#: ../../content/guides/arguments.md:466
 msgid "See also the [`licenses`](action-licenses) action."
 msgstr ""
 
-#: ../../content/guides/arguments.md:457
+#: ../../content/guides/arguments.md:469
 msgid "`<pkg>-lint`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:462
+#: ../../content/guides/arguments.md:474
 msgid "A request to lint the quality of a specific package in a project."
 msgstr ""
 
-#: ../../content/guides/arguments.md:468
-msgid "See also the [`lint`](action-lint) action."
+#: ../../content/guides/arguments.md:480
+msgid "See also [Linting](linting) and the [`lint`](action-lint) action."
 msgstr ""
 
-#: ../../content/guides/arguments.md:471
+#: ../../content/guides/arguments.md:483
 msgid "`<pkg>-patch`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:473
+#: ../../content/guides/arguments.md:485
 msgid "Performs the patch stage for the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:479
+#: ../../content/guides/arguments.md:491
 msgid ""
 "On success, the specified package will have completed its patch stage. If"
 " the provided package name does not exist, a notification will be "
 "generated."
 msgstr ""
 
-#: ../../content/guides/arguments.md:482
+#: ../../content/guides/arguments.md:494
 msgid "See also [Patching](patching) and the [`patch`](action-patch) action."
 msgstr ""
 
-#: ../../content/guides/arguments.md:485
+#: ../../content/guides/arguments.md:497
 msgid "`<pkg>-printvars`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:490
+#: ../../content/guides/arguments.md:502
 msgid "Print configuration variables associated with the package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:499
+#: ../../content/guides/arguments.md:511
 msgid "See also the [`printvars`](action-printvars) action."
 msgstr ""
 
-#: ../../content/guides/arguments.md:502
+#: ../../content/guides/arguments.md:514
 msgid "`<pkg>-rebuild`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:504 ../../content/guides/arguments.md:529
+#: ../../content/guides/arguments.md:516 ../../content/guides/arguments.md:541
 msgid "Force a rebuild of a specific package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:510
+#: ../../content/guides/arguments.md:522
 msgid ""
 "Once a package has been built, the package will not attempt to be built "
 "again. Invoking a rebuild request will tell releng-tool to re-invoke the "
@@ -591,19 +601,19 @@ msgid ""
 ">-rebuild-only` instead."
 msgstr ""
 
-#: ../../content/guides/arguments.md:519 ../../content/guides/arguments.md:543
-#: ../../content/guides/arguments.md:566 ../../content/guides/arguments.md:591
-#: ../../content/guides/arguments.md:610
+#: ../../content/guides/arguments.md:531 ../../content/guides/arguments.md:555
+#: ../../content/guides/arguments.md:578 ../../content/guides/arguments.md:603
+#: ../../content/guides/arguments.md:622
 msgid ""
 "If using this action, ensure [understanding rebuilds](/getting-"
 "started/rebuilds) has been read to understand this action's effect."
 msgstr ""
 
-#: ../../content/guides/arguments.md:524
+#: ../../content/guides/arguments.md:536
 msgid "`<pkg>-rebuild-only`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:535
+#: ../../content/guides/arguments.md:547
 msgid ""
 "Once a package has been built, the package will not attempt to be built "
 "again. Invoking a rebuild request will tell releng-tool to re-invoke the "
@@ -614,15 +624,15 @@ msgid ""
 "installation phase are recommended to use `<pkg>-rebuild` instead."
 msgstr ""
 
-#: ../../content/guides/arguments.md:548
+#: ../../content/guides/arguments.md:560
 msgid "`<pkg>-reconfigure`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:550 ../../content/guides/arguments.md:576
+#: ../../content/guides/arguments.md:562 ../../content/guides/arguments.md:588
 msgid "Force a re-configuration of a specific package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:556
+#: ../../content/guides/arguments.md:568
 msgid ""
 "Once a package has been configured, the package will not attempt to "
 "configure it again. Invoking a re-configuration request will tell releng-"
@@ -635,11 +645,11 @@ msgid ""
 ">-reconfigure-only` instead."
 msgstr ""
 
-#: ../../content/guides/arguments.md:571
+#: ../../content/guides/arguments.md:583
 msgid "`<pkg>-reconfigure-only`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:582
+#: ../../content/guides/arguments.md:594
 msgid ""
 "Once a package has been configured, the package will not attempt to "
 "configure it again. Invoking a re-configuration request will tell releng-"
@@ -651,15 +661,15 @@ msgid ""
 " recommended to use `<pkg>-reconfigure` instead."
 msgstr ""
 
-#: ../../content/guides/arguments.md:596
+#: ../../content/guides/arguments.md:608
 msgid "`<pkg>-reinstall`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:598
+#: ../../content/guides/arguments.md:610
 msgid "Force a re-installation of a specific package."
 msgstr ""
 
-#: ../../content/guides/arguments.md:604
+#: ../../content/guides/arguments.md:616
 msgid ""
 "Once a package has been installed, the package will not attempt to "
 "install it again. Invoking a re-installation request will tell releng-"
@@ -668,198 +678,198 @@ msgid ""
 "definition or sources between installation attempts."
 msgstr ""
 
-#: ../../content/guides/arguments.md:614
+#: ../../content/guides/arguments.md:626
 msgid "Option arguments"
 msgstr ""
 
-#: ../../content/guides/arguments.md:616
+#: ../../content/guides/arguments.md:628
 msgid "The following outlines available options:"
 msgstr ""
 
-#: ../../content/guides/arguments.md:619
+#: ../../content/guides/arguments.md:631
 msgid "`--assets-dir <dir>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:624
+#: ../../content/guides/arguments.md:636
 msgid ""
 "Directory to hold cache and download folders instead of using a "
 "configured root directory."
 msgstr ""
 
-#: ../../content/guides/arguments.md:628
+#: ../../content/guides/arguments.md:640
 msgid ""
 "Configuring an asset directory override is only helpful when attempting "
 "to configure a container for all assets. If a user also specifies "
 "`--cache-dir` or `--dl-dir` overrides, this argument has no effect."
 msgstr ""
 
-#: ../../content/guides/arguments.md:633
+#: ../../content/guides/arguments.md:645
 msgid "See also [`RELENG_ASSETS_DIR`](env-releng-assets-dir)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:636
+#: ../../content/guides/arguments.md:648
 msgid "`--cache-dir <dir>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:638
+#: ../../content/guides/arguments.md:650
 msgid ""
 "Directory for distributed version control cache information (defaults to "
 "`<root>/cache`)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:641
+#: ../../content/guides/arguments.md:653
 msgid "See also [`RELENG_CACHE_DIR`](env-releng-cache-dir)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:644
+#: ../../content/guides/arguments.md:656
 msgid "`--config <file>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:649
+#: ../../content/guides/arguments.md:661
 msgid "Configuration file to load (defaults to `<root>/releng-tool.rt`)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:651
+#: ../../content/guides/arguments.md:663
 msgid ""
 "See also [alternative extensions](/guides/tips/alternative-extensions) "
 "that may apply when detecting the default configuration file."
 msgstr ""
 
-#: ../../content/guides/arguments.md:655
+#: ../../content/guides/arguments.md:667
 msgid "`--debug`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:657
+#: ../../content/guides/arguments.md:669
 msgid "Show debug-related messages."
 msgstr ""
 
-#: ../../content/guides/arguments.md:659
+#: ../../content/guides/arguments.md:671
 msgid "See also [`RELENG_DEBUG`](env-releng-debug)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:662
+#: ../../content/guides/arguments.md:674
 msgid "`--debug-extended`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:664
+#: ../../content/guides/arguments.md:676
 msgid ""
 "Show extended debug-related messages, such as process execution arguments"
 " and environment variables."
 msgstr ""
 
-#: ../../content/guides/arguments.md:668
+#: ../../content/guides/arguments.md:680
 msgid "`--development [<mode>]`, `-D [<mode>]`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:670
+#: ../../content/guides/arguments.md:682
 msgid "Support configurable modes."
 msgstr ""
 
-#: ../../content/guides/arguments.md:673
+#: ../../content/guides/arguments.md:685
 msgid "Enables [development mode](development-mode)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:675
+#: ../../content/guides/arguments.md:687
 msgid "See also [`RELENG_DEVMODE`](env-releng-devmode)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:678
+#: ../../content/guides/arguments.md:690
 msgid "`--dl-dir <dir>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:680
+#: ../../content/guides/arguments.md:692
 msgid "Directory for download archives (defaults to `<root>/dl`)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:682
+#: ../../content/guides/arguments.md:694
 msgid "See also [`DL_DIR`](env-dl-dir) and [`RELENG_DL_DIR`](env-releng-dl-dir)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:685
+#: ../../content/guides/arguments.md:697
 msgid "`--force`, `-F`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:690
+#: ../../content/guides/arguments.md:702
 msgid "Triggers a forced request for the releng-tool invoke. This entails:"
 msgstr ""
 
-#: ../../content/guides/arguments.md:692
+#: ../../content/guides/arguments.md:704
 msgid "Packages will be processed as if a re-configuration request has been made."
 msgstr ""
 
-#: ../../content/guides/arguments.md:694
+#: ../../content/guides/arguments.md:706
 msgid ""
 "If an explicit fetch request is made ([`fetch`](action-fetch) or "
 "[`<pkg>-fetch`](action-pkg-fetch)), any packages which cache to a file "
 "will have their cache files deleted to be re-fetched."
 msgstr ""
 
-#: ../../content/guides/arguments.md:698
+#: ../../content/guides/arguments.md:710
 msgid "See also [`RELENG_FORCE`](env-releng-force)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:701
+#: ../../content/guides/arguments.md:713
 msgid "`--help`, `-h`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:703
+#: ../../content/guides/arguments.md:715
 msgid "Show a list of all arguments available by releng-tool."
 msgstr ""
 
-#: ../../content/guides/arguments.md:706
+#: ../../content/guides/arguments.md:718
 msgid "`--images-dir <dir>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:711
+#: ../../content/guides/arguments.md:723
 msgid "Directory for image outputs (defaults to `<root>/output/images`)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:713
+#: ../../content/guides/arguments.md:725
 msgid ""
 "See also [`IMAGES_DIR`](env-images-dir) and [`RELENG_IMAGES_DIR`](env-"
 "releng-images-dir)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:717
+#: ../../content/guides/arguments.md:729
 msgid "`--jobs <jobs>`, `-j <jobs>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:719
+#: ../../content/guides/arguments.md:731
 msgid "Added support for negative jobs."
 msgstr ""
 
-#: ../../content/guides/arguments.md:722
+#: ../../content/guides/arguments.md:734
 msgid "Numbers of jobs to handle (defaults to `0`; automatic)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:724
+#: ../../content/guides/arguments.md:736
 msgid ""
 "If the total number of jobs provided is negative, it will subtract the "
 "provided value from the automatic job detection count (to a minimum of "
 "one)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:727
+#: ../../content/guides/arguments.md:739
 msgid "See also [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:730
+#: ../../content/guides/arguments.md:742
 msgid "`--local-sources [[<pkg>:]<dir>]`, `-L [[<pkg>:]<dir>]`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:732
+#: ../../content/guides/arguments.md:744
 msgid "Support configurable packages and directories."
 msgstr ""
 
-#: ../../content/guides/arguments.md:734
+#: ../../content/guides/arguments.md:746
 msgid "Support `:` (new) or `@` (original) as a separator."
 msgstr ""
 
-#: ../../content/guides/arguments.md:737
+#: ../../content/guides/arguments.md:749
 msgid "Enables [local-sources mode](local-sources-mode)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:739
+#: ../../content/guides/arguments.md:751
 msgid ""
 "Without a directory provided, sources of [internal packages](/guides"
 "/intern-extern-pkgs) will be looked for in the parent directory of the "
@@ -869,38 +879,38 @@ msgid ""
 "provided path."
 msgstr ""
 
-#: ../../content/guides/arguments.md:747
+#: ../../content/guides/arguments.md:759
 msgid "`--nocolorout`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:749
+#: ../../content/guides/arguments.md:761
 msgid "Explicitly disable colorized output."
 msgstr ""
 
-#: ../../content/guides/arguments.md:753
+#: ../../content/guides/arguments.md:765
 msgid "Added `NO_COLOR` support."
 msgstr ""
 
-#: ../../content/guides/arguments.md:755
+#: ../../content/guides/arguments.md:767
 msgid "Added `FORCE_COLOR` support."
 msgstr ""
 
-#: ../../content/guides/arguments.md:758
+#: ../../content/guides/arguments.md:770
 msgid ""
 "releng-tool respects the [`NO_COLOR`][no-color] and [`FORCE_COLOR"
 "`][force-color] environment variables, if configured in the running "
 "environment."
 msgstr ""
 
-#: ../../content/guides/arguments.md:764
+#: ../../content/guides/arguments.md:776
 msgid "`--only-mirror`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:769
+#: ../../content/guides/arguments.md:781
 msgid "Only fetch [external](pkg-opt-external) projects with configured mirror."
 msgstr ""
 
-#: ../../content/guides/arguments.md:771
+#: ../../content/guides/arguments.md:783
 msgid ""
 "When releng-tool is fetching sources with [`url_mirror`](conf-url-mirror)"
 " configured, package downloads will be first attempted on the mirror "
@@ -909,23 +919,23 @@ msgid ""
 "this option can be provided when invoking releng-tool."
 msgstr ""
 
-#: ../../content/guides/arguments.md:778
+#: ../../content/guides/arguments.md:790
 msgid "`--out-dir <dir>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:780
+#: ../../content/guides/arguments.md:792
 msgid "Directory for output (builds, images, etc.; defaults to `<root>/output`)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:782
+#: ../../content/guides/arguments.md:794
 msgid "See also [`RELENG_OUTPUT_DIR`](env-releng-out-dir)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:785
+#: ../../content/guides/arguments.md:797
 msgid "`--profile [<profile>]`, `-P [<profile>]`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:790
+#: ../../content/guides/arguments.md:802
 msgid ""
 "Configure a profile to run with. Providing this option is only applicable"
 " if a project accepts custom profile options. Multiple profiles can be "
@@ -934,180 +944,204 @@ msgid ""
 "(`,`) or a semicolon (`;`)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:796
+#: ../../content/guides/arguments.md:808
 msgid "See also [using profiles](profiles)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:799
-msgid "`--relaxed-args`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:804
-msgid "Do not throw an error when releng-tool is provided unknown arguments."
-msgstr ""
-
-#: ../../content/guides/arguments.md:806
-msgid "See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args)."
-msgstr ""
-
-#: ../../content/guides/arguments.md:809
-msgid "`--root-dir <dir>`, `-R <dir>`"
-msgstr ""
-
 #: ../../content/guides/arguments.md:811
-msgid ""
-"Directory to process a releng-tool project. By default, the root "
-"directory is configured to the working directory."
+msgid "`--quiet`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:814
-msgid "See also [`ROOT_DIR`](env-root-dir)."
+#: ../../content/guides/arguments.md:816
+msgid "Enable a quiet output."
 msgstr ""
 
-#: ../../content/guides/arguments.md:817
-msgid "`--success-exit-code <code>`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:822
-msgid ""
-"Allows overriding the exit code reported on a successful run. By default,"
-" a successful run will have an exit code of `0`."
-msgstr ""
-
-#: ../../content/guides/arguments.md:826
-msgid "`--sbom-format <fmt>`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`rdp-spdx` renamed to `rdf-spdx`."
-msgstr ""
-
-#: ../../content/guides/arguments.md:833
-msgid ""
-"The format to use when generating a software build of materials (SBOM). "
-"Multiple formats can be provided (comma-separated)."
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "Type"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "Value"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "CSV"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`csv`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "HTML"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`html`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "JSON"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`json`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "JSON (SPDX)"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`json-spdx`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "RDF (SPDX)"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`rdf-spdx`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "Text"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`text` (default)"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "XML"
-msgstr ""
-
-#: ../../content/guides/arguments.md:830
-msgid "`xml`"
-msgstr ""
-
-#: ../../content/guides/arguments.md:846
-msgid ""
-"See also [`sbom`](action-sbom) (action) and [`sbom_format`](conf-sbom-"
-"format) (configuration)."
-msgstr ""
-
-#: ../../content/guides/arguments.md:850
+#: ../../content/guides/arguments.md:819
 msgid "`--quirk <quirk-id>`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:855
+#: ../../content/guides/arguments.md:824
 msgid ""
 "Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool "
 "process. This option can be used multiple times to apply multiple quirks."
 msgstr ""
 
+#: ../../content/guides/arguments.md:828
+msgid "`--relaxed-args`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:833
+msgid "Do not throw an error when releng-tool is provided unknown arguments."
+msgstr ""
+
+#: ../../content/guides/arguments.md:835
+msgid "See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:838
+msgid "`--root-dir <dir>`, `-R <dir>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:840
+msgid ""
+"Directory to process a releng-tool project. By default, the root "
+"directory is configured to the working directory."
+msgstr ""
+
+#: ../../content/guides/arguments.md:843
+msgid "See also [`ROOT_DIR`](env-root-dir)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:846
+msgid "`--success-exit-code <code>`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:851
+msgid ""
+"Allows overriding the exit code reported on a successful run. By default,"
+" a successful run will have an exit code of `0`."
+msgstr ""
+
+#: ../../content/guides/arguments.md:855
+msgid "`--sbom-format <fmt>`"
+msgstr ""
+
 #: ../../content/guides/arguments.md:859
+msgid "`rdp-spdx` renamed to `rdf-spdx`."
+msgstr ""
+
+#: ../../content/guides/arguments.md:862
+msgid ""
+"The format to use when generating a software build of materials (SBOM). "
+"Multiple formats can be provided (comma-separated)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "Type"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "Value"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "CSV"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`csv`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "HTML"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`html`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "JSON"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`json`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "JSON (CycloneDX)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`json-cyclonedx`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "JSON (SPDX)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`json-spdx`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "RDF (SPDX)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`rdf-spdx`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "Text"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`text` (default)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "XML"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`xml`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "XML (CycloneDX)"
+msgstr ""
+
+#: ../../content/guides/arguments.md:859
+msgid "`xml-cyclonedx`"
+msgstr ""
+
+#: ../../content/guides/arguments.md:877
+msgid ""
+"See also [`sbom`](action-sbom) (action) and [`sbom_format`](conf-sbom-"
+"format) (configuration)."
+msgstr ""
+
+#: ../../content/guides/arguments.md:881
 msgid "`--verbose`, `-V`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:861
+#: ../../content/guides/arguments.md:883
 msgid "Show additional messages."
 msgstr ""
 
-#: ../../content/guides/arguments.md:863
+#: ../../content/guides/arguments.md:885
 msgid "See also [`RELENG_VERBOSE`](env-releng-verbose)."
 msgstr ""
 
-#: ../../content/guides/arguments.md:866
+#: ../../content/guides/arguments.md:888
 msgid "`--version`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:868
+#: ../../content/guides/arguments.md:890
 msgid "Show releng-tool's version."
 msgstr ""
 
-#: ../../content/guides/arguments.md:871
+#: ../../content/guides/arguments.md:893
 msgid "`--werror`, `-Werror`"
 msgstr ""
 
-#: ../../content/guides/arguments.md:876
+#: ../../content/guides/arguments.md:898
 msgid "Treat warnings from releng-tool as errors."
 msgstr ""
 
-#: ../../content/guides/arguments.md:879
+#: ../../content/guides/arguments.md:901
 msgid "Variable injection"
 msgstr ""
 
-#: ../../content/guides/arguments.md:884
+#: ../../content/guides/arguments.md:906
 msgid ""
 "Users can override a select set of variables by defining them in the "
 "command line arguments. For example, consider a project that defines a "
 "`libfoo` package with a version `1.0`:"
 msgstr ""
 
-#: ../../content/guides/arguments.md:892
+#: ../../content/guides/arguments.md:914
 msgid ""
 "If a user wants to override this a run with `1.1`, the following can be "
 "used:"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -1187,10 +1187,26 @@ msgid "See also the [`--relaxed-args` argument](arg-relaxed-args)."
 msgstr ""
 
 #: ../../content/guides/environment.md:1157
-msgid "`RELENG_IMAGES_DIR=<dir>`"
+msgid "`RELENG_LINT_MAX_VERSION=<dir>`"
 msgstr ""
 
 #: ../../content/guides/environment.md:1162
+msgid ""
+"Configures the maximum lint version checks when using the [`lint"
+"`](action-lint) action."
+msgstr ""
+
+#: ../../content/guides/environment.md:1169
+msgid ""
+"See also [Linting](linting) and [`lint_max_version`](conf-lint-max-"
+"version)."
+msgstr ""
+
+#: ../../content/guides/environment.md:1172
+msgid "`RELENG_IMAGES_DIR=<dir>`"
+msgstr ""
+
+#: ../../content/guides/environment.md:1177
 msgid ""
 "Configures the images directory to use. By default, the images directory "
 "used is configured to `<root>/output/images`. If a user does not override"
@@ -1198,15 +1214,15 @@ msgid ""
 "the `RELENG_IMAGES_DIR` option can be used to override this location."
 msgstr ""
 
-#: ../../content/guides/environment.md:1167
+#: ../../content/guides/environment.md:1182
 msgid "See also [`IMAGES_DIR`](env-images-dir)."
 msgstr ""
 
-#: ../../content/guides/environment.md:1170
+#: ../../content/guides/environment.md:1185
 msgid "`RELENG_OUTPUT_DIR=<dir>`"
 msgstr ""
 
-#: ../../content/guides/environment.md:1175
+#: ../../content/guides/environment.md:1190
 msgid ""
 "Configures the output directory to use. By default, the output directory "
 "used is configured to `<root>/output`. If a user does not override an "
@@ -1214,42 +1230,42 @@ msgid ""
 "`RELENG_OUTPUT_DIR` option can be used to override this location."
 msgstr ""
 
-#: ../../content/guides/environment.md:1180
+#: ../../content/guides/environment.md:1195
 msgid ""
 "See also [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-"
 "container-dir)."
 msgstr ""
 
-#: ../../content/guides/environment.md:1184
+#: ../../content/guides/environment.md:1199
 msgid "`RELENG_PARALLEL_LEVEL=<level>`"
 msgstr ""
 
-#: ../../content/guides/environment.md:1188
+#: ../../content/guides/environment.md:1203
 msgid "Added support for negative jobs."
 msgstr ""
 
-#: ../../content/guides/environment.md:1191
+#: ../../content/guides/environment.md:1206
 msgid "Configures the number of jobs to use (defaults to `0`; automatic)."
 msgstr ""
 
-#: ../../content/guides/environment.md:1193
+#: ../../content/guides/environment.md:1208
 msgid ""
 "If the total number of jobs provided is negative, it will subtract the "
 "provided value from the automatic job detection count (to a minimum of "
 "one)."
 msgstr ""
 
-#: ../../content/guides/environment.md:1196
+#: ../../content/guides/environment.md:1211
 msgid ""
 "See also the [`--jobs` argument](arg-jobs), [`NJOBS`](env-njobs) and "
 "[`NJOBSCONF`](env-njobsconf)."
 msgstr ""
 
-#: ../../content/guides/environment.md:1200
+#: ../../content/guides/environment.md:1215
 msgid "Tool overrides"
 msgstr ""
 
-#: ../../content/guides/environment.md:1202
+#: ../../content/guides/environment.md:1217
 msgid ""
 "Environment variables can be used to help override external tool invoked "
 "by the releng-tool process. For example, when invoking CMake-based "

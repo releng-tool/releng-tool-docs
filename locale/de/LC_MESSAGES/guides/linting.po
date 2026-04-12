@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
+"PO-Revision-Date: 2026-04-12 23:32+0000\n"
+"Language-Team: German (https://app.transifex.com/releng-tool/teams/171906/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../content/guides/linting.md:1
+msgid "Linting"
+msgstr ""
+
+#: ../../content/guides/linting.md:5
+msgid "Support maximum lint version checks."
+msgstr ""
+
+#: ../../content/guides/linting.md:8
+msgid ""
+"The releng-tool application provides linting actions to allow developers to "
+"help sanity check their project configuration. For example:"
+msgstr ""
+
+#: ../../content/guides/linting.md:15
+msgid "The goal of this action is to:"
+msgstr ""
+
+#: ../../content/guides/linting.md:17
+msgid "Help warn about unexpected configuration issues."
+msgstr ""
+
+#: ../../content/guides/linting.md:18
+msgid "Inform users of deprecated features being used."
+msgstr ""
+
+#: ../../content/guides/linting.md:20
+msgid ""
+"The action will cycle through packages configured for a project, checking "
+"both project configuration, package configurations and more for notable "
+"issues."
+msgstr ""
+
+#: ../../content/guides/linting.md:23
+msgid ""
+"For scenarios where a user wants to ignore lines based on preference or "
+"false-positives, lines can be commented with a `noqa` keyword to not be "
+"flagged. For example:"
+msgstr ""
+
+#: ../../content/guides/linting.md:31
+msgid ""
+"As releng-tool adds lint checks over time, new lint checks are mapped to the"
+" release version of releng-tool that introduces the check. For example, if "
+"releng-tool v3 adds two new checks, both checks will be mapped to v3.0. If a"
+" build environment wants to perform CI without utilizing new lint checks, "
+"they can do so by configuring a maximum version for lint checks to use. This"
+" can be configured in the [`lint_max_version`](conf-lint-max-version) "
+"project configuration:"
+msgstr ""
+
+#: ../../content/guides/linting.md:43
+msgid ""
+"Or configured with a [`RELENG_LINT_MAX_VERSION`](env-releng-lint-max-"
+"version) environment variable:"
+msgstr ""
+
+#: ../../content/guides/linting.md:51
+msgid ""
+"This should allow developers to maintain a working CI pipeline that may lint"
+" their project configurations while still utilizing newer versions of "
+"releng-tool. Developers can bump to newer link-check versions when they are "
+"ready to handle new checks that may be introduced."
+msgstr ""

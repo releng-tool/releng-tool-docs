@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) releng-tool
+# This file is distributed under the same license as the releng-tool package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: releng-tool\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
+"PO-Revision-Date: 2026-04-12 23:32+0000\n"
+"Language-Team: Chinese Traditional (https://app.transifex.com/releng-tool/teams/171906/zh-Hant/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh-Hant\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../content/news/2026-03-01_02.09.00.md:1
+msgid "2.9 (2026-03-01)"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:3
+msgid "New Linting Checks"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:5
+msgid ""
+"Thirteen new linting checks have been added when using the [`lint`](action-"
+"lint) action:"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:12
+msgid "An overall summary of additions includes:"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:14
+msgid "Notify use of deprecated configurations."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:15
+msgid ""
+"Notify use of development-mode package configurations for packages which do "
+"not configure a development revision."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:17
+msgid ""
+"Various checks for package/feature-specific configurations when a given "
+"package/VCS/feature type is not applicable (e.g. attempting to use Git-"
+"related features for a non-Git VCS type package)."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:21
+msgid ""
+"This change drops some warnings that were originally presented in a default "
+"releng-tool run to now only show in a lint request."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:24
+msgid "Support for Development Mode Patching"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:26
+msgid ""
+"Developers may now utilizing patching support for packages with a "
+"[development revision](pkg-opt-devmode-revision). Historically, patches "
+"would only be aimed to run for non-development revisions as a way to support"
+" delays in patch application for upstream release versions. However, "
+"maintainers of a releng-tool project may also experience the same delays "
+"when waiting for the application of packages on development streams they "
+"cannot control. With this release, developers will have new options to hint "
+"whether or not patches are applied to a package no matter what mode is "
+"configured."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:36
+msgid ""
+"The default patching strategy has not changed from previous releases. "
+"Patches for a package are still automatically detected and applied for non-"
+"development revisioned packages."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:40
+msgid ""
+"If a developer now wishes to apply patches for a package with a development "
+"mode revision, the [`LIBFOO_DEVMODE_PATCHES`](pkg-opt-devmode-patches) "
+"option can now be used. For example:"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:49
+msgid ""
+"When operating in [development mode](/guides/development-mode), the `libfoo`"
+" package will utilize the `feature/alpha` branch and will automatically "
+"apply patches to the cloned sources during the patching stage. The patch "
+"configuration also supports pattern matching to have only specific or a "
+"wildcard of patches to apply. For example:"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:62
+msgid ""
+"With the ability to support patching packages in development mode, "
+"developers utilizing this feature may now need to configure packages to not "
+"apply for a standard build. To support this, the configuration option "
+"[`LIBFOO_IGNORE_PATCHES`](pkg-opt-ignore-patches) has been introduced. If a "
+"developer wants to have new patches applied to only in a development mode "
+"context, the following configuration can be used:"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:75
+msgid ""
+"Normal builds will now not apply any patches to `libfoo` by default, and "
+"only apply changes when in a development mode. This option also supports "
+"patterns to allow ignoring only specific patches for a normal build. For "
+"example:"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:86
+msgid ""
+"For more information on tailoring patch applications for specific "
+"development modes, refer to the documentation of the newly added options."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:89
+msgid "Planned Removals Next Release"
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:91
+msgid ""
+"A series of deprecated features are now planned to be removed in a following"
+" release."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:94
+msgid ""
+"Bazaar-site support is planned to be removed. Developers can switch to using"
+" the Breezy-site type."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:96
+msgid "Support for Python 3.9 (EOL) will be dropped."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:97
+msgid ""
+"Package configurations `override_revisions` and `override_sites` will no "
+"longer be supported. Developers can take advantage of the "
+"[`revisions`](conf-revisions) configuration key or utilize [variable "
+"injection](arg-variable-injection) for overriding options on the fly."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:102
+msgid ""
+"The `LIBFOO_SKIP_REMOTE_*` options will be removed as respective "
+"`LIBFOO_REMOTE_*` options exist."
+msgstr ""
+
+#: ../../content/news/2026-03-01_02.09.00.md:104
+msgid ""
+"An implicit Python package setup type will no longer be supported. Python-"
+"based packages are required to configure [`LIBFOO_PYTHON_SETUP_TYPE`](pkg-"
+"opt-python-setup-type)."
+msgstr ""

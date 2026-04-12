@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -56,14 +56,14 @@ msgid "Parameters"
 msgstr ""
 
 #: of releng_tool.util.log.debug:12 releng_tool.util.log.err:11
-#: releng_tool.util.log.hint:13 releng_tool.util.log.log:10
+#: releng_tool.util.log.hint:13 releng_tool.util.log.log:11
 #: releng_tool.util.log.note:11 releng_tool.util.log.success:11
 #: releng_tool.util.log.verbose:12 releng_tool.util.log.warn:11
 msgid "the message"
 msgstr ""
 
 #: of releng_tool.util.log.debug:13 releng_tool.util.log.err:12
-#: releng_tool.util.log.hint:14 releng_tool.util.log.log:11
+#: releng_tool.util.log.hint:14 releng_tool.util.log.log:13
 #: releng_tool.util.log.note:12 releng_tool.util.log.success:12
 #: releng_tool.util.log.verbose:13 releng_tool.util.log.warn:12
 msgid ""
@@ -91,8 +91,20 @@ msgid ""
 "enabled) a cyan colorization."
 msgstr ""
 
-#: of releng_tool.util.log.log:4
+#: of releng_tool.util.log.log:3
+msgid "Added support for ``end`` and ``expand``."
+msgstr ""
+
+#: of releng_tool.util.log.log:5
 msgid "Logs a (normal) message to standard out with a trailing new line."
+msgstr ""
+
+#: of releng_tool.util.log.log:15
+msgid "the end character to print"
+msgstr ""
+
+#: of releng_tool.util.log.log:17
+msgid "whether the message will perform variable expansion"
 msgstr ""
 
 #: of releng_tool.util.log.note:4
@@ -558,7 +570,45 @@ msgstr ""
 msgid "import globals into invoking script"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:33
+#: of releng_tool.util.log.is_api_log_mode:4
+msgid ""
+"Allows a caller to determine whether or not API mode is configured for "
+"this run."
+msgstr ""
+
+#: of releng_tool.util.log.is_api_log_mode:7
+msgid "whether or not the instance is configured for api mode"
+msgstr ""
+
+#: of releng_tool.util.log.is_debug:4
+msgid ""
+"Allows a caller to determine whether or not the instance is actively "
+"configured with debug messaging. This allow a caller to have the option "
+"to decide whether or not it needs to prepare a message for a ``debug`` "
+"call, if the message to be built may include a performance cost."
+msgstr ""
+
+#: of releng_tool.util.log.is_debug:15 releng_tool.util.log.is_verbose:15
+msgid "check if a provided log tag is set"
+msgstr ""
+
+#: of releng_tool.util.log.is_debug:18
+msgid "whether or not the instance is configured with debug messaging"
+msgstr ""
+
+#: of releng_tool.util.log.is_verbose:4
+msgid ""
+"Allows a caller to determine whether or not the instance is actively "
+"configured with verbose messaging. This allow a caller to have the option"
+" to decide whether or not it needs to prepare a message for a ``verbose``"
+" call, if the message to be built may include a performance cost."
+msgstr ""
+
+#: of releng_tool.util.log.is_verbose:18
+msgid "whether or not the instance is configured with verbose messaging"
+msgstr ""
+
+#: ../../content/guides/script-helpers.md:36
 msgid ""
 "An alias for ``os.path.join``. See also "
 "https://docs.python.org/library/os.path.html#os.path.join."
@@ -663,7 +713,7 @@ msgid ""
 " does not exist, it will be automatically created."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:45
+#: ../../content/guides/script-helpers.md:48
 msgid ""
 "An alias for ``pathlib.Path``. See also "
 "https://docs.python.org/3/library/pathlib.html#pathlib.Path."
@@ -897,7 +947,7 @@ msgid ""
 "verbosity."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:58
+#: ../../content/guides/script-helpers.md:61
 msgid "See also the ``--verbose`` :ref:`argument <arg-verbose>`."
 msgstr ""
 
@@ -911,34 +961,34 @@ msgstr ""
 msgid "when warnings-are-errors is configured"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:63
+#: ../../content/guides/script-helpers.md:66
 msgid "Available variables"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:65
+#: ../../content/guides/script-helpers.md:68
 msgid ""
 "The following variables are registered in the global context for any "
 "project or package definition/script."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:69
+#: ../../content/guides/script-helpers.md:72
 msgid "`releng_args`"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:72
+#: ../../content/guides/script-helpers.md:75
 msgid ""
 "Variable no longer populated when [`action-pkg-exec`](action-pkg-exec) is"
 " set."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:76
+#: ../../content/guides/script-helpers.md:79
 msgid ""
 "When using [`<pkg>-exec \"<cmd>\"`](action-pkg-exec), the `releng_args` "
 "variable will not be populated. This is to prevent conflicts from "
 "project-specific argument processing and package-specific run arguments."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:81
+#: ../../content/guides/script-helpers.md:84
 msgid ""
 "A list of arguments forwarded into a releng-tool invoke. If a caller uses"
 " the `--` argument, all trailing arguments will be populated into "
@@ -946,7 +996,7 @@ msgid ""
 "own tailoring."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:86
+#: ../../content/guides/script-helpers.md:89
 msgid ""
 "A user can use Python's [`argparse`][argparse] module to manage custom "
 "arguments. For example, if trying to add a new flag `--custom` to a "
@@ -954,23 +1004,23 @@ msgid ""
 "definition:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:98
+#: ../../content/guides/script-helpers.md:101
 msgid "The flag can be enabled by invoking releng-tool using:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:104
+#: ../../content/guides/script-helpers.md:108
 msgid "`releng_version`"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:106
+#: ../../content/guides/script-helpers.md:110
 msgid "The version of releng-tool."
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:112
+#: ../../content/guides/script-helpers.md:116
 msgid "Importing helpers"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:114
+#: ../../content/guides/script-helpers.md:118
 msgid ""
 "Scripts directly invoked by releng-tool will automatically have these "
 "helpers registered in the script's globals module (i.e. no import is "
@@ -979,7 +1029,7 @@ msgid ""
 "import can be used to, for example, import a specific function:"
 msgstr ""
 
-#: ../../content/guides/script-helpers.md:124
+#: ../../content/guides/script-helpers.md:128
 msgid "Or, if desired, all helper methods can be imported at once:"
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  releng-tool\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: 2023-07-29 21:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -32,7 +32,7 @@ msgid ""
 "supported module."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:10
+#: ../../content/guides/packages/pkg-type-python.md:11
 msgid ""
 "Only the build and installation phases are used when processing the "
 "sources for a Python package (i.e. no configuration stage is invoked). "
@@ -43,23 +43,30 @@ msgid ""
 "will use the same Python interpreter used by releng-tool."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:19
+#: ../../content/guides/packages/pkg-type-python.md:20
 msgid ""
-"For environments where releng-tool has been installed using `pipx`, a "
-"user will need to install any required build backend desired using the "
-"[`pipx inject`][pipx-inject] command. For example, packages requiring "
-"[Flit][flit] can install the build backend for their isolated environment"
-" using:"
+"For environments where releng-tool is installed using `pipx` or in a "
+"virtual environment, a user will need to install any required "
+"packages/backends needed for a project's Python packages. Users may "
+"install dependencies manually (e.g. using [`pipx inject`][pipx-inject] "
+"for `pipx` installs). Alternatively, users may also automatically support"
+" various Python dependencies when installing releng-tool. For example:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:30
+#: ../../content/guides/packages/pkg-type-python.md:31
+msgid ""
+"See also [Optional Python Dependencies](python-dependencies) for more "
+"information."
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-python.md:35
 msgid ""
 "A developer can override what Python interpreter to use by configuring "
 "the [`LIBFOO_PYTHON_INTERPRETER`](pkg-opt-python-interpreter) option in a"
 " package:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:38
+#: ../../content/guides/packages/pkg-type-python.md:43
 msgid ""
 "The following shows the default arguments used in a package's build stage"
 " based on the configured setup type and outlines options that are "
@@ -67,64 +74,64 @@ msgid ""
 "examples](/examples/examples-python)"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:48
+#: ../../content/guides/packages/pkg-type-python.md:53
 msgid "Flit build stage"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:51
+#: ../../content/guides/packages/pkg-type-python.md:56
 msgid ""
 "The build stage invokes Python with the `flit_core.wheel` module and "
 "arguments:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:63
+#: ../../content/guides/packages/pkg-type-python.md:68
 msgid "Hatch build stage"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:66
+#: ../../content/guides/packages/pkg-type-python.md:71
 msgid "The build stage invokes Python with the `hatch` module and arguments:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:78
+#: ../../content/guides/packages/pkg-type-python.md:83
 msgid "PDM build stage"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:81
+#: ../../content/guides/packages/pkg-type-python.md:86
 msgid "The build stage invokes Python with the `pdm` module and arguments:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:93
+#: ../../content/guides/packages/pkg-type-python.md:98
 msgid "PEP 517 build stage"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:96
+#: ../../content/guides/packages/pkg-type-python.md:101
 msgid "The build stage invokes Python with the `build` module and arguments:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:108
+#: ../../content/guides/packages/pkg-type-python.md:113
 msgid "Poetry build stage"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:111
+#: ../../content/guides/packages/pkg-type-python.md:116
 msgid "The build stage invokes Python with the `poetry` module and arguments:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:123
+#: ../../content/guides/packages/pkg-type-python.md:128
 msgid "Setuptools build stage"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:126
-#: ../../content/guides/packages/pkg-type-python.md:148
+#: ../../content/guides/packages/pkg-type-python.md:131
+#: ../../content/guides/packages/pkg-type-python.md:153
 msgid "The build stage invokes Python with the `setup.py` file and arguments:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:132
+#: ../../content/guides/packages/pkg-type-python.md:137
 msgid ""
 "However, if `setup.py` does not exist, the `setuptools` module will be "
 "imported and `setup()` will be triggered:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:145
+#: ../../content/guides/packages/pkg-type-python.md:150
 msgid "distutils build stage"
 msgstr ""
 
@@ -136,8 +143,8 @@ msgstr ""
 #: ../../content/guides/packages/_pkg-build-env.md:4
 #: ../../content/guides/packages/_pkg-build-opts.md:4
 #: ../../content/guides/packages/_pkg-env.md:6
-#: ../../content/guides/packages/pkg-type-python.md:199
-#: ../../content/guides/packages/pkg-type-python.md:328
+#: ../../content/guides/packages/pkg-type-python.md:204
+#: ../../content/guides/packages/pkg-type-python.md:333
 msgid "Support added for path-like values."
 msgstr ""
 
@@ -183,36 +190,31 @@ msgid ""
 "variable's value. This field is optional."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:173
+#: ../../content/guides/packages/pkg-type-python.md:178
 msgid "`LIBFOO_INSTALL_DEFS`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:176
-msgid ""
-"No longer applicable as all Python packages are  installed using the "
-"[`installer`][installer] module."
-msgstr ""
-
-#: ../../content/guides/packages/pkg-type-python.md:180
-msgid "`LIBFOO_INSTALL_ENV`"
-msgstr ""
-
-#: ../../content/guides/packages/pkg-type-python.md:183
-#: ../../content/guides/packages/pkg-type-python.md:190
+#: ../../content/guides/packages/pkg-type-python.md:181
+#: ../../content/guides/packages/pkg-type-python.md:188
+#: ../../content/guides/packages/pkg-type-python.md:195
 msgid ""
 "No longer applicable as all Python packages are installed using the "
 "[`installer`][installer] module."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:187
+#: ../../content/guides/packages/pkg-type-python.md:185
+msgid "`LIBFOO_INSTALL_ENV`"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-python.md:192
 msgid "`LIBFOO_INSTALL_OPTS`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:195
+#: ../../content/guides/packages/pkg-type-python.md:200
 msgid "`LIBFOO_PYTHON_DIST_PATH`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:202
+#: ../../content/guides/packages/pkg-type-python.md:207
 msgid ""
 "When a Python package is built, it will scan the `dist/` directory in "
 "package's output directory for a wheel package. It is possible for some "
@@ -221,18 +223,18 @@ msgid ""
 "will fail to find and install the package."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:208
+#: ../../content/guides/packages/pkg-type-python.md:213
 msgid ""
 "This option informs releng-tool what container folder hosts the provided "
 "wheel package. For example, if the Python package configures itself to "
 "output into `build/dist`, the following configuration can be used:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:217
+#: ../../content/guides/packages/pkg-type-python.md:222
 msgid "`LIBFOO_PYTHON_INSTALLER_INTERPRETER`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:222
+#: ../../content/guides/packages/pkg-type-python.md:227
 msgid ""
 "Configures the interpreter path to use when generating launcher scripts "
 "when installing a Python package. This is passed into "
@@ -240,57 +242,57 @@ msgid ""
 "application (if a given Python package defines project scripts)."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:227
+#: ../../content/guides/packages/pkg-type-python.md:232
 msgid "The default interpreter used for project scripts is as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:219
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:224
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "Type"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:219
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:224
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "Value"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:219
+#: ../../content/guides/packages/pkg-type-python.md:224
 msgid "Non-Windows"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:219
+#: ../../content/guides/packages/pkg-type-python.md:224
 msgid "`/usr/bin/python`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:219
+#: ../../content/guides/packages/pkg-type-python.md:224
 msgid "Windows"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:219
+#: ../../content/guides/packages/pkg-type-python.md:224
 msgid "`python.exe`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:234
+#: ../../content/guides/packages/pkg-type-python.md:239
 msgid ""
 "An example using a custom interpreter `/opt/custom/python` for project "
 "scripts can be done using:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:241
+#: ../../content/guides/packages/pkg-type-python.md:246
 msgid "Which should generate project scripts with a shebang:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:248
+#: ../../content/guides/packages/pkg-type-python.md:253
 msgid ""
 "Before the introduction of this variable, the interpreter used would be "
 "configured to the same interpreter used by releng-tool."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:252
+#: ../../content/guides/packages/pkg-type-python.md:257
 msgid "`LIBFOO_PYTHON_INSTALLER_LAUNCHER_KIND`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:257
+#: ../../content/guides/packages/pkg-type-python.md:262
 msgid ""
 "Defines the launcher-kind to build when generating any executable scripts"
 " defined in the Python package's project configuration "
@@ -299,211 +301,213 @@ msgid ""
 "[`installer`][installer]. Options may include:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:263
+#: ../../content/guides/packages/pkg-type-python.md:268
 msgid "`posix`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:264
+#: ../../content/guides/packages/pkg-type-python.md:269
 msgid "`win-amd64`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:265
+#: ../../content/guides/packages/pkg-type-python.md:270
 msgid "`win-arm64`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:266
+#: ../../content/guides/packages/pkg-type-python.md:271
 msgid "`win-arm`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:267
+#: ../../content/guides/packages/pkg-type-python.md:272
 msgid "`win-ia32`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:269
+#: ../../content/guides/packages/pkg-type-python.md:274
 msgid ""
 "For example, to explicitly build POSIX executable scripts, the following "
 "configuration can be defined:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:277
+#: ../../content/guides/packages/pkg-type-python.md:282
 msgid "`LIBFOO_PYTHON_INSTALLER_SCHEME`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:282
+#: ../../content/guides/packages/pkg-type-python.md:287
 msgid ""
 "Defines the installation scheme used for Python packages. By default, "
 "releng-tool uses the following scheme entries:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "Path"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "Installation directory"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "data"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "`prefix`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "include"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "`prefix/include/python`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "platinclude"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "platlib"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "`prefix/lib/python`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "platstdlib"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "purelib"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "scripts"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "`prefix/bin`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:279
+#: ../../content/guides/packages/pkg-type-python.md:284
 msgid "stdlib"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:296
+#: ../../content/guides/packages/pkg-type-python.md:301
 msgid ""
 "A package can be configured with a scheme `native` to use the default "
 "install target based on the native system:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:303
+#: ../../content/guides/packages/pkg-type-python.md:308
 msgid ""
 "Packages can also use schemes supported by Python's "
 "[`sysconfig`][sysconfig] module. For example:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:310
+#: ../../content/guides/packages/pkg-type-python.md:315
 msgid "A package may also define a custom scheme:"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:326
+#: ../../content/guides/packages/pkg-type-python.md:331
 msgid "`LIBFOO_PYTHON_INTERPRETER`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:331
+#: ../../content/guides/packages/pkg-type-python.md:336
 msgid ""
 "Defines a specific Python interpreter when processing the build and "
 "installation stages for a package. If not specified, the system's Python "
 "interpreter will be used. This field is optional."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:340
+#: ../../content/guides/packages/pkg-type-python.md:345
 msgid "`LIBFOO_PYTHON_SETUP_TYPE`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:344
+#: ../../content/guides/packages/pkg-type-python.md:349
 msgid "Support added for `poetry`."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:347
+#: ../../content/guides/packages/pkg-type-python.md:352
 msgid "Use of [`installer`][installer] is required for all package types."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:350
+#: ../../content/guides/packages/pkg-type-python.md:355
 msgid "Support for `distutils` packages is deprecated."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:353
-msgid ""
-"The setup type will configure how a Python package is built and "
-"installed. The default setup type used for a Python package is a "
-"distutils package. It is recommended to always configure a setup type for"
-" a Python package. The following outlines available setup types in "
-"releng-tool:"
+#: ../../content/guides/packages/pkg-type-python.md:357
+msgid "Explicit setup type is required."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:360
+msgid ""
+"The setup type will configure how a Python package is built and "
+"installed. It is required to configure a setup type for a Python package."
+" The following outlines available setup types in releng-tool:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[Flit][flit]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "`flit`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[Hatch][hatch]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "`hatch`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[PDM][pdm]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "`pdm`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[PEP 517 build][pypa-build]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "`pep517`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[Poetry][poetry]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "`poetry`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[Setuptools][setuptools]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "`setuptools`"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
+#: ../../content/guides/packages/pkg-type-python.md:357
 msgid "[distutils][distutils]"
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:349
-msgid "`distutils` (default)"
-msgstr ""
-
-#: ../../content/guides/packages/pkg-type-python.md:368
-msgid "For example:"
+#: ../../content/guides/packages/pkg-type-python.md:357
+msgid "`distutils`"
 msgstr ""
 
 #: ../../content/guides/packages/pkg-type-python.md:374
+msgid "For example:"
+msgstr ""
+
+#: ../../content/guides/packages/pkg-type-python.md:380
 msgid ""
 "Host environments are required to pre-install needed packages in their "
 "running Python environment to support setup types not available in a "
@@ -512,7 +516,7 @@ msgid ""
 "system."
 msgstr ""
 
-#: ../../content/guides/packages/pkg-type-python.md:380
+#: ../../content/guides/packages/pkg-type-python.md:386
 msgid ""
 "The [`installer`][installer] module will be used to install packages to "
 "their destination folders. For  Setuptools/distutils packages, ensure "

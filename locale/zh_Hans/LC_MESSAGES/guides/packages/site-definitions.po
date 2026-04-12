@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: releng-tool \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 11:32-0500\n"
+"POT-Creation-Date: 2026-04-12 19:31-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -65,41 +65,18 @@ msgstr ""
 msgid "The following shows an example of cloning the latest trunk branch:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:56
-msgid "Bazaar site"
-msgstr ""
-
-#: ../../content/guides/packages/site-definitions.md:58
-msgid "Support for Bazaar sites is deprecated."
-msgstr ""
-
-#: ../../content/guides/packages/site-definitions.md:61
-msgid ""
-"To define a [Bazaar][bazaar]-based location, the site value must be "
-"prefixed with a `bzr+` value. A site can be defined as follows:"
-msgstr ""
-
-#: ../../content/guides/packages/site-definitions.md:70
-msgid ""
-"The value after the prefix is a path which will be provided to a `bzr "
-"export` call [^bzrexport]. Content from a Bazaar repository will be "
-"fetched and archived into a file during fetch stage. Once a cached "
-"archive is made, the fetch stage will be skipped unless the archive is "
-"manually removed."
-msgstr ""
-
-#: ../../content/guides/packages/site-definitions.md:76
+#: ../../content/guides/packages/site-definitions.md:55
 msgid "CVS site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:78
+#: ../../content/guides/packages/site-definitions.md:57
 msgid ""
 "To define a [CVS][cvs]-based location, the site value must be prefixed "
 "with a `cvs+` or other common CVSROOT value. A site can be defined as "
 "follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:88
+#: ../../content/guides/packages/site-definitions.md:67
 msgid ""
 "The value after the prefix is a space-separated pair, where the first "
 "part represents the CVSROOT [^cvsroot] to use and the second part "
@@ -109,39 +86,39 @@ msgid ""
 " archive is manually removed."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:97
+#: ../../content/guides/packages/site-definitions.md:76
 msgid "The following shows an example of cloning a libfoo-1.2.3 tag:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:108
-#: ../../content/guides/packages/site-definitions.md:164
-#: ../../content/guides/packages/site-definitions.md:227
-#: ../../content/guides/packages/site-definitions.md:350
+#: ../../content/guides/packages/site-definitions.md:87
+#: ../../content/guides/packages/site-definitions.md:143
+#: ../../content/guides/packages/site-definitions.md:206
+#: ../../content/guides/packages/site-definitions.md:329
 msgid "The following shows an example of cloning a v1.x LTS branch:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:117
+#: ../../content/guides/packages/site-definitions.md:96
 msgid "File site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:122
+#: ../../content/guides/packages/site-definitions.md:101
 msgid ""
 "Site type dedicated for accepting a file uniform resource identifier "
 "(`file://`). The site value also accepts the `file+` prefix."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:132
+#: ../../content/guides/packages/site-definitions.md:111
 msgid "Git site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:134
+#: ../../content/guides/packages/site-definitions.md:113
 msgid ""
 "To define a [Git][git]-based location, the site value must be prefixed "
 "with a `git+` value or postfixed with the `.git` value. A site can be "
 "defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:144
+#: ../../content/guides/packages/site-definitions.md:123
 msgid ""
 "The site value (less prefix, if used) is used as a Git remote "
 "[^gitremote] for a locally managed cache source. Git sources will be "
@@ -152,26 +129,26 @@ msgid ""
 "the new revision (if it exists)."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:153
-#: ../../content/guides/packages/site-definitions.md:216
+#: ../../content/guides/packages/site-definitions.md:132
+#: ../../content/guides/packages/site-definitions.md:195
 msgid "The following shows an example of cloning a v1.2.3 tag:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:174
+#: ../../content/guides/packages/site-definitions.md:153
 msgid "The following shows an example of cloning with a commit hash:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:183
+#: ../../content/guides/packages/site-definitions.md:162
 msgid "Local site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:185
+#: ../../content/guides/packages/site-definitions.md:164
 msgid ""
 "To define a package to use local site/sources, the site value can be set "
 "to `local`. A local site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:192
+#: ../../content/guides/packages/site-definitions.md:171
 msgid ""
 "This is equivalent to configuring [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) "
 "to a `local` VCS type as well. Note that a local package is intended for "
@@ -179,17 +156,17 @@ msgid ""
 "vcs-type) for more information."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:198
+#: ../../content/guides/packages/site-definitions.md:177
 msgid "Mercurial site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:200
+#: ../../content/guides/packages/site-definitions.md:179
 msgid ""
 "To define a [Mercurial][mercurial]-based location, the site value must be"
 " prefixed with a `hg+` value. A site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:207
+#: ../../content/guides/packages/site-definitions.md:186
 msgid ""
 "The value after the prefix is used as the `SOURCE` in an `hg clone` call "
 "[^hgclone]. Mercurial sources will be cached inside the `cache` directory"
@@ -200,17 +177,17 @@ msgid ""
 "exists)."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:236
+#: ../../content/guides/packages/site-definitions.md:215
 msgid "Perforce site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:241
+#: ../../content/guides/packages/site-definitions.md:220
 msgid ""
 "To define a Perforce-based location, the site value must be prefixed with"
 " an `perforce+` value. A site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:250
+#: ../../content/guides/packages/site-definitions.md:229
 msgid ""
 "The value after the prefix is a space-separated pair, where the first "
 "part represents the Perforce service (`P4PORT` [^p4port]) to use and the "
@@ -222,21 +199,21 @@ msgid ""
 "the fetch stage ill be skipped unless the archive is manually removed."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:261
+#: ../../content/guides/packages/site-definitions.md:240
 msgid "The following shows an example of cloning the 27574 revision:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:270
+#: ../../content/guides/packages/site-definitions.md:249
 msgid "rsync site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:275
+#: ../../content/guides/packages/site-definitions.md:254
 msgid ""
 "To define an rsync-based location, the site value must be prefixed with "
 "an `rsync+` value. A site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:282
+#: ../../content/guides/packages/site-definitions.md:261
 msgid ""
 "The value of `<source>` will be provided to a `rsync` call's "
 "[^rsynccommand] `SRC` value. Fetched content will be stored in an archive"
@@ -246,17 +223,17 @@ msgid ""
 " [`LIBFOO_FETCH_OPTS`](pkg-opt-fetch-opts) option."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:290
+#: ../../content/guides/packages/site-definitions.md:269
 msgid "SCP site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:292
+#: ../../content/guides/packages/site-definitions.md:271
 msgid ""
 "To define an SCP-based location, the site value must be prefixed with a "
 "`scp+` value. A site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:299
+#: ../../content/guides/packages/site-definitions.md:278
 msgid ""
 "The value after the prefix is a path which will be provided to a `scp` "
 "call's [^scpcommand] source host value. The SCP site only supports "
@@ -265,17 +242,17 @@ msgid ""
 " the file is manually removed."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:305
+#: ../../content/guides/packages/site-definitions.md:284
 msgid "SVN site"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:307
+#: ../../content/guides/packages/site-definitions.md:286
 msgid ""
 "To define a [Subversion][subversion]-based location, the site value must "
 "be prefixed with a `svn+` value. A site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:314
+#: ../../content/guides/packages/site-definitions.md:293
 msgid ""
 "The value after the prefix is a path which will be provided to a `svn "
 "checkout` call [^svncheckout]. Content from a Subversion repository will "
@@ -284,33 +261,33 @@ msgid ""
 "manually removed."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:321
+#: ../../content/guides/packages/site-definitions.md:300
 msgid ""
 "The following shows an example of cloning a v1.2.3 tag with a fixed SVN "
 "revision value:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:330
+#: ../../content/guides/packages/site-definitions.md:309
 msgid "This ensures a fixed/repeatable clone experience."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:335
+#: ../../content/guides/packages/site-definitions.md:314
 msgid ""
 "The following shows an example of cloning a v1.2.3 tag with a flexible "
 "revision value:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:344
+#: ../../content/guides/packages/site-definitions.md:323
 msgid ""
 "Provides a simple definition to clone a tag without needing to determine "
 "an explicit SVN revision. This approach supports moved tags."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:359
+#: ../../content/guides/packages/site-definitions.md:338
 msgid "URL site (default)"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:361
+#: ../../content/guides/packages/site-definitions.md:340
 msgid ""
 "All packages that do not define a helper prefix/postfix value (as seen in"
 " other site definitions) or do not explicitly set a [`LIBFOO_VCS_TYPE"
@@ -318,7 +295,7 @@ msgid ""
 "site. A URL site can be defined as follows:"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:370
+#: ../../content/guides/packages/site-definitions.md:349
 msgid ""
 "The site value provided will be directly used in a URL request. URL "
 "values supported are defined by the Python's `urlopen` implementation "
@@ -326,61 +303,55 @@ msgid ""
 "and more."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:374
+#: ../../content/guides/packages/site-definitions.md:353
 msgid "See also [`urlopen_context`](conf-urlopen-context)."
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:377
+#: ../../content/guides/packages/site-definitions.md:356
 msgid "<https://www.breezy-vcs.org/doc/en/user-reference/export-help.html>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:378
-msgid ""
-"<https://web.archive.org/web/http://doc.bazaar.canonical.com/bzr.2.7/en"
-"/user-reference/export-help.html>"
-msgstr ""
-
-#: ../../content/guides/packages/site-definitions.md:380
+#: ../../content/guides/packages/site-definitions.md:358
 msgid ""
 "<https://www.gnu.org/software/trans-"
 "coord/manual/cvs/html_node/Specifying-a-repository.html>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:379
+#: ../../content/guides/packages/site-definitions.md:357
 msgid ""
 "<https://www.gnu.org/software/trans-"
 "coord/manual/cvs/html_node/checkout.html#checkout>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:382
+#: ../../content/guides/packages/site-definitions.md:360
 msgid "<https://git-scm.com/docs/git-remote>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:383
+#: ../../content/guides/packages/site-definitions.md:361
 msgid "<https://www.mercurial-scm.org/help/commands/clone>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:384
+#: ../../content/guides/packages/site-definitions.md:362
 msgid "<https://www.perforce.com/manuals/cmdref/Content/CmdRef/P4PORT.html>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:381
+#: ../../content/guides/packages/site-definitions.md:359
 msgid "<https://git-scm.com/docs/git-p4>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:385
+#: ../../content/guides/packages/site-definitions.md:363
 msgid "<https://linux.die.net/man/1/rsync>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:386
+#: ../../content/guides/packages/site-definitions.md:364
 msgid "<https://linux.die.net/man/1/scp>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:387
+#: ../../content/guides/packages/site-definitions.md:365
 msgid "<http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html>"
 msgstr ""
 
-#: ../../content/guides/packages/site-definitions.md:388
+#: ../../content/guides/packages/site-definitions.md:366
 msgid "<https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>"
 msgstr ""
 
