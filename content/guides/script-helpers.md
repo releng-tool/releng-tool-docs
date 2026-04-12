@@ -104,6 +104,7 @@ The flag can be enabled by invoking releng-tool using:
 releng-tool -- --custom
 ```
 
+(vars-releng_version)=
 ### `releng_version`
 
 The version of releng-tool.

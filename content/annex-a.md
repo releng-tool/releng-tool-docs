@@ -340,6 +340,13 @@ Functions available to scripts invoked by releng-tool or importable via
 [`warn`](releng_tool.warn)(msg, *args)
 ```
 
+Variables available to scripts invoked by releng-tool:
+
+```
+[`releng_args`](vars-releng_args)
+[`releng_version`](vars-releng_version)
+```
+
 ## Quirks
 
 Quirk options used by releng-tool:
