@@ -13,8 +13,10 @@ URI
 VCS
 Waf
 aarch
+api
 asc
 backend
+backends
 basename
 buildable
 cachable
@@ -23,6 +25,7 @@ distclean
 distutils
 executables
 extensionless
+frontend
 glibc
 gz
 htop
