@@ -17,15 +17,19 @@ package is processed, it will use the same Python interpreter used by
 releng-tool.
 
 ````{note}
-For environments where releng-tool has been installed using `pipx`, a user
-will need to install any required build backend desired using the
-[`pipx inject`][pipx-inject] command. For example, packages requiring
-[Flit][flit] can install the build backend for their isolated environment
-using:
+For environments where releng-tool is installed using `pipx` or in a virtual
+environment, a user will need to install any required packages/backends
+needed for a project's Python packages. Users may install dependencies
+manually (e.g. using [`pipx inject`][pipx-inject] for `pipx` installs).
+Alternatively, users may also automatically support various Python dependencies
+when installing releng-tool. For example:
 
 ```
-pipx inject releng-tool flit-core
+pipx install releng-tool[py-all]
 ```
+
+See also [Optional Python Dependencies](python-dependencies) for more
+information.
 ````
 
 A developer can override what Python interpreter to use by

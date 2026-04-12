@@ -190,10 +190,63 @@ releng-tool ~version~
 ```
 ````
 
+(python-dependencies)=
+## Optional Python Dependencies
+
+:::{note}
+The following only applies to releng-tool installations performed using
+[pipx][pipx] or using a virtual environment. If an installation is performed
+through a system's package manager, any dependencies should also be installed
+using the system's package manager.
+:::
+
+A releng-tool installation also supports the automatic installation of
+optional Python-based dependencies (if required for a project and not
+manually installed).
+
+The following outlines the various configuration sets supported when installing
+releng-tool:
+
+| Feature                    | Value           | Version |
+| -------------------------- | :-------------: | :-----: |
+| All Dependencies           | `all`           | 3.0     |
+| Meson Support              | `meson`         | 3.0     |
+| Python Support (All)       | `py-all`        | 3.0     |
+| Python Flit Support        | `py-flit`       | 3.0     |
+| Python Hatch Support       | `py-hatch`      | 3.0     |
+| Python PDM Support         | `py-pdm`        | 3.0     |
+| Python Poetry Support      | `py-poetry`     | 3.0     |
+| Python Setuptools Support  | `py-setuptools` | 3.0     |
+| SCons Support              | `scons`         | 3.0     |
+| Statistics (PDF) Support   | `statistics`    | 0.8     |
+
+Users may install all dependencies using:
+
+```shell
+pipx install releng-tool[all]
+```
+
+For example, if a project contains Meson-based packages, releng-tool can
+utilize a Meson installation available from the native system or the version
+found in the running interpreter (if even different). Users could either:
+
+- Install Meson using the system package manager.
+- Install Meson in their releng-tool installation environment:
+
+  ```
+  pipx inject releng-tool meson
+  ```
+
+- Install Meson dependency when installing releng-tool:
+
+  ```
+  pipx install releng-tool[meson]
+  ```
+
 ## Development
 
-To install the most recent development sources, the following [pip][pip]
-command can be used:
+To install the most recent development sources, the following
+[pipx][pipx]/[pip][pip] command can be used:
 
 ```shell
 pipx install git+https://github.com/releng-tool/releng-tool.git
