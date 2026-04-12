@@ -24,7 +24,7 @@ manually (e.g. using [`pipx inject`][pipx-inject] for `pipx` installs).
 Alternatively, users may also automatically support various Python dependencies
 when installing releng-tool. For example:
 
-```
+```none
 pipx install releng-tool[py-all]
 ```
 

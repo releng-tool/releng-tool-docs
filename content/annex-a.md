@@ -345,7 +345,7 @@ Functions available to scripts invoked by releng-tool or importable via
 
 Variables available to scripts invoked by releng-tool:
 
-```
+```{parsed-literal}
 [`releng_args`](vars-releng_args)
 [`releng_version`](vars-releng_version)
 ```
