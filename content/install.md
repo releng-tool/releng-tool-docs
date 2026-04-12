@@ -38,10 +38,33 @@ environment to use this package.
     -----
 ```
 
-While the use of [Python][python]/[pip][pip] is almost consistent between
+While the use of [Python][python]/[pipx][pipx] is almost consistent between
 Linux distributions, below is a series of helpful steps to install
 this package under specific distributions of Linux. From a terminal,
 invoke the following commands:
+
+````{tab} Alpine
+```{eval-rst}
+.. only:: latex
+
+    **Alpine**
+```
+
+```shell-session
+# apk add pipx
+# pipx install --global releng-tool
+# releng-tool --version
+releng-tool <version>
+```
+
+Using `dosas`:
+```shell-session
+$ doas apk add pipx
+$ doas pipx install --global releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
+````
 
 ````{tab} Arch
 ```{eval-rst}
@@ -49,26 +72,45 @@ invoke the following commands:
 
     **Arch**
 ```
-Using `pipx`:
+
 ```shell-session
-$ sudo pacman -Syu
-$ sudo pacman -S python-pipx
-$ pipx ensurepath
-$ pipx install releng-tool
-$ releng-tool --version
+# pacman -S python-pipx
+# pipx install --global releng-tool
+# releng-tool --version
 releng-tool <version>
 ```
 
-Using `pip`:
+Using `sudo`:
 ```shell-session
-$ sudo pacman -Sy
-$ sudo pacman -S python-pip
-$ sudo pip install -U releng-tool
+$ sudo pacman -S python-pipx
+$ sudo pipx install --global releng-tool
 $ releng-tool --version
 releng-tool <version>
 ```
 
 This package is also [available on AUR][releng-tool-aur].
+````
+
+````{tab} Debian
+```{eval-rst}
+.. only:: latex
+
+    **Debian**
+```
+```shell-session
+# apt-get install -y pipx
+# pipx install --global releng-tool
+# releng-tool --version
+releng-tool <version>
+```
+
+Using `sudo`:
+```shell-session
+$ sudo apt-get install -y pipx
+$ sudo pipx install --global releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
 ````
 
 ````{tab} Fedora
@@ -77,19 +119,17 @@ This package is also [available on AUR][releng-tool-aur].
 
     **Fedora**
 ```
-Using `pipx`:
 ```shell-session
-$ sudo dnf install pipx
-$ pipx ensurepath
-$ pipx install releng-tool
-$ releng-tool --version
+# dnf install -y pipx
+# pipx install --global releng-tool
+# releng-tool --version
 releng-tool <version>
 ```
 
-Using `pip`:
+Using `sudo`:
 ```shell-session
-$ sudo dnf install python-pip
-$ sudo pip install -U releng-tool
+$ sudo dnf install pipx
+$ sudo pipx install --global releng-tool
 $ releng-tool --version
 releng-tool <version>
 ```
@@ -101,9 +141,17 @@ releng-tool <version>
 
     **openSUSE**
 ```
-Using `pip`:
 ```shell-session
-$ pip install -U releng-tool
+# zypper install -y python3-pipx
+# pipx install --global releng-tool
+# releng-tool --version
+releng-tool <version>
+```
+
+Using `sudo`:
+```shell-session
+$ sudo zypper install -y python3-pipx
+$ sudo pipx install --global releng-tool
 $ releng-tool --version
 releng-tool <version>
 ```
@@ -115,21 +163,19 @@ releng-tool <version>
 
     **Ubuntu**
 ```
-Using `pipx` (Ubuntu 23.04 or above):
 ```shell-session
-$ sudo apt update
-$ sudo apt install pipx
-$ pipx ensurepath
-$ pipx install releng-tool
-$ releng-tool --version
+# apt-get install -y pipx
+# pipx ensurepath
+# pipx install releng-tool
+# releng-tool --version
 releng-tool <version>
 ```
 
-Using `pip`:
+Using `sudo`:
 ```shell-session
-$ sudo apt update
-$ sudo apt install python-pip
-$ sudo pip install -U releng-tool
+$ sudo apt-get install -y pipx
+$ pipx ensurepath
+$ pipx install releng-tool
 $ releng-tool --version
 releng-tool <version>
 ```
