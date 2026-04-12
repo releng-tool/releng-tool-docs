@@ -174,7 +174,7 @@ python setup.py --no-user-cfg bdist_wheel
 ## `LIBFOO_INSTALL_DEFS`
 
 :::{versionremoved} 2.0
-No longer applicable as all Python packages are  installed using the
+No longer applicable as all Python packages are installed using the
 [`installer`][installer] module.
 :::
 
