@@ -12,12 +12,19 @@ jobs:
       image: ghcr.io/releng-tool/docs-container:latest
 
     steps:
+    - name: Extract releng-tool version
+      id: version
+      run: |
+        RT_VERSION="${{ github.ref_name }}"
+        RT_VERSION="${RT_VERSION%%-*}"
+        echo "target_releng_tool_version=${RT_VERSION}" >>$GITHUB_OUTPUT
+
     - name: Checkout releng-tool
       uses: actions/checkout@v6
       with:
         repository: releng-tool/releng-tool
         path: releng-tool
-        ref: ${{github.ref_name}}
+        ref: ${{ steps.version.outputs.target_releng_tool_version }}
 
     - name: Checkout releng-tool-docs
       uses: actions/checkout@v6
