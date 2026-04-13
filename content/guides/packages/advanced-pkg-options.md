@@ -243,7 +243,7 @@ See also the [`--jobs` argument](arg-jobs) and
 :::
 
 ```{caution}
-This options is not recommended for use inside a package definition.
+This option is not recommended for use inside a package definition.
 ```
 
 Specifies a forced revision to use for a package. This option is not
