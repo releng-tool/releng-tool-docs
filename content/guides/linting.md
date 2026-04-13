@@ -45,7 +45,7 @@ environment variable:
 
 ```
 export RELENG_LINT_MAX_VERSION=2.8
-releng-tool
+releng-tool lint
 ```
 
 This should allow developers to maintain a working CI pipeline that may lint
