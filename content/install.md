@@ -157,11 +157,11 @@ releng-tool <version>
 ```
 ````
 
-````{tab} Ubuntu
+````{tab} Ubuntu 24
 ```{eval-rst}
 .. only:: latex
 
-    **Ubuntu**
+    **Ubuntu 24**
 ```
 ```shell-session
 # apt-get install -y pipx
@@ -176,6 +176,28 @@ Using `sudo`:
 $ sudo apt-get install -y pipx
 $ pipx ensurepath
 $ pipx install releng-tool
+$ releng-tool --version
+releng-tool <version>
+```
+````
+
+````{tab} Ubuntu 26
+```{eval-rst}
+.. only:: latex
+
+    **Ubuntu 26**
+```
+```shell-session
+# apt-get install -y pipx
+# pipx install --global releng-tool
+# releng-tool --version
+releng-tool <version>
+```
+
+Using `sudo`:
+```shell-session
+$ sudo apt-get install -y pipx
+$ sudo pipx install --global releng-tool
 $ releng-tool --version
 releng-tool <version>
 ```
@@ -298,6 +320,14 @@ To install the most recent development sources, the following
 pipx install git+https://github.com/releng-tool/releng-tool.git
  (or)
 pip install git+https://github.com/releng-tool/releng-tool.git
+```
+
+Or, if looking to install with optional dependencies:
+
+```shell
+pipx install "releng-tool[all]@git+https://github.com/releng-tool/releng-tool.git"
+ (or)
+pip install "releng-tool[all]@git+https://github.com/releng-tool/releng-tool.git"
 ```
 
 
