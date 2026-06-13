@@ -1,6 +1,6 @@
 # Package hacking
 
-Package types may define various command line defines and options to help
+Package types may specify various command line defines and options to help
 support certain features or practices that best fit with releng-tool's
 staged processing. In some advanced scenarios, developers may wish to override
 these defines/options due to corner cases or preferences. Developers can
@@ -31,9 +31,9 @@ This will then result in the following installation command for the package:
 make DESTDIR=<output>/target install
 ```
 
-Overrides are typically support on each configuration, build and
+Overrides are typically supported on each configure, build and
 install-related configurations. Not all defines/options can be overridden.
-As such overrides are advanced, developers are recommended to refer to the
+Since overrides are advanced, developers are recommended to refer to the
 implementation for specifics. Developers can also use the
 [`--debug`](arg-debug) argument to see explicit commands invoked:
 

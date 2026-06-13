@@ -39,7 +39,8 @@ releng_execute(['make'])
 When a package performs a configuration, build or installation stage; the
 respective script (mentioned above) will be invoked. Package scripts are
 optional. If a script is not provided for a stage, the stage will be
-skipped.
+skipped. All scripts are invoked with a [`PKG_BUILD_DIR`](env-pkg-build-dir)
+working directory.
 
 See also [script helpers](/guides/script-helpers) for helper functions and
 variables available for use, as well as [bootstrapping](bootstrapping) or

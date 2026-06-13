@@ -5,10 +5,10 @@ considered external by default unless explicitly configured as internal
 through either a project configuration or a package option. Internal
 or external packages are treated the same except for the following:
 
-- An internal package will not generate output warnings if the package is
+- An internal package will not generate warnings if the package is
   missing [hash information](packages/hash-file) or an
   [ASCII-armor](packages/ascii-armor).
-- An internal package will not generate output warnings if the package is
+- An internal package will not generate warnings if the package is
   missing [licenses](licenses).
 - When configured for [local-sources mode](local-sources-mode), only internal
   packages which have local sources configured will have their fetch,

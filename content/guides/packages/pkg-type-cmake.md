@@ -26,7 +26,7 @@ can override this option by explicitly adjusting the configuration option
 LIBFOO_CMAKE_BUILD_TYPE = 'Debug'
 ```
 
-Packages can be configured with a toolchain using with the define
+Packages can be configured with a toolchain using the define
 [`CMAKE_TOOLCHAIN_FILE`][cmake-toolchain-file] (via
 [`LIBFOO_CONF_DEFS`](pkg-opt-cmake-conf-defs)) or using the command line option
 [`--toolchain`][cmake-opt-toolchain] (via
@@ -88,7 +88,7 @@ The build type is configured by
 [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type).
 
 Paths may vary based on how the package's
-[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. System root paths
+[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. Root paths
 provided will only include the staging directory if `staging` is configured.
 Both the staging and target directories are provided is the `target` is
 configured. Likewise with the host directory if `host` is configured.

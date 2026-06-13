@@ -24,13 +24,29 @@ The default installation type is `target`.
 LIBFOO_INSTALL_TYPE = 'target'
 ```
 
+For example, a package configured for `target` may install a library under:
+
+```
+<root-dir>/output/target/usr/lib
+```
+
+If configured for `staging_and_target`, the library would be installed into
+paths:
+
+```
+<root-dir>/output/staging/usr/lib
+<root-dir>/output/target/usr/lib
+```
+
 See also [`LIBFOO_HOST_PROVIDES`](pkg-opt-host-provides).
 
 (pkg-opt-license)=
 ## `LIBFOO_LICENSE`
 
 A string or list of strings outlining the license information for a package.
-Outlining the license of a package is recommended.
+Outlining the license of a package is suggested for users who wish to build a
+software build of materials (SBOM) document or provide a helpful hint to other
+developers applicable licenses for a given package.
 It is recommended to use [SPDX registered licenses][spdx-licenses].
 
 ```python
