@@ -51,6 +51,7 @@ are listed below:
 .. autofunction:: releng_register_path
 .. autofunction:: releng_remove
 .. autofunction:: releng_require_version
+.. autofunction:: releng_step
 .. autofunction:: releng_symlink
 .. autofunction:: releng_tmpdir
 .. autofunction:: releng_touch
