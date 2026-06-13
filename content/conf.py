@@ -140,6 +140,12 @@ latex_elements = {
         \definecolor{TitleColor}{rgb}{0,0,0}
         \definecolor{VerbatimColor}{rgb}{0.98,0.98,0.98}
         \newcommand{\sectionbreak}{\newpage}
+        \hypersetup{
+            pdftitle={''' + project + r''' Documentation},
+            pdfauthor={''' + author + r'''},
+            pdfsubject={Documenting the capabilities of releng-tool},
+            pdfkeywords={releng-tool, release engineering tool}
+        }
     ''',
 }
 
