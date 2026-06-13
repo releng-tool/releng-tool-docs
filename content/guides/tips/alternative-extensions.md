@@ -5,7 +5,7 @@ The `.releng` extension is no longer recommended and will be removed in
 a future release.
 :::
 :::{deprecated} 2.2
-Extensionless configurations/scripts are no longer recommended and may
+Extensionless configurations/scripts are no longer recommended and will
 be removed in a future release.
 :::
 :::{versionchanged} 2.2
