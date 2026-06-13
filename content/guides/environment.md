@@ -1160,7 +1160,7 @@ export RELENG_GLOBAL_OUTPUT_CONTAINER_NO_IMAGES=1
 If a build utilizes a global container output, files generates into
 [`IMAGES_DIR`](env-images-dir) will still output to the default images path:
 
-```
+```none
 <root-dir>/output/images
 ```
 
