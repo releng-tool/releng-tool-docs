@@ -52,6 +52,9 @@ before attempting to generate documentation:
 '''.format(rt_dir))
 sys.path.insert(0, rt_dir)
 
+# extract releng-tool version for pdf title
+from releng_tool import __version__ as releng_tool_version
+
 # myst configuration
 myst_enable_extensions = [
     'colon_fence',
@@ -109,9 +112,16 @@ latex_elements = {
     # custom title
     'maketitle': r'''
         \begin{titlepage}
-            \vspace*{\stretch{1.0}}
+            \vspace*{\stretch{2.0}}
                 \sphinxlogo
             \vspace*{\stretch{1.2}}
+        \begin{center}
+            \DTMsetdatestyle{iso}
+            \DTMtoday
+            \par
+            ''' + releng_tool_version + r'''
+        \end{center}
+        \vspace*{\stretch{1.0}}
         \end{titlepage}
     ''',
     # disable hyphenation
@@ -120,6 +130,7 @@ latex_elements = {
     # color tweaks
     # new page for each section
     'preamble': r'''
+        \usepackage{datetime2}
         \usepackage[none]{hyphenat}
         \usepackage[document]{ragged2e}
         \usepackage{url}
