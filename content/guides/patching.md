@@ -10,6 +10,11 @@ in [local-sources mode](local-sources-mode) for internal packages.
 Additional configuration modes to permit development revisions to have
 patches applied.
 :::
+:::{versionchanged} 3.1
+The working directory will now be updated to account for
+[`PKG_BUILD_DIR`](env-pkg-build-dir) (and possibly
+[`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir)) when using a patch script.
+:::
 
 The patching stage for a package provides the ability for a developer to apply
 one or more patches to extracted sources. A project may take advantage of
@@ -70,3 +75,27 @@ defines a development revision:
 LIBFOO_DEVMODE_PATCHES = True
 LIBFOO_IGNORE_PATCHES = True
 ```
+
+An alternative to using patch files is supported via a patch script. Similar
+to [script-based packages](packages/pkg-type-script), all package can opt for
+using a Python-based `<package>-patch.rt` script.
+
+For example, a `libfoo` package could have the following patch file:
+
+```
+└── my-releng-tool-project/
+    ├── package/
+    │   └── libfoo/
+    │       ├── libfoo.rt
+    │       └── libfoo-patch.rt
+    ...
+```
+
+When a patch script is defined, no patch files are automatically applied. It
+is assumed developers want to control any type of patching from a provided
+script.
+
+The patch script is typically invoked with a
+[`PKG_BUILD_DIR`](env-pkg-build-dir) working directory. In the event
+[`LIBFOO_PATCH_SUBDIR`](pkg-opt-patch-subdir) is configured, the working
+directory will be adjusted for the configured sub-directory.
