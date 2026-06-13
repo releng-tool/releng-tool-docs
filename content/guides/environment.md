@@ -1133,6 +1133,40 @@ The following folder structure should be expected:
             └── ...
 ```
 
+See also
+[`RELENG_GLOBAL_OUTPUT_CONTAINER_NO_IMAGES`](env-releng-global-out-container-no-images).
+
+(env-releng-global-out-container-no-images)=
+### `RELENG_GLOBAL_OUTPUT_CONTAINER_NO_IMAGES=1`
+
+:::{versionadded} 3.1
+:::
+
+This option is used with
+[`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir) to
+hint that generate images should not default to a global output container
+path. While developers may want to rely on
+`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR` for interim build files for partitioning
+or spacing reasons, developers may want final images/artifacts to be
+placed in a project's root/local output directory.
+
+When this option is used, for example:
+
+```
+export RELENG_GLOBAL_OUTPUT_CONTAINER_DIR=/mnt/extern-disk
+export RELENG_GLOBAL_OUTPUT_CONTAINER_NO_IMAGES=1
+```
+
+If a build utilizes a global container output, files generates into
+[`IMAGES_DIR`](env-images-dir) will still output to the default images path:
+
+```
+<root-dir>/output/images
+```
+
+See also
+[`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir).
+
 (env-releng-ignore-running-as-root)=
 ### `RELENG_IGNORE_RUNNING_AS_ROOT=1`
 

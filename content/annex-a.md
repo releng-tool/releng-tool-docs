@@ -185,6 +185,7 @@ Other environment variables accepted by releng-tool:
 [`RELENG_CACHE_DIR`](env-releng-cache-dir)
 [`RELENG_DL_DIR`](env-releng-dl-dir)
 [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir)
+[`RELENG_GLOBAL_OUTPUT_CONTAINER_NO_IMAGES`](env-releng-global-out-container-no-images)
 [`RELENG_IGNORE_RUNNING_AS_ROOT`](env-releng-ignore-running-as-root)
 [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args)
 [`RELENG_IMAGES_DIR`](env-releng-images-dir)
