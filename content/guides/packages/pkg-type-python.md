@@ -175,27 +175,6 @@ python setup.py --no-user-cfg bdist_wheel
 :::{include} _pkg-env.md
 :::
 
-## `LIBFOO_INSTALL_DEFS`
-
-:::{versionremoved} 2.0
-No longer applicable as all Python packages are installed using the
-[`installer`][installer] module.
-:::
-
-## `LIBFOO_INSTALL_ENV`
-
-:::{versionremoved} 2.0
-No longer applicable as all Python packages are installed using the
-[`installer`][installer] module.
-:::
-
-## `LIBFOO_INSTALL_OPTS`
-
-:::{versionremoved} 2.0
-No longer applicable as all Python packages are installed using the
-[`installer`][installer] module.
-:::
-
 (pkg-opt-python-dist-path)=
 ## `LIBFOO_PYTHON_DIST_PATH`
 
