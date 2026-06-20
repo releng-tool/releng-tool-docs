@@ -15,3 +15,5 @@ LIBFOO_ENV = {
     'OPTION': 'VALUE',
 }
 ```
+
+See also [`environment`](conf-environment).
