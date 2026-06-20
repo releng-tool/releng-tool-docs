@@ -31,8 +31,8 @@ This will then result in the following installation command for the package:
 make DESTDIR=<output>/target install
 ```
 
-Overrides are typically supported on each configure, build and
-install-related configurations. Not all defines/options can be overridden.
+Overrides are typically supported for each configure, build and
+install-related option. Not all defines/options can be overridden.
 Since overrides are advanced, developers are recommended to refer to the
 implementation for specifics. Developers can also use the
 [`--debug`](arg-debug) argument to see explicit commands invoked:
