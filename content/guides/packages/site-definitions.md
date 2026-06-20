@@ -233,7 +233,7 @@ part specifies the Perforce depot path. Perforce data is fetched using
 [Git][git] and Perforce's [Helix Command-Line Client (P4)][perforce-cli]
 installed. Content from a Perforce depot will be fetched and archived into
 a file during fetch stage. Once a cached archive is made, the fetch stage
-ill be skipped unless the archive is manually removed.
+will be skipped unless the archive is manually removed.
 
 ````{tab} Revision Clone
 
