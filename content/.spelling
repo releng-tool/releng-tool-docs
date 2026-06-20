@@ -20,6 +20,7 @@ backends
 basename
 buildable
 cachable
+callables
 config
 distclean
 distutils

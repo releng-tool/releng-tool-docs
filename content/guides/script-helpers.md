@@ -114,6 +114,16 @@ The version of releng-tool.
 print(f'Using version {releng_version}')
 ```
 
+## Imported Python modules/functions/etc.
+
+Select Python modules and callables are automatically imported into package
+definitions and script for convenience:
+
+- The [`Path` class][python-pathlib-path] from
+  [`pathlib` module][python-pathlib]
+- The [`os` module][python-os]
+- The [`sys` module][python-sys]
+
 ## Importing helpers
 
 Scripts directly invoked by releng-tool will automatically have these helpers
@@ -134,3 +144,7 @@ from releng_tool import *
 
 
 [argparse]: https://docs.python.org/3/library/argparse.html
+[python-os]: https://docs.python.org/3/library/os.html
+[python-pathlib-path]: https://docs.python.org/3/library/pathlib.html#pathlib.Path
+[python-pathlib]: https://docs.python.org/3/library/pathlib.html
+[python-sys]: https://docs.python.org/3/library/sys.html
