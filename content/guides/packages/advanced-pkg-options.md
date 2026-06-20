@@ -703,6 +703,8 @@ set the VCS type.
 :::
 :::{versionremoved} 2.10 Support for Bazaar sites has been removed.
 :::
+:::{versionchanged} 3.1 Support added for `lore`.
+:::
 
 Explicitly sets the version control system type to use when acquiring
 sources. releng-tool attempts to automatically determine the VCS type of
@@ -719,6 +721,7 @@ Supported types are as follows:
 - `git` ([Git](site-git))
 - `hg`  ([Mercurial](site-mercurial))
 - `local` (no VCS; [local](site-local) interim-development package)
+- `lore` ([Lore](site-lore))
 - `none` (no VCS; virtual package)
 - `perforce` ([Perforce](site-perforce))
 - `rsync` ([rsync](site-rsync))

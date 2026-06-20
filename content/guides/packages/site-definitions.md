@@ -173,6 +173,46 @@ to a `local` VCS type as well. Note that a local package is intended for
 development/testing/training purposes. See
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) for more information.
 
+(site-lore)=
+## Lore site
+
+:::{versionadded} 3.1
+:::
+
+To define a Lore-based location, the site value must be prefixed with
+a `lore+` or `lore://` value. A site can be defined as follows:
+
+```python
+LIBFOO_SITE = 'lore://lore.example.org:30000'
+# (or)
+LIBFOO_SITE = 'lore+urc://sources.example.org'
+```
+
+The site value (less prefix, if used) is used as the URL in a Lore clone
+[^loreclone] request. Content from a Lore repository will be fetched and
+archived into a file during fetch stage. Once a cached archive is made, the
+fetch stage will be skipped unless the archive is manually removed.
+
+````{tab} Branch Clone
+
+The following shows an example of cloning a v1.x LTS branch:
+
+```
+LIBFOO_REVISION = 'lts-1.x'
+LIBFOO_SITE = 'lore://lore.example.org'
+```
+````
+
+````{tab} Revision Hash Clone
+
+The following shows an example of cloning with a revision hash:
+
+```
+LIBFOO_REVISION = 'a89c9b0632406842567001d0b77d8cfdef3c3fc810457498bcb500b7e3172197'
+LIBFOO_SITE = 'lore+lores://sources.example.org'
+```
+````
+
 (site-mercurial)=
 ## Mercurial site
 
@@ -359,6 +399,7 @@ See also [`urlopen_context`](conf-urlopen-context).
 [^git-p4]: <https://git-scm.com/docs/git-p4>
 [^gitremote]: <https://git-scm.com/docs/git-remote>
 [^hgclone]: <https://www.mercurial-scm.org/help/commands/clone>
+[^loreclone]: <https://epicgames.github.io/lore/reference/lore-cli-commands/?h=clone#lore-repository-clone>
 [^p4port]: <https://www.perforce.com/manuals/cmdref/Content/CmdRef/P4PORT.html>
 [^rsynccommand]: <https://linux.die.net/man/1/rsync>
 [^scpcommand]: <https://linux.die.net/man/1/scp>

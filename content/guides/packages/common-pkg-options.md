@@ -137,6 +137,8 @@ following outline a series of supported site definitions:
 :::
 :::{versionremoved} 2.10 Support for Bazaar sites has been removed.
 :::
+:::{versionchanged} 3.1 Support added for Lore.
+:::
 
 | Type                        | Prefix/Postfix |
 | --------------------------: | :- |
@@ -145,6 +147,7 @@ following outline a series of supported site definitions:
 | [File](site-file)           | `file+` or `file://`
 | [Git](site-git)             | `git+` or `.git`
 | [Mercurial](site-mercurial) | `hg+`
+| [Lore](site-lore)           | `lore+` or `lore://`
 | [Perforce](site-perforce)   | `perforce+`
 | [rsync](site-rsync)         | `rsync+`
 | [SCP](site-scp)             | `scp+`
