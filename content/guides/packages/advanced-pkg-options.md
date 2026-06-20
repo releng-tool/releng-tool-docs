@@ -713,18 +713,18 @@ what the site value is configured as.
 
 Supported types are as follows:
 
-- `brz` (Breezy)
-- `cvs` (CVS)
-- `file` (File URI)
-- `git` (Git)
-- `hg`  (Mercurial)
-- `local` (no VCS; local interim-development package)
+- `brz` ([Breezy](site-file))
+- `cvs` ([CVS](site-file))
+- `file` ([File](site-file) URI)
+- `git` ([Git](site-git))
+- `hg`  ([Mercurial](site-mercurial))
+- `local` (no VCS; [local](site-local) interim-development package)
 - `none` (no VCS; virtual package)
-- `perforce` (Perforce)
-- `rsync` (rsync)
-- `scp` (SCP)
-- `svn` (SVN)
-- `url` (URL)
+- `perforce` ([Perforce](site-perforce))
+- `rsync` ([rsync](site-rsync))
+- `scp` ([SCP](site-scp))
+- `svn` ([SVN](site-svn))
+- `url` ([URL](site-url))
 
 ```python
 LIBFOO_VCS_TYPE = 'git'

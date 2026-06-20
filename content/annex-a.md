@@ -292,9 +292,9 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_SITE`](pkg-opt-site) = '&lt;site&gt;'
 [`LIBFOO_STRIP_COUNT`](pkg-opt-strip-count) = int # &gt;= 0
 [`LIBFOO_TYPE`](pkg-opt-type) = '&lt;type&gt;'
-&nbsp;&nbsp;└── autotools, cargo, cmake, make, meson, python, scons, script, waf, ext-&lt;extension&gt;
+&nbsp;&nbsp;└── [autotools](/guides/packages/pkg-type-autotools), [cargo](/guides/packages/pkg-type-cargo), [cmake](/guides/packages/pkg-type-cmake), [make](/guides/packages/pkg-type-make), [meson](/guides/packages/pkg-type-meson), [python](/guides/packages/pkg-type-python), [scons](/guides/packages/pkg-type-scons), [script](/guides/packages/pkg-type-script), [waf](/guides/packages/pkg-type-waf), ext-&lt;extension&gt;
 [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) = '&lt;vcs-type&gt;'
-&nbsp;&nbsp;└── brz, cvs, file, git, hg, local, none, perforce, rsync, scp, svn, url
+&nbsp;&nbsp;└── [brz](site-file), [cvs](site-file), [file](site-file), [git](site-git), [hg](site-mercurial), [local](site-local), none, [perforce](site-perforce), [rsync](site-rsync), [scp](site-scp), [svn](site-svn), [url](site-url)
 [`LIBFOO_VERSION`](pkg-opt-version) = '&lt;version&gt;'
 [`LIBFOO_VSDEVCMD`](pkg-opt-vsdevcmd) = bool or str
 [`LIBFOO_VSDEVCMD_PRODUCTS`](pkg-opt-vsdevcmd-products) = str
