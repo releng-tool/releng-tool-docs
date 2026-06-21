@@ -198,6 +198,8 @@ See also [`LIBFOO_VCS_TYPE`](pkg-opt-vcs-type) and
 :::
 :::{versionchanged} 2.8 Support added for `waf`.
 :::
+:::{versionchanged} 3.1 Support added for `xmake`.
+:::
 
 The package type. The default package type is a (Python) script-based package.
 releng-tool also provides a series of helper package types for common
@@ -214,6 +216,7 @@ frameworks. The following outline a series of supported type definitions:
 | [SCons](pkg-type-scons)         | `scons`
 | [Script](pkg-type-script)       | `script`
 | [Waf](pkg-type-waf)             | `waf`
+| [Xmake](pkg-type-xmake)         | `xmake`
 
 For example:
 

@@ -84,6 +84,7 @@ pkg-type-meson
 pkg-type-python
 pkg-type-scons
 pkg-type-waf
+pkg-type-xmake
 hacking
 Deprecated options <deprecated-pkg-options>
 :::

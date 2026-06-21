@@ -405,6 +405,25 @@ default_meson_build_type = 'release'
 
 See also [`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type).
 
+(conf-default-xmake-build-type)=
+### `default_xmake_build_type`
+
+:::{versionadded} 3.1
+:::
+
+[Xmake](/guides/packages/pkg-type-xmake) packages can configure a mode on
+individual packages using
+[`LIBFOO_XMAKE_BUILD_TYPE`](pkg-opt-xmake-build-type). However, if a developer
+wishes to configure the default mode across all Xmake packages, this
+option may be used. For example, to default to using the `debug` mode,
+the following may be used:
+
+```python
+default_xmake_build_type = 'debug'
+```
+
+See also [`LIBFOO_XMAKE_BUILD_TYPE`](pkg-opt-xmake-build-type).
+
 (conf-extra-license-exceptions)=
 ### `extra_license_exceptions`
 
