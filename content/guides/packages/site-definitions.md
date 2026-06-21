@@ -179,7 +179,7 @@ development/testing/training purposes. See
 :::{versionadded} 3.1
 :::
 
-To define a Lore-based location, the site value must be prefixed with
+To define a [Lore][lore]-based location, the site value must be prefixed with
 a `lore+` or `lore://` value. A site can be defined as follows:
 
 ```python
@@ -409,6 +409,7 @@ See also [`urlopen_context`](conf-urlopen-context).
 [breezy]: https://www.breezy-vcs.org/
 [cvs]: http://cvs.nongnu.org/
 [git]: https://git-scm.com/
+[lore]: https://lore.org/
 [mercurial]: https://www.mercurial-scm.org/
 [perforce-cli]: https://www.perforce.com/manuals/p4guide/Content/P4Guide/chapter.install.html
 [subversion]: https://subversion.apache.org/
