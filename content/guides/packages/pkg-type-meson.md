@@ -57,10 +57,10 @@ The build output directory is configured to
 [`PKG_BUILD_OUTPUT_DIR`](env-pkg-build-output-dir).
 
 Paths may vary based on how the package's
-[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. System root paths
-provided will only include the staging directory if `staging` is configured.
-Both the staging and target directories are provided is the `target` is
-configured. Likewise with the host directory if `host` is configured.
+[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. For example,
+root paths provided will only include the staging directory 
+if `staging` is configured. Likewise, both the staging and target directories
+are provided when using `staging_and_target`.
 pkg-config paths are defined to `<sysroot>/lib/pkgconfig`.
 
 If [`LIBFOO_PREFIX`](pkg-opt-prefix) resolves to an empty prefix, the

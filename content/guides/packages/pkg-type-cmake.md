@@ -88,10 +88,10 @@ The build type is configured by
 [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type).
 
 Paths may vary based on how the package's
-[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. Root paths
-provided will only include the staging directory if `staging` is configured.
-Both the staging and target directories are provided is the `target` is
-configured. Likewise with the host directory if `host` is configured.
+[`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) is configured. For example,
+root paths provided will only include the staging directory 
+if `staging` is configured. Likewise, both the staging and target directories
+are provided when using `staging_and_target`.
 
 The same concepts apply for defined include (`<sysroot>[/<prefix>]/include`),
 library (`<sysroot>[/<prefix>]/lib`) and module paths
