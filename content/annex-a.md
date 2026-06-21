@@ -87,6 +87,7 @@ Options which are read by releng-tool from a project's configuration script
 [`extra_licenses`](conf-extra-licenses) = {'&lt;short-license-id&gt;': '&lt;license-name&gt;'}
 [`license_header`](conf-license-header) = '&lt;data&gt;'
 [`lint_max_version`](conf-lint-max-version) = '&lt;max-version&gt;'
+[`network_isolation`](conf-network-isolation) = bool
 [`override_extract_tools`](conf-override-extract-tools) = {'&lt;tool&gt;': '&lt;tool-path&gt;'}
 [`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;']
 [`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
@@ -270,6 +271,7 @@ Configuration options parsed by releng-tool for a package definition:
 &nbsp;&nbsp;└── plain, debug, debugoptimized (default), release, minsize
 [`LIBFOO_MESON_NOINSTALL`](pkg-opt-meson-noinstall) = bool
 [`LIBFOO_NEEDS`](pkg-opt-needs) = ['&lt;pkg&gt;', '&lt;pkg&gt;']
+[`LIBFOO_NETWORK_ISOLATION`](pkg-opt-network-isolation) = bool
 [`LIBFOO_NO_EXTRACTION`](pkg-opt-no-extraction) = bool
 [`LIBFOO_LICENSE`](pkg-opt-license) = '&lt;license&gt;' or ['&lt;license&gt;', '&lt;license&gt;']
 [`LIBFOO_LICENSE_FILES`](pkg-opt-license-files) = '&lt;file&gt;' or ['&lt;file&gt;', '&lt;file&gt;']

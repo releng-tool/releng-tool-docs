@@ -122,6 +122,25 @@ license_header = 'my leading content'
 
 See also [licenses](licenses).
 
+(conf-network-isolation)=
+### `network_isolation`
+
+:::{versionadded} 3.1
+:::
+
+A flag to indicate that non-fetch package stages will attempt to perform
+network isolation. This is to help promote/enforce network-related interaction
+in expected stages which can be helpful for use cases such as
+[offline builds](tips/offline-builds).
+
+By default, network isolation is not enforced.
+
+```python
+network_isolation = True
+```
+
+See also [`LIBFOO_NETWORK_ISOLATION`](pkg-opt-network-isolation).
+
 (conf-packages)=
 ### `packages`
 

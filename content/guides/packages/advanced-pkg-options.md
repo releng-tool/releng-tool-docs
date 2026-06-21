@@ -458,6 +458,21 @@ LIBFOO_MAX_JOBS = -1
 See also the [`--jobs` argument](arg-jobs) and
 [`LIBFOO_FIXED_JOBS`](pkg-opt-fixed-jobs).
 
+(pkg-opt-network-isolation)=
+## `LIBFOO_NETWORK_ISOLATION`
+
+:::{versionadded} 3.1
+:::
+
+A flag to indicate that non-fetch stages will attempt to perform network
+isolation.
+
+```python
+LIBFOO_NETWORK_ISOLATION = True
+```
+
+See also [`network_isolation`](conf-network-isolation).
+
 (pkg-opt-no-extraction)=
 ## `LIBFOO_NO_EXTRACTION`
 
