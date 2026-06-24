@@ -377,4 +377,6 @@ Quirk options used by releng-tool:
 [`releng.log.execute_args`](quirk-releng.log.execute_args)
 [`releng.log.execute_env`](quirk-releng.log.execute_env)
 [`releng.stats.no_pdf`](quirk-releng.stats.no_pdf)
+[`releng.xmake.disable_arch_detection`](quirk-releng.xmake.disable_arch_detection)
+[`releng.xmake.disable_deps_init`](quirk-releng.xmake.disable_deps_init)
 ```

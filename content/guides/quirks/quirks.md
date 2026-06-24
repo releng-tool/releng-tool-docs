@@ -57,4 +57,6 @@ releng.ignore_failed_extensions <quirk-ignore_failed_extensions>
 releng.log.execute_args <quirk-log-execute_args>
 releng.log.execute_env <quirk-log-execute_env>
 releng.stats.no_pdf <quirk-stats-no_pdf>
+releng.xmake.disable_arch_detection <quirk-xmake-disable-arch-detection>
+releng.xmake.disable_deps_init <quirk-xmake-disable-deps-init>
 :::
