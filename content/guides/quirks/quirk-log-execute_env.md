@@ -9,10 +9,20 @@ will log (among other things) process executions. Debugging can print
 information such as working directory of an execution, as well as arguments
 used for a call. The environment for an execution is not logged by default.
 For users wishing to include this information as well before an invoked
-process, the `releng.log.execute_env` quick can be used.
+process, the `releng.log.execute_env` quick can be used. For example, using
+the command line:
 
 ```
 releng-tool --debug --quirk releng.log.execute_env
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.log.execute_env',
+]
 ```
 
 ## See also

@@ -17,11 +17,19 @@ in host, staging or target areas.
 However, if this causes issues for a build environment (such as when building
 a CMake project with a toolchain file which has issues with standard include
 overrides), the option can be disabled using the
-`releng.cmake.disable_direct_includes` quirk:
-
+`releng.cmake.disable_direct_includes` quirk using the command line:
 
 ```
 releng-tool --quirk releng.cmake.disable_direct_includes
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.cmake.disable_direct_includes',
+]
 ```
 
 ## See also

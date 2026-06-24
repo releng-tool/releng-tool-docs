@@ -10,9 +10,19 @@ an error.
 
 If a user wants to ignore the failed loading of extension for a given run,
 they may do so by configuring the `releng.ignore_failed_extensions` quirk.
+For example, using the command line:
 
 ```
 releng-tool --quirk releng.ignore_failed_extensions
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.ignore_failed_extensions',
+]
 ```
 
 ## See also

@@ -14,10 +14,20 @@ the cache directory, if users want to perform Git-related commands
 In the case where developers want a complete copy of the Git repository in
 the build folder instead of a pointer to the cache, the
 `releng.git.replicate_cache` quirk can be enabled to force releng-tool to
-copy over the Git repository when a package is extracted.
+copy over the Git repository when a package is extracted. For example,
+using the command line:
 
 ```
 releng-tool --quirk releng.git.replicate_cache
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.git.replicate_cache',
+]
 ```
 
 ## See also

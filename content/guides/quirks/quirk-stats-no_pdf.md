@@ -8,10 +8,19 @@ PDF-format statistics may be generated for a more visual inspection of this
 information.
 
 If a user does not want PDF statistics to be created, the quirk
-`releng.stats.no_pdf` can be used:
+`releng.stats.no_pdf` can be used with the command line:
 
 ```
 releng-tool --quirk releng.stats.no_pdf
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.stats.no_pdf',
+]
 ```
 
 ## See also

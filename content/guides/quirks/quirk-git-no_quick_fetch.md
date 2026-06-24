@@ -8,10 +8,20 @@ releng-tool). For example, if a project defines a Git tag to fetch, only
 the `refs/tags/<tag>` reference will be fetched.
 
 If a user does not want to utilizing quick-fetching for Git packages, this
-can be disabled by using the `releng.git.no_quick_fetch` quirk.
+can be disabled by using the `releng.git.no_quick_fetch` quirk. For example,
+using the command line:
 
 ```
 releng-tool --quirk releng.git.no_quick_fetch
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.git.no_quick_fetch',
+]
 ```
 
 ## See also

@@ -4,10 +4,19 @@
 releng-tool may use the [`--depth`][git--depth] option for Git-based packages
 to to perform shallow checkouts to improve fetch performance. If a user does
 not want to perform shallow checkouts, the `releng.git.no_depth` quirk may be
-used.
+used. For example, using the command line:
 
 ```
 releng-tool --quirk releng.git.no_depth
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.git.no_depth',
+]
 ```
 
 ## See also

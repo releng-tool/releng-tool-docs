@@ -7,9 +7,19 @@
 When utilizing [patching](/guides/patching) capabilities in releng-tool,
 all patches are by default applied with a `--verbose` argument. If this
 is not preferred by a project, this quirk can be set to omit the argument.
+For example, using the command line:
 
 ```
 releng-tool --quirk releng.disable_verbose_patch
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.disable_verbose_patch',
+]
 ```
 
 ## See also

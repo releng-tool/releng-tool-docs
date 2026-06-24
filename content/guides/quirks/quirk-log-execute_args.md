@@ -10,10 +10,19 @@ information such as working directory of an execution, as well as arguments
 used for a call. For some commands, the command line and arguments can be
 long and may be difficult to quickly scan for issues. To help improve the
 user experience, the `releng.log.execute_args` quick can be used to print
-each argument on their own line.
+each argument on their own line. For example, using the command line:
 
 ```
 releng-tool --debug --quirk releng.log.execute_args
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.log.execute_args',
+]
 ```
 
 ## See also

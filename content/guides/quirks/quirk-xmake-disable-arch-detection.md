@@ -15,10 +15,19 @@ an architecture value using available package options.
 
 If a developer experiences issues with the automatic detection and explicit
 architecture configuration, this feature can be disabled using the quirk
-`releng.xmake.disable_arch_detection`:
+`releng.xmake.disable_arch_detection` using the command line:
 
 ```
 releng-tool --quirk releng.xmake.disable_arch_detection
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.xmake.disable_arch_detection',
+]
 ```
 
 ## See also

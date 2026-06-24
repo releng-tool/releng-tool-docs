@@ -10,10 +10,19 @@ a new fetch of sources for a development-configured revision. However, if a
 remote is not available during a rebuild event, the process will fail since
 the package cannot be re-fetched from the configured site. To help a builder
 hint that using the cache is fine for an invoke, this quirk can be provided to
-avoid any re-fetch attempt.
+avoid any re-fetch attempt. For example, using the command line::
 
 ```
 releng-tool --quirk releng.disable_devmode_ignore_cache
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.disable_devmode_ignore_cache',
+]
 ```
 
 ## See also

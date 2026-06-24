@@ -10,10 +10,20 @@ but does not.
 
 Not all environments require pre-building these folders. If a developer
 experiences issues when pre-building dependency folders, this feature can be
-disabled using the quirk `releng.xmake.disable_deps_init`:
+disabled using the quirk `releng.xmake.disable_deps_init` using the
+command line:
 
 ```
 releng-tool --quirk releng.xmake.disable_deps_init
+```
+
+Or adding in the project configuration:
+
+```
+quirks = [
+    ...
+    'releng.xmake.disable_deps_init',
+]
 ```
 
 ## See also
