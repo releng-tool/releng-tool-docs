@@ -7,6 +7,7 @@ The following contains a series of tips which may be helpful for a user:
 
 parallel-builds
 license-generation
+revision-overrides-in-ci
 privileged-builds
 offline-builds
 alternative-extensions
