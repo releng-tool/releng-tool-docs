@@ -116,6 +116,9 @@ print(f'Using version {releng_version}')
 
 ## Imported Python modules/functions/etc.
 
+:::{versionadded} 3.1
+:::
+
 Select Python modules and callables are automatically imported into package
 definitions and script for convenience:
 
