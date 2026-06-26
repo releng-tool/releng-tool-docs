@@ -41,16 +41,17 @@ The configuration stage invokes `xmake` with the arguments:
 
 ```none
 xmake config \
-    --builddir=<BUILD_OUTPUT_DIR> \
     --includedirs=<SYSROOT_INCLUDE_PATHS> \
     --linkdirs=<SYSROOT_LIBRARY_PATHS> \
-    --mode=<MODE>
+    --mode=<MODE> \
+    -o <BUILD_OUTPUT_DIR>
 ```
 
 With the following environment variables set:
 
 ```none
 XMAKE_CONFIGDIR=<BUILD_OUTPUT_DIR>
+XMAKE_GLOBALDIR=<BUILD_BASE_DIR>/.releng-tool-xmake-global
 ```
 
 The mode/build type can configured by
@@ -85,6 +86,7 @@ With the following environment variables set:
 
 ```none
 XMAKE_CONFIGDIR=<BUILD_OUTPUT_DIR>
+XMAKE_GLOBALDIR=<BUILD_BASE_DIR>/.releng-tool-xmake-global
 ```
 
 The number of jobs is populated by either the [`--jobs` argument](arg-jobs),
@@ -111,6 +113,7 @@ With the following environment variables set:
 
 ```none
 XMAKE_CONFIGDIR=<BUILD_OUTPUT_DIR>
+XMAKE_GLOBALDIR=<BUILD_BASE_DIR>/.releng-tool-xmake-global
 ```
 
 The `--installdir` argument will be set to the target sysroot the package
