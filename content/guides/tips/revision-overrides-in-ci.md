@@ -11,10 +11,10 @@ great when trying to utilize when performing continuous integration (CI).
 
 The recommended approach for overriding revisions for packages in a CI context
 is to utilize package-specific force revision options. An invoke of releng-tool
-accepts a, for example, [`LIBFOO_FORCE_REVISION`](pkg-opt-force-revision)
-option which can override the revision used for a `libfoo` package. Forced
-revisions take priority over any other revision/version configuration, even
-when operating in a development mode.
+accepts the [`<pkg>_FORCE_REVISION`](pkg-opt-force-revision) option which can
+override the revision used for a specific package. Forced revisions take
+priority over any other revision/version configuration, even when operating
+in a development mode.
 
 Consider the following example of a project with three packages:
 
@@ -34,7 +34,7 @@ A developer may be in a scenario where they want to quickly test a build
 with changes to the library `liba` and an application `my-app`. To do so,
 the following environment variables can be set:
 
-```
+```none
 LIBA_FORCE_REVISION=v2.3.4
 MY_APP_FORCE_REVISION=feature/new-stuff
 ```
@@ -74,13 +74,10 @@ $ releng-tool
 ```
 ````
 
-```{eval-rst}
-.. only:: latex
-
-    ---
-```
-
-Consider the following CI definition examples:
+The approach to providing revision overrides in a CI configuration would
+commonly use inputs to accept revision values and using these inputs to
+ensure environment variables are configured. Consider the following CI
+definition examples:
 
 ````{tab} GitHub
 ```{eval-rst}
@@ -112,14 +109,43 @@ jobs:
 ```
 ````
 
-````{tab} GitLab
+````{tab} GitLab (Inputs)
 ```{eval-rst}
 .. only:: latex
 
-    **GitLab**
+    **GitLab (Inputs)**
 ```
 ```yaml
+spec:
+  inputs:
+    LIBA_FORCE_REVISION:
+      default: ""
+      description: "Force the revision of liba to the provided value."
+    LIBB_FORCE_REVISION:
+      default: ""
+      description: "Force the revision of libb to the provided value."
+    MY_APP_FORCE_REVISION:
+      default: ""
+      description: "Force the revision of my-application to the provided value."
+---
 
+variables:
+  LIBA_FORCE_REVISION: $[[ inputs.LIBA_FORCE_REVISION ]]
+  LIBB_FORCE_REVISION: $[[ inputs.LIBB_FORCE_REVISION ]]
+  MY_APP_FORCE_REVISION: $[[ inputs.MY_APP_FORCE_REVISION ]]
+
+test:
+  script: releng-tool
+```
+````
+
+````{tab} GitLab (Variables)
+```{eval-rst}
+.. only:: latex
+
+    **GitLab (Variables)**
+```
+```yaml
 variables:
   LIBA_FORCE_REVISION:
     description: "Force the revision of liba to the provided value."
@@ -162,12 +188,6 @@ pipeline {
 }
 ```
 ````
-
-```{eval-rst}
-.. only:: latex
-
-    ---
-```
 
 When a `<PKG>_FORCE_REVISION` environment variable is empty, the variable
 will be ignored.
