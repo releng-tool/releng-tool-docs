@@ -836,7 +836,7 @@ See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
 :::{versionadded} 3.1
 :::
 
-Invoke releng-tool in a [release mode](/guides/release-checks). Helps
+Invoke releng-tool in a [release mode](/guides/release-mode). Helps
 sanity check certain configurations are not used for a run that is expected
 to produce a release.
 

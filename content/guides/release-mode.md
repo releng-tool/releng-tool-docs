@@ -1,4 +1,4 @@
-# Release Checks
+# Release Mode
 
 :::{versionadded} 3.1
 :::

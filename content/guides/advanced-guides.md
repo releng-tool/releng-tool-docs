@@ -12,7 +12,7 @@ patching
 intern-extern-pkgs
 development-mode
 local-sources-mode
-release-checks
+release-mode
 profiles
 network-isolation
 api-mode

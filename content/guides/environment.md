@@ -597,7 +597,7 @@ See also [`<pkg>-reinstall`](action-pkg-reinstall).
 :::{versionadded} 3.1
 :::
 
-Flag set if running in a [release mode](/guides/release-checks).
+Flag set if running in a [release mode](/guides/release-mode).
 
 See also [`--release`](arg-release).
 
