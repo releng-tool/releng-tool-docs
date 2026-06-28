@@ -17,21 +17,16 @@ The following outlines available global actions:
 (action-clean)=
 ### `clean`
 
-Clean (removes) a series of folders holding content such as extracted
-archives, built libraries and more.
+Removes content such as extracted archives, built libraries and more.
 
 ```shell
 releng-tool clean
 ```
 
-Images and downloaded assets/cache are not removed (see
-[`mrproper`](action-mrproper) for a more through all cleaning operation).
-This clean operation will remove files based off the configured output
-directory. If an output directory is provided (i.e. `--out-dir <dir>`)
-during a clean event, select folders inside this directory will be removed
-instead of the output directory (if any) found in the root directory.
+Built images and downloaded assets/cache are not removed.
 
-See also the [`distclean`](action-distclean), [`mrproper`](action-mrproper) and
+See specifics under [Cleaning](/guides/cleaning). Also see the
+[`distclean`](action-distclean), [`mrproper`](action-mrproper) and
 [`<pkg>-clean`](action-pkg-clean) actions.
 
 (action-distclean)=
@@ -48,11 +43,11 @@ releng-tool distclean
 
 This request removes the `cache/`, `dl/` and `output/` directories found
 in the root directory or overridden by respective arguments, as well as
-any mode file flags which may be set. See also the [`clean`](action-clean)
-or [`mrproper`](action-mrproper) actions.
+any mode file flags which may be set.
 
-See also the [`clean`](action-clean), [`mrproper`](action-mrproper) and
-[`<pkg>-distclean`](action-pkg-distclean) actions.
+See specifics under [Cleaning](/guides/cleaning). Also see the
+[`clean`](action-clean), [`mrproper`](action-mrproper) and
+[`<pkg>-clean`](action-pkg-clean) actions.
 
 (action-extract)=
 ### `extract`
@@ -169,8 +164,9 @@ This request removes the `output/` directory found in the root directory or
 overridden by the `--out-dir` argument, as well as any mode file flags
 which may be set. The `cache/` and `dl/` directories will remain untouched.
 
-See also the [`clean`](action-clean) and [`distclean`](action-distclean)
-actions.
+See specifics under [Cleaning](/guides/cleaning). Also see the
+[`clean`](action-clean), [`distclean`](action-distclean) and
+[`<pkg>-clean`](action-pkg-clean) actions.
 
 (action-patch)=
 ### `patch`
