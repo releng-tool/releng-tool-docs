@@ -46,3 +46,25 @@ Synchronize messages with transifex:
 ```
 
 Commit any made to the working tree.
+
+## Release commands
+
+Prepare a release tag on the news event commit:
+
+```shell-session
+git tag -s -a v<version> <hash> -m "releng-tool <version> news"
+git verify-tag <tag>
+```
+
+Push up the release tag:
+
+```shell-session
+git push origin <tag>
+```
+
+Wait and verify the published documentation.
+
+In the event additional changes/tweaks are needed after a main version release,
+perform the same steps above but append a `-N` suffix on the tag. Always start
+with `-2` and higher. For example, if originally using a `v3.0` tag, now use a
+`v3.0-2` tag.
