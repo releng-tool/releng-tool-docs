@@ -239,12 +239,12 @@ See also the [`--jobs` argument](arg-jobs) and
 (pkg-opt-force-revision)=
 ## `LIBFOO_FORCE_REVISION`
 
-:::{versionadded} 3.0
-:::
-
 ```{caution}
 This option is not recommended for use inside a package definition.
 ```
+
+:::{versionadded} 3.0
+:::
 
 Specifies a forced revision to use for a package. This option is not
 recommended for use inside a package definition. It is designed for users
