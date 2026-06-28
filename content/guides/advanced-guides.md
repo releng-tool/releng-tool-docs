@@ -14,6 +14,7 @@ development-mode
 local-sources-mode
 release-checks
 profiles
+network-isolation
 api-mode
 quirks/quirks
 :::

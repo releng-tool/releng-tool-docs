@@ -129,9 +129,9 @@ See also [licenses](licenses).
 :::
 
 A flag to indicate that non-fetch package stages will attempt to perform
-network isolation. This is to help promote/enforce network-related interaction
-in expected stages which can be helpful for use cases such as
-[offline builds](tips/offline-builds).
+[network isolation](/guides/network-isolation). This is to help promote/enforce
+network-related interaction in expected stages which can be helpful for use
+cases such as [offline builds](tips/offline-builds).
 
 By default, network isolation is not enforced.
 

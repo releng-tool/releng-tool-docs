@@ -464,8 +464,8 @@ See also the [`--jobs` argument](arg-jobs) and
 :::{versionadded} 3.1
 :::
 
-A flag to indicate that non-fetch stages will attempt to perform network
-isolation.
+A flag to indicate that non-fetch stages will attempt to perform
+[network isolation](/guides/network-isolation).
 
 ```python
 LIBFOO_NETWORK_ISOLATION = True
