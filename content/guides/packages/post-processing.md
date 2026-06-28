@@ -1,5 +1,11 @@
 # Package post-processing
 
+```{note}
+This page is about package-specific post-processing. If looking for
+post-processing support for an entire project, see
+[project post-processing](/guides/post-processing).
+```
+
 Every package, no matter which package [`LIBFOO_TYPE`](pkg-opt-type) is
 defined, can create a post-processing script to invoke after a package
 has completed an installation stage. The existence of a `<package>-post.rt`

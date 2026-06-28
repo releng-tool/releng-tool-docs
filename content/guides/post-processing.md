@@ -5,6 +5,12 @@ A post-processing script (if used) will be invoked each time `releng-tool`
 reaches the final stage of a build.
 ```
 
+```{note}
+This page is about project post-processing. If looking for post-processing
+support for a specific package, see
+[package post-processing](/guides/packages/post-processing).
+```
+
 ```{admonition} Prospect
 At this time, releng-tool supports only post-build scripts. It is planned to
 introduced support for some image-related helpers (i.e. package helpers).

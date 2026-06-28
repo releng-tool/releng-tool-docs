@@ -1,5 +1,10 @@
 # Making a custom post-build action extension
 
+```{note}
+This page relates to extension development. If looking for existing project
+post-processing support, see [post-processing](/guides/post-processing).
+```
+
 This is an extension example for the following use case:
 
 > After performing a build for any of my releng-tool projects, I want to
