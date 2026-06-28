@@ -1,5 +1,6 @@
 ---
 hide-toc: true
+nosearch: true
 ---
 
 # releng-tool

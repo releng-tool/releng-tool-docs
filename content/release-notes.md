@@ -1,3 +1,7 @@
+---
+nosearch: true
+---
+
 # Release notes
 
 The following provides the notable features, bug fixes and more for each
