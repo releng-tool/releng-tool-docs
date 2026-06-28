@@ -1,3 +1,7 @@
+```{raw} latex
+\newpage
+```
+
 # Understanding rebuilds
 
 - Completed stages for a package are not executed again when releng-tool is

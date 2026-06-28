@@ -1,3 +1,7 @@
+```{raw} latex
+\newpage
+```
+
 # Tutorial "An SDL example"
 
 ```{note}
