@@ -11,6 +11,7 @@ patching
 intern-extern-pkgs
 development-mode
 local-sources-mode
+release-checks
 profiles
 api-mode
 quirks/quirks

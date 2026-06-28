@@ -834,6 +834,18 @@ Do not throw an error when releng-tool is provided unknown arguments.
 
 See also [`RELENG_IGNORE_UNKNOWN_ARGS`](env-releng-ignore-unknown-args).
 
+(arg-release)=
+### `--release`
+
+:::{versionadded} 3.1
+:::
+
+Invoke releng-tool in a [release mode](/guides/release-checks). Helps
+sanity check certain configurations are not used for a run that is expected
+to produce a release.
+
+See also [`RELENG_RELEASE`](env-releng-release).
+
 (arg-root-dir)=
 ### `--root-dir <dir>`, `-R <dir>`
 

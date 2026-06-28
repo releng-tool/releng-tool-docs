@@ -591,6 +591,16 @@ Flag set if performing a re-install request.
 
 See also [`<pkg>-reinstall`](action-pkg-reinstall).
 
+(env-releng-release)=
+### `RELENG_RELEASE`
+
+:::{versionadded} 3.1
+:::
+
+Flag set if running in a [release mode](/guides/release-checks).
+
+See also [`--release`](arg-release).
+
 (env-releng-script)=
 ### `RELENG_SCRIPT`
 
