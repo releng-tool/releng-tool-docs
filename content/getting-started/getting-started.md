@@ -9,7 +9,7 @@ Python-compatible scripts, which releng-tool accepts for processing
 configuration files and invoking other tools on a host system. While
 releng-tool supports running on various host systems (e.g. Linux, OS X,
 Windows, etc.), this guide will primarily show examples following a
-Unix-styled file system.
+POSIX-styled file system.
 
 ## Running releng-tool
 
@@ -32,19 +32,14 @@ A project will typically be defined by a `releng-tool.rt` configuration
 file along with one or more packages found inside a `package/` folder.
 This location can be referred to as the "root directory".
 
-:::{note}
-releng-tool supports using a `.py` extension. For more information, please
-see [alternative extensions](/guides/tips/alternative-extensions).
-:::
-
-When invoking `releng-tool`, the tool will look in the current working
+When invoking `releng-tool`, the tool will look in the working
 directory for project information to process. For example, if a folder
 `my-project` had a skeleton such as:
 
 ```
 └── my-project/
     ├── package/
-    │   └── package-a/
+    │   └── my-app/
     │       └── ...
     └── releng-tool.rt
 ```
@@ -54,19 +49,19 @@ The following output may be observed when running releng-tool:
 ```shell-session
 $ cd my-project
 $ releng-tool
-extracting package-a...
-patching package-a...
-configuring package-a...
-building package-a...
-installing package-a...
+extracting my-app...
+patching my-app...
+configuring my-app...
+building my-app...
+installing my-app...
 generating license information...
 (success) completed (0:01:30)
 ```
 
 On a successful execution, it is most likely that the releng-tool process
 will have an asset (or multiple) generated into a `images/` location. It is
-up to the developer of a releng-tool project to decide where generated
-files will be stored.
+up to the developer of a releng-tool project to decide how content is packaged
+and where generated files will be stored.
 
 If a user wishes to pass the directory of a project location via command line,
 the argument `--root-dir` can be used:
