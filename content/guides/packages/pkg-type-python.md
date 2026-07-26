@@ -11,7 +11,8 @@ LIBFOO_PYTHON_SETUP_TYPE = 'setuptools'
 Only the build and installation phases are used when processing the sources
 for a Python package (i.e. no configuration stage is invoked). The
 [`LIBFOO_PYTHON_SETUP_TYPE`](pkg-opt-python-setup-type) configuration dictates
-which build approach is performed for a package. The installation stage
+which build approach is performed for a package. If no setup type is provided,
+a PEP 517 build will be invoked. The installation stage
 for all Python packages uses the [`installer`][installer] module. When a Python
 package is processed, it will use the same Python interpreter used by
 releng-tool.
@@ -90,12 +91,12 @@ python -m pdm --ignore-python build --no-isolation --no-sdist
 ```
 ````
 
-````{tab} PEP 517 build
+````{tab} PEP 517 build (Default)
 ```{eval-rst}
 .. only:: latex
 
-    PEP 517 build stage
-    -------------------
+    PEP 517 build stage (Default)
+    -----------------------------
 ```
 
 The build stage invokes Python with the `build` module and arguments:
@@ -335,9 +336,10 @@ Support for `distutils` packages is deprecated.
 :::
 :::{versionchanged} 2.10 Explicit setup type is required.
 :::
+:::{versionchanged} 4.0 Setup type defaults to PEP 517 if not configured.
+:::
 
 The setup type will configure how a Python package is built and installed.
-It is required to configure a setup type for a Python package.
 The following outlines available setup types in releng-tool:
 
 | Type                        | Value |
@@ -345,7 +347,7 @@ The following outlines available setup types in releng-tool:
 | [Flit][flit]                | `flit`
 | [Hatch][hatch]              | `hatch`
 | [PDM][pdm]                  | `pdm`
-| [PEP 517 build][pypa-build] | `pep517`
+| [PEP 517 build][pypa-build] | `pep517` (default)
 | [Poetry][poetry]            | `poetry`
 | [Setuptools][setuptools]    | `setuptools`
 | [distutils][distutils]      | `distutils`
