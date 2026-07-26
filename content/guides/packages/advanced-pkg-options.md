@@ -245,6 +245,10 @@ This option is not recommended for use inside a package definition.
 
 :::{versionadded} 3.0
 :::
+:::{versionchanged} 4.0
+Forced revisions can now be automatically pulled from the environment without
+[variable injection](arg-variable-injection).
+:::
 
 Specifies a forced revision to use for a package. This option is not
 recommended for use inside a package definition. It is designed for users
@@ -257,6 +261,9 @@ matter what mode is configured.
 ```python
 releng-tool LIBFOO_FORCE_REVISION="1.2.3"
 ```
+
+Forced revisions can also be pulled from the environment when not running in
+a [release mode](/guides/release-mode).
 
 See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision),
 [`LIBFOO_REVISION`](pkg-opt-revision) and [`revisions`](conf-revisions).
