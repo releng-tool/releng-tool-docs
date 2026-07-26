@@ -76,33 +76,37 @@ Options which are read by releng-tool from a project's configuration script
 (`releng-tool.rt`):
 
 ```{parsed-literal}
-[`cache_ext`](conf-cache-ext) = &lt;callable&gt;
-[`default_devmode_ignore_cache`](conf-default-devmode-ignore-cache) = bool
-[`default_cmake_build_type`](conf-default-cmake-build-type) = str
-[`default_meson_build_type`](conf-default-meson-build-type) = str
-[`default_internal`](conf-default-internal) = bool
-[`default_xmake_build_type`](conf-default-xmake-build-type) = str
-[`environment`](conf-environment) = {'&lt;key&gt;': '&lt;val&gt;'}
-[`extensions`](conf-extensions) = ['&lt;extension&gt;', '&lt;extension&gt;']
-[`external_packages`](conf-external-packages) = ['&lt;path&gt;', '&lt;path&gt;']
-[`extra_license_exceptions`](conf-extra-license-exceptions) = {'&lt;short-exception-id&gt;': '&lt;exception-name&gt;'}
-[`extra_licenses`](conf-extra-licenses) = {'&lt;short-license-id&gt;': '&lt;license-name&gt;'}
-[`license_header`](conf-license-header) = '&lt;data&gt;'
-[`lint_max_version`](conf-lint-max-version) = '&lt;max-version&gt;'
-[`network_isolation`](conf-network-isolation) = bool
-[`override_extract_tools`](conf-override-extract-tools) = {'&lt;tool&gt;': '&lt;tool-path&gt;'}
-[`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;']
-[`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;']
-[`quirks`](conf-quirks) = ['&lt;quirk-id&gt;']
-[`revisions`](conf-revisions) = {'&lt;pkg&gt;': '&lt;revision&gt;'}
-[`sbom_format`](conf-sbom-format) = '&lt;format&gt;'
-&nbsp;&nbsp;└── csv, html, json, json-cyclonedx, json-spdx, rdf-spdx, text, xml, xml-cyclonedx
-[`sysroot_prefix`](conf-sysroot-prefix) = '&lt;path&gt;' # '/usr'
-[`url_mirror`](conf-url-mirror) = '&lt;mirror-url&gt;'
-[`urlopen_context`](conf-urlopen-context) = &lt;ssl.SSLContext&gt;
-[`vsdevcmd`](conf-vsdevcmd) = bool or str
-[`vsdevcmd_products`](conf-vsdevcmd-products) = str
+releng_config(
+&nbsp;&nbsp;&nbsp;&nbsp;[`cache_ext`](conf-cache-ext) = &lt;callable&gt;,
+&nbsp;&nbsp;&nbsp;&nbsp;[`default_devmode_ignore_cache`](conf-default-devmode-ignore-cache) = bool,
+&nbsp;&nbsp;&nbsp;&nbsp;[`default_cmake_build_type`](conf-default-cmake-build-type) = str,
+&nbsp;&nbsp;&nbsp;&nbsp;[`default_meson_build_type`](conf-default-meson-build-type) = str,
+&nbsp;&nbsp;&nbsp;&nbsp;[`default_internal`](conf-default-internal) = bool,
+&nbsp;&nbsp;&nbsp;&nbsp;[`default_xmake_build_type`](conf-default-xmake-build-type) = str,
+&nbsp;&nbsp;&nbsp;&nbsp;[`environment`](conf-environment) = {'&lt;key&gt;': '&lt;val&gt;'},
+&nbsp;&nbsp;&nbsp;&nbsp;[`extensions`](conf-extensions) = ['&lt;extension&gt;', '&lt;extension&gt;'],
+&nbsp;&nbsp;&nbsp;&nbsp;[`external_packages`](conf-external-packages) = ['&lt;path&gt;', '&lt;path&gt;'],
+&nbsp;&nbsp;&nbsp;&nbsp;[`extra_license_exceptions`](conf-extra-license-exceptions) = {'&lt;short-exception-id&gt;': '&lt;exception-name&gt;'},
+&nbsp;&nbsp;&nbsp;&nbsp;[`extra_licenses`](conf-extra-licenses) = {'&lt;short-license-id&gt;': '&lt;license-name&gt;'},
+&nbsp;&nbsp;&nbsp;&nbsp;[`license_header`](conf-license-header) = '&lt;data&gt;',
+&nbsp;&nbsp;&nbsp;&nbsp;[`lint_max_version`](conf-lint-max-version) = '&lt;max-version&gt;',
+&nbsp;&nbsp;&nbsp;&nbsp;[`network_isolation`](conf-network-isolation) = bool,
+&nbsp;&nbsp;&nbsp;&nbsp;[`override_extract_tools`](conf-override-extract-tools) = {'&lt;tool&gt;': '&lt;tool-path&gt;'},
+&nbsp;&nbsp;&nbsp;&nbsp;[`packages`](conf-packages) = ['&lt;pkg&gt;', '&lt;pkg&gt;', '&lt;pkg&gt;'],
+&nbsp;&nbsp;&nbsp;&nbsp;[`prerequisites`](conf-prerequisites) = ['&lt;tool&gt;', '&lt;tool&gt;', '&lt;tool&gt;'],
+&nbsp;&nbsp;&nbsp;&nbsp;[`quirks`](conf-quirks) = ['&lt;quirk-id&gt;'],
+&nbsp;&nbsp;&nbsp;&nbsp;[`revisions`](conf-revisions) = {'&lt;pkg&gt;': '&lt;revision&gt;'},
+&nbsp;&nbsp;&nbsp;&nbsp;[`sbom_format`](conf-sbom-format) = '&lt;format&gt;',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── csv, html, json, json-cyclonedx, json-spdx, rdf-spdx, text, xml, xml-cyclonedx
+&nbsp;&nbsp;&nbsp;&nbsp;[`sysroot_prefix`](conf-sysroot-prefix) = '&lt;path&gt;',  # '/usr'
+&nbsp;&nbsp;&nbsp;&nbsp;[`url_mirror`](conf-url-mirror) = '&lt;mirror-url&gt;',
+&nbsp;&nbsp;&nbsp;&nbsp;[`urlopen_context`](conf-urlopen-context) = &lt;ssl.SSLContext&gt;,
+&nbsp;&nbsp;&nbsp;&nbsp;[`vsdevcmd`](conf-vsdevcmd) = bool or str,
+&nbsp;&nbsp;&nbsp;&nbsp;[`vsdevcmd_products`](conf-vsdevcmd-products) = str,
+)
 ```
+
+See also [modern versus classic configurations](conf-modern-v-classic).
 
 ## Environment variables
 

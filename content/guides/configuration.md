@@ -1,5 +1,10 @@
 # Configuration
 
+:::{versionadded} 4.0
+Added support for `releng_config`. See
+[modern versus classic configurations](conf-modern-v-classic).
+:::
+
 A releng-tool project defines its configuration options inside the a
 `releng-tool.rt` file at the root of a project (or other defaults; see
 [alternative extensions](tips/alternative-extensions)). The primary
@@ -22,11 +27,13 @@ such as follows:
 Can have a configuration (`releng-tool.rt`) such as:
 
 ```python
-packages = [
-    'package-a',
-    'package-b',
-    'package-c',
-]
+releng_config(
+    packages=[
+        'package-a',
+        'package-b',
+        'package-c',
+    ],
+)
 ```
 
 Packages can be loaded implicitly. If other packages depend on each other,
@@ -36,10 +43,74 @@ For example, if the above had `package-b` dependent on both `package-a` and
 configuration file:
 
 ```python
-packages = [
-    'package-b',
-]
+releng_config(
+    packages=[
+        'package-b',
+    ],
+)
 ```
+
+(conf-modern-v-classic)=
+## Modern vs Classic
+
+:::{versionadded} 4.0 Modern configuration approach as added.
+:::
+
+:::{note}
+When using `releng_config` (modern approach), options configured in the
+project's configuration global context (classic approach) will be ignored.
+:::
+
+Users can define their project configuration using either a modern approach
+or classic approach. The modern approach for configurations is to use a
+`releng_config` call:
+
+```python
+releng_config(
+    # options
+)
+```
+
+This call accepts arguments for all options noted in this document. For
+example:
+
+```python
+releng_config(
+    packages=[
+        'package-a',
+        'package-b',
+        'package-c',
+    ],
+    environment={
+        'MY_ENV': 'Example value',
+    },
+    url_mirror='ftp://mirror.example.org/cache/{name}/',
+)
+```
+
+releng-tool also accepts a classical means to configure options by defining
+options directly in the project configuration. The equivalent configuration
+based on the above example would be:
+
+```python
+packages = [
+    'package-a',
+    'package-b',
+    'package-c',
+]
+
+environment = {
+    'MY_ENV': 'Example value',
+}
+
+url_mirror = 'ftp://mirror.example.org/cache/{name}/'
+```
+
+Either approach can be used. The use of `releng_config` is recommended solely
+to help make it easier for users to have a clear section on
+releng-tool-specific options being set over other implementation a user may
+wish to add in the project configuration (e.g. custom argument handling,
+additional sanity checks, etc.).
 
 ## Common options
 
@@ -55,7 +126,10 @@ By default, packages not explicitly configured as internal or external are
 assumed to be external packages.
 
 ```python
-default_internal = True
+releng_config(
+    ...
+    default_internal=True,    
+)
 ```
 
 See also [internal and external packages](intern-extern-pkgs).
@@ -70,10 +144,13 @@ A dictionary to define environment variables to apply to all stages of
 releng-tool.
 
 ```python
-environment = {
-    'MY_ENV_1': 'First example',
-    'MY_ENV_2': 'Another example',
-}
+releng_config(
+    ...
+    environment={
+        'MY_ENV_1': 'First example',
+        'MY_ENV_2': 'Another example',
+    }.
+)
 ```
 
 (conf-extensions)=
@@ -84,10 +161,13 @@ extension cannot be loaded, releng-tool will stop with information on why
 an extension could not be loaded.
 
 ```python
-extensions = [
-    'ext-a',
-    'ext-b',
-]
+releng_config(
+    ...
+    extensions=[
+        'ext-a',
+        'ext-b',
+    ],
+)
 ```
 
 See also [extensions](extensions/extensions).
@@ -103,9 +183,12 @@ loaded from another package container directory, one or more package
 locations can be provided. For example:
 
 ```python
-external_packages = [
-    releng_env('MY_EXTERNAL_PKG_DIR'),
-]
+releng_config(
+    ...
+    external_packages=[
+        releng_env('MY_EXTERNAL_PKG_DIR'),
+    ],
+)
 ```
 
 (conf-license-header)=
@@ -117,7 +200,10 @@ wishes to add a custom header to the generated document, a header can be
 defined by project's configuration. For example:
 
 ```python
-license_header = 'my leading content'
+releng_config(
+    ...
+    license_header='my leading content',
+)
 ```
 
 See also [licenses](licenses).
@@ -136,7 +222,10 @@ cases such as [offline builds](tips/offline-builds).
 By default, network isolation is not enforced.
 
 ```python
-network_isolation = True
+releng_config(
+    ...
+    network_isolation=True,
+)
 ```
 
 See also [`LIBFOO_NETWORK_ISOLATION`](pkg-opt-network-isolation).
@@ -149,11 +238,14 @@ releng-tool till their completion. Package dependencies not explicitly
 listed will be automatically loaded and processed as well.
 
 ```python
-packages = [
-    'package-a',
-    'package-b',
-    'package-c',
-]
+releng_config(
+    ...
+    packages=[
+        'package-a',
+        'package-b',
+        'package-c',
+    ],
+)
 ```
 
 The order of listed packages is used to determine the order of processed
@@ -172,11 +264,14 @@ instead of waiting for a stage which requires a specific tool and failing
 later during a building, packaging, etc. phase.
 
 ```python
-prerequisites = [
-    'tool-a',
-    'tool-b',
-    'tool-c',
-]
+releng_config(
+    ...
+    prerequisites=[
+        'tool-a',
+        'tool-b',
+        'tool-c',
+    ],
+)
 ```
 
 (conf-revisions)=
@@ -197,10 +292,13 @@ or [`LIBFOO_REVISION`](pkg-opt-revision), using the project configuration's
 maintained in a single location.
 
 ```python
-revisions = {
-    'libfoo': 'libfoo-v2.1',
-    'myapp': '1.0.0',
-}
+releng_config(
+    ...
+    revisions={
+        'libfoo': 'libfoo-v2.1',
+        'myapp': '1.0.0',
+    },
+)
 ```
 
 The dictionary will map a package name to a revision value. If an entry
@@ -232,7 +330,10 @@ materials (SBOM). By default, `text` format SBOMs are generated for a
 project.
 
 ```python
-sbom_format = 'xml'
+releng_config(
+    ...
+    sbom_format='xml',
+)
 ```
 
 The following lists the available formats supported:
@@ -252,10 +353,13 @@ The following lists the available formats supported:
 Multiple formats can be provided. For example:
 
 ```python
-sbom_format = [
-    'html',
-    'json',
-]
+releng_config(
+    ...
+    sbom_format=[
+        'html',
+        'json',
+    ],
+)
 ```
 
 The `all` value is accepted to generate all supported SBOM variants.
@@ -274,7 +378,10 @@ configuration, build and installation stages. By default, the sysroot
 prefix is typically set to `/usr`; for Windows, the value is empty.
 
 ```python
-sysroot_prefix = '/usr'
+releng_config(
+    ...
+    sysroot_prefix='/usr',
+)
 ```
 
 See also [`LIBFOO_PREFIX`](pkg-opt-prefix) and [`PREFIX`](env-prefix).
@@ -288,7 +395,10 @@ mirror before attempting to acquired from the defined site in a package
 definition.
 
 ```python
-url_mirror = 'ftp://mirror.example.org/data/'
+releng_config(
+    ...
+    url_mirror='ftp://mirror.example.org/data/',
+)
 ```
 
 The `url_mirror` configuration also accepts the following format options:
@@ -299,7 +409,10 @@ The `url_mirror` configuration also accepts the following format options:
 For example:
 
 ```python
-url_mirror = 'ftp://mirror.example.org/cache/{name}/'
+releng_config(
+    ...
+    url_mirror='ftp://mirror.example.org/cache/{name}/',
+)
 ```
 
 Where `{name}` will be replaced by the package name being fetched.
@@ -338,7 +451,10 @@ def my_translator(site):
         return 'tgz'
     return None
 
-cache_ext = my_translator
+releng_config(
+    ...
+    cache_ext=my_translator,
+)
 ```
 
 The above transform indicates that all packages using the
@@ -358,7 +474,10 @@ option may be used. For example, to default to using the `Release` build type,
 the following may be used:
 
 ```python
-default_cmake_build_type = 'Release'
+releng_config(
+    ...
+    default_cmake_build_type='Release',
+)
 ```
 
 See also [`LIBFOO_CMAKE_BUILD_TYPE`](pkg-opt-cmake-build-type).
@@ -377,7 +496,10 @@ where most (if not all) packages would want to use this feature, a global
 override can be configured.
 
 ```python
-default_devmode_ignore_cache = True
+releng_config(
+    ...
+    default_devmode_ignore_cache=True,
+)
 ```
 
 Setting this value to `True` will default all packages to operate with a
@@ -400,7 +522,10 @@ option may be used. For example, to default to using the `Release` build type,
 the following may be used:
 
 ```python
-default_meson_build_type = 'release'
+releng_config(
+    ...
+    default_meson_build_type='release',
+)
 ```
 
 See also [`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type).
@@ -419,7 +544,10 @@ option may be used. For example, to default to using the `debug` mode,
 the following may be used:
 
 ```python
-default_xmake_build_type = 'debug'
+releng_config(
+    ...
+    default_xmake_build_type='debug',
+)
 ```
 
 See also [`LIBFOO_XMAKE_BUILD_TYPE`](pkg-opt-xmake-build-type).
@@ -438,9 +566,12 @@ by default. A project can define their own custom exceptions by adding them
 into a project's `extra_license_exceptions` option to avoid this warning:
 
 ```python
-extra_license_exceptions = {
-    'My-Exception-ID': 'Exception Name',
-}
+releng_config(
+    ...
+    extra_license_exceptions={
+        'My-Exception-ID': 'Exception Name',
+    },
+)
 ```
 
 See also [licenses](licenses).
@@ -459,9 +590,12 @@ generated by default. A project can define their own custom license by
 adding them into a project's `extra_licenses` option to avoid this warning:
 
 ```python
-extra_licenses = {
-    'My-License-ID': 'License Name',
-}
+releng_config(
+    ...
+    extra_licenses={
+        'My-License-ID': 'License Name',
+    },
+)
 ```
 
 See also [licenses](licenses).
@@ -476,7 +610,10 @@ Configures the maximum lint version checks when using the [`lint`](action-lint)
 action.
 
 ```python
-lint_max_version = '3.0'
+releng_config(
+    ...
+    lint_max_version='3.0',
+)
 ```
 
 See also [Linting](linting) and
@@ -492,9 +629,12 @@ internally extract the archive. However, a user may wish to override this
 tool with their own extraction utility. Consider the following example:
 
 ```python
-override_extract_tools = {
-    'zip': '/opt/my-custom-unzip {file} {dir}',
-}
+releng_config(
+    ...
+    override_extract_tools={
+        'zip': '/opt/my-custom-unzip {file} {dir}',
+    },
+)
 ```
 
 The `{file}` key will be replaced with the file to be extracted, and the
@@ -507,9 +647,12 @@ A list of configuration quirks to apply to deal with corner cases which
 can prevent releng-tool operating on a host system.
 
 ```python
-quirks = [
-    'releng.<special-quirk-id>',
-]
+releng_config(
+    ...
+    quirks=[
+        'releng.<special-quirk-id>',
+    ],
+)
 ```
 
 For a list of available quirks, see [quirks](quirks/quirks).
@@ -530,7 +673,10 @@ environment. For example:
 import ssl
 ...
 
-urlopen_context = ssl.create_default_context()
+releng_config(
+    ...
+    urlopen_context=ssl.create_default_context(),
+)
 ```
 
 [^urlopen]: <https://docs.python.org/library/urllib.request.html#urllib.request.urlopen>
@@ -555,7 +701,10 @@ allow packages and post-build scripts to invoke commands as if releng-tool
 was started from within a Visual Studio Developer Command Prompt.
 
 ```python
-vsdevcmd = True
+releng_config(
+    ...
+    vsdevcmd=True,
+)
 ```
 
 The version of which Visual Studio application it used is determined with
@@ -568,7 +717,10 @@ version string that is compatible with Visual Studio Locator's `-version`
 argument.
 
 ```python
-vsdevcmd = '[17.0,18.0)'
+releng_config(
+    ...
+    vsdevcmd='[17.0,18.0)',
+)
 ```
 
 See also [`vsdevcmd_products`](conf-vsdevcmd-products) and
@@ -591,7 +743,10 @@ to use. By default, releng-tool operates as if `vswhere` is invoked with the
 asterisk value with the configured value.
 
 ```python
-vsdevcmd_products = 'Microsoft.VisualStudio.Product.BuildTools'
+releng_config(
+    ...
+    vsdevcmd_products='Microsoft.VisualStudio.Product.BuildTools',
+)
 ```
 
 See also [`vsdevcmd`](conf-vsdevcmd) and
