@@ -2,7 +2,7 @@
 
 :::{deprecated} 2.0
 The `.releng` extension is no longer recommended and will be removed in
-v3.2 release.
+v4.0 release.
 :::
 :::{deprecated} 2.2
 Extensionless configurations/scripts are no longer recommended and will
@@ -11,6 +11,8 @@ be removed in a future release.
 :::{versionchanged} 2.2
 Extension priority orders have changed (<2.2: *(none)*, `.rt`, `.releng`,
 `.py`; >=2.2: `.rt`, `.py`, *(none)*, `.releng`).
+:::
+:::{versionremoved} 4.0 Support for the `.releng` extension has been removed.
 :::
 
 A default configuration file is typically a file named `releng-tool.rt`
