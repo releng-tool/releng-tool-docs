@@ -141,6 +141,7 @@ latex_elements = {
         \definecolor{VerbatimColor}{rgb}{0.98,0.98,0.98}
         \newcommand{\sectionbreak}{\newpage}
         \hypersetup{
+            linktoc=all,
             pdftitle={''' + project + r''' Documentation},
             pdfauthor={''' + author + r'''},
             pdfsubject={Documenting the capabilities of releng-tool},
