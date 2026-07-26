@@ -921,7 +921,7 @@ LIBFOO_VERSION = '1.0'
 
 If a user wants to override this a run with `1.1`, the following can be used:
 
-```shell
+```none
 releng-tool LIBFOO_VERSION=1.1
 ```
 
