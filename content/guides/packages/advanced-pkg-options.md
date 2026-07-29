@@ -135,6 +135,18 @@ instead configure this option if not needing an integrity check.
 LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK = True
 ```
 
+(pkg-opt-exclude-sbom)=
+## `LIBFOO_EXCLUDE_SBOM`
+
+Flag value to indicate that a package should be excluded from any generated
+software build of materials (SBOM).
+
+```python
+LIBFOO_EXCLUDE_SBOM = True
+```
+
+See also the [`sbom`](action-sbom) action.
+
 (pkg-opt-extension)=
 ## `LIBFOO_EXTENSION`
 
