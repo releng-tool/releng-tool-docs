@@ -786,6 +786,11 @@ respective host tool is installed on the host system. For example, if a
 Git VCS-type is set, the host system will need to have `git` installed on
 the system.
 
+```{caution}
+The use of the `local` type is not recommended except for an interim
+development scenarios.
+```
+
 The use of the `local` type is designed to be a special/development-helper
 type only. When set, this option allows placing the sources of a package
 directly inside a `local` folder inside the definition folder. For example,
@@ -804,13 +809,29 @@ follows:
     ...
 ```
 
+Alternatively, when using the `local` type, if a `local` folder does not exist
+for a package, a package's sources may be found in a sibling folder alongside
+the root directory. For example:
+
+```
+├── libfoo/                           <----
+│   ├── src/
+│   │   └── ...
+│   └── Makefile
+└── my-releng-tool-project/
+    ├── package/
+    │   └── libfoo/
+    │       └── libfoo.rt
+    ...
+```
+
 This approach is similar to using
 [local-sources mode](/guides/local-sources-mode), where it avoids the
 need to have the module content located in a site to be fetched --
 specifically, for initial development/testing/training scenarios.
 It is never recommended to store the package's "main content" inside a
-releng-tool project, thus using the `local` type will always generate a
-warning message.
+releng-tool project or permanently use package sources with a relative path
+outside the releng-tool project.
 
 
 [git--depth]: https://git-scm.com/docs/git-clone#Documentation/git-clone.txt-code--depthltdepthgtcode
