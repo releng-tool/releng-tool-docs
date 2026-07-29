@@ -138,6 +138,9 @@ LIBFOO_DEVMODE_SKIP_INTEGRITY_CHECK = True
 (pkg-opt-exclude-sbom)=
 ## `LIBFOO_EXCLUDE_SBOM`
 
+:::{versionadded} 4.1
+:::
+
 Flag value to indicate that a package should be excluded from any generated
 software build of materials (SBOM).
 
@@ -738,6 +741,8 @@ set the VCS type.
 :::{versionremoved} 2.10 Support for Bazaar sites has been removed.
 :::
 :::{versionchanged} 3.1 Support added for `lore`.
+:::
+:::{versionchanged} 4.1 Support sibling root fallback path for `local` sites.
 :::
 
 Explicitly sets the version control system type to use when acquiring
