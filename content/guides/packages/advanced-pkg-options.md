@@ -787,7 +787,7 @@ Git VCS-type is set, the host system will need to have `git` installed on
 the system.
 
 ```{caution}
-The use of the `local` type is not recommended except for an interim
+The use of the `local` type is not recommended except for interim
 development scenarios.
 ```
 
