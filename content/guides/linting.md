@@ -36,8 +36,11 @@ they can do so by configuring a maximum version for lint checks to use. This
 can be configured in the [`lint_max_version`](conf-lint-max-version) project
 configuration:
 
-```
-lint_max_version = '2.8'
+```python
+releng_config(
+    ...
+    lint_max_version='2.8',
+)
 ```
 
 Or configured with a [`RELENG_LINT_MAX_VERSION`](env-releng-lint-max-version)

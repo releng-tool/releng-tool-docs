@@ -30,11 +30,14 @@ For example, the following can be used to enable one or more quirks for a
 releng-tool run:
 
 ```python
-quirks = [
-    'releng.quirk1',
-    'releng.quirk2',
+releng_config(
     ...
-]
+    quirks=[
+        'releng.quirk1',
+        'releng.quirk2',
+        ...
+    ],
+)
 ```
 
 ## Available quirks

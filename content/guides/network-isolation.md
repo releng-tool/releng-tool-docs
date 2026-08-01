@@ -17,8 +17,11 @@ a network request, the build stage would fail.
 Network isolation mode can be configured at the project-level using
 the [`network_isolation`](conf-network-isolation) project configuration:
 
-```py
-network_isolation = True
+```python
+releng_config(
+    ...
+    network_isolation=True,
+)
 ```
 
 Developers may also tailor individual packages for network isolation mode

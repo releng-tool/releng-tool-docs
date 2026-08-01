@@ -13,11 +13,14 @@ releng-tool --quirk releng.disable_remote_scripts
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.disable_remote_scripts',
-]
+    quirks=[
+        ...
+        'releng.disable_remote_scripts',
+    ],
+)
 ```
 
 ## See also

@@ -17,11 +17,14 @@ releng-tool --quirk releng.git.no_quick_fetch
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.git.no_quick_fetch',
-]
+    quirks=[
+        ...
+        'releng.git.no_quick_fetch',
+    ],
+)
 ```
 
 ## See also

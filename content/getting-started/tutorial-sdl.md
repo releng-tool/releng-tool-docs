@@ -369,11 +369,12 @@ In the root folder, create a `releng-tool.rt` file with the following
 contents:
 
 ```python
-packages = [
-    'sample',
-]
-
-vsdevcmd = True
+releng_config(
+    packages = [
+        'sample',
+    ],
+    vsdevcmd=True,
+)
 ```
 
 - We explicitly configure releng-tool to load the `sample` package to build.

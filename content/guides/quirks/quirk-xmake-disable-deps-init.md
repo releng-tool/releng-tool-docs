@@ -19,11 +19,14 @@ releng-tool --quirk releng.xmake.disable_deps_init
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.xmake.disable_deps_init',
-]
+    quirks=[
+        ...
+        'releng.xmake.disable_deps_init',
+    ],
+)
 ```
 
 ## See also

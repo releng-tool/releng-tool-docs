@@ -18,11 +18,14 @@ releng-tool --quirk releng.ignore_failed_extensions
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.ignore_failed_extensions',
-]
+    quirks=[
+        ...
+        'releng.ignore_failed_extensions',
+    ],
+)
 ```
 
 ## See also

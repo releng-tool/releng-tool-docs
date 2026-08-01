@@ -86,9 +86,11 @@ specifics of the project configuration in `releng-tool.rt`. Apply the
 following contents to the configuration:
 
 ```python
-packages = [
-    'htop',
-]
+releng_config(
+    packages = [
+        'htop',
+    ],
+)
 
 # location of the toolchain to use
 MY_TOOLCHAIN_ROOT = '/opt/aarch64--glibc--stable-2022.08-1'

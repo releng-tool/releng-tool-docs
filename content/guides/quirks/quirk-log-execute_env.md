@@ -18,11 +18,14 @@ releng-tool --debug --quirk releng.log.execute_env
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.log.execute_env',
-]
+    quirks=[
+        ...
+        'releng.log.execute_env',
+    ],
+)
 ```
 
 ## See also

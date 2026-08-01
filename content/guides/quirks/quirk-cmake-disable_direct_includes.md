@@ -25,11 +25,14 @@ releng-tool --quirk releng.cmake.disable_direct_includes
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.cmake.disable_direct_includes',
-]
+    quirks=[
+        ...
+        'releng.cmake.disable_direct_includes',
+    ],
+)
 ```
 
 ## See also

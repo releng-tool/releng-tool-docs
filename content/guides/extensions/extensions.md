@@ -13,9 +13,12 @@ in the `extensions` configuration option inside the project configuration
 releng-tool, the following can be defined:
 
 ```python
-extensions = [
-   'my_awesome_extension',
-]
+releng_config(
+    ...
+    extensions=[
+       'my_awesome_extension',
+    ],
+)
 ```
 
 During the initial stages of a releng-tool process, the process will

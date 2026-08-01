@@ -18,11 +18,14 @@ releng-tool --quirk releng.disable_devmode_ignore_cache
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.disable_devmode_ignore_cache',
-]
+    quirks=[
+        ...
+        'releng.disable_devmode_ignore_cache',
+    ],
+)
 ```
 
 ## See also

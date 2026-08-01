@@ -15,11 +15,14 @@ releng-tool --quirk releng.disable_verbose_patch
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.disable_verbose_patch',
-]
+    quirks=[
+        ...
+        'releng.disable_verbose_patch',
+    ],
+)
 ```
 
 ## See also

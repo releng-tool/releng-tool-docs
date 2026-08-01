@@ -22,11 +22,14 @@ releng-tool --quirk releng.ignore_release_check
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.ignore_release_check',
-]
+    quirks=[
+        ...
+        'releng.ignore_release_check',
+    ],
+)
 ```
 
 ## See also

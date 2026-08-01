@@ -23,11 +23,14 @@ releng-tool --quirk releng.git.replicate_cache
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.git.replicate_cache',
-]
+    quirks=[
+        ...
+        'releng.git.replicate_cache',
+    ],
+)
 ```
 
 ## See also

@@ -20,11 +20,14 @@ releng-tool --quirk releng.disable_prerequisites_check
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.disable_prerequisites_check',
-]
+    quirks=[
+        ...
+        'releng.disable_prerequisites_check',
+    ],
+)
 ```
 
 ## See also

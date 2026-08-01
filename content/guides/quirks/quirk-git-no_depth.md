@@ -12,11 +12,14 @@ releng-tool --quirk releng.git.no_depth
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.git.no_depth',
-]
+    quirks=[
+        ...
+        'releng.git.no_depth',
+    ],
+)
 ```
 
 ## See also

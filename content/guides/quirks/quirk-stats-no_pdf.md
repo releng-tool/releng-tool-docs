@@ -16,11 +16,14 @@ releng-tool --quirk releng.stats.no_pdf
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.stats.no_pdf',
-]
+    quirks=[
+        ...
+        'releng.stats.no_pdf',
+    ],
+)
 ```
 
 ## See also

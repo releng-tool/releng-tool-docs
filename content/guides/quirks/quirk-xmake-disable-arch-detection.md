@@ -23,11 +23,14 @@ releng-tool --quirk releng.xmake.disable_arch_detection
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.xmake.disable_arch_detection',
-]
+    quirks=[
+        ...
+        'releng.xmake.disable_arch_detection',
+    ],
+)
 ```
 
 ## See also

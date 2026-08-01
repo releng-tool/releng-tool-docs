@@ -33,11 +33,14 @@ releng-tool --quirk releng.cmake.disable_default_prefix
 
 Or adding in the project configuration:
 
-```
-quirks = [
+```python
+releng_config(
     ...
-    'releng.cmake.disable_default_prefix',
-]
+    quirks=[
+        ...
+        'releng.cmake.disable_default_prefix',
+    ],
+)
 ```
 
 Note, once disabled, individual packages may need to explicitly configure

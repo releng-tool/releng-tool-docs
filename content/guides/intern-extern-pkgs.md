@@ -25,8 +25,11 @@ Developers may want to instead use the project configuration
 [`default_internal`](conf-default-internal) to configure all packages as
 internal by default:
 
-```
-default_internal = True
+```python
+releng_config(
+    ...
+    default_internal=True,
+)
 ```
 
 See also [`LIBFOO_EXTERNAL`](pkg-opt-external).

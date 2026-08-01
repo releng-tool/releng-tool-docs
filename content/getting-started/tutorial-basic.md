@@ -56,9 +56,11 @@ can now be created. At the root of the project, create a `releng-tool.rt`
 configuration file with the following contents:
 
 ```python
-packages = [
-    'program-b',
-]
+releng_config(
+    packages = [
+        'program-b',
+    ],
+)
 ```
 
 The `packages` key indicates a list of required packages to be processed.
