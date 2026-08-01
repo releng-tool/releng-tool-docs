@@ -7,6 +7,8 @@ releng-tool now populates `CMAKE_MODULE_PATH`.
 releng-tool now populates `CMAKE_FIND_ROOT_PATH` and
 `CMAKE_FIND_ROOT_PATH_MODE_PROGRAM`.
 :::
+:::{versionchanged} 4.1
+releng-tool now populates `CMAKE_PREFIX_PATH`.
 :::
 
 A CMake package provides support for processing a [CMake][cmake] supported
@@ -84,6 +86,7 @@ CMAKE_INSTALL_LIBDIR="lib"
 CMAKE_INSTALL_PREFIX=<PREFIX>
 CMAKE_LIBRARY_PATH=<LIBRARY_PATHS>
 CMAKE_MODULE_PATH=<MODULE_PATHS>
+CMAKE_PREFIX_PATH=<PREFIX_PATHS>
 CMAKE_SKIP_INSTALL_ALL_DEPENDENCY=ON
 ```
 
@@ -99,14 +102,17 @@ if `staging` is configured. Likewise, both the staging and target directories
 are provided when using `staging_and_target`.
 
 The same concepts apply for defined include (`<sysroot>[/<prefix>]/include`),
-library (`<sysroot>[/<prefix>]/lib`) and module paths
-(`<sysroot>[/<prefix>]/share/cmake/Modules`).
+library (`<sysroot>[/<prefix>]/lib`), module paths
+(`<sysroot>[/<prefix>]/share/cmake/Modules`) and prefix paths
+(`<sysroot>[/<prefix>]`).
 
 Packages may override default defines using the
 [`LIBFOO_CONF_DEFS`](pkg-opt-cmake-conf-defs) option.
 
-A package may opt-out of configuring `CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES`
-variables using the
+Packages may opt-out of configuring the `CMAKE_PREFIX_PATH` variable using the
+[`releng.cmake.disable_default_prefix`](quirk-releng.cmake.disable_default_prefix)
+quirk. Packages may opt-out of configuring
+`CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES` variables using the
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
 quirk.
 ````

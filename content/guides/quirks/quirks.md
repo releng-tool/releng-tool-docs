@@ -44,6 +44,7 @@ The following is a list of all available quirks supported by releng-tool:
 :::{toctree}
 :maxdepth: 1
 
+releng.cmake.disable_default_prefix <quirk-cmake-disable_default_prefix>
 releng.cmake.disable_direct_includes <quirk-cmake-disable_direct_includes>
 releng.disable_devmode_ignore_cache <quirk-disable_devmode_ignore_cache>
 releng.disable_prerequisites_check <quirk-disable_prerequisites_check>

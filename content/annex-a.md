@@ -371,6 +371,7 @@ Variables available to scripts invoked by releng-tool:
 Quirk options used by releng-tool:
 
 ```{parsed-literal}
+[`releng.cmake.disable_default_prefix`](quirk-releng.cmake.disable_default_prefix)
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
 [`releng.disable_devmode_ignore_cache`](quirk-releng.disable_devmode_ignore_cache)
 [`releng.disable_prerequisites_check`](quirk-releng.disable_prerequisites_check)
