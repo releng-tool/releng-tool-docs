@@ -19,7 +19,7 @@ releng-tool --api
 Responses may vary on the action and other options used. Callers will always
 get a `code` response (matching the return value):
 
-```json
+```none
 {
     "code": 0,
     ...
