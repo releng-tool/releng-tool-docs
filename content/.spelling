@@ -36,6 +36,7 @@ libc
 libfoo
 libnl
 libsdl
+lookups
 matplotlib
 misconfigured
 namespace
