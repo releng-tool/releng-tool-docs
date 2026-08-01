@@ -820,6 +820,8 @@ Enable a quiet output.
 Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
 process. This option can be used multiple times to apply multiple quirks.
 
+See also [`RELENG_QUIRKS`](env-releng-quirks).
+
 (arg-relaxed-args)=
 ### `--relaxed-args`
 

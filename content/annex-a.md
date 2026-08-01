@@ -200,6 +200,7 @@ Other environment variables accepted by releng-tool:
 [`RELENG_LINT_MAX_VERSION`](env-releng-lint-max-version)
 [`RELENG_OUTPUT_DIR`](env-releng-out-dir)
 [`RELENG_PARALLEL_LEVEL`](env-releng-parallel-level)
+[`RELENG_QUIRKS`](env-releng-quirks)
 ```
 
 ## Package types

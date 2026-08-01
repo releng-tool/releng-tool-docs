@@ -1255,6 +1255,17 @@ provided value from the automatic job detection count (to a minimum of one).
 See also the [`--jobs` argument](arg-jobs), [`NJOBS`](env-njobs) and
 [`NJOBSCONF`](env-njobsconf).
 
+(env-releng-quirks)=
+### `RELENG_QUIRKS=<level>`
+
+:::{versionadded} 4.1
+:::
+
+Allows specifying a runtime [quirk](quirks/quirks) for the releng-tool
+process. Multiple semicolon-separated quirks can be provided.
+
+See also the [`--quirk` argument](arg-quirk).
+
 (env-tool-overrides)=
 ### Tool overrides
 
