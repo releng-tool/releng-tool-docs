@@ -19,7 +19,7 @@ releng-tool --api
 Responses may vary on the action and other options used. Callers will always
 get a `code` response (matching the return value):
 
-```
+```json
 {
     "code": 0,
     ...
@@ -38,7 +38,7 @@ the standard output stream is not populated during an API mode run.
 
 The following shows an example API mode:
 
-```
+```json
 {
     "code": 0,
     "releng-tool": "...",

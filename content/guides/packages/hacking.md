@@ -19,7 +19,7 @@ If the assignment of `PREFIX` causes issues for a package, a developer can
 hint to remove such an option by configuring
 [`LIBFOO_INSTALL_DEFS`](pkg-opt-make-install-defs) to be as follows:
 
-```
+```python
 LIBFOO_INSTALL_DEFS = {
     'PREFIX': None,
 }

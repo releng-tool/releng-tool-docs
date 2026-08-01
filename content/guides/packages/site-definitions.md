@@ -34,7 +34,7 @@ fetch stage will be skipped unless the archive is manually removed.
 
 The following shows an example of cloning a v1.0 tag:
 
-```
+```python
 LIBFOO_REVISION = 'tag:v${LIBFOO_VERSION}'
 LIBFOO_SITE = 'brz+https://example.com/project/trunk'
 LIBFOO_VERSION = '1.0'
@@ -45,7 +45,7 @@ LIBFOO_VERSION = '1.0'
 
 The following shows an example of cloning the latest trunk branch:
 
-```
+```python
 LIBFOO_REVISION = '-1'
 LIBFOO_SITE = 'brz+https://example.com/project/trunk'
 ```
@@ -75,7 +75,7 @@ removed.
 
 The following shows an example of cloning a libfoo-1.2.3 tag:
 
-```
+```python
 LIBFOO_REVISION = 'libfoo-${LIBFOO_VERSION}'
 LIBFOO_SITE = ':pserver:anonymous@cvs.example.com:/var/lib/cvsroot libfoo'
 LIBFOO_VERSION = '1.2.3'
@@ -86,7 +86,7 @@ LIBFOO_VERSION = '1.2.3'
 
 The following shows an example of cloning a v1.x LTS branch:
 
-```
+```python
 LIBFOO_REVISION = 'lts-1.x'
 LIBFOO_SITE = ':pserver:anonymous@cvs.example.com:/var/lib/cvsroot libfoo'
 ```
@@ -131,7 +131,7 @@ exist, the origin remote will be fetched for the new revision (if it exists).
 
 The following shows an example of cloning a v1.2.3 tag:
 
-```
+```python
 LIBFOO_REVISION = 'v${LIBFOO_VERSION}'
 LIBFOO_SITE = 'git+git@example.com:base/libfoo.git'
 LIBFOO_VERSION = '1.2.3'
@@ -142,7 +142,7 @@ LIBFOO_VERSION = '1.2.3'
 
 The following shows an example of cloning a v1.x LTS branch:
 
-```
+```python
 LIBFOO_REVISION = 'lts-1.x'
 LIBFOO_SITE = 'https://example.com/libfoo.git'
 ```
@@ -152,7 +152,7 @@ LIBFOO_SITE = 'https://example.com/libfoo.git'
 
 The following shows an example of cloning with a commit hash:
 
-```
+```python
 LIBFOO_REVISION = 'da39a3ee5e6b4b0d3255bfef95601890afd80709'
 LIBFOO_SITE = 'git+ssh://git.example.com/group/libfoo.git'
 ```
@@ -197,7 +197,7 @@ fetch stage will be skipped unless the archive is manually removed.
 
 The following shows an example of cloning a v1.x LTS branch:
 
-```
+```python
 LIBFOO_REVISION = 'lts-1.x'
 LIBFOO_SITE = 'lore://lore.example.org'
 ```
@@ -207,7 +207,7 @@ LIBFOO_SITE = 'lore://lore.example.org'
 
 The following shows an example of cloning with a revision hash:
 
-```
+```python
 LIBFOO_REVISION = 'a89c9b0632406842567001d0b77d8cfdef3c3fc810457498bcb500b7e3172197'
 LIBFOO_SITE = 'lore+lores://sources.example.org'
 ```
@@ -234,7 +234,7 @@ pulled for the new revision (if it exists).
 
 The following shows an example of cloning a v1.2.3 tag:
 
-```
+```python
 LIBFOO_REVISION = 'v${LIBFOO_VERSION}'
 LIBFOO_SITE = 'hg+https://hg.example.org/repo/hello'
 LIBFOO_VERSION = '1.2.3'
@@ -245,7 +245,7 @@ LIBFOO_VERSION = '1.2.3'
 
 The following shows an example of cloning a v1.x LTS branch:
 
-```
+```python
 LIBFOO_REVISION = 'lts-1.x'
 LIBFOO_SITE = 'hg+https://hg.example.org/repo/hello'
 ```
@@ -279,7 +279,7 @@ will be skipped unless the archive is manually removed.
 
 The following shows an example of cloning the 27574 revision:
 
-```
+```python
 LIBFOO_SITE = 'perforce+srcs.example.com:1666 //base/libfoo/main'
 LIBFOO_VERSION = '27574'
 ```
@@ -340,7 +340,7 @@ is made, the fetch stage will be skipped unless the archive is manually removed.
 The following shows an example of cloning a v1.2.3 tag with a fixed SVN
 revision value:
 
-```
+```python
 LIBFOO_REVISION = 46801
 LIBFOO_SITE = 'svn+https://svn.example.com/repos/libfoo/c/tags/${LIBFOO_VERSION}'
 LIBFOO_VERSION = '1.2.3'
@@ -354,7 +354,7 @@ This ensures a fixed/repeatable clone experience.
 The following shows an example of cloning a v1.2.3 tag with a flexible
 revision value:
 
-```
+```python
 LIBFOO_REVISION = 'HEAD'
 LIBFOO_SITE = 'svn+https://svn.example.com/repos/libfoo/c/tags/${LIBFOO_VERSION}'
 LIBFOO_VERSION = '1.2.3'
@@ -368,7 +368,7 @@ explicit SVN revision. This approach supports moved tags.
 
 The following shows an example of cloning a v1.x LTS branch:
 
-```
+```python
 LIBFOO_REVISION = 'HEAD'
 LIBFOO_SITE = 'svn+https://svn.example.com/repos/libfoo/c/branches/1.x-lts'
 ```

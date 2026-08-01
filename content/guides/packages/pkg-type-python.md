@@ -219,7 +219,7 @@ The default interpreter used for project scripts is as follows:
 An example using a custom interpreter `/opt/custom/python` for project
 scripts can be done using:
 
-```
+```python
 LIBFOO_PYTHON_INSTALLER_INTERPRETER = '/opt/custom/python'
 ```
 
@@ -254,7 +254,7 @@ Options may include:
 For example, to explicitly build POSIX executable scripts, the following
 configuration can be defined:
 
-```
+```python
 LIBFOO_PYTHON_INSTALLER_SCHEME = 'posix'
 ```
 
@@ -281,20 +281,20 @@ releng-tool uses the following scheme entries:
 A package can be configured with a scheme `native` to use the default
 install target based on the native system:
 
-```
+```python
 LIBFOO_PYTHON_INSTALLER_SCHEME = 'native'
 ```
 
 Packages can also use schemes supported by Python's [`sysconfig`][sysconfig]
 module. For example:
 
-```
+```python
 LIBFOO_PYTHON_INSTALLER_SCHEME = 'posix_prefix'
 ```
 
 A package may also define a custom scheme:
 
-```
+```python
 LIBFOO_PYTHON_INSTALLER_SCHEME = {
     'data':        '',
     'include':     'include/python',

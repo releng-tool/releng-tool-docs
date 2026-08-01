@@ -17,7 +17,7 @@ executables that cannot run on the host system.
 One workaround for a package is to override/unset the `CMAKE_PREFIX_PATH`
 option to use a default/unset value:
 
-```
+```python
 LIBFOO_CONF_DEFS = {
     'CMAKE_PREFIX_PATH': None,
 }

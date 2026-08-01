@@ -29,7 +29,7 @@ using the [`LIBFOO_NETWORK_ISOLATION`](pkg-opt-network-isolation) option.
 For example, to enable it for the `myapp` package (if not configured at a
 project level):
 
-```py
+```python
 MYAPP_NETWORK_ISOLATION = True
 ```
 
@@ -37,7 +37,7 @@ Developers can also opt-out of network-isolation if the project is configured
 to isolate but a specific package still relies on networking outside of the
 fetch stage:
 
-```py
+```python
 MYAPP_NETWORK_ISOLATION = False
 ```
 

@@ -17,7 +17,7 @@ or external packages are treated the same except for the following:
 An individual package can be configured as internal using
 [`LIBFOO_INTERNAL`](pkg-opt-internal). For example:
 
-```
+```python
 LIBFOO_INTERNAL = True
 ```
 

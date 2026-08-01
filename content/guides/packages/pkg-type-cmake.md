@@ -43,13 +43,13 @@ required staging/target paths through the
 toolchain configuration accepts `CMAKE_FIND_ROOT_PATH` hints. For example,
 using either:
 
-```
+```cmake
 list(APPEND CMAKE_FIND_ROOT_PATH "INTERNAL_SDK_PATH")
 ```
 
 Or:
 
-```
+```cmake
 if(NOT DEFINED CMAKE_FIND_ROOT_PATH)
     set(CMAKE_FIND_ROOT_PATH "INTERNAL_SDK_PATH")
 endif()
