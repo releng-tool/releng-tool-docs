@@ -1,7 +1,12 @@
 # CMake package
 
+:::{versionchanged} 2.1
+releng-tool now populates `CMAKE_MODULE_PATH`.
+:::
 :::{versionchanged} 2.6
-releng-tool now populates `CMAKE_FIND_ROOT_PATH`.
+releng-tool now populates `CMAKE_FIND_ROOT_PATH` and
+`CMAKE_FIND_ROOT_PATH_MODE_PROGRAM`.
+:::
 :::
 
 A CMake package provides support for processing a [CMake][cmake] supported
