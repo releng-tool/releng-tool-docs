@@ -48,7 +48,8 @@ are listed below:
     An alias for ``pathlib.Path``. See also
     https://docs.python.org/3/library/pathlib.html#pathlib.Path.
 
-.. autofunction:: releng_register_path
+.. autofunction:: releng_register_env_path
+.. autofunction:: releng_register_python_path
 .. autofunction:: releng_remove
 .. autofunction:: releng_require_version
 .. autofunction:: releng_step

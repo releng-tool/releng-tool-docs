@@ -348,6 +348,8 @@ Functions available to scripts invoked by releng-tool or importable via
 [`releng_move`](releng_tool.releng_move)(src, dst, quiet=False, critical=True, dst_dir=None, nested=False)
 [`releng_move_into`](releng_tool.releng_move_into)(src, dst, quiet=False, critical=True, nested=False)
 [`releng_path`](releng_tool.releng_path)(*pathsegments)
+[`releng_register_env_path`](releng_tool.releng_register_env_path)(path, critical=True)
+[`releng_register_python_path`](releng_tool.releng_register_python_path)(path, critical=True)
 [`releng_remove`](releng_tool.releng_remove)(path, quiet=False)
 [`releng_require_version`](releng_tool.releng_require_version)(minver, maxver=None, quiet=False, critical=True)
 [`releng_setup`](/guides/extensions/extensions)(app)
