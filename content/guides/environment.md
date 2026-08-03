@@ -539,6 +539,30 @@ Flag set if performing a forced request from the command line.
 
 See also [`--force`](arg-force).
 
+(env-releng-host-os-linux)=
+### `RELENG_HOST_OS_LINUX`
+
+:::{versionadded} 4.2
+:::
+
+Flag set if the host is running on a Linux-based platform.
+
+(env-releng-host-os-macos)=
+### `RELENG_HOST_OS_MACOS`
+
+:::{versionadded} 4.2
+:::
+
+Flag set if the host is running on a macOS-based platform.
+
+(env-releng-host-os-windows)=
+### `RELENG_HOST_OS_WINDOWS`
+
+:::{versionadded} 4.2
+:::
+
+Flag set if the host is running on a Windows-based platform.
+
 (env-releng-localsrcs)=
 ### `RELENG_LOCALSRCS`
 
