@@ -275,6 +275,7 @@ Configuration options parsed by releng-tool for a package definition:
 [`LIBFOO_INSTALL_TYPE`](pkg-opt-install-type) = '&lt;install-type&gt;'
 &nbsp;&nbsp;└── host, images, staging, staging_and_target, target
 [`LIBFOO_INTERNAL`](pkg-opt-internal) = bool
+[`LIBFOO_MAKE_CONFIGURE`](pkg-opt-make-configure) = '&lt;command&gt;'
 [`LIBFOO_MAKE_NOINSTALL`](pkg-opt-make-noinstall) = bool
 [`LIBFOO_MAX_JOBS`](pkg-opt-max-jobs) = int
 [`LIBFOO_MESON_BUILD_TYPE`](pkg-opt-meson-build-type) = '&lt;build-type&gt;'

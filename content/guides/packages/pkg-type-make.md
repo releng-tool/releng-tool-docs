@@ -44,6 +44,15 @@ Which will invoke `make` with the arguments:
 make prework
 ```
 
+For packages which want to invoke a configuration stage with a command other
+than `make`, the [`LIBFOO_MAKE_CONFIGURE`](pkg-opt-make-configure) option can
+be set with the command to invoke. For example, to use a `configure` script
+in the package:
+
+```
+LIBFOO_MAKE_CONFIGURE = './configure'
+```
+
 Alternatively, if no configuration options are specified, a
 `<package>-configure` [script](pkg-type-script) can be invoked if available.
 ````
@@ -164,6 +173,22 @@ The installation stage can be skipped by configuring
 (pkg-opt-make-install-opts)=
 :::{include} _pkg-install-opts-with-install.md
 :::
+
+(pkg-opt-make-configure)=
+## `LIBFOO_MAKE_CONFIGURE`
+
+:::{versionadded} 4.2
+:::
+
+The command to invoke during the configuration stage.
+
+By default, make packages do not invoke a configuration stage. However, if
+configuration options are defined, the default configuration executable
+invoked will be `make`.
+
+```python
+LIBFOO_MAKE_CONFIGURE = './configure'
+```
 
 (pkg-opt-make-noinstall)=
 ## `LIBFOO_MAKE_NOINSTALL`
