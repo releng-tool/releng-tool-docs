@@ -640,6 +640,21 @@ or `--dl-dir` overrides, this argument has no effect.
 
 See also [`RELENG_ASSETS_DIR`](env-releng-assets-dir).
 
+(arg-build-id)=
+### `--build-id <id>`
+
+:::{versionadded} 4.2
+:::
+
+Allows providing a build/job identifier which projects may utilize for identify
+a given releng-tool run.
+
+```none
+releng-tool --build-id=123
+```
+
+See also [`RELENG_BUILD_ID`](env-releng-build-id).
+
 (arg-cache-dir)=
 ### `--cache-dir <dir>`
 

@@ -478,6 +478,16 @@ directory may be as follows:
 <root-dir>/output/target/usr
 ```
 
+(env-releng-build-id)=
+### `RELENG_BUILD_ID`
+
+:::{versionadded} 4.2
+:::
+
+The build identifier provided from the command line.
+
+This is set when the [`--build-id` argument](arg-build-id) is configured.
+
 (env-releng-clean)=
 ### `RELENG_CLEAN`
 
