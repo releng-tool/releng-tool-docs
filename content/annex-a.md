@@ -380,6 +380,7 @@ Quirk options used by releng-tool:
 ```{parsed-literal}
 [`releng.cmake.disable_default_prefix`](quirk-releng.cmake.disable_default_prefix)
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
+[`releng.cmake.disable_export_compile_commands`](quirk-releng.cmake.disable_export_compile_commands)
 [`releng.disable_devmode_ignore_cache`](quirk-releng.disable_devmode_ignore_cache)
 [`releng.disable_prerequisites_check`](quirk-releng.disable_prerequisites_check)
 [`releng.disable_remote_configs`](quirk-releng.disable_remote_configs)

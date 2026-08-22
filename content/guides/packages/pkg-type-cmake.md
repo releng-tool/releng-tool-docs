@@ -10,6 +10,9 @@ releng-tool now populates `CMAKE_FIND_ROOT_PATH` and
 :::{versionchanged} 4.1
 releng-tool now populates `CMAKE_PREFIX_PATH`.
 :::
+:::{versionchanged} 4.2
+releng-tool default enables `CMAKE_EXPORT_COMPILE_COMMANDS`.
+:::
 
 A CMake package provides support for processing a [CMake][cmake] supported
 module.
@@ -79,6 +82,7 @@ With the configuration cache that populates the options:
 ```none
 CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES=<INCLUDE_PATHS>
 CMAKE_BUILD_TYPE=<BUILD_TYPE>
+CMAKE_EXPORT_COMPILE_COMMANDS=ON
 CMAKE_FIND_ROOT_PATH=<SYSROOT_PATHS>
 CMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER
 CMAKE_INCLUDE_PATH=<INCLUDE_PATHS>
@@ -114,6 +118,9 @@ Packages may opt-out of configuring the `CMAKE_PREFIX_PATH` variable using the
 quirk. Packages may opt-out of configuring
 `CMAKE_<LANG>_STANDARD_INCLUDE_DIRECTORIES` variables using the
 [`releng.cmake.disable_direct_includes`](quirk-releng.cmake.disable_direct_includes)
+quirk. Packages may opt-out of configuring the `CMAKE_EXPORT_COMPILE_COMMANDS`
+variable using the
+[`releng.cmake.disable_export_compile_commands`](quirk-releng.cmake.disable_export_compile_commands)
 quirk.
 ````
 

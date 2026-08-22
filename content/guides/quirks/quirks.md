@@ -49,6 +49,7 @@ The following is a list of all available quirks supported by releng-tool:
 
 releng.cmake.disable_default_prefix <quirk-cmake-disable_default_prefix>
 releng.cmake.disable_direct_includes <quirk-cmake-disable_direct_includes>
+releng.cmake.disable_export_compile_commands <quirk-cmake-disable_export_compile_commands>
 releng.disable_devmode_ignore_cache <quirk-disable_devmode_ignore_cache>
 releng.disable_prerequisites_check <quirk-disable_prerequisites_check>
 releng.disable_remote_configs <quirk-disable_remote_configs>
