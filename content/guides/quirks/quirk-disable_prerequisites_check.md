@@ -1,4 +1,5 @@
 (quirk-releng.disable_prerequisites_check)=
+{class="quirk-header"}
 # Quirk `releng.disable_prerequisites_check`
 
 A releng-tool project may require various dependencies. For example, if

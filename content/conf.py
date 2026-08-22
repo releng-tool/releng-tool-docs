@@ -57,6 +57,7 @@ from releng_tool import __version__ as releng_tool_version
 
 # myst configuration
 myst_enable_extensions = [
+    'attrs_block',
     'colon_fence',
     'strikethrough',
 ]

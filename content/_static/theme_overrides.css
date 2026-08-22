@@ -99,3 +99,8 @@ div.versionremoved p {
 pre {
     font-family: Cascadia Code, var(--font-stack--monospace) !important;
 }
+
+/* reduce header font size for quirks which have a long name */
+.quirk-header h1 {
+    font-size: 1.4em;
+}

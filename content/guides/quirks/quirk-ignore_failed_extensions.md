@@ -1,4 +1,5 @@
 (quirk-releng.ignore_failed_extensions)=
+{class="quirk-header"}
 # Quirk `releng.ignore_failed_extensions`
 
 :::{versionadded} 2.7

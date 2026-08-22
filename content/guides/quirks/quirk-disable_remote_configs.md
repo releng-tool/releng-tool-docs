@@ -1,4 +1,5 @@
 (quirk-releng.disable_remote_configs)=
+{class="quirk-header"}
 # Quirk `releng.disable_remote_configs`
 
 releng-tool package sources have the ability to inject late-stage

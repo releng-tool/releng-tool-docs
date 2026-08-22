@@ -1,4 +1,5 @@
 (quirk-releng.log.execute_env)=
+{class="quirk-header"}
 # Quirk `releng.log.execute_env`
 
 :::{versionadded} 1.3

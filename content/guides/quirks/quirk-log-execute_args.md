@@ -1,4 +1,5 @@
 (quirk-releng.log.execute_args)=
+{class="quirk-header"}
 # Quirk `releng.log.execute_args`
 
 :::{versionadded} 1.4

@@ -1,4 +1,5 @@
 (quirk-releng.ignore_release_check)=
+{class="quirk-header"}
 # Quirk `releng.ignore_release_check`
 
 ```{warning}

@@ -1,4 +1,5 @@
 (quirk-releng.git.replicate_cache)=
+{class="quirk-header"}
 # Quirk `releng.git.replicate_cache`
 
 :::{versionadded} 0.17

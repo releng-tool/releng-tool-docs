@@ -1,4 +1,5 @@
 (quirk-releng.disable_devmode_ignore_cache)=
+{class="quirk-header"}
 # Quirk `releng.disable_devmode_ignore_cache`
 
 :::{versionadded} 2.4

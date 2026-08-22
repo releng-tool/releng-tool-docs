@@ -1,4 +1,5 @@
 (quirk-releng.xmake.disable_arch_detection)=
+{class="quirk-header"}
 # Quirk `releng.xmake.disable_arch_detection`
 
 In select environments, a generated Xmake project may fail to link due

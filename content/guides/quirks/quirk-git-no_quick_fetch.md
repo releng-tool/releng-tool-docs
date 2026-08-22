@@ -1,4 +1,5 @@
 (quirk-releng.git.no_quick_fetch)=
+{class="quirk-header"}
 # Quirk `releng.git.no_quick_fetch`
 
 When fetching sources for a Git-site-defined package, releng-tool will

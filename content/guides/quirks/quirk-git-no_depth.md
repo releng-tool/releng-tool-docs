@@ -1,4 +1,5 @@
 (quirk-releng.git.no_depth)=
+{class="quirk-header"}
 # Quirk `releng.git.no_depth`
 
 releng-tool may use the [`--depth`][git--depth] option for Git-based packages

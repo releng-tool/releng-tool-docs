@@ -1,4 +1,5 @@
 (quirk-releng.xmake.disable_deps_init)=
+{class="quirk-header"}
 # Quirk `releng.xmake.disable_deps_init`
 
 releng-tool will default generate Xmake dependency folders for configured

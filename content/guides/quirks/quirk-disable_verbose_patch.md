@@ -1,4 +1,5 @@
 (quirk-releng.disable_verbose_patch)=
+{class="quirk-header"}
 # Quirk `releng.disable_verbose_patch`
 
 :::{versionadded} 2.2

@@ -1,4 +1,5 @@
 (quirk-releng.stats.no_pdf)=
+{class="quirk-header"}
 # Quirk `releng.stats.no_pdf`
 
 releng-tool will generate statistics for a build (such as the duration it

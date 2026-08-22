@@ -1,4 +1,5 @@
 (quirk-releng.cmake.disable_default_prefix)=
+{class="quirk-header"}
 # Quirk `releng.cmake.disable_default_prefix`
 
 For CMake-based projects, releng-tool will populate
