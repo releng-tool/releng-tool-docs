@@ -4,7 +4,7 @@
 
 ```{warning}
 Using this option is never recommended since it overrides the purpose of
-release checks. The quick is solely available to help special corner cases
+release checks. The quirk is solely available to help special corner cases
 for developers.
 ```
 
