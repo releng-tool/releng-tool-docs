@@ -196,6 +196,7 @@ Other environment variables accepted by releng-tool:
 `NO_COLOR`
 [`RELENG_ASSETS_DIR`](env-releng-assets-dir)
 [`RELENG_CACHE_DIR`](env-releng-cache-dir)
+[`RELENG_DELAYED_START`](env-releng-delayed-start)
 [`RELENG_DL_DIR`](env-releng-dl-dir)
 [`RELENG_GLOBAL_OUTPUT_CONTAINER_DIR`](env-releng-global-out-container-dir)
 [`RELENG_GLOBAL_OUTPUT_CONTAINER_NO_IMAGES`](env-releng-global-out-container-no-images)

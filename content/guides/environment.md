@@ -1100,6 +1100,24 @@ option can be used to override this location.
 
 See also [`CACHE_DIR`](env-cache-dir).
 
+(env-releng-delayed-start)=
+### `RELENG_DELAYED_START=1`
+
+:::{versionadded} 4.2
+:::
+
+Hint to delay execution at the start of a run. releng-tool will print package
+versions at the start of an execution. Users who wish to delay the execution
+for a moment after printing this information can set this variable.
+
+```
+export RELENG_DELAYED_START=1
+```
+
+This is to help users perform active inspections of used revisions, allowing
+easy active log reading before packages may trigger extensive log messages.
+Execution is delayed ten (10) seconds.
+
 (env-releng-dl-dir)=
 ### `RELENG_DL_DIR=<dir>`
 
