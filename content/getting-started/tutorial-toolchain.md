@@ -87,7 +87,7 @@ following contents to the configuration:
 
 ```python
 releng_config(
-    packages = [
+    packages=[
         'htop',
     ],
 )

@@ -57,7 +57,7 @@ configuration file with the following contents:
 
 ```python
 releng_config(
-    packages = [
+    packages=[
         'program-b',
     ],
 )

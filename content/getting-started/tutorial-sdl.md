@@ -370,7 +370,7 @@ contents:
 
 ```python
 releng_config(
-    packages = [
+    packages=[
         'sample',
     ],
     vsdevcmd=True,
