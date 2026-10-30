@@ -486,7 +486,8 @@ directory may be as follows:
 
 The build identifier provided from the command line.
 
-This is set when the [`--build-id` argument](arg-build-id) is configured.
+This is set when the [`--build-id` argument](arg-build-id) or the
+`RELENG_BUILD_ID` environment variable is configured.
 
 (env-releng-clean)=
 ### `RELENG_CLEAN`
@@ -1086,6 +1087,14 @@ directory is configured. If a user does not override an asset directory using
 the [`--assets-dir` argument](arg-assets-dir), the `RELENG_ASSETS_DIR` can be
 used as the container directory override for both cache and download
 content.
+
+(env-releng-build-id-set)=
+### `RELENG_BUILD_ID=<id>`
+
+:::{versionadded} 4.3
+:::
+
+See [`RELENG_BUILD_ID`](env-releng-build-id) for more information.
 
 (env-releng-cache-dir)=
 ### `RELENG_CACHE_DIR=<dir>`
