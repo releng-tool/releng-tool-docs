@@ -272,7 +272,7 @@ working directory for package stages (e.g. configuration, build, etc.).
 For example, for a package `test` with a version set (e.g.
 `PKG_VERSION='1.0'`), the package build directory may be:
 
-```none 
+```none
 <root>/build/test-1.0
 ```
 
