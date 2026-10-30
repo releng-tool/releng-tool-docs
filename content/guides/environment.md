@@ -1297,6 +1297,8 @@ action.
 export RELENG_LINT_MAX_VERSION=3.0
 ```
 
+The version provided maps to the version of a target releng-tool release.
+
 See also [Linting](linting) and [`lint_max_version`](conf-lint-max-version).
 
 (env-releng-images-dir)=

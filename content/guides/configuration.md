@@ -616,6 +616,8 @@ releng_config(
 )
 ```
 
+The version provided maps to the version of a target releng-tool release.
+
 See also [Linting](linting) and
 [`RELENG_LINT_MAX_VERSION`](env-releng-lint-max-version).
 

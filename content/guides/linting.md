@@ -30,11 +30,15 @@ UNEXPECTED_KEY = True  # noqa
 
 As releng-tool adds lint checks over time, new lint checks are mapped to the
 release version of releng-tool that introduces the check. For example, if
-releng-tool v3 adds two new checks, both checks will be mapped to v3.0. If
+releng-tool v3.0 adds two new checks, both checks will be mapped to v3.0. If
 a build environment wants to perform CI without utilizing new lint checks,
-they can do so by configuring a maximum version for lint checks to use. This
-can be configured in the [`lint_max_version`](conf-lint-max-version) project
-configuration:
+they can do so by configuring a maximum version for lint checks to use. For
+example, consider the scenario where a developer wishes to:
+
+> Only use linting checks that are available in releng-tool v2.8 release.
+
+This can be configured in the [`lint_max_version`](conf-lint-max-version)
+project configuration:
 
 ```python
 releng_config(
