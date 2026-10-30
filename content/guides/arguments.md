@@ -654,6 +654,20 @@ releng-tool --build-id=123
 ```
 
 See also [`RELENG_BUILD_ID`](env-releng-build-id).
+(arg-build-variant)=
+### `--build-variant <variant>`
+
+:::{versionadded} 4.3
+:::
+
+Allows providing a build variant passthrough option which projects may utilize
+for identify a variant build.
+
+```none
+releng-tool --build-variant=extended
+```
+
+See also [`RELENG_BUILD_VARIANT`](env-releng-build-variant).
 
 (arg-cache-dir)=
 ### `--cache-dir <dir>`

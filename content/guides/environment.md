@@ -489,6 +489,18 @@ The build identifier provided from the command line.
 This is set when the [`--build-id` argument](arg-build-id) or the
 `RELENG_BUILD_ID` environment variable is configured.
 
+(env-releng-build-variant)=
+### `RELENG_BUILD_VARIANT`
+
+:::{versionadded} 4.3
+:::
+
+The build variant, if provided, is a passthrough option which projects may
+utilize for identify a variant build.
+
+This is set when the [`--build-variant` argument](arg-build-variant) or the
+`RELENG_BUILD_VARIANT` environment variable is configured.
+
 (env-releng-clean)=
 ### `RELENG_CLEAN`
 
@@ -1095,6 +1107,14 @@ content.
 :::
 
 See [`RELENG_BUILD_ID`](env-releng-build-id) for more information.
+
+(env-releng-build-variant-set)=
+### `RELENG_BUILD_VARIANT=<variant>`
+
+:::{versionadded} 4.3
+:::
+
+See [`RELENG_BUILD_VARIANT`](env-releng-build-variant) for more information.
 
 (env-releng-cache-dir)=
 ### `RELENG_CACHE_DIR=<dir>`
