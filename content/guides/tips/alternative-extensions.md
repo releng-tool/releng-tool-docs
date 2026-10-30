@@ -47,7 +47,6 @@ For a specific file to be loaded, releng-tool uses the following priority:
 1. File with a `.rt` extension
 1. File with a `.py` extension
 1. File without an extension (*deprecated*)
-1. File with a `.releng` extension (*deprecated*)
 
 Only the first detected file will be loaded. For example, if a project has
 multiple releng-tool configuration files with different extensions:
