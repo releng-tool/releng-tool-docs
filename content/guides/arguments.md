@@ -816,7 +816,7 @@ by repeating this argument. Multiple profiles can also be provided in a
 single argument where profiles are separated by a comma (`,`) or a
 semicolon (`;`).
 
-See also [using profiles](profiles).
+See also [`RELENG_PROFILES`](env-releng-profiles) and [build profile](profile).
 
 (arg-quiet)=
 ### `--quiet`

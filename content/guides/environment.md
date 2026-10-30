@@ -600,7 +600,7 @@ This includes when a user invokes either a [`distclean`](action-distclean) or
 Defines one or more semicolon-separated profile values actively configured
 for a run.
 
-See also [`--profile`](arg-profile) and [using profiles](profiles).
+See also [`--profile`](arg-profile) and [build profile](profile).
 
 (env-releng-rebuild)=
 ### `RELENG_REBUILD`

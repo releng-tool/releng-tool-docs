@@ -13,7 +13,7 @@ intern-extern-pkgs
 development-mode
 local-sources-mode
 release-mode
-profiles
+profile
 network-isolation
 api-mode
 quirks/quirks
