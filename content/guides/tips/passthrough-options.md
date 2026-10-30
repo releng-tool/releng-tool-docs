@@ -34,10 +34,13 @@ in both the script environment and executed calls with a value of `123`.
 
 When operating in a common CI context (e.g. Jenkins), the `RELENG_BUILD_ID`
 value will be pre-populated with a respective build identifier (if not
-explicitly set).
+explicitly set). The following table outlines supported tool checks. A
+environment variable is used to detect if running in a CI context. If a CI
+context is detected, a respective environment variable will be parsed for
+a build identifier.
 
-| Type                | Detection            | Value |
-| ------------------- | -------------------- | ----- |
+| Type                | Detection            | Key |
+| ------------------- | -------------------- | --- |
 | AWS CodeBuild       | `CODEBUILD_BUILD_ID` | `CODEBUILD_BUILD_NUMBER`
 | Azure Pipelines     | `TF_BUILD`           | `BUILD_BUILDID`
 | Bitbucket Pipelines | `CI`                 | `BITBUCKET_BUILD_NUMBER`

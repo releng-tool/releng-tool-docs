@@ -1114,6 +1114,19 @@ content.
 
 See [`RELENG_BUILD_ID`](env-releng-build-id) for more information.
 
+(env-releng-build-id-no-implicit)=
+### `RELENG_BUILD_ID_NO_IMPLICIT=1`
+
+:::{versionadded} 4.3
+:::
+
+Instructs releng-tool to avoid populating a build identifier from supported
+vendor CI contexts, in the case where a build identifier is not explicitly
+provided.
+
+See also [`RELENG_BUILD_ID`](env-releng-build-id) and
+[passthrough options](tips/passthrough-options).
+
 (env-releng-build-variant-set)=
 ### `RELENG_BUILD_VARIANT=<variant>`
 
