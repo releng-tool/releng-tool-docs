@@ -942,6 +942,8 @@ If a user wants to override this a run with `1.1`, the following can be used:
 releng-tool LIBFOO_VERSION=1.1
 ```
 
+See also [`releng_define`](releng_tool.releng_define).
+
 
 [force-color]: https://force-color.org/
 [no-color]: https://no-color.org/
