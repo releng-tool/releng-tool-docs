@@ -6,6 +6,7 @@ The following contains a series of tips which may be helpful for a user:
 :maxdepth: 1
 
 parallel-builds
+passthrough-options
 license-generation
 revision-overrides-in-ci
 privileged-builds

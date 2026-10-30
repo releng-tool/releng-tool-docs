@@ -484,10 +484,13 @@ directory may be as follows:
 :::{versionadded} 4.2
 :::
 
-The build identifier provided from the command line.
+The build identifier, if provided, is a passthrough option which projects may
+utilize for identify a given releng-tool run.
 
 This is set when the [`--build-id` argument](arg-build-id) or the
 `RELENG_BUILD_ID` environment variable is configured.
+
+See also [passthrough options](tips/passthrough-options).
 
 (env-releng-build-variant)=
 ### `RELENG_BUILD_VARIANT`
@@ -500,6 +503,8 @@ utilize for identify a variant build.
 
 This is set when the [`--build-variant` argument](arg-build-variant) or the
 `RELENG_BUILD_VARIANT` environment variable is configured.
+
+See also [passthrough options](tips/passthrough-options).
 
 (env-releng-clean)=
 ### `RELENG_CLEAN`
@@ -613,7 +618,8 @@ This includes when a user invokes either a [`distclean`](action-distclean) or
 Defines one or more semicolon-separated profile values actively configured
 for a run.
 
-See also [`--profile`](arg-profile) and [build profile](profile).
+See also [`--profile`](arg-profile), [build profile](profile) and
+[passthrough options](tips/passthrough-options).
 
 (env-releng-rebuild)=
 ### `RELENG_REBUILD`

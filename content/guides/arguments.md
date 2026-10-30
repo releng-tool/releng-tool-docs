@@ -646,14 +646,16 @@ See also [`RELENG_ASSETS_DIR`](env-releng-assets-dir).
 :::{versionadded} 4.2
 :::
 
-Allows providing a build/job identifier which projects may utilize for identify
-a given releng-tool run.
+Allows providing a build identifier passthrough option which projects may
+utilize for identify a given releng-tool run.
 
 ```none
 releng-tool --build-id=123
 ```
 
-See also [`RELENG_BUILD_ID`](env-releng-build-id).
+See also [`RELENG_BUILD_ID`](env-releng-build-id) and
+[passthrough options](tips/passthrough-options).
+
 (arg-build-variant)=
 ### `--build-variant <variant>`
 
@@ -667,7 +669,8 @@ for identify a variant build.
 releng-tool --build-variant=extended
 ```
 
-See also [`RELENG_BUILD_VARIANT`](env-releng-build-variant).
+See also [`RELENG_BUILD_VARIANT`](env-releng-build-variant) and
+[passthrough options](tips/passthrough-options).
 
 (arg-cache-dir)=
 ### `--cache-dir <dir>`
@@ -830,7 +833,8 @@ by repeating this argument. Multiple profiles can also be provided in a
 single argument where profiles are separated by a comma (`,`) or a
 semicolon (`;`).
 
-See also [`RELENG_PROFILES`](env-releng-profiles) and [build profile](profile).
+See also [`RELENG_PROFILES`](env-releng-profiles), [build profile](profile)
+and [passthrough options](tips/passthrough-options).
 
 (arg-quiet)=
 ### `--quiet`
