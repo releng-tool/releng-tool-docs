@@ -280,7 +280,8 @@ releng-tool LIBFOO_FORCE_REVISION="1.2.3"
 Forced revisions can also be pulled from the environment when not running in
 a [release mode](/guides/release-mode).
 
-See also [`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision),
+See also [revision overrides in CI](/guides/tips/revision-overrides-in-ci),
+[`LIBFOO_DEVMODE_REVISION`](pkg-opt-devmode-revision),
 [`LIBFOO_REVISION`](pkg-opt-revision) and [`revisions`](conf-revisions).
 
 (pkg-opt-git-config)=
