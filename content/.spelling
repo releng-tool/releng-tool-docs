@@ -1,9 +1,12 @@
 Autotools
+Bitbucket
 Bootlin
 Buildroot
 CMake
+Forgejo
 LTS
 Makefile
+Passthrough
 PathLike
 SCP
 SCons
@@ -37,6 +40,7 @@ libfoo
 libnl
 libsdl
 lookups
+macOS
 matplotlib
 misconfigured
 namespace
@@ -44,6 +48,7 @@ ncurses
 njobs
 parallelization
 parsable
+passthrough
 pipx
 platinclude
 platlib
@@ -52,6 +57,7 @@ postfixed
 pre
 preallocated
 preloaded
+prepended
 purelib
 refspecs
 reinstallation
