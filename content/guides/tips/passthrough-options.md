@@ -65,7 +65,7 @@ RELENG_BUILD_ID_NO_IMPLICIT=1
 :::
 
 A build variant (string) can be provided into a releng-tool run. This is
-typically used to help identify special variable builds such as enabling a
+typically used to help identify special variant builds such as enabling a
 custom feature or enabling certain debugging capabilities in a build.
 
 A build variant can be provided for a run using either the
